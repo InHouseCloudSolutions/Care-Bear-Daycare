@@ -1,0 +1,12 @@
+{
+  // disable format on save for HTML (and Django HTML, if you use that)
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[django-html]": {
+    "editor.formatOnSave": false
+  },
+
+  // if you use Prettier, tell it to ignore django-html
+  "prettier.disableLanguages": ["django-html"]
+}

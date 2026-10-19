@@ -1,0 +1,17 @@
+{
+  "Import Header": {
+    "prefix": "iheader",
+    "body": ["import Header from '@/components/Header';"],
+    "description": "Imports custom Header Component"
+  },
+  "Header Component": {
+    "prefix": "headercomp",
+    "body": ["<Header title='${1:Home}' />"],
+    "description": "Add Header Component"
+  },
+  "Import all Disclosers": {
+    "prefix": "idisc",
+    "body": ["import * as Disclosers from '@/components/Disclosers'"],
+    "description": "Imports all Discloser components"
+  }
+}
