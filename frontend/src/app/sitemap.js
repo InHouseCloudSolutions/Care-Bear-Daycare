@@ -1,5 +1,7 @@
 import { PUBLIC_SITE_ORIGIN, WEBSITE_SEO } from '@/utils/website-seo';
 
+export const dynamic = 'force-static';
+
 const HOST = (PUBLIC_SITE_ORIGIN || 'http://localhost:3000').replace(/\/$/, '');
 
 function toSitemapEntry(path) {
