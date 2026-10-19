@@ -1,0 +1,14 @@
+:3034
+
+:3010
+
+# Drop Next.js Server Action probes before they reach the frontend.
+# This app does not use "use server"; any next-action header is scanner/stale traffic
+# that otherwise floods logs and can exhaust the Next.js container.
+@nextAction header next-action *
+respond @nextAction 404
+
+reverse_proxy frontend:3000 {
+    header_up Host {http.reverse_proxy.upstream.host}
+    flush_interval -1
+}

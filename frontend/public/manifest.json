@@ -1,0 +1,17 @@
+{
+  "name": "Care Bear Daycare",
+  "short_name": "Care Bear Daycare",
+  "description": "Care Bear Daycare offers overnight care and daycare for dogs, with a safe backyard made for play. Book a stay, or plan a visit and tell us about your dog.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/imgs/logos/logo_square.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

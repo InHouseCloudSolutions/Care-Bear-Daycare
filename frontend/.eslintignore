@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+coverage
+.yarn
+public
+
+jest.config.js
+next.config.js

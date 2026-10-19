@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile.local
+    environment:
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./frontend:/code
+      - /code/node_modules
+      - /code/.next
+  reverse-proxy:
+    depends_on:
+      - frontend
+    image: caddy:latest
+    ports:
+      - 3010:3010
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile

@@ -1,0 +1,5 @@
+images:
+  NODE: node:latest
+  PYTHON: python:latest
+name: care-bear-daycare
+version: 1.0.0

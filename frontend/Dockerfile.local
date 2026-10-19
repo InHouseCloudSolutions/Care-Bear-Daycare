@@ -1,0 +1,27 @@
+# syntax=docker.io/docker/dockerfile:1
+
+FROM node:lts-alpine AS base
+# Yarn 4 via Corepack + committed release (.yarnrc.yml yarnPath)
+ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+RUN corepack enable
+
+# Install dependencies only when needed
+FROM base AS deps
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
+
+RUN mkdir /code
+WORKDIR /code
+
+# Install dependencies (Berry: packageManager + yarnPath require .yarn/releases)
+COPY package.json yarn.lock .yarnrc.yml ./
+COPY .yarn/releases ./.yarn/releases
+RUN yarn install --immutable
+
+# Dev runner image, copy all the installed modules run next
+# No need to copy code as we mount it as a volume for hot reloading
+FROM base AS runner
+RUN mkdir /code
+WORKDIR /code
+COPY --from=deps /code/node_modules ./node_modules
+CMD ["yarn" ,"dev", "-p", "3000"]

@@ -1,0 +1,81 @@
+const withPlugins = require('next-compose-plugins');
+const withImages = require('next-images');
+
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+const pagesBasePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+/** @type {import('next').NextConfig} */
+const config = {
+  webpack: (webpackConfig, { webpack }) => {
+    webpackConfig.resolve.alias['@@'] = __dirname;
+    webpackConfig.resolve.alias['@wui'] = '@bequestinc/wui';
+    // Optional linkedom peer; avoid native canvas in Docker/SSR builds
+    webpackConfig.resolve.alias.canvas = false;
+    webpackConfig.resolve.conditionNames = ['require', '...'];
+
+    webpackConfig.plugins.push(
+      new webpack.ProvidePlugin({
+        React: 'react',
+      }),
+    );
+
+    // Ensure rules array exists
+    webpackConfig.module.rules = webpackConfig.module.rules || [];
+
+    // Use SVGR for SVGs imported from JS/TS files
+    webpackConfig.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    });
+
+    webpackConfig.cache = false;
+    return webpackConfig;
+  },
+  env: {
+    PROD: process.env.NODE_ENV === 'production' ? 'true' : 'false',
+  },
+  productionBrowserSourceMaps: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
+  output: isGitHubPages ? 'export' : 'standalone',
+  ...(isGitHubPages
+    ? {
+        trailingSlash: true,
+        ...(pagesBasePath ? { basePath: pagesBasePath } : {}),
+      }
+    : {
+        outputFileTracingIncludes: {
+          '/': [
+            './node_modules/async-function/require.mjs',
+            './node_modules/async-generator-function/require.mjs',
+            './node_modules/generator-function/require.mjs',
+          ],
+        },
+      }),
+  transpilePackages: ['@mui/material', '@mui/system', '@mui/styles', '@mui/icons-material'],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    unoptimized: isGitHubPages,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cortinakitchenstorage.blob.core.windows.net',
+        pathname: '/cortina-container/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ckexpress.blob.core.windows.net',
+        pathname: '/public/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.prod.website-files.com',
+      },
+    ],
+  },
+};
+
+module.exports = withPlugins([withImages], config);

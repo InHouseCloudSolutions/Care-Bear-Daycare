@@ -1,0 +1,28 @@
+/* One continuous zoom for the full time a slide is on screen (hold + crossfade). */
+@keyframes home-ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(var(--home-ken-burns-end, 1.18));
+  }
+}
+
+.home-hero-swiper {
+  --home-ken-burns-end: 1.18;
+}
+
+.home-hero-swiper .swiper-slide .home-hero-bg-image {
+  transform: scale(1);
+  will-change: transform;
+}
+
+/* Same animation on active and prev so it does not restart when the fade begins. */
+.home-hero-swiper .swiper-slide-active .home-hero-bg-image,
+.home-hero-swiper .swiper-slide-prev .home-hero-bg-image {
+  animation: home-ken-burns var(--home-zoom-duration, 4400ms) linear forwards;
+}
+
+.home-hero-swiper .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev) .home-hero-bg-image {
+  animation: none;
+}

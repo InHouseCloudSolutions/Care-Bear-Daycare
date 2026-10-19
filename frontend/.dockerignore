@@ -1,0 +1,41 @@
+# VCS
+.git
+.gitignore
+
+# Env / secrets
+# .env
+.env.*
+
+# Node / package manager
+node_modules
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js / build output
+.next
+out
+dist
+build
+coverage
+
+# Tooling / dev-only config
+.eslintrc.js
+.eslintrc.json
+.prettierrc
+cypress.json
+jest.config.js
+jest.setup.js
+
+# Docs
+README.md
+
+# Local-only Docker files
+Dockerfile.local
+
+# OS junk
+.DS_Store
