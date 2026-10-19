@@ -59,22 +59,6 @@ const config = {
   },
   images: {
     unoptimized: isGitHubPages,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'cortinakitchenstorage.blob.core.windows.net',
-        pathname: '/cortina-container/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'ckexpress.blob.core.windows.net',
-        pathname: '/public/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.prod.website-files.com',
-      },
-    ],
   },
 };
 
