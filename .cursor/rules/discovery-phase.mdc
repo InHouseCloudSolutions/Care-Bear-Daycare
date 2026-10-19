@@ -1,0 +1,45 @@
+---
+description: Run discovery before planning and implementation — ask clarifying questions like a real dev
+alwaysApply: true
+---
+
+# Discovery Phase
+
+Before planning or delegating implementation, run **discovery** to clarify scope — unless the task is trivial and unambiguous.
+
+## Skip Discovery When
+
+- Single-file change with explicit instructions (e.g. fix a typo in a named file)
+- User provided complete acceptance criteria and affected paths
+
+## Enter Discovery When
+
+- New features, bug reports without repro, refactors, full-stack work
+- Missing acceptance criteria, unknown routes/models, or ambiguous UX
+- Task touches 3+ files
+
+## Main Agent Steps
+
+1. Ask **1–2 focused questions at a time** via `AskQuestion` — never a wall of questions
+2. Optionally delegate **read-only recon** to `frontend-dev` (explore patterns, no edits)
+3. Write a **Discovery Brief** (template in `.cursor/skills/discovery-phase/SKILL.md`)
+4. Create a **Plan** from the brief (CreatePlan for medium/large work; inline plan for small tasks)
+5. **Wait for user confirmation** before delegating implementation on non-trivial work
+
+## Question Categories
+
+Pick only what is unknown:
+
+| Category | Examples |
+|----------|----------|
+| Scope | Pages/routes/models? Staff vs marketing vs public form? |
+| Behavior | UX, validation, error handling, edge cases |
+| Data | New fields vs reuse? Migration ok? |
+| Integration | API contract, auth (session vs `/t/public/`), email notifications |
+| Constraints | Minimal diff, form variant (`default` vs `glass`), no commits |
+
+## Workflow Order
+
+**Discovery → Plan → Delegate → Verify**
+
+See also: `.cursor/rules/delegate-to-subagents.mdc` and `.cursor/skills/discovery-phase/SKILL.md`.

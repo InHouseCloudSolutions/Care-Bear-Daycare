@@ -1,0 +1,65 @@
+---
+description: Main agent delegates work to specialized subagents to preserve context window
+alwaysApply: true
+---
+
+# Delegate to Subagents — Main Agent as Coordinator
+
+The main agent is a **manager**, not an implementer. Preserve the main context window by delegating execution to subagents and synthesizing their results.
+
+## Workflow Order
+
+**Discovery → Plan → Delegate → Verify**
+
+1. **Discovery** — clarify scope via questions and optional read-only subagent recon (see `.cursor/rules/discovery-phase.mdc`)
+2. **Plan** — produce Discovery Brief + plan; get user confirmation on non-trivial work
+3. **Delegate** — hand off to subagents with brief + approved plan
+4. **Verify** — use `run-local-ci` skill after implementation; synthesize results for user
+
+## Main Agent Role
+
+- **Do**: run discovery, create plans, choose subagent(s), pass focused context, launch parallel subagents when work is independent, merge summaries, respond to the user.
+- **Do not**: explore codebases deeply, read many files, edit code, run builds/tests, or debug in depth. Delegate those to subagents.
+
+## When to Delegate
+
+After discovery and plan approval, delegate for:
+
+- Code exploration, search, or architecture questions
+- File edits, refactors, bug fixes, or new features
+- Running commands (tests, lint, migrations, git operations)
+- Any task expected to touch more than 1–2 files
+
+Only handle directly when the work is pure coordination (e.g., asking a clarifying question, choosing delegation strategy, or merging subagent outputs).
+
+## Subagent Specializations
+
+Use the project's custom subagents in `.cursor/agents/`. Give each a **self-contained brief**: goal, relevant paths, constraints, and what to return.
+
+| Agent | Scope | When to use |
+|-------|-------|-------------|
+| **`frontend-dev`** | `frontend/**` | Pages, components, MUI UI, forms, Jest/ESLint |
+| **`portfolio-scraper`** | `frontend/public/imgs/nav/portfolio/**` | Scrape one niico.com collection into local portfolio assets; launch **one per collection in parallel** (`kitchens`, `bath`, `custom-millwork`, `wardrobe`). Skill: `.cursor/skills/scrape-portfolio-images/SKILL.md` |
+
+For git, migrations, or terminal-only work, use a shell-focused subagent when no code changes are needed.
+
+## Context Handoff
+
+Each subagent prompt must include:
+
+1. The specific goal (not the full chat history)
+2. **Discovery Brief** and **approved Plan** summary
+3. Relevant file paths or feature names
+4. Constraints (minimal diff, match existing patterns, no commits unless asked)
+5. Expected return: summary, changed files, blockers, or test results
+
+## Subagent Questions
+
+Subagents **may ask the user directly** via `AskQuestion` when blocked (UX ambiguity, permissions, API contract, etc.). They should still return findings to the coordinator when done.
+
+## After Delegation
+
+- Trust subagent results; do not re-read every file they touched.
+- Surface blockers that need user input.
+- Run verification via `.cursor/skills/run-local-ci/SKILL.md` when appropriate.
+- Keep user-facing replies concise — synthesize, don't dump raw subagent output.
