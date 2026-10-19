@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
-import {
-  SPLASH_FONT_MONTSERRAT,
-  splashFontClassName,
-} from '@/components/loading-screen-fonts';
+import { SPLASH_FONT_MONTSERRAT, splashFontClassName } from '@/components/loading-screen-fonts';
 import { WEBSITE_PAGE_BACKGROUND } from '@/consts/website-theme';
 
 const SPLASH_BG = '#0E272C';
