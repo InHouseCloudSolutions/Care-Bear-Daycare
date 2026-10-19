@@ -4851,7 +4851,7 @@
       "label": "HOST",
       "file_type": "code",
       "source_file": "frontend/src/app/sitemap.js",
-      "source_location": "L3",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "app_sitemap_host",
       "community": 4,
@@ -4861,7 +4861,7 @@
       "label": "toSitemapEntry()",
       "file_type": "code",
       "source_file": "frontend/src/app/sitemap.js",
-      "source_location": "L5",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "app_sitemap_tositemapentry",
       "community": 4,
@@ -4871,7 +4871,7 @@
       "label": "sitemap()",
       "file_type": "code",
       "source_file": "frontend/src/app/sitemap.js",
-      "source_location": "L13",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "app_sitemap_sitemap",
       "community": 4,
@@ -20239,9 +20239,9 @@
       "source_file": ".cursor/agents/frontend-dev.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_frontend_dev",
-      "target": "agents_frontend_dev_discovery_phase",
-      "confidence_score": 1.0
+      "target": "agents_frontend_dev_discovery_phase"
     },
     {
       "relation": "contains",
@@ -20249,9 +20249,9 @@
       "source_file": ".cursor/agents/frontend-dev.md",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_frontend_dev",
-      "target": "agents_frontend_dev_output",
-      "confidence_score": 1.0
+      "target": "agents_frontend_dev_output"
     },
     {
       "relation": "contains",
@@ -20259,9 +20259,9 @@
       "source_file": ".cursor/agents/frontend-dev.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_frontend_dev",
-      "target": "agents_frontend_dev_project_conventions",
-      "confidence_score": 1.0
+      "target": "agents_frontend_dev_project_conventions"
     },
     {
       "relation": "contains",
@@ -20269,9 +20269,9 @@
       "source_file": ".cursor/agents/frontend-dev.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_frontend_dev",
-      "target": "agents_frontend_dev_stack",
-      "confidence_score": 1.0
+      "target": "agents_frontend_dev_stack"
     },
     {
       "relation": "contains",
@@ -20279,9 +20279,9 @@
       "source_file": ".cursor/agents/frontend-dev.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_frontend_dev",
-      "target": "agents_frontend_dev_when_invoked",
-      "confidence_score": 1.0
+      "target": "agents_frontend_dev_when_invoked"
     },
     {
       "relation": "contains",
@@ -20289,9 +20289,9 @@
       "source_file": ".cursor/agents/portfolio-scraper.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_portfolio_scraper",
-      "target": "agents_portfolio_scraper_do_not",
-      "confidence_score": 1.0
+      "target": "agents_portfolio_scraper_do_not"
     },
     {
       "relation": "contains",
@@ -20299,9 +20299,9 @@
       "source_file": ".cursor/agents/portfolio-scraper.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_portfolio_scraper",
-      "target": "agents_portfolio_scraper_read_first",
-      "confidence_score": 1.0
+      "target": "agents_portfolio_scraper_read_first"
     },
     {
       "relation": "contains",
@@ -20309,9 +20309,9 @@
       "source_file": ".cursor/agents/portfolio-scraper.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_portfolio_scraper",
-      "target": "agents_portfolio_scraper_return_to_coordinator",
-      "confidence_score": 1.0
+      "target": "agents_portfolio_scraper_return_to_coordinator"
     },
     {
       "relation": "contains",
@@ -20319,9 +20319,9 @@
       "source_file": ".cursor/agents/portfolio-scraper.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_portfolio_scraper",
-      "target": "agents_portfolio_scraper_scope_per_run",
-      "confidence_score": 1.0
+      "target": "agents_portfolio_scraper_scope_per_run"
     },
     {
       "relation": "contains",
@@ -20329,9 +20329,9 @@
       "source_file": ".cursor/agents/portfolio-scraper.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_portfolio_scraper",
-      "target": "agents_portfolio_scraper_you_own",
-      "confidence_score": 1.0
+      "target": "agents_portfolio_scraper_you_own"
     },
     {
       "relation": "contains",
@@ -20339,9 +20339,9 @@
       "source_file": ".cursor/skills/add-public-form/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_public_form_skill",
-      "target": "add_public_form_skill_add_public_form",
-      "confidence_score": 1.0
+      "target": "add_public_form_skill_add_public_form"
     },
     {
       "relation": "references",
@@ -20359,9 +20359,9 @@
       "source_file": ".cursor/skills/add-public-form/SKILL.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_public_form_skill_add_public_form",
-      "target": "add_public_form_skill_backend_workflow",
-      "confidence_score": 1.0
+      "target": "add_public_form_skill_backend_workflow"
     },
     {
       "relation": "contains",
@@ -20369,9 +20369,9 @@
       "source_file": ".cursor/skills/add-public-form/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_public_form_skill_add_public_form",
-      "target": "add_public_form_skill_discovery_checklist",
-      "confidence_score": 1.0
+      "target": "add_public_form_skill_discovery_checklist"
     },
     {
       "relation": "references",
@@ -20389,9 +20389,9 @@
       "source_file": ".cursor/skills/add-public-form/SKILL.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_public_form_skill_add_public_form",
-      "target": "add_public_form_skill_frontend_workflow",
-      "confidence_score": 1.0
+      "target": "add_public_form_skill_frontend_workflow"
     },
     {
       "relation": "contains",
@@ -20399,9 +20399,9 @@
       "source_file": ".cursor/skills/add-public-form/SKILL.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_public_form_skill_add_public_form",
-      "target": "add_public_form_skill_reference_implementations",
-      "confidence_score": 1.0
+      "target": "add_public_form_skill_reference_implementations"
     },
     {
       "relation": "contains",
@@ -20409,9 +20409,9 @@
       "source_file": ".cursor/skills/add-public-form/SKILL.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_public_form_skill_add_public_form",
-      "target": "add_public_form_skill_test_plan",
-      "confidence_score": 1.0
+      "target": "add_public_form_skill_test_plan"
     },
     {
       "relation": "conceptually_related_to",
@@ -20429,9 +20429,9 @@
       "source_file": ".cursor/skills/codebase-design/DEEPENING.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_deepening",
-      "target": "codebase_design_deepening_deepening",
-      "confidence_score": 1.0
+      "target": "codebase_design_deepening_deepening"
     },
     {
       "relation": "contains",
@@ -20439,9 +20439,9 @@
       "source_file": ".cursor/skills/codebase-design/DEEPENING.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_deepening_deepening",
-      "target": "codebase_design_deepening_dependency_categories",
-      "confidence_score": 1.0
+      "target": "codebase_design_deepening_dependency_categories"
     },
     {
       "relation": "contains",
@@ -20449,9 +20449,9 @@
       "source_file": ".cursor/skills/codebase-design/DEEPENING.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_deepening_deepening",
-      "target": "codebase_design_deepening_seam_discipline",
-      "confidence_score": 1.0
+      "target": "codebase_design_deepening_seam_discipline"
     },
     {
       "relation": "contains",
@@ -20459,9 +20459,9 @@
       "source_file": ".cursor/skills/codebase-design/DEEPENING.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_deepening_deepening",
-      "target": "codebase_design_deepening_testing_strategy_replace_don_t_layer",
-      "confidence_score": 1.0
+      "target": "codebase_design_deepening_testing_strategy_replace_don_t_layer"
     },
     {
       "relation": "contains",
@@ -20469,9 +20469,9 @@
       "source_file": ".cursor/skills/codebase-design/DEEPENING.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_deepening_dependency_categories",
-      "target": "codebase_design_deepening_1_in_process",
-      "confidence_score": 1.0
+      "target": "codebase_design_deepening_1_in_process"
     },
     {
       "relation": "contains",
@@ -20479,9 +20479,9 @@
       "source_file": ".cursor/skills/codebase-design/DEEPENING.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_deepening_dependency_categories",
-      "target": "codebase_design_deepening_2_local_substitutable",
-      "confidence_score": 1.0
+      "target": "codebase_design_deepening_2_local_substitutable"
     },
     {
       "relation": "contains",
@@ -20489,9 +20489,9 @@
       "source_file": ".cursor/skills/codebase-design/DEEPENING.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_deepening_dependency_categories",
-      "target": "codebase_design_deepening_3_remote_but_owned_ports_adapters",
-      "confidence_score": 1.0
+      "target": "codebase_design_deepening_3_remote_but_owned_ports_adapters"
     },
     {
       "relation": "contains",
@@ -20499,9 +20499,9 @@
       "source_file": ".cursor/skills/codebase-design/DEEPENING.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_deepening_dependency_categories",
-      "target": "codebase_design_deepening_4_true_external_mock",
-      "confidence_score": 1.0
+      "target": "codebase_design_deepening_4_true_external_mock"
     },
     {
       "relation": "contains",
@@ -20509,9 +20509,9 @@
       "source_file": ".cursor/skills/codebase-design/DESIGN-IT-TWICE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_design_it_twice",
-      "target": "codebase_design_design_it_twice_design_it_twice",
-      "confidence_score": 1.0
+      "target": "codebase_design_design_it_twice_design_it_twice"
     },
     {
       "relation": "cites",
@@ -20529,9 +20529,9 @@
       "source_file": ".cursor/skills/codebase-design/DESIGN-IT-TWICE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_design_it_twice_design_it_twice",
-      "target": "codebase_design_design_it_twice_process",
-      "confidence_score": 1.0
+      "target": "codebase_design_design_it_twice_process"
     },
     {
       "relation": "cites",
@@ -20569,9 +20569,9 @@
       "source_file": ".cursor/skills/codebase-design/DESIGN-IT-TWICE.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_design_it_twice_process",
-      "target": "codebase_design_design_it_twice_1_frame_the_problem_space",
-      "confidence_score": 1.0
+      "target": "codebase_design_design_it_twice_1_frame_the_problem_space"
     },
     {
       "relation": "contains",
@@ -20579,9 +20579,9 @@
       "source_file": ".cursor/skills/codebase-design/DESIGN-IT-TWICE.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_design_it_twice_process",
-      "target": "codebase_design_design_it_twice_2_launch_subagents",
-      "confidence_score": 1.0
+      "target": "codebase_design_design_it_twice_2_launch_subagents"
     },
     {
       "relation": "contains",
@@ -20589,9 +20589,9 @@
       "source_file": ".cursor/skills/codebase-design/DESIGN-IT-TWICE.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_design_it_twice_process",
-      "target": "codebase_design_design_it_twice_3_present_and_compare",
-      "confidence_score": 1.0
+      "target": "codebase_design_design_it_twice_3_present_and_compare"
     },
     {
       "relation": "contains",
@@ -20599,9 +20599,9 @@
       "source_file": ".cursor/skills/codebase-design/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_skill",
-      "target": "codebase_design_skill_codebase_design",
-      "confidence_score": 1.0
+      "target": "codebase_design_skill_codebase_design"
     },
     {
       "relation": "contains",
@@ -20609,9 +20609,9 @@
       "source_file": ".cursor/skills/codebase-design/SKILL.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_skill_codebase_design",
-      "target": "codebase_design_skill_deep_vs_shallow",
-      "confidence_score": 1.0
+      "target": "codebase_design_skill_deep_vs_shallow"
     },
     {
       "relation": "contains",
@@ -20619,9 +20619,9 @@
       "source_file": ".cursor/skills/codebase-design/SKILL.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_skill_codebase_design",
-      "target": "codebase_design_skill_designing_for_testability",
-      "confidence_score": 1.0
+      "target": "codebase_design_skill_designing_for_testability"
     },
     {
       "relation": "contains",
@@ -20629,9 +20629,9 @@
       "source_file": ".cursor/skills/codebase-design/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_skill_codebase_design",
-      "target": "codebase_design_skill_glossary",
-      "confidence_score": 1.0
+      "target": "codebase_design_skill_glossary"
     },
     {
       "relation": "contains",
@@ -20639,9 +20639,9 @@
       "source_file": ".cursor/skills/codebase-design/SKILL.md",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_skill_codebase_design",
-      "target": "codebase_design_skill_going_deeper",
-      "confidence_score": 1.0
+      "target": "codebase_design_skill_going_deeper"
     },
     {
       "relation": "contains",
@@ -20649,9 +20649,9 @@
       "source_file": ".cursor/skills/codebase-design/SKILL.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_skill_codebase_design",
-      "target": "codebase_design_skill_principles",
-      "confidence_score": 1.0
+      "target": "codebase_design_skill_principles"
     },
     {
       "relation": "contains",
@@ -20659,9 +20659,9 @@
       "source_file": ".cursor/skills/codebase-design/SKILL.md",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_skill_codebase_design",
-      "target": "codebase_design_skill_rejected_framings",
-      "confidence_score": 1.0
+      "target": "codebase_design_skill_rejected_framings"
     },
     {
       "relation": "contains",
@@ -20669,9 +20669,9 @@
       "source_file": ".cursor/skills/codebase-design/SKILL.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "codebase_design_skill_codebase_design",
-      "target": "codebase_design_skill_relationships",
-      "confidence_score": 1.0
+      "target": "codebase_design_skill_relationships"
     },
     {
       "relation": "contains",
@@ -20679,9 +20679,9 @@
       "source_file": ".cursor/skills/component-parity-qa/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "component_parity_qa_skill",
-      "target": "component_parity_qa_skill_component_parity_qa",
-      "confidence_score": 1.0
+      "target": "component_parity_qa_skill_component_parity_qa"
     },
     {
       "relation": "conceptually_related_to",
@@ -20699,9 +20699,9 @@
       "source_file": ".cursor/skills/component-parity-qa/SKILL.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "component_parity_qa_skill_component_parity_qa",
-      "target": "component_parity_qa_skill_instructions",
-      "confidence_score": 1.0
+      "target": "component_parity_qa_skill_instructions"
     },
     {
       "relation": "contains",
@@ -20709,9 +20709,9 @@
       "source_file": ".cursor/skills/component-parity-qa/SKILL.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "component_parity_qa_skill_component_parity_qa",
-      "target": "component_parity_qa_skill_output_format",
-      "confidence_score": 1.0
+      "target": "component_parity_qa_skill_output_format"
     },
     {
       "relation": "references",
@@ -20729,9 +20729,9 @@
       "source_file": ".cursor/skills/component-parity-qa/SKILL.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "component_parity_qa_skill_component_parity_qa",
-      "target": "component_parity_qa_skill_utility_script",
-      "confidence_score": 1.0
+      "target": "component_parity_qa_skill_utility_script"
     },
     {
       "relation": "contains",
@@ -20739,9 +20739,9 @@
       "source_file": ".cursor/skills/component-parity-qa/SKILL.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "component_parity_qa_skill_component_parity_qa",
-      "target": "component_parity_qa_skill_when_to_use",
-      "confidence_score": 1.0
+      "target": "component_parity_qa_skill_when_to_use"
     },
     {
       "relation": "contains",
@@ -20749,9 +20749,9 @@
       "source_file": ".cursor/skills/discovery-phase/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "discovery_phase_skill",
-      "target": "discovery_phase_skill_discovery_phase",
-      "confidence_score": 1.0
+      "target": "discovery_phase_skill_discovery_phase"
     },
     {
       "relation": "references",
@@ -20769,9 +20769,9 @@
       "source_file": ".cursor/skills/discovery-phase/SKILL.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "discovery_phase_skill_discovery_phase",
-      "target": "discovery_phase_skill_discovery_brief_template",
-      "confidence_score": 1.0
+      "target": "discovery_phase_skill_discovery_brief_template"
     },
     {
       "relation": "contains",
@@ -20779,9 +20779,9 @@
       "source_file": ".cursor/skills/discovery-phase/SKILL.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "discovery_phase_skill_discovery_phase",
-      "target": "discovery_phase_skill_plan_template",
-      "confidence_score": 1.0
+      "target": "discovery_phase_skill_plan_template"
     },
     {
       "relation": "references",
@@ -20799,9 +20799,9 @@
       "source_file": ".cursor/skills/discovery-phase/SKILL.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "discovery_phase_skill_discovery_phase",
-      "target": "discovery_phase_skill_related_skills",
-      "confidence_score": 1.0
+      "target": "discovery_phase_skill_related_skills"
     },
     {
       "relation": "contains",
@@ -20809,9 +20809,9 @@
       "source_file": ".cursor/skills/discovery-phase/SKILL.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "discovery_phase_skill_discovery_phase",
-      "target": "discovery_phase_skill_subagent_recon_brief",
-      "confidence_score": 1.0
+      "target": "discovery_phase_skill_subagent_recon_brief"
     },
     {
       "relation": "contains",
@@ -20819,9 +20819,9 @@
       "source_file": ".cursor/skills/discovery-phase/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "discovery_phase_skill_discovery_phase",
-      "target": "discovery_phase_skill_when_to_use",
-      "confidence_score": 1.0
+      "target": "discovery_phase_skill_when_to_use"
     },
     {
       "relation": "contains",
@@ -20829,9 +20829,9 @@
       "source_file": ".cursor/skills/discovery-phase/SKILL.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "discovery_phase_skill_discovery_phase",
-      "target": "discovery_phase_skill_workflow",
-      "confidence_score": 1.0
+      "target": "discovery_phase_skill_workflow"
     },
     {
       "relation": "references",
@@ -20879,9 +20879,9 @@
       "source_file": ".cursor/skills/domain-modeling/ADR-FORMAT.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_adr_format",
-      "target": "domain_modeling_adr_format_adr_format",
-      "confidence_score": 1.0
+      "target": "domain_modeling_adr_format_adr_format"
     },
     {
       "relation": "contains",
@@ -20889,9 +20889,9 @@
       "source_file": ".cursor/skills/domain-modeling/ADR-FORMAT.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_adr_format_adr_format",
-      "target": "domain_modeling_adr_format_numbering",
-      "confidence_score": 1.0
+      "target": "domain_modeling_adr_format_numbering"
     },
     {
       "relation": "contains",
@@ -20899,9 +20899,9 @@
       "source_file": ".cursor/skills/domain-modeling/ADR-FORMAT.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_adr_format_adr_format",
-      "target": "domain_modeling_adr_format_optional_sections",
-      "confidence_score": 1.0
+      "target": "domain_modeling_adr_format_optional_sections"
     },
     {
       "relation": "contains",
@@ -20909,9 +20909,9 @@
       "source_file": ".cursor/skills/domain-modeling/ADR-FORMAT.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_adr_format_adr_format",
-      "target": "domain_modeling_adr_format_template",
-      "confidence_score": 1.0
+      "target": "domain_modeling_adr_format_template"
     },
     {
       "relation": "contains",
@@ -20919,9 +20919,9 @@
       "source_file": ".cursor/skills/domain-modeling/ADR-FORMAT.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_adr_format_adr_format",
-      "target": "domain_modeling_adr_format_when_to_offer_an_adr",
-      "confidence_score": 1.0
+      "target": "domain_modeling_adr_format_when_to_offer_an_adr"
     },
     {
       "relation": "contains",
@@ -20929,9 +20929,9 @@
       "source_file": ".cursor/skills/domain-modeling/ADR-FORMAT.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_adr_format_when_to_offer_an_adr",
-      "target": "domain_modeling_adr_format_what_qualifies",
-      "confidence_score": 1.0
+      "target": "domain_modeling_adr_format_what_qualifies"
     },
     {
       "relation": "contains",
@@ -20939,9 +20939,9 @@
       "source_file": ".cursor/skills/domain-modeling/CONTEXT-FORMAT.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_context_format",
-      "target": "domain_modeling_context_format_context_md_format",
-      "confidence_score": 1.0
+      "target": "domain_modeling_context_format_context_md_format"
     },
     {
       "relation": "contains",
@@ -20949,9 +20949,9 @@
       "source_file": ".cursor/skills/domain-modeling/CONTEXT-FORMAT.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_context_format_context_md_format",
-      "target": "domain_modeling_context_format_rules",
-      "confidence_score": 1.0
+      "target": "domain_modeling_context_format_rules"
     },
     {
       "relation": "contains",
@@ -20959,9 +20959,9 @@
       "source_file": ".cursor/skills/domain-modeling/CONTEXT-FORMAT.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_context_format_context_md_format",
-      "target": "domain_modeling_context_format_single_vs_multi_context_repos",
-      "confidence_score": 1.0
+      "target": "domain_modeling_context_format_single_vs_multi_context_repos"
     },
     {
       "relation": "contains",
@@ -20969,9 +20969,9 @@
       "source_file": ".cursor/skills/domain-modeling/CONTEXT-FORMAT.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_context_format_context_md_format",
-      "target": "domain_modeling_context_format_structure",
-      "confidence_score": 1.0
+      "target": "domain_modeling_context_format_structure"
     },
     {
       "relation": "contains",
@@ -20979,9 +20979,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill",
-      "target": "domain_modeling_skill_domain_modeling",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_domain_modeling"
     },
     {
       "relation": "references",
@@ -21019,9 +21019,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill_domain_modeling",
-      "target": "domain_modeling_skill_during_the_session",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_during_the_session"
     },
     {
       "relation": "contains",
@@ -21029,9 +21029,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill_domain_modeling",
-      "target": "domain_modeling_skill_file_structure",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_file_structure"
     },
     {
       "relation": "references",
@@ -21059,9 +21059,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill_during_the_session",
-      "target": "domain_modeling_skill_challenge_against_the_glossary",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_challenge_against_the_glossary"
     },
     {
       "relation": "contains",
@@ -21069,9 +21069,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill_during_the_session",
-      "target": "domain_modeling_skill_cross_reference_with_code",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_cross_reference_with_code"
     },
     {
       "relation": "contains",
@@ -21079,9 +21079,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill_during_the_session",
-      "target": "domain_modeling_skill_discuss_concrete_scenarios",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_discuss_concrete_scenarios"
     },
     {
       "relation": "contains",
@@ -21089,9 +21089,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill_during_the_session",
-      "target": "domain_modeling_skill_offer_adrs_sparingly",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_offer_adrs_sparingly"
     },
     {
       "relation": "contains",
@@ -21099,9 +21099,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill_during_the_session",
-      "target": "domain_modeling_skill_sharpen_fuzzy_language",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_sharpen_fuzzy_language"
     },
     {
       "relation": "contains",
@@ -21109,9 +21109,9 @@
       "source_file": ".cursor/skills/domain-modeling/SKILL.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_modeling_skill_during_the_session",
-      "target": "domain_modeling_skill_update_context_md_inline",
-      "confidence_score": 1.0
+      "target": "domain_modeling_skill_update_context_md_inline"
     },
     {
       "relation": "contains",
@@ -21119,9 +21119,9 @@
       "source_file": ".cursor/skills/full-stack-feature/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "full_stack_feature_skill",
-      "target": "full_stack_feature_skill_full_stack_feature",
-      "confidence_score": 1.0
+      "target": "full_stack_feature_skill_full_stack_feature"
     },
     {
       "relation": "references",
@@ -21139,9 +21139,9 @@
       "source_file": ".cursor/skills/full-stack-feature/SKILL.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "full_stack_feature_skill_full_stack_feature",
-      "target": "full_stack_feature_skill_api_contract_template",
-      "confidence_score": 1.0
+      "target": "full_stack_feature_skill_api_contract_template"
     },
     {
       "relation": "contains",
@@ -21149,9 +21149,9 @@
       "source_file": ".cursor/skills/full-stack-feature/SKILL.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "full_stack_feature_skill_full_stack_feature",
-      "target": "full_stack_feature_skill_delegation_pattern",
-      "confidence_score": 1.0
+      "target": "full_stack_feature_skill_delegation_pattern"
     },
     {
       "relation": "contains",
@@ -21159,9 +21159,9 @@
       "source_file": ".cursor/skills/full-stack-feature/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "full_stack_feature_skill_full_stack_feature",
-      "target": "full_stack_feature_skill_discovery_checklist",
-      "confidence_score": 1.0
+      "target": "full_stack_feature_skill_discovery_checklist"
     },
     {
       "relation": "references",
@@ -21179,9 +21179,9 @@
       "source_file": ".cursor/skills/full-stack-feature/SKILL.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "full_stack_feature_skill_full_stack_feature",
-      "target": "full_stack_feature_skill_handoff_prompt_template",
-      "confidence_score": 1.0
+      "target": "full_stack_feature_skill_handoff_prompt_template"
     },
     {
       "relation": "contains",
@@ -21189,9 +21189,9 @@
       "source_file": ".cursor/skills/full-stack-feature/SKILL.md",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "full_stack_feature_skill_full_stack_feature",
-      "target": "full_stack_feature_skill_related_skills",
-      "confidence_score": 1.0
+      "target": "full_stack_feature_skill_related_skills"
     },
     {
       "relation": "contains",
@@ -21199,9 +21199,9 @@
       "source_file": ".cursor/skills/full-stack-feature/SKILL.md",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "full_stack_feature_skill_full_stack_feature",
-      "target": "full_stack_feature_skill_verification",
-      "confidence_score": 1.0
+      "target": "full_stack_feature_skill_verification"
     },
     {
       "relation": "references",
@@ -21229,9 +21229,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report",
-      "target": "improve_codebase_architecture_html_report_html_report_format",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_html_report_format"
     },
     {
       "relation": "contains",
@@ -21239,9 +21239,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_html_report_format",
-      "target": "improve_codebase_architecture_html_report_candidate_card",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_candidate_card"
     },
     {
       "relation": "contains",
@@ -21249,9 +21249,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_html_report_format",
-      "target": "improve_codebase_architecture_html_report_diagram_patterns",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_diagram_patterns"
     },
     {
       "relation": "contains",
@@ -21259,9 +21259,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_html_report_format",
-      "target": "improve_codebase_architecture_html_report_header",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_header"
     },
     {
       "relation": "contains",
@@ -21269,9 +21269,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_html_report_format",
-      "target": "improve_codebase_architecture_html_report_scaffold",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_scaffold"
     },
     {
       "relation": "contains",
@@ -21279,9 +21279,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_html_report_format",
-      "target": "improve_codebase_architecture_html_report_style_guidance",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_style_guidance"
     },
     {
       "relation": "contains",
@@ -21289,9 +21289,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_html_report_format",
-      "target": "improve_codebase_architecture_html_report_tone",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_tone"
     },
     {
       "relation": "contains",
@@ -21299,9 +21299,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_html_report_format",
-      "target": "improve_codebase_architecture_html_report_top_recommendation_section",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_top_recommendation_section"
     },
     {
       "relation": "contains",
@@ -21309,9 +21309,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_diagram_patterns",
-      "target": "improve_codebase_architecture_html_report_call_graph_collapse",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_call_graph_collapse"
     },
     {
       "relation": "contains",
@@ -21319,9 +21319,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_diagram_patterns",
-      "target": "improve_codebase_architecture_html_report_cross_section_good_for_layered_shallowness",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_cross_section_good_for_layered_shallowness"
     },
     {
       "relation": "contains",
@@ -21329,9 +21329,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_diagram_patterns",
-      "target": "improve_codebase_architecture_html_report_hand_built_boxes_and_arrows_when_mermaid_s_layout_fights_you",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_hand_built_boxes_and_arrows_when_mermaid_s_layout_fights_you"
     },
     {
       "relation": "contains",
@@ -21339,9 +21339,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_diagram_patterns",
-      "target": "improve_codebase_architecture_html_report_mass_diagram_good_for_interface_as_wide_as_implementation",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_mass_diagram_good_for_interface_as_wide_as_implementation"
     },
     {
       "relation": "contains",
@@ -21349,9 +21349,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/HTML-REPORT.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_html_report_diagram_patterns",
-      "target": "improve_codebase_architecture_html_report_mermaid_graph_the_workhorse_for_dependencies_call_flow",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_html_report_mermaid_graph_the_workhorse_for_dependencies_call_flow"
     },
     {
       "relation": "contains",
@@ -21359,9 +21359,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/SKILL.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_skill",
-      "target": "improve_codebase_architecture_skill_improve_codebase_architecture",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_skill_improve_codebase_architecture"
     },
     {
       "relation": "references",
@@ -21439,9 +21439,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/SKILL.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_skill_improve_codebase_architecture",
-      "target": "improve_codebase_architecture_skill_process",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_skill_process"
     },
     {
       "relation": "contains",
@@ -21449,9 +21449,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/SKILL.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_skill_process",
-      "target": "improve_codebase_architecture_skill_1_explore",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_skill_1_explore"
     },
     {
       "relation": "contains",
@@ -21459,9 +21459,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/SKILL.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_skill_process",
-      "target": "improve_codebase_architecture_skill_2_present_candidates_as_an_html_report",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_skill_2_present_candidates_as_an_html_report"
     },
     {
       "relation": "contains",
@@ -21469,9 +21469,9 @@
       "source_file": ".cursor/skills/improve-codebase-architecture/SKILL.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "improve_codebase_architecture_skill_process",
-      "target": "improve_codebase_architecture_skill_3_grilling_loop",
-      "confidence_score": 1.0
+      "target": "improve_codebase_architecture_skill_3_grilling_loop"
     },
     {
       "relation": "contains",
@@ -21479,9 +21479,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill",
-      "target": "prd_to_issues_skill_prd_to_issues",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_prd_to_issues"
     },
     {
       "relation": "conceptually_related_to",
@@ -21509,9 +21509,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_additional_resources",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_additional_resources"
     },
     {
       "relation": "references",
@@ -21529,9 +21529,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_core_method_vertical_slices_tracer_bullets",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_core_method_vertical_slices_tracer_bullets"
     },
     {
       "relation": "references",
@@ -21549,9 +21549,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_issue_file_format",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_issue_file_format"
     },
     {
       "relation": "contains",
@@ -21559,9 +21559,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_output_layout",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_output_layout"
     },
     {
       "relation": "contains",
@@ -21569,9 +21569,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_phase_1_locate_the_prd",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_1_locate_the_prd"
     },
     {
       "relation": "contains",
@@ -21579,9 +21579,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_phase_2_explore_the_codebase_optional",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_2_explore_the_codebase_optional"
     },
     {
       "relation": "contains",
@@ -21589,9 +21589,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_phase_3_draft_vertical_slices",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_3_draft_vertical_slices"
     },
     {
       "relation": "contains",
@@ -21599,9 +21599,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_phase_4_quiz_the_user",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_4_quiz_the_user"
     },
     {
       "relation": "contains",
@@ -21609,9 +21609,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_phase_5_creatte_the_issue_files",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_5_creatte_the_issue_files"
     },
     {
       "relation": "contains",
@@ -21619,9 +21619,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_phases",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phases"
     },
     {
       "relation": "contains",
@@ -21629,9 +21629,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_prd_to_issues",
-      "target": "prd_to_issues_skill_session_checklist",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_session_checklist"
     },
     {
       "relation": "references",
@@ -21679,9 +21679,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_core_method_vertical_slices_tracer_bullets",
-      "target": "prd_to_issues_skill_anti_patterns",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_anti_patterns"
     },
     {
       "relation": "contains",
@@ -21689,9 +21689,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_core_method_vertical_slices_tracer_bullets",
-      "target": "prd_to_issues_skill_slicing_rules",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_slicing_rules"
     },
     {
       "relation": "contains",
@@ -21699,9 +21699,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_phase_1_locate_the_prd",
-      "target": "prd_to_issues_skill_phase_1_exit_criteria",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_1_exit_criteria"
     },
     {
       "relation": "contains",
@@ -21709,9 +21709,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_phase_2_explore_the_codebase_optional",
-      "target": "prd_to_issues_skill_phase_2_exit_criteria",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_2_exit_criteria"
     },
     {
       "relation": "contains",
@@ -21719,9 +21719,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_phase_3_draft_vertical_slices",
-      "target": "prd_to_issues_skill_phase_3_deliverable_working_notes_not_yet_on_disk",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_3_deliverable_working_notes_not_yet_on_disk"
     },
     {
       "relation": "contains",
@@ -21729,9 +21729,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_phase_3_draft_vertical_slices",
-      "target": "prd_to_issues_skill_phase_3_exit_criteria",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_3_exit_criteria"
     },
     {
       "relation": "contains",
@@ -21739,9 +21739,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_phase_4_quiz_the_user",
-      "target": "prd_to_issues_skill_phase_4_exit_criteria",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_4_exit_criteria"
     },
     {
       "relation": "contains",
@@ -21749,9 +21749,9 @@
       "source_file": ".cursor/skills/prd-to-issues/SKILL.md",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_skill_phase_5_creatte_the_issue_files",
-      "target": "prd_to_issues_skill_phase_5_exit_criteria",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_skill_phase_5_exit_criteria"
     },
     {
       "relation": "contains",
@@ -21759,9 +21759,9 @@
       "source_file": ".cursor/skills/prd-to-issues/issue-template.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_issue_template",
-      "target": "prd_to_issues_issue_template_issue_template",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_issue_template_issue_template"
     },
     {
       "relation": "shares_data_with",
@@ -21789,9 +21789,9 @@
       "source_file": ".cursor/skills/prd-to-issues/vertical-slices.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_vertical_slices",
-      "target": "prd_to_issues_vertical_slices_vertical_slice_heuristics",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_vertical_slices_vertical_slice_heuristics"
     },
     {
       "relation": "contains",
@@ -21799,9 +21799,9 @@
       "source_file": ".cursor/skills/prd-to-issues/vertical-slices.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_vertical_slices_vertical_slice_heuristics",
-      "target": "prd_to_issues_vertical_slices_dependency_graph_optional_working_notes",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_vertical_slices_dependency_graph_optional_working_notes"
     },
     {
       "relation": "contains",
@@ -21809,9 +21809,9 @@
       "source_file": ".cursor/skills/prd-to-issues/vertical-slices.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_vertical_slices_vertical_slice_heuristics",
-      "target": "prd_to_issues_vertical_slices_ihcs_monorepo_reminders",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_vertical_slices_ihcs_monorepo_reminders"
     },
     {
       "relation": "contains",
@@ -21819,9 +21819,9 @@
       "source_file": ".cursor/skills/prd-to-issues/vertical-slices.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_vertical_slices_vertical_slice_heuristics",
-      "target": "prd_to_issues_vertical_slices_ordering_patterns",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_vertical_slices_ordering_patterns"
     },
     {
       "relation": "contains",
@@ -21829,9 +21829,9 @@
       "source_file": ".cursor/skills/prd-to-issues/vertical-slices.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_vertical_slices_vertical_slice_heuristics",
-      "target": "prd_to_issues_vertical_slices_sizing_guide",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_vertical_slices_sizing_guide"
     },
     {
       "relation": "contains",
@@ -21839,9 +21839,9 @@
       "source_file": ".cursor/skills/prd-to-issues/vertical-slices.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prd_to_issues_vertical_slices_vertical_slice_heuristics",
-      "target": "prd_to_issues_vertical_slices_tracer_bullet_checklist",
-      "confidence_score": 1.0
+      "target": "prd_to_issues_vertical_slices_tracer_bullet_checklist"
     },
     {
       "relation": "contains",
@@ -21849,9 +21849,9 @@
       "source_file": ".cursor/skills/run-local-ci/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "run_local_ci_skill",
-      "target": "run_local_ci_skill_run_local_ci",
-      "confidence_score": 1.0
+      "target": "run_local_ci_skill_run_local_ci"
     },
     {
       "relation": "contains",
@@ -21859,9 +21859,9 @@
       "source_file": ".cursor/skills/run-local-ci/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "run_local_ci_skill_run_local_ci",
-      "target": "run_local_ci_skill_frontend",
-      "confidence_score": 1.0
+      "target": "run_local_ci_skill_frontend"
     },
     {
       "relation": "contains",
@@ -21869,9 +21869,9 @@
       "source_file": ".cursor/skills/run-local-ci/SKILL.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "run_local_ci_skill_run_local_ci",
-      "target": "run_local_ci_skill_reporting",
-      "confidence_score": 1.0
+      "target": "run_local_ci_skill_reporting"
     },
     {
       "relation": "contains",
@@ -21879,9 +21879,9 @@
       "source_file": ".cursor/skills/run-local-ci/SKILL.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "run_local_ci_skill_run_local_ci",
-      "target": "run_local_ci_skill_when_to_run",
-      "confidence_score": 1.0
+      "target": "run_local_ci_skill_when_to_run"
     },
     {
       "relation": "conceptually_related_to",
@@ -21899,9 +21899,9 @@
       "source_file": ".cursor/skills/scrape-portfolio-images/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scrape_portfolio_images_skill",
-      "target": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local",
-      "confidence_score": 1.0
+      "target": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local"
     },
     {
       "relation": "contains",
@@ -21909,9 +21909,9 @@
       "source_file": ".cursor/skills/scrape-portfolio-images/SKILL.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local",
-      "target": "scrape_portfolio_images_skill_after_download",
-      "confidence_score": 1.0
+      "target": "scrape_portfolio_images_skill_after_download"
     },
     {
       "relation": "contains",
@@ -21919,9 +21919,9 @@
       "source_file": ".cursor/skills/scrape-portfolio-images/SKILL.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local",
-      "target": "scrape_portfolio_images_skill_image_source_priority",
-      "confidence_score": 1.0
+      "target": "scrape_portfolio_images_skill_image_source_priority"
     },
     {
       "relation": "contains",
@@ -21929,9 +21929,9 @@
       "source_file": ".cursor/skills/scrape-portfolio-images/SKILL.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local",
-      "target": "scrape_portfolio_images_skill_output_layout",
-      "confidence_score": 1.0
+      "target": "scrape_portfolio_images_skill_output_layout"
     },
     {
       "relation": "contains",
@@ -21939,9 +21939,9 @@
       "source_file": ".cursor/skills/scrape-portfolio-images/SKILL.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local",
-      "target": "scrape_portfolio_images_skill_parallel_coordination",
-      "confidence_score": 1.0
+      "target": "scrape_portfolio_images_skill_parallel_coordination"
     },
     {
       "relation": "contains",
@@ -21949,9 +21949,9 @@
       "source_file": ".cursor/skills/scrape-portfolio-images/SKILL.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local",
-      "target": "scrape_portfolio_images_skill_run_preferred",
-      "confidence_score": 1.0
+      "target": "scrape_portfolio_images_skill_run_preferred"
     },
     {
       "relation": "contains",
@@ -21959,9 +21959,9 @@
       "source_file": ".cursor/skills/scrape-portfolio-images/SKILL.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local",
-      "target": "scrape_portfolio_images_skill_sub_collection_route_filename",
-      "confidence_score": 1.0
+      "target": "scrape_portfolio_images_skill_sub_collection_route_filename"
     },
     {
       "relation": "contains",
@@ -21969,9 +21969,9 @@
       "source_file": ".cursor/skills/scrape-portfolio-images/SKILL.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scrape_portfolio_images_skill_scrape_portfolio_images_niico_com_local",
-      "target": "scrape_portfolio_images_skill_when_to_use",
-      "confidence_score": 1.0
+      "target": "scrape_portfolio_images_skill_when_to_use"
     },
     {
       "relation": "contains",
@@ -21979,9 +21979,9 @@
       "source_file": ".cursor/skills/staff-gallery-datagrid/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_gallery_datagrid_skill",
-      "target": "staff_gallery_datagrid_skill_staff_gallery_datagrid",
-      "confidence_score": 1.0
+      "target": "staff_gallery_datagrid_skill_staff_gallery_datagrid"
     },
     {
       "relation": "contains",
@@ -21989,9 +21989,9 @@
       "source_file": ".cursor/skills/staff-gallery-datagrid/SKILL.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_gallery_datagrid_skill_staff_gallery_datagrid",
-      "target": "staff_gallery_datagrid_skill_already_converted",
-      "confidence_score": 1.0
+      "target": "staff_gallery_datagrid_skill_already_converted"
     },
     {
       "relation": "contains",
@@ -21999,9 +21999,9 @@
       "source_file": ".cursor/skills/staff-gallery-datagrid/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_gallery_datagrid_skill_staff_gallery_datagrid",
-      "target": "staff_gallery_datagrid_skill_layout",
-      "confidence_score": 1.0
+      "target": "staff_gallery_datagrid_skill_layout"
     },
     {
       "relation": "contains",
@@ -22009,9 +22009,9 @@
       "source_file": ".cursor/skills/staff-gallery-datagrid/SKILL.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_gallery_datagrid_skill_staff_gallery_datagrid",
-      "target": "staff_gallery_datagrid_skill_rows",
-      "confidence_score": 1.0
+      "target": "staff_gallery_datagrid_skill_rows"
     },
     {
       "relation": "references",
@@ -22029,9 +22029,9 @@
       "source_file": ".cursor/skills/staff-gallery-datagrid/SKILL.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_gallery_datagrid_skill_staff_gallery_datagrid",
-      "target": "staff_gallery_datagrid_skill_usage",
-      "confidence_score": 1.0
+      "target": "staff_gallery_datagrid_skill_usage"
     },
     {
       "relation": "contains",
@@ -22039,9 +22039,9 @@
       "source_file": ".cursor/skills/tdd/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_skill",
-      "target": "tdd_skill_test_driven_development",
-      "confidence_score": 1.0
+      "target": "tdd_skill_test_driven_development"
     },
     {
       "relation": "conceptually_related_to",
@@ -22074,6 +22074,26 @@
       "target": "tdd_refactoring_refactor_candidates"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/tdd/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tdd_skill_test_driven_development",
+      "target": "tdd_skill_anti_pattern_horizontal_slices"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/tdd/SKILL.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tdd_skill_test_driven_development",
+      "target": "tdd_skill_checklist_per_cycle"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -22086,12 +22106,22 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": ".cursor/skills/tdd/SKILL.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_skill_test_driven_development",
       "target": "tdd_skill_ihcs_test_stack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/tdd/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tdd_skill_test_driven_development",
+      "target": "tdd_skill_philosophy"
     },
     {
       "relation": "references",
@@ -22102,6 +22132,26 @@
       "weight": 1.0,
       "source": "tdd_skill_test_driven_development",
       "target": "tdd_skill_red_green_refactor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/tdd/SKILL.md",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tdd_skill_test_driven_development",
+      "target": "tdd_skill_when_tests_are_not_the_right_tool"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/tdd/SKILL.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tdd_skill_test_driven_development",
+      "target": "tdd_skill_workflow"
     },
     {
       "relation": "references",
@@ -22117,61 +22167,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".cursor/skills/tdd/SKILL.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "tdd_skill_test_driven_development",
-      "target": "tdd_skill_anti_pattern_horizontal_slices",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".cursor/skills/tdd/SKILL.md",
-      "source_location": "L128",
-      "weight": 1.0,
-      "source": "tdd_skill_test_driven_development",
-      "target": "tdd_skill_checklist_per_cycle",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".cursor/skills/tdd/SKILL.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "tdd_skill_test_driven_development",
-      "target": "tdd_skill_philosophy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".cursor/skills/tdd/SKILL.md",
-      "source_location": "L139",
-      "weight": 1.0,
-      "source": "tdd_skill_test_driven_development",
-      "target": "tdd_skill_when_tests_are_not_the_right_tool",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".cursor/skills/tdd/SKILL.md",
-      "source_location": "L66",
-      "weight": 1.0,
-      "source": "tdd_skill_test_driven_development",
-      "target": "tdd_skill_workflow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".cursor/skills/tdd/SKILL.md",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_skill_workflow",
-      "target": "tdd_skill_1_planning",
-      "confidence_score": 1.0
+      "target": "tdd_skill_1_planning"
     },
     {
       "relation": "contains",
@@ -22179,9 +22179,9 @@
       "source_file": ".cursor/skills/tdd/SKILL.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_skill_workflow",
-      "target": "tdd_skill_2_tracer_bullet",
-      "confidence_score": 1.0
+      "target": "tdd_skill_2_tracer_bullet"
     },
     {
       "relation": "contains",
@@ -22189,9 +22189,9 @@
       "source_file": ".cursor/skills/tdd/SKILL.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_skill_workflow",
-      "target": "tdd_skill_3_incremental_loop",
-      "confidence_score": 1.0
+      "target": "tdd_skill_3_incremental_loop"
     },
     {
       "relation": "contains",
@@ -22199,9 +22199,9 @@
       "source_file": ".cursor/skills/tdd/SKILL.md",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_skill_workflow",
-      "target": "tdd_skill_4_refactor",
-      "confidence_score": 1.0
+      "target": "tdd_skill_4_refactor"
     },
     {
       "relation": "contains",
@@ -22209,9 +22209,9 @@
       "source_file": ".cursor/skills/tdd/SKILL.md",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_skill_workflow",
-      "target": "tdd_skill_5_finish",
-      "confidence_score": 1.0
+      "target": "tdd_skill_5_finish"
     },
     {
       "relation": "contains",
@@ -22219,9 +22219,9 @@
       "source_file": ".cursor/skills/tdd/mocking.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_mocking",
-      "target": "tdd_mocking_when_to_mock",
-      "confidence_score": 1.0
+      "target": "tdd_mocking_when_to_mock"
     },
     {
       "relation": "contains",
@@ -22229,9 +22229,9 @@
       "source_file": ".cursor/skills/tdd/mocking.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_mocking_when_to_mock",
-      "target": "tdd_mocking_designing_for_mockability",
-      "confidence_score": 1.0
+      "target": "tdd_mocking_designing_for_mockability"
     },
     {
       "relation": "contains",
@@ -22239,9 +22239,9 @@
       "source_file": ".cursor/skills/tdd/mocking.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_mocking_when_to_mock",
-      "target": "tdd_mocking_ihcs_notes",
-      "confidence_score": 1.0
+      "target": "tdd_mocking_ihcs_notes"
     },
     {
       "relation": "contains",
@@ -22249,9 +22249,9 @@
       "source_file": ".cursor/skills/tdd/refactoring.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_refactoring",
-      "target": "tdd_refactoring_refactor_candidates",
-      "confidence_score": 1.0
+      "target": "tdd_refactoring_refactor_candidates"
     },
     {
       "relation": "conceptually_related_to",
@@ -22269,9 +22269,9 @@
       "source_file": ".cursor/skills/tdd/tests.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_tests",
-      "target": "tdd_tests_good_and_bad_tests",
-      "confidence_score": 1.0
+      "target": "tdd_tests_good_and_bad_tests"
     },
     {
       "relation": "contains",
@@ -22279,9 +22279,9 @@
       "source_file": ".cursor/skills/tdd/tests.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_tests_good_and_bad_tests",
-      "target": "tdd_tests_bad_tests",
-      "confidence_score": 1.0
+      "target": "tdd_tests_bad_tests"
     },
     {
       "relation": "contains",
@@ -22289,9 +22289,9 @@
       "source_file": ".cursor/skills/tdd/tests.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tdd_tests_good_and_bad_tests",
-      "target": "tdd_tests_good_tests",
-      "confidence_score": 1.0
+      "target": "tdd_tests_good_tests"
     },
     {
       "relation": "contains",
@@ -22299,9 +22299,9 @@
       "source_file": ".cursor/skills/ts-reusable-mui-components/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ts_reusable_mui_components_skill",
-      "target": "ts_reusable_mui_components_skill_typescript_reusable_mui_components",
-      "confidence_score": 1.0
+      "target": "ts_reusable_mui_components_skill_typescript_reusable_mui_components"
     },
     {
       "relation": "references",
@@ -22319,9 +22319,9 @@
       "source_file": ".cursor/skills/ts-reusable-mui-components/SKILL.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ts_reusable_mui_components_skill_typescript_reusable_mui_components",
-      "target": "ts_reusable_mui_components_skill_instructions",
-      "confidence_score": 1.0
+      "target": "ts_reusable_mui_components_skill_instructions"
     },
     {
       "relation": "contains",
@@ -22329,9 +22329,9 @@
       "source_file": ".cursor/skills/ts-reusable-mui-components/SKILL.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ts_reusable_mui_components_skill_typescript_reusable_mui_components",
-      "target": "ts_reusable_mui_components_skill_output_format",
-      "confidence_score": 1.0
+      "target": "ts_reusable_mui_components_skill_output_format"
     },
     {
       "relation": "contains",
@@ -22339,9 +22339,9 @@
       "source_file": ".cursor/skills/ts-reusable-mui-components/SKILL.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ts_reusable_mui_components_skill_typescript_reusable_mui_components",
-      "target": "ts_reusable_mui_components_skill_utility_script",
-      "confidence_score": 1.0
+      "target": "ts_reusable_mui_components_skill_utility_script"
     },
     {
       "relation": "contains",
@@ -22349,9 +22349,9 @@
       "source_file": ".cursor/skills/ts-reusable-mui-components/SKILL.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ts_reusable_mui_components_skill_typescript_reusable_mui_components",
-      "target": "ts_reusable_mui_components_skill_when_to_use",
-      "confidence_score": 1.0
+      "target": "ts_reusable_mui_components_skill_when_to_use"
     },
     {
       "relation": "references",
@@ -22389,9 +22389,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill",
-      "target": "write_a_prd_skill_write_a_prd",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_write_a_prd"
     },
     {
       "relation": "references",
@@ -22409,9 +22409,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L256",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_additional_resources",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_additional_resources"
     },
     {
       "relation": "contains",
@@ -22419,9 +22419,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L225",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_file_naming",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_file_naming"
     },
     {
       "relation": "contains",
@@ -22429,9 +22429,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_phase_1_deep_intake",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_phase_1_deep_intake"
     },
     {
       "relation": "contains",
@@ -22439,9 +22439,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_phase_2_repo_discovery",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_phase_2_repo_discovery"
     },
     {
       "relation": "contains",
@@ -22449,9 +22449,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_phase_3_design_tree_interview",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_phase_3_design_tree_interview"
     },
     {
       "relation": "contains",
@@ -22459,9 +22459,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_phase_4_module_sketch",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_phase_4_module_sketch"
     },
     {
       "relation": "contains",
@@ -22469,9 +22469,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L205",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_phase_5_write_prd",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_phase_5_write_prd"
     },
     {
       "relation": "contains",
@@ -22479,9 +22479,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_phase_6_confirm",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_phase_6_confirm"
     },
     {
       "relation": "contains",
@@ -22489,9 +22489,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L244",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_session_checklist",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_session_checklist"
     },
     {
       "relation": "contains",
@@ -22499,9 +22499,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L235",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_write_a_prd",
-      "target": "write_a_prd_skill_writing_rules",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_writing_rules"
     },
     {
       "relation": "contains",
@@ -22509,9 +22509,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_1_deep_intake",
-      "target": "write_a_prd_skill_capture",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_capture"
     },
     {
       "relation": "contains",
@@ -22519,9 +22519,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_1_deep_intake",
-      "target": "write_a_prd_skill_opening_prompt",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_opening_prompt"
     },
     {
       "relation": "contains",
@@ -22529,9 +22529,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_1_deep_intake",
-      "target": "write_a_prd_skill_while_waiting",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_while_waiting"
     },
     {
       "relation": "contains",
@@ -22539,9 +22539,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_2_repo_discovery",
-      "target": "write_a_prd_skill_graphify_first_mandatory",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_graphify_first_mandatory"
     },
     {
       "relation": "contains",
@@ -22549,9 +22549,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_2_repo_discovery",
-      "target": "write_a_prd_skill_what_to_produce",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_what_to_produce"
     },
     {
       "relation": "contains",
@@ -22559,9 +22559,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_2_repo_discovery",
-      "target": "write_a_prd_skill_when_to_use_subagents",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_when_to_use_subagents"
     },
     {
       "relation": "contains",
@@ -22569,9 +22569,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_3_design_tree_interview",
-      "target": "write_a_prd_skill_dependency_examples",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_dependency_examples"
     },
     {
       "relation": "contains",
@@ -22579,9 +22579,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_3_design_tree_interview",
-      "target": "write_a_prd_skill_design_tree_walk_order",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_design_tree_walk_order"
     },
     {
       "relation": "contains",
@@ -22589,9 +22589,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_3_design_tree_interview",
-      "target": "write_a_prd_skill_phase_3_exit_criteria",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_phase_3_exit_criteria"
     },
     {
       "relation": "contains",
@@ -22599,9 +22599,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_3_design_tree_interview",
-      "target": "write_a_prd_skill_rules",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_rules"
     },
     {
       "relation": "contains",
@@ -22609,9 +22609,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_3_design_tree_interview",
-      "target": "write_a_prd_skill_when_a_branch_is_done",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_when_a_branch_is_done"
     },
     {
       "relation": "contains",
@@ -22619,9 +22619,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_4_module_sketch",
-      "target": "write_a_prd_skill_confirm_with_user",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_confirm_with_user"
     },
     {
       "relation": "contains",
@@ -22629,9 +22629,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_4_module_sketch",
-      "target": "write_a_prd_skill_extraction_mindset",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_extraction_mindset"
     },
     {
       "relation": "contains",
@@ -22639,9 +22639,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_4_module_sketch",
-      "target": "write_a_prd_skill_graphify_mandatory",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_graphify_mandatory"
     },
     {
       "relation": "contains",
@@ -22649,9 +22649,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_4_module_sketch",
-      "target": "write_a_prd_skill_phase_4_exit_criteria",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_phase_4_exit_criteria"
     },
     {
       "relation": "contains",
@@ -22659,9 +22659,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_4_module_sketch",
-      "target": "write_a_prd_skill_purpose",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_purpose"
     },
     {
       "relation": "contains",
@@ -22669,9 +22669,9 @@
       "source_file": ".cursor/skills/write-a-prd/SKILL.md",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_skill_phase_4_module_sketch",
-      "target": "write_a_prd_skill_what_to_produce_178",
-      "confidence_score": 1.0
+      "target": "write_a_prd_skill_what_to_produce_178"
     },
     {
       "relation": "rationale_for",
@@ -22689,9 +22689,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide",
-      "target": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_design_tree_interview_guide"
     },
     {
       "relation": "references",
@@ -22719,9 +22719,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_branch_1_problem_and_success_root",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_branch_1_problem_and_success_root"
     },
     {
       "relation": "contains",
@@ -22729,9 +22729,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_branch_2_users_and_permissions",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_branch_2_users_and_permissions"
     },
     {
       "relation": "contains",
@@ -22739,9 +22739,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_branch_3_product_surface_and_scope",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_branch_3_product_surface_and_scope"
     },
     {
       "relation": "contains",
@@ -22749,9 +22749,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_branch_4_data_and_integrations",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_branch_4_data_and_integrations"
     },
     {
       "relation": "contains",
@@ -22759,9 +22759,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_branch_5_ux_and_flows",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_branch_5_ux_and_flows"
     },
     {
       "relation": "contains",
@@ -22769,9 +22769,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_branch_6_non_functional_requirements",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_branch_6_non_functional_requirements"
     },
     {
       "relation": "contains",
@@ -22779,9 +22779,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_branch_7_rollout_and_phasing",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_branch_7_rollout_and_phasing"
     },
     {
       "relation": "contains",
@@ -22789,9 +22789,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_branch_8_acceptance_and_verification",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_branch_8_acceptance_and_verification"
     },
     {
       "relation": "contains",
@@ -22799,9 +22799,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_design_tree_interview_guide",
-      "target": "write_a_prd_interview_guide_interview_tactics",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_interview_tactics"
     },
     {
       "relation": "contains",
@@ -22809,9 +22809,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_interview_tactics",
-      "target": "write_a_prd_interview_guide_batching",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_batching"
     },
     {
       "relation": "contains",
@@ -22819,9 +22819,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_interview_tactics",
-      "target": "write_a_prd_interview_guide_decision_log_template",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_decision_log_template"
     },
     {
       "relation": "contains",
@@ -22829,9 +22829,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_interview_tactics",
-      "target": "write_a_prd_interview_guide_relentless_but_respectful",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_relentless_but_respectful"
     },
     {
       "relation": "contains",
@@ -22839,9 +22839,9 @@
       "source_file": ".cursor/skills/write-a-prd/interview-guide.md",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_interview_guide_interview_tactics",
-      "target": "write_a_prd_interview_guide_stuck_loops",
-      "confidence_score": 1.0
+      "target": "write_a_prd_interview_guide_stuck_loops"
     },
     {
       "relation": "references",
@@ -22869,9 +22869,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch",
-      "target": "write_a_prd_module_sketch_module_sketch_guide",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_module_sketch_guide"
     },
     {
       "relation": "references",
@@ -22899,9 +22899,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_module_sketch_guide",
-      "target": "write_a_prd_module_sketch_anti_patterns",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_anti_patterns"
     },
     {
       "relation": "contains",
@@ -22909,9 +22909,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_module_sketch_guide",
-      "target": "write_a_prd_module_sketch_extraction_heuristics",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_extraction_heuristics"
     },
     {
       "relation": "contains",
@@ -22919,9 +22919,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_module_sketch_guide",
-      "target": "write_a_prd_module_sketch_goals",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_goals"
     },
     {
       "relation": "contains",
@@ -22929,9 +22929,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_module_sketch_guide",
-      "target": "write_a_prd_module_sketch_ihcs_conventions",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_ihcs_conventions"
     },
     {
       "relation": "contains",
@@ -22939,9 +22939,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_module_sketch_guide",
-      "target": "write_a_prd_module_sketch_module_table_template",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_module_table_template"
     },
     {
       "relation": "contains",
@@ -22949,9 +22949,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_module_sketch_guide",
-      "target": "write_a_prd_module_sketch_phase_4_exit_criteria",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_phase_4_exit_criteria"
     },
     {
       "relation": "contains",
@@ -22959,9 +22959,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_module_sketch_guide",
-      "target": "write_a_prd_module_sketch_process",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_process"
     },
     {
       "relation": "contains",
@@ -22969,9 +22969,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_process",
-      "target": "write_a_prd_module_sketch_1_re_ground_in_the_repo",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_1_re_ground_in_the_repo"
     },
     {
       "relation": "contains",
@@ -22979,9 +22979,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_process",
-      "target": "write_a_prd_module_sketch_2_layer_the_sketch",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_2_layer_the_sketch"
     },
     {
       "relation": "contains",
@@ -22989,9 +22989,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_process",
-      "target": "write_a_prd_module_sketch_3_hunt_for_deep_modules_required",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_3_hunt_for_deep_modules_required"
     },
     {
       "relation": "contains",
@@ -22999,9 +22999,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_process",
-      "target": "write_a_prd_module_sketch_4_draw_the_dependency_graph",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_4_draw_the_dependency_graph"
     },
     {
       "relation": "contains",
@@ -23009,9 +23009,9 @@
       "source_file": ".cursor/skills/write-a-prd/module-sketch.md",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_module_sketch_process",
-      "target": "write_a_prd_module_sketch_5_present_and_confirm",
-      "confidence_score": 1.0
+      "target": "write_a_prd_module_sketch_5_present_and_confirm"
     },
     {
       "relation": "conceptually_related_to",
@@ -23049,9 +23049,9 @@
       "source_file": ".cursor/skills/write-a-prd/template.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "write_a_prd_template",
-      "target": "write_a_prd_template_prd_template",
-      "confidence_score": 1.0
+      "target": "write_a_prd_template_prd_template"
     },
     {
       "relation": "references",
@@ -23089,9 +23089,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference",
-      "target": "brand_reference_care_bear_daycare_brand_reference",
-      "confidence_score": 1.0
+      "target": "brand_reference_care_bear_daycare_brand_reference"
     },
     {
       "relation": "references",
@@ -23179,9 +23179,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_care_bear_daycare_brand_reference",
-      "target": "brand_reference_1_color",
-      "confidence_score": 1.0
+      "target": "brand_reference_1_color"
     },
     {
       "relation": "contains",
@@ -23189,9 +23189,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_care_bear_daycare_brand_reference",
-      "target": "brand_reference_2_typography",
-      "confidence_score": 1.0
+      "target": "brand_reference_2_typography"
     },
     {
       "relation": "contains",
@@ -23199,9 +23199,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_care_bear_daycare_brand_reference",
-      "target": "brand_reference_3_components",
-      "confidence_score": 1.0
+      "target": "brand_reference_3_components"
     },
     {
       "relation": "contains",
@@ -23209,9 +23209,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_care_bear_daycare_brand_reference",
-      "target": "brand_reference_4_layout_notes_that_still_hold",
-      "confidence_score": 1.0
+      "target": "brand_reference_4_layout_notes_that_still_hold"
     },
     {
       "relation": "contains",
@@ -23219,9 +23219,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_care_bear_daycare_brand_reference",
-      "target": "brand_reference_5_do_don_t",
-      "confidence_score": 1.0
+      "target": "brand_reference_5_do_don_t"
     },
     {
       "relation": "contains",
@@ -23229,9 +23229,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_1_color",
-      "target": "brand_reference_1_1_marketing_tokens",
-      "confidence_score": 1.0
+      "target": "brand_reference_1_1_marketing_tokens"
     },
     {
       "relation": "contains",
@@ -23239,9 +23239,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_1_color",
-      "target": "brand_reference_1_2_staff_dark_teal_charcoal",
-      "confidence_score": 1.0
+      "target": "brand_reference_1_2_staff_dark_teal_charcoal"
     },
     {
       "relation": "contains",
@@ -23249,9 +23249,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_1_color",
-      "target": "brand_reference_1_3_semantic_colors_that_are_not_the_brand",
-      "confidence_score": 1.0
+      "target": "brand_reference_1_3_semantic_colors_that_are_not_the_brand"
     },
     {
       "relation": "contains",
@@ -23259,9 +23259,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_3_components",
-      "target": "brand_reference_3_1_hero_buttons",
-      "confidence_score": 1.0
+      "target": "brand_reference_3_1_hero_buttons"
     },
     {
       "relation": "contains",
@@ -23269,9 +23269,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_3_components",
-      "target": "brand_reference_3_2_nav",
-      "confidence_score": 1.0
+      "target": "brand_reference_3_2_nav"
     },
     {
       "relation": "contains",
@@ -23279,9 +23279,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_3_components",
-      "target": "brand_reference_3_3_forms",
-      "confidence_score": 1.0
+      "target": "brand_reference_3_3_forms"
     },
     {
       "relation": "contains",
@@ -23289,9 +23289,9 @@
       "source_file": "BRAND-REFERENCE.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_reference_3_components",
-      "target": "brand_reference_3_4_scrollbar",
-      "confidence_score": 1.0
+      "target": "brand_reference_3_4_scrollbar"
     },
     {
       "relation": "contains",
@@ -23299,9 +23299,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_care_bear_daycare",
-      "confidence_score": 1.0
+      "target": "readme_care_bear_daycare"
     },
     {
       "relation": "references",
@@ -23379,9 +23379,9 @@
       "source_file": "README.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_care_bear_daycare",
-      "target": "readme_layout",
-      "confidence_score": 1.0
+      "target": "readme_layout"
     },
     {
       "relation": "contains",
@@ -23389,9 +23389,9 @@
       "source_file": "README.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_care_bear_daycare",
-      "target": "readme_license",
-      "confidence_score": 1.0
+      "target": "readme_license"
     },
     {
       "relation": "contains",
@@ -23399,9 +23399,9 @@
       "source_file": "README.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_care_bear_daycare",
-      "target": "readme_local_development",
-      "confidence_score": 1.0
+      "target": "readme_local_development"
     },
     {
       "relation": "contains",
@@ -23409,9 +23409,9 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_care_bear_daycare",
-      "target": "readme_public_pages",
-      "confidence_score": 1.0
+      "target": "readme_public_pages"
     },
     {
       "relation": "contains",
@@ -23419,9 +23419,9 @@
       "source_file": "README.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_care_bear_daycare",
-      "target": "readme_stack",
-      "confidence_score": 1.0
+      "target": "readme_stack"
     },
     {
       "relation": "conceptually_related_to",
@@ -23459,9 +23459,9 @@
       "source_file": "frontend/README.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_readme",
-      "target": "frontend_readme_getting_started",
-      "confidence_score": 1.0
+      "target": "frontend_readme_getting_started"
     },
     {
       "relation": "contains",
@@ -23469,9 +23469,9 @@
       "source_file": "frontend/README.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_readme",
-      "target": "frontend_readme_learn_more",
-      "confidence_score": 1.0
+      "target": "frontend_readme_learn_more"
     },
     {
       "relation": "semantically_similar_to",
@@ -28067,5 +28067,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "1146973cedd8c68235e74345ef47ea36cd0f110b"
+  "built_at_commit": "18a23219a4544715f7b5438b342994268854f749"
 }

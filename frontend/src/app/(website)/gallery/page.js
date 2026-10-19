@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import GalleryPage from '@/components/dog-hotel/GalleryPage';
+import { publicPath } from '@/utils/publicPath';
 import { pageMetadata } from '@/utils/website-seo';
 
 export const metadata = pageMetadata('/gallery');
@@ -16,7 +17,7 @@ function listGalleryImages() {
     .filter(name => IMAGE_EXTENSIONS.has(path.extname(name).toLowerCase()))
     .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
     .map(name => ({
-      src: `/imgs/gallery/${name}`,
+      src: publicPath(`/imgs/gallery/${name}`),
       alt: 'Care Bear Daycare',
     }));
 }

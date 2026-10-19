@@ -4,13 +4,14 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Box, Button, Stack, Typography } from '@mui/material';
 import { isExternalHref } from '@/consts/routes';
+import { publicPath } from '@/utils/publicPath';
 import HomeLandingShell from './HomeLandingShell';
 import HomeHeroBackground from './HomeHeroBackground';
 import HomeHeroNav from './HomeHeroNav';
 import HomeLandingFooter from './HomeLandingFooter';
 import { HOME_BRAND } from './home-landing-data';
 
-const HERO_LOGO_SRC = '/imgs/logos/logo.png';
+const HERO_LOGO_SRC = publicPath('/imgs/logos/logo.png');
 
 const heroCtaSx = {
   color: 'common.white',

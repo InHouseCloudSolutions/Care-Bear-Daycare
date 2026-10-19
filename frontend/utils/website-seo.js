@@ -4,7 +4,9 @@
  * Home uses absoluteTitle so the template is not applied.
  */
 
-const OG_IMAGE_PATH = '/imgs/logos/logo_square.png';
+import { publicPath } from './publicPath';
+
+const OG_IMAGE_PATH = publicPath('/imgs/logos/logo_square.png');
 const OG_IMAGE_ALT = 'Care Bear Daycare';
 
 export const WEBSITE_SEO = {

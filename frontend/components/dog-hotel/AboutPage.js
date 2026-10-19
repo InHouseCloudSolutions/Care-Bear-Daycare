@@ -5,10 +5,11 @@ import { Box, Link, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { ROVER_BOOKING_URL } from '@/consts/routes';
 import { WEBSITE_INK, WEBSITE_PAGE_BACKGROUND } from '@/consts/website-theme';
+import { publicPath } from '@/utils/publicPath';
 import DogHotelInteriorPage from './DogHotelInteriorPage';
 
-const CARRIE_PHOTO_SRC = '/imgs/about/carrie.jpg';
-const DOGS_PHOTO_SRC = '/imgs/home/slide-005.jpg';
+const CARRIE_PHOTO_SRC = publicPath('/imgs/about/carrie.jpg');
+const DOGS_PHOTO_SRC = publicPath('/imgs/home/slide-005.jpg');
 
 const CARE_POINTS = [
   'Personalized care based on your dog’s needs',

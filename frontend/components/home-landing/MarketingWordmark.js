@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
+import { publicPath } from '@/utils/publicPath';
 
-const LOGO_SRC = '/imgs/logos/logo_hori.png';
+const LOGO_SRC = publicPath('/imgs/logos/logo_hori.png');
 const LOGO_ALT = 'Care Bear Daycare';
 /** CSS height matches the nav menu button (40px) so the bar does not grow. */
 const LOGO_DISPLAY_HEIGHT = 40;

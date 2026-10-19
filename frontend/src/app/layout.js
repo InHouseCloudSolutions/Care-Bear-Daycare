@@ -5,11 +5,12 @@ import '@/styles/marketing-interior.css';
 import '@/styles/website-globals.css';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import { publicPath } from '@/utils/publicPath';
 import { WEBSITE_SEO } from '@/utils/website-seo';
 import EmotionCacheProvider from './EmotionCacheProvider';
 import Providers from './providers';
 
-const OG_IMAGE_PATH = '/imgs/logos/logo_square.png';
+const OG_IMAGE_PATH = publicPath('/imgs/logos/logo_square.png');
 const OG_IMAGE_ALT = 'Care Bear Daycare';
 const DEFAULT_DESCRIPTION = WEBSITE_SEO['/'].description;
 
@@ -41,11 +42,11 @@ export const metadata = {
   },
   description: DEFAULT_DESCRIPTION,
   applicationName: 'Care Bear Daycare',
-  manifest: '/manifest.json',
+  manifest: publicPath('/manifest.json'),
   icons: {
-    icon: [{ url: '/imgs/logos/logo_square.png', type: 'image/png', sizes: '1254x1254' }],
-    shortcut: [{ url: '/imgs/logos/logo_square.png', type: 'image/png', sizes: '1254x1254' }],
-    apple: [{ url: '/imgs/logos/logo_square.png', type: 'image/png', sizes: '1254x1254' }],
+    icon: [{ url: OG_IMAGE_PATH, type: 'image/png', sizes: '1254x1254' }],
+    shortcut: [{ url: OG_IMAGE_PATH, type: 'image/png', sizes: '1254x1254' }],
+    apple: [{ url: OG_IMAGE_PATH, type: 'image/png', sizes: '1254x1254' }],
   },
   appleWebApp: {
     capable: true,
@@ -66,7 +67,7 @@ export const metadata = {
   },
   other: {
     'mobile-web-app-capable': 'yes',
-    'msapplication-TileImage': '/imgs/logos/logo_square.png',
+    'msapplication-TileImage': OG_IMAGE_PATH,
     'msapplication-TileColor': '#000000',
     'background-color': '#000000',
     'screen-orientation': 'portrait',

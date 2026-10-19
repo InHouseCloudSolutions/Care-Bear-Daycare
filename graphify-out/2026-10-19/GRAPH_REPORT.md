@@ -1,7 +1,7 @@
 # Graph Report - doghotel  (2026-10-19)
 
 ## Corpus Check
-- 114 files · ~462,561 words
+- 114 files · ~462,566 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1146973c`
+- Built from commit: `18a23219`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
