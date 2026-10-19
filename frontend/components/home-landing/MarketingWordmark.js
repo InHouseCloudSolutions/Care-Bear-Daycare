@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
-import { publicPath } from '@/utils/publicPath';
+import publicPath from '@/utils/publicPath';
 
 const LOGO_SRC = publicPath('/imgs/logos/logo_hori.png');
 const LOGO_ALT = 'Care Bear Daycare';

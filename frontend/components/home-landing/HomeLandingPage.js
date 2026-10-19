@@ -4,7 +4,7 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Box, Button, Stack, Typography } from '@mui/material';
 import { isExternalHref } from '@/consts/routes';
-import { publicPath } from '@/utils/publicPath';
+import publicPath from '@/utils/publicPath';
 import HomeLandingShell from './HomeLandingShell';
 import HomeHeroBackground from './HomeHeroBackground';
 import HomeHeroNav from './HomeHeroNav';

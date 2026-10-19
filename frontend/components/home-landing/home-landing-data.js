@@ -18,7 +18,7 @@ import {
   WEBSITE_INK,
   WEBSITE_INK_HOVER,
 } from '@/consts/website-theme';
-import { publicPath } from '@/utils/publicPath';
+import publicPath from '@/utils/publicPath';
 import { HOME_LANDING_FONT_FAMILY } from './home-landing-font';
 
 export const LOGIN_NAV_LABEL = 'Login';

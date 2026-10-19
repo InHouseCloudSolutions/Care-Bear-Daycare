@@ -2,7 +2,7 @@
  * @jest-environment node
  */
 
-import { publicPath } from './publicPath';
+import publicPath from './publicPath';
 
 describe('publicPath', () => {
   const originalBasePath = process.env.NEXT_PUBLIC_BASE_PATH;

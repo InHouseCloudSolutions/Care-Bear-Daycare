@@ -5,7 +5,7 @@ import { Box, Link, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { ROVER_BOOKING_URL } from '@/consts/routes';
 import { WEBSITE_INK, WEBSITE_PAGE_BACKGROUND } from '@/consts/website-theme';
-import { publicPath } from '@/utils/publicPath';
+import publicPath from '@/utils/publicPath';
 import DogHotelInteriorPage from './DogHotelInteriorPage';
 
 const CARRIE_PHOTO_SRC = publicPath('/imgs/about/carrie.jpg');

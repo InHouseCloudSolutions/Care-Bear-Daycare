@@ -80,8 +80,8 @@
     "semantic_hash": "e9bef225288002d68382025d13b4c936"
   },
   "frontend/components/dog-hotel/AboutPage.js": {
-    "mtime": 1792420779.054887,
-    "ast_hash": "88c0d0b6e9b58c0b5e8b870de1dd1365",
+    "mtime": 1792421349.4002256,
+    "ast_hash": "e190fbf6c958fe30e3caef45d745d66b",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/DogHotelInteriorPage.js": {
@@ -115,8 +115,8 @@
     "semantic_hash": "1ca8a7f460b0b99e16bdfd8dabd87541"
   },
   "frontend/components/home-landing/HomeLandingPage.js": {
-    "mtime": 1792420812.2574637,
-    "ast_hash": "28ccab4c86cefbfcd30abc9a51f42d79",
+    "mtime": 1792421349.0897093,
+    "ast_hash": "16396f3e2d2b2a3689f62a9d0aa1959c",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/HomeLandingShell.js": {
@@ -160,13 +160,13 @@
     "semantic_hash": "604ec381ea0c024f26151ebb28606786"
   },
   "frontend/components/home-landing/MarketingWordmark.js": {
-    "mtime": 1792420777.7870996,
-    "ast_hash": "76a6cee7ffb656a4a983344b19552ec2",
+    "mtime": 1792421349.0897093,
+    "ast_hash": "c353c054f320bc0d83784076a66ddafb",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/home-landing-data.js": {
-    "mtime": 1792420814.3985174,
-    "ast_hash": "dd17e5b843be7b07c99027679f5f5278",
+    "mtime": 1792421350.2376325,
+    "ast_hash": "f6cddc2227a1a42db6a7184e2c46b459",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/home-landing-font.js": {
@@ -300,8 +300,8 @@
     "semantic_hash": "fb81ee7ad2eaac68889d260ff524dcd0"
   },
   "frontend/src/app/(website)/gallery/page.js": {
-    "mtime": 1792420781.8357122,
-    "ast_hash": "c6843b04cfa7fe50fd6f98b9ec93d02f",
+    "mtime": 1792421350.148405,
+    "ast_hash": "c7399dece3a4dd48e2ea786af36842f8",
     "semantic_hash": ""
   },
   "frontend/src/app/(website)/how-a-stay-works/page.js": {
@@ -325,8 +325,8 @@
     "semantic_hash": "fe1c5ed6cdd93d8af13ecdfee36c6be3"
   },
   "frontend/src/app/layout.js": {
-    "mtime": 1792420791.8788831,
-    "ast_hash": "5b62b1a29d25c63bfcdd5a99c3918a51",
+    "mtime": 1792421349.0662394,
+    "ast_hash": "c8d34e984e08f3bf592a11a90672b9f9",
     "semantic_hash": ""
   },
   "frontend/src/app/not-found.js": {
@@ -380,8 +380,8 @@
     "semantic_hash": "1ac33586bc2a9400a7c12fa15c5db11a"
   },
   "frontend/utils/website-seo.js": {
-    "mtime": 1792420787.9234717,
-    "ast_hash": "a4931fcbda464228a304fd3709fcbeab",
+    "mtime": 1792421349.763421,
+    "ast_hash": "880214b8c4f87abe48c929584f2d221a",
     "semantic_hash": ""
   },
   "frontend/utils/website-seo.test.js": {
@@ -705,13 +705,13 @@
     "semantic_hash": "ffe3b15965e8f8f93bb4778a43a5ba52"
   },
   "frontend/utils/publicPath.js": {
-    "mtime": 1792420810.4632502,
-    "ast_hash": "c2998c9c18338d132e07cbfb4c99ff75",
+    "mtime": 1792421349.0662394,
+    "ast_hash": "755a4aaff8b46872c244f42ee8cb1154",
     "semantic_hash": ""
   },
   "frontend/utils/publicPath.test.js": {
-    "mtime": 1792420811.3679378,
-    "ast_hash": "52e9b90c5ee885da1fdbf3eb48a8882d",
+    "mtime": 1792421349.6675503,
+    "ast_hash": "4c981f1be604be16de980e31904810ad",
     "semantic_hash": ""
   }
 }

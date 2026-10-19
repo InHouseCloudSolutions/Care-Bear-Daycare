@@ -5,7 +5,7 @@ import '@/styles/marketing-interior.css';
 import '@/styles/website-globals.css';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import { publicPath } from '@/utils/publicPath';
+import publicPath from '@/utils/publicPath';
 import { WEBSITE_SEO } from '@/utils/website-seo';
 import EmotionCacheProvider from './EmotionCacheProvider';
 import Providers from './providers';

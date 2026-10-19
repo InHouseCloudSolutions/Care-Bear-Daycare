@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import GalleryPage from '@/components/dog-hotel/GalleryPage';
-import { publicPath } from '@/utils/publicPath';
+import publicPath from '@/utils/publicPath';
 import { pageMetadata } from '@/utils/website-seo';
 
 export const metadata = pageMetadata('/gallery');

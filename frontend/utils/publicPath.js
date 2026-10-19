@@ -5,7 +5,7 @@
  * @param {string} path
  * @returns {string}
  */
-export function publicPath(path) {
+export default function publicPath(path) {
   if (!path || /^(?:[a-z]+:|\/\/)/i.test(path)) return path;
   const basePath = (process.env.NEXT_PUBLIC_BASE_PATH || '').replace(/\/$/, '');
   const normalized = path.startsWith('/') ? path : `/${path}`;
