@@ -340,9 +340,9 @@
     "semantic_hash": "c18e99bc927bd956c85d3439107e18b7"
   },
   "frontend/src/app/sitemap.js": {
-    "mtime": 1792411733.9960382,
-    "ast_hash": "7295f74d3a3674cb84bedcfe92361165",
-    "semantic_hash": "7295f74d3a3674cb84bedcfe92361165"
+    "mtime": 1792420262.448506,
+    "ast_hash": "87dfd4b1a74e981a3c3510cb82d10e0e",
+    "semantic_hash": ""
   },
   "frontend/utils/galleryImage.js": {
     "mtime": 1789577529.0175238,

@@ -1,13 +1,18 @@
 # Graph Report - doghotel  (2026-10-19)
 
 ## Corpus Check
-- 141 files · ~462,561 words
+- 114 files · ~462,561 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 818 nodes · 1202 edges · 60 communities (51 shown, 9 thin omitted)
-- Extraction: 86% EXTRACTED · 13% INFERRED · 1% AMBIGUOUS · INFERRED: 160 edges (avg confidence: 0.84)
+- 1067 nodes · 1439 edges · 101 communities (93 shown, 8 thin omitted)
+- Extraction: 88% EXTRACTED · 11% INFERRED · 1% AMBIGUOUS · INFERRED: 160 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `1146973c`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Marketing Nav Tree|Marketing Nav Tree]]
@@ -66,30 +71,67 @@
 - [[_COMMUNITY_Form Short Content Style|Form Short Content Style]]
 - [[_COMMUNITY_Form Short Grid Style|Form Short Grid Style]]
 - [[_COMMUNITY_Editor Format Settings|Editor Format Settings]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
+- [[_COMMUNITY_Community 94|Community 94]]
+- [[_COMMUNITY_Community 95|Community 95]]
+- [[_COMMUNITY_Community 96|Community 96]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `resolutions` - 37 edges
-2. `scripts` - 15 edges
-3. `DogHotelInteriorPage()` - 11 edges
-4. `Homepage Slide Photograph` - 11 edges
-5. `Small Dog` - 11 edges
-6. `HomeHeroBackground()` - 10 edges
-7. `HomeHeroNav()` - 10 edges
-8. `MarketingInteriorNav()` - 10 edges
-9. `pageMetadata()` - 10 edges
-10. `Homepage Slide 002 Photograph` - 10 edges
+2. `PRD to Issues` - 20 edges
+3. `scripts` - 15 edges
+4. `Test-Driven Development` - 15 edges
+5. `Discovery Phase` - 12 edges
+6. `DogHotelInteriorPage()` - 11 edges
+7. `Full-Stack Feature` - 11 edges
+8. `Write a PRD` - 11 edges
+9. `Homepage Slide Photograph` - 11 edges
+10. `Small Dog` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Thin pages` --rationale_for--> `HomePage()`  [INFERRED]
   .cursor/agents/frontend-dev.md → frontend/src/app/(website)/page.js
 - `NIICO portfolio collections` --conceptually_related_to--> `normalizeGalleryImageList()`  [INFERRED]
   .cursor/agents/portfolio-scraper.md → frontend/utils/galleryImage.js
-- `ES Admin DS Manager Kiosk Roles` --conceptually_related_to--> `Care Bear Daycare README`  [AMBIGUOUS]
-  .cursor/skills/write-a-prd/interview-guide.md → README.md
 - `pre-commit Prettier` --semantically_similar_to--> `Frontend Lint Job`  [INFERRED] [semantically similar]
   .pre-commit-config.yaml → .github/workflows/test-frontend.yml
 - `metadata` --semantically_similar_to--> `Public crawler rules`  [INFERRED] [semantically similar]
   frontend/src/app/(website)/layout.js → frontend/public/robots.txt
+- `frontend-dev agent` --conceptually_related_to--> `RootLayout()`  [INFERRED]
+  .cursor/agents/frontend-dev.md → frontend/src/app/layout.js
 
 ## Import Cycles
 - None detected.
@@ -154,31 +196,31 @@
 - **Pictorial Mark of Dog, Bear Cub, and Heart** — logos_logo_square_golden_dog, logos_logo_square_bear_cub, logos_logo_square_coral_heart [EXTRACTED 1.00]
 - **Dog Embracing Bear Cub as Care** — logos_logo_square_golden_dog, logos_logo_square_bear_cub, logos_logo_square_affectionate_care [INFERRED 0.85]
 
-## Communities (60 total, 9 thin omitted)
+## Communities (101 total, 8 thin omitted)
 
 ### Community 0 - "Marketing Nav Tree"
-Cohesion: 0.07
-Nodes (51): flattenNavItemsForDrawer(), HOME_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_ITEMS_BASE, MARKETING_NAV_TREE, isExternalHref(), ROVER_BOOKING_URL, NAV_GLASS_BACKDROP_COLOR, HOME_LUXURY_DRAWER_PAPER_SX (+43 more)
+Cohesion: 0.17
+Nodes (16): NAV_GLASS_BACKDROP_COLOR, HOME_LUXURY_DRAWER_PAPER_SX, LUXURY_DRAWER_NAV_GROUP_TYPOGRAPHY_SX, LUXURY_DRAWER_NAV_ITEM_ENTER_SX, LUXURY_DRAWER_NAV_ITEM_RESET_SX, LUXURY_DRAWER_NAV_PRIMARY_TYPOGRAPHY_SX, LUXURY_DRAWER_NAV_SECTION_TYPOGRAPHY_SX, LUXURY_DRAWER_NAV_SUBLINK_TYPOGRAPHY_SX (+8 more)
 
 ### Community 1 - "About and Hero Slides"
-Cohesion: 0.06
-Nodes (44): HomeHeroSlidesContext, HomeHeroSlidesProvider(), useHomeHeroSlides(), AboutPage(), bodySx, CARE_POINTS, CarriePhoto(), sectionHeadingSx (+36 more)
+Cohesion: 0.16
+Nodes (14): LUXURY_GRADIENT_SX, HOME_LANDING_FONT_FAMILY, homeMontserrat, createLandingTheme(), HomeLandingShell(), MARKETING_FORM_COLUMN_INNER_SX, MARKETING_FORM_COLUMN_SX, MARKETING_FORM_FLEX_SECTION_SX (+6 more)
 
 ### Community 2 - "Glass Form Surfaces"
-Cohesion: 0.07
-Nodes (39): FORM_PAGE_DESKTOP_BP, FORM_PAGE_MOBILE_MAIN_SCROLL_SX, FORM_PAGE_MOBILE_NATURAL_HEIGHT_SX, GLASS_FIELD_SURFACE_SX, GLASS_FIELD_WRAPPER_SX, GLASS_FORM_FOOTER_SX, GLASS_FORM_PAIR_STACK_SPACING, GLASS_FORM_PANEL_HORIZONTAL_PAD (+31 more)
+Cohesion: 0.08
+Nodes (37): FORM_PAGE_DESKTOP_BP, FORM_PAGE_MOBILE_MAIN_SCROLL_SX, FORM_PAGE_MOBILE_NATURAL_HEIGHT_SX, GLASS_FIELD_SURFACE_SX, GLASS_FIELD_WRAPPER_SX, GLASS_FORM_FOOTER_SX, GLASS_FORM_PAIR_STACK_SPACING, GLASS_FORM_PANEL_HORIZONTAL_PAD (+29 more)
 
 ### Community 3 - "Public Route Pages"
-Cohesion: 0.06
-Nodes (27): AboutRoute(), metadata, NotFound(), isHomeRoute(), isMarketingFormRoute(), isMarketingInteriorRoute(), isMarketingRoute(), staffLoginHref() (+19 more)
+Cohesion: 0.11
+Nodes (20): AboutPage(), bodySx, CARE_POINTS, CarriePhoto(), sectionHeadingSx, DogHotelInteriorPage(), footerTextSx, headingSx (+12 more)
 
 ### Community 4 - "App Layout and SEO"
 Cohesion: 0.08
-Nodes (31): frontend-dev agent, EmotionCacheProvider(), marketingMetadataHost(), metadata, metadataBaseFromHost(), ogImageUrl(), RootLayout(), shareImageUrl (+23 more)
+Nodes (32): frontend-dev agent, EmotionCacheProvider(), marketingMetadataHost(), metadata, metadataBaseFromHost(), ogImageUrl(), RootLayout(), shareImageUrl (+24 more)
 
 ### Community 5 - "Theme and Robots Meta"
-Cohesion: 0.08
-Nodes (29): RobotsMeta(), FORGOT_PASSWORD_PATH, isStaffRoute(), LOGIN_PATH, STAFF_PREFIX, Care Bear Daycare logo palette, ThemeContext, RouteThemeShell() (+21 more)
+Cohesion: 0.35
+Nodes (9): RobotsMeta(), isIndexablePublicPath(), NON_INDEXABLE_PATHS, ROBOTS_INDEX, ROBOTS_NOINDEX, robotsMetaContent(), robotsMetadataForPath(), isIndexablePublicPath tests (+1 more)
 
 ### Community 6 - "Yarn Resolutions"
 Cohesion: 0.05
@@ -189,8 +231,8 @@ Cohesion: 0.06
 Nodes (36): dependencies, axios, @azure/storage-blob, date-fns, dayjs, @dnd-kit/core, @dnd-kit/sortable, @dnd-kit/utilities (+28 more)
 
 ### Community 8 - "Discovery and Domain Skills"
-Cohesion: 0.10
-Nodes (34): Deletion test, Discovery Brief, Discovery Phase, Discovery question categories, Architecture Decision Record, CONTEXT-MAP.md, CONTEXT.md, Domain Modeling (+26 more)
+Cohesion: 0.05
+Nodes (43): Issue Template, Additional resources, AFK, Anti-patterns, Core method: vertical slices (tracer bullets), HITL, Issue file format, Output layout (+35 more)
 
 ### Community 9 - "App Boot Splash"
 Cohesion: 0.10
@@ -201,8 +243,8 @@ Cohesion: 0.08
 Nodes (24): devDependencies, css-mediaquery, eslint, eslint-config-airbnb, eslint-config-next, eslint-config-prettier, eslint-plugin-import, eslint-plugin-jest (+16 more)
 
 ### Community 11 - "PRD Interview Guide"
-Cohesion: 0.13
-Nodes (20): Design-Tree Interview Guide, Deferred Decision, Deep Module, Route to Orchestrator to Deep Module, Shallow Orchestrator, Write a PRD, Decision Log, issues/prd-<slug>.md (+12 more)
+Cohesion: 0.24
+Nodes (9): Deep Module, Route to Orchestrator to Deep Module, Shallow Orchestrator, Phase 1 Deep Intake, Phase 2 Repo Discovery, Phase 3 Design-Tree Interview, Phase 4 Module Sketch, Working Notes (+1 more)
 
 ### Community 12 - "Settings and Storage"
 Cohesion: 0.19
@@ -213,8 +255,8 @@ Cohesion: 0.18
 Nodes (15): NIICO portfolio collections, PORTFOLIO_COLLECTION_HOVER_SLIDE_COUNTS, portfolio-scraper agent, homeHeroSlideShape, galleryImageFromApi(), galleryImagesFromApi(), galleryMediaSrc(), normalizeGalleryImageList() (+7 more)
 
 ### Community 14 - "Brand Marketing Tokens"
-Cohesion: 0.17
-Nodes (16): Care Bear Daycare Brand Reference, Marketing Layout Grid, LUXURY_GRADIENT_SX, Marketing Color Tokens, Cream Interior Nav, Rejected Millwork Palette, Marketing Interior Scrollbar, Staff Dark Teal Charcoal (+8 more)
+Cohesion: 0.25
+Nodes (10): LUXURY_GRADIENT_SX, Marketing Color Tokens, Rejected Millwork Palette, Marketing Interior Scrollbar, Staff Dark Teal Charcoal, NIICO Millwork Pages Identity, Pages Public Env File, IHCS Email Signatures Digital Signage (+2 more)
 
 ### Community 15 - "Small Dog Close-up"
 Cohesion: 0.17
@@ -225,8 +267,8 @@ Cohesion: 0.18
 Nodes (15): Dark Collar and Round Tag, Copper Dog Running Toward Camera, Warm Horizon Light, Lifestyle Gallery Portrait, Ocean, Open Mouth and Tongue, Peach-to-Pale Horizon Sky, Pebble Beach (+7 more)
 
 ### Community 17 - "Design It Twice"
-Cohesion: 0.19
-Nodes (14): In-process dependency, Local-substitutable dependency, Remote but owned ports and adapters, Replace don't layer, True external dependency, Design It Twice, Adapter, Depth (+6 more)
+Cohesion: 0.06
+Nodes (43): In-process dependency, Local-substitutable dependency, Remote but owned ports and adapters, Replace don't layer, True external dependency, 1. Frame the problem space, 2. Launch subagents, 3. Present and compare (+35 more)
 
 ### Community 18 - "Pink Studio Portrait"
 Cohesion: 0.16
@@ -249,8 +291,8 @@ Cohesion: 0.27
 Nodes (12): Blurred Beach and Ocean Backdrop, Shallow Depth of Field, White Blaze with Brown Patches, Bright Coastal Daylight, Brown and White Dog, One Upright Ear and One Folded Ear, Herding-Type Dog, Dog Hotel Homepage Hero (+4 more)
 
 ### Community 23 - "Public Form Skill"
-Cohesion: 0.27
-Nodes (9): Add Public Form, AllowAny public form views, Public form variant, Form variant default vs glass, Thin pages, areRequiredFieldsFilled(), canSubmitRequiredForm(), isRequiredFieldFilled() (+1 more)
+Cohesion: 0.15
+Nodes (14): Add Public Form, AllowAny public form views, Backend Workflow, Discovery Checklist, Public form variant, Frontend Workflow, Reference Implementations, Test Plan (+6 more)
 
 ### Community 24 - "Pug Studio Portrait"
 Cohesion: 0.24
@@ -293,8 +335,8 @@ Cohesion: 0.28
 Nodes (9): Branch 1 Problem and Success, Branch 2 Users and Permissions, Branch 3 Product Surface and Scope, Branch 4 Data and Integrations, Branch 5 UX and Flows, Branch 6 Non-Functional Requirements, Branch 7 Rollout and Phasing, Branch 8 Acceptance and Verification (+1 more)
 
 ### Community 34 - "Docker Compose Dev"
-Cohesion: 0.32
-Nodes (8): Compose Caddy Reverse Proxy, Compose Frontend Service, Local Docker Compose Dev, Next.js Marketing Stack, Module Sketch Guide, IHCS Module Conventions, Backend Frontend Cross-Cutting Layers, Module Table M-001
+Cohesion: 0.28
+Nodes (8): Compose Caddy Reverse Proxy, Compose Frontend Service, Local Docker Compose Dev, Stack, IHCS conventions, Backend Frontend Cross-Cutting Layers, Module Table M-001, Requirement to Module Traceability
 
 ### Community 35 - "Ads Logo Lockup"
 Cohesion: 0.39
@@ -344,19 +386,171 @@ Nodes (3): Dog Hotel Gallery Lifestyle Portrait, Stone Patio Garden with Fences 
 Cohesion: 1.00
 Nodes (3): PORTFOLIO_COLLECTION_HOVER_SLIDE_COUNTS, Portfolio image layout, Scrape Portfolio Images
 
+### Community 48 - "Staff Gallery DataGrid"
+Cohesion: 0.29
+Nodes (6): Already converted, Layout, Rows, Staff gallery DataGrid, StaffGalleryDataGrid, Usage
+
+### Community 49 - "MUI Component Scaffold"
+Cohesion: 0.29
+Nodes (6): create_ts_component_scaffold.py, Instructions, Output format, TypeScript Reusable MUI Components, Utility script, When to use
+
+### Community 60 - "Community 60"
+Cohesion: 0.09
+Nodes (22): Discovery Brief, Discovery Brief Template, Discovery Phase, Plan Template, Question Categories, Related Skills, Subagent Recon Brief, When to Use (+14 more)
+
+### Community 61 - "Community 61"
+Cohesion: 0.26
+Nodes (14): HOME_NAV_BAR_PX, HOME_NAV_BAR_PY, HOME_NAV_DESKTOP_DISPLAY, HOME_NAV_MOBILE_DISPLAY, MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR, withStaffNavItems(), HERO_MENU_ICON_SX, HomeHeroNav() (+6 more)
+
+### Community 62 - "Community 62"
+Cohesion: 0.22
+Nodes (13): heroTextLegibility, HOME_BRAND, HOME_FOOTER, HOME_FOOTER_SOCIAL_LINKS, footerLinkSx, footerTextSx, HomeLandingFooter(), SOCIAL_ICONS (+5 more)
+
+### Community 63 - "Community 63"
+Cohesion: 0.14
+Nodes (13): Call-graph collapse, Candidate card, Cross-section (good for layered shallowness), Diagram patterns, Hand-built boxes-and-arrows (when Mermaid's layout fights you), Header, HTML Report Format, Mass diagram (good for "interface as wide as implementation") (+5 more)
+
+### Community 64 - "Community 64"
+Cohesion: 0.15
+Nodes (13): 1.1 Marketing tokens, 1.2 Staff dark (teal charcoal), 1.3 Semantic colors that are not the brand, 1. Color, 2. Typography, 3.1 Hero buttons, 3.2 Nav, 3.3 Forms (+5 more)
+
+### Community 65 - "Community 65"
+Cohesion: 0.26
+Nodes (9): flattenNavItemsForDrawer(), HOME_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_ITEMS_BASE, MARKETING_NAV_TREE, ROVER_BOOKING_URL, HOME_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_ITEMS_BASE, useHomeNavItems() (+1 more)
+
+### Community 66 - "Community 66"
+Cohesion: 0.20
+Nodes (9): FORGOT_PASSWORD_PATH, isStaffRoute(), LOGIN_PATH, STAFF_PREFIX, ThemeContext, RouteThemeShell(), Public crawler rules, metadata (+1 more)
+
+### Community 67 - "Community 67"
+Cohesion: 0.27
+Nodes (10): isExternalHref(), HOME_NAV_LINK_TYPOGRAPHY_SX, isMarketingNavLinkActive(), marketingNavLinkHoverUnderlineSx(), normalizeMarketingNavPath(), externalLinkProps(), navItemShape, externalLinkProps() (+2 more)
+
+### Community 68 - "Community 68"
+Cohesion: 0.17
+Nodes (12): 1. Re-ground in the repo, 2. Layer the sketch, 3. Hunt for deep modules (required), 4. Draw the dependency graph, 5. Present and confirm, Anti-patterns, Extraction heuristics, Goals (+4 more)
+
+### Community 69 - "Community 69"
+Cohesion: 0.27
+Nodes (5): isHomeRoute(), isMarketingInteriorRoute(), staffLoginHref(), staffPath(), staffPathSuffix()
+
+### Community 70 - "Community 70"
+Cohesion: 0.20
+Nodes (10): Additional resources, Capture, File naming, Opening prompt, Phase 1 — Deep intake, Phase 5 — Write PRD, Phase 6 — Confirm, Session checklist (+2 more)
+
+### Community 71 - "Community 71"
+Cohesion: 0.25
+Nodes (8): Marketing Layout Grid, Cream Interior Nav, Care Bear Daycare, Layout, License, Local development, Public pages, Rover Booking URL
+
+### Community 72 - "Community 72"
+Cohesion: 0.22
+Nodes (8): 1. In-process, 2. Local-substitutable, 3. Remote but owned (Ports & Adapters), 4. True external (Mock), Deepening, Dependency categories, Seam discipline, Testing strategy: replace, don't layer
+
+### Community 73 - "Community 73"
+Cohesion: 0.22
+Nodes (8): Codebase Design, Deep vs shallow, Designing for testability, Glossary, Going deeper, Principles, Rejected framings, Relationships
+
+### Community 74 - "Community 74"
+Cohesion: 0.36
+Nodes (7): HomeHeroSlidesContext, HomeHeroSlidesProvider(), useHomeHeroSlides(), HOME_HERO_FADE_MS, HOME_HERO_SLIDES, handleSlideChange, HomeHeroBackground()
+
+### Community 75 - "Community 75"
+Cohesion: 0.22
+Nodes (8): background_color, description, display, icons, name, short_name, start_url, theme_color
+
+### Community 76 - "Community 76"
+Cohesion: 0.22
+Nodes (8): After download, Image source priority, Output layout, Parallel coordination, Run (preferred), Scrape Portfolio Images (niico.com → local), Sub-collection route → filename, When to use
+
+### Community 77 - "Community 77"
+Cohesion: 0.22
+Nodes (9): Branch 1 — Problem and success (root), Branch 2 — Users and permissions, Branch 3 — Product surface and scope, Branch 4 — Data and integrations, Branch 5 — UX and flows, Branch 6 — Non-functional requirements, Branch 7 — Rollout and phasing, Branch 8 — Acceptance and verification (+1 more)
+
+### Community 78 - "Community 78"
+Cohesion: 0.22
+Nodes (8): Deferred Decision, Decision Log, issues/prd-<slug>.md, Phase 5 Write PRD, Phase 6 Confirm, Writing rules, PRD Template, P0 P1 P2 Requirements
+
+### Community 79 - "Community 79"
+Cohesion: 0.29
+Nodes (5): AboutRoute(), metadata, isMarketingRoute(), HowAStayWorksRoute(), metadata
+
+### Community 80 - "Community 80"
+Cohesion: 0.29
+Nodes (5): isMarketingFormRoute(), bodySx, ContactFormPage(), ContactRoute(), metadata
+
+### Community 81 - "Community 81"
+Cohesion: 0.29
+Nodes (6): ADR Format, Numbering, Optional sections, Template, What qualifies, When to offer an ADR
+
+### Community 82 - "Community 82"
+Cohesion: 0.29
+Nodes (6): Dependency graph (optional working notes), IHCS monorepo reminders, Ordering patterns, Sizing guide, Tracer bullet checklist, Vertical slice heuristics
+
+### Community 83 - "Community 83"
+Cohesion: 0.29
+Nodes (7): Confirm with user, Extraction mindset, Graphify (mandatory), Phase 4 exit criteria, Phase 4 — Module sketch, Purpose, What to produce
+
+### Community 84 - "Community 84"
+Cohesion: 0.33
+Nodes (5): Discovery Phase, Output, Project Conventions, Stack, When Invoked
+
+### Community 85 - "Community 85"
+Cohesion: 0.33
+Nodes (5): Do not, Read first, Return to coordinator, Scope per run, You own
+
+### Community 86 - "Community 86"
+Cohesion: 0.33
+Nodes (6): Dependency examples, Design tree (walk order), Phase 3 — Design-tree interview, Phase 3 exit criteria, Rules, When a branch is done
+
+### Community 87 - "Community 87"
+Cohesion: 0.40
+Nodes (3): NotFound(), Custom404(), handleBack
+
+### Community 88 - "Community 88"
+Cohesion: 0.40
+Nodes (4): CONTEXT.md Format, Rules, Single vs multi-context repos, Structure
+
+### Community 89 - "Community 89"
+Cohesion: 0.70
+Nodes (3): AUTH_NAV_LABELS, buildMobileDrawerItems(), splitAuthNavItems()
+
+### Community 90 - "Community 90"
+Cohesion: 0.40
+Nodes (5): Batching, Decision log template, Interview tactics, Relentless but respectful, Stuck loops
+
+### Community 91 - "Community 91"
+Cohesion: 0.50
+Nodes (3): DevConsoleSuppressor(), SUPPRESSED, ESLint configuration
+
+### Community 92 - "Community 92"
+Cohesion: 0.50
+Nodes (3): Care Bear Daycare logo palette, createAppTheme(), customColors
+
+### Community 93 - "Community 93"
+Cohesion: 0.50
+Nodes (3): Designing for Mockability, IHCS notes, When to Mock
+
+### Community 94 - "Community 94"
+Cohesion: 0.50
+Nodes (3): Bad Tests, Good and Bad Tests, Good Tests
+
+### Community 95 - "Community 95"
+Cohesion: 0.50
+Nodes (4): Graphify first (mandatory), Phase 2 — Repo discovery, What to produce, When to use subagents
+
 ## Ambiguous Edges - Review These
 - `manifest.json` → `Care Bear Daycare logo palette`  [AMBIGUOUS]
   frontend/public/manifest.json · relation: conceptually_related_to
-- `ES Admin DS Manager Kiosk Roles` → `Care Bear Daycare README`  [AMBIGUOUS]
-  .cursor/skills/write-a-prd/interview-guide.md · relation: conceptually_related_to
-- `IHCS Email Signatures Digital Signage` → `Care Bear Daycare Brand Reference`  [AMBIGUOUS]
-  .cursor/skills/write-a-prd/interview-guide.md · relation: conceptually_related_to
-- `IHCS Module Conventions` → `Next.js Marketing Stack`  [AMBIGUOUS]
+- `IHCS conventions` → `Stack`  [AMBIGUOUS]
   .cursor/skills/write-a-prd/module-sketch.md · relation: conceptually_related_to
-- `PRD Product Field` → `Care Bear Daycare Brand Reference`  [AMBIGUOUS]
-  .cursor/skills/write-a-prd/template.md · relation: conceptually_related_to
-- `NIICO Millwork Pages Identity` → `Care Bear Daycare Brand Reference`  [AMBIGUOUS]
+- `BRAND-REFERENCE.md` → `NIICO Millwork Pages Identity`  [AMBIGUOUS]
   .github/workflows/nextjs.yml · relation: conceptually_related_to
+- `BRAND-REFERENCE.md` → `IHCS Email Signatures Digital Signage`  [AMBIGUOUS]
+  .cursor/skills/write-a-prd/interview-guide.md · relation: conceptually_related_to
+- `BRAND-REFERENCE.md` → `PRD Product Field`  [AMBIGUOUS]
+  .cursor/skills/write-a-prd/template.md · relation: conceptually_related_to
+- `README.md` → `ES Admin DS Manager Kiosk Roles`  [AMBIGUOUS]
+  .cursor/skills/write-a-prd/interview-guide.md · relation: conceptually_related_to
 - `NIICO Millwork Pages Identity` → `Zygoat care-bear-daycare`  [AMBIGUOUS]
   zygoat_settings.yml · relation: conceptually_related_to
 - `Brown and White Dog` → `Herding-Type Dog`  [AMBIGUOUS]
@@ -365,24 +559,24 @@ Nodes (3): PORTFOLIO_COLLECTION_HOVER_SLIDE_COUNTS, Portfolio image layout, Scra
   frontend/public/imgs/home/slide-007.jpg · relation: semantically_similar_to
 
 ## Knowledge Gaps
-- **277 isolated node(s):** `REDUCE_MOTION`, `SPIN_SX`, `BAR_SX`, `BREATHE_SX`, `OVERLAY_INLINE_STYLE` (+272 more)
+- **459 isolated node(s):** `REDUCE_MOTION`, `SPIN_SX`, `BAR_SX`, `BREATHE_SX`, `OVERLAY_INLINE_STYLE` (+454 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `manifest.json` and `Care Bear Daycare logo palette`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What is the exact relationship between `ES Admin DS Manager Kiosk Roles` and `Care Bear Daycare README`?**
+- **What is the exact relationship between `IHCS conventions` and `Stack`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What is the exact relationship between `IHCS Email Signatures Digital Signage` and `Care Bear Daycare Brand Reference`?**
+- **What is the exact relationship between `BRAND-REFERENCE.md` and `NIICO Millwork Pages Identity`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What is the exact relationship between `IHCS Module Conventions` and `Next.js Marketing Stack`?**
+- **What is the exact relationship between `BRAND-REFERENCE.md` and `IHCS Email Signatures Digital Signage`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What is the exact relationship between `PRD Product Field` and `Care Bear Daycare Brand Reference`?**
+- **What is the exact relationship between `BRAND-REFERENCE.md` and `PRD Product Field`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What is the exact relationship between `NIICO Millwork Pages Identity` and `Care Bear Daycare Brand Reference`?**
+- **What is the exact relationship between `README.md` and `ES Admin DS Manager Kiosk Roles`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `NIICO Millwork Pages Identity` and `Zygoat care-bear-daycare`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
