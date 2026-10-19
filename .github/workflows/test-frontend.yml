@@ -1,0 +1,36 @@
+# https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
+name: Test Frontend
+on:
+  workflow_dispatch: #  Allows manual triggers
+  push:
+    branches:
+      - main
+    paths:
+      - frontend/**
+      - .github/workflows/test-frontend.yml
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+env:
+  LOCK_FILE: frontend/yarn.lock
+
+defaults:
+  run:
+    working-directory: frontend
+
+jobs:
+  Lint:
+    if: github.event_name == 'pull_request' || (github.event_name == 'push' && !contains(github.ref, 'refs/pull/'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enable Corepack (for yarn)
+        run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          cache: yarn
+          cache-dependency-path: ${{ env.LOCK_FILE }}
+      - run: yarn install --immutable
+      - run: yarn lint
