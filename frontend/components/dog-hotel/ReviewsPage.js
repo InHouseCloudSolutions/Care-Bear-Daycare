@@ -32,7 +32,18 @@ const reviewShape = PropTypes.shape({
   quote: PropTypes.string.isRequired,
   photoSrc: PropTypes.string,
   photoAlt: PropTypes.string,
+  photos: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+    }),
+  ),
 });
+
+function reviewPhotos(review) {
+  if (Array.isArray(review.photos) && review.photos.length > 0) return review.photos;
+  return [{ src: review.photoSrc, alt: review.photoAlt || review.dogName }];
+}
 
 function sitePhotoSrc(photoSrc) {
   if (typeof photoSrc !== 'string' || !photoSrc.startsWith('/') || photoSrc.startsWith('//')) {
@@ -42,7 +53,6 @@ function sitePhotoSrc(photoSrc) {
 }
 
 function ReviewPhoto({ review }) {
-  const src = sitePhotoSrc(review.photoSrc);
   const frameSx = {
     width: '100%',
     aspectRatio: '1 / 1',
@@ -51,11 +61,18 @@ function ReviewPhoto({ review }) {
     objectFit: 'cover',
   };
 
-  if (!src) {
-    return <Box role="img" aria-label="No photo provided" sx={frameSx} />;
-  }
-
-  return <Box component="img" src={src} alt={review.photoAlt || review.dogName} sx={frameSx} />;
+  return (
+    <Box sx={{ display: 'grid', gap: 1 }}>
+      {reviewPhotos(review).map(photo => {
+        const src = sitePhotoSrc(photo.src);
+        const alt = photo.alt || review.dogName;
+        if (!src) {
+          return <Box key="empty" role="img" aria-label="No photo provided" sx={frameSx} />;
+        }
+        return <Box key={src} component="img" src={src} alt={alt} sx={frameSx} />;
+      })}
+    </Box>
+  );
 }
 
 ReviewPhoto.propTypes = {

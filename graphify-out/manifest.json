@@ -715,13 +715,13 @@
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/ReviewsPage.js": {
-    "mtime": 1792499987.9274697,
-    "ast_hash": "4519f1cf4e21668d21677565e9ce0db5",
+    "mtime": 1792510870.7595377,
+    "ast_hash": "3ce6f6fa62454f3dddf458fa0dd03b66",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/reviews-data.js": {
-    "mtime": 1792499987.922462,
-    "ast_hash": "6bf8590b3ddb2f3f1350c1f54e76353f",
+    "mtime": 1792510844.5947196,
+    "ast_hash": "f8091a1ea8209cbfa5386094bb530460",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/reviews-data.test.js": {
@@ -732,6 +732,76 @@
   "frontend/src/app/(website)/reviews/page.js": {
     "mtime": 1792499987.922462,
     "ast_hash": "7ba155dfcaf123e29b06b7605c747170",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/buddy.jpg": {
+    "mtime": 1792510766.8965847,
+    "ast_hash": "657507cf03a8c7c9616f580276fb1254",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/bullet.jpg": {
+    "mtime": 1792510767.3016653,
+    "ast_hash": "9cefaf66b47b0e52ffe786e8aac78fb9",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/clementine.jpg": {
+    "mtime": 1792510768.8153243,
+    "ast_hash": "5524fbe793b7be7fd87f6a813c5fa3d2",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/cletus.jpg": {
+    "mtime": 1792510767.0593777,
+    "ast_hash": "d10592100ca8c4eb7b59e5a85196e857",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/finn.jpg": {
+    "mtime": 1792510768.026601,
+    "ast_hash": "e8eeadf35d7091a6e6e18b4eef7919ad",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/hazel.jpg": {
+    "mtime": 1792510767.6674068,
+    "ast_hash": "63176d199417e41ed95256be16ef95ff",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/jade.jpg": {
+    "mtime": 1792510767.8074205,
+    "ast_hash": "d58ca354302e2d47fb7aabf794a9dd79",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/juice.jpg": {
+    "mtime": 1792510767.191285,
+    "ast_hash": "d0b3e2bf4b1a5c7991381112c957f027",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/koko.jpg": {
+    "mtime": 1792510767.470248,
+    "ast_hash": "4837b5f8e8827148660f4ac0594f4cc0",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/ksana.jpg": {
+    "mtime": 1792510768.5691588,
+    "ast_hash": "06298273ddcac2148a529790669921c4",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/lexi.jpg": {
+    "mtime": 1792510768.4426284,
+    "ast_hash": "87f8206b751854db5b0c89cda5d79da8",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/oliver.jpg": {
+    "mtime": 1792510768.2951832,
+    "ast_hash": "28919e19084ee1d118b6c5030570e7f6",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/peaches.jpg": {
+    "mtime": 1792510768.723516,
+    "ast_hash": "d4dd9cad1044cdd5e8477da3b257dd00",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/reviews/pearl.jpg": {
+    "mtime": 1792510767.9094367,
+    "ast_hash": "6745ded83178b243e0b7dae183d2d88f",
     "semantic_hash": ""
   }
 }
