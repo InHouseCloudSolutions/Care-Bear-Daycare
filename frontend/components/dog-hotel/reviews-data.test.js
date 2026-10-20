@@ -2,7 +2,12 @@
  * @jest-environment node
  */
 
-import { averageStarRating, countReviews, sortReviewsNewestFirst } from './reviews-data';
+import {
+  averageStarRating,
+  countReviews,
+  reviewVerificationLabel,
+  sortReviewsNewestFirst,
+} from './reviews-data';
 
 const older = {
   id: 'older',
@@ -36,6 +41,15 @@ const sameDayLater = {
   photoSrc: null,
   photoAlt: null,
 };
+
+describe('reviewVerificationLabel', () => {
+  it('tags Rover and Google reviews and leaves internal reviews untagged', () => {
+    expect(reviewVerificationLabel('rover')).toBe('Verified Rover client');
+    expect(reviewVerificationLabel('google')).toBe('Verified Google review');
+    expect(reviewVerificationLabel('internal')).toBeNull();
+    expect(reviewVerificationLabel(undefined)).toBeNull();
+  });
+});
 
 describe('sortReviewsNewestFirst', () => {
   it('sorts newest stay first without dropping low ratings', () => {

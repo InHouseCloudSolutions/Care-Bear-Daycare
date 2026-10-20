@@ -1114,7 +1114,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_devconsolesuppressor",
-      "community": 4,
+      "community": 61,
       "norm_label": "devconsolesuppressor.js"
     },
     {
@@ -1124,7 +1124,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "components_devconsolesuppressor_suppressed",
-      "community": 4,
+      "community": 61,
       "norm_label": "suppressed"
     },
     {
@@ -1134,7 +1134,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "components_devconsolesuppressor_devconsolesuppressor",
-      "community": 4,
+      "community": 61,
       "norm_label": "devconsolesuppressor()"
     },
     {
@@ -1264,7 +1264,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "design_studio_glassformscrollpanel_marketingformpanel",
-      "community": 2,
+      "community": 1,
       "norm_label": "marketingformpanel()"
     },
     {
@@ -1794,97 +1794,97 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviewspage.js"
     },
     {
       "label": "bodySx",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L19",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bodysx",
-      "community": 1,
+      "community": 28,
       "norm_label": "bodysx"
     },
     {
       "label": "reviewShape",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L26",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewshape",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviewshape"
     },
     {
       "label": "reviewPhotos()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L43",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewphotos",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviewphotos()"
     },
     {
       "label": "sitePhotoSrc()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L48",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_sitephotosrc",
-      "community": 1,
+      "community": 28,
       "norm_label": "sitephotosrc()"
     },
     {
       "label": "ReviewPhoto()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L55",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewphoto",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviewphoto()"
     },
     {
       "label": "StarRating()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L82",
+      "source_location": "L89",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_starrating",
-      "community": 1,
+      "community": 28,
       "norm_label": "starrating()"
     },
     {
       "label": "ReviewCard()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L105",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewcard",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviewcard()"
     },
     {
       "label": "BookStayButton()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L169",
+      "source_location": "L179",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bookstaybutton",
-      "community": 70,
+      "community": 0,
       "norm_label": "bookstaybutton()"
     },
     {
       "label": "ReviewsPage()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L203",
+      "source_location": "L213",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewspage",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviewspage()"
     },
     {
@@ -1894,47 +1894,67 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviews-data.js"
+    },
+    {
+      "label": "VERIFICATION_LABELS",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/reviews-data.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "dog_hotel_reviews_data_verification_labels",
+      "community": 28,
+      "norm_label": "verification_labels"
+    },
+    {
+      "label": "reviewVerificationLabel()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/reviews-data.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "dog_hotel_reviews_data_reviewverificationlabel",
+      "community": 28,
+      "norm_label": "reviewverificationlabel()"
     },
     {
       "label": "REVIEWS",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L18",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_reviews",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviews"
     },
     {
       "label": "sortReviewsNewestFirst()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L143",
+      "source_location": "L167",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_sortreviewsnewestfirst",
-      "community": 1,
+      "community": 28,
       "norm_label": "sortreviewsnewestfirst()"
     },
     {
       "label": "countReviews()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L147",
+      "source_location": "L171",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_countreviews",
-      "community": 1,
+      "community": 28,
       "norm_label": "countreviews()"
     },
     {
       "label": "averageStarRating()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L152",
+      "source_location": "L176",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_averagestarrating",
-      "community": 1,
+      "community": 28,
       "norm_label": "averagestarrating()"
     },
     {
@@ -1944,37 +1964,37 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_test",
-      "community": 1,
+      "community": 28,
       "norm_label": "reviews-data.test.js"
     },
     {
       "label": "older",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.test.js",
-      "source_location": "L7",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_test_older",
-      "community": 1,
+      "community": 28,
       "norm_label": "older"
     },
     {
       "label": "newer",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.test.js",
-      "source_location": "L18",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_test_newer",
-      "community": 1,
+      "community": 28,
       "norm_label": "newer"
     },
     {
       "label": "sameDayLater",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.test.js",
-      "source_location": "L29",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_test_samedaylater",
-      "community": 1,
+      "community": 28,
       "norm_label": "samedaylater"
     },
     {
@@ -1984,7 +2004,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homeherobackground",
-      "community": 78,
+      "community": 1,
       "norm_label": "homeherobackground.js"
     },
     {
@@ -1994,7 +2014,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "home_landing_homeherobackground_homeherobackground",
-      "community": 78,
+      "community": 1,
       "norm_label": "homeherobackground()"
     },
     {
@@ -2034,7 +2054,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter",
-      "community": 68,
+      "community": 1,
       "norm_label": "homelandingfooter.js"
     },
     {
@@ -2044,7 +2064,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_social_icons",
-      "community": 68,
+      "community": 1,
       "norm_label": "social_icons"
     },
     {
@@ -2054,7 +2074,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_footerlinksx",
-      "community": 68,
+      "community": 1,
       "norm_label": "footerlinksx"
     },
     {
@@ -2064,7 +2084,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_footertextsx",
-      "community": 68,
+      "community": 1,
       "norm_label": "footertextsx"
     },
     {
@@ -2074,7 +2094,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_socialiconbuttonsx",
-      "community": 68,
+      "community": 1,
       "norm_label": "socialiconbuttonsx"
     },
     {
@@ -2084,7 +2104,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_homelandingfooter",
-      "community": 68,
+      "community": 1,
       "norm_label": "homelandingfooter()"
     },
     {
@@ -2094,7 +2114,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingpage",
-      "community": 68,
+      "community": 1,
       "norm_label": "homelandingpage.js"
     },
     {
@@ -2104,7 +2124,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_hero_logo_src",
-      "community": 68,
+      "community": 1,
       "norm_label": "hero_logo_src"
     },
     {
@@ -2114,7 +2134,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_heroctasx",
-      "community": 68,
+      "community": 1,
       "norm_label": "heroctasx"
     },
     {
@@ -2124,7 +2144,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_herocta",
-      "community": 68,
+      "community": 1,
       "norm_label": "herocta()"
     },
     {
@@ -2144,7 +2164,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_homelandingpage",
-      "community": 68,
+      "community": 1,
       "norm_label": "homelandingpage()"
     },
     {
@@ -2154,7 +2174,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingshell",
-      "community": 67,
+      "community": 1,
       "norm_label": "homelandingshell.js"
     },
     {
@@ -2164,7 +2184,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_createlandingtheme",
-      "community": 67,
+      "community": 1,
       "norm_label": "createlandingtheme()"
     },
     {
@@ -2174,7 +2194,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_homelandingshell",
-      "community": 67,
+      "community": 1,
       "norm_label": "homelandingshell()"
     },
     {
@@ -2184,7 +2204,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawer",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxurynavdrawer.js"
     },
     {
@@ -2194,7 +2214,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawer_luxurynavdrawer",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxurynavdrawer()"
     },
     {
@@ -2204,7 +2224,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxurynavdrawerlist.js"
     },
     {
@@ -2214,7 +2234,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_externallinkprops",
-      "community": 70,
+      "community": 0,
       "norm_label": "externallinkprops()"
     },
     {
@@ -2224,7 +2244,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_navitemshape",
-      "community": 65,
+      "community": 0,
       "norm_label": "navitemshape"
     },
     {
@@ -2234,7 +2254,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_getitemtypographysx",
-      "community": 65,
+      "community": 0,
       "norm_label": "getitemtypographysx()"
     },
     {
@@ -2244,7 +2264,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_getitembuttonsx",
-      "community": 65,
+      "community": 0,
       "norm_label": "getitembuttonsx()"
     },
     {
@@ -2254,7 +2274,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_luxurynavdrawerlist",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxurynavdrawerlist()"
     },
     {
@@ -2264,107 +2284,107 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketinginteriorlayout.js"
     },
     {
       "label": "MARKETING_INTERIOR_CONTENT_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L18",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_interior_content_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_interior_content_sx"
     },
     {
       "label": "MARKETING_INTERIOR_FORM_GRID_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L29",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_interior_form_grid_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_interior_form_grid_sx"
     },
     {
       "label": "MARKETING_FORM_PAGE_CONTENT_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L41",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_page_content_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_form_page_content_sx"
     },
     {
       "label": "MARKETING_FORM_FLEX_SECTION_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L60",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_flex_section_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_form_flex_section_sx"
     },
     {
       "label": "MARKETING_FORM_GRID_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L73",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_grid_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_form_grid_sx"
     },
     {
       "label": "MARKETING_FORM_PAGE_GRID_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L92",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_page_grid_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_form_page_grid_sx"
     },
     {
       "label": "MARKETING_FORM_HERO_COLUMN_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L97",
+      "source_location": "L101",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_hero_column_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_form_hero_column_sx"
     },
     {
       "label": "MARKETING_FORM_COLUMN_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L108",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_column_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_form_column_sx"
     },
     {
       "label": "MARKETING_FORM_COLUMN_INNER_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L120",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_column_inner_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "marketing_form_column_inner_sx"
     },
     {
       "label": "MarketingInteriorLayout()",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L133",
+      "source_location": "L137",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketinginteriorlayout",
-      "community": 2,
+      "community": 1,
       "norm_label": "marketinginteriorlayout()"
     },
     {
@@ -2404,7 +2424,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketingnavdesktopitem.js"
     },
     {
@@ -2414,7 +2434,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_navitemshape",
-      "community": 70,
+      "community": 0,
       "norm_label": "navitemshape"
     },
     {
@@ -2434,7 +2454,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketingnavdesktoplink.js"
     },
     {
@@ -2444,7 +2464,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_externallinkprops",
-      "community": 70,
+      "community": 0,
       "norm_label": "externallinkprops()"
     },
     {
@@ -2454,7 +2474,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_navitemshape",
-      "community": 70,
+      "community": 0,
       "norm_label": "navitemshape"
     },
     {
@@ -2464,7 +2484,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_marketingnavdesktoplink",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketingnavdesktoplink()"
     },
     {
@@ -2474,7 +2494,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel",
-      "community": 65,
+      "community": 0,
       "norm_label": "marketingnavdrawerpanel.js"
     },
     {
@@ -2484,7 +2504,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel_navitemshape",
-      "community": 65,
+      "community": 0,
       "norm_label": "navitemshape"
     },
     {
@@ -2534,7 +2554,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_data",
-      "community": 65,
+      "community": 0,
       "norm_label": "home-landing-data.js"
     },
     {
@@ -2554,7 +2574,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_brand",
-      "community": 68,
+      "community": 1,
       "norm_label": "home_brand"
     },
     {
@@ -2564,7 +2584,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_footer",
-      "community": 68,
+      "community": 1,
       "norm_label": "home_footer"
     },
     {
@@ -2574,7 +2594,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_footer_social_links",
-      "community": 68,
+      "community": 1,
       "norm_label": "home_footer_social_links"
     },
     {
@@ -2604,7 +2624,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_mega_menu_image_height_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "mega_menu_image_height_sx"
     },
     {
@@ -2614,7 +2634,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_mega_menu_container_py_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "mega_menu_container_py_sx"
     },
     {
@@ -2644,7 +2664,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_link_typography_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "home_nav_link_typography_sx"
     },
     {
@@ -2654,7 +2674,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_normalizemarketingnavpath",
-      "community": 70,
+      "community": 0,
       "norm_label": "normalizemarketingnavpath()"
     },
     {
@@ -2664,7 +2684,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_ismarketingnavlinkactive",
-      "community": 70,
+      "community": 0,
       "norm_label": "ismarketingnavlinkactive()"
     },
     {
@@ -2674,7 +2694,7 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketingnavlinkhoverunderlinesx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketingnavlinkhoverunderlinesx()"
     },
     {
@@ -2684,7 +2704,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_gradient_sx",
-      "community": 67,
+      "community": 1,
       "norm_label": "luxury_gradient_sx"
     },
     {
@@ -2694,7 +2714,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_item_enter_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_item_enter_sx"
     },
     {
@@ -2704,7 +2724,7 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_item_reset_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_item_reset_sx"
     },
     {
@@ -2714,7 +2734,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_primary_typography_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_primary_typography_sx"
     },
     {
@@ -2724,7 +2744,7 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_section_typography_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_section_typography_sx"
     },
     {
@@ -2734,7 +2754,7 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_group_typography_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_group_typography_sx"
     },
     {
@@ -2744,7 +2764,7 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_sublink_typography_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_sublink_typography_sx"
     },
     {
@@ -2754,7 +2774,7 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_luxury_drawer_paper_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "home_luxury_drawer_paper_sx"
     },
     {
@@ -2764,7 +2784,7 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_hero_slides",
-      "community": 78,
+      "community": 1,
       "norm_label": "home_hero_slides"
     },
     {
@@ -2774,7 +2794,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_font",
-      "community": 67,
+      "community": 1,
       "norm_label": "home-landing-font.js"
     },
     {
@@ -2784,7 +2804,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_home_landing_font_homemontserrat",
-      "community": 67,
+      "community": 1,
       "norm_label": "homemontserrat"
     },
     {
@@ -2854,7 +2874,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems",
-      "community": 74,
+      "community": 0,
       "norm_label": "usemarketingnavitems.js"
     },
     {
@@ -2864,7 +2884,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems_usehomenavitems",
-      "community": 74,
+      "community": 0,
       "norm_label": "usehomenavitems()"
     },
     {
@@ -2874,7 +2894,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems_usemarketinginteriornavitems",
-      "community": 74,
+      "community": 0,
       "norm_label": "usemarketinginteriornavitems()"
     },
     {
@@ -2974,7 +2994,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "consts_marketing_nav",
-      "community": 74,
+      "community": 0,
       "norm_label": "marketing-nav.js"
     },
     {
@@ -2984,7 +3004,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "consts_marketing_nav_marketing_nav_tree",
-      "community": 74,
+      "community": 0,
       "norm_label": "marketing_nav_tree"
     },
     {
@@ -2994,7 +3014,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "consts_marketing_nav_flattennavitemsfordrawer",
-      "community": 74,
+      "community": 0,
       "norm_label": "flattennavitemsfordrawer()"
     },
     {
@@ -3004,7 +3024,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "consts_marketing_nav_test",
-      "community": 74,
+      "community": 0,
       "norm_label": "marketing-nav.test.js"
     },
     {
@@ -3024,7 +3044,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "consts_routes_isexternalhref",
-      "community": 70,
+      "community": 0,
       "norm_label": "isexternalhref()"
     },
     {
@@ -3124,7 +3144,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "consts_routes_ismarketingroute",
-      "community": 69,
+      "community": 80,
       "norm_label": "ismarketingroute()"
     },
     {
@@ -3214,7 +3234,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext",
-      "community": 78,
+      "community": 1,
       "norm_label": "homeheroslidescontext.js"
     },
     {
@@ -3224,7 +3244,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_homeheroslidescontext",
-      "community": 78,
+      "community": 1,
       "norm_label": "homeheroslidescontext"
     },
     {
@@ -3244,7 +3264,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_homeheroslidesprovider",
-      "community": 78,
+      "community": 1,
       "norm_label": "homeheroslidesprovider()"
     },
     {
@@ -3254,7 +3274,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_usehomeheroslides",
-      "community": 78,
+      "community": 1,
       "norm_label": "usehomeheroslides()"
     },
     {
@@ -4844,7 +4864,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "how_a_stay_works_page",
-      "community": 1,
+      "community": 80,
       "norm_label": "page.js"
     },
     {
@@ -4854,7 +4874,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "how_a_stay_works_page_metadata",
-      "community": 1,
+      "community": 80,
       "norm_label": "metadata"
     },
     {
@@ -4864,7 +4884,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "how_a_stay_works_page_howastayworksroute",
-      "community": 1,
+      "community": 80,
       "norm_label": "howastayworksroute()"
     },
     {
@@ -5864,7 +5884,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice",
-      "community": 61,
+      "community": 17,
       "norm_label": "design-it-twice.md"
     },
     {
@@ -5874,7 +5894,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_design_it_twice",
-      "community": 61,
+      "community": 17,
       "norm_label": "design it twice"
     },
     {
@@ -5884,7 +5904,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_process",
-      "community": 61,
+      "community": 17,
       "norm_label": "process"
     },
     {
@@ -5894,7 +5914,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_1_frame_the_problem_space",
-      "community": 61,
+      "community": 17,
       "norm_label": "1. frame the problem space"
     },
     {
@@ -5904,7 +5924,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_2_launch_subagents",
-      "community": 61,
+      "community": 17,
       "norm_label": "2. launch subagents"
     },
     {
@@ -5914,7 +5934,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_3_present_and_compare",
-      "community": 61,
+      "community": 17,
       "norm_label": "3. present and compare"
     },
     {
@@ -7564,7 +7584,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_2_repo_discovery",
-      "community": 11,
+      "community": 65,
       "norm_label": "phase 2 \u2014 repo discovery"
     },
     {
@@ -7574,7 +7594,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_first_mandatory",
-      "community": 11,
+      "community": 65,
       "norm_label": "graphify first (mandatory)"
     },
     {
@@ -7584,7 +7604,7 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce",
-      "community": 11,
+      "community": 65,
       "norm_label": "what to produce"
     },
     {
@@ -7594,7 +7614,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_to_use_subagents",
-      "community": 11,
+      "community": 65,
       "norm_label": "when to use subagents"
     },
     {
@@ -7604,7 +7624,7 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_design_tree_interview",
-      "community": 11,
+      "community": 40,
       "norm_label": "phase 3 \u2014 design-tree interview"
     },
     {
@@ -7614,7 +7634,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "write_a_prd_skill_rules",
-      "community": 11,
+      "community": 40,
       "norm_label": "rules"
     },
     {
@@ -7624,7 +7644,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "write_a_prd_skill_design_tree_walk_order",
-      "community": 11,
+      "community": 40,
       "norm_label": "design tree (walk order)"
     },
     {
@@ -7634,7 +7654,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_skill_dependency_examples",
-      "community": 11,
+      "community": 40,
       "norm_label": "dependency examples"
     },
     {
@@ -7644,7 +7664,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_a_branch_is_done",
-      "community": 11,
+      "community": 40,
       "norm_label": "when a branch is done"
     },
     {
@@ -7654,7 +7674,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_exit_criteria",
-      "community": 11,
+      "community": 40,
       "norm_label": "phase 3 exit criteria"
     },
     {
@@ -7664,7 +7684,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_module_sketch",
-      "community": 11,
+      "community": 33,
       "norm_label": "phase 4 \u2014 module sketch"
     },
     {
@@ -7674,7 +7694,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "write_a_prd_skill_purpose",
-      "community": 11,
+      "community": 33,
       "norm_label": "purpose"
     },
     {
@@ -7684,7 +7704,7 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_mandatory",
-      "community": 11,
+      "community": 33,
       "norm_label": "graphify (mandatory)"
     },
     {
@@ -7694,7 +7714,7 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce_178",
-      "community": 11,
+      "community": 33,
       "norm_label": "what to produce"
     },
     {
@@ -7704,7 +7724,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "write_a_prd_skill_extraction_mindset",
-      "community": 11,
+      "community": 33,
       "norm_label": "extraction mindset"
     },
     {
@@ -7714,7 +7734,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "write_a_prd_skill_confirm_with_user",
-      "community": 11,
+      "community": 33,
       "norm_label": "confirm with user"
     },
     {
@@ -7724,7 +7744,7 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_exit_criteria",
-      "community": 11,
+      "community": 33,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -7764,7 +7784,7 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "write_a_prd_skill_writing_rules",
-      "community": 90,
+      "community": 62,
       "norm_label": "writing rules"
     },
     {
@@ -7794,7 +7814,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide",
-      "community": 62,
+      "community": 83,
       "norm_label": "interview-guide.md"
     },
     {
@@ -7894,7 +7914,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_interview_tactics",
-      "community": 89,
+      "community": 77,
       "norm_label": "interview tactics"
     },
     {
@@ -7904,7 +7924,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_relentless_but_respectful",
-      "community": 89,
+      "community": 77,
       "norm_label": "relentless but respectful"
     },
     {
@@ -7914,7 +7934,7 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_batching",
-      "community": 89,
+      "community": 77,
       "norm_label": "batching"
     },
     {
@@ -7924,7 +7944,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_stuck_loops",
-      "community": 89,
+      "community": 77,
       "norm_label": "stuck loops"
     },
     {
@@ -7934,7 +7954,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_decision_log_template",
-      "community": 89,
+      "community": 77,
       "norm_label": "decision log template"
     },
     {
@@ -7944,7 +7964,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch",
-      "community": 62,
+      "community": 86,
       "norm_label": "module-sketch.md"
     },
     {
@@ -8054,7 +8074,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_ihcs_conventions",
-      "community": 71,
+      "community": 14,
       "norm_label": "ihcs conventions"
     },
     {
@@ -8084,7 +8104,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template",
-      "community": 83,
+      "community": 62,
       "norm_label": "template.md"
     },
     {
@@ -8094,7 +8114,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template_prd_template",
-      "community": 83,
+      "community": 62,
       "norm_label": "prd template"
     },
     {
@@ -8244,7 +8264,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme",
-      "community": 71,
+      "community": 14,
       "norm_label": "readme.md"
     },
     {
@@ -8254,7 +8274,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme_care_bear_daycare",
-      "community": 71,
+      "community": 14,
       "norm_label": "care bear daycare"
     },
     {
@@ -8274,7 +8294,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "readme_stack",
-      "community": 71,
+      "community": 14,
       "norm_label": "stack"
     },
     {
@@ -8284,7 +8304,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "readme_local_development",
-      "community": 71,
+      "community": 14,
       "norm_label": "local development"
     },
     {
@@ -8294,7 +8314,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "readme_layout",
-      "community": 71,
+      "community": 14,
       "norm_label": "layout"
     },
     {
@@ -8304,7 +8324,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "readme_license",
-      "community": 71,
+      "community": 14,
       "norm_label": "license"
     },
     {
@@ -8361,7 +8381,7 @@
       "label": "MARKETING_FORM_SHORT_CONTENT_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L54",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_short_content_sx",
       "community": 57,
@@ -8371,7 +8391,7 @@
       "label": "MARKETING_FORM_SHORT_GRID_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L95",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_short_grid_sx",
       "community": 58,
@@ -8384,7 +8404,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_items_base",
-      "community": 74,
+      "community": 0,
       "norm_label": "home_nav_items_base"
     },
     {
@@ -8394,7 +8414,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketing_interior_nav_items_base",
-      "community": 74,
+      "community": 0,
       "norm_label": "marketing_interior_nav_items_base"
     },
     {
@@ -8414,7 +8434,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "consts_marketing_nav_home_nav_items_base",
-      "community": 74,
+      "community": 0,
       "norm_label": "home_nav_items_base"
     },
     {
@@ -8424,7 +8444,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "consts_marketing_nav_marketing_interior_nav_items_base",
-      "community": 74,
+      "community": 0,
       "norm_label": "marketing_interior_nav_items_base"
     },
     {
@@ -8484,7 +8504,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Extends Airbnb, Jest, Prettier, and Next. no-console is an error; prop-types ignores stores; Next Link is exempt from anchor-is-valid; import resolver searches ., components, and hooks.",
-      "community": 4,
+      "community": 61,
       "norm_label": "eslint configuration",
       "id": "frontend_eslintrc_config"
     },
@@ -8605,7 +8625,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Marketing form pages use stacked layout below the MUI lg breakpoint (1200px).",
-      "community": 2,
+      "community": 1,
       "norm_label": "form_page_desktop_bp",
       "id": "design_studio_design_studio_glass_form_page_desktop_bp"
     },
@@ -8618,7 +8638,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 0,
       "norm_label": "nav_glass_backdrop_color",
       "id": "design_studio_design_studio_glass_nav_glass_backdrop_color"
     },
@@ -8631,7 +8651,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 78,
+      "community": 1,
       "norm_label": "handleslidechange",
       "id": "home_landing_homeherobackground_handleslidechange"
     },
@@ -8644,7 +8664,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 78,
+      "community": 1,
       "norm_label": "home_hero_fade_ms",
       "id": "home_landing_home_landing_data_home_hero_fade_ms"
     },
@@ -8658,7 +8678,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI theme font family so drawer portals inherit Nunito outside the shell className.",
-      "community": 67,
+      "community": 1,
       "norm_label": "home_landing_font_family",
       "id": "home_landing_home_landing_font_home_landing_font_family"
     },
@@ -8710,7 +8730,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 74,
+      "community": 0,
       "norm_label": "rover_booking_url",
       "id": "consts_routes_rover_booking_url"
     },
@@ -9050,7 +9070,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "module",
       "id": "codebase_design_skill_module"
     },
@@ -9064,7 +9084,7 @@
       "author": null,
       "contributor": null,
       "rationale": "The interface is the test surface. Callers and tests cross the same seam.",
-      "community": 61,
+      "community": 17,
       "norm_label": "interface",
       "id": "codebase_design_skill_interface"
     },
@@ -9077,7 +9097,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "implementation",
       "id": "codebase_design_skill_implementation"
     },
@@ -9091,7 +9111,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depth is leverage at the interface, not a ratio of implementation lines to interface lines.",
-      "community": 61,
+      "community": 17,
       "norm_label": "depth",
       "id": "codebase_design_skill_depth"
     },
@@ -9105,7 +9125,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Michael Feathers: a place where behaviour can change without editing in that place. One adapter means a hypothetical seam; two adapters means a real one.",
-      "community": 61,
+      "community": 17,
       "norm_label": "seam",
       "id": "codebase_design_skill_seam"
     },
@@ -9118,7 +9138,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "adapter",
       "id": "codebase_design_skill_adapter"
     },
@@ -9131,7 +9151,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "leverage",
       "id": "codebase_design_skill_leverage"
     },
@@ -9144,7 +9164,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "locality",
       "id": "codebase_design_skill_locality"
     },
@@ -9170,7 +9190,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "in-process dependency",
       "id": "codebase_design_deepening_in_process"
     },
@@ -9183,7 +9203,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "local-substitutable dependency",
       "id": "codebase_design_deepening_local_substitutable"
     },
@@ -9196,7 +9216,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "remote but owned ports and adapters",
       "id": "codebase_design_deepening_ports_and_adapters"
     },
@@ -9209,7 +9229,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "true external dependency",
       "id": "codebase_design_deepening_true_external"
     },
@@ -9222,7 +9242,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 17,
       "norm_label": "replace don't layer",
       "id": "codebase_design_deepening_replace_dont_layer"
     },
@@ -9655,7 +9675,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Resolve one decision branch at a time until shared understanding. Exit requires testable must-haves, explicit scope, no blocking questions, and user confirmation.",
-      "community": 62,
+      "community": 83,
       "norm_label": "phase 3 design-tree interview",
       "id": "write_a_prd_skill_phase3_design_tree"
     },
@@ -9683,7 +9703,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Map work to concrete build/modify paths and extract pure logic from UI, HTTP, and ORM before writing the PRD. User must confirm the sketch.",
-      "community": 62,
+      "community": 83,
       "norm_label": "phase 4 module sketch",
       "id": "write_a_prd_skill_phase4_module_sketch"
     },
@@ -9697,7 +9717,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Fill the template from working notes, discovery, decision log, and module sketch. Include current state, decision log, implementation modules, and verified assertions.",
-      "community": 90,
+      "community": 62,
       "norm_label": "phase 5 write prd",
       "id": "write_a_prd_skill_phase5_write_prd"
     },
@@ -9711,7 +9731,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Default path is issues/prd-<short-slug>.md. Revisions use -v2. Never overwrite without approval. Dated names only when the user asks.",
-      "community": 90,
+      "community": 62,
       "norm_label": "issues/prd-<slug>.md",
       "id": "write_a_prd_skill_issues_prd_path"
     },
@@ -9725,7 +9745,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Report path, one-paragraph scope, deferred question count, and optional handoff to /project-manager.",
-      "community": 90,
+      "community": 62,
       "norm_label": "phase 6 confirm",
       "id": "write_a_prd_skill_phase6_confirm"
     },
@@ -9739,7 +9759,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Root branch. Unlocks every other branch. Exit is a confirmed one-sentence problem plus measurable goals, including what is not success.",
-      "community": 33,
+      "community": 14,
       "norm_label": "branch 1 problem and success",
       "id": "write_a_prd_interview_guide_branch1_problem"
     },
@@ -9753,7 +9773,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branch 1. Exit is an agreed role-by-permission matrix. Cross-check middleware.ts, AdminAuthGuard, and DRF permissions.",
-      "community": 33,
+      "community": 14,
       "norm_label": "branch 2 users and permissions",
       "id": "write_a_prd_interview_guide_branch2_users"
     },
@@ -9767,7 +9787,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Example roles listed as public visitor, ES admin, DS manager, kiosk player, and API consumer. These names come from the older multi-product suite, not from the Care Bear Daycare brand reference.",
-      "community": 33,
+      "community": 14,
       "norm_label": "es admin ds manager kiosk roles",
       "id": "write_a_prd_interview_guide_legacy_roles"
     },
@@ -9781,7 +9801,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branch 1. Confirms MVP, out-of-scope list, and cross-cutting concerns such as shared token, Caddy routes, and Docker rebuild.",
-      "community": 33,
+      "community": 14,
       "norm_label": "branch 3 product surface and scope",
       "id": "write_a_prd_interview_guide_branch3_surface"
     },
@@ -9809,7 +9829,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 2 and 3. Covers models, lifecycle, Entra, Outlook add-in, WebSockets, migrations. Exit is an entity list and integration boundaries.",
-      "community": 33,
+      "community": 14,
       "norm_label": "branch 4 data and integrations",
       "id": "write_a_prd_interview_guide_branch4_data"
     },
@@ -9823,7 +9843,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 2\u20134. Primary flow, edge cases, and design reference (Tailwind, Figma, or existing MUI). i18n probe is scoped to the IHCS website.",
-      "community": 33,
+      "community": 14,
       "norm_label": "branch 5 ux and flows",
       "id": "write_a_prd_interview_guide_branch5_ux"
     },
@@ -9837,7 +9857,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 3\u20135. Performance, accessibility, security, and reliability, or an explicit statement of no special requirements.",
-      "community": 33,
+      "community": 14,
       "norm_label": "branch 6 non-functional requirements",
       "id": "write_a_prd_interview_guide_branch6_nfr"
     },
@@ -9851,7 +9871,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 3\u20135. MVP versus later phases, feature flags, beta users, client sign-off, and launch assets.",
-      "community": 33,
+      "community": 14,
       "norm_label": "branch 7 rollout and phasing",
       "id": "write_a_prd_interview_guide_branch7_rollout"
     },
@@ -9865,7 +9885,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on all prior branches. Manual scenarios per role, API method/path/status expectations, and regression areas that prove Branch 1 success.",
-      "community": 33,
+      "community": 14,
       "norm_label": "branch 8 acceptance and verification",
       "id": "write_a_prd_interview_guide_branch8_acceptance"
     },
@@ -9893,7 +9913,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Pure input-to-output logic with injected plain data, no UI/framework/ORM/globals/request/hooks, and a stable signature so it can be unit-tested in isolation.",
-      "community": 91,
+      "community": 83,
       "norm_label": "deep module",
       "id": "write_a_prd_module_sketch_deep_module"
     },
@@ -9907,7 +9927,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Viewsets, route pages, and hooks stay thin and delegate rules downward. Tested with integration or UI tests only.",
-      "community": 91,
+      "community": 83,
       "norm_label": "shallow orchestrator",
       "id": "write_a_prd_module_sketch_shallow_module"
     },
@@ -9921,7 +9941,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Dependency shape: Route or ViewSet calls an orchestrator hook or service, which calls deep modules, with API client or serializer beside the orchestrator.",
-      "community": 91,
+      "community": 83,
       "norm_label": "route to orchestrator to deep module",
       "id": "write_a_prd_module_sketch_dependency_chain"
     },
@@ -9935,7 +9955,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sketch splits into backend models/serializers/services/viewsets, frontend pages/components/hooks/API clients, and cross-cutting middleware, auth, env, Docker, and migrations.",
-      "community": 62,
+      "community": 86,
       "norm_label": "backend frontend cross-cutting layers",
       "id": "write_a_prd_module_sketch_layers"
     },
@@ -9949,7 +9969,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Columns: ID, module path, layer, Create/Modify/Extend, responsibility, deep flag, test approach, dependencies. Example pairs a schedule service with a thin viewset and a frontend domain preview.",
-      "community": 83,
+      "community": 86,
       "norm_label": "module table m-001",
       "id": "write_a_prd_module_sketch_module_table"
     },
@@ -9991,7 +10011,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Maps requirement IDs to module IDs. The skill requires every P0 to map to at least one module.",
-      "community": 83,
+      "community": 86,
       "norm_label": "requirement to module traceability",
       "id": "write_a_prd_template_traceability"
     },
@@ -10019,7 +10039,7 @@
       "author": null,
       "contributor": null,
       "rationale": "On push to main or workflow_dispatch. Concurrency group pages does not cancel in progress. Build job needs deploy job. Permissions: contents read, pages write, id-token write.",
-      "community": 28,
+      "community": 14,
       "norm_label": "deploy next.js site to pages",
       "id": "workflows_nextjs_deploy_pages"
     },
@@ -10033,7 +10053,7 @@
       "author": null,
       "contributor": null,
       "rationale": "File header cites the actions/starter-workflows pages/nextjs.yml template.",
-      "community": 28,
+      "community": 14,
       "norm_label": "github pages next.js starter workflow",
       "id": "workflows_nextjs_starter_workflow"
     },
@@ -10047,7 +10067,7 @@
       "author": null,
       "contributor": null,
       "rationale": "If frontend/yarn.lock exists, manager yarn, command install, runner yarn. Else if frontend/package.json exists, npm ci via npx. Otherwise the step fails.",
-      "community": 28,
+      "community": 14,
       "norm_label": "detect package manager",
       "id": "workflows_nextjs_detect_package_manager"
     },
@@ -10061,7 +10081,7 @@
       "author": null,
       "contributor": null,
       "rationale": "configure-pages uses static_site_generator next and frontend/next.config.js. withPlugins() blocks the injector, so the build also sets GITHUB_PAGES and NEXT_PUBLIC_BASE_PATH from steps.pages.outputs.base_path.",
-      "community": 28,
+      "community": 14,
       "norm_label": "github pages base path",
       "id": "workflows_nextjs_pages_base_path"
     },
@@ -10103,7 +10123,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Node 20, Corepack, yarn or npm install, next build, then upload-pages-artifact from frontend/out and deploy-pages to the github-pages environment.",
-      "community": 28,
+      "community": 14,
       "norm_label": "frontend/out pages artifact",
       "id": "workflows_nextjs_static_export"
     },
@@ -10117,7 +10137,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Runs on workflow_dispatch or push to main when frontend/** or this workflow file changes. Working directory is frontend. Cancels in-progress runs in the same concurrency group.",
-      "community": 28,
+      "community": 14,
       "norm_label": "test frontend workflow",
       "id": "workflows_test_frontend"
     },
@@ -10131,7 +10151,7 @@
       "author": null,
       "contributor": null,
       "rationale": "checkout, corepack enable, setup-node with yarn cache on frontend/yarn.lock, yarn install --immutable, yarn lint.",
-      "community": 28,
+      "community": 14,
       "norm_label": "frontend lint job",
       "id": "workflows_test_frontend_lint"
     },
@@ -10145,7 +10165,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Lint runs only for pull_request, or for push when the ref does not contain refs/pull/. workflow_dispatch is a trigger but does not satisfy the if, so a manual run skips Lint.",
-      "community": 28,
+      "community": 14,
       "norm_label": "lint job event guard",
       "id": "workflows_test_frontend_lint_guard"
     },
@@ -10159,7 +10179,7 @@
       "author": null,
       "contributor": null,
       "rationale": "pre-commit-hooks v3.4.0: trailing-whitespace, end-of-file-fixer, check-yaml, check-added-large-files, check-json.",
-      "community": 28,
+      "community": 14,
       "norm_label": "pre-commit hooks",
       "id": "pre_commit_config_hooks"
     },
@@ -10173,7 +10193,7 @@
       "author": null,
       "contributor": null,
       "rationale": "mirrors-prettier v2.2.1 with args --config frontend/.prettierrc.",
-      "community": 28,
+      "community": 14,
       "norm_label": "pre-commit prettier",
       "id": "pre_commit_config_prettier"
     },
@@ -10229,7 +10249,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Nunito via next/font/google, weights 400\u2013700, display swap, loaded in home-landing-font.js. Uppercase is for small eyebrows only.",
-      "community": 40,
+      "community": 14,
       "norm_label": "nunito marketing type",
       "id": "brand_reference_nunito"
     },
@@ -10243,7 +10263,7 @@
       "author": null,
       "contributor": null,
       "rationale": "The export is still named homeMontserrat, and HOME_LANDING_FONT_FAMILY and SPLASH_FONT_MONTSERRAT still point at it. The face is Nunito.",
-      "community": 40,
+      "community": 14,
       "norm_label": "homemontserrat nunito alias",
       "id": "brand_reference_home_montserrat_alias"
     },
@@ -10257,7 +10277,7 @@
       "author": null,
       "contributor": null,
       "rationale": "heroCtaSx in HomeLandingPage.js: radius 999, weight 600, tracking 0.04em, text-transform none, white border over photography.",
-      "community": 40,
+      "community": 14,
       "norm_label": "hero pill buttons",
       "id": "brand_reference_hero_buttons"
     },
@@ -10285,7 +10305,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Contact keeps the frosted glass panel from design-studio-glass.js over photography. It is not the daycare page style and must not be restyled to pill buttons.",
-      "community": 40,
+      "community": 14,
       "norm_label": "frosted glass contact form",
       "id": "brand_reference_glass_contact"
     },
@@ -10341,7 +10361,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Book a stay opens ROVER_BOOKING_URL in frontend/consts/routes.js. The URL is a placeholder until the real Rover profile is set. Stays are booked on Rover.",
-      "community": 71,
+      "community": 14,
       "norm_label": "rover booking url",
       "id": "readme_rover_booking"
     },
@@ -10355,7 +10375,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Contact opens a mail message to contact@carebeardaycare.ca with subject daycare consultation. Visit requests go out by email.",
-      "community": 40,
+      "community": 14,
       "norm_label": "contact@carebeardaycare.ca",
       "id": "readme_contact_email"
     },
@@ -10369,7 +10389,7 @@
       "author": null,
       "contributor": null,
       "rationale": "docker compose up --build --remove-orphans serves http://127.0.0.1:3010. The frontend container runs yarn dev on port 3000; Caddy publishes 3010. Outside Docker: cd frontend && yarn install && yarn dev.",
-      "community": 71,
+      "community": 14,
       "norm_label": "local docker compose dev",
       "id": "readme_local_docker"
     },
@@ -10383,7 +10403,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Builds frontend/Dockerfile.local, sets WATCHPACK_POLLING=true, and bind-mounts ./frontend to /code while keeping anonymous volumes for /code/node_modules and /code/.next.",
-      "community": 71,
+      "community": 14,
       "norm_label": "compose frontend service",
       "id": "docker_compose_frontend"
     },
@@ -10397,7 +10417,7 @@
       "author": null,
       "contributor": null,
       "rationale": "reverse-proxy uses caddy:latest, depends_on frontend, publishes 3010:3010, and mounts ./Caddyfile at /etc/caddy/Caddyfile.",
-      "community": 71,
+      "community": 14,
       "norm_label": "compose caddy reverse proxy",
       "id": "docker_compose_caddy"
     },
@@ -14550,6 +14570,17 @@
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
       "source_location": "L17",
       "weight": 1.0,
+      "source": "dog_hotel_reviewspage",
+      "target": "dog_hotel_reviews_data_reviewverificationlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
+      "source_location": "L17",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "dog_hotel_reviewspage",
       "target": "dog_hotel_reviews_data_sortreviewsnewestfirst"
@@ -14600,9 +14631,9 @@
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_hotel_reviewspage",
-      "target": "dog_hotel_reviewspage_reviewphotos",
-      "confidence_score": 1.0
+      "target": "dog_hotel_reviewspage_reviewphotos"
     },
     {
       "relation": "contains",
@@ -14651,9 +14682,9 @@
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_hotel_reviewspage_reviewphoto",
-      "target": "dog_hotel_reviewspage_reviewphotos",
-      "confidence_score": 1.0
+      "target": "dog_hotel_reviewspage_reviewphotos"
     },
     {
       "relation": "calls",
@@ -14676,6 +14707,17 @@
       "weight": 1.0,
       "source": "dog_hotel_reviewspage_sitephotosrc",
       "target": "utils_publicpath_publicpath"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "dog_hotel_reviewspage_reviewcard",
+      "target": "dog_hotel_reviews_data_reviewverificationlabel",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -14755,11 +14797,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "dog_hotel_reviews_data",
+      "target": "dog_hotel_reviews_data_reviewverificationlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/reviews-data.js",
       "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "dog_hotel_reviews_data",
       "target": "dog_hotel_reviews_data_sortreviewsnewestfirst"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/reviews-data.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "dog_hotel_reviews_data",
+      "target": "dog_hotel_reviews_data_verification_labels",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -14771,6 +14833,17 @@
       "confidence_score": 1.0,
       "source": "dog_hotel_reviews_data_test",
       "target": "dog_hotel_reviews_data"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/reviews-data.test.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "dog_hotel_reviews_data_test",
+      "target": "dog_hotel_reviews_data_reviewverificationlabel",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -28869,5 +28942,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "f550aeda7186390f3351d3e5fc3e2c2e66815992"
+  "built_at_commit": "68d771de9dd440cdf9ee8890e11f40b118efe919"
 }

@@ -1184,7 +1184,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contact_form_contactformpage",
-      "community": 69,
+      "community": 80,
       "norm_label": "contactformpage.js"
     },
     {
@@ -1194,7 +1194,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "contact_form_contactformpage_bodysx",
-      "community": 69,
+      "community": 80,
       "norm_label": "bodysx"
     },
     {
@@ -1204,7 +1204,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "contact_form_contactformpage_contactformpage",
-      "community": 69,
+      "community": 80,
       "norm_label": "contactformpage()"
     },
     {
@@ -1604,7 +1604,7 @@
       "source_location": "L382",
       "_origin": "ast",
       "id": "design_studio_design_studio_glass_herotextlegibility",
-      "community": 68,
+      "community": 2,
       "norm_label": "herotextlegibility"
     },
     {
@@ -1818,10 +1818,20 @@
       "norm_label": "reviewshape"
     },
     {
+      "label": "reviewPhotos()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "dog_hotel_reviewspage_reviewphotos",
+      "community": 1,
+      "norm_label": "reviewphotos()"
+    },
+    {
       "label": "sitePhotoSrc()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L37",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_sitephotosrc",
       "community": 1,
@@ -1831,7 +1841,7 @@
       "label": "ReviewPhoto()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L44",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewphoto",
       "community": 1,
@@ -1841,7 +1851,7 @@
       "label": "StarRating()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L65",
+      "source_location": "L82",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_starrating",
       "community": 1,
@@ -1851,7 +1861,7 @@
       "label": "ReviewCard()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L88",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewcard",
       "community": 1,
@@ -1861,7 +1871,7 @@
       "label": "BookStayButton()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L152",
+      "source_location": "L169",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bookstaybutton",
       "community": 70,
@@ -1871,7 +1881,7 @@
       "label": "ReviewsPage()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L186",
+      "source_location": "L203",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewspage",
       "community": 1,
@@ -1891,7 +1901,7 @@
       "label": "REVIEWS",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_reviews",
       "community": 1,
@@ -1901,7 +1911,7 @@
       "label": "sortReviewsNewestFirst()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L129",
+      "source_location": "L143",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_sortreviewsnewestfirst",
       "community": 1,
@@ -1911,7 +1921,7 @@
       "label": "countReviews()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L133",
+      "source_location": "L147",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_countreviews",
       "community": 1,
@@ -1921,7 +1931,7 @@
       "label": "averageStarRating()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L138",
+      "source_location": "L152",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_averagestarrating",
       "community": 1,
@@ -2124,7 +2134,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_herotextlegibility",
-      "community": 68,
+      "community": 2,
       "norm_label": "herotextlegibility"
     },
     {
@@ -2261,7 +2271,7 @@
       "label": "MARKETING_INTERIOR_CONTENT_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L18",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_interior_content_sx",
       "community": 67,
@@ -2271,7 +2281,7 @@
       "label": "MARKETING_INTERIOR_FORM_GRID_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L29",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_interior_form_grid_sx",
       "community": 67,
@@ -2281,7 +2291,7 @@
       "label": "MARKETING_FORM_PAGE_CONTENT_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L41",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_page_content_sx",
       "community": 67,
@@ -2291,7 +2301,7 @@
       "label": "MARKETING_FORM_FLEX_SECTION_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L60",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_flex_section_sx",
       "community": 67,
@@ -2301,7 +2311,7 @@
       "label": "MARKETING_FORM_GRID_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L73",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_grid_sx",
       "community": 67,
@@ -2311,7 +2321,7 @@
       "label": "MARKETING_FORM_PAGE_GRID_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L92",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_page_grid_sx",
       "community": 67,
@@ -2321,7 +2331,7 @@
       "label": "MARKETING_FORM_HERO_COLUMN_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L97",
+      "source_location": "L101",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_hero_column_sx",
       "community": 67,
@@ -2331,7 +2341,7 @@
       "label": "MARKETING_FORM_COLUMN_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L108",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_column_sx",
       "community": 67,
@@ -2341,7 +2351,7 @@
       "label": "MARKETING_FORM_COLUMN_INNER_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L120",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_column_inner_sx",
       "community": 67,
@@ -2351,7 +2361,7 @@
       "label": "MarketingInteriorLayout()",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L133",
+      "source_location": "L137",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketinginteriorlayout",
       "community": 2,
@@ -2414,7 +2424,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_marketingnavdesktopitem",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketingnavdesktopitem()"
     },
     {
@@ -2534,7 +2544,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_withstaffnavitems",
-      "community": 87,
+      "community": 69,
       "norm_label": "withstaffnavitems()"
     },
     {
@@ -3064,7 +3074,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "consts_routes_staffpathsuffix",
-      "community": 87,
+      "community": 69,
       "norm_label": "staffpathsuffix()"
     },
     {
@@ -3074,7 +3084,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "consts_routes_staffpath",
-      "community": 87,
+      "community": 69,
       "norm_label": "staffpath()"
     },
     {
@@ -3084,7 +3094,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "consts_routes_staffloginhref",
-      "community": 87,
+      "community": 69,
       "norm_label": "staffloginhref()"
     },
     {
@@ -3134,7 +3144,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "consts_routes_ismarketingformroute",
-      "community": 69,
+      "community": 80,
       "norm_label": "ismarketingformroute()"
     },
     {
@@ -4754,7 +4764,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contact_page",
-      "community": 69,
+      "community": 80,
       "norm_label": "page.js"
     },
     {
@@ -4764,7 +4774,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "contact_page_metadata",
-      "community": 69,
+      "community": 80,
       "norm_label": "metadata"
     },
     {
@@ -4774,7 +4784,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "contact_page_contactroute",
-      "community": 69,
+      "community": 80,
       "norm_label": "contactroute()"
     },
     {
@@ -7754,7 +7764,7 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "write_a_prd_skill_writing_rules",
-      "community": 62,
+      "community": 90,
       "norm_label": "writing rules"
     },
     {
@@ -7884,7 +7894,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_interview_tactics",
-      "community": 77,
+      "community": 89,
       "norm_label": "interview tactics"
     },
     {
@@ -7894,7 +7904,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_relentless_but_respectful",
-      "community": 77,
+      "community": 89,
       "norm_label": "relentless but respectful"
     },
     {
@@ -7904,7 +7914,7 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_batching",
-      "community": 77,
+      "community": 89,
       "norm_label": "batching"
     },
     {
@@ -7914,7 +7924,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_stuck_loops",
-      "community": 77,
+      "community": 89,
       "norm_label": "stuck loops"
     },
     {
@@ -7924,7 +7934,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_decision_log_template",
-      "community": 77,
+      "community": 89,
       "norm_label": "decision log template"
     },
     {
@@ -7944,7 +7954,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_module_sketch_guide",
-      "community": 34,
+      "community": 86,
       "norm_label": "module sketch guide"
     },
     {
@@ -7954,7 +7964,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_goals",
-      "community": 34,
+      "community": 86,
       "norm_label": "goals"
     },
     {
@@ -8024,7 +8034,7 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_module_table_template",
-      "community": 34,
+      "community": 86,
       "norm_label": "module table template"
     },
     {
@@ -8034,7 +8044,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_extraction_heuristics",
-      "community": 34,
+      "community": 86,
       "norm_label": "extraction heuristics"
     },
     {
@@ -8054,7 +8064,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_anti_patterns",
-      "community": 34,
+      "community": 86,
       "norm_label": "anti-patterns"
     },
     {
@@ -8064,7 +8074,7 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_phase_4_exit_criteria",
-      "community": 34,
+      "community": 86,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -8074,7 +8084,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template",
-      "community": 62,
+      "community": 83,
       "norm_label": "template.md"
     },
     {
@@ -8084,7 +8094,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template_prd_template",
-      "community": 62,
+      "community": 83,
       "norm_label": "prd template"
     },
     {
@@ -8254,7 +8264,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "readme_public_pages",
-      "community": 71,
+      "community": 14,
       "norm_label": "public pages"
     },
     {
@@ -8351,7 +8361,7 @@
       "label": "MARKETING_FORM_SHORT_CONTENT_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L54",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_short_content_sx",
       "community": 57,
@@ -8361,7 +8371,7 @@
       "label": "MARKETING_FORM_SHORT_GRID_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
-      "source_location": "L95",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_short_grid_sx",
       "community": 58,
@@ -8752,7 +8762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 12,
       "norm_label": "thememode localstorage",
       "id": "app_providers_thememode"
     },
@@ -9659,7 +9669,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Table of ID, decision, rationale, and depends-on, maintained in working notes and copied into the PRD.",
-      "community": 62,
+      "community": 83,
       "norm_label": "decision log",
       "id": "write_a_prd_skill_decision_log"
     },
@@ -9687,7 +9697,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Fill the template from working notes, discovery, decision log, and module sketch. Include current state, decision log, implementation modules, and verified assertions.",
-      "community": 62,
+      "community": 90,
       "norm_label": "phase 5 write prd",
       "id": "write_a_prd_skill_phase5_write_prd"
     },
@@ -9701,7 +9711,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Default path is issues/prd-<short-slug>.md. Revisions use -v2. Never overwrite without approval. Dated names only when the user asks.",
-      "community": 62,
+      "community": 90,
       "norm_label": "issues/prd-<slug>.md",
       "id": "write_a_prd_skill_issues_prd_path"
     },
@@ -9715,7 +9725,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Report path, one-paragraph scope, deferred question count, and optional handoff to /project-manager.",
-      "community": 62,
+      "community": 90,
       "norm_label": "phase 6 confirm",
       "id": "write_a_prd_skill_phase6_confirm"
     },
@@ -9869,7 +9879,7 @@
       "author": null,
       "contributor": null,
       "rationale": "If the user is unsure, offer two or three options, record a deferral with an owner and whether it blocks MVP, and do not invent a decision.",
-      "community": 62,
+      "community": 83,
       "norm_label": "deferred decision",
       "id": "write_a_prd_interview_guide_deferred_decision"
     },
@@ -9883,7 +9893,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Pure input-to-output logic with injected plain data, no UI/framework/ORM/globals/request/hooks, and a stable signature so it can be unit-tested in isolation.",
-      "community": 62,
+      "community": 91,
       "norm_label": "deep module",
       "id": "write_a_prd_module_sketch_deep_module"
     },
@@ -9897,7 +9907,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Viewsets, route pages, and hooks stay thin and delegate rules downward. Tested with integration or UI tests only.",
-      "community": 62,
+      "community": 91,
       "norm_label": "shallow orchestrator",
       "id": "write_a_prd_module_sketch_shallow_module"
     },
@@ -9911,7 +9921,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Dependency shape: Route or ViewSet calls an orchestrator hook or service, which calls deep modules, with API client or serializer beside the orchestrator.",
-      "community": 62,
+      "community": 91,
       "norm_label": "route to orchestrator to deep module",
       "id": "write_a_prd_module_sketch_dependency_chain"
     },
@@ -9939,7 +9949,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Columns: ID, module path, layer, Create/Modify/Extend, responsibility, deep flag, test approach, dependencies. Example pairs a schedule service with a thin viewset and a frontend domain preview.",
-      "community": 62,
+      "community": 83,
       "norm_label": "module table m-001",
       "id": "write_a_prd_module_sketch_module_table"
     },
@@ -9967,7 +9977,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Must-have R-001, should-have R-101, and could-have R-201, each with rationale and a decision reference.",
-      "community": 62,
+      "community": 83,
       "norm_label": "p0 p1 p2 requirements",
       "id": "write_a_prd_template_priority"
     },
@@ -9981,7 +9991,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Maps requirement IDs to module IDs. The skill requires every P0 to map to at least one module.",
-      "community": 62,
+      "community": 83,
       "norm_label": "requirement to module traceability",
       "id": "write_a_prd_template_traceability"
     },
@@ -10261,7 +10271,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Interior nav on cream with ink links. Hover underline grows left to right in 0.35s. Desktop nav starts at xl. Logos are full-color PNGs: /imgs/logos/logo.png and logo_hori.png.",
-      "community": 71,
+      "community": 14,
       "norm_label": "cream interior nav",
       "id": "brand_reference_nav"
     },
@@ -10303,7 +10313,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI 8px grid. Breakpoints xs 0, sm 600, md 900, lg 1200, xl 1536. Desktop nav at xl. Forms go two-column at lg. Interior content max width about 880px.",
-      "community": 71,
+      "community": 14,
       "norm_label": "marketing layout grid",
       "id": "brand_reference_layout"
     },
@@ -14588,6 +14598,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_reviewspage",
+      "target": "dog_hotel_reviewspage_reviewphotos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
       "source_location": "L26",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14623,6 +14643,17 @@
       "confidence_score": 1.0,
       "source": "dog_hotel_reviewspage",
       "target": "dog_hotel_reviewspage_starrating"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_reviewspage_reviewphoto",
+      "target": "dog_hotel_reviewspage_reviewphotos"
     },
     {
       "relation": "calls",
@@ -28838,5 +28869,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "f550aeda7186390f3351d3e5fc3e2c2e66815992"
+  "built_at_commit": "68d771de9dd440cdf9ee8890e11f40b118efe919"
 }

@@ -14,15 +14,19 @@ import { LUXURY_GRADIENT_SX } from './home-landing-data';
 
 const formBp = FORM_PAGE_DESKTOP_BP;
 
-/** Shared content spacing below the marketing interior nav bar. */
+/**
+ * Shared content spacing below the marketing interior nav bar.
+ * Lives on an inner wrapper, not the overflow scroller — bottom padding on
+ * the scroller itself is clipped and leaves the footer flush with the viewport.
+ */
 export const MARKETING_INTERIOR_CONTENT_SX = {
-  flex: 1,
   width: '100%',
   maxWidth: '100%',
   minWidth: 0,
+  boxSizing: 'border-box',
   px: { xs: 2, sm: 3, md: 6 },
-  pt: { xs: 3, md: 4 },
-  pb: { xs: 4, md: 5 },
+  pt: { xs: 7, md: 10 },
+  pb: { xs: 7, md: 10 },
 };
 
 /** Centered two-column grid for hero form pages (inside content padding). */
@@ -203,16 +207,17 @@ export default function MarketingInteriorLayout({
             sx={
               formGrid
                 ? [MARKETING_FORM_PAGE_CONTENT_SX, contentSx]
-                : [
-                    MARKETING_INTERIOR_CONTENT_SX,
-                    {
-                      overflowX: 'hidden',
-                      overflowY: 'auto',
-                      WebkitOverflowScrolling: 'touch',
-                      boxSizing: 'border-box',
-                    },
-                    contentSx,
-                  ]
+                : {
+                    flex: '1 1 0',
+                    minHeight: 0,
+                    width: '100%',
+                    maxWidth: '100%',
+                    minWidth: 0,
+                    overflowX: 'hidden',
+                    overflowY: 'auto',
+                    WebkitOverflowScrolling: 'touch',
+                    boxSizing: 'border-box',
+                  }
             }
           >
             {formGrid ? (
@@ -220,7 +225,7 @@ export default function MarketingInteriorLayout({
                 <Box sx={{ ...MARKETING_FORM_GRID_SX, ...formGridSx }}>{children}</Box>
               </Box>
             ) : (
-              children
+              <Box sx={[MARKETING_INTERIOR_CONTENT_SX, contentSx]}>{children}</Box>
             )}
           </Box>
         </Box>

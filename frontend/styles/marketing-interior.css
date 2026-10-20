@@ -28,8 +28,12 @@ html.marketing-interior-page main {
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
-  padding: 0 !important;
   box-sizing: border-box;
+}
+
+/* Full-bleed form/hero mains stay flush. Standard pages use .marketing-interior-scroll padding. */
+html.marketing-interior-page main:not(.marketing-interior-scroll) {
+  padding: 0 !important;
 }
 
 /* Cream scrollbars — keep in sync with WEBSITE_SCROLLBAR_* in consts/website-theme.js */

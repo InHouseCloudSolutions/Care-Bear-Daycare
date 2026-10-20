@@ -38,8 +38,8 @@ export const ABOUT_PATH = '/about';
 export const HOW_A_STAY_WORKS_PATH = '/how-a-stay-works';
 export const REVIEWS_PATH = '/reviews';
 export const GALLERY_PATH = '/gallery';
-/** Placeholder until the real Rover profile URL is set. */
-export const ROVER_BOOKING_URL = 'https://www.rover.com/';
+/** Carrie's Rover profile. Every Rover link on the site uses this URL. */
+export const ROVER_BOOKING_URL = 'https://www.rover.com/sit/carrib24913';
 export const BOUTIQUE_DEVELOPERS_PATH = '/boutique-development-home-builders';
 
 export function boutiqueDevelopersSlugPath(slug) {

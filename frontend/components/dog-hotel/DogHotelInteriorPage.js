@@ -49,8 +49,9 @@ export default function DogHotelInteriorPage({ title, lede, children }) {
         <Box
           component="footer"
           sx={{
-            mt: { xs: 6, md: 8 },
-            pt: 3,
+            mt: { xs: 8, md: 10 },
+            pt: { xs: 5, md: 6 },
+            pb: { xs: 6, md: 8 },
             borderTop: `1px solid ${alpha(WEBSITE_INK, 0.12)}`,
             display: 'flex',
             flexDirection: { xs: 'column', sm: 'row' },

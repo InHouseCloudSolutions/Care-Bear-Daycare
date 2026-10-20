@@ -28,7 +28,7 @@ export const WEBSITE_SEO = {
   '/reviews': {
     title: 'Reviews',
     description:
-      'Public reviews copied from Rover for Care Bear Daycare daycare and overnight care. The full profile is on Rover.',
+      'Reviews for Care Bear Daycare daycare and overnight care, including verified Rover and Google reviews.',
   },
   '/gallery': {
     title: 'Gallery',

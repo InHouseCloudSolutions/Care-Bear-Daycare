@@ -14,7 +14,13 @@ import {
 } from '@/consts/website-theme';
 import publicPath from '@/utils/publicPath';
 import DogHotelInteriorPage from './DogHotelInteriorPage';
-import { REVIEWS, averageStarRating, countReviews, sortReviewsNewestFirst } from './reviews-data';
+import {
+  REVIEWS,
+  averageStarRating,
+  countReviews,
+  reviewVerificationLabel,
+  sortReviewsNewestFirst,
+} from './reviews-data';
 
 const bodySx = {
   maxWidth: 640,
@@ -38,6 +44,7 @@ const reviewShape = PropTypes.shape({
       alt: PropTypes.string,
     }),
   ),
+  source: PropTypes.oneOf(['rover', 'google', 'internal']).isRequired,
 });
 
 function reviewPhotos(review) {
@@ -103,6 +110,7 @@ StarRating.propTypes = {
 };
 
 function ReviewCard({ review }) {
+  const verificationLabel = reviewVerificationLabel(review.source);
   return (
     <Box
       component="li"
@@ -145,18 +153,20 @@ function ReviewCard({ review }) {
         >
           {review.quote}
         </Typography>
-        <Typography
-          component="p"
-          sx={{
-            m: 0,
-            mt: 1.5,
-            fontSize: 13,
-            letterSpacing: '0.04em',
-            color: alpha(WEBSITE_INK, 0.55),
-          }}
-        >
-          Review from Rover
-        </Typography>
+        {verificationLabel ? (
+          <Typography
+            component="p"
+            sx={{
+              m: 0,
+              mt: 1.5,
+              fontSize: 13,
+              letterSpacing: '0.04em',
+              color: alpha(WEBSITE_INK, 0.55),
+            }}
+          >
+            {verificationLabel}
+          </Typography>
+        ) : null}
       </Box>
     </Box>
   );
@@ -210,7 +220,7 @@ export default function ReviewsPage() {
       <Box sx={{ mt: 2, maxWidth: 640 }}>
         {count > 0 ? (
           <Typography component="p" sx={bodySx}>
-            {`${count} public ${count === 1 ? 'review' : 'reviews'} from Rover, averaging ${average.toFixed(1)} stars.`}
+            {`${count} ${count === 1 ? 'review' : 'reviews'}, averaging ${average.toFixed(1)} stars.`}
           </Typography>
         ) : (
           <Typography component="p" sx={bodySx}>

@@ -1,6 +1,7 @@
 /**
- * Public Rover reviews for Carrie B., copied from her sitter profile.
- * stayedOn is the date Rover shows on the review, and is a sort key only.
+ * Public reviews for Carrie B.
+ * source is rover, google, or internal. Only rover and google are shown as verified.
+ * stayedOn is the date on the review, and is a sort key only.
  * Dog photos are saved under public/imgs/reviews. Replace those files with your own photos later.
  * @typedef {Object} Review
  * @property {string} id
@@ -12,11 +13,25 @@
  * @property {string|null} photoSrc site path only, never a Rover or stock URL
  * @property {string|null} photoAlt
  * @property {{src: string, alt: string}[]=} photos extra dogs on the same stay
+ * @property {'rover'|'google'|'internal'} source rover and google are verified; internal is an in-house survey or note
  */
+
+/** @type {Record<'rover'|'google'|'internal', string|null>} */
+const VERIFICATION_LABELS = {
+  rover: 'Verified Rover client',
+  google: 'Verified Google review',
+  internal: null,
+};
+
+/** Badge copy for Rover and Google. Internal reviews are not tagged. */
+export function reviewVerificationLabel(source) {
+  return VERIFICATION_LABELS[source] ?? null;
+}
 
 /** @type {Review[]} */
 export const REVIEWS = [
   {
+    source: 'rover',
     id: 'AelVD6oQ',
     stayedOn: '2026-09-28',
     dogName: 'Buddy',
@@ -28,6 +43,7 @@ export const REVIEWS = [
     photoAlt: 'Buddy',
   },
   {
+    source: 'rover',
     id: 'gVavvlON',
     stayedOn: '2026-08-21',
     dogName: 'Cletus & Juice & Bullet',
@@ -44,6 +60,7 @@ export const REVIEWS = [
     ],
   },
   {
+    source: 'rover',
     id: 'NqO9DVpQ',
     stayedOn: '2026-08-13',
     dogName: 'Koko',
@@ -55,6 +72,7 @@ export const REVIEWS = [
     photoAlt: 'Koko',
   },
   {
+    source: 'rover',
     id: 'gaD1dDMN',
     stayedOn: '2026-07-16',
     dogName: 'Hazel',
@@ -65,6 +83,7 @@ export const REVIEWS = [
     photoAlt: 'Hazel',
   },
   {
+    source: 'rover',
     id: 'gxdzov1g',
     stayedOn: '2026-06-18',
     dogName: 'Jade & Pearl',
@@ -80,6 +99,7 @@ export const REVIEWS = [
     ],
   },
   {
+    source: 'rover',
     id: 'AZ1V37XQ',
     stayedOn: '2026-05-04',
     dogName: 'Finn',
@@ -90,6 +110,7 @@ export const REVIEWS = [
     photoAlt: 'Finn',
   },
   {
+    source: 'rover',
     id: 'NbnpDp1N',
     stayedOn: '2026-04-29',
     dogName: 'Oliver',
@@ -101,6 +122,7 @@ export const REVIEWS = [
     photoAlt: 'Oliver',
   },
   {
+    source: 'rover',
     id: 'APzq8wEg',
     stayedOn: '2026-04-09',
     dogName: 'Lexi',
@@ -112,6 +134,7 @@ export const REVIEWS = [
     photoAlt: 'Lexi',
   },
   {
+    source: 'rover',
     id: 'g2lvGM4A',
     stayedOn: '2026-04-07',
     dogName: 'Ksana',
@@ -123,6 +146,7 @@ export const REVIEWS = [
     photoAlt: 'Ksana',
   },
   {
+    source: 'rover',
     id: 'gR1ObeWN',
     stayedOn: '2026-02-27',
     dogName: 'Peaches & Clementine',

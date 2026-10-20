@@ -8,7 +8,7 @@ import { WEBSITE_INK, WEBSITE_PAGE_BACKGROUND } from '@/consts/website-theme';
 import publicPath from '@/utils/publicPath';
 import DogHotelInteriorPage from './DogHotelInteriorPage';
 
-const CARRIE_PHOTO_SRC = publicPath('/imgs/about/carrie.jpg');
+const CARRIE_PHOTO_SRC = publicPath('/imgs/CarrieB.png');
 const DOGS_PHOTO_SRC = publicPath('/imgs/home/slide-005.jpg');
 
 const CARE_POINTS = [
