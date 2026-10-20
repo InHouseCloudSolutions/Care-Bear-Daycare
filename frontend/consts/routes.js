@@ -36,6 +36,7 @@ export const CAREERS_PATH = '/careers';
 export const CONTACT_PATH = '/contact';
 export const ABOUT_PATH = '/about';
 export const HOW_A_STAY_WORKS_PATH = '/how-a-stay-works';
+export const REVIEWS_PATH = '/reviews';
 export const GALLERY_PATH = '/gallery';
 /** Placeholder until the real Rover profile URL is set. */
 export const ROVER_BOOKING_URL = 'https://www.rover.com/';
@@ -75,6 +76,7 @@ export function isMarketingRoute(pathname) {
     pathname === '/' ||
     pathname === ABOUT_PATH ||
     pathname === HOW_A_STAY_WORKS_PATH ||
+    pathname === REVIEWS_PATH ||
     pathname === GALLERY_PATH ||
     pathname === CONTACT_PATH
   );

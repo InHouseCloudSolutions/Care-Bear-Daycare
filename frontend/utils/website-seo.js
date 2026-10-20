@@ -25,6 +25,11 @@ export const WEBSITE_SEO = {
     description:
       'Three simple steps, from getting to know your dog to welcoming them home: meet Carrie, settle into her home for play and rest, then hear how the stay went.',
   },
+  '/reviews': {
+    title: 'Reviews',
+    description:
+      'Public reviews copied from Rover for Care Bear Daycare daycare and overnight care. The full profile is on Rover.',
+  },
   '/gallery': {
     title: 'Gallery',
     description:

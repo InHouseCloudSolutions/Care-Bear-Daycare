@@ -57,9 +57,10 @@ jobs:
         # to inject output: 'export', and the rewrite throws
         # "TypeError: error must be an instance of Error" on this file because
         # the config is wrapped in withPlugins(). frontend/next.config.js
-        # already enables export, trailingSlash, basePath, and unoptimized
-        # images when GITHUB_PAGES=true. The build step sets that env and
-        # NEXT_PUBLIC_BASE_PATH from this step's base_path output.
+        # already enables export, trailingSlash, and unoptimized images when
+        # GITHUB_PAGES=true. The custom domain is served at the site root, so
+        # the build leaves NEXT_PUBLIC_BASE_PATH empty instead of using this
+        # step's project base_path (for example /Care-Bear-Daycare).
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -79,7 +80,7 @@ jobs:
       - name: Build with Next.js
         env:
           GITHUB_PAGES: "true"
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_BASE_PATH: ""
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

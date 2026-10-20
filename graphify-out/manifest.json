@@ -205,19 +205,19 @@
     "semantic_hash": "ad767a59762a97add82ba0b468368b69"
   },
   "frontend/consts/marketing-nav.js": {
-    "mtime": 1792411733.9787483,
-    "ast_hash": "5e3fba7581128866d7ccfe0b7818bd6f",
-    "semantic_hash": "5e3fba7581128866d7ccfe0b7818bd6f"
+    "mtime": 1792499987.9214685,
+    "ast_hash": "5d39abb38cbcbec5f7802b51a97c8268",
+    "semantic_hash": ""
   },
   "frontend/consts/marketing-nav.test.js": {
-    "mtime": 1792419654.3318133,
-    "ast_hash": "f4c8c7a91c6c3c98f1834cf6f29eb76b",
+    "mtime": 1792499987.922462,
+    "ast_hash": "19c7b107dfc02ff9f58190b5e4429111",
     "semantic_hash": ""
   },
   "frontend/consts/routes.js": {
-    "mtime": 1792411734.4388478,
-    "ast_hash": "fb0c41469682dec7cb66c9ce95e00b44",
-    "semantic_hash": "fb0c41469682dec7cb66c9ce95e00b44"
+    "mtime": 1792499987.922462,
+    "ast_hash": "ca5b84567bc3be1207f60ff1bcbbbf75",
+    "semantic_hash": ""
   },
   "frontend/consts/website-theme.js": {
     "mtime": 1792411733.9636078,
@@ -370,9 +370,9 @@
     "semantic_hash": "f8e37b4180cd9e3ae55e5a655004f36c"
   },
   "frontend/utils/seo.test.js": {
-    "mtime": 1792411733.9792793,
-    "ast_hash": "2fa3bfd67671ab55d26f314c884eb46b",
-    "semantic_hash": "2fa3bfd67671ab55d26f314c884eb46b"
+    "mtime": 1792499987.922462,
+    "ast_hash": "cc9063c0a31f20138b77858bee0f7803",
+    "semantic_hash": ""
   },
   "frontend/utils/settings.js": {
     "mtime": 1778166041.448393,
@@ -380,8 +380,8 @@
     "semantic_hash": "1ac33586bc2a9400a7c12fa15c5db11a"
   },
   "frontend/utils/website-seo.js": {
-    "mtime": 1792421349.763421,
-    "ast_hash": "880214b8c4f87abe48c929584f2d221a",
+    "mtime": 1792499987.922462,
+    "ast_hash": "cf85f0b7514a0a1f6e4867f241c7c338",
     "semantic_hash": ""
   },
   "frontend/utils/website-seo.test.js": {
@@ -555,8 +555,8 @@
     "semantic_hash": "b6aa2d92f026e15bd5bab233e0957ab7"
   },
   ".github/workflows/nextjs.yml": {
-    "mtime": 1792419950.196473,
-    "ast_hash": "2f2a1b7e6b126dae0d49e5b006e251b8",
+    "mtime": 1792503235.1938028,
+    "ast_hash": "fb67315b9a77fd3dbdeb2c20d424fcfb",
     "semantic_hash": ""
   },
   ".github/workflows/test-frontend.yml": {
@@ -712,6 +712,26 @@
   "frontend/utils/publicPath.test.js": {
     "mtime": 1792421349.6675503,
     "ast_hash": "4c981f1be604be16de980e31904810ad",
+    "semantic_hash": ""
+  },
+  "frontend/components/dog-hotel/ReviewsPage.js": {
+    "mtime": 1792499987.9274697,
+    "ast_hash": "4519f1cf4e21668d21677565e9ce0db5",
+    "semantic_hash": ""
+  },
+  "frontend/components/dog-hotel/reviews-data.js": {
+    "mtime": 1792499987.922462,
+    "ast_hash": "6bf8590b3ddb2f3f1350c1f54e76353f",
+    "semantic_hash": ""
+  },
+  "frontend/components/dog-hotel/reviews-data.test.js": {
+    "mtime": 1792499987.922462,
+    "ast_hash": "d7fd804d5a271cc40dd8aac08d341003",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/(website)/reviews/page.js": {
+    "mtime": 1792499987.922462,
+    "ast_hash": "7ba155dfcaf123e29b06b7605c747170",
     "semantic_hash": ""
   }
 }

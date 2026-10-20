@@ -3,6 +3,7 @@ import {
   CONTACT_PATH,
   GALLERY_PATH,
   HOW_A_STAY_WORKS_PATH,
+  REVIEWS_PATH,
   ROVER_BOOKING_URL,
 } from '@/consts/routes';
 
@@ -10,6 +11,7 @@ import {
 export const MARKETING_NAV_TREE = [
   { label: 'About', href: ABOUT_PATH },
   { label: 'How a stay works', href: HOW_A_STAY_WORKS_PATH },
+  { label: 'Reviews', href: REVIEWS_PATH },
   { label: 'Gallery', href: GALLERY_PATH },
   { label: 'Book a stay', href: ROVER_BOOKING_URL },
   { label: 'Contact', href: CONTACT_PATH },
