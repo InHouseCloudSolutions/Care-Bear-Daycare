@@ -10,6 +10,7 @@ describe('MARKETING_NAV_TREE', () => {
     expect(MARKETING_NAV_TREE.map(item => item.label)).toEqual([
       'About',
       'How a stay works',
+      'Care and safety',
       'Reviews',
       'Gallery',
       'Book a stay',

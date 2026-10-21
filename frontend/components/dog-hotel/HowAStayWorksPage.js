@@ -11,9 +11,9 @@ const STEPS = [
     title: 'Meet',
     body: (
       <>
-        Connect with Carrie to discuss your dates and your dog’s routines, personality, health
-        needs, triggers, and behaviours. These details help her prepare a stay tailored to them.
-        Bookings are arranged through{' '}
+        The meet-and-greet is at Carrie’s home, inside or in the backyard. You can see the space and
+        whether it is the right fit. The care plan is made then, with you and your dog. Bookings are
+        arranged through{' '}
         <Link
           href={ROVER_BOOKING_URL}
           target="_blank"

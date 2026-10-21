@@ -25,8 +25,8 @@
     "semantic_hash": "cfa6bf34d589721bf0a22c4f302d6b0e"
   },
   "frontend/components/AppLoadingScreen.js": {
-    "mtime": 1792419654.3318133,
-    "ast_hash": "c1f6e81f606387919dec15f752524947",
+    "mtime": 1792527334.59492,
+    "ast_hash": "7489ed1a0f38f87dbca0a09ae39509c0",
     "semantic_hash": ""
   },
   "frontend/components/AuthGateClient.js": {
@@ -80,8 +80,8 @@
     "semantic_hash": "e9bef225288002d68382025d13b4c936"
   },
   "frontend/components/dog-hotel/AboutPage.js": {
-    "mtime": 1792511739.4532754,
-    "ast_hash": "407b6c3a570d670d7f396b0f10f77954",
+    "mtime": 1792549874.4100232,
+    "ast_hash": "43f94be4a62d3321beb6483d338952a8",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/DogHotelInteriorPage.js": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/HowAStayWorksPage.js": {
-    "mtime": 1792419654.3318133,
-    "ast_hash": "3b1d26cb87a1be3ba6ffd33b2ac6a2ef",
+    "mtime": 1792551078.2524774,
+    "ast_hash": "00b07d5750fcce52423c4c3757df2ccf",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/HomeHeroBackground.js": {
@@ -205,18 +205,18 @@
     "semantic_hash": "ad767a59762a97add82ba0b468368b69"
   },
   "frontend/consts/marketing-nav.js": {
-    "mtime": 1792499987.9214685,
-    "ast_hash": "5d39abb38cbcbec5f7802b51a97c8268",
+    "mtime": 1792529342.9452267,
+    "ast_hash": "307e1afbf6cfe8fa5624d048e9cc59da",
     "semantic_hash": ""
   },
   "frontend/consts/marketing-nav.test.js": {
-    "mtime": 1792499987.922462,
-    "ast_hash": "19c7b107dfc02ff9f58190b5e4429111",
+    "mtime": 1792529345.1071332,
+    "ast_hash": "5f93fac63a0ead24e1e4e267a80e351d",
     "semantic_hash": ""
   },
   "frontend/consts/routes.js": {
-    "mtime": 1792514669.1988556,
-    "ast_hash": "2810ecac3e42b6db4d5c9285beb9c543",
+    "mtime": 1792529341.1377802,
+    "ast_hash": "db1ca81a5d726f7a271b68ea3be927c6",
     "semantic_hash": ""
   },
   "frontend/consts/website-theme.js": {
@@ -370,8 +370,8 @@
     "semantic_hash": "f8e37b4180cd9e3ae55e5a655004f36c"
   },
   "frontend/utils/seo.test.js": {
-    "mtime": 1792499987.922462,
-    "ast_hash": "cc9063c0a31f20138b77858bee0f7803",
+    "mtime": 1792529345.7851791,
+    "ast_hash": "49bf75b435d12cf8b4c30a067e58fa8e",
     "semantic_hash": ""
   },
   "frontend/utils/settings.js": {
@@ -380,8 +380,8 @@
     "semantic_hash": "1ac33586bc2a9400a7c12fa15c5db11a"
   },
   "frontend/utils/website-seo.js": {
-    "mtime": 1792514973.5694795,
-    "ast_hash": "06db337bdd6f8d8611e082eb139c31fd",
+    "mtime": 1792549875.1705482,
+    "ast_hash": "46b66f8d6f7baea59708a76f4651c2b7",
     "semantic_hash": ""
   },
   "frontend/utils/website-seo.test.js": {
@@ -575,9 +575,9 @@
     "semantic_hash": "480e3fac26b1cceb51703dd7d00bf519"
   },
   "README.md": {
-    "mtime": 1792414627.9755337,
-    "ast_hash": "a16a6d73ac3d83e4a785e558db7196b6",
-    "semantic_hash": "a16a6d73ac3d83e4a785e558db7196b6"
+    "mtime": 1792530521.0232675,
+    "ast_hash": "e9eb8f5c5c4be56c0296362546bf705f",
+    "semantic_hash": ""
   },
   "docker-compose.yml": {
     "mtime": 1792414625.0598662,
@@ -807,6 +807,21 @@
   "frontend/public/imgs/CarrieB.png": {
     "mtime": 1792511656.3831158,
     "ast_hash": "b2c957b3e2fc4944dee07f052f6d90b0",
+    "semantic_hash": ""
+  },
+  "frontend/components/dog-hotel/CareAndSafetyPage.js": {
+    "mtime": 1792549907.87754,
+    "ast_hash": "efbcc22c74bfa3bce239672076231def",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/(website)/care-and-safety/page.js": {
+    "mtime": 1792529357.0076878,
+    "ast_hash": "a258b475258a16498e78320c23558210",
+    "semantic_hash": ""
+  },
+  "docs/carrie-care-rules-questions.md": {
+    "mtime": 1792549859.7928393,
+    "ast_hash": "a195312bcd4ac805b5b8cc8c3b0d85c0",
     "semantic_hash": ""
   }
 }

@@ -14,7 +14,8 @@ const DOGS_PHOTO_SRC = publicPath('/imgs/home/slide-005.jpg');
 const CARE_POINTS = [
   'Personalized care based on your dog’s needs',
   'Familiar routines that help them settle in',
-  'A safe backyard for outdoor play',
+  'A fully fenced backyard with no escape gaps, where dogs are free to roam',
+  'Completed a Rover background check',
 ];
 
 const bodySx = {
@@ -105,10 +106,9 @@ export default function AboutPage() {
             Carrie
           </Typography>
           <Typography component="p" sx={{ ...bodySx, mt: 2 }}>
-            Carrie brings a thoughtful, attentive approach to her work with dogs, providing daycare
-            and overnight care in her home. Her hands-on experience caring for dogs has shaped her
-            focus on understanding each dog as an individual—their personality, routines, comfort
-            level, and the support they need while their owner is away.
+            Carrie has spent 20 years caring for dogs. She provides daycare and overnight care in
+            her home, with a focus on understanding each dog as an individual—their personality,
+            routines, comfort level, and the support they need while their owner is away.
           </Typography>
           <Typography component="p" sx={{ ...bodySx, mt: 2 }}>
             She takes time to learn about each dog before their stay, including any triggers, health
@@ -169,8 +169,8 @@ export default function AboutPage() {
 
       <Typography component="p" sx={{ ...bodySx, mt: { xs: 3, md: 4 } }}>
         At Care Bear Daycare, we believe every dog deserves to feel safe, comfortable, and cared for
-        while their people are away. Carrie provides daycare and overnight care in her home, with a
-        backyard where dogs can enjoy outdoor play in a safe, welcoming environment.
+        while their people are away. Carrie provides daycare and overnight care in her home. The
+        backyard is fully fenced, with no escape gaps, and dogs are free to roam.
       </Typography>
       <Typography component="p" sx={{ ...bodySx, mt: 2 }}>
         Every dog is unique, and getting to know yours helps us tailor their stay to their

@@ -1031,7 +1031,7 @@
       "label": "EditorialSplash()",
       "file_type": "code",
       "source_file": "frontend/components/AppLoadingScreen.js",
-      "source_location": "L182",
+      "source_location": "L190",
       "_origin": "ast",
       "id": "components_apploadingscreen_editorialsplash",
       "community": 9,
@@ -1041,7 +1041,7 @@
       "label": "AppLoadingScreen()",
       "file_type": "code",
       "source_file": "frontend/components/AppLoadingScreen.js",
-      "source_location": "L316",
+      "source_location": "L324",
       "_origin": "ast",
       "id": "components_apploadingscreen_apploadingscreen",
       "community": 9,
@@ -1264,7 +1264,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "design_studio_glassformscrollpanel_marketingformpanel",
-      "community": 1,
+      "community": 102,
       "norm_label": "marketingformpanel()"
     },
     {
@@ -1614,7 +1614,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage",
-      "community": 1,
+      "community": 68,
       "norm_label": "aboutpage.js"
     },
     {
@@ -1624,7 +1624,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_carrie_photo_src",
-      "community": 1,
+      "community": 68,
       "norm_label": "carrie_photo_src"
     },
     {
@@ -1634,7 +1634,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_dogs_photo_src",
-      "community": 1,
+      "community": 68,
       "norm_label": "dogs_photo_src"
     },
     {
@@ -1644,48 +1644,138 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_care_points",
-      "community": 1,
+      "community": 68,
       "norm_label": "care_points"
     },
     {
       "label": "bodySx",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/AboutPage.js",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_bodysx",
-      "community": 1,
+      "community": 68,
       "norm_label": "bodysx"
     },
     {
       "label": "sectionHeadingSx",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/AboutPage.js",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_sectionheadingsx",
-      "community": 1,
+      "community": 68,
       "norm_label": "sectionheadingsx"
     },
     {
       "label": "CarriePhoto()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/AboutPage.js",
-      "source_location": "L35",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_carriephoto",
-      "community": 1,
+      "community": 68,
       "norm_label": "carriephoto()"
     },
     {
       "label": "AboutPage()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/AboutPage.js",
-      "source_location": "L90",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_aboutpage",
-      "community": 1,
+      "community": 68,
       "norm_label": "aboutpage()"
+    },
+    {
+      "label": "CareAndSafetyPage.js",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage",
+      "community": 89,
+      "norm_label": "careandsafetypage.js"
+    },
+    {
+      "label": "bodySx",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage_bodysx",
+      "community": 89,
+      "norm_label": "bodysx"
+    },
+    {
+      "label": "sectionHeadingSx",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage_sectionheadingsx",
+      "community": 89,
+      "norm_label": "sectionheadingsx"
+    },
+    {
+      "label": "sectionBoxSx",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage_sectionboxsx",
+      "community": 89,
+      "norm_label": "sectionboxsx"
+    },
+    {
+      "label": "listSx",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage_listsx",
+      "community": 89,
+      "norm_label": "listsx"
+    },
+    {
+      "label": "listItemSx",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage_listitemsx",
+      "community": 89,
+      "norm_label": "listitemsx"
+    },
+    {
+      "label": "CARE_STANDARDS",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage_care_standards",
+      "community": 89,
+      "norm_label": "care_standards"
+    },
+    {
+      "label": "DAY_STEPS",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage_day_steps",
+      "community": 89,
+      "norm_label": "day_steps"
+    },
+    {
+      "label": "CareAndSafetyPage()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "dog_hotel_careandsafetypage_careandsafetypage",
+      "community": 89,
+      "norm_label": "careandsafetypage()"
     },
     {
       "label": "DogHotelInteriorPage.js",
@@ -1694,7 +1784,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage",
-      "community": 1,
+      "community": 71,
       "norm_label": "doghotelinteriorpage.js"
     },
     {
@@ -1704,7 +1794,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_headingsx",
-      "community": 1,
+      "community": 71,
       "norm_label": "headingsx"
     },
     {
@@ -1714,7 +1804,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_ledesx",
-      "community": 1,
+      "community": 71,
       "norm_label": "ledesx"
     },
     {
@@ -1724,7 +1814,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_footertextsx",
-      "community": 1,
+      "community": 71,
       "norm_label": "footertextsx"
     },
     {
@@ -1734,7 +1824,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_doghotelinteriorpage",
-      "community": 1,
+      "community": 71,
       "norm_label": "doghotelinteriorpage()"
     },
     {
@@ -1744,7 +1834,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage",
-      "community": 1,
+      "community": 71,
       "norm_label": "gallerypage.js"
     },
     {
@@ -1754,7 +1844,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_gallerypage",
-      "community": 1,
+      "community": 71,
       "norm_label": "gallerypage()"
     },
     {
@@ -1764,7 +1854,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_howastayworkspage",
-      "community": 1,
+      "community": 71,
       "norm_label": "howastayworkspage.js"
     },
     {
@@ -1774,7 +1864,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "dog_hotel_howastayworkspage_steps",
-      "community": 1,
+      "community": 71,
       "norm_label": "steps"
     },
     {
@@ -1784,7 +1874,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "dog_hotel_howastayworkspage_howastayworkspage",
-      "community": 1,
+      "community": 71,
       "norm_label": "howastayworkspage()"
     },
     {
@@ -2004,7 +2094,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homeherobackground",
-      "community": 1,
+      "community": 78,
       "norm_label": "homeherobackground.js"
     },
     {
@@ -2014,7 +2104,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "home_landing_homeherobackground_homeherobackground",
-      "community": 1,
+      "community": 78,
       "norm_label": "homeherobackground()"
     },
     {
@@ -2174,7 +2264,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingshell",
-      "community": 1,
+      "community": 91,
       "norm_label": "homelandingshell.js"
     },
     {
@@ -2184,7 +2274,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_createlandingtheme",
-      "community": 1,
+      "community": 91,
       "norm_label": "createlandingtheme()"
     },
     {
@@ -2194,7 +2284,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_homelandingshell",
-      "community": 1,
+      "community": 91,
       "norm_label": "homelandingshell()"
     },
     {
@@ -2284,7 +2374,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketinginteriorlayout.js"
     },
     {
@@ -2294,7 +2384,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_interior_content_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_interior_content_sx"
     },
     {
@@ -2304,7 +2394,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_interior_form_grid_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_interior_form_grid_sx"
     },
     {
@@ -2314,7 +2404,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_page_content_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_form_page_content_sx"
     },
     {
@@ -2324,7 +2414,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_flex_section_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_form_flex_section_sx"
     },
     {
@@ -2334,7 +2424,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_grid_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_form_grid_sx"
     },
     {
@@ -2344,7 +2434,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_page_grid_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_form_page_grid_sx"
     },
     {
@@ -2354,7 +2444,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_hero_column_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_form_hero_column_sx"
     },
     {
@@ -2364,7 +2454,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_column_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_form_column_sx"
     },
     {
@@ -2374,7 +2464,7 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_column_inner_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "marketing_form_column_inner_sx"
     },
     {
@@ -2384,7 +2474,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketinginteriorlayout",
-      "community": 1,
+      "community": 102,
       "norm_label": "marketinginteriorlayout()"
     },
     {
@@ -2704,7 +2794,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_gradient_sx",
-      "community": 1,
+      "community": 70,
       "norm_label": "luxury_gradient_sx"
     },
     {
@@ -2784,7 +2874,7 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_hero_slides",
-      "community": 1,
+      "community": 78,
       "norm_label": "home_hero_slides"
     },
     {
@@ -2794,7 +2884,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_font",
-      "community": 1,
+      "community": 91,
       "norm_label": "home-landing-font.js"
     },
     {
@@ -2804,7 +2894,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_home_landing_font_homemontserrat",
-      "community": 1,
+      "community": 91,
       "norm_label": "homemontserrat"
     },
     {
@@ -3001,7 +3091,7 @@
       "label": "MARKETING_NAV_TREE",
       "file_type": "code",
       "source_file": "frontend/consts/marketing-nav.js",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "consts_marketing_nav_marketing_nav_tree",
       "community": 0,
@@ -3011,7 +3101,7 @@
       "label": "flattenNavItemsForDrawer()",
       "file_type": "code",
       "source_file": "frontend/consts/marketing-nav.js",
-      "source_location": "L27",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "consts_marketing_nav_flattennavitemsfordrawer",
       "community": 0,
@@ -3071,7 +3161,7 @@
       "label": "boutiqueDevelopersSlugPath()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "consts_routes_boutiquedevelopersslugpath",
       "community": 69,
@@ -3081,7 +3171,7 @@
       "label": "productManualSlugPath()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L50",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "consts_routes_productmanualslugpath",
       "community": 69,
@@ -3091,7 +3181,7 @@
       "label": "staffPathSuffix()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L55",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "consts_routes_staffpathsuffix",
       "community": 69,
@@ -3101,7 +3191,7 @@
       "label": "staffPath()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L61",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "consts_routes_staffpath",
       "community": 69,
@@ -3111,7 +3201,7 @@
       "label": "staffLoginHref()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L63",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "consts_routes_staffloginhref",
       "community": 69,
@@ -3121,7 +3211,7 @@
       "label": "isHomeRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L65",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "consts_routes_ishomeroute",
       "community": 69,
@@ -3131,7 +3221,7 @@
       "label": "isStaffRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L69",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "consts_routes_isstaffroute",
       "community": 66,
@@ -3141,7 +3231,7 @@
       "label": "isMarketingRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L74",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "consts_routes_ismarketingroute",
       "community": 80,
@@ -3151,7 +3241,7 @@
       "label": "isMarketingInteriorRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L85",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "consts_routes_ismarketinginteriorroute",
       "community": 69,
@@ -3161,7 +3251,7 @@
       "label": "isMarketingFormRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L90",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "consts_routes_ismarketingformroute",
       "community": 80,
@@ -3234,7 +3324,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext",
-      "community": 1,
+      "community": 78,
       "norm_label": "homeheroslidescontext.js"
     },
     {
@@ -3244,7 +3334,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_homeheroslidescontext",
-      "community": 1,
+      "community": 78,
       "norm_label": "homeheroslidescontext"
     },
     {
@@ -3264,7 +3354,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_homeheroslidesprovider",
-      "community": 1,
+      "community": 78,
       "norm_label": "homeheroslidesprovider()"
     },
     {
@@ -3274,7 +3364,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_usehomeheroslides",
-      "community": 1,
+      "community": 78,
       "norm_label": "usehomeheroslides()"
     },
     {
@@ -4754,7 +4844,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "about_page",
-      "community": 1,
+      "community": 68,
       "norm_label": "page.js"
     },
     {
@@ -4764,7 +4854,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "about_page_metadata",
-      "community": 1,
+      "community": 68,
       "norm_label": "metadata"
     },
     {
@@ -4774,8 +4864,38 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "about_page_aboutroute",
-      "community": 1,
+      "community": 68,
       "norm_label": "aboutroute()"
+    },
+    {
+      "label": "page.js",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/care-and-safety/page.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "care_and_safety_page",
+      "community": 101,
+      "norm_label": "page.js"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/care-and-safety/page.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "care_and_safety_page_metadata",
+      "community": 101,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "CareAndSafetyRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/care-and-safety/page.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "care_and_safety_page_careandsafetyroute",
+      "community": 101,
+      "norm_label": "careandsafetyroute()"
     },
     {
       "label": "page.js",
@@ -5551,7 +5671,7 @@
       "label": "buildShareMetadata()",
       "file_type": "code",
       "source_file": "frontend/utils/website-seo.js",
-      "source_location": "L51",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "utils_website_seo_buildsharemetadata",
       "community": 4,
@@ -5561,7 +5681,7 @@
       "label": "PUBLIC_SITE_ORIGIN",
       "file_type": "code",
       "source_file": "frontend/utils/website-seo.js",
-      "source_location": "L89",
+      "source_location": "L94",
       "_origin": "ast",
       "id": "utils_website_seo_public_site_origin",
       "community": 4,
@@ -5571,7 +5691,7 @@
       "label": "pageMetadata()",
       "file_type": "code",
       "source_file": "frontend/utils/website-seo.js",
-      "source_location": "L100",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "utils_website_seo_pagemetadata",
       "community": 4,
@@ -5581,7 +5701,7 @@
       "label": "homePageJsonLd()",
       "file_type": "code",
       "source_file": "frontend/utils/website-seo.js",
-      "source_location": "L113",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "utils_website_seo_homepagejsonld",
       "community": 4,
@@ -5884,7 +6004,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice",
-      "community": 17,
+      "community": 67,
       "norm_label": "design-it-twice.md"
     },
     {
@@ -5894,7 +6014,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_design_it_twice",
-      "community": 17,
+      "community": 67,
       "norm_label": "design it twice"
     },
     {
@@ -5904,7 +6024,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_process",
-      "community": 17,
+      "community": 67,
       "norm_label": "process"
     },
     {
@@ -5914,7 +6034,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_1_frame_the_problem_space",
-      "community": 17,
+      "community": 67,
       "norm_label": "1. frame the problem space"
     },
     {
@@ -5924,7 +6044,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_2_launch_subagents",
-      "community": 17,
+      "community": 67,
       "norm_label": "2. launch subagents"
     },
     {
@@ -5934,7 +6054,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_3_present_and_compare",
-      "community": 17,
+      "community": 67,
       "norm_label": "3. present and compare"
     },
     {
@@ -7524,7 +7644,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_skill",
-      "community": 62,
+      "community": 83,
       "norm_label": "skill.md"
     },
     {
@@ -7914,7 +8034,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_interview_tactics",
-      "community": 77,
+      "community": 95,
       "norm_label": "interview tactics"
     },
     {
@@ -7924,7 +8044,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_relentless_but_respectful",
-      "community": 77,
+      "community": 95,
       "norm_label": "relentless but respectful"
     },
     {
@@ -7934,7 +8054,7 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_batching",
-      "community": 77,
+      "community": 95,
       "norm_label": "batching"
     },
     {
@@ -7944,7 +8064,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_stuck_loops",
-      "community": 77,
+      "community": 95,
       "norm_label": "stuck loops"
     },
     {
@@ -7954,7 +8074,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_decision_log_template",
-      "community": 77,
+      "community": 95,
       "norm_label": "decision log template"
     },
     {
@@ -7964,7 +8084,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch",
-      "community": 86,
+      "community": 83,
       "norm_label": "module-sketch.md"
     },
     {
@@ -7974,7 +8094,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_module_sketch_guide",
-      "community": 86,
+      "community": 34,
       "norm_label": "module sketch guide"
     },
     {
@@ -7984,7 +8104,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_goals",
-      "community": 86,
+      "community": 34,
       "norm_label": "goals"
     },
     {
@@ -8054,7 +8174,7 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_module_table_template",
-      "community": 86,
+      "community": 34,
       "norm_label": "module table template"
     },
     {
@@ -8064,7 +8184,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_extraction_heuristics",
-      "community": 86,
+      "community": 34,
       "norm_label": "extraction heuristics"
     },
     {
@@ -8074,7 +8194,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_ihcs_conventions",
-      "community": 14,
+      "community": 86,
       "norm_label": "ihcs conventions"
     },
     {
@@ -8084,7 +8204,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_anti_patterns",
-      "community": 86,
+      "community": 34,
       "norm_label": "anti-patterns"
     },
     {
@@ -8094,7 +8214,7 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_phase_4_exit_criteria",
-      "community": 86,
+      "community": 34,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -8264,7 +8384,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme",
-      "community": 14,
+      "community": 86,
       "norm_label": "readme.md"
     },
     {
@@ -8274,7 +8394,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme_care_bear_daycare",
-      "community": 14,
+      "community": 86,
       "norm_label": "care bear daycare"
     },
     {
@@ -8284,48 +8404,148 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "readme_public_pages",
-      "community": 14,
+      "community": 86,
       "norm_label": "public pages"
     },
     {
       "label": "Stack",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L19",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "readme_stack",
-      "community": 14,
+      "community": 86,
       "norm_label": "stack"
     },
     {
       "label": "Local development",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L24",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "readme_local_development",
-      "community": 14,
+      "community": 86,
       "norm_label": "local development"
     },
     {
       "label": "Layout",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L48",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "readme_layout",
-      "community": 14,
+      "community": 86,
       "norm_label": "layout"
     },
     {
       "label": "License",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L53",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "readme_license",
-      "community": 14,
+      "community": 86,
       "norm_label": "license"
+    },
+    {
+      "label": "carrie-care-rules-questions.md",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions",
+      "community": 104,
+      "norm_label": "carrie-care-rules-questions.md"
+    },
+    {
+      "label": "Questions for Carrie \u2014 Care and safety copy",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "community": 104,
+      "norm_label": "questions for carrie \u2014 care and safety copy"
+    },
+    {
+      "label": "Capacity and home",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_capacity_and_home",
+      "community": 104,
+      "norm_label": "capacity and home"
+    },
+    {
+      "label": "Vaccines, health, and packing",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_vaccines_health_and_packing",
+      "community": 104,
+      "norm_label": "vaccines, health, and packing"
+    },
+    {
+      "label": "Daily rhythm and updates",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_daily_rhythm_and_updates",
+      "community": 104,
+      "norm_label": "daily rhythm and updates"
+    },
+    {
+      "label": "If something goes wrong",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_if_something_goes_wrong",
+      "community": 104,
+      "norm_label": "if something goes wrong"
+    },
+    {
+      "label": "Who a stay is for (and who it is not)",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_who_a_stay_is_for_and_who_it_is_not",
+      "community": 104,
+      "norm_label": "who a stay is for (and who it is not)"
+    },
+    {
+      "label": "Trust signals (only if true)",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_trust_signals_only_if_true",
+      "community": 104,
+      "norm_label": "trust signals (only if true)"
+    },
+    {
+      "label": "FAQ leftovers",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_faq_leftovers",
+      "community": 104,
+      "norm_label": "faq leftovers"
+    },
+    {
+      "label": "Answer log",
+      "file_type": "document",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "docs_carrie_care_rules_questions_answer_log",
+      "community": 104,
+      "norm_label": "answer log"
     },
     {
       "label": "README.md",
@@ -8431,7 +8651,7 @@
       "label": "HOME_NAV_ITEMS_BASE",
       "file_type": "code",
       "source_file": "frontend/consts/marketing-nav.js",
-      "source_location": "L21",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "consts_marketing_nav_home_nav_items_base",
       "community": 0,
@@ -8441,7 +8661,7 @@
       "label": "MARKETING_INTERIOR_NAV_ITEMS_BASE",
       "file_type": "code",
       "source_file": "frontend/consts/marketing-nav.js",
-      "source_location": "L24",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "consts_marketing_nav_marketing_interior_nav_items_base",
       "community": 0,
@@ -8625,7 +8845,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Marketing form pages use stacked layout below the MUI lg breakpoint (1200px).",
-      "community": 1,
+      "community": 102,
       "norm_label": "form_page_desktop_bp",
       "id": "design_studio_design_studio_glass_form_page_desktop_bp"
     },
@@ -8651,7 +8871,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 78,
       "norm_label": "handleslidechange",
       "id": "home_landing_homeherobackground_handleslidechange"
     },
@@ -8664,7 +8884,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 78,
       "norm_label": "home_hero_fade_ms",
       "id": "home_landing_home_landing_data_home_hero_fade_ms"
     },
@@ -8678,7 +8898,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI theme font family so drawer portals inherit Nunito outside the shell className.",
-      "community": 1,
+      "community": 91,
       "norm_label": "home_landing_font_family",
       "id": "home_landing_home_landing_font_home_landing_font_family"
     },
@@ -8966,7 +9186,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 23,
       "norm_label": "thin pages",
       "id": "agents_frontend_dev_thin_pages"
     },
@@ -9070,7 +9290,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "module",
       "id": "codebase_design_skill_module"
     },
@@ -9084,7 +9304,7 @@
       "author": null,
       "contributor": null,
       "rationale": "The interface is the test surface. Callers and tests cross the same seam.",
-      "community": 17,
+      "community": 67,
       "norm_label": "interface",
       "id": "codebase_design_skill_interface"
     },
@@ -9097,7 +9317,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "implementation",
       "id": "codebase_design_skill_implementation"
     },
@@ -9111,7 +9331,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depth is leverage at the interface, not a ratio of implementation lines to interface lines.",
-      "community": 17,
+      "community": 67,
       "norm_label": "depth",
       "id": "codebase_design_skill_depth"
     },
@@ -9125,7 +9345,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Michael Feathers: a place where behaviour can change without editing in that place. One adapter means a hypothetical seam; two adapters means a real one.",
-      "community": 17,
+      "community": 67,
       "norm_label": "seam",
       "id": "codebase_design_skill_seam"
     },
@@ -9138,7 +9358,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "adapter",
       "id": "codebase_design_skill_adapter"
     },
@@ -9151,7 +9371,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "leverage",
       "id": "codebase_design_skill_leverage"
     },
@@ -9164,7 +9384,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "locality",
       "id": "codebase_design_skill_locality"
     },
@@ -9190,7 +9410,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "in-process dependency",
       "id": "codebase_design_deepening_in_process"
     },
@@ -9203,7 +9423,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "local-substitutable dependency",
       "id": "codebase_design_deepening_local_substitutable"
     },
@@ -9216,7 +9436,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "remote but owned ports and adapters",
       "id": "codebase_design_deepening_ports_and_adapters"
     },
@@ -9229,7 +9449,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "true external dependency",
       "id": "codebase_design_deepening_true_external"
     },
@@ -9242,7 +9462,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 67,
       "norm_label": "replace don't layer",
       "id": "codebase_design_deepening_replace_dont_layer"
     },
@@ -9633,7 +9853,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Start here every time. Collect a long problem description and solution ideas, including rejected approaches, before repo exploration or design questions.",
-      "community": 62,
+      "community": 83,
       "norm_label": "phase 1 deep intake",
       "id": "write_a_prd_skill_phase1_deep_intake"
     },
@@ -9647,7 +9867,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Thread-only capture of problem statement, goals, non-goals, solution ideas, codebase assertions, and open threads. Not written to disk until Phase 5.",
-      "community": 62,
+      "community": 83,
       "norm_label": "working notes",
       "id": "write_a_prd_skill_working_notes"
     },
@@ -9661,7 +9881,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Verify user assertions with graphify query, explain, and path before Read/Grep/Glob. Summarize verified, corrected, gaps, relevant surface, and constraints.",
-      "community": 62,
+      "community": 83,
       "norm_label": "phase 2 repo discovery",
       "id": "write_a_prd_skill_phase2_repo_discovery"
     },
@@ -9689,7 +9909,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Table of ID, decision, rationale, and depends-on, maintained in working notes and copied into the PRD.",
-      "community": 83,
+      "community": 62,
       "norm_label": "decision log",
       "id": "write_a_prd_skill_decision_log"
     },
@@ -9759,7 +9979,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Root branch. Unlocks every other branch. Exit is a confirmed one-sentence problem plus measurable goals, including what is not success.",
-      "community": 14,
+      "community": 90,
       "norm_label": "branch 1 problem and success",
       "id": "write_a_prd_interview_guide_branch1_problem"
     },
@@ -9773,7 +9993,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branch 1. Exit is an agreed role-by-permission matrix. Cross-check middleware.ts, AdminAuthGuard, and DRF permissions.",
-      "community": 14,
+      "community": 90,
       "norm_label": "branch 2 users and permissions",
       "id": "write_a_prd_interview_guide_branch2_users"
     },
@@ -9787,7 +10007,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Example roles listed as public visitor, ES admin, DS manager, kiosk player, and API consumer. These names come from the older multi-product suite, not from the Care Bear Daycare brand reference.",
-      "community": 14,
+      "community": 90,
       "norm_label": "es admin ds manager kiosk roles",
       "id": "write_a_prd_interview_guide_legacy_roles"
     },
@@ -9801,7 +10021,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branch 1. Confirms MVP, out-of-scope list, and cross-cutting concerns such as shared token, Caddy routes, and Docker rebuild.",
-      "community": 14,
+      "community": 90,
       "norm_label": "branch 3 product surface and scope",
       "id": "write_a_prd_interview_guide_branch3_surface"
     },
@@ -9829,7 +10049,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 2 and 3. Covers models, lifecycle, Entra, Outlook add-in, WebSockets, migrations. Exit is an entity list and integration boundaries.",
-      "community": 14,
+      "community": 90,
       "norm_label": "branch 4 data and integrations",
       "id": "write_a_prd_interview_guide_branch4_data"
     },
@@ -9843,7 +10063,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 2\u20134. Primary flow, edge cases, and design reference (Tailwind, Figma, or existing MUI). i18n probe is scoped to the IHCS website.",
-      "community": 14,
+      "community": 105,
       "norm_label": "branch 5 ux and flows",
       "id": "write_a_prd_interview_guide_branch5_ux"
     },
@@ -9857,7 +10077,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 3\u20135. Performance, accessibility, security, and reliability, or an explicit statement of no special requirements.",
-      "community": 14,
+      "community": 105,
       "norm_label": "branch 6 non-functional requirements",
       "id": "write_a_prd_interview_guide_branch6_nfr"
     },
@@ -9871,7 +10091,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 3\u20135. MVP versus later phases, feature flags, beta users, client sign-off, and launch assets.",
-      "community": 14,
+      "community": 105,
       "norm_label": "branch 7 rollout and phasing",
       "id": "write_a_prd_interview_guide_branch7_rollout"
     },
@@ -9885,7 +10105,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on all prior branches. Manual scenarios per role, API method/path/status expectations, and regression areas that prove Branch 1 success.",
-      "community": 14,
+      "community": 105,
       "norm_label": "branch 8 acceptance and verification",
       "id": "write_a_prd_interview_guide_branch8_acceptance"
     },
@@ -9899,7 +10119,7 @@
       "author": null,
       "contributor": null,
       "rationale": "If the user is unsure, offer two or three options, record a deferral with an owner and whether it blocks MVP, and do not invent a decision.",
-      "community": 83,
+      "community": 62,
       "norm_label": "deferred decision",
       "id": "write_a_prd_interview_guide_deferred_decision"
     },
@@ -9913,7 +10133,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Pure input-to-output logic with injected plain data, no UI/framework/ORM/globals/request/hooks, and a stable signature so it can be unit-tested in isolation.",
-      "community": 83,
+      "community": 103,
       "norm_label": "deep module",
       "id": "write_a_prd_module_sketch_deep_module"
     },
@@ -9927,7 +10147,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Viewsets, route pages, and hooks stay thin and delegate rules downward. Tested with integration or UI tests only.",
-      "community": 83,
+      "community": 103,
       "norm_label": "shallow orchestrator",
       "id": "write_a_prd_module_sketch_shallow_module"
     },
@@ -9941,7 +10161,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Dependency shape: Route or ViewSet calls an orchestrator hook or service, which calls deep modules, with API client or serializer beside the orchestrator.",
-      "community": 83,
+      "community": 103,
       "norm_label": "route to orchestrator to deep module",
       "id": "write_a_prd_module_sketch_dependency_chain"
     },
@@ -9955,7 +10175,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sketch splits into backend models/serializers/services/viewsets, frontend pages/components/hooks/API clients, and cross-cutting middleware, auth, env, Docker, and migrations.",
-      "community": 86,
+      "community": 83,
       "norm_label": "backend frontend cross-cutting layers",
       "id": "write_a_prd_module_sketch_layers"
     },
@@ -9969,7 +10189,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Columns: ID, module path, layer, Create/Modify/Extend, responsibility, deep flag, test approach, dependencies. Example pairs a schedule service with a thin viewset and a frontend domain preview.",
-      "community": 86,
+      "community": 62,
       "norm_label": "module table m-001",
       "id": "write_a_prd_module_sketch_module_table"
     },
@@ -9997,7 +10217,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Must-have R-001, should-have R-101, and could-have R-201, each with rationale and a decision reference.",
-      "community": 83,
+      "community": 62,
       "norm_label": "p0 p1 p2 requirements",
       "id": "write_a_prd_template_priority"
     },
@@ -10011,7 +10231,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Maps requirement IDs to module IDs. The skill requires every P0 to map to at least one module.",
-      "community": 86,
+      "community": 62,
       "norm_label": "requirement to module traceability",
       "id": "write_a_prd_template_traceability"
     },
@@ -10025,7 +10245,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Phase 2 section: assertion verdicts (Confirmed, Corrected, Not found), frontend/backend/other surfaces, and gaps versus the desired end state.",
-      "community": 62,
+      "community": 83,
       "norm_label": "current state and verified assertions",
       "id": "write_a_prd_template_current_state"
     },
@@ -10039,7 +10259,7 @@
       "author": null,
       "contributor": null,
       "rationale": "On push to main or workflow_dispatch. Concurrency group pages does not cancel in progress. Build job needs deploy job. Permissions: contents read, pages write, id-token write.",
-      "community": 14,
+      "community": 74,
       "norm_label": "deploy next.js site to pages",
       "id": "workflows_nextjs_deploy_pages"
     },
@@ -10053,7 +10273,7 @@
       "author": null,
       "contributor": null,
       "rationale": "File header cites the actions/starter-workflows pages/nextjs.yml template.",
-      "community": 14,
+      "community": 74,
       "norm_label": "github pages next.js starter workflow",
       "id": "workflows_nextjs_starter_workflow"
     },
@@ -10067,7 +10287,7 @@
       "author": null,
       "contributor": null,
       "rationale": "If frontend/yarn.lock exists, manager yarn, command install, runner yarn. Else if frontend/package.json exists, npm ci via npx. Otherwise the step fails.",
-      "community": 14,
+      "community": 74,
       "norm_label": "detect package manager",
       "id": "workflows_nextjs_detect_package_manager"
     },
@@ -10081,7 +10301,7 @@
       "author": null,
       "contributor": null,
       "rationale": "configure-pages uses static_site_generator next and frontend/next.config.js. withPlugins() blocks the injector, so the build also sets GITHUB_PAGES and NEXT_PUBLIC_BASE_PATH from steps.pages.outputs.base_path.",
-      "community": 14,
+      "community": 74,
       "norm_label": "github pages base path",
       "id": "workflows_nextjs_pages_base_path"
     },
@@ -10123,7 +10343,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Node 20, Corepack, yarn or npm install, next build, then upload-pages-artifact from frontend/out and deploy-pages to the github-pages environment.",
-      "community": 14,
+      "community": 74,
       "norm_label": "frontend/out pages artifact",
       "id": "workflows_nextjs_static_export"
     },
@@ -10137,7 +10357,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Runs on workflow_dispatch or push to main when frontend/** or this workflow file changes. Working directory is frontend. Cancels in-progress runs in the same concurrency group.",
-      "community": 14,
+      "community": 74,
       "norm_label": "test frontend workflow",
       "id": "workflows_test_frontend"
     },
@@ -10151,7 +10371,7 @@
       "author": null,
       "contributor": null,
       "rationale": "checkout, corepack enable, setup-node with yarn cache on frontend/yarn.lock, yarn install --immutable, yarn lint.",
-      "community": 14,
+      "community": 74,
       "norm_label": "frontend lint job",
       "id": "workflows_test_frontend_lint"
     },
@@ -10165,7 +10385,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Lint runs only for pull_request, or for push when the ref does not contain refs/pull/. workflow_dispatch is a trigger but does not satisfy the if, so a manual run skips Lint.",
-      "community": 14,
+      "community": 74,
       "norm_label": "lint job event guard",
       "id": "workflows_test_frontend_lint_guard"
     },
@@ -10179,7 +10399,7 @@
       "author": null,
       "contributor": null,
       "rationale": "pre-commit-hooks v3.4.0: trailing-whitespace, end-of-file-fixer, check-yaml, check-added-large-files, check-json.",
-      "community": 14,
+      "community": 74,
       "norm_label": "pre-commit hooks",
       "id": "pre_commit_config_hooks"
     },
@@ -10193,7 +10413,7 @@
       "author": null,
       "contributor": null,
       "rationale": "mirrors-prettier v2.2.1 with args --config frontend/.prettierrc.",
-      "community": 14,
+      "community": 74,
       "norm_label": "pre-commit prettier",
       "id": "pre_commit_config_prettier"
     },
@@ -10249,7 +10469,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Nunito via next/font/google, weights 400\u2013700, display swap, loaded in home-landing-font.js. Uppercase is for small eyebrows only.",
-      "community": 14,
+      "community": 92,
       "norm_label": "nunito marketing type",
       "id": "brand_reference_nunito"
     },
@@ -10263,7 +10483,7 @@
       "author": null,
       "contributor": null,
       "rationale": "The export is still named homeMontserrat, and HOME_LANDING_FONT_FAMILY and SPLASH_FONT_MONTSERRAT still point at it. The face is Nunito.",
-      "community": 14,
+      "community": 92,
       "norm_label": "homemontserrat nunito alias",
       "id": "brand_reference_home_montserrat_alias"
     },
@@ -10277,7 +10497,7 @@
       "author": null,
       "contributor": null,
       "rationale": "heroCtaSx in HomeLandingPage.js: radius 999, weight 600, tracking 0.04em, text-transform none, white border over photography.",
-      "community": 14,
+      "community": 92,
       "norm_label": "hero pill buttons",
       "id": "brand_reference_hero_buttons"
     },
@@ -10291,7 +10511,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Interior nav on cream with ink links. Hover underline grows left to right in 0.35s. Desktop nav starts at xl. Logos are full-color PNGs: /imgs/logos/logo.png and logo_hori.png.",
-      "community": 14,
+      "community": 86,
       "norm_label": "cream interior nav",
       "id": "brand_reference_nav"
     },
@@ -10305,7 +10525,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Contact keeps the frosted glass panel from design-studio-glass.js over photography. It is not the daycare page style and must not be restyled to pill buttons.",
-      "community": 14,
+      "community": 92,
       "norm_label": "frosted glass contact form",
       "id": "brand_reference_glass_contact"
     },
@@ -10333,7 +10553,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI 8px grid. Breakpoints xs 0, sm 600, md 900, lg 1200, xl 1536. Desktop nav at xl. Forms go two-column at lg. Interior content max width about 880px.",
-      "community": 14,
+      "community": 86,
       "norm_label": "marketing layout grid",
       "id": "brand_reference_layout"
     },
@@ -10361,7 +10581,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Book a stay opens ROVER_BOOKING_URL in frontend/consts/routes.js. The URL is a placeholder until the real Rover profile is set. Stays are booked on Rover.",
-      "community": 14,
+      "community": 86,
       "norm_label": "rover booking url",
       "id": "readme_rover_booking"
     },
@@ -10375,7 +10595,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Contact opens a mail message to contact@carebeardaycare.ca with subject daycare consultation. Visit requests go out by email.",
-      "community": 14,
+      "community": 92,
       "norm_label": "contact@carebeardaycare.ca",
       "id": "readme_contact_email"
     },
@@ -10389,7 +10609,7 @@
       "author": null,
       "contributor": null,
       "rationale": "docker compose up --build --remove-orphans serves http://127.0.0.1:3010. The frontend container runs yarn dev on port 3000; Caddy publishes 3010. Outside Docker: cd frontend && yarn install && yarn dev.",
-      "community": 14,
+      "community": 90,
       "norm_label": "local docker compose dev",
       "id": "readme_local_docker"
     },
@@ -10403,7 +10623,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Builds frontend/Dockerfile.local, sets WATCHPACK_POLLING=true, and bind-mounts ./frontend to /code while keeping anonymous volumes for /code/node_modules and /code/.next.",
-      "community": 14,
+      "community": 90,
       "norm_label": "compose frontend service",
       "id": "docker_compose_frontend"
     },
@@ -10417,7 +10637,7 @@
       "author": null,
       "contributor": null,
       "rationale": "reverse-proxy uses caddy:latest, depends_on frontend, publishes 3010:3010, and mounts ./Caddyfile at /etc/caddy/Caddyfile.",
-      "community": 14,
+      "community": 90,
       "norm_label": "compose caddy reverse proxy",
       "id": "docker_compose_caddy"
     },
@@ -14286,6 +14506,108 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_careandsafetypage_bodysx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_careandsafetypage_care_standards"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_careandsafetypage_careandsafetypage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_careandsafetypage_day_steps"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_careandsafetypage_listitemsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_careandsafetypage_listsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_careandsafetypage_sectionboxsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_careandsafetypage_sectionheadingsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_doghotelinteriorpage"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/CareAndSafetyPage.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_careandsafetypage",
+      "target": "dog_hotel_doghotelinteriorpage_doghotelinteriorpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/components/dog-hotel/DogHotelInteriorPage.js",
       "source_location": "L33",
       "weight": 1.0,
@@ -14570,9 +14892,9 @@
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_hotel_reviewspage",
-      "target": "dog_hotel_reviews_data_reviewverificationlabel",
-      "confidence_score": 1.0
+      "target": "dog_hotel_reviews_data_reviewverificationlabel"
     },
     {
       "relation": "imports",
@@ -14715,9 +15037,9 @@
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_hotel_reviewspage_reviewcard",
-      "target": "dog_hotel_reviews_data_reviewverificationlabel",
-      "confidence_score": 1.0
+      "target": "dog_hotel_reviews_data_reviewverificationlabel"
     },
     {
       "relation": "calls",
@@ -14799,9 +15121,9 @@
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_hotel_reviews_data",
-      "target": "dog_hotel_reviews_data_reviewverificationlabel",
-      "confidence_score": 1.0
+      "target": "dog_hotel_reviews_data_reviewverificationlabel"
     },
     {
       "relation": "contains",
@@ -14819,9 +15141,9 @@
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_hotel_reviews_data",
-      "target": "dog_hotel_reviews_data_verification_labels",
-      "confidence_score": 1.0
+      "target": "dog_hotel_reviews_data_verification_labels"
     },
     {
       "relation": "imports_from",
@@ -14841,9 +15163,9 @@
       "source_file": "frontend/components/dog-hotel/reviews-data.test.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_hotel_reviews_data_test",
-      "target": "dog_hotel_reviews_data_reviewverificationlabel",
-      "confidence_score": 1.0
+      "target": "dog_hotel_reviews_data_reviewverificationlabel"
     },
     {
       "relation": "imports",
@@ -19482,6 +19804,26 @@
       "weight": 1.0,
       "source": "about_page_metadata",
       "target": "utils_website_seo_pagemetadata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/care-and-safety/page.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "care_and_safety_page",
+      "target": "care_and_safety_page_careandsafetyroute"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/care-and-safety/page.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "care_and_safety_page",
+      "target": "care_and_safety_page_metadata"
     },
     {
       "relation": "contains",
@@ -24331,6 +24673,96 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions",
+      "target": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "target": "docs_carrie_care_rules_questions_answer_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "target": "docs_carrie_care_rules_questions_capacity_and_home"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "target": "docs_carrie_care_rules_questions_daily_rhythm_and_updates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "target": "docs_carrie_care_rules_questions_faq_leftovers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "target": "docs_carrie_care_rules_questions_if_something_goes_wrong"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "target": "docs_carrie_care_rules_questions_trust_signals_only_if_true"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "target": "docs_carrie_care_rules_questions_vaccines_health_and_packing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/carrie-care-rules-questions.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_carrie_care_rules_questions_questions_for_carrie_care_and_safety_copy",
+      "target": "docs_carrie_care_rules_questions_who_a_stay_is_for_and_who_it_is_not"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/README.md",
       "source_location": "L3",
       "weight": 1.0,
@@ -28942,5 +29374,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "68d771de9dd440cdf9ee8890e11f40b118efe919"
+  "built_at_commit": "cc6f794a8b18cdeef4e74a9f8c05239e016793c5"
 }

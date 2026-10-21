@@ -131,6 +131,14 @@ function QuietCentreSplash() {
             }}
           />
         </Box>
+        <Image
+          src={LOGO_SRC}
+          alt=""
+          width={256}
+          height={256}
+          priority
+          style={{ display: 'block', width: 128, height: 128, position: 'relative', zIndex: 1 }}
+        />
       </Box>
 
       <Box

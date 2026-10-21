@@ -15,6 +15,7 @@ describe('isIndexablePublicPath', () => {
     expect(isIndexablePublicPath('/')).toBe(true);
     expect(isIndexablePublicPath('/about')).toBe(true);
     expect(isIndexablePublicPath('/how-a-stay-works')).toBe(true);
+    expect(isIndexablePublicPath('/care-and-safety')).toBe(true);
     expect(isIndexablePublicPath('/reviews')).toBe(true);
     expect(isIndexablePublicPath('/gallery')).toBe(true);
     expect(isIndexablePublicPath('/contact')).toBe(true);

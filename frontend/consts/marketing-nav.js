@@ -1,5 +1,6 @@
 import {
   ABOUT_PATH,
+  CARE_AND_SAFETY_PATH,
   CONTACT_PATH,
   GALLERY_PATH,
   HOW_A_STAY_WORKS_PATH,
@@ -11,6 +12,7 @@ import {
 export const MARKETING_NAV_TREE = [
   { label: 'About', href: ABOUT_PATH },
   { label: 'How a stay works', href: HOW_A_STAY_WORKS_PATH },
+  { label: 'Care and safety', href: CARE_AND_SAFETY_PATH },
   { label: 'Reviews', href: REVIEWS_PATH },
   { label: 'Gallery', href: GALLERY_PATH },
   { label: 'Book a stay', href: ROVER_BOOKING_URL },

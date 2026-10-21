@@ -18,12 +18,17 @@ export const WEBSITE_SEO = {
   '/about': {
     title: 'About',
     description:
-      'Carrie provides daycare and overnight care in her home, with a safe backyard for outdoor play. Care follows each dog’s needs, and visits are booked on Rover.',
+      'Carrie has spent 20 years caring for dogs. She offers daycare and overnight care in her home, with a fully fenced backyard, and visits are booked on Rover.',
   },
   '/how-a-stay-works': {
     title: 'How a stay works',
     description:
-      'Three simple steps, from getting to know your dog to welcoming them home: meet Carrie, settle into her home for play and rest, then hear how the stay went.',
+      'Three simple steps: meet Carrie at her home, settle in for play and rest, then hear how the stay went.',
+  },
+  '/care-and-safety': {
+    title: 'Care and safety',
+    description:
+      'Meet Carrie at her home before a stay. Dogs have a fully fenced backyard, and emergency care goes to Woodbine Animal Clinic.',
   },
   '/reviews': {
     title: 'Reviews',

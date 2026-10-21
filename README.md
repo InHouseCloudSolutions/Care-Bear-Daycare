@@ -9,8 +9,11 @@ Marketing site for Care Bear Daycare, a small boarding hotel for dogs. The publi
 | `/` | Home |
 | `/about` | About |
 | `/how-a-stay-works` | How a stay works |
+| `/care-and-safety` | Care and safety |
 | `/gallery` | Gallery |
 | `/contact` | Contact |
+
+Before tightening Care and safety copy with hard numbers (capacity, vaccines, vet, certifications), ask Carrie the questions in [docs/carrie-care-rules-questions.md](docs/carrie-care-rules-questions.md).
 
 **Book a stay** opens the Rover profile (`ROVER_BOOKING_URL` in `frontend/consts/routes.js`). That URL is a placeholder until the real profile is set.
 

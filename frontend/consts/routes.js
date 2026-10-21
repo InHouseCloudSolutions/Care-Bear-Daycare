@@ -36,6 +36,7 @@ export const CAREERS_PATH = '/careers';
 export const CONTACT_PATH = '/contact';
 export const ABOUT_PATH = '/about';
 export const HOW_A_STAY_WORKS_PATH = '/how-a-stay-works';
+export const CARE_AND_SAFETY_PATH = '/care-and-safety';
 export const REVIEWS_PATH = '/reviews';
 export const GALLERY_PATH = '/gallery';
 /** Carrie's Rover profile. Every Rover link on the site uses this URL. */
@@ -76,6 +77,7 @@ export function isMarketingRoute(pathname) {
     pathname === '/' ||
     pathname === ABOUT_PATH ||
     pathname === HOW_A_STAY_WORKS_PATH ||
+    pathname === CARE_AND_SAFETY_PATH ||
     pathname === REVIEWS_PATH ||
     pathname === GALLERY_PATH ||
     pathname === CONTACT_PATH
