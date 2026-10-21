@@ -584,8 +584,16 @@ export function mountScrollForge(container, config) {
     camera.aspect = w / h;
     // A phone in portrait sees far less horizontally; widening the FOV keeps
     // each scene framed instead of cropping it to its centre.
-    camera.fov = (config.fov ?? 46) * (camera.aspect < 0.85 ? 1.32 : 1);
-    camera.updateProjectionMatrix();
+    const portrait = camera.aspect < 0.85;
+    camera.fov = (config.fov ?? 46) * (portrait ? 1.32 : 1);
+    if (portrait) {
+      // Copy is pinned to the bottom of the screen. Shift the projection so
+      // the diorama sits above that block instead of behind it.
+      const lift = Math.round(h * 0.18);
+      camera.setViewOffset(w, h, 0, lift, w, h);
+    } else {
+      camera.clearViewOffset();
+    }
     // The spacer is sized from the scroll viewport, so it has to be recomputed
     // whenever that changes. Guarded: TOTAL_W does not exist until buildPath().
     if (TOTAL_W) applyScrollHeight();
@@ -961,7 +969,7 @@ function injectCSS() {
   background:color-mix(in srgb,var(--sf-ink) 10%,transparent);}
 .sf-progress span{display:block;height:100%;background:var(--sf-accent);
   transform-origin:0 50%;transform:scaleX(0);}
-.sf-hint{position:absolute;left:50%;transform:translateX(-50%);
+.sf-hint{position:absolute;left:0;right:0;text-align:center;white-space:nowrap;
   bottom:calc(1.4rem + env(safe-area-inset-bottom,0px));font-size:.72rem;letter-spacing:.16em;
   text-transform:uppercase;color:var(--sf-ink-soft);transition:opacity .4s ease;}
 
@@ -970,6 +978,9 @@ function injectCSS() {
   .sf-rail__dot.is-on span{display:none;}
   .sf-topcta{display:none;}
 }
+@media (max-width:320px){
+  .sf-hint{white-space:normal;padding:0 .75rem;}
+}
 @media (prefers-reduced-motion:reduce){
   .sf-block{transition:none;}
   .sf-loader__dot{animation:none;}
@@ -977,7 +988,7 @@ function injectCSS() {
 }
 /* Unlayered so these beat MUI's anchor color, which otherwise sits on the accent fill. */
 .sf-tags li{padding:.68rem 1.2rem;line-height:1.35;}
-.sf-tags{margin-bottom:.85rem;}
+.sf-tags{margin-top:.75rem;margin-bottom:.85rem;}
 .sf-cta{margin-top:.85rem;}
 a.sf-btn{color:var(--sf-ink);background:var(--sf-bg);border-color:var(--sf-ink);padding:.9rem 1.55rem;line-height:1.3;}
 a.sf-btn.sf-btn--primary{color:var(--sf-bg);background:var(--sf-ink);border-color:var(--sf-ink);}
