@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/HowAStayWorksPage.js": {
-    "mtime": 1792551078.2524774,
-    "ast_hash": "00b07d5750fcce52423c4c3757df2ccf",
+    "mtime": 1792584781.022711,
+    "ast_hash": "92246d8d6d185ade73405c7b1665ebfb",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/HomeHeroBackground.js": {
@@ -280,9 +280,9 @@
     "semantic_hash": ""
   },
   "frontend/package.json": {
-    "mtime": 1791924121.1009245,
-    "ast_hash": "569e1f7ed8c8e26c13888522d5d6d1bc",
-    "semantic_hash": "569e1f7ed8c8e26c13888522d5d6d1bc"
+    "mtime": 1792584648.865149,
+    "ast_hash": "4ef905eefdb944d64783f58c68fc9f77",
+    "semantic_hash": ""
   },
   "frontend/public/manifest.json": {
     "mtime": 1792420791.306923,
@@ -820,8 +820,73 @@
     "semantic_hash": ""
   },
   "docs/carrie-care-rules-questions.md": {
-    "mtime": 1792549859.7928393,
-    "ast_hash": "a195312bcd4ac805b5b8cc8c3b0d85c0",
+    "mtime": 1792551630.0887957,
+    "ast_hash": "94ba795a13b190e672b292a4c7c8fb59",
+    "semantic_hash": ""
+  },
+  ".claude/skills/scroll-forge/references/kit.js": {
+    "mtime": 1785005392.0243275,
+    "ast_hash": "698612c0fb57759e3fa4292d35af2bb7",
+    "semantic_hash": ""
+  },
+  ".claude/skills/scroll-forge/references/qa.mjs": {
+    "mtime": 1785007227.1336548,
+    "ast_hash": "caf28827fbf5c59dd19a00c22fc7fa3b",
+    "semantic_hash": ""
+  },
+  ".claude/skills/scroll-forge/references/world-engine.js": {
+    "mtime": 1785007215.8828018,
+    "ast_hash": "636ba99aa177cdfd7acc8590e9972452",
+    "semantic_hash": ""
+  },
+  "frontend/components/dog-hotel/scroll-forge/kit.js": {
+    "mtime": 1792585601.1597905,
+    "ast_hash": "37c1ce561cc9312929400842cb498a4e",
+    "semantic_hash": ""
+  },
+  "frontend/components/dog-hotel/scroll-forge/stay-world-config.js": {
+    "mtime": 1792585843.5423768,
+    "ast_hash": "e6ca80a2ff9530e99e7d4eb30ef73bcf",
+    "semantic_hash": ""
+  },
+  "frontend/components/dog-hotel/scroll-forge/world-engine.js": {
+    "mtime": 1792585838.6013987,
+    "ast_hash": "9e03555a10823959f9db3ec1e21b193a",
+    "semantic_hash": ""
+  },
+  ".claude/skills/scroll-forge/NOTICE.md": {
+    "mtime": 1785005702.351132,
+    "ast_hash": "1e4ec8a865399a6bf8bf0ea499f902d8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/scroll-forge/SKILL.md": {
+    "mtime": 1785007377.2403512,
+    "ast_hash": "1db4ca9619c5fe939c34fd0886f1435e",
+    "semantic_hash": ""
+  },
+  ".claude/skills/scroll-forge/references/example-world.html": {
+    "mtime": 1785005718.5875895,
+    "ast_hash": "c2ba4e19bc02a08354ebb53ed7f566b4",
+    "semantic_hash": ""
+  },
+  ".claude/skills/scroll-forge/references/index-template.html": {
+    "mtime": 1785003993.1651733,
+    "ast_hash": "1a7e4d89a30159ddcd9afadeaf6de781",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/stays/1meet.png": {
+    "mtime": 1792583939.2678068,
+    "ast_hash": "5a8ac0afd2fc492f98605839bb34f0a6",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/stays/2settle.png": {
+    "mtime": 1792583939.4898374,
+    "ast_hash": "9615e326cfac33ba78e224e691fb5e19",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/stays/3home.png": {
+    "mtime": 1792583939.950481,
+    "ast_hash": "2f7409a3777b716362c78ec761d892ef",
     "semantic_hash": ""
   }
 }

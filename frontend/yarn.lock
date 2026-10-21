@@ -6924,6 +6924,7 @@ __metadata:
     react-to-print: "npm:^3.0.5"
     swiper: "npm:^12.2.0"
     swr: "npm:^2.3.6"
+    three: "npm:^0.186.1"
     typescript: "npm:^5.6.0"
     webpack: "npm:^5.97.0"
     window-or-global: "npm:^1.0.1"
@@ -10759,6 +10760,13 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: 10c0/02805740c12851ea5982686810702e2f14369a5f4c5c40a836821e3eefc65ffeec3131ba324692a37608294b0fd8c1e55a2dd571ffed4909822787668ddbee5c
+  languageName: node
+  linkType: hard
+
+"three@npm:^0.186.1":
+  version: 0.186.1
+  resolution: "three@npm:0.186.1"
+  checksum: 10c0/8c8ed2d421da7cb4459bf3ad2961770d35173ef80885a594cb22fb44d275a9ba534b7ae92e93c99f50691b67febb913363ec5b64105fb7647289771d2bd32bc8
   languageName: node
   linkType: hard
 

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BRAND — the world of SUBJECT</title>
+  <meta name="description" content="Scroll to fly through the world of BRAND." />
+
+  <style>
+    /* Reset just enough to let the fixed stage own the viewport. */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { background: var(--sf-bg, #F5EDE0); }
+
+    /* ---- Theme. These are the only colours you normally need to touch. ----
+       Keep --sf-bg close to the sky's bottom colour so the loader, the page
+       chrome and the horizon agree; that's what makes the scene feel like it
+       extends past the canvas instead of sitting in a box. */
+    :root, .sf-root {
+      --sf-bg:       #F2E9DC;
+      --sf-ink:      #241D2B;
+      --sf-ink-soft: #6A6072;
+      --sf-accent:   #C8785A;
+      --sf-font-display: 'Instrument Serif', Georgia, serif;
+      --sf-font-body: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+  </style>
+
+  <!-- three.js is vendored locally: no CDN, no network at runtime, no key.
+       Populate ./vendor/three.module.js per SKILL.md Step 0. -->
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world"></div>
+
+  <script type="module">
+    import { mountScrollForge } from './world-engine.js';
+
+    mountScrollForge(document.getElementById('world'), {
+      brand: { name: 'BRAND', href: '#top' },
+      cta:   { label: 'Get started', href: '#finale' },
+      hint:  'scroll to fly in',
+
+      // The shared palette. Every prop that names a palette key instead of a
+      // hex re-colours with these — this is what makes the world read as one
+      // brand rather than a set of unrelated models.
+      palette: {
+        primary: '#C8785A', secondary: '#6E8FA8', accent: '#E8B44A',
+        dark: '#3A3340', light: '#F5EDE0',
+        ground: '#B9C79A', water: '#7FB0C4', foliage: '#7DA36B',
+        metal: '#9AA3AC', wood: '#A9764C', glass: '#BFDCE6',
+      },
+      sky: { top: '#BFD8E8', bottom: '#F2E9DC' },
+
+      seed: 7,          // change to reshuffle every scattered prop
+      diveScroll: 1.5,  // viewport-heights of scroll per scene
+      connScroll: 1.0,  // ...per fly-over between scenes
+
+      sections: [
+        {
+          id: 'sceneA', label: 'Scene A', accent: '#8FB98A',
+          eyebrow: 'Value prop label',
+          title: 'The hero line.',
+          body: 'One plain-spoken sentence about this stage.',
+          tags: ['Proof', 'Proof'],
+          scroll: 1.8, linger: 0.4,      // hero: longer dwell, camera settles
+          scene: {
+            island: { radius: 9, color: 'ground', edge: 'wood' },
+            props: [
+              { type: 'building', at: [0, 0], size: [5, 3.4, 4], roof: 'gable' },
+              { type: 'scatter', of: { type: 'tree', height: 2.8 }, count: 14,
+                ring: { inner: 5, outer: 8.4 }, scaleVary: 0.25 },
+            ],
+          },
+        },
+
+        // …middle scenes…
+
+        {
+          id: 'finale', label: 'The Product', accent: '#9B7EBD',
+          eyebrow: 'And it all arrives at',
+          title: 'One perfect thing.',
+          body: 'The payoff sentence.',
+          scroll: 2.0, linger: 0.5,
+          cta: {
+            primary:   { label: 'Get started', href: '#' },
+            secondary: { label: 'See more',    href: '#' },
+          },
+          scene: {
+            island: { radius: 8, color: 'light' },
+            props: [
+              { type: 'sign', at: [0, 1], width: 3, color: 'primary' },
+            ],
+          },
+        },
+      ],
+    });
+  </script>
+</body>
+</html>

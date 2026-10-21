@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Meridian Coffee — from the highlands to your cup</title>
+  <meta name="description" content="Scroll to fly through the world of Meridian Coffee." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { background: #F2E9DC; }
+    :root, .sf-root {
+      --sf-bg: #F2E9DC; --sf-ink: #2A2028; --sf-ink-soft: #6E6069;
+      --sf-accent: #B4623F;
+      --sf-font-display: Georgia, 'Times New Roman', serif;
+    }
+  </style>
+  <!-- To run this file, put world-engine.js and kit.js beside it, then:
+         npm install three && mkdir -p vendor
+         cp node_modules/three/build/three.module.js \
+            node_modules/three/build/three.core.js vendor/
+       Serve over HTTP (not file://) — ES modules require it. -->
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world"></div>
+
+  <script type="module">
+    import { mountScrollForge } from './world-engine.js';
+
+    const PALETTE = {
+      primary: '#B4623F', secondary: '#5F7F94', accent: '#E0A93F',
+      dark: '#33272E', light: '#F6EFE3',
+      ground: '#A8B884', water: '#79A9BE', foliage: '#6E9A63',
+      metal: '#98A0A8', wood: '#9C6B45', glass: '#C6DEE6',
+    };
+
+    mountScrollForge(document.getElementById('world'), {
+      brand: { name: 'Meridian', href: '#top' },
+      cta: { label: 'Buy a bag', href: '#finale' },
+      hint: 'scroll to fly in',
+      palette: PALETTE,
+      sky: { top: '#B7D3E4', bottom: '#F2E9DC' },
+      seed: 11,
+      diveScroll: 1.5,
+      connScroll: 1.0,
+
+      sections: [
+        {
+          id: 'farm', label: 'The Highlands', accent: '#6E9A63',
+          eyebrow: 'From leaf to last sip',
+          title: 'It starts at 1,800 metres.',
+          body: 'Shade-grown on a single ridge, hand-picked over eleven passes so only ripe cherry ever leaves the hill.',
+          tags: ['Single-origin', 'Hand-picked'],
+          scroll: 1.9, linger: 0.42,
+          focus: [-2, 1, 0],
+          scene: {
+            island: { radius: 11, color: 'ground', edge: '#8A6A4A' },
+            props: [
+              { type: 'field', at: [-3.2, 1.2], size: [9, 7], rows: 7, color: 'foliage', plantHeight: 0.62 },
+              { type: 'building', at: [4.6, -2.6], rotDeg: -22, size: [4.4, 2.9, 3.6],
+                roof: 'gable', color: 'light', roofColor: 'primary', floors: 1 },
+              { type: 'canopy', at: [4.4, 2.4], rotDeg: 12, size: [3.2, 2.3, 2.8], color: 'accent' },
+              { type: 'fence', at: [-8.6, 0.5], length: 9 },
+              { type: 'person', at: [-0.4, -2.6], height: 1.7, color: 'secondary' },
+              { type: 'person', at: [0.6, -3.2], height: 1.65, color: 'primary' },
+              { type: 'vehicle', at: [2.4, 4.4], rotDeg: 70, kind: 'cart', length: 2.6 },
+              { type: 'scatter', of: { type: 'tree', height: 3.1, kind: 'round' }, count: 15,
+                ring: { inner: 7.6, outer: 10.2 }, scaleVary: 0.28 },
+              { type: 'scatter', of: { type: 'rock', radius: 0.5 }, count: 6, ring: { inner: 6, outer: 10 } },
+              { type: 'scatter', of: { type: 'bush', radius: 0.42 }, count: 10, radius: 9.4, avoid: 5 },
+            ],
+          },
+        },
+
+        {
+          id: 'mill', label: 'The Mill', accent: '#79A9BE',
+          eyebrow: 'Washed, not rushed',
+          title: 'Fermented in spring water.',
+          body: 'Depulped the same afternoon, then a slow 36-hour wash that strips the sugar without stripping the fruit.',
+          tags: ['36-hour ferment', 'Spring-fed'],
+          scroll: 1.5, linger: 0.3,
+          scene: {
+            island: { radius: 9.5, color: '#9FAE93', edge: '#7E6A55' },
+            props: [
+              { type: 'water', at: [-3, 1.8], size: [7, 4.6] },
+              { type: 'building', at: [3.2, -1.4], rotDeg: 8, size: [5.2, 3.2, 4.2],
+                roof: 'flat', color: 'light', roofColor: 'dark', windows: 'strip' },
+              { type: 'conveyor', at: [-0.6, -3.4], rotDeg: 24, length: 6.5, items: 5, itemColor: 'primary' },
+              { type: 'crate', at: [5.4, 2.6], stack: 3, size: 0.85 },
+              { type: 'crate', at: [4.2, 3.6], stack: 2, size: 0.85 },
+              { type: 'person', at: [1.2, -1.2], height: 1.7, color: 'accent' },
+              { type: 'lamp', at: [-6.2, -2.2], height: 3.2 },
+              { type: 'scatter', of: { type: 'tree', height: 2.7, kind: 'pine' }, count: 11,
+                ring: { inner: 7.2, outer: 8.9 }, scaleVary: 0.22 },
+            ],
+          },
+        },
+
+        {
+          id: 'roastery', label: 'The Roastery', accent: '#B4623F',
+          eyebrow: 'Where it turns brown',
+          title: 'Eleven minutes, watched the whole way.',
+          body: 'Small drum batches, profiled by hand. Every roast logged, every log published.',
+          tags: ['Small-batch', 'Logged & published'],
+          scroll: 1.7, linger: 0.38,
+          scene: {
+            island: { radius: 10, color: '#A7A79B', edge: '#6E6257' },
+            props: [
+              { type: 'building', at: [-0.6, -1.2], size: [8, 3.8, 6], roof: 'saw', teeth: 4,
+                color: 'light', roofColor: 'dark', windows: 'grid', windowGlow: 0.8 },
+              { type: 'tower', at: [-5.4, 3.2], radius: 1.1, height: 6.2, cap: 'cone', color: 'metal' },
+              { type: 'tower', at: [-3, 3.9], radius: 0.95, height: 5.2, cap: 'dome', color: '#C7CBD0' },
+              { type: 'machine', at: [3.4, 3.4], rotDeg: -16, size: [1.8, 2.2, 1.4] },
+              { type: 'rack', at: [6.2, 0.4], rotDeg: 90, size: [3.4, 2.6, 1], levels: 3 },
+              { type: 'vehicle', at: [4.4, -4.6], rotDeg: 100, kind: 'truck', length: 3.6, color: 'light', cabColor: 'primary' },
+              { type: 'lamp', at: [0.8, 4.6], height: 3.6, cast: true },
+              { type: 'scatter', of: { type: 'crate', size: 0.7, stack: 2 }, count: 5, ring: { inner: 6.4, outer: 8.2 } },
+            ],
+          },
+        },
+
+        {
+          id: 'cafe', label: 'The Café', accent: '#E0A93F',
+          eyebrow: 'Poured on the corner',
+          title: 'Then someone hands it to you.',
+          body: 'Four rooms in three cities, all of them small, all of them loud in the morning.',
+          tags: ['3 cities', 'Open at 6'],
+          scroll: 1.6, linger: 0.35,
+          scene: {
+            island: { radius: 9, color: '#C0B7A4', edge: '#8A7C68', shape: 'round' },
+            props: [
+              { type: 'plot', at: [0, 0], radius: 6.4, color: '#B5AB98' },
+              { type: 'building', at: [-2.6, -2.4], rotDeg: 18, size: [4.6, 3.4, 3.8],
+                roof: 'hip', color: 'light', roofColor: 'primary', windows: 'grid', windowGlow: 0.9 },
+              { type: 'canopy', at: [1.8, 0.6], rotDeg: -10, size: [3.6, 2.4, 3.2], color: 'accent' },
+              { type: 'person', at: [0.4, 2.6], height: 1.72, color: 'secondary' },
+              { type: 'person', at: [1.6, 3.1], height: 1.62, color: 'primary' },
+              { type: 'person', at: [-1.4, 1.8], height: 1.68, color: 'dark' },
+              { type: 'lamp', at: [4.2, -1.6], height: 3.4, cast: true },
+              { type: 'lamp', at: [-4.6, 2.2], height: 3.4, cast: true },
+              { type: 'tree', at: [3.6, 3.4], height: 3.4, kind: 'round' },
+              { type: 'tree', at: [-4.2, -3.4], height: 3.0, kind: 'round' },
+              { type: 'sign', at: [-0.2, 5.2], width: 2.2, height: 1, color: 'primary' },
+            ],
+          },
+        },
+
+        {
+          id: 'finale', label: 'The Cup', accent: '#B4623F',
+          eyebrow: 'And it all pours into',
+          title: 'One cup, traceable to one ridge.',
+          body: 'Roasted Tuesday, shipped Wednesday, brewed by you on Thursday. That is the whole supply chain.',
+          scroll: 2.1, linger: 0.5,
+          cta: {
+            primary: { label: 'Buy a bag', href: '#' },
+            secondary: { label: 'Read the roast log', href: '#' },
+          },
+          scene: {
+            island: { radius: 8.5, color: '#CDBFA8', edge: '#8C7A62' },
+            props: [
+              { type: 'building', at: [0, -3.9], size: [6.2, 4.6, 4.2], roof: 'dome',
+                color: 'light', roofColor: 'primary', windows: 'grid', windowGlow: 1.1, floors: 2 },
+              { type: 'road', at: [0, 3.4], length: 12, width: 2.6, rotDeg: 90 },
+              { type: 'sign', at: [-3.8, 2.6], rotDeg: 22, width: 2.6, height: 1.15, color: 'primary' },
+              { type: 'lamp', at: [3.6, 1.8], height: 3.6, cast: true },
+              { type: 'lamp', at: [-3.6, -0.4], height: 3.6, cast: true },
+              { type: 'person', at: [1.2, 2.2], height: 1.7, color: 'secondary' },
+              { type: 'person', at: [2.2, 2.8], height: 1.66, color: 'accent' },
+              { type: 'scatter', of: { type: 'tree', height: 3.2, kind: 'round' }, count: 9,
+                ring: { inner: 6.2, outer: 7.9 }, scaleVary: 0.2 },
+            ],
+          },
+        },
+      ],
+
+      onReady: ({ buildMs }) => { window.__built = buildMs; console.log('[demo] world built in', buildMs, 'ms'); },
+    });
+  </script>
+</body>
+</html>

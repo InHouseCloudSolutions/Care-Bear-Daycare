@@ -48,6 +48,7 @@
     "react-to-print": "^3.0.5",
     "swiper": "^12.2.0",
     "swr": "^2.3.6",
+    "three": "^0.186.1",
     "window-or-global": "^1.0.1"
   },
   "devDependencies": {

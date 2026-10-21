@@ -1,2 +1,6 @@
 # Ignore all html files in the backend dir as they'll be django templates.
 backend/**/*.html
+
+# Vendored scroll-forge engine.
+frontend/components/dog-hotel/scroll-forge/world-engine.js
+frontend/components/dog-hotel/scroll-forge/kit.js

@@ -7,3 +7,7 @@ public
 
 jest.config.js
 next.config.js
+
+# Vendored scroll-forge engine. Edited locally for the stay page, but not house style.
+components/dog-hotel/scroll-forge/world-engine.js
+components/dog-hotel/scroll-forge/kit.js

@@ -848,6 +848,586 @@
   },
   "nodes": [
     {
+      "label": "kit.js",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "references_kit",
+      "community": 33,
+      "norm_label": "kit.js"
+    },
+    {
+      "label": "makeRng()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "references_kit_makerng",
+      "community": 33,
+      "norm_label": "makerng()"
+    },
+    {
+      "label": "DEFAULT_PALETTE",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "references_kit_default_palette",
+      "community": 33,
+      "norm_label": "default_palette"
+    },
+    {
+      "label": "makeContext()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "references_kit_makecontext",
+      "community": 33,
+      "norm_label": "makecontext()"
+    },
+    {
+      "label": "roundedRect()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "references_kit_roundedrect",
+      "community": 33,
+      "norm_label": "roundedrect()"
+    },
+    {
+      "label": "boxGeo()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "references_kit_boxgeo",
+      "community": 33,
+      "norm_label": "boxgeo()"
+    },
+    {
+      "label": "cylGeo()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "references_kit_cylgeo",
+      "community": 33,
+      "norm_label": "cylgeo()"
+    },
+    {
+      "label": "sphereGeo()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "references_kit_spheregeo",
+      "community": 33,
+      "norm_label": "spheregeo()"
+    },
+    {
+      "label": "mesh()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L173",
+      "_origin": "ast",
+      "id": "references_kit_mesh",
+      "community": 33,
+      "norm_label": "mesh()"
+    },
+    {
+      "label": "box()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L181",
+      "_origin": "ast",
+      "id": "references_kit_box",
+      "community": 33,
+      "norm_label": "box()"
+    },
+    {
+      "label": "jitter()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "references_kit_jitter",
+      "community": 33,
+      "norm_label": "jitter()"
+    },
+    {
+      "label": "island()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "references_kit_island",
+      "community": 33,
+      "norm_label": "island()"
+    },
+    {
+      "label": "plot()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L240",
+      "_origin": "ast",
+      "id": "references_kit_plot",
+      "community": 33,
+      "norm_label": "plot()"
+    },
+    {
+      "label": "water()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L258",
+      "_origin": "ast",
+      "id": "references_kit_water",
+      "community": 33,
+      "norm_label": "water()"
+    },
+    {
+      "label": "road()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L278",
+      "_origin": "ast",
+      "id": "references_kit_road",
+      "community": 33,
+      "norm_label": "road()"
+    },
+    {
+      "label": "building()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L308",
+      "_origin": "ast",
+      "id": "references_kit_building",
+      "community": 33,
+      "norm_label": "building()"
+    },
+    {
+      "label": "tower()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L409",
+      "_origin": "ast",
+      "id": "references_kit_tower",
+      "community": 33,
+      "norm_label": "tower()"
+    },
+    {
+      "label": "canopy()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L435",
+      "_origin": "ast",
+      "id": "references_kit_canopy",
+      "community": 33,
+      "norm_label": "canopy()"
+    },
+    {
+      "label": "tree()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L466",
+      "_origin": "ast",
+      "id": "references_kit_tree",
+      "community": 33,
+      "norm_label": "tree()"
+    },
+    {
+      "label": "bush()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L504",
+      "_origin": "ast",
+      "id": "references_kit_bush",
+      "community": 33,
+      "norm_label": "bush()"
+    },
+    {
+      "label": "rock()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L517",
+      "_origin": "ast",
+      "id": "references_kit_rock",
+      "community": 33,
+      "norm_label": "rock()"
+    },
+    {
+      "label": "field()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L535",
+      "_origin": "ast",
+      "id": "references_kit_field",
+      "community": 33,
+      "norm_label": "field()"
+    },
+    {
+      "label": "scatter()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L571",
+      "_origin": "ast",
+      "id": "references_kit_scatter",
+      "community": 33,
+      "norm_label": "scatter()"
+    },
+    {
+      "label": "crate()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L606",
+      "_origin": "ast",
+      "id": "references_kit_crate",
+      "community": 33,
+      "norm_label": "crate()"
+    },
+    {
+      "label": "vehicle()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L623",
+      "_origin": "ast",
+      "id": "references_kit_vehicle",
+      "community": 33,
+      "norm_label": "vehicle()"
+    },
+    {
+      "label": "person()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L655",
+      "_origin": "ast",
+      "id": "references_kit_person",
+      "community": 33,
+      "norm_label": "person()"
+    },
+    {
+      "label": "machine()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L672",
+      "_origin": "ast",
+      "id": "references_kit_machine",
+      "community": 33,
+      "norm_label": "machine()"
+    },
+    {
+      "label": "rack()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L694",
+      "_origin": "ast",
+      "id": "references_kit_rack",
+      "community": 33,
+      "norm_label": "rack()"
+    },
+    {
+      "label": "conveyor()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L724",
+      "_origin": "ast",
+      "id": "references_kit_conveyor",
+      "community": 33,
+      "norm_label": "conveyor()"
+    },
+    {
+      "label": "sign()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L744",
+      "_origin": "ast",
+      "id": "references_kit_sign",
+      "community": 33,
+      "norm_label": "sign()"
+    },
+    {
+      "label": "lamp()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L761",
+      "_origin": "ast",
+      "id": "references_kit_lamp",
+      "community": 33,
+      "norm_label": "lamp()"
+    },
+    {
+      "label": "fence()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L776",
+      "_origin": "ast",
+      "id": "references_kit_fence",
+      "community": 33,
+      "norm_label": "fence()"
+    },
+    {
+      "label": "cloud()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L795",
+      "_origin": "ast",
+      "id": "references_kit_cloud",
+      "community": 33,
+      "norm_label": "cloud()"
+    },
+    {
+      "label": "groupProp()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L808",
+      "_origin": "ast",
+      "id": "references_kit_groupprop",
+      "community": 33,
+      "norm_label": "groupprop()"
+    },
+    {
+      "label": "PROPS",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L816",
+      "_origin": "ast",
+      "id": "references_kit_props",
+      "community": 33,
+      "norm_label": "props"
+    },
+    {
+      "label": "buildProp()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L825",
+      "_origin": "ast",
+      "id": "references_kit_buildprop",
+      "community": 33,
+      "norm_label": "buildprop()"
+    },
+    {
+      "label": "placeProp()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L838",
+      "_origin": "ast",
+      "id": "references_kit_placeprop",
+      "community": 33,
+      "norm_label": "placeprop()"
+    },
+    {
+      "label": "buildSceneGroup()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L859",
+      "_origin": "ast",
+      "id": "references_kit_buildscenegroup",
+      "community": 33,
+      "norm_label": "buildscenegroup()"
+    },
+    {
+      "label": "qa.mjs",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "references_qa",
+      "community": 71,
+      "norm_label": "qa.mjs"
+    },
+    {
+      "label": "DIR",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "references_qa_dir",
+      "community": 71,
+      "norm_label": "dir"
+    },
+    {
+      "label": "MIME",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "references_qa_mime",
+      "community": 71,
+      "norm_label": "mime"
+    },
+    {
+      "label": "errors",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "references_qa_errors",
+      "community": 71,
+      "norm_label": "errors"
+    },
+    {
+      "label": "failed",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "references_qa_failed",
+      "community": 71,
+      "norm_label": "failed"
+    },
+    {
+      "label": "shots",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "references_qa_shots",
+      "community": 71,
+      "norm_label": "shots"
+    },
+    {
+      "label": "outDir",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "references_qa_outdir",
+      "community": 71,
+      "norm_label": "outdir"
+    },
+    {
+      "label": "positions",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "references_qa_positions",
+      "community": 71,
+      "norm_label": "positions"
+    },
+    {
+      "label": "buried",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "references_qa_buried",
+      "community": 71,
+      "norm_label": "buried"
+    },
+    {
+      "label": "hops",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "references_qa_hops",
+      "community": 71,
+      "norm_label": "hops"
+    },
+    {
+      "label": "worst",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "references_qa_worst",
+      "community": 71,
+      "norm_label": "worst"
+    },
+    {
+      "label": "world-engine.js",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "references_world_engine",
+      "community": 33,
+      "norm_label": "world-engine.js"
+    },
+    {
+      "label": "V3()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "references_world_engine_v3",
+      "community": 33,
+      "norm_label": "v3()"
+    },
+    {
+      "label": "mountScrollForge()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "references_world_engine_mountscrollforge",
+      "community": 33,
+      "norm_label": "mountscrollforge()"
+    },
+    {
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L676",
+      "_origin": "ast",
+      "id": "references_world_engine_clamp",
+      "community": 33,
+      "norm_label": "clamp()"
+    },
+    {
+      "label": "smoothstep()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L677",
+      "_origin": "ast",
+      "id": "references_world_engine_smoothstep",
+      "community": 33,
+      "norm_label": "smoothstep()"
+    },
+    {
+      "label": "el()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L681",
+      "_origin": "ast",
+      "id": "references_world_engine_el",
+      "community": 33,
+      "norm_label": "el()"
+    },
+    {
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L682",
+      "_origin": "ast",
+      "id": "references_world_engine_esc",
+      "community": 33,
+      "norm_label": "esc()"
+    },
+    {
+      "label": "makeSky()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L687",
+      "_origin": "ast",
+      "id": "references_world_engine_makesky",
+      "community": 33,
+      "norm_label": "makesky()"
+    },
+    {
+      "label": "injectCSS()",
+      "file_type": "code",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L709",
+      "_origin": "ast",
+      "id": "references_world_engine_injectcss",
+      "community": 33,
+      "norm_label": "injectcss()"
+    },
+    {
       "label": "generate_parity_qa_checklist.py",
       "file_type": "code",
       "source_file": ".cursor/skills/component-parity-qa/scripts/generate_parity_qa_checklist.py",
@@ -874,7 +1454,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold",
-      "community": 3,
+      "community": 68,
       "norm_label": "create_ts_component_scaffold.py"
     },
     {
@@ -884,7 +1464,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold_resolve_under_root",
-      "community": 3,
+      "community": 68,
       "norm_label": "_resolve_under_root()"
     },
     {
@@ -894,7 +1474,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "path",
-      "community": 3,
+      "community": 68,
       "norm_label": "path"
     },
     {
@@ -904,7 +1484,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold_main",
-      "community": 3,
+      "community": 68,
       "norm_label": "main()"
     },
     {
@@ -1264,7 +1844,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "design_studio_glassformscrollpanel_marketingformpanel",
-      "community": 102,
+      "community": 2,
       "norm_label": "marketingformpanel()"
     },
     {
@@ -1604,7 +2184,7 @@
       "source_location": "L382",
       "_origin": "ast",
       "id": "design_studio_design_studio_glass_herotextlegibility",
-      "community": 2,
+      "community": 1,
       "norm_label": "herotextlegibility"
     },
     {
@@ -1694,7 +2274,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage",
-      "community": 89,
+      "community": 68,
       "norm_label": "careandsafetypage.js"
     },
     {
@@ -1704,7 +2284,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage_bodysx",
-      "community": 89,
+      "community": 68,
       "norm_label": "bodysx"
     },
     {
@@ -1714,7 +2294,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage_sectionheadingsx",
-      "community": 89,
+      "community": 68,
       "norm_label": "sectionheadingsx"
     },
     {
@@ -1724,7 +2304,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage_sectionboxsx",
-      "community": 89,
+      "community": 68,
       "norm_label": "sectionboxsx"
     },
     {
@@ -1734,7 +2314,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage_listsx",
-      "community": 89,
+      "community": 68,
       "norm_label": "listsx"
     },
     {
@@ -1744,7 +2324,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage_listitemsx",
-      "community": 89,
+      "community": 68,
       "norm_label": "listitemsx"
     },
     {
@@ -1754,7 +2334,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage_care_standards",
-      "community": 89,
+      "community": 68,
       "norm_label": "care_standards"
     },
     {
@@ -1764,7 +2344,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage_day_steps",
-      "community": 89,
+      "community": 68,
       "norm_label": "day_steps"
     },
     {
@@ -1774,7 +2354,7 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "dog_hotel_careandsafetypage_careandsafetypage",
-      "community": 89,
+      "community": 68,
       "norm_label": "careandsafetypage()"
     },
     {
@@ -1784,7 +2364,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage",
-      "community": 71,
+      "community": 68,
       "norm_label": "doghotelinteriorpage.js"
     },
     {
@@ -1794,7 +2374,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_headingsx",
-      "community": 71,
+      "community": 68,
       "norm_label": "headingsx"
     },
     {
@@ -1804,7 +2384,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_ledesx",
-      "community": 71,
+      "community": 68,
       "norm_label": "ledesx"
     },
     {
@@ -1814,7 +2394,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_footertextsx",
-      "community": 71,
+      "community": 68,
       "norm_label": "footertextsx"
     },
     {
@@ -1824,7 +2404,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_doghotelinteriorpage",
-      "community": 71,
+      "community": 68,
       "norm_label": "doghotelinteriorpage()"
     },
     {
@@ -1834,7 +2414,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage",
-      "community": 71,
+      "community": 68,
       "norm_label": "gallerypage.js"
     },
     {
@@ -1844,7 +2424,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_gallerypage",
-      "community": 71,
+      "community": 68,
       "norm_label": "gallerypage()"
     },
     {
@@ -1854,27 +2434,17 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dog_hotel_howastayworkspage",
-      "community": 71,
+      "community": 68,
       "norm_label": "howastayworkspage.js"
-    },
-    {
-      "label": "STEPS",
-      "file_type": "code",
-      "source_file": "frontend/components/dog-hotel/HowAStayWorksPage.js",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "dog_hotel_howastayworkspage_steps",
-      "community": 71,
-      "norm_label": "steps"
     },
     {
       "label": "HowAStayWorksPage()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/HowAStayWorksPage.js",
-      "source_location": "L40",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "dog_hotel_howastayworkspage_howastayworkspage",
-      "community": 71,
+      "community": 68,
       "norm_label": "howastayworkspage()"
     },
     {
@@ -1964,7 +2534,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bookstaybutton",
-      "community": 0,
+      "community": 65,
       "norm_label": "bookstaybutton()"
     },
     {
@@ -2086,6 +2656,546 @@
       "id": "dog_hotel_reviews_data_test_samedaylater",
       "community": 28,
       "norm_label": "samedaylater"
+    },
+    {
+      "label": "kit.js",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scroll_forge_kit",
+      "community": 3,
+      "norm_label": "kit.js"
+    },
+    {
+      "label": "makeRng()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_makerng",
+      "community": 3,
+      "norm_label": "makerng()"
+    },
+    {
+      "label": "DEFAULT_PALETTE",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_default_palette",
+      "community": 3,
+      "norm_label": "default_palette"
+    },
+    {
+      "label": "makeContext()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_makecontext",
+      "community": 3,
+      "norm_label": "makecontext()"
+    },
+    {
+      "label": "roundedRect()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_roundedrect",
+      "community": 3,
+      "norm_label": "roundedrect()"
+    },
+    {
+      "label": "boxGeo()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_boxgeo",
+      "community": 3,
+      "norm_label": "boxgeo()"
+    },
+    {
+      "label": "cylGeo()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L171",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_cylgeo",
+      "community": 3,
+      "norm_label": "cylgeo()"
+    },
+    {
+      "label": "sphereGeo()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_spheregeo",
+      "community": 3,
+      "norm_label": "spheregeo()"
+    },
+    {
+      "label": "mesh()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_mesh",
+      "community": 3,
+      "norm_label": "mesh()"
+    },
+    {
+      "label": "box()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L192",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_box",
+      "community": 3,
+      "norm_label": "box()"
+    },
+    {
+      "label": "jitter()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_jitter",
+      "community": 3,
+      "norm_label": "jitter()"
+    },
+    {
+      "label": "island()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_island",
+      "community": 3,
+      "norm_label": "island()"
+    },
+    {
+      "label": "plot()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_plot",
+      "community": 3,
+      "norm_label": "plot()"
+    },
+    {
+      "label": "water()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L269",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_water",
+      "community": 3,
+      "norm_label": "water()"
+    },
+    {
+      "label": "road()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L289",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_road",
+      "community": 3,
+      "norm_label": "road()"
+    },
+    {
+      "label": "building()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L319",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_building",
+      "community": 3,
+      "norm_label": "building()"
+    },
+    {
+      "label": "tower()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L420",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_tower",
+      "community": 3,
+      "norm_label": "tower()"
+    },
+    {
+      "label": "canopy()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L446",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_canopy",
+      "community": 3,
+      "norm_label": "canopy()"
+    },
+    {
+      "label": "tree()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L477",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_tree",
+      "community": 3,
+      "norm_label": "tree()"
+    },
+    {
+      "label": "bush()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L515",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_bush",
+      "community": 3,
+      "norm_label": "bush()"
+    },
+    {
+      "label": "rock()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L528",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_rock",
+      "community": 3,
+      "norm_label": "rock()"
+    },
+    {
+      "label": "field()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L546",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_field",
+      "community": 3,
+      "norm_label": "field()"
+    },
+    {
+      "label": "scatter()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L582",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_scatter",
+      "community": 3,
+      "norm_label": "scatter()"
+    },
+    {
+      "label": "crate()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L617",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_crate",
+      "community": 3,
+      "norm_label": "crate()"
+    },
+    {
+      "label": "vehicle()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L634",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_vehicle",
+      "community": 3,
+      "norm_label": "vehicle()"
+    },
+    {
+      "label": "person()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L666",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_person",
+      "community": 3,
+      "norm_label": "person()"
+    },
+    {
+      "label": "machine()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L683",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_machine",
+      "community": 3,
+      "norm_label": "machine()"
+    },
+    {
+      "label": "rack()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L705",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_rack",
+      "community": 3,
+      "norm_label": "rack()"
+    },
+    {
+      "label": "conveyor()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L735",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_conveyor",
+      "community": 3,
+      "norm_label": "conveyor()"
+    },
+    {
+      "label": "sign()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L755",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_sign",
+      "community": 3,
+      "norm_label": "sign()"
+    },
+    {
+      "label": "lamp()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L772",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_lamp",
+      "community": 3,
+      "norm_label": "lamp()"
+    },
+    {
+      "label": "fence()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L787",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_fence",
+      "community": 3,
+      "norm_label": "fence()"
+    },
+    {
+      "label": "cloud()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L806",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_cloud",
+      "community": 3,
+      "norm_label": "cloud()"
+    },
+    {
+      "label": "diorama()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L823",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_diorama",
+      "community": 3,
+      "norm_label": "diorama()"
+    },
+    {
+      "label": "groupProp()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L864",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_groupprop",
+      "community": 3,
+      "norm_label": "groupprop()"
+    },
+    {
+      "label": "PROPS",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L872",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_props",
+      "community": 3,
+      "norm_label": "props"
+    },
+    {
+      "label": "buildProp()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L881",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_buildprop",
+      "community": 3,
+      "norm_label": "buildprop()"
+    },
+    {
+      "label": "placeProp()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L894",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_placeprop",
+      "community": 3,
+      "norm_label": "placeprop()"
+    },
+    {
+      "label": "buildSceneGroup()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L915",
+      "_origin": "ast",
+      "id": "scroll_forge_kit_buildscenegroup",
+      "community": 3,
+      "norm_label": "buildscenegroup()"
+    },
+    {
+      "label": "stay-world-config.js",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scroll_forge_stay_world_config",
+      "community": 68,
+      "norm_label": "stay-world-config.js"
+    },
+    {
+      "label": "ARRIVAL",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "scroll_forge_stay_world_config_arrival",
+      "community": 68,
+      "norm_label": "arrival"
+    },
+    {
+      "label": "card()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "scroll_forge_stay_world_config_card",
+      "community": 4,
+      "norm_label": "card()"
+    },
+    {
+      "label": "STAY_PALETTE",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "scroll_forge_stay_world_config_stay_palette",
+      "community": 68,
+      "norm_label": "stay_palette"
+    },
+    {
+      "label": "STAY_WORLD",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "scroll_forge_stay_world_config_stay_world",
+      "community": 68,
+      "norm_label": "stay_world"
+    },
+    {
+      "label": "world-engine.js",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine",
+      "community": 3,
+      "norm_label": "world-engine.js"
+    },
+    {
+      "label": "V3()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_v3",
+      "community": 3,
+      "norm_label": "v3()"
+    },
+    {
+      "label": "mountScrollForge()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_mountscrollforge",
+      "community": 3,
+      "norm_label": "mountscrollforge()"
+    },
+    {
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L699",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_clamp",
+      "community": 3,
+      "norm_label": "clamp()"
+    },
+    {
+      "label": "smoothstep()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L700",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_smoothstep",
+      "community": 3,
+      "norm_label": "smoothstep()"
+    },
+    {
+      "label": "el()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L704",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_el",
+      "community": 3,
+      "norm_label": "el()"
+    },
+    {
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L705",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_esc",
+      "community": 3,
+      "norm_label": "esc()"
+    },
+    {
+      "label": "linkHtml()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L708",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_linkhtml",
+      "community": 3,
+      "norm_label": "linkhtml()"
+    },
+    {
+      "label": "makeSky()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L714",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_makesky",
+      "community": 3,
+      "norm_label": "makesky()"
+    },
+    {
+      "label": "injectCSS()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L736",
+      "_origin": "ast",
+      "id": "scroll_forge_world_engine_injectcss",
+      "community": 3,
+      "norm_label": "injectcss()"
     },
     {
       "label": "HomeHeroBackground.js",
@@ -2244,7 +3354,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_herotextlegibility",
-      "community": 2,
+      "community": 1,
       "norm_label": "herotextlegibility"
     },
     {
@@ -2264,7 +3374,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingshell",
-      "community": 91,
+      "community": 70,
       "norm_label": "homelandingshell.js"
     },
     {
@@ -2274,7 +3384,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_createlandingtheme",
-      "community": 91,
+      "community": 70,
       "norm_label": "createlandingtheme()"
     },
     {
@@ -2284,7 +3394,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_homelandingshell",
-      "community": 91,
+      "community": 70,
       "norm_label": "homelandingshell()"
     },
     {
@@ -2294,7 +3404,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawer",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxurynavdrawer.js"
     },
     {
@@ -2304,7 +3414,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawer_luxurynavdrawer",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxurynavdrawer()"
     },
     {
@@ -2314,7 +3424,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxurynavdrawerlist.js"
     },
     {
@@ -2324,7 +3434,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_externallinkprops",
-      "community": 0,
+      "community": 65,
       "norm_label": "externallinkprops()"
     },
     {
@@ -2334,7 +3444,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_navitemshape",
-      "community": 0,
+      "community": 40,
       "norm_label": "navitemshape"
     },
     {
@@ -2344,7 +3454,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_getitemtypographysx",
-      "community": 0,
+      "community": 40,
       "norm_label": "getitemtypographysx()"
     },
     {
@@ -2354,7 +3464,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_getitembuttonsx",
-      "community": 0,
+      "community": 40,
       "norm_label": "getitembuttonsx()"
     },
     {
@@ -2364,7 +3474,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_luxurynavdrawerlist",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxurynavdrawerlist()"
     },
     {
@@ -2474,7 +3584,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketinginteriorlayout",
-      "community": 102,
+      "community": 2,
       "norm_label": "marketinginteriorlayout()"
     },
     {
@@ -2514,7 +3624,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem",
-      "community": 0,
+      "community": 65,
       "norm_label": "marketingnavdesktopitem.js"
     },
     {
@@ -2524,7 +3634,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_navitemshape",
-      "community": 0,
+      "community": 65,
       "norm_label": "navitemshape"
     },
     {
@@ -2534,7 +3644,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_marketingnavdesktopitem",
-      "community": 0,
+      "community": 65,
       "norm_label": "marketingnavdesktopitem()"
     },
     {
@@ -2544,7 +3654,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink",
-      "community": 0,
+      "community": 65,
       "norm_label": "marketingnavdesktoplink.js"
     },
     {
@@ -2554,7 +3664,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_externallinkprops",
-      "community": 0,
+      "community": 65,
       "norm_label": "externallinkprops()"
     },
     {
@@ -2564,7 +3674,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_navitemshape",
-      "community": 0,
+      "community": 65,
       "norm_label": "navitemshape"
     },
     {
@@ -2574,7 +3684,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_marketingnavdesktoplink",
-      "community": 0,
+      "community": 65,
       "norm_label": "marketingnavdesktoplink()"
     },
     {
@@ -2584,7 +3694,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel",
-      "community": 0,
+      "community": 40,
       "norm_label": "marketingnavdrawerpanel.js"
     },
     {
@@ -2594,7 +3704,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel_navitemshape",
-      "community": 0,
+      "community": 40,
       "norm_label": "navitemshape"
     },
     {
@@ -2644,7 +3754,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_data",
-      "community": 0,
+      "community": 40,
       "norm_label": "home-landing-data.js"
     },
     {
@@ -2654,7 +3764,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_withstaffnavitems",
-      "community": 69,
+      "community": 87,
       "norm_label": "withstaffnavitems()"
     },
     {
@@ -2714,7 +3824,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_mega_menu_image_height_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "mega_menu_image_height_sx"
     },
     {
@@ -2724,7 +3834,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_mega_menu_container_py_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "mega_menu_container_py_sx"
     },
     {
@@ -2754,7 +3864,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_link_typography_sx",
-      "community": 0,
+      "community": 65,
       "norm_label": "home_nav_link_typography_sx"
     },
     {
@@ -2764,7 +3874,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_normalizemarketingnavpath",
-      "community": 0,
+      "community": 65,
       "norm_label": "normalizemarketingnavpath()"
     },
     {
@@ -2774,7 +3884,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_ismarketingnavlinkactive",
-      "community": 0,
+      "community": 65,
       "norm_label": "ismarketingnavlinkactive()"
     },
     {
@@ -2784,7 +3894,7 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketingnavlinkhoverunderlinesx",
-      "community": 0,
+      "community": 65,
       "norm_label": "marketingnavlinkhoverunderlinesx()"
     },
     {
@@ -2804,7 +3914,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_item_enter_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxury_drawer_nav_item_enter_sx"
     },
     {
@@ -2814,7 +3924,7 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_item_reset_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxury_drawer_nav_item_reset_sx"
     },
     {
@@ -2824,7 +3934,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_primary_typography_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxury_drawer_nav_primary_typography_sx"
     },
     {
@@ -2834,7 +3944,7 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_section_typography_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxury_drawer_nav_section_typography_sx"
     },
     {
@@ -2844,7 +3954,7 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_group_typography_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxury_drawer_nav_group_typography_sx"
     },
     {
@@ -2854,7 +3964,7 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_sublink_typography_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "luxury_drawer_nav_sublink_typography_sx"
     },
     {
@@ -2864,7 +3974,7 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_luxury_drawer_paper_sx",
-      "community": 0,
+      "community": 40,
       "norm_label": "home_luxury_drawer_paper_sx"
     },
     {
@@ -2884,7 +3994,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_font",
-      "community": 91,
+      "community": 70,
       "norm_label": "home-landing-font.js"
     },
     {
@@ -2894,7 +4004,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_home_landing_font_homemontserrat",
-      "community": 91,
+      "community": 70,
       "norm_label": "homemontserrat"
     },
     {
@@ -2964,7 +4074,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems",
-      "community": 0,
+      "community": 69,
       "norm_label": "usemarketingnavitems.js"
     },
     {
@@ -2974,7 +4084,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems_usehomenavitems",
-      "community": 0,
+      "community": 69,
       "norm_label": "usehomenavitems()"
     },
     {
@@ -2984,7 +4094,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems_usemarketinginteriornavitems",
-      "community": 0,
+      "community": 69,
       "norm_label": "usemarketinginteriornavitems()"
     },
     {
@@ -3084,7 +4194,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "consts_marketing_nav",
-      "community": 0,
+      "community": 69,
       "norm_label": "marketing-nav.js"
     },
     {
@@ -3094,7 +4204,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "consts_marketing_nav_marketing_nav_tree",
-      "community": 0,
+      "community": 69,
       "norm_label": "marketing_nav_tree"
     },
     {
@@ -3104,7 +4214,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "consts_marketing_nav_flattennavitemsfordrawer",
-      "community": 0,
+      "community": 69,
       "norm_label": "flattennavitemsfordrawer()"
     },
     {
@@ -3114,7 +4224,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "consts_marketing_nav_test",
-      "community": 0,
+      "community": 69,
       "norm_label": "marketing-nav.test.js"
     },
     {
@@ -3124,7 +4234,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "consts_routes",
-      "community": 69,
+      "community": 80,
       "norm_label": "routes.js"
     },
     {
@@ -3134,7 +4244,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "consts_routes_isexternalhref",
-      "community": 0,
+      "community": 65,
       "norm_label": "isexternalhref()"
     },
     {
@@ -3144,7 +4254,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "consts_routes_portfolioslugpath",
-      "community": 69,
+      "community": 80,
       "norm_label": "portfolioslugpath()"
     },
     {
@@ -3154,7 +4264,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "consts_routes_collectionsubcollectionpath",
-      "community": 69,
+      "community": 80,
       "norm_label": "collectionsubcollectionpath()"
     },
     {
@@ -3164,7 +4274,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "consts_routes_boutiquedevelopersslugpath",
-      "community": 69,
+      "community": 80,
       "norm_label": "boutiquedevelopersslugpath()"
     },
     {
@@ -3174,7 +4284,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "consts_routes_productmanualslugpath",
-      "community": 69,
+      "community": 80,
       "norm_label": "productmanualslugpath()"
     },
     {
@@ -3184,7 +4294,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "consts_routes_staffpathsuffix",
-      "community": 69,
+      "community": 87,
       "norm_label": "staffpathsuffix()"
     },
     {
@@ -3194,7 +4304,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "consts_routes_staffpath",
-      "community": 69,
+      "community": 87,
       "norm_label": "staffpath()"
     },
     {
@@ -3204,7 +4314,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "consts_routes_staffloginhref",
-      "community": 69,
+      "community": 87,
       "norm_label": "staffloginhref()"
     },
     {
@@ -3214,7 +4324,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "consts_routes_ishomeroute",
-      "community": 69,
+      "community": 80,
       "norm_label": "ishomeroute()"
     },
     {
@@ -3244,7 +4354,7 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "consts_routes_ismarketinginteriorroute",
-      "community": 69,
+      "community": 80,
       "norm_label": "ismarketinginteriorroute()"
     },
     {
@@ -4118,10 +5228,20 @@
       "norm_label": "swr"
     },
     {
-      "label": "window-or-global",
+      "label": "three",
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L51",
+      "_origin": "ast",
+      "id": "frontend_package_dependencies_three",
+      "community": 7,
+      "norm_label": "three"
+    },
+    {
+      "label": "window-or-global",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "frontend_package_dependencies_window_or_global",
       "community": 7,
@@ -4131,7 +5251,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L53",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "frontend_package_devdependencies",
       "community": 10,
@@ -4141,7 +5261,7 @@
       "label": "@mui/x-data-grid-generator",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L54",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_mui_x_data_grid_generator",
       "community": 10,
@@ -4151,7 +5271,7 @@
       "label": "@svgr/webpack",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L55",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_svgr_webpack",
       "community": 10,
@@ -4161,7 +5281,7 @@
       "label": "@testing-library/dom",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L56",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_testing_library_dom",
       "community": 10,
@@ -4171,7 +5291,7 @@
       "label": "@testing-library/jest-dom",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L57",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_testing_library_jest_dom",
       "community": 10,
@@ -4181,7 +5301,7 @@
       "label": "@testing-library/react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L58",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_testing_library_react",
       "community": 10,
@@ -4191,7 +5311,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L59",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_types_react",
       "community": 10,
@@ -4201,7 +5321,7 @@
       "label": "css-mediaquery",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L60",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_css_mediaquery",
       "community": 10,
@@ -4211,7 +5331,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L61",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint",
       "community": 10,
@@ -4221,7 +5341,7 @@
       "label": "eslint-config-airbnb",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L62",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_config_airbnb",
       "community": 10,
@@ -4231,7 +5351,7 @@
       "label": "eslint-config-next",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L63",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_config_next",
       "community": 10,
@@ -4241,7 +5361,7 @@
       "label": "eslint-config-prettier",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L64",
+      "source_location": "L65",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_config_prettier",
       "community": 10,
@@ -4251,7 +5371,7 @@
       "label": "eslint-plugin-import",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L65",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_plugin_import",
       "community": 10,
@@ -4261,7 +5381,7 @@
       "label": "eslint-plugin-jest",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L66",
+      "source_location": "L67",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_plugin_jest",
       "community": 10,
@@ -4271,7 +5391,7 @@
       "label": "eslint-plugin-jsx-a11y",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L67",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_plugin_jsx_a11y",
       "community": 10,
@@ -4281,7 +5401,7 @@
       "label": "eslint-plugin-prettier",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L68",
+      "source_location": "L69",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_plugin_prettier",
       "community": 10,
@@ -4291,7 +5411,7 @@
       "label": "eslint-plugin-react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L69",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_plugin_react",
       "community": 10,
@@ -4301,7 +5421,7 @@
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L70",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_eslint_plugin_react_hooks",
       "community": 10,
@@ -4311,7 +5431,7 @@
       "label": "jest",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L71",
+      "source_location": "L72",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_jest",
       "community": 10,
@@ -4321,7 +5441,7 @@
       "label": "prettier",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L72",
+      "source_location": "L73",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_prettier",
       "community": 10,
@@ -4331,7 +5451,7 @@
       "label": "pretty-quick",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L73",
+      "source_location": "L74",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_pretty_quick",
       "community": 10,
@@ -4341,7 +5461,7 @@
       "label": "react-axe",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L74",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_react_axe",
       "community": 10,
@@ -4351,7 +5471,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L75",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_typescript",
       "community": 10,
@@ -4361,7 +5481,7 @@
       "label": "webpack",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L76",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "frontend_package_devdependencies_webpack",
       "community": 10,
@@ -4371,7 +5491,7 @@
       "label": "resolutions",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L78",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "frontend_package_resolutions",
       "community": 6,
@@ -4381,7 +5501,7 @@
       "label": "@babel/plugin-transform-modules-systemjs@npm:^7.29.0",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L79",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "frontend_package_resolutions_babel_plugin_transform_modules_systemjs_npm_7_29_0",
       "community": 6,
@@ -4391,7 +5511,7 @@
       "label": "flatted",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L80",
+      "source_location": "L81",
       "_origin": "ast",
       "id": "frontend_package_resolutions_flatted",
       "community": 6,
@@ -4401,7 +5521,7 @@
       "label": "form-data@npm:^4.0.5",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L81",
+      "source_location": "L82",
       "_origin": "ast",
       "id": "frontend_package_resolutions_form_data_npm_4_0_5",
       "community": 6,
@@ -4411,7 +5531,7 @@
       "label": "fast-xml-parser@npm:^5.0.7",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L82",
+      "source_location": "L83",
       "_origin": "ast",
       "id": "frontend_package_resolutions_fast_xml_parser_npm_5_0_7",
       "community": 6,
@@ -4421,7 +5541,7 @@
       "label": "fast-uri@npm:^3.0.1",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L83",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "frontend_package_resolutions_fast_uri_npm_3_0_1",
       "community": 6,
@@ -4431,7 +5551,7 @@
       "label": "ip-address@npm:^10.0.1",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L84",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "frontend_package_resolutions_ip_address_npm_10_0_1",
       "community": 6,
@@ -4441,7 +5561,7 @@
       "label": "minimatch@npm:^3.0.4",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L85",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_3_0_4",
       "community": 6,
@@ -4451,7 +5571,7 @@
       "label": "minimatch@npm:^3.0.5",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L86",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_3_0_5",
       "community": 6,
@@ -4461,7 +5581,7 @@
       "label": "minimatch@npm:^3.1.2",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L87",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_3_1_2",
       "community": 6,
@@ -4471,7 +5591,7 @@
       "label": "minimatch@npm:^5.1.0",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L88",
+      "source_location": "L89",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_5_1_0",
       "community": 6,
@@ -4481,7 +5601,7 @@
       "label": "minimatch@npm:^9.0.4",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L89",
+      "source_location": "L90",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_9_0_4",
       "community": 6,
@@ -4491,7 +5611,7 @@
       "label": "minimatch@npm:^3.0.4/brace-expansion",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L90",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_3_0_4_brace_expansion",
       "community": 6,
@@ -4501,7 +5621,7 @@
       "label": "minimatch@npm:^3.0.5/brace-expansion",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L91",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_3_0_5_brace_expansion",
       "community": 6,
@@ -4511,7 +5631,7 @@
       "label": "minimatch@npm:^3.1.2/brace-expansion",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L92",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_3_1_2_brace_expansion",
       "community": 6,
@@ -4521,7 +5641,7 @@
       "label": "minimatch@npm:9.0.7/brace-expansion",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L93",
+      "source_location": "L94",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_9_0_7_brace_expansion",
       "community": 6,
@@ -4531,7 +5651,7 @@
       "label": "minimatch@npm:10.2.5/brace-expansion",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L94",
+      "source_location": "L95",
       "_origin": "ast",
       "id": "frontend_package_resolutions_minimatch_npm_10_2_5_brace_expansion",
       "community": 6,
@@ -4541,7 +5661,7 @@
       "label": "brace-expansion@npm:1.1.15",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L95",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "frontend_package_resolutions_brace_expansion_npm_1_1_15",
       "community": 6,
@@ -4551,7 +5671,7 @@
       "label": "brace-expansion@npm:^1.1.7",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L96",
+      "source_location": "L97",
       "_origin": "ast",
       "id": "frontend_package_resolutions_brace_expansion_npm_1_1_7",
       "community": 6,
@@ -4561,7 +5681,7 @@
       "label": "brace-expansion@npm:2.1.1",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L97",
+      "source_location": "L98",
       "_origin": "ast",
       "id": "frontend_package_resolutions_brace_expansion_npm_2_1_1",
       "community": 6,
@@ -4571,7 +5691,7 @@
       "label": "brace-expansion@npm:^2.0.1",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L98",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "frontend_package_resolutions_brace_expansion_npm_2_0_1",
       "community": 6,
@@ -4581,7 +5701,7 @@
       "label": "brace-expansion@npm:5.0.6",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L99",
+      "source_location": "L100",
       "_origin": "ast",
       "id": "frontend_package_resolutions_brace_expansion_npm_5_0_6",
       "community": 6,
@@ -4591,7 +5711,7 @@
       "label": "baseline-browser-mapping@npm:^2.10.44",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L100",
+      "source_location": "L101",
       "_origin": "ast",
       "id": "frontend_package_resolutions_baseline_browser_mapping_npm_2_10_44",
       "community": 6,
@@ -4601,7 +5721,7 @@
       "label": "browserslist@npm:^4.24.0",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L101",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "frontend_package_resolutions_browserslist_npm_4_24_0",
       "community": 6,
@@ -4611,7 +5731,7 @@
       "label": "browserslist@npm:^4.28.1",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L102",
+      "source_location": "L103",
       "_origin": "ast",
       "id": "frontend_package_resolutions_browserslist_npm_4_28_1",
       "community": 6,
@@ -4621,7 +5741,7 @@
       "label": "js-yaml",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L103",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "frontend_package_resolutions_js_yaml",
       "community": 6,
@@ -4631,7 +5751,7 @@
       "label": "glob",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L104",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "frontend_package_resolutions_glob",
       "community": 6,
@@ -4641,7 +5761,7 @@
       "label": "lodash",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L105",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "frontend_package_resolutions_lodash",
       "community": 6,
@@ -4651,7 +5771,7 @@
       "label": "quill@npm:~2.0.3",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L106",
+      "source_location": "L107",
       "_origin": "ast",
       "id": "frontend_package_resolutions_quill_npm_2_0_3",
       "community": 6,
@@ -4661,7 +5781,7 @@
       "label": "nanoid@npm:^3.3.16",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L107",
+      "source_location": "L108",
       "_origin": "ast",
       "id": "frontend_package_resolutions_nanoid_npm_3_3_16",
       "community": 6,
@@ -4671,7 +5791,7 @@
       "label": "postcss",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L108",
+      "source_location": "L109",
       "_origin": "ast",
       "id": "frontend_package_resolutions_postcss",
       "community": 6,
@@ -4681,7 +5801,7 @@
       "label": "svgo",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L109",
+      "source_location": "L110",
       "_origin": "ast",
       "id": "frontend_package_resolutions_svgo",
       "community": 6,
@@ -4691,7 +5811,7 @@
       "label": "tar",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L110",
+      "source_location": "L111",
       "_origin": "ast",
       "id": "frontend_package_resolutions_tar",
       "community": 6,
@@ -4701,7 +5821,7 @@
       "label": "sharp",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L111",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "frontend_package_resolutions_sharp",
       "community": 6,
@@ -4711,7 +5831,7 @@
       "label": "tmp@npm:^0.2.0",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L112",
+      "source_location": "L113",
       "_origin": "ast",
       "id": "frontend_package_resolutions_tmp_npm_0_2_0",
       "community": 6,
@@ -4721,7 +5841,7 @@
       "label": "undici@npm:^6.25.0",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L113",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "frontend_package_resolutions_undici_npm_6_25_0",
       "community": 6,
@@ -4731,7 +5851,7 @@
       "label": "uuid@npm:^8.3.0",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L114",
+      "source_location": "L115",
       "_origin": "ast",
       "id": "frontend_package_resolutions_uuid_npm_8_3_0",
       "community": 6,
@@ -4741,7 +5861,7 @@
       "label": "packageManager",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L116",
+      "source_location": "L117",
       "_origin": "ast",
       "id": "frontend_package_packagemanager",
       "community": 43,
@@ -4934,7 +6054,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "gallery_page",
-      "community": 3,
+      "community": 68,
       "norm_label": "page.js"
     },
     {
@@ -4944,7 +6064,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "gallery_page_metadata",
-      "community": 3,
+      "community": 68,
       "norm_label": "metadata"
     },
     {
@@ -4954,7 +6074,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "gallery_page_image_extensions",
-      "community": 3,
+      "community": 68,
       "norm_label": "image_extensions"
     },
     {
@@ -4964,7 +6084,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "gallery_page_listgalleryimages",
-      "community": 3,
+      "community": 68,
       "norm_label": "listgalleryimages()"
     },
     {
@@ -4974,7 +6094,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "gallery_page_galleryroute",
-      "community": 3,
+      "community": 68,
       "norm_label": "galleryroute()"
     },
     {
@@ -4984,7 +6104,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "how_a_stay_works_page",
-      "community": 80,
+      "community": 68,
       "norm_label": "page.js"
     },
     {
@@ -4994,7 +6114,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "how_a_stay_works_page_metadata",
-      "community": 80,
+      "community": 68,
       "norm_label": "metadata"
     },
     {
@@ -5004,7 +6124,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "how_a_stay_works_page_howastayworksroute",
-      "community": 80,
+      "community": 68,
       "norm_label": "howastayworksroute()"
     },
     {
@@ -5718,6 +6838,176 @@
       "norm_label": "website-seo.test.js"
     },
     {
+      "label": "NOTICE.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/NOTICE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scroll_forge_notice",
+      "community": 83,
+      "norm_label": "notice.md"
+    },
+    {
+      "label": "Attribution",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/NOTICE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scroll_forge_notice_attribution",
+      "community": 83,
+      "norm_label": "attribution"
+    },
+    {
+      "label": "Third-party runtime dependency",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/NOTICE.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "scroll_forge_notice_third_party_runtime_dependency",
+      "community": 83,
+      "norm_label": "third-party runtime dependency"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scroll_forge_skill",
+      "community": 67,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "scroll-forge",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_scroll_forge",
+      "community": 67,
+      "norm_label": "scroll-forge"
+    },
+    {
+      "label": "Step 0 \u2014 Bootstrap",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_step_0_bootstrap",
+      "community": 67,
+      "norm_label": "step 0 \u2014 bootstrap"
+    },
+    {
+      "label": "Step 1 \u2014 Interview the user",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_step_1_interview_the_user",
+      "community": 67,
+      "norm_label": "step 1 \u2014 interview the user"
+    },
+    {
+      "label": "Step 2 \u2014 Lay out the world",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_step_2_lay_out_the_world",
+      "community": 67,
+      "norm_label": "step 2 \u2014 lay out the world"
+    },
+    {
+      "label": "Step 3 \u2014 Compose each scene",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_step_3_compose_each_scene",
+      "community": 67,
+      "norm_label": "step 3 \u2014 compose each scene"
+    },
+    {
+      "label": "Composition rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_composition_rules",
+      "community": 67,
+      "norm_label": "composition rules"
+    },
+    {
+      "label": "Palette",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L211",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_palette",
+      "community": 67,
+      "norm_label": "palette"
+    },
+    {
+      "label": "The prop kit",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L230",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_the_prop_kit",
+      "community": 67,
+      "norm_label": "the prop kit"
+    },
+    {
+      "label": "Step 4 \u2014 Wire the page and set the pacing",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L264",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_step_4_wire_the_page_and_set_the_pacing",
+      "community": 67,
+      "norm_label": "step 4 \u2014 wire the page and set the pacing"
+    },
+    {
+      "label": "Step 5 \u2014 (Optional) Bring your own imagery",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L287",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_step_5_optional_bring_your_own_imagery",
+      "community": 67,
+      "norm_label": "step 5 \u2014 (optional) bring your own imagery"
+    },
+    {
+      "label": "Step 6 \u2014 QA (don't skip)",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L302",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_step_6_qa_don_t_skip",
+      "community": 67,
+      "norm_label": "step 6 \u2014 qa (don't skip)"
+    },
+    {
+      "label": "Gotchas (hard-won)",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L348",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_gotchas_hard_won",
+      "community": 67,
+      "norm_label": "gotchas (hard-won)"
+    },
+    {
+      "label": "References",
+      "file_type": "document",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L398",
+      "_origin": "ast",
+      "id": "scroll_forge_skill_references",
+      "community": 67,
+      "norm_label": "references"
+    },
+    {
       "label": "frontend-dev.md",
       "file_type": "document",
       "source_file": ".cursor/agents/frontend-dev.md",
@@ -6004,7 +7294,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice",
-      "community": 67,
+      "community": 17,
       "norm_label": "design-it-twice.md"
     },
     {
@@ -6014,7 +7304,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_design_it_twice",
-      "community": 67,
+      "community": 17,
       "norm_label": "design it twice"
     },
     {
@@ -6024,7 +7314,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_process",
-      "community": 67,
+      "community": 17,
       "norm_label": "process"
     },
     {
@@ -6034,7 +7324,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_1_frame_the_problem_space",
-      "community": 67,
+      "community": 17,
       "norm_label": "1. frame the problem space"
     },
     {
@@ -6044,7 +7334,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_2_launch_subagents",
-      "community": 67,
+      "community": 17,
       "norm_label": "2. launch subagents"
     },
     {
@@ -6054,7 +7344,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "codebase_design_design_it_twice_3_present_and_compare",
-      "community": 67,
+      "community": 17,
       "norm_label": "3. present and compare"
     },
     {
@@ -7644,7 +8934,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_skill",
-      "community": 83,
+      "community": 62,
       "norm_label": "skill.md"
     },
     {
@@ -7704,7 +8994,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_2_repo_discovery",
-      "community": 65,
+      "community": 11,
       "norm_label": "phase 2 \u2014 repo discovery"
     },
     {
@@ -7714,7 +9004,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_first_mandatory",
-      "community": 65,
+      "community": 11,
       "norm_label": "graphify first (mandatory)"
     },
     {
@@ -7724,7 +9014,7 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce",
-      "community": 65,
+      "community": 11,
       "norm_label": "what to produce"
     },
     {
@@ -7734,7 +9024,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_to_use_subagents",
-      "community": 65,
+      "community": 11,
       "norm_label": "when to use subagents"
     },
     {
@@ -7744,7 +9034,7 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_design_tree_interview",
-      "community": 40,
+      "community": 11,
       "norm_label": "phase 3 \u2014 design-tree interview"
     },
     {
@@ -7754,7 +9044,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "write_a_prd_skill_rules",
-      "community": 40,
+      "community": 11,
       "norm_label": "rules"
     },
     {
@@ -7764,7 +9054,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "write_a_prd_skill_design_tree_walk_order",
-      "community": 40,
+      "community": 11,
       "norm_label": "design tree (walk order)"
     },
     {
@@ -7774,7 +9064,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_skill_dependency_examples",
-      "community": 40,
+      "community": 11,
       "norm_label": "dependency examples"
     },
     {
@@ -7784,7 +9074,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_a_branch_is_done",
-      "community": 40,
+      "community": 11,
       "norm_label": "when a branch is done"
     },
     {
@@ -7794,7 +9084,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_exit_criteria",
-      "community": 40,
+      "community": 11,
       "norm_label": "phase 3 exit criteria"
     },
     {
@@ -7804,7 +9094,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_module_sketch",
-      "community": 33,
+      "community": 11,
       "norm_label": "phase 4 \u2014 module sketch"
     },
     {
@@ -7814,7 +9104,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "write_a_prd_skill_purpose",
-      "community": 33,
+      "community": 11,
       "norm_label": "purpose"
     },
     {
@@ -7824,7 +9114,7 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_mandatory",
-      "community": 33,
+      "community": 11,
       "norm_label": "graphify (mandatory)"
     },
     {
@@ -7834,7 +9124,7 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce_178",
-      "community": 33,
+      "community": 11,
       "norm_label": "what to produce"
     },
     {
@@ -7844,7 +9134,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "write_a_prd_skill_extraction_mindset",
-      "community": 33,
+      "community": 11,
       "norm_label": "extraction mindset"
     },
     {
@@ -7854,7 +9144,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "write_a_prd_skill_confirm_with_user",
-      "community": 33,
+      "community": 11,
       "norm_label": "confirm with user"
     },
     {
@@ -7864,7 +9154,7 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_exit_criteria",
-      "community": 33,
+      "community": 11,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -7934,7 +9224,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide",
-      "community": 83,
+      "community": 62,
       "norm_label": "interview-guide.md"
     },
     {
@@ -8034,7 +9324,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_interview_tactics",
-      "community": 95,
+      "community": 77,
       "norm_label": "interview tactics"
     },
     {
@@ -8044,7 +9334,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_relentless_but_respectful",
-      "community": 95,
+      "community": 77,
       "norm_label": "relentless but respectful"
     },
     {
@@ -8054,7 +9344,7 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_batching",
-      "community": 95,
+      "community": 77,
       "norm_label": "batching"
     },
     {
@@ -8064,7 +9354,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_stuck_loops",
-      "community": 95,
+      "community": 77,
       "norm_label": "stuck loops"
     },
     {
@@ -8074,7 +9364,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_decision_log_template",
-      "community": 95,
+      "community": 77,
       "norm_label": "decision log template"
     },
     {
@@ -8084,7 +9374,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch",
-      "community": 83,
+      "community": 62,
       "norm_label": "module-sketch.md"
     },
     {
@@ -8624,7 +9914,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_items_base",
-      "community": 0,
+      "community": 69,
       "norm_label": "home_nav_items_base"
     },
     {
@@ -8634,7 +9924,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketing_interior_nav_items_base",
-      "community": 0,
+      "community": 69,
       "norm_label": "marketing_interior_nav_items_base"
     },
     {
@@ -8654,7 +9944,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "consts_marketing_nav_home_nav_items_base",
-      "community": 0,
+      "community": 69,
       "norm_label": "home_nav_items_base"
     },
     {
@@ -8664,7 +9954,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "consts_marketing_nav_marketing_interior_nav_items_base",
-      "community": 0,
+      "community": 69,
       "norm_label": "marketing_interior_nav_items_base"
     },
     {
@@ -8696,7 +9986,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 68,
       "norm_label": "template",
       "id": "scripts_create_ts_component_scaffold_template"
     },
@@ -8845,7 +10135,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Marketing form pages use stacked layout below the MUI lg breakpoint (1200px).",
-      "community": 102,
+      "community": 2,
       "norm_label": "form_page_desktop_bp",
       "id": "design_studio_design_studio_glass_form_page_desktop_bp"
     },
@@ -8858,7 +10148,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 40,
       "norm_label": "nav_glass_backdrop_color",
       "id": "design_studio_design_studio_glass_nav_glass_backdrop_color"
     },
@@ -8898,7 +10188,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI theme font family so drawer portals inherit Nunito outside the shell className.",
-      "community": 91,
+      "community": 70,
       "norm_label": "home_landing_font_family",
       "id": "home_landing_home_landing_font_home_landing_font_family"
     },
@@ -8950,7 +10240,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 69,
       "norm_label": "rover_booking_url",
       "id": "consts_routes_rover_booking_url"
     },
@@ -9290,7 +10580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "module",
       "id": "codebase_design_skill_module"
     },
@@ -9304,7 +10594,7 @@
       "author": null,
       "contributor": null,
       "rationale": "The interface is the test surface. Callers and tests cross the same seam.",
-      "community": 67,
+      "community": 17,
       "norm_label": "interface",
       "id": "codebase_design_skill_interface"
     },
@@ -9317,7 +10607,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "implementation",
       "id": "codebase_design_skill_implementation"
     },
@@ -9331,7 +10621,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depth is leverage at the interface, not a ratio of implementation lines to interface lines.",
-      "community": 67,
+      "community": 17,
       "norm_label": "depth",
       "id": "codebase_design_skill_depth"
     },
@@ -9345,7 +10635,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Michael Feathers: a place where behaviour can change without editing in that place. One adapter means a hypothetical seam; two adapters means a real one.",
-      "community": 67,
+      "community": 17,
       "norm_label": "seam",
       "id": "codebase_design_skill_seam"
     },
@@ -9358,7 +10648,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "adapter",
       "id": "codebase_design_skill_adapter"
     },
@@ -9371,7 +10661,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "leverage",
       "id": "codebase_design_skill_leverage"
     },
@@ -9384,7 +10674,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "locality",
       "id": "codebase_design_skill_locality"
     },
@@ -9410,7 +10700,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "in-process dependency",
       "id": "codebase_design_deepening_in_process"
     },
@@ -9423,7 +10713,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "local-substitutable dependency",
       "id": "codebase_design_deepening_local_substitutable"
     },
@@ -9436,7 +10726,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "remote but owned ports and adapters",
       "id": "codebase_design_deepening_ports_and_adapters"
     },
@@ -9449,7 +10739,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "true external dependency",
       "id": "codebase_design_deepening_true_external"
     },
@@ -9462,7 +10752,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 17,
       "norm_label": "replace don't layer",
       "id": "codebase_design_deepening_replace_dont_layer"
     },
@@ -9853,7 +11143,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Start here every time. Collect a long problem description and solution ideas, including rejected approaches, before repo exploration or design questions.",
-      "community": 83,
+      "community": 62,
       "norm_label": "phase 1 deep intake",
       "id": "write_a_prd_skill_phase1_deep_intake"
     },
@@ -9867,7 +11157,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Thread-only capture of problem statement, goals, non-goals, solution ideas, codebase assertions, and open threads. Not written to disk until Phase 5.",
-      "community": 83,
+      "community": 62,
       "norm_label": "working notes",
       "id": "write_a_prd_skill_working_notes"
     },
@@ -9881,7 +11171,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Verify user assertions with graphify query, explain, and path before Read/Grep/Glob. Summarize verified, corrected, gaps, relevant surface, and constraints.",
-      "community": 83,
+      "community": 62,
       "norm_label": "phase 2 repo discovery",
       "id": "write_a_prd_skill_phase2_repo_discovery"
     },
@@ -9895,7 +11185,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Resolve one decision branch at a time until shared understanding. Exit requires testable must-haves, explicit scope, no blocking questions, and user confirmation.",
-      "community": 83,
+      "community": 62,
       "norm_label": "phase 3 design-tree interview",
       "id": "write_a_prd_skill_phase3_design_tree"
     },
@@ -9923,7 +11213,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Map work to concrete build/modify paths and extract pure logic from UI, HTTP, and ORM before writing the PRD. User must confirm the sketch.",
-      "community": 83,
+      "community": 62,
       "norm_label": "phase 4 module sketch",
       "id": "write_a_prd_skill_phase4_module_sketch"
     },
@@ -10175,7 +11465,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sketch splits into backend models/serializers/services/viewsets, frontend pages/components/hooks/API clients, and cross-cutting middleware, auth, env, Docker, and migrations.",
-      "community": 83,
+      "community": 90,
       "norm_label": "backend frontend cross-cutting layers",
       "id": "write_a_prd_module_sketch_layers"
     },
@@ -10245,7 +11535,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Phase 2 section: assertion verdicts (Confirmed, Corrected, Not found), frontend/backend/other surfaces, and gaps versus the desired end state.",
-      "community": 83,
+      "community": 62,
       "norm_label": "current state and verified assertions",
       "id": "write_a_prd_template_current_state"
     },
@@ -13196,6 +14486,1227 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L308",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_building",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L825",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_buildprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L859",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_buildscenegroup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L504",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_bush",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L435",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_canopy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L795",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_cloud",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L724",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_conveyor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L606",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_crate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_default_palette",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L776",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_fence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L535",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_field",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L808",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_groupprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_island",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L761",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_lamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L672",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_machine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_makecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_makerng",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L655",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_person",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L838",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_placeprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L240",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_plot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L816",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L694",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_rack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_road",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L517",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_rock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_roundedrect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L571",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_scatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L744",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_sign",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L409",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_tower",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L466",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_tree",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L623",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_vehicle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L258",
+      "weight": 1.0,
+      "source": "references_kit",
+      "target": "references_kit_water",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_kit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "references_kit_makecontext",
+      "target": "references_kit_makerng",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_kit_makecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "references_world_engine_mountscrollforge",
+      "target": "references_kit_makecontext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "references_kit_box",
+      "target": "references_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L438",
+      "weight": 1.0,
+      "source": "references_kit_canopy",
+      "target": "references_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L729",
+      "weight": 1.0,
+      "source": "references_kit_conveyor",
+      "target": "references_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L779",
+      "weight": 1.0,
+      "source": "references_kit_fence",
+      "target": "references_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "references_kit_island",
+      "target": "references_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L698",
+      "weight": 1.0,
+      "source": "references_kit_rack",
+      "target": "references_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L486",
+      "weight": 1.0,
+      "source": "references_kit_tree",
+      "target": "references_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L764",
+      "weight": 1.0,
+      "source": "references_kit_lamp",
+      "target": "references_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L687",
+      "weight": 1.0,
+      "source": "references_kit_machine",
+      "target": "references_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L665",
+      "weight": 1.0,
+      "source": "references_kit_person",
+      "target": "references_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L747",
+      "weight": 1.0,
+      "source": "references_kit_sign",
+      "target": "references_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L412",
+      "weight": 1.0,
+      "source": "references_kit_tower",
+      "target": "references_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L471",
+      "weight": 1.0,
+      "source": "references_kit_tree",
+      "target": "references_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L509",
+      "weight": 1.0,
+      "source": "references_kit_bush",
+      "target": "references_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L800",
+      "weight": 1.0,
+      "source": "references_kit_cloud",
+      "target": "references_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L541",
+      "weight": 1.0,
+      "source": "references_kit_field",
+      "target": "references_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L766",
+      "weight": 1.0,
+      "source": "references_kit_lamp",
+      "target": "references_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L679",
+      "weight": 1.0,
+      "source": "references_kit_machine",
+      "target": "references_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L663",
+      "weight": 1.0,
+      "source": "references_kit_person",
+      "target": "references_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L495",
+      "weight": 1.0,
+      "source": "references_kit_tree",
+      "target": "references_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "references_kit_box",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L326",
+      "weight": 1.0,
+      "source": "references_kit_building",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L509",
+      "weight": 1.0,
+      "source": "references_kit_bush",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L783",
+      "weight": 1.0,
+      "source": "references_kit_fence",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "references_kit_island",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L764",
+      "weight": 1.0,
+      "source": "references_kit_lamp",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L687",
+      "weight": 1.0,
+      "source": "references_kit_machine",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L658",
+      "weight": 1.0,
+      "source": "references_kit_person",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L528",
+      "weight": 1.0,
+      "source": "references_kit_rock",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L747",
+      "weight": 1.0,
+      "source": "references_kit_sign",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L412",
+      "weight": 1.0,
+      "source": "references_kit_tower",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L471",
+      "weight": 1.0,
+      "source": "references_kit_tree",
+      "target": "references_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L311",
+      "weight": 1.0,
+      "source": "references_kit_building",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L445",
+      "weight": 1.0,
+      "source": "references_kit_canopy",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L727",
+      "weight": 1.0,
+      "source": "references_kit_conveyor",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L611",
+      "weight": 1.0,
+      "source": "references_kit_crate",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L675",
+      "weight": 1.0,
+      "source": "references_kit_machine",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L707",
+      "weight": 1.0,
+      "source": "references_kit_rack",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L749",
+      "weight": 1.0,
+      "source": "references_kit_sign",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L628",
+      "weight": 1.0,
+      "source": "references_kit_vehicle",
+      "target": "references_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L510",
+      "weight": 1.0,
+      "source": "references_kit_bush",
+      "target": "references_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L801",
+      "weight": 1.0,
+      "source": "references_kit_cloud",
+      "target": "references_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L612",
+      "weight": 1.0,
+      "source": "references_kit_crate",
+      "target": "references_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L551",
+      "weight": 1.0,
+      "source": "references_kit_field",
+      "target": "references_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L496",
+      "weight": 1.0,
+      "source": "references_kit_tree",
+      "target": "references_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L861",
+      "weight": 1.0,
+      "source": "references_kit_buildscenegroup",
+      "target": "references_kit_island",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L539",
+      "weight": 1.0,
+      "source": "references_kit_field",
+      "target": "references_kit_plot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L591",
+      "weight": 1.0,
+      "source": "references_kit_scatter",
+      "target": "references_kit_buildprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/kit.js",
+      "source_location": "L839",
+      "weight": 1.0,
+      "source": "references_kit_placeprop",
+      "target": "references_kit_buildprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_kit_placeprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_kit_buildscenegroup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_buried",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_errors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_failed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_hops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_mime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_outdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_positions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_shots",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/qa.mjs",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "references_qa",
+      "target": "references_qa_worst",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L676",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_world_engine_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L681",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_world_engine_el",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L682",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_world_engine_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L709",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_world_engine_injectcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L687",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_world_engine_makesky",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_world_engine_mountscrollforge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L677",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_world_engine_smoothstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "references_world_engine",
+      "target": "references_world_engine_v3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "references_world_engine_mountscrollforge",
+      "target": "references_world_engine_v3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "references_world_engine_mountscrollforge",
+      "target": "references_world_engine_el",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "references_world_engine_mountscrollforge",
+      "target": "references_world_engine_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "references_world_engine_mountscrollforge",
+      "target": "references_world_engine_injectcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "references_world_engine_mountscrollforge",
+      "target": "references_world_engine_makesky",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/references/world-engine.js",
+      "source_location": "L678",
+      "weight": 1.0,
+      "source": "references_world_engine_smoothstep",
+      "target": "references_world_engine_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".cursor/skills/component-parity-qa/scripts/generate_parity_qa_checklist.py",
       "source_location": "L5",
       "weight": 1.0,
@@ -14812,24 +17323,26 @@
       "target": "dog_hotel_howastayworkspage_howastayworkspage"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/dog-hotel/HowAStayWorksPage.js",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dog_hotel_howastayworkspage",
-      "target": "dog_hotel_howastayworkspage_steps"
+      "target": "scroll_forge_stay_world_config",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "imports",
+      "context": "import",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "frontend/components/dog-hotel/HowAStayWorksPage.js",
-      "source_location": null,
+      "source_location": "L8",
       "weight": 1.0,
-      "source": "dog_hotel_howastayworkspage_howastayworkspage",
-      "target": "dog_hotel_howastayworkspage_steps"
+      "source": "dog_hotel_howastayworkspage",
+      "target": "scroll_forge_stay_world_config_stay_world",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -15229,6 +17742,1209 @@
       "confidence_score": 1.0,
       "source": "dog_hotel_reviews_data_test",
       "target": "dog_hotel_reviews_data_test_samedaylater"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L192",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L319",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_building",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L881",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_buildprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L915",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_buildscenegroup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L515",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_bush",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L446",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_canopy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L806",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_cloud",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L735",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_conveyor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L617",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_crate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_default_palette",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L823",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_diorama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L787",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_fence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L546",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_field",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L864",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_groupprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_island",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L772",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_lamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L683",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_machine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_makecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_makerng",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L666",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_person",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L894",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_placeprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_plot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L872",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L705",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_rack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L289",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_road",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L528",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_rock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_roundedrect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L582",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_scatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L755",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_sign",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L420",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_tower",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L477",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_tree",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L634",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_vehicle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L269",
+      "weight": 1.0,
+      "source": "scroll_forge_kit",
+      "target": "scroll_forge_kit_water",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_kit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_makecontext",
+      "target": "scroll_forge_kit_makerng",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_kit_makecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine_mountscrollforge",
+      "target": "scroll_forge_kit_makecontext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_box",
+      "target": "scroll_forge_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L449",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_canopy",
+      "target": "scroll_forge_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L740",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_conveyor",
+      "target": "scroll_forge_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L790",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_fence",
+      "target": "scroll_forge_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_island",
+      "target": "scroll_forge_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L709",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_rack",
+      "target": "scroll_forge_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L497",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_tree",
+      "target": "scroll_forge_kit_boxgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L775",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_lamp",
+      "target": "scroll_forge_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L698",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_machine",
+      "target": "scroll_forge_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L676",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_person",
+      "target": "scroll_forge_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L758",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_sign",
+      "target": "scroll_forge_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L423",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_tower",
+      "target": "scroll_forge_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L482",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_tree",
+      "target": "scroll_forge_kit_cylgeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L520",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_bush",
+      "target": "scroll_forge_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L811",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_cloud",
+      "target": "scroll_forge_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L552",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_field",
+      "target": "scroll_forge_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L777",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_lamp",
+      "target": "scroll_forge_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L690",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_machine",
+      "target": "scroll_forge_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L674",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_person",
+      "target": "scroll_forge_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L506",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_tree",
+      "target": "scroll_forge_kit_spheregeo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_box",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L337",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_building",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L520",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_bush",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L794",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_fence",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_island",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L775",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_lamp",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L698",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_machine",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L669",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_person",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L539",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_rock",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L758",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_sign",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L423",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_tower",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L482",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_tree",
+      "target": "scroll_forge_kit_mesh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L322",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_building",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L456",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_canopy",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L738",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_conveyor",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L622",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_crate",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L686",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_machine",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L718",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_rack",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L760",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_sign",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L639",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_vehicle",
+      "target": "scroll_forge_kit_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L521",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_bush",
+      "target": "scroll_forge_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L812",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_cloud",
+      "target": "scroll_forge_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L623",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_crate",
+      "target": "scroll_forge_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L562",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_field",
+      "target": "scroll_forge_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L507",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_tree",
+      "target": "scroll_forge_kit_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L917",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_buildscenegroup",
+      "target": "scroll_forge_kit_island",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L550",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_field",
+      "target": "scroll_forge_kit_plot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L602",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_scatter",
+      "target": "scroll_forge_kit_buildprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/kit.js",
+      "source_location": "L895",
+      "weight": 1.0,
+      "source": "scroll_forge_kit_placeprop",
+      "target": "scroll_forge_kit_buildprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_kit_placeprop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_kit_buildscenegroup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scroll_forge_stay_world_config",
+      "target": "scroll_forge_stay_world_config_arrival",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scroll_forge_stay_world_config",
+      "target": "scroll_forge_stay_world_config_card",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "scroll_forge_stay_world_config",
+      "target": "scroll_forge_stay_world_config_stay_palette",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "scroll_forge_stay_world_config",
+      "target": "scroll_forge_stay_world_config_stay_world",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/dog-hotel/scroll-forge/stay-world-config.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scroll_forge_stay_world_config_card",
+      "target": "utils_publicpath_publicpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L699",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L704",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_el",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L705",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L736",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_injectcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L708",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_linkhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L714",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_makesky",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_mountscrollforge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L700",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_smoothstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine",
+      "target": "scroll_forge_world_engine_v3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine_mountscrollforge",
+      "target": "scroll_forge_world_engine_v3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine_mountscrollforge",
+      "target": "scroll_forge_world_engine_el",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine_mountscrollforge",
+      "target": "scroll_forge_world_engine_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine_mountscrollforge",
+      "target": "scroll_forge_world_engine_injectcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine_mountscrollforge",
+      "target": "scroll_forge_world_engine_makesky",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L701",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine_smoothstep",
+      "target": "scroll_forge_world_engine_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/scroll-forge/world-engine.js",
+      "source_location": "L710",
+      "weight": 1.0,
+      "source": "scroll_forge_world_engine_linkhtml",
+      "target": "scroll_forge_world_engine_esc",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -19091,6 +22807,16 @@
       "source_file": "frontend/package.json",
       "source_location": "L51",
       "weight": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_three",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L51",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
       "target": "frontend_package_dependencies_window_or_global"
@@ -21449,6 +25175,156 @@
       "weight": 1.0,
       "source": "utils_website_seo_test_homepagejsonld",
       "target": "utils_website_seo_homepagejsonld"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/NOTICE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scroll_forge_notice",
+      "target": "scroll_forge_notice_attribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/NOTICE.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scroll_forge_notice_attribution",
+      "target": "scroll_forge_notice_third_party_runtime_dependency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "scroll_forge_skill",
+      "target": "scroll_forge_skill_scroll_forge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L348",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_gotchas_hard_won",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L398",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_references",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_step_0_bootstrap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_step_1_interview_the_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_step_2_lay_out_the_world",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_step_3_compose_each_scene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L264",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_step_4_wire_the_page_and_set_the_pacing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_step_5_optional_bring_your_own_imagery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_scroll_forge",
+      "target": "scroll_forge_skill_step_6_qa_don_t_skip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_step_3_compose_each_scene",
+      "target": "scroll_forge_skill_composition_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L211",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_step_3_compose_each_scene",
+      "target": "scroll_forge_skill_palette",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/scroll-forge/SKILL.md",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "scroll_forge_skill_step_3_compose_each_scene",
+      "target": "scroll_forge_skill_the_prop_kit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -29374,5 +33250,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "cc6f794a8b18cdeef4e74a9f8c05239e016793c5"
+  "built_at_commit": "8b07e9a3325ccabe51d516b933e90c547c5ff79e"
 }
