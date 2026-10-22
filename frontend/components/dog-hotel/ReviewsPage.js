@@ -60,23 +60,41 @@ function sitePhotoSrc(photoSrc) {
 }
 
 function ReviewPhoto({ review }) {
+  const photos = reviewPhotos(review);
+  const count = photos.length;
+  const columns = count >= 2;
+  const packed = count >= 3;
+
   const frameSx = {
     width: '100%',
-    aspectRatio: '1 / 1',
+    minWidth: 0,
     bgcolor: alpha(WEBSITE_INK, 0.06),
     display: 'block',
     objectFit: 'cover',
+    aspectRatio: { xs: packed ? 'auto' : '1 / 1', sm: '1 / 1' },
+    height: { xs: packed ? '100%' : 'auto', sm: 'auto' },
+    minHeight: 0,
   };
 
   return (
-    <Box sx={{ display: 'grid', gap: 1 }}>
-      {reviewPhotos(review).map(photo => {
+    <Box
+      sx={{
+        display: 'grid',
+        gap: 1,
+        width: '100%',
+        gridTemplateColumns: { xs: columns ? '1fr 1fr' : '1fr', sm: '1fr' },
+        gridTemplateRows: { xs: packed ? '1fr 1fr' : 'auto', sm: 'auto' },
+        aspectRatio: { xs: packed ? '1 / 1' : 'auto', sm: 'auto' },
+      }}
+    >
+      {photos.map((photo, index) => {
         const src = sitePhotoSrc(photo.src);
         const alt = photo.alt || review.dogName;
+        const key = `${src || 'empty'}-${index}`;
         if (!src) {
-          return <Box key="empty" role="img" aria-label="No photo provided" sx={frameSx} />;
+          return <Box key={key} role="img" aria-label="No photo provided" sx={frameSx} />;
         }
-        return <Box key={src} component="img" src={src} alt={alt} sx={frameSx} />;
+        return <Box key={key} component="img" src={src} alt={alt} sx={frameSx} />;
       })}
     </Box>
   );

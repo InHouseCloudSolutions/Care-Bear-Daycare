@@ -55,9 +55,9 @@
     "semantic_hash": "6f52179910373b1b5f9bfa3ff456a259"
   },
   "frontend/components/contact-form/ContactFormPage.js": {
-    "mtime": 1792411733.9636078,
-    "ast_hash": "4f1df93fac641fbcd9638f70e158cb5c",
-    "semantic_hash": "4f1df93fac641fbcd9638f70e158cb5c"
+    "mtime": 1792697693.8060606,
+    "ast_hash": "813d45fd7d28a085571f325f0bf22ea1",
+    "semantic_hash": ""
   },
   "frontend/components/design-studio/GlassFormField.js": {
     "mtime": 1780497727.5942466,
@@ -80,18 +80,18 @@
     "semantic_hash": "e9bef225288002d68382025d13b4c936"
   },
   "frontend/components/dog-hotel/AboutPage.js": {
-    "mtime": 1792549874.4100232,
-    "ast_hash": "43f94be4a62d3321beb6483d338952a8",
+    "mtime": 1792697692.1505346,
+    "ast_hash": "2f8186de3fc209b674f9ac9d772a5ae4",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/DogHotelInteriorPage.js": {
-    "mtime": 1792514185.4077742,
-    "ast_hash": "c5d20d67fb7c27b7b02f28b1712c174a",
+    "mtime": 1792697744.6517441,
+    "ast_hash": "9099b41539870705c30fec61db3cb340",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/GalleryPage.js": {
-    "mtime": 1792419654.3318133,
-    "ast_hash": "2f36062580bdb5d3a0eb7157f5a3517f",
+    "mtime": 1792697693.8060606,
+    "ast_hash": "99d100d0f2a43bb469eb749b0092a160",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/HowAStayWorksPage.js": {
@@ -110,9 +110,9 @@
     "semantic_hash": "96760adb9f677e3905790bc80472f029"
   },
   "frontend/components/home-landing/HomeLandingFooter.js": {
-    "mtime": 1792411733.9960382,
-    "ast_hash": "1ca8a7f460b0b99e16bdfd8dabd87541",
-    "semantic_hash": "1ca8a7f460b0b99e16bdfd8dabd87541"
+    "mtime": 1792697701.0475304,
+    "ast_hash": "b9df659191ac4c195bdb3c7c1ed4ac80",
+    "semantic_hash": ""
   },
   "frontend/components/home-landing/HomeLandingPage.js": {
     "mtime": 1792421349.0897093,
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "frontend/components/home-landing/home-landing-data.js": {
-    "mtime": 1792421350.2376325,
-    "ast_hash": "f6cddc2227a1a42db6a7184e2c46b459",
+    "mtime": 1792697694.2024307,
+    "ast_hash": "ba1dbd85b6f927b143f0631cdd6dbb7b",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/home-landing-font.js": {
@@ -340,8 +340,8 @@
     "semantic_hash": "c18e99bc927bd956c85d3439107e18b7"
   },
   "frontend/src/app/sitemap.js": {
-    "mtime": 1792420262.448506,
-    "ast_hash": "87dfd4b1a74e981a3c3510cb82d10e0e",
+    "mtime": 1792697690.3847795,
+    "ast_hash": "4458c75426337eafc90b0d225e2c7c43",
     "semantic_hash": ""
   },
   "frontend/utils/galleryImage.js": {
@@ -380,14 +380,14 @@
     "semantic_hash": "1ac33586bc2a9400a7c12fa15c5db11a"
   },
   "frontend/utils/website-seo.js": {
-    "mtime": 1792549875.1705482,
-    "ast_hash": "46b66f8d6f7baea59708a76f4651c2b7",
+    "mtime": 1792697743.1399424,
+    "ast_hash": "4d2f24a17590ca6a851b88b7f50f8486",
     "semantic_hash": ""
   },
   "frontend/utils/website-seo.test.js": {
-    "mtime": 1792411734.4398491,
-    "ast_hash": "0b5c9064e072c94abea8ae4b8d8dd034",
-    "semantic_hash": "0b5c9064e072c94abea8ae4b8d8dd034"
+    "mtime": 1792697745.2687068,
+    "ast_hash": "cbd2c1a53ea5d92542d379c7ee6ecacb",
+    "semantic_hash": ""
   },
   ".cursor/agents/frontend-dev.md": {
     "mtime": 1780579923.996914,
@@ -595,9 +595,9 @@
     "semantic_hash": "ee6ae04746c638f35f3f441f9ebc1181"
   },
   "frontend/public/robots.txt": {
-    "mtime": 1792411734.4398491,
-    "ast_hash": "1fb2070d86f8a78c3da81ef4ab12cfe4",
-    "semantic_hash": "1fb2070d86f8a78c3da81ef4ab12cfe4"
+    "mtime": 1792697690.886479,
+    "ast_hash": "f21ac6d90bddbeac730eaad26c8a420a",
+    "semantic_hash": ""
   },
   "zygoat_settings.yml": {
     "mtime": 1792414742.5513234,
@@ -715,8 +715,8 @@
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/ReviewsPage.js": {
-    "mtime": 1792514976.1802905,
-    "ast_hash": "ee47896c3306e0b0ae1302b429e0945e",
+    "mtime": 1792697693.8162262,
+    "ast_hash": "20b38fcf30279f90ba7b0ef3bf2c21b2",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/reviews-data.js": {
@@ -810,8 +810,8 @@
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/CareAndSafetyPage.js": {
-    "mtime": 1792549907.87754,
-    "ast_hash": "efbcc22c74bfa3bce239672076231def",
+    "mtime": 1792697692.677256,
+    "ast_hash": "c588b09f0aa47d364a66651a65e6df5a",
     "semantic_hash": ""
   },
   "frontend/src/app/(website)/care-and-safety/page.js": {
@@ -845,8 +845,8 @@
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/scroll-forge/stay-world-config.js": {
-    "mtime": 1792679438.4269657,
-    "ast_hash": "fb5649969409ca44aaf1a1031d640a24",
+    "mtime": 1792697694.378544,
+    "ast_hash": "0e1c72cc91711ffa7bb3c9cd3faf1c17",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/scroll-forge/world-engine.js": {

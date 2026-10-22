@@ -2511,7 +2511,7 @@
       "label": "StarRating()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L89",
+      "source_location": "L107",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_starrating",
       "community": 28,
@@ -2521,7 +2521,7 @@
       "label": "ReviewCard()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L112",
+      "source_location": "L130",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewcard",
       "community": 28,
@@ -2531,7 +2531,7 @@
       "label": "BookStayButton()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L179",
+      "source_location": "L197",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bookstaybutton",
       "community": 65,
@@ -2541,7 +2541,7 @@
       "label": "ReviewsPage()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L213",
+      "source_location": "L231",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewspage",
       "community": 28,
@@ -25017,9 +25017,9 @@
       "source_file": "frontend/utils/website-seo.js",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_website_seo",
-      "target": "utils_website_seo_configuredpublichost",
-      "confidence_score": 1.0
+      "target": "utils_website_seo_configuredpublichost"
     },
     {
       "relation": "contains",
@@ -25067,9 +25067,9 @@
       "source_file": "frontend/utils/website-seo.js",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_website_seo",
-      "target": "utils_website_seo_publicmarketingorigin",
-      "confidence_score": 1.0
+      "target": "utils_website_seo_publicmarketingorigin"
     },
     {
       "relation": "contains",
@@ -25161,9 +25161,9 @@
       "source_file": "frontend/utils/website-seo.js",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_website_seo_publicmarketingorigin",
-      "target": "utils_website_seo_configuredpublichost",
-      "confidence_score": 1.0
+      "target": "utils_website_seo_configuredpublichost"
     },
     {
       "relation": "rationale_for",
@@ -25182,9 +25182,9 @@
       "source_file": "frontend/utils/website-seo.js",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_website_seo_homepagejsonld",
-      "target": "utils_website_seo_publicmarketingorigin",
-      "confidence_score": 1.0
+      "target": "utils_website_seo_publicmarketingorigin"
     },
     {
       "relation": "imports",
@@ -25193,9 +25193,9 @@
       "source_file": "frontend/utils/website-seo.test.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_website_seo_test",
-      "target": "utils_website_seo_publicmarketingorigin",
-      "confidence_score": 1.0
+      "target": "utils_website_seo_publicmarketingorigin"
     },
     {
       "relation": "imports",
@@ -33323,5 +33323,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "314053ab8bbc2ea6ce75b09093ef0a36e0c8ca9a"
+  "built_at_commit": "f446981164804e1a57c2cb51d07a4cf131f39797"
 }
