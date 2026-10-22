@@ -46,7 +46,7 @@ const socialIconButtonSx = {
 
 export default function HomeLandingFooter() {
   const currentYear = new Date().getFullYear();
-  const { webCredit } = HOME_FOOTER;
+  const { placeLine, webCredit } = HOME_FOOTER;
 
   return (
     <Box
@@ -88,6 +88,9 @@ export default function HomeLandingFooter() {
           </Stack>
         ) : null}
 
+        <Typography component="p" sx={{ ...footerTextSx, mb: 0.75 }}>
+          {placeLine}
+        </Typography>
         <Stack
           direction={{ xs: 'column', sm: 'row' }}
           spacing={{ xs: 0.75, sm: 1.5 }}

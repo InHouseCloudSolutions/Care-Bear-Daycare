@@ -18,7 +18,7 @@ export default function ContactFormPage() {
   return (
     <DogHotelInteriorPage
       title="Contact"
-      lede="Tell us about your dog and the stay you have in mind. We will follow up to plan a visit."
+      lede="Tell us about your dog and the stay you have in mind. We will follow up to plan a visit for dog daycare in Toronto and the GTA."
     >
       <Typography component="p" sx={bodySx}>
         Email{' '}

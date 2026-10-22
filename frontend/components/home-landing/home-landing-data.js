@@ -39,7 +39,7 @@ export function withStaffNavItems(items, isAuthenticated) {
 
 export const HOME_BRAND = {
   name: 'Care Bear Daycare',
-  tagline: 'Overnight care and daycare, with a safe backyard made for play.',
+  tagline: 'Overnight care and daycare in Toronto and the GTA, with a safe backyard made for play.',
   primaryCta: { label: 'Book a stay', href: ROVER_BOOKING_URL },
   secondaryCta: { label: 'Plan a visit', href: CONTACT_PATH },
 };
@@ -47,6 +47,7 @@ export const HOME_BRAND = {
 export const HOME_FOOTER = {
   establishedYear: 2015,
   companyName: 'Care Bear Daycare',
+  placeLine: 'Toronto · Greater Toronto Area',
   webCredit: {
     label: 'Powered By In House Cloud Solutions',
     href: 'https://inhousecloudsolutions.com',

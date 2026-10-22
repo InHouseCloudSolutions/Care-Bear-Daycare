@@ -216,7 +216,10 @@ export default function ReviewsPage() {
   const reviews = sortReviewsNewestFirst(REVIEWS);
 
   return (
-    <DogHotelInteriorPage title="Reviews">
+    <DogHotelInteriorPage
+      title="Reviews"
+      lede="What owners say about dog daycare and overnight stays in Toronto and the GTA."
+    >
       <Box sx={{ mt: 2, maxWidth: 640 }}>
         {count > 0 ? (
           <Typography component="p" sx={bodySx}>

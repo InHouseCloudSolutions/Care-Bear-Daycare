@@ -1,8 +1,8 @@
-import { PUBLIC_SITE_ORIGIN, WEBSITE_SEO } from '@/utils/website-seo';
+import { publicMarketingOrigin, WEBSITE_SEO } from '@/utils/website-seo';
 
 export const dynamic = 'force-static';
 
-const HOST = (PUBLIC_SITE_ORIGIN || 'http://localhost:3000').replace(/\/$/, '');
+const HOST = publicMarketingOrigin().replace(/\/$/, '');
 
 function toSitemapEntry(path) {
   return {

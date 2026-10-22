@@ -116,7 +116,7 @@ export default function CareAndSafetyPage() {
   return (
     <DogHotelInteriorPage
       title="Care and safety"
-      lede="How Carrie prepares for a stay in her home—and what you can expect from the meet through pickup."
+      lede="How Carrie prepares for a stay in her Toronto home—and what you can expect from the meet through pickup."
     >
       <Box sx={sectionBoxSx}>
         <Typography component="h2" sx={sectionHeadingSx}>

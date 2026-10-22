@@ -516,7 +516,7 @@ export function mountScrollForge(container, config) {
         1 - smoothstep(lastS ? 0.98 : 0.74, lastS ? 1.50 : 1.05, u),
       ), 0, 1);
       block.style.opacity = a;
-      block.style.transform = `translateY(${(1 - a) * 22}px)`;
+      block.style.transform = blockTransform(a);
       block.style.pointerEvents = a > 0.5 ? 'auto' : 'none';
       block.setAttribute('aria-hidden', a > 0.05 ? 'false' : 'true');
       if (a > 0.05) {
@@ -559,6 +559,52 @@ export function mountScrollForge(container, config) {
 
   /* --------------------------------------------------------------- layout */
   let lastW = window.innerWidth;
+  // Desktop is any viewport at least 1200px wide. Tablet landscape is a wide
+  // landscape viewport that is still below that. Portrait tablets and phones
+  // keep the full-bleed overlay.
+  let splitLayout = false;
+  function isSplitLayout(rect) {
+    if (rect.width >= 1200) return true;
+    return rect.width >= 1024 && rect.width > rect.height;
+  }
+  function illustrationFrame() {
+    for (let i = 0; i < N; i += 1) {
+      const props = SECTIONS[i].scene?.props || [];
+      for (let j = 0; j < props.length; j += 1) {
+        const prop = props[j];
+        if (prop.type !== 'diorama') continue;
+        const aspect = prop.aspect || (1536 / 1024);
+        const height = prop.height || 7.2;
+        return { width: height * aspect };
+      }
+    }
+    return null;
+  }
+  function closestSettleDistance() {
+    let distance = Infinity;
+    for (let i = 0; i < N; i += 1) {
+      const z = SECTIONS[i].camera?.to?.[2];
+      if (Number.isFinite(z)) distance = Math.min(distance, Math.abs(z));
+    }
+    return distance;
+  }
+  // A half-width column is often taller than the landscape illustration.
+  // Widen the vertical FOV so the settled shot still fits the column.
+  function fovForColumn(columnAspect) {
+    const base = config.fov ?? 46;
+    const frame = illustrationFrame();
+    const distance = closestSettleDistance();
+    if (!frame || !Number.isFinite(distance) || columnAspect <= 0) return base;
+    const visibleW = frame.width * 1.12;
+    const visibleH = visibleW / columnAspect;
+    const fitted = (2 * Math.atan(visibleH / (2 * distance)) * 180) / Math.PI;
+    return Math.min(90, Math.max(base, fitted));
+  }
+  function blockTransform(opacity) {
+    const rise = (1 - opacity) * 22;
+    if (splitLayout) return `translateY(calc(-50% + ${rise}px))`;
+    return `translateY(${rise}px)`;
+  }
   function overlayRect() {
     if (scroller) {
       const r = scroller.getBoundingClientRect();
@@ -575,24 +621,41 @@ export function mountScrollForge(container, config) {
   }
   function resize() {
     const rect = overlayRect();
+    const split = isSplitLayout(rect);
+    splitLayout = split;
+    container.classList.toggle('sf-root--split', split);
+    const half = rect.width / 2;
+    const textRect = split ? { ...rect, width: half } : rect;
     const w = Math.max(1, rect.width);
     const h = Math.max(1, rect.height);
     pinOverlay(stage, rect);
-    pinOverlay(copyLayer, rect);
+    pinOverlay(copyLayer, textRect);
     pinOverlay(ui, rect);
     renderer.setSize(w, h, false);
     camera.aspect = w / h;
     // A phone in portrait sees far less horizontally; widening the FOV keeps
     // each scene framed instead of cropping it to its centre.
-    const portrait = camera.aspect < 0.85;
-    camera.fov = (config.fov ?? 46) * (portrait ? 1.32 : 1);
-    if (portrait) {
-      // Copy is pinned to the bottom of the screen. Shift the projection so
-      // the diorama sits above that block instead of behind it.
-      const lift = Math.round(h * 0.18);
-      camera.setViewOffset(w, h, 0, lift, w, h);
+    const portrait = !split && camera.aspect < 0.85;
+    if (split) {
+      // Frame the illustration for the right half, but paint the sky across
+      // the whole stage. A quarter-width shift parks that framing on the right.
+      camera.fov = fovForColumn((w / 2) / h);
+      camera.setViewOffset(w, h, -Math.round(w / 4), 0, w, h);
     } else {
-      camera.clearViewOffset();
+      camera.fov = (config.fov ?? 46) * (portrait ? 1.32 : 1);
+      if (portrait) {
+        // Copy is pinned to the bottom of the screen. Shift the projection so
+        // the diorama sits above that block instead of behind it.
+        const lift = Math.round(h * 0.18);
+        camera.setViewOffset(w, h, 0, lift, w, h);
+      } else {
+        camera.clearViewOffset();
+      }
+    }
+    for (let i = 0; i < copyBlocks.length; i += 1) {
+      const block = copyBlocks[i];
+      const a = Number.parseFloat(block.style.opacity || '0') || 0;
+      block.style.transform = blockTransform(a);
     }
     // The spacer is sized from the scroll viewport, so it has to be recomputed
     // whenever that changes. Guarded: TOTAL_W does not exist until buildPath().
@@ -783,7 +846,7 @@ export function mountScrollForge(container, config) {
     ctx.dispose();
     renderer.dispose();
     container.innerHTML = '';
-    container.classList.remove('sf-root');
+    container.classList.remove('sf-root', 'sf-root--split');
     if (window.__scrollForge === api) delete window.__scrollForge;
   }
 
@@ -973,7 +1036,12 @@ function injectCSS() {
   bottom:calc(1.4rem + env(safe-area-inset-bottom,0px));font-size:.72rem;letter-spacing:.16em;
   text-transform:uppercase;color:var(--sf-ink-soft);transition:opacity .4s ease;}
 
-@media (max-width:860px){
+.sf-root--split .sf-block{top:50%;bottom:auto;
+  left:clamp(1.5rem,4vw,4.5rem);right:clamp(1.25rem,3vw,3rem);max-width:none;}
+.sf-root--split .sf-block::before{display:none;}
+.sf-root--split .sf-hint{right:50%;}
+
+@media (max-width:860px), (max-width:1199px) and (orientation:portrait){
   .sf-block{max-width:calc(100vw - 2.5rem);}
   .sf-rail__dot.is-on span{display:none;}
   .sf-topcta{display:none;}

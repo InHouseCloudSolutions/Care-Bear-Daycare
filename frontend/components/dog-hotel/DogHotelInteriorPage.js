@@ -32,7 +32,7 @@ const footerTextSx = {
 
 export default function DogHotelInteriorPage({ title, lede, children }) {
   const year = new Date().getFullYear();
-  const { webCredit } = HOME_FOOTER;
+  const { placeLine, webCredit } = HOME_FOOTER;
 
   return (
     <MarketingInteriorLayout>
@@ -54,33 +54,45 @@ export default function DogHotelInteriorPage({ title, lede, children }) {
             pb: { xs: 6, md: 8 },
             borderTop: `1px solid ${alpha(WEBSITE_INK, 0.12)}`,
             display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-            gap: { xs: 0.75, sm: 1.5 },
-            alignItems: { xs: 'flex-start', sm: 'center' },
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            gap: 0.75,
           }}
         >
           <Typography component="p" sx={footerTextSx}>
-            © {year} {HOME_BRAND.name}
-          </Typography>
-          <Typography
-            component="span"
-            aria-hidden
-            sx={{ ...footerTextSx, display: { xs: 'none', sm: 'inline' }, opacity: 0.5 }}
-          >
-            ·
+            {placeLine}
           </Typography>
           <Box
-            component={Link}
-            href={webCredit.href}
-            target="_blank"
-            rel="noopener noreferrer"
             sx={{
-              ...footerTextSx,
-              textDecoration: 'none',
-              '&:hover': { color: WEBSITE_INK, textDecoration: 'underline' },
+              display: 'flex',
+              flexDirection: { xs: 'column', sm: 'row' },
+              gap: { xs: 0.75, sm: 1.5 },
+              alignItems: { xs: 'flex-start', sm: 'center' },
             }}
           >
-            {webCredit.label}
+            <Typography component="p" sx={footerTextSx}>
+              © {year} {HOME_BRAND.name}
+            </Typography>
+            <Typography
+              component="span"
+              aria-hidden
+              sx={{ ...footerTextSx, display: { xs: 'none', sm: 'inline' }, opacity: 0.5 }}
+            >
+              ·
+            </Typography>
+            <Box
+              component={Link}
+              href={webCredit.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                ...footerTextSx,
+                textDecoration: 'none',
+                '&:hover': { color: WEBSITE_INK, textDecoration: 'underline' },
+              }}
+            >
+              {webCredit.label}
+            </Box>
           </Box>
         </Box>
       </Box>

@@ -90,7 +90,10 @@ function CarriePhoto() {
 
 export default function AboutPage() {
   return (
-    <DogHotelInteriorPage title="About">
+    <DogHotelInteriorPage
+      title="About"
+      lede="Dog daycare and overnight care from Carrie’s home in Toronto, for dogs across the GTA."
+    >
       <Box
         sx={{
           display: 'grid',

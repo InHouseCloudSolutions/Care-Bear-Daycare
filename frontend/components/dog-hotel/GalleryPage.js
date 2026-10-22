@@ -14,7 +14,10 @@ export default function GalleryPage({ images }) {
   const canLoop = images.length > 1;
 
   return (
-    <DogHotelInteriorPage title="Gallery" lede="Photos from Care Bear Daycare.">
+    <DogHotelInteriorPage
+      title="Gallery"
+      lede="Photos from Care Bear Daycare in Toronto and the GTA."
+    >
       {images.length > 0 ? (
         <Box
           sx={{
