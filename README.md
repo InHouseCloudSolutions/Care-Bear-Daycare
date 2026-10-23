@@ -15,7 +15,7 @@ Marketing site for Care Bear Daycare, a small boarding hotel for dogs. The publi
 
 Before tightening Care and safety copy with hard numbers (capacity, vaccines, vet, certifications), ask Carrie the questions in [docs/carrie-care-rules-questions.md](docs/carrie-care-rules-questions.md).
 
-**Book a stay** opens the Rover profile (`ROVER_BOOKING_URL` in `frontend/consts/routes.js`). That URL is a placeholder until the real profile is set.
+**Book a stay** opens Carrie's Rover profile (`ROVER_BOOKING_URL` in `frontend/consts/routes.js`): https://www.rover.com/sit/carrib24913. Notes for a later live reviews fetch are in [docs/rover-reviews.md](docs/rover-reviews.md).
 
 **Contact** opens a mail message to `contact@carebeardaycare.ca` with the subject "daycare consultation".
 

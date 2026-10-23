@@ -2184,7 +2184,7 @@
       "source_location": "L382",
       "_origin": "ast",
       "id": "design_studio_design_studio_glass_herotextlegibility",
-      "community": 1,
+      "community": 2,
       "norm_label": "herotextlegibility"
     },
     {
@@ -2511,7 +2511,7 @@
       "label": "StarRating()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L107",
+      "source_location": "L111",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_starrating",
       "community": 28,
@@ -2521,7 +2521,7 @@
       "label": "ReviewCard()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L130",
+      "source_location": "L134",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewcard",
       "community": 28,
@@ -2531,7 +2531,7 @@
       "label": "BookStayButton()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L197",
+      "source_location": "L201",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bookstaybutton",
       "community": 65,
@@ -2541,7 +2541,7 @@
       "label": "ReviewsPage()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L231",
+      "source_location": "L235",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewspage",
       "community": 28,
@@ -2591,7 +2591,7 @@
       "label": "sortReviewsNewestFirst()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L167",
+      "source_location": "L183",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_sortreviewsnewestfirst",
       "community": 28,
@@ -2601,7 +2601,7 @@
       "label": "countReviews()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L171",
+      "source_location": "L187",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_countreviews",
       "community": 28,
@@ -2611,7 +2611,7 @@
       "label": "averageStarRating()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/reviews-data.js",
-      "source_location": "L176",
+      "source_location": "L192",
       "_origin": "ast",
       "id": "dog_hotel_reviews_data_averagestarrating",
       "community": 28,
@@ -3074,7 +3074,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "scroll_forge_stay_world_config_card",
-      "community": 4,
+      "community": 68,
       "norm_label": "card()"
     },
     {
@@ -3204,7 +3204,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homeherobackground",
-      "community": 78,
+      "community": 70,
       "norm_label": "homeherobackground.js"
     },
     {
@@ -3214,7 +3214,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "home_landing_homeherobackground_homeherobackground",
-      "community": 78,
+      "community": 70,
       "norm_label": "homeherobackground()"
     },
     {
@@ -3354,7 +3354,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_herotextlegibility",
-      "community": 1,
+      "community": 2,
       "norm_label": "herotextlegibility"
     },
     {
@@ -3374,7 +3374,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingshell",
-      "community": 70,
+      "community": 103,
       "norm_label": "homelandingshell.js"
     },
     {
@@ -3384,7 +3384,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_createlandingtheme",
-      "community": 70,
+      "community": 103,
       "norm_label": "createlandingtheme()"
     },
     {
@@ -3394,7 +3394,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_homelandingshell",
-      "community": 70,
+      "community": 103,
       "norm_label": "homelandingshell()"
     },
     {
@@ -3644,7 +3644,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_marketingnavdesktopitem",
-      "community": 0,
+      "community": 65,
       "norm_label": "marketingnavdesktopitem()"
     },
     {
@@ -3984,7 +3984,7 @@
       "source_location": "L206",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_hero_slides",
-      "community": 78,
+      "community": 70,
       "norm_label": "home_hero_slides"
     },
     {
@@ -3994,7 +3994,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_font",
-      "community": 70,
+      "community": 103,
       "norm_label": "home-landing-font.js"
     },
     {
@@ -4004,7 +4004,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_home_landing_font_homemontserrat",
-      "community": 70,
+      "community": 103,
       "norm_label": "homemontserrat"
     },
     {
@@ -4064,7 +4064,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavdraweritems_usemarketingnavdraweritems",
-      "community": 0,
+      "community": 102,
       "norm_label": "usemarketingnavdraweritems()"
     },
     {
@@ -4434,7 +4434,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext",
-      "community": 78,
+      "community": 13,
       "norm_label": "homeheroslidescontext.js"
     },
     {
@@ -4444,7 +4444,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_homeheroslidescontext",
-      "community": 78,
+      "community": 13,
       "norm_label": "homeheroslidescontext"
     },
     {
@@ -4464,7 +4464,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_homeheroslidesprovider",
-      "community": 78,
+      "community": 13,
       "norm_label": "homeheroslidesprovider()"
     },
     {
@@ -4474,7 +4474,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_usehomeheroslides",
-      "community": 78,
+      "community": 13,
       "norm_label": "usehomeheroslides()"
     },
     {
@@ -9394,7 +9394,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch",
-      "community": 89,
+      "community": 78,
       "norm_label": "module-sketch.md"
     },
     {
@@ -9504,7 +9504,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_ihcs_conventions",
-      "community": 86,
+      "community": 78,
       "norm_label": "ihcs conventions"
     },
     {
@@ -9724,7 +9724,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "readme_stack",
-      "community": 86,
+      "community": 78,
       "norm_label": "stack"
     },
     {
@@ -9856,6 +9856,56 @@
       "id": "docs_carrie_care_rules_questions_answer_log",
       "community": 104,
       "norm_label": "answer log"
+    },
+    {
+      "label": "rover-reviews.md",
+      "file_type": "document",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_rover_reviews",
+      "community": 105,
+      "norm_label": "rover-reviews.md"
+    },
+    {
+      "label": "Rover reviews \u2014 notes for a later fetch",
+      "file_type": "document",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_rover_reviews_rover_reviews_notes_for_a_later_fetch",
+      "community": 105,
+      "norm_label": "rover reviews \u2014 notes for a later fetch"
+    },
+    {
+      "label": "Profile",
+      "file_type": "document",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "docs_rover_reviews_profile",
+      "community": 105,
+      "norm_label": "profile"
+    },
+    {
+      "label": "API",
+      "file_type": "document",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "docs_rover_reviews_api",
+      "community": 105,
+      "norm_label": "api"
+    },
+    {
+      "label": "Latest static entry",
+      "file_type": "document",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "docs_rover_reviews_latest_static_entry",
+      "community": 105,
+      "norm_label": "latest static entry"
     },
     {
       "label": "README.md",
@@ -10181,7 +10231,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 78,
+      "community": 70,
       "norm_label": "handleslidechange",
       "id": "home_landing_homeherobackground_handleslidechange"
     },
@@ -10194,7 +10244,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 78,
+      "community": 70,
       "norm_label": "home_hero_fade_ms",
       "id": "home_landing_home_landing_data_home_hero_fade_ms"
     },
@@ -10208,7 +10258,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI theme font family so drawer portals inherit Nunito outside the shell className.",
-      "community": 70,
+      "community": 103,
       "norm_label": "home_landing_font_family",
       "id": "home_landing_home_landing_font_home_landing_font_family"
     },
@@ -11373,7 +11423,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 2\u20134. Primary flow, edge cases, and design reference (Tailwind, Figma, or existing MUI). i18n probe is scoped to the IHCS website.",
-      "community": 105,
+      "community": 90,
       "norm_label": "branch 5 ux and flows",
       "id": "write_a_prd_interview_guide_branch5_ux"
     },
@@ -11387,7 +11437,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 3\u20135. Performance, accessibility, security, and reliability, or an explicit statement of no special requirements.",
-      "community": 105,
+      "community": 90,
       "norm_label": "branch 6 non-functional requirements",
       "id": "write_a_prd_interview_guide_branch6_nfr"
     },
@@ -11401,7 +11451,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 3\u20135. MVP versus later phases, feature flags, beta users, client sign-off, and launch assets.",
-      "community": 105,
+      "community": 90,
       "norm_label": "branch 7 rollout and phasing",
       "id": "write_a_prd_interview_guide_branch7_rollout"
     },
@@ -11415,7 +11465,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on all prior branches. Manual scenarios per role, API method/path/status expectations, and regression areas that prove Branch 1 success.",
-      "community": 105,
+      "community": 90,
       "norm_label": "branch 8 acceptance and verification",
       "id": "write_a_prd_interview_guide_branch8_acceptance"
     },
@@ -11443,7 +11493,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Pure input-to-output logic with injected plain data, no UI/framework/ORM/globals/request/hooks, and a stable signature so it can be unit-tested in isolation.",
-      "community": 103,
+      "community": 89,
       "norm_label": "deep module",
       "id": "write_a_prd_module_sketch_deep_module"
     },
@@ -11457,7 +11507,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Viewsets, route pages, and hooks stay thin and delegate rules downward. Tested with integration or UI tests only.",
-      "community": 103,
+      "community": 89,
       "norm_label": "shallow orchestrator",
       "id": "write_a_prd_module_sketch_shallow_module"
     },
@@ -11471,7 +11521,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Dependency shape: Route or ViewSet calls an orchestrator hook or service, which calls deep modules, with API client or serializer beside the orchestrator.",
-      "community": 103,
+      "community": 89,
       "norm_label": "route to orchestrator to deep module",
       "id": "write_a_prd_module_sketch_dependency_chain"
     },
@@ -11485,7 +11535,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sketch splits into backend models/serializers/services/viewsets, frontend pages/components/hooks/API clients, and cross-cutting middleware, auth, env, Docker, and migrations.",
-      "community": 89,
+      "community": 78,
       "norm_label": "backend frontend cross-cutting layers",
       "id": "write_a_prd_module_sketch_layers"
     },
@@ -11499,7 +11549,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Columns: ID, module path, layer, Create/Modify/Extend, responsibility, deep flag, test approach, dependencies. Example pairs a schedule service with a thin viewset and a frontend domain preview.",
-      "community": 62,
+      "community": 78,
       "norm_label": "module table m-001",
       "id": "write_a_prd_module_sketch_module_table"
     },
@@ -11541,7 +11591,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Maps requirement IDs to module IDs. The skill requires every P0 to map to at least one module.",
-      "community": 62,
+      "community": 78,
       "norm_label": "requirement to module traceability",
       "id": "write_a_prd_template_traceability"
     },
@@ -11919,7 +11969,7 @@
       "author": null,
       "contributor": null,
       "rationale": "docker compose up --build --remove-orphans serves http://127.0.0.1:3010. The frontend container runs yarn dev on port 3000; Caddy publishes 3010. Outside Docker: cd frontend && yarn install && yarn dev.",
-      "community": 90,
+      "community": 78,
       "norm_label": "local docker compose dev",
       "id": "readme_local_docker"
     },
@@ -11933,7 +11983,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Builds frontend/Dockerfile.local, sets WATCHPACK_POLLING=true, and bind-mounts ./frontend to /code while keeping anonymous volumes for /code/node_modules and /code/.next.",
-      "community": 90,
+      "community": 78,
       "norm_label": "compose frontend service",
       "id": "docker_compose_frontend"
     },
@@ -11947,7 +11997,7 @@
       "author": null,
       "contributor": null,
       "rationale": "reverse-proxy uses caddy:latest, depends_on frontend, publishes 3010:3010, and mounts ./Caddyfile at /etc/caddy/Caddyfile.",
-      "community": 90,
+      "community": 78,
       "norm_label": "compose caddy reverse proxy",
       "id": "docker_compose_caddy"
     },
@@ -28712,6 +28762,46 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_rover_reviews",
+      "target": "docs_rover_reviews_rover_reviews_notes_for_a_later_fetch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_rover_reviews_rover_reviews_notes_for_a_later_fetch",
+      "target": "docs_rover_reviews_api"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_rover_reviews_rover_reviews_notes_for_a_later_fetch",
+      "target": "docs_rover_reviews_latest_static_entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rover-reviews.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_rover_reviews_rover_reviews_notes_for_a_later_fetch",
+      "target": "docs_rover_reviews_profile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/README.md",
       "source_location": "L3",
       "weight": 1.0,
@@ -33323,5 +33413,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "f446981164804e1a57c2cb51d07a4cf131f39797"
+  "built_at_commit": "a41299783fc62913ecdcf6ed789132d67b7a3e54"
 }

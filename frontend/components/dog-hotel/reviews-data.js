@@ -32,6 +32,22 @@ export function reviewVerificationLabel(source) {
 export const REVIEWS = [
   {
     source: 'rover',
+    id: 'marco-sia-2026-10-23',
+    stayedOn: '2026-10-23',
+    dogName: 'Marco & Sia',
+    ownerFirstName: 'L',
+    stars: 5,
+    quote:
+      'We’re so grateful to Carrie for taking such amazing care of our two babies, Marco and Sia! With Marco still being a puppy and Sia being our senior girl, it means so much to us knowing they’re both getting the love and attention they need. Carrie was wonderful with them and kept us updated while we were away, which really put our minds at ease. It was such a relief knowing they were in such good hands. We couldn’t be happier and would absolutely trust Carrie with our babies again. Highly recommend her! ❤️🐾',
+    photoSrc: '/imgs/reviews/marco.bmp',
+    photoAlt: 'Marco',
+    photos: [
+      { src: '/imgs/reviews/marco.bmp', alt: 'Marco' },
+      { src: '/imgs/reviews/sia.bmp', alt: 'Sia' },
+    ],
+  },
+  {
+    source: 'rover',
     id: 'AelVD6oQ',
     stayedOn: '2026-09-28',
     dogName: 'Buddy',

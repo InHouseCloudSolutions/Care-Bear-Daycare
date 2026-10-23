@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { Box, Button, Link as MuiLink, Typography } from '@mui/material';
+import { Box, Button, Link as MuiLink, Tooltip, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { HOME_BRAND } from '@/components/home-landing/home-landing-data';
 import { isExternalHref, ROVER_BOOKING_URL } from '@/consts/routes';
@@ -94,7 +94,11 @@ function ReviewPhoto({ review }) {
         if (!src) {
           return <Box key={key} role="img" aria-label="No photo provided" sx={frameSx} />;
         }
-        return <Box key={key} component="img" src={src} alt={alt} sx={frameSx} />;
+        return (
+          <Tooltip key={key} title={alt} enterDelay={350}>
+            <Box component="img" src={src} alt={alt} sx={frameSx} />
+          </Tooltip>
+        );
       })}
     </Box>
   );

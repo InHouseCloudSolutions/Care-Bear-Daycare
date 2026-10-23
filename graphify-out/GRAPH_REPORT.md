@@ -1,16 +1,16 @@
-# Graph Report - doghotel  (2026-10-22)
+# Graph Report - doghotel  (2026-10-23)
 
 ## Corpus Check
-- 131 files · ~1,163,802 words
+- 132 files · ~1,164,099 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1253 nodes · 1763 edges · 109 communities (98 shown, 11 thin omitted)
+- 1258 nodes · 1767 edges · 109 communities (98 shown, 11 thin omitted)
 - Extraction: 90% EXTRACTED · 9% INFERRED · 1% AMBIGUOUS · INFERRED: 163 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f4469811`
+- Built from commit: `a4129978`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -207,16 +207,16 @@
 ## Communities (109 total, 11 thin omitted)
 
 ### Community 0 - "Marketing Nav Tree"
-Cohesion: 0.20
-Nodes (18): HOME_NAV_BAR_PX, HOME_NAV_BAR_PY, HOME_NAV_DESKTOP_DISPLAY, HOME_NAV_ITEMS_BASE, HOME_NAV_MOBILE_DISPLAY, MARKETING_INTERIOR_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR, HERO_MENU_ICON_SX (+10 more)
+Cohesion: 0.21
+Nodes (16): HOME_NAV_BAR_PX, HOME_NAV_BAR_PY, HOME_NAV_DESKTOP_DISPLAY, HOME_NAV_ITEMS_BASE, HOME_NAV_MOBILE_DISPLAY, MARKETING_INTERIOR_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR, HERO_MENU_ICON_SX (+8 more)
 
 ### Community 1 - "About and Hero Slides"
-Cohesion: 0.20
-Nodes (14): heroTextLegibility, HOME_BRAND, HOME_FOOTER, HOME_FOOTER_SOCIAL_LINKS, footerLinkSx, footerTextSx, HomeLandingFooter(), SOCIAL_ICONS (+6 more)
+Cohesion: 0.24
+Nodes (12): HOME_BRAND, HOME_FOOTER, HOME_FOOTER_SOCIAL_LINKS, footerLinkSx, footerTextSx, HomeLandingFooter(), SOCIAL_ICONS, socialIconButtonSx (+4 more)
 
 ### Community 2 - "Glass Form Surfaces"
-Cohesion: 0.08
-Nodes (37): FORM_PAGE_DESKTOP_BP, FORM_PAGE_MOBILE_MAIN_SCROLL_SX, FORM_PAGE_MOBILE_NATURAL_HEIGHT_SX, GLASS_FIELD_SURFACE_SX, GLASS_FIELD_WRAPPER_SX, GLASS_FORM_FOOTER_SX, GLASS_FORM_PAIR_STACK_SPACING, GLASS_FORM_PANEL_HORIZONTAL_PAD (+29 more)
+Cohesion: 0.07
+Nodes (39): FORM_PAGE_DESKTOP_BP, FORM_PAGE_MOBILE_MAIN_SCROLL_SX, FORM_PAGE_MOBILE_NATURAL_HEIGHT_SX, GLASS_FIELD_SURFACE_SX, GLASS_FIELD_WRAPPER_SX, GLASS_FORM_FOOTER_SX, GLASS_FORM_PAIR_STACK_SPACING, GLASS_FORM_PANEL_HORIZONTAL_PAD (+31 more)
 
 ### Community 3 - "Public Route Pages"
 Cohesion: 0.09
@@ -224,7 +224,7 @@ Nodes (42): box(), boxGeo(), building(), buildProp(), buildSceneGroup(), bush(),
 
 ### Community 4 - "App Layout and SEO"
 Cohesion: 0.06
-Nodes (40): frontend-dev agent, Thin pages, EmotionCacheProvider(), marketingMetadataHost(), metadata, metadataBaseFromHost(), OG_IMAGE_PATH, ogImageUrl() (+32 more)
+Nodes (39): frontend-dev agent, Thin pages, EmotionCacheProvider(), marketingMetadataHost(), metadata, metadataBaseFromHost(), OG_IMAGE_PATH, ogImageUrl() (+31 more)
 
 ### Community 5 - "Theme and Robots Meta"
 Cohesion: 0.35
@@ -259,8 +259,8 @@ Cohesion: 0.19
 Nodes (16): themeMode localStorage, Settings persist only after hydration, SettingsContext, SettingsProvider(), useSettings(), canUseStorage(), clearSettings(), readSettingsRaw() (+8 more)
 
 ### Community 13 - "Gallery Image Helpers"
-Cohesion: 0.18
-Nodes (15): NIICO portfolio collections, PORTFOLIO_COLLECTION_HOVER_SLIDE_COUNTS, portfolio-scraper agent, homeHeroSlideShape, galleryImageFromApi(), galleryImagesFromApi(), galleryMediaSrc(), normalizeGalleryImageList() (+7 more)
+Cohesion: 0.14
+Nodes (18): NIICO portfolio collections, PORTFOLIO_COLLECTION_HOVER_SLIDE_COUNTS, portfolio-scraper agent, HomeHeroSlidesContext, homeHeroSlideShape, HomeHeroSlidesProvider(), useHomeHeroSlides(), galleryImageFromApi() (+10 more)
 
 ### Community 14 - "Brand Marketing Tokens"
 Cohesion: 0.25
@@ -411,8 +411,8 @@ Cohesion: 0.50
 Nodes (3): DevConsoleSuppressor(), SUPPRESSED, ESLint configuration
 
 ### Community 62 - "Community 62"
-Cohesion: 0.18
-Nodes (10): Deferred Decision, Module Table M-001, Decision Log, issues/prd-<slug>.md, Phase 5 Write PRD, Phase 6 Confirm, Writing rules, PRD Template (+2 more)
+Cohesion: 0.22
+Nodes (8): Deferred Decision, Decision Log, issues/prd-<slug>.md, Phase 5 Write PRD, Phase 6 Confirm, Writing rules, PRD Template, P0 P1 P2 Requirements
 
 ### Community 63 - "Community 63"
 Cohesion: 0.14
@@ -423,8 +423,8 @@ Cohesion: 0.15
 Nodes (13): 1.1 Marketing tokens, 1.2 Staff dark (teal charcoal), 1.3 Semantic colors that are not the brand, 1. Color, 2. Typography, 3.1 Hero buttons, 3.2 Nav, 3.3 Forms (+5 more)
 
 ### Community 65 - "Community 65"
-Cohesion: 0.24
-Nodes (11): isExternalHref(), BookStayButton(), HOME_NAV_LINK_TYPOGRAPHY_SX, isMarketingNavLinkActive(), marketingNavLinkHoverUnderlineSx(), normalizeMarketingNavPath(), externalLinkProps(), navItemShape (+3 more)
+Cohesion: 0.23
+Nodes (12): isExternalHref(), BookStayButton(), HOME_NAV_LINK_TYPOGRAPHY_SX, isMarketingNavLinkActive(), marketingNavLinkHoverUnderlineSx(), normalizeMarketingNavPath(), externalLinkProps(), MarketingNavDesktopItem() (+4 more)
 
 ### Community 66 - "Community 66"
 Cohesion: 0.20
@@ -436,7 +436,7 @@ Nodes (13): Composition rules, Gotchas (hard-won), Palette, References, scroll-f
 
 ### Community 68 - "Community 68"
 Cohesion: 0.06
-Nodes (34): AboutRoute(), metadata, AboutPage(), bodySx, CARE_POINTS, CARRIE_PHOTO_SRC, CarriePhoto(), DOGS_PHOTO_SRC (+26 more)
+Nodes (35): AboutRoute(), metadata, AboutPage(), bodySx, CARE_POINTS, CARRIE_PHOTO_SRC, CarriePhoto(), DOGS_PHOTO_SRC (+27 more)
 
 ### Community 69 - "Community 69"
 Cohesion: 0.47
@@ -444,7 +444,7 @@ Nodes (4): HOME_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_ITEMS_BASE, MARKETING_NAV
 
 ### Community 70 - "Community 70"
 Cohesion: 0.16
-Nodes (14): LUXURY_GRADIENT_SX, HOME_LANDING_FONT_FAMILY, homeMontserrat, createLandingTheme(), HomeLandingShell(), MARKETING_FORM_COLUMN_INNER_SX, MARKETING_FORM_COLUMN_SX, MARKETING_FORM_FLEX_SECTION_SX (+6 more)
+Nodes (14): HOME_HERO_FADE_MS, HOME_HERO_SLIDES, LUXURY_GRADIENT_SX, handleSlideChange, HomeHeroBackground(), MARKETING_FORM_COLUMN_INNER_SX, MARKETING_FORM_COLUMN_SX, MARKETING_FORM_FLEX_SECTION_SX (+6 more)
 
 ### Community 71 - "Community 71"
 Cohesion: 0.18
@@ -475,8 +475,8 @@ Cohesion: 0.22
 Nodes (9): Branch 1 — Problem and success (root), Branch 2 — Users and permissions, Branch 3 — Product surface and scope, Branch 4 — Data and integrations, Branch 5 — UX and flows, Branch 6 — Non-functional requirements, Branch 7 — Rollout and phasing, Branch 8 — Acceptance and verification (+1 more)
 
 ### Community 78 - "Community 78"
-Cohesion: 0.36
-Nodes (7): HomeHeroSlidesContext, HomeHeroSlidesProvider(), useHomeHeroSlides(), HOME_HERO_FADE_MS, HOME_HERO_SLIDES, handleSlideChange, HomeHeroBackground()
+Cohesion: 0.28
+Nodes (8): Compose Caddy Reverse Proxy, Compose Frontend Service, Local Docker Compose Dev, Stack, IHCS conventions, Backend Frontend Cross-Cutting Layers, Module Table M-001, Requirement to Module Traceability
 
 ### Community 80 - "Community 80"
 Cohesion: 0.24
@@ -499,8 +499,8 @@ Cohesion: 0.33
 Nodes (5): Do not, Read first, Return to coordinator, Scope per run, You own
 
 ### Community 86 - "Community 86"
-Cohesion: 0.22
-Nodes (10): Marketing Layout Grid, Cream Interior Nav, Care Bear Daycare, Layout, License, Local development, Public pages, Rover Booking URL (+2 more)
+Cohesion: 0.25
+Nodes (8): Marketing Layout Grid, Cream Interior Nav, Care Bear Daycare, Layout, License, Local development, Public pages, Rover Booking URL
 
 ### Community 87 - "Community 87"
 Cohesion: 0.40
@@ -511,12 +511,12 @@ Cohesion: 0.40
 Nodes (4): CONTEXT.md Format, Rules, Single vs multi-context repos, Structure
 
 ### Community 89 - "Community 89"
-Cohesion: 0.27
-Nodes (7): Backend Frontend Cross-Cutting Layers, Phase 1 Deep Intake, Phase 2 Repo Discovery, Phase 3 Design-Tree Interview, Phase 4 Module Sketch, Working Notes, Current State and Verified Assertions
+Cohesion: 0.24
+Nodes (9): Deep Module, Route to Orchestrator to Deep Module, Shallow Orchestrator, Phase 1 Deep Intake, Phase 2 Repo Discovery, Phase 3 Design-Tree Interview, Phase 4 Module Sketch, Working Notes (+1 more)
 
 ### Community 90 - "Community 90"
-Cohesion: 0.32
-Nodes (8): Compose Caddy Reverse Proxy, Compose Frontend Service, Local Docker Compose Dev, Branch 1 Problem and Success, Branch 2 Users and Permissions, Branch 3 Product Surface and Scope, Branch 4 Data and Integrations, ES Admin DS Manager Kiosk Roles
+Cohesion: 0.28
+Nodes (9): Branch 1 Problem and Success, Branch 2 Users and Permissions, Branch 3 Product Surface and Scope, Branch 4 Data and Integrations, Branch 5 UX and Flows, Branch 6 Non-Functional Requirements, Branch 7 Rollout and Phasing, Branch 8 Acceptance and Verification (+1 more)
 
 ### Community 91 - "Community 91"
 Cohesion: 0.29
@@ -539,20 +539,20 @@ Cohesion: 0.29
 Nodes (7): Confirm with user, Extraction mindset, Graphify (mandatory), Phase 4 exit criteria, Phase 4 — Module sketch, Purpose, What to produce
 
 ### Community 102 - "Community 102"
-Cohesion: 0.53
-Nodes (4): flattenNavItemsForDrawer(), AUTH_NAV_LABELS, buildMobileDrawerItems(), splitAuthNavItems()
+Cohesion: 0.48
+Nodes (5): flattenNavItemsForDrawer(), AUTH_NAV_LABELS, buildMobileDrawerItems(), splitAuthNavItems(), useMarketingNavDrawerItems()
 
 ### Community 103 - "Community 103"
-Cohesion: 1.00
-Nodes (3): Deep Module, Route to Orchestrator to Deep Module, Shallow Orchestrator
+Cohesion: 0.67
+Nodes (4): HOME_LANDING_FONT_FAMILY, homeMontserrat, createLandingTheme(), HomeLandingShell()
 
 ### Community 104 - "Community 104"
 Cohesion: 0.20
 Nodes (9): Answer log, Capacity and home, Daily rhythm and updates, FAQ leftovers, If something goes wrong, Questions for Carrie — Care and safety copy, Trust signals (only if true), Vaccines, health, and packing (+1 more)
 
 ### Community 105 - "Community 105"
-Cohesion: 0.67
-Nodes (4): Branch 5 UX and Flows, Branch 6 Non-Functional Requirements, Branch 7 Rollout and Phasing, Branch 8 Acceptance and Verification
+Cohesion: 0.40
+Nodes (4): API, Latest static entry, Profile, Rover reviews — notes for a later fetch
 
 ### Community 106 - "Community 106"
 Cohesion: 0.33
@@ -587,7 +587,7 @@ Nodes (4): Graphify first (mandatory), Phase 2 — Repo discovery, What to produ
   frontend/public/imgs/home/slide-007.jpg · relation: semantically_similar_to
 
 ## Knowledge Gaps
-- **517 isolated node(s):** `DEFAULT_PALETTE`, `PROPS`, `DIR`, `MIME`, `errors` (+512 more)
+- **520 isolated node(s):** `DEFAULT_PALETTE`, `PROPS`, `DIR`, `MIME`, `errors` (+515 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
