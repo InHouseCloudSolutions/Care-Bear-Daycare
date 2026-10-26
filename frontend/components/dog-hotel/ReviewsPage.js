@@ -240,7 +240,7 @@ export default function ReviewsPage() {
   return (
     <DogHotelInteriorPage
       title="Reviews"
-      lede="What owners say about dog daycare and overnight stays in Toronto and the GTA."
+      lede="What owners say about dog daycare and overnight stays at Care Bear Daycare in Toronto and the GTA."
     >
       <Box sx={{ mt: 2, maxWidth: 640 }}>
         {count > 0 ? (
