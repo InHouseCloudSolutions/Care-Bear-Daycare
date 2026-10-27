@@ -73,7 +73,7 @@ export default function RouteThemeShell({ children, variant = 'website' }) {
           enableSplash
           splashVariant={isStaff ? 'editorial' : 'quiet-centre'}
         >
-          <AuthGateClient protectedPrefixes={['/staff']}>
+          <AuthGateClient protectedPrefixes={['/staff', '/account']}>
             {isStaff ? (
               <Box
                 sx={{

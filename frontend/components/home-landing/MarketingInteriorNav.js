@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Box, IconButton, Stack } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import { WEBSITE_INK } from '@/consts/website-theme';
+import AuthNavLinks from '@/components/pet-parent/AuthNavLinks';
+import useAuthNavItem from '@/components/pet-parent/useAuthNavItem';
 import { useMarketingInteriorNavItems } from './useMarketingNavItems';
 import MarketingNavDrawerPanel from './MarketingNavDrawerPanel';
 import useMarketingNavDrawerItems from './useMarketingNavDrawerItems';
@@ -27,7 +29,9 @@ const navItemShape = PropTypes.shape({
 export default function MarketingInteriorNav({ logoHref = '/', items: itemsProp, sx }) {
   const defaultItems = useMarketingInteriorNavItems();
   const items = itemsProp ?? defaultItems;
-  const drawerItems = useMarketingNavDrawerItems(items);
+  const baseDrawerItems = useMarketingNavDrawerItems(items);
+  const authItem = useAuthNavItem();
+  const drawerItems = useMemo(() => [...baseDrawerItems, authItem], [baseDrawerItems, authItem]);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const openDrawer = () => setDrawerOpen(true);
   const closeDrawer = () => setDrawerOpen(false);
@@ -80,6 +84,11 @@ export default function MarketingInteriorNav({ logoHref = '/', items: itemsProp,
                 activeColor={WEBSITE_INK}
               />
             ))}
+            <AuthNavLinks
+              underlineColor={MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR}
+              color={alpha(WEBSITE_INK, 0.72)}
+              activeColor={WEBSITE_INK}
+            />
           </Stack>
         </Box>
 

@@ -44,3 +44,12 @@ export function writeStorageItem(key, value) {
     // ignore write failures (private mode, quota, etc.)
   }
 }
+
+export function removeStorageItem(key) {
+  if (!canUseStorage()) return;
+  try {
+    window.localStorage.removeItem(key);
+  } catch {
+    // ignore remove failures
+  }
+}

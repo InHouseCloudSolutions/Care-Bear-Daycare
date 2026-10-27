@@ -105,9 +105,9 @@
     "semantic_hash": "2b432b9128edff66f974c0f901bdb2c4"
   },
   "frontend/components/home-landing/HomeHeroNav.js": {
-    "mtime": 1792411734.4388478,
-    "ast_hash": "96760adb9f677e3905790bc80472f029",
-    "semantic_hash": "96760adb9f677e3905790bc80472f029"
+    "mtime": 1793113973.4683013,
+    "ast_hash": "d8ecc40c7c7fe7a08e378a8a2e458150",
+    "semantic_hash": ""
   },
   "frontend/components/home-landing/HomeLandingFooter.js": {
     "mtime": 1792697701.0475304,
@@ -140,9 +140,9 @@
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingInteriorNav.js": {
-    "mtime": 1792411734.4398491,
-    "ast_hash": "996767ab4d44d950a9669f33b27c174c",
-    "semantic_hash": "996767ab4d44d950a9669f33b27c174c"
+    "mtime": 1793113972.6888556,
+    "ast_hash": "2f0a4e790e6b691c9899df79f3debe90",
+    "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingNavDesktopItem.js": {
     "mtime": 1792411734.4354174,
@@ -190,9 +190,9 @@
     "semantic_hash": "cadcf329d4f4b3d9fe81a0c5372df108"
   },
   "frontend/components/layouts/RouteThemeShell.js": {
-    "mtime": 1787575762.7297454,
-    "ast_hash": "59108beaecfa9f076a86fe9f4e09830a",
-    "semantic_hash": "59108beaecfa9f076a86fe9f4e09830a"
+    "mtime": 1793113876.043822,
+    "ast_hash": "968cab0be4513c2d15b5173648de58eb",
+    "semantic_hash": ""
   },
   "frontend/components/loading-screen-fonts.js": {
     "mtime": 1792411733.9810543,
@@ -215,8 +215,8 @@
     "semantic_hash": ""
   },
   "frontend/consts/routes.js": {
-    "mtime": 1792529341.1377802,
-    "ast_hash": "db1ca81a5d726f7a271b68ea3be927c6",
+    "mtime": 1793113815.419867,
+    "ast_hash": "e807595e6d445356e984519f813cbfa0",
     "semantic_hash": ""
   },
   "frontend/consts/website-theme.js": {
@@ -225,9 +225,9 @@
     "semantic_hash": "a4eb8f4cd27293888517a83002e3c48b"
   },
   "frontend/contexts/AuthContext.js": {
-    "mtime": 1792411733.9636078,
-    "ast_hash": "62d7d48ef62357bfefcbbe641d1ad9b6",
-    "semantic_hash": "62d7d48ef62357bfefcbbe641d1ad9b6"
+    "mtime": 1793113871.7362177,
+    "ast_hash": "a4121da8836f4d99a53350cca8a8a99f",
+    "semantic_hash": ""
   },
   "frontend/contexts/HomeHeroSlidesContext.js": {
     "mtime": 1789577222.5931742,
@@ -275,8 +275,8 @@
     "semantic_hash": "121f80f8e590ed0c1f1255290ce1f39f"
   },
   "frontend/next.config.js": {
-    "mtime": 1792420042.5777092,
-    "ast_hash": "d59a89a92381679db39f7d448f4ddfd2",
+    "mtime": 1793113833.6197379,
+    "ast_hash": "d92a56df41a8bb721420759e4a67e9de",
     "semantic_hash": ""
   },
   "frontend/package.json": {
@@ -365,9 +365,9 @@
     "semantic_hash": "33e7c1a9dc1bc06426934b440691fe0b"
   },
   "frontend/utils/seo.js": {
-    "mtime": 1792411734.4388478,
-    "ast_hash": "f8e37b4180cd9e3ae55e5a655004f36c",
-    "semantic_hash": "f8e37b4180cd9e3ae55e5a655004f36c"
+    "mtime": 1793113824.9004035,
+    "ast_hash": "80972804af632a3c75f88cac6fc0798f",
+    "semantic_hash": ""
   },
   "frontend/utils/seo.test.js": {
     "mtime": 1792529345.7851791,
@@ -580,9 +580,9 @@
     "semantic_hash": ""
   },
   "docker-compose.yml": {
-    "mtime": 1792414625.0598662,
-    "ast_hash": "f35171a7f4c160d4633ad9521c9f1e5d",
-    "semantic_hash": "f35171a7f4c160d4633ad9521c9f1e5d"
+    "mtime": 1793113841.5789096,
+    "ast_hash": "2849f294565aa3903abe70d99e197ce2",
+    "semantic_hash": ""
   },
   "frontend/.yarnrc.yml": {
     "mtime": 1778166040.7269642,
@@ -715,8 +715,8 @@
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/ReviewsPage.js": {
-    "mtime": 1793039357.5097692,
-    "ast_hash": "395e5222b3709bba4db9cf03635578b1",
+    "mtime": 1793040514.2144973,
+    "ast_hash": "9af61ad2aa8fdd968a9427ad0e47e46d",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/reviews-data.js": {
@@ -892,6 +892,96 @@
   "docs/rover-reviews.md": {
     "mtime": 1792788682.8645656,
     "ast_hash": "8ad6b3bb0fb4666fb77c4af76d035af6",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/AccountDogsSection.js": {
+    "mtime": 1793114186.4418757,
+    "ast_hash": "a1be181e0aa114fa8152693716f0bf8a",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/AccountProfilePage.js": {
+    "mtime": 1793114194.0291033,
+    "ast_hash": "7b5d103ea0cdf9bab841f2aa27050f41",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/AccountYouSection.js": {
+    "mtime": 1793114138.3545225,
+    "ast_hash": "a10b305aca26abf81f178fcc81fc5e97",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/ApiTestPage.js": {
+    "mtime": 1793114201.425836,
+    "ast_hash": "b74bc71e3c0b79050ccb059f2e988a47",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/AuthNavLinks.js": {
+    "mtime": 1793113934.6677072,
+    "ast_hash": "fa533fb2d689902a2dacb07084f2241d",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/DogCard.js": {
+    "mtime": 1793114179.6702318,
+    "ast_hash": "24d13ed3850b0c7c68316cf008d79c05",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/DogForm.js": {
+    "mtime": 1793114153.8072145,
+    "ast_hash": "3c308f2274140faf8227c2f844c5afa5",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/DogVaccines.js": {
+    "mtime": 1793114171.9378579,
+    "ast_hash": "4ed3742370b39cb92feac8cf0da04057",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/LoginPage.js": {
+    "mtime": 1793114106.9541562,
+    "ast_hash": "c0bd52f8cfaa4ad803146abd5c425079",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/RegisterPage.js": {
+    "mtime": 1793114123.8384683,
+    "ast_hash": "d476e3087d7faf06067318ded0ba3169",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/pet-parent-styles.js": {
+    "mtime": 1793114095.0827193,
+    "ast_hash": "8cf947cf94552e573e620fba3e60ad39",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/useAuthNavItem.js": {
+    "mtime": 1793113932.6607661,
+    "ast_hash": "b0315e25a9dba699a25301f920df874a",
+    "semantic_hash": ""
+  },
+  "frontend/lib/daycareApi.js": {
+    "mtime": 1793113859.1944635,
+    "ast_hash": "c961f9e1c2c7f05e7cfb072a6b93e433",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/(website)/account/api-test/page.js": {
+    "mtime": 1793114203.9294689,
+    "ast_hash": "21aeea28932995edd1f01586dd66db93",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/(website)/account/page.js": {
+    "mtime": 1793114202.722377,
+    "ast_hash": "23d5bfb697e6a3958dd4669a4225161a",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/(website)/login/page.js": {
+    "mtime": 1793114108.1653948,
+    "ast_hash": "a9cd296549eda82124d8858a9166cdf3",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/(website)/register/page.js": {
+    "mtime": 1793114124.6976125,
+    "ast_hash": "0e3b9baca357a8fdede74e5b70bd032a",
+    "semantic_hash": ""
+  },
+  "docs/care-bear-daycare-api.md": {
+    "mtime": 1793112574.1940458,
+    "ast_hash": "e306ed63a51ab5d936421f75196bbfb8",
     "semantic_hash": ""
   }
 }

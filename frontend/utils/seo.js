@@ -1,8 +1,19 @@
-import { FORGOT_PASSWORD_PATH, LOGIN_PATH, STAFF_PREFIX, isMarketingRoute } from '@/consts/routes';
+import {
+  ACCOUNT_API_TEST_PATH,
+  ACCOUNT_PATH,
+  FORGOT_PASSWORD_PATH,
+  LOGIN_PATH,
+  REGISTER_PATH,
+  STAFF_PREFIX,
+  isMarketingRoute,
+} from '@/consts/routes';
 
-/** Auth, thank-you, and other public paths that must not be indexed. */
+/** Auth, pet-parent account, thank-you, and other public paths that must not be indexed. */
 const NON_INDEXABLE_PATHS = new Set([
   LOGIN_PATH,
+  REGISTER_PATH,
+  ACCOUNT_PATH,
+  ACCOUNT_API_TEST_PATH,
   FORGOT_PASSWORD_PATH,
   '/logout',
   '/event/thank-you',
@@ -17,6 +28,9 @@ export function isIndexablePublicPath(pathname) {
     return false;
   }
   if (pathname === STAFF_PREFIX || pathname.startsWith(`${STAFF_PREFIX}/`)) {
+    return false;
+  }
+  if (pathname === ACCOUNT_PATH || pathname.startsWith(`${ACCOUNT_PATH}/`)) {
     return false;
   }
   if (NON_INDEXABLE_PATHS.has(pathname)) {

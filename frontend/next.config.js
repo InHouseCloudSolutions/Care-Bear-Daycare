@@ -57,6 +57,18 @@ const config = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Static export (GitHub Pages) does not support rewrites; the live app always runs server-side.
+  ...(!isGitHubPages && {
+    async rewrites() {
+      const daycareApiOrigin = process.env.DAYCARE_API_ORIGIN || 'https://inhousecloudsolutions.com';
+      return [
+        {
+          source: '/daycare-api/:path*',
+          destination: `${daycareApiOrigin}/api/:path*`,
+        },
+      ];
+    },
+  }),
   images: {
     unoptimized: isGitHubPages,
   },

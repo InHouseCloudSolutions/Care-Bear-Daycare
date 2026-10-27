@@ -1434,7 +1434,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_generate_parity_qa_checklist",
-      "community": 4,
+      "community": 103,
       "norm_label": "generate_parity_qa_checklist.py"
     },
     {
@@ -1444,7 +1444,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "scripts_generate_parity_qa_checklist_main",
-      "community": 4,
+      "community": 103,
       "norm_label": "main()"
     },
     {
@@ -1454,7 +1454,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold",
-      "community": 68,
+      "community": 102,
       "norm_label": "create_ts_component_scaffold.py"
     },
     {
@@ -1464,7 +1464,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold_resolve_under_root",
-      "community": 68,
+      "community": 102,
       "norm_label": "_resolve_under_root()"
     },
     {
@@ -1474,7 +1474,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "path",
-      "community": 68,
+      "community": 102,
       "norm_label": "path"
     },
     {
@@ -1484,7 +1484,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold_main",
-      "community": 68,
+      "community": 102,
       "norm_label": "main()"
     },
     {
@@ -1634,7 +1634,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_authgateclient",
-      "community": 9,
+      "community": 1,
       "norm_label": "authgateclient.js"
     },
     {
@@ -1644,7 +1644,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "components_authgateclient_authgateclientapp",
-      "community": 9,
+      "community": 1,
       "norm_label": "authgateclientapp()"
     },
     {
@@ -1654,7 +1654,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "components_authgateclient_authgateclientpages",
-      "community": 9,
+      "community": 1,
       "norm_label": "authgateclientpages()"
     },
     {
@@ -1664,7 +1664,7 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "components_authgateclient_authgateclient",
-      "community": 9,
+      "community": 1,
       "norm_label": "authgateclient()"
     },
     {
@@ -2534,7 +2534,7 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bookstaybutton",
-      "community": 65,
+      "community": 28,
       "norm_label": "bookstaybutton()"
     },
     {
@@ -3204,7 +3204,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homeherobackground",
-      "community": 70,
+      "community": 68,
       "norm_label": "homeherobackground.js"
     },
     {
@@ -3214,7 +3214,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "home_landing_homeherobackground_homeherobackground",
-      "community": 70,
+      "community": 68,
       "norm_label": "homeherobackground()"
     },
     {
@@ -3231,7 +3231,7 @@
       "label": "HERO_MENU_ICON_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/HomeHeroNav.js",
-      "source_location": "L19",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "home_landing_homeheronav_hero_menu_icon_sx",
       "community": 0,
@@ -3241,7 +3241,7 @@
       "label": "HomeHeroNav()",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/HomeHeroNav.js",
-      "source_location": "L21",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "home_landing_homeheronav_homeheronav",
       "community": 0,
@@ -3254,7 +3254,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter",
-      "community": 1,
+      "community": 68,
       "norm_label": "homelandingfooter.js"
     },
     {
@@ -3264,7 +3264,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_social_icons",
-      "community": 1,
+      "community": 68,
       "norm_label": "social_icons"
     },
     {
@@ -3274,7 +3274,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_footerlinksx",
-      "community": 1,
+      "community": 68,
       "norm_label": "footerlinksx"
     },
     {
@@ -3284,7 +3284,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_footertextsx",
-      "community": 1,
+      "community": 68,
       "norm_label": "footertextsx"
     },
     {
@@ -3294,7 +3294,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_socialiconbuttonsx",
-      "community": 1,
+      "community": 68,
       "norm_label": "socialiconbuttonsx"
     },
     {
@@ -3304,7 +3304,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "home_landing_homelandingfooter_homelandingfooter",
-      "community": 1,
+      "community": 68,
       "norm_label": "homelandingfooter()"
     },
     {
@@ -3314,7 +3314,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingpage",
-      "community": 1,
+      "community": 68,
       "norm_label": "homelandingpage.js"
     },
     {
@@ -3324,7 +3324,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_hero_logo_src",
-      "community": 1,
+      "community": 68,
       "norm_label": "hero_logo_src"
     },
     {
@@ -3334,7 +3334,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_heroctasx",
-      "community": 1,
+      "community": 68,
       "norm_label": "heroctasx"
     },
     {
@@ -3344,7 +3344,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_herocta",
-      "community": 1,
+      "community": 68,
       "norm_label": "herocta()"
     },
     {
@@ -3364,7 +3364,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_homelandingpage",
-      "community": 1,
+      "community": 68,
       "norm_label": "homelandingpage()"
     },
     {
@@ -3374,7 +3374,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingshell",
-      "community": 103,
+      "community": 0,
       "norm_label": "homelandingshell.js"
     },
     {
@@ -3384,7 +3384,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_createlandingtheme",
-      "community": 103,
+      "community": 0,
       "norm_label": "createlandingtheme()"
     },
     {
@@ -3394,7 +3394,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_homelandingshell",
-      "community": 103,
+      "community": 0,
       "norm_label": "homelandingshell()"
     },
     {
@@ -3404,7 +3404,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawer",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxurynavdrawer.js"
     },
     {
@@ -3414,7 +3414,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawer_luxurynavdrawer",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxurynavdrawer()"
     },
     {
@@ -3424,7 +3424,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxurynavdrawerlist.js"
     },
     {
@@ -3434,7 +3434,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_externallinkprops",
-      "community": 65,
+      "community": 0,
       "norm_label": "externallinkprops()"
     },
     {
@@ -3444,7 +3444,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_navitemshape",
-      "community": 40,
+      "community": 0,
       "norm_label": "navitemshape"
     },
     {
@@ -3454,7 +3454,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_getitemtypographysx",
-      "community": 40,
+      "community": 0,
       "norm_label": "getitemtypographysx()"
     },
     {
@@ -3464,7 +3464,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_getitembuttonsx",
-      "community": 40,
+      "community": 0,
       "norm_label": "getitembuttonsx()"
     },
     {
@@ -3474,7 +3474,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_luxurynavdrawerlist",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxurynavdrawerlist()"
     },
     {
@@ -3484,7 +3484,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketinginteriorlayout.js"
     },
     {
@@ -3494,7 +3494,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_interior_content_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_interior_content_sx"
     },
     {
@@ -3504,7 +3504,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_interior_form_grid_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_interior_form_grid_sx"
     },
     {
@@ -3514,7 +3514,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_page_content_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_form_page_content_sx"
     },
     {
@@ -3524,7 +3524,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_flex_section_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_form_flex_section_sx"
     },
     {
@@ -3534,7 +3534,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_grid_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_form_grid_sx"
     },
     {
@@ -3544,7 +3544,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_page_grid_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_form_page_grid_sx"
     },
     {
@@ -3554,7 +3554,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_hero_column_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_form_hero_column_sx"
     },
     {
@@ -3564,7 +3564,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_column_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_form_column_sx"
     },
     {
@@ -3574,7 +3574,7 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketing_form_column_inner_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "marketing_form_column_inner_sx"
     },
     {
@@ -3601,7 +3601,7 @@
       "label": "navItemShape",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorNav.js",
-      "source_location": "L21",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "home_landing_marketinginteriornav_navitemshape",
       "community": 0,
@@ -3611,7 +3611,7 @@
       "label": "MarketingInteriorNav()",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/MarketingInteriorNav.js",
-      "source_location": "L27",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "home_landing_marketinginteriornav_marketinginteriornav",
       "community": 0,
@@ -3624,7 +3624,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem",
-      "community": 65,
+      "community": 0,
       "norm_label": "marketingnavdesktopitem.js"
     },
     {
@@ -3634,7 +3634,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_navitemshape",
-      "community": 65,
+      "community": 0,
       "norm_label": "navitemshape"
     },
     {
@@ -3644,7 +3644,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_marketingnavdesktopitem",
-      "community": 65,
+      "community": 0,
       "norm_label": "marketingnavdesktopitem()"
     },
     {
@@ -3654,7 +3654,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink",
-      "community": 65,
+      "community": 0,
       "norm_label": "marketingnavdesktoplink.js"
     },
     {
@@ -3664,7 +3664,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_externallinkprops",
-      "community": 65,
+      "community": 0,
       "norm_label": "externallinkprops()"
     },
     {
@@ -3674,7 +3674,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_navitemshape",
-      "community": 65,
+      "community": 0,
       "norm_label": "navitemshape"
     },
     {
@@ -3684,7 +3684,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_marketingnavdesktoplink",
-      "community": 65,
+      "community": 0,
       "norm_label": "marketingnavdesktoplink()"
     },
     {
@@ -3694,7 +3694,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel",
-      "community": 40,
+      "community": 0,
       "norm_label": "marketingnavdrawerpanel.js"
     },
     {
@@ -3704,7 +3704,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel_navitemshape",
-      "community": 40,
+      "community": 0,
       "norm_label": "navitemshape"
     },
     {
@@ -3754,7 +3754,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_data",
-      "community": 40,
+      "community": 0,
       "norm_label": "home-landing-data.js"
     },
     {
@@ -3774,7 +3774,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_brand",
-      "community": 1,
+      "community": 68,
       "norm_label": "home_brand"
     },
     {
@@ -3784,7 +3784,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_footer",
-      "community": 1,
+      "community": 68,
       "norm_label": "home_footer"
     },
     {
@@ -3794,7 +3794,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_footer_social_links",
-      "community": 1,
+      "community": 68,
       "norm_label": "home_footer_social_links"
     },
     {
@@ -3824,7 +3824,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_mega_menu_image_height_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "mega_menu_image_height_sx"
     },
     {
@@ -3834,7 +3834,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_mega_menu_container_py_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "mega_menu_container_py_sx"
     },
     {
@@ -3864,7 +3864,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_link_typography_sx",
-      "community": 65,
+      "community": 0,
       "norm_label": "home_nav_link_typography_sx"
     },
     {
@@ -3874,7 +3874,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_normalizemarketingnavpath",
-      "community": 65,
+      "community": 0,
       "norm_label": "normalizemarketingnavpath()"
     },
     {
@@ -3884,7 +3884,7 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_ismarketingnavlinkactive",
-      "community": 65,
+      "community": 0,
       "norm_label": "ismarketingnavlinkactive()"
     },
     {
@@ -3894,7 +3894,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketingnavlinkhoverunderlinesx",
-      "community": 65,
+      "community": 0,
       "norm_label": "marketingnavlinkhoverunderlinesx()"
     },
     {
@@ -3904,7 +3904,7 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_gradient_sx",
-      "community": 70,
+      "community": 0,
       "norm_label": "luxury_gradient_sx"
     },
     {
@@ -3914,7 +3914,7 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_item_enter_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_item_enter_sx"
     },
     {
@@ -3924,7 +3924,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_item_reset_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_item_reset_sx"
     },
     {
@@ -3934,7 +3934,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_primary_typography_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_primary_typography_sx"
     },
     {
@@ -3944,7 +3944,7 @@
       "source_location": "L164",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_section_typography_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_section_typography_sx"
     },
     {
@@ -3954,7 +3954,7 @@
       "source_location": "L170",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_group_typography_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_group_typography_sx"
     },
     {
@@ -3964,7 +3964,7 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_sublink_typography_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "luxury_drawer_nav_sublink_typography_sx"
     },
     {
@@ -3974,7 +3974,7 @@
       "source_location": "L182",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_luxury_drawer_paper_sx",
-      "community": 40,
+      "community": 0,
       "norm_label": "home_luxury_drawer_paper_sx"
     },
     {
@@ -3984,7 +3984,7 @@
       "source_location": "L206",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_hero_slides",
-      "community": 70,
+      "community": 68,
       "norm_label": "home_hero_slides"
     },
     {
@@ -3994,7 +3994,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_font",
-      "community": 103,
+      "community": 0,
       "norm_label": "home-landing-font.js"
     },
     {
@@ -4004,7 +4004,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_home_landing_font_homemontserrat",
-      "community": 103,
+      "community": 0,
       "norm_label": "homemontserrat"
     },
     {
@@ -4014,7 +4014,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer",
-      "community": 102,
+      "community": 0,
       "norm_label": "marketing-nav-drawer.js"
     },
     {
@@ -4024,7 +4024,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_auth_nav_labels",
-      "community": 102,
+      "community": 0,
       "norm_label": "auth_nav_labels"
     },
     {
@@ -4034,7 +4034,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_splitauthnavitems",
-      "community": 102,
+      "community": 0,
       "norm_label": "splitauthnavitems()"
     },
     {
@@ -4044,7 +4044,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_buildmobiledraweritems",
-      "community": 102,
+      "community": 0,
       "norm_label": "buildmobiledraweritems()"
     },
     {
@@ -4054,7 +4054,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavdraweritems",
-      "community": 102,
+      "community": 0,
       "norm_label": "usemarketingnavdraweritems.js"
     },
     {
@@ -4064,7 +4064,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavdraweritems_usemarketingnavdraweritems",
-      "community": 102,
+      "community": 0,
       "norm_label": "usemarketingnavdraweritems()"
     },
     {
@@ -4158,6 +4158,416 @@
       "norm_label": "splashfontclassname"
     },
     {
+      "label": "AccountDogsSection.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_accountdogssection",
+      "community": 1,
+      "norm_label": "accountdogssection.js"
+    },
+    {
+      "label": "AccountDogsSection()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "pet_parent_accountdogssection_accountdogssection",
+      "community": 1,
+      "norm_label": "accountdogssection()"
+    },
+    {
+      "label": "AccountProfilePage.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_accountprofilepage",
+      "community": 1,
+      "norm_label": "accountprofilepage.js"
+    },
+    {
+      "label": "AccountProfilePage()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "pet_parent_accountprofilepage_accountprofilepage",
+      "community": 1,
+      "norm_label": "accountprofilepage()"
+    },
+    {
+      "label": "AccountYouSection.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_accountyousection",
+      "community": 1,
+      "norm_label": "accountyousection.js"
+    },
+    {
+      "label": "EDITABLE_FIELDS",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "pet_parent_accountyousection_editable_fields",
+      "community": 1,
+      "norm_label": "editable_fields"
+    },
+    {
+      "label": "FIELD_LABELS",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "pet_parent_accountyousection_field_labels",
+      "community": 1,
+      "norm_label": "field_labels"
+    },
+    {
+      "label": "profileToForm()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "pet_parent_accountyousection_profiletoform",
+      "community": 1,
+      "norm_label": "profiletoform()"
+    },
+    {
+      "label": "AccountYouSection()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "pet_parent_accountyousection_accountyousection",
+      "community": 1,
+      "norm_label": "accountyousection()"
+    },
+    {
+      "label": "ApiTestPage.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_apitestpage",
+      "community": 1,
+      "norm_label": "apitestpage.js"
+    },
+    {
+      "label": "CALLS",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "pet_parent_apitestpage_calls",
+      "community": 1,
+      "norm_label": "calls"
+    },
+    {
+      "label": "ResultBlock()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "pet_parent_apitestpage_resultblock",
+      "community": 1,
+      "norm_label": "resultblock()"
+    },
+    {
+      "label": "ApiTestPage()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "pet_parent_apitestpage_apitestpage",
+      "community": 1,
+      "norm_label": "apitestpage()"
+    },
+    {
+      "label": "AuthNavLinks.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AuthNavLinks.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_authnavlinks",
+      "community": 0,
+      "norm_label": "authnavlinks.js"
+    },
+    {
+      "label": "AuthNavLinks()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/AuthNavLinks.js",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "pet_parent_authnavlinks_authnavlinks",
+      "community": 0,
+      "norm_label": "authnavlinks()"
+    },
+    {
+      "label": "DogCard.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_dogcard",
+      "community": 1,
+      "norm_label": "dogcard.js"
+    },
+    {
+      "label": "DogCard()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "pet_parent_dogcard_dogcard",
+      "community": 1,
+      "norm_label": "dogcard()"
+    },
+    {
+      "label": "DogForm.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_dogform",
+      "community": 1,
+      "norm_label": "dogform.js"
+    },
+    {
+      "label": "SEX_OPTIONS",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "pet_parent_dogform_sex_options",
+      "community": 1,
+      "norm_label": "sex_options"
+    },
+    {
+      "label": "TOP_TEXT_FIELDS",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "pet_parent_dogform_top_text_fields",
+      "community": 1,
+      "norm_label": "top_text_fields"
+    },
+    {
+      "label": "MULTILINE_FIELDS",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "pet_parent_dogform_multiline_fields",
+      "community": 1,
+      "norm_label": "multiline_fields"
+    },
+    {
+      "label": "toFormState()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "pet_parent_dogform_toformstate",
+      "community": 1,
+      "norm_label": "toformstate()"
+    },
+    {
+      "label": "DogForm()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "pet_parent_dogform_dogform",
+      "community": 1,
+      "norm_label": "dogform()"
+    },
+    {
+      "label": "DogVaccines.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_dogvaccines",
+      "community": 1,
+      "norm_label": "dogvaccines.js"
+    },
+    {
+      "label": "KIND_OPTIONS",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "pet_parent_dogvaccines_kind_options",
+      "community": 1,
+      "norm_label": "kind_options"
+    },
+    {
+      "label": "EMPTY_FORM",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "pet_parent_dogvaccines_empty_form",
+      "community": 1,
+      "norm_label": "empty_form"
+    },
+    {
+      "label": "vaccineLabel()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "pet_parent_dogvaccines_vaccinelabel",
+      "community": 1,
+      "norm_label": "vaccinelabel()"
+    },
+    {
+      "label": "DogVaccines()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "pet_parent_dogvaccines_dogvaccines",
+      "community": 1,
+      "norm_label": "dogvaccines()"
+    },
+    {
+      "label": "LoginPage.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/LoginPage.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_loginpage",
+      "community": 1,
+      "norm_label": "loginpage.js"
+    },
+    {
+      "label": "LoginPage()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/LoginPage.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "pet_parent_loginpage_loginpage",
+      "community": 1,
+      "norm_label": "loginpage()"
+    },
+    {
+      "label": "RegisterPage.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_registerpage",
+      "community": 1,
+      "norm_label": "registerpage.js"
+    },
+    {
+      "label": "EMPTY_FORM",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "pet_parent_registerpage_empty_form",
+      "community": 1,
+      "norm_label": "empty_form"
+    },
+    {
+      "label": "RegisterPage()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "pet_parent_registerpage_registerpage",
+      "community": 1,
+      "norm_label": "registerpage()"
+    },
+    {
+      "label": "pet-parent-styles.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_pet_parent_styles",
+      "community": 1,
+      "norm_label": "pet-parent-styles.js"
+    },
+    {
+      "label": "SECTION_HEADING_SX",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "pet_parent_pet_parent_styles_section_heading_sx",
+      "community": 1,
+      "norm_label": "section_heading_sx"
+    },
+    {
+      "label": "CARD_SX",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "pet_parent_pet_parent_styles_card_sx",
+      "community": 1,
+      "norm_label": "card_sx"
+    },
+    {
+      "label": "FORM_STACK_SX",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "pet_parent_pet_parent_styles_form_stack_sx",
+      "community": 1,
+      "norm_label": "form_stack_sx"
+    },
+    {
+      "label": "PRIMARY_BUTTON_SX",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "pet_parent_pet_parent_styles_primary_button_sx",
+      "community": 1,
+      "norm_label": "primary_button_sx"
+    },
+    {
+      "label": "SECONDARY_BUTTON_SX",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "pet_parent_pet_parent_styles_secondary_button_sx",
+      "community": 1,
+      "norm_label": "secondary_button_sx"
+    },
+    {
+      "label": "useAuthNavItem.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/useAuthNavItem.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_useauthnavitem",
+      "community": 0,
+      "norm_label": "useauthnavitem.js"
+    },
+    {
+      "label": "useAuthNavItem()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/useAuthNavItem.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "pet_parent_useauthnavitem_useauthnavitem",
+      "community": 0,
+      "norm_label": "useauthnavitem()"
+    },
+    {
       "label": "CreditedImage.js",
       "file_type": "code",
       "source_file": "frontend/components/website/CreditedImage.js",
@@ -4214,7 +4624,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "consts_marketing_nav_flattennavitemsfordrawer",
-      "community": 102,
+      "community": 0,
       "norm_label": "flattennavitemsfordrawer()"
     },
     {
@@ -4244,14 +4654,24 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "consts_routes_isexternalhref",
-      "community": 65,
+      "community": 0,
       "norm_label": "isexternalhref()"
+    },
+    {
+      "label": "safeAccountNextPath()",
+      "file_type": "code",
+      "source_file": "frontend/consts/routes.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "consts_routes_safeaccountnextpath",
+      "community": 80,
+      "norm_label": "safeaccountnextpath()"
     },
     {
       "label": "portfolioSlugPath()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L16",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "consts_routes_portfolioslugpath",
       "community": 80,
@@ -4261,7 +4681,7 @@
       "label": "collectionSubCollectionPath()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L27",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "consts_routes_collectionsubcollectionpath",
       "community": 80,
@@ -4271,7 +4691,7 @@
       "label": "boutiqueDevelopersSlugPath()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L46",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "consts_routes_boutiquedevelopersslugpath",
       "community": 80,
@@ -4281,7 +4701,7 @@
       "label": "productManualSlugPath()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L51",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "consts_routes_productmanualslugpath",
       "community": 80,
@@ -4291,7 +4711,7 @@
       "label": "staffPathSuffix()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L56",
+      "source_location": "L65",
       "_origin": "ast",
       "id": "consts_routes_staffpathsuffix",
       "community": 80,
@@ -4301,7 +4721,7 @@
       "label": "staffPath()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L62",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "consts_routes_staffpath",
       "community": 80,
@@ -4311,7 +4731,7 @@
       "label": "staffLoginHref()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L64",
+      "source_location": "L73",
       "_origin": "ast",
       "id": "consts_routes_staffloginhref",
       "community": 80,
@@ -4321,7 +4741,7 @@
       "label": "isHomeRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L66",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "consts_routes_ishomeroute",
       "community": 80,
@@ -4331,17 +4751,27 @@
       "label": "isStaffRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L70",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "consts_routes_isstaffroute",
       "community": 66,
       "norm_label": "isstaffroute()"
     },
     {
+      "label": "isAccountRoute()",
+      "file_type": "code",
+      "source_file": "frontend/consts/routes.js",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "consts_routes_isaccountroute",
+      "community": 80,
+      "norm_label": "isaccountroute()"
+    },
+    {
       "label": "isMarketingRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L75",
+      "source_location": "L89",
       "_origin": "ast",
       "id": "consts_routes_ismarketingroute",
       "community": 80,
@@ -4351,7 +4781,7 @@
       "label": "isMarketingInteriorRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L87",
+      "source_location": "L101",
       "_origin": "ast",
       "id": "consts_routes_ismarketinginteriorroute",
       "community": 80,
@@ -4361,7 +4791,7 @@
       "label": "isMarketingFormRoute()",
       "file_type": "code",
       "source_file": "frontend/consts/routes.js",
-      "source_location": "L92",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "consts_routes_ismarketingformroute",
       "community": 91,
@@ -4384,47 +4814,37 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contexts_authcontext",
-      "community": 9,
+      "community": 1,
       "norm_label": "authcontext.js"
     },
     {
       "label": "AuthContext",
       "file_type": "code",
       "source_file": "frontend/contexts/AuthContext.js",
-      "source_location": "L6",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "contexts_authcontext_authcontext",
-      "community": 9,
+      "community": 1,
       "norm_label": "authcontext"
     },
     {
       "label": "useAuth()",
       "file_type": "code",
       "source_file": "frontend/contexts/AuthContext.js",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "contexts_authcontext_useauth",
-      "community": 9,
-      "norm_label": "useauth()"
-    },
-    {
-      "label": "EMPTY_AUTH",
-      "file_type": "code",
-      "source_file": "frontend/contexts/AuthContext.js",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "contexts_authcontext_empty_auth",
-      "community": 9,
-      "norm_label": "empty_auth"
+      "id": "contexts_authcontext_useauth",
+      "community": 1,
+      "norm_label": "useauth()"
     },
     {
       "label": "AuthProvider()",
       "file_type": "code",
       "source_file": "frontend/contexts/AuthContext.js",
-      "source_location": "L20",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "contexts_authcontext_authprovider",
-      "community": 9,
+      "community": 1,
       "norm_label": "authprovider()"
     },
     {
@@ -4434,7 +4854,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext",
-      "community": 13,
+      "community": 68,
       "norm_label": "homeheroslidescontext.js"
     },
     {
@@ -4444,7 +4864,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_homeheroslidescontext",
-      "community": 13,
+      "community": 68,
       "norm_label": "homeheroslidescontext"
     },
     {
@@ -4464,7 +4884,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_homeheroslidesprovider",
-      "community": 13,
+      "community": 68,
       "norm_label": "homeheroslidesprovider()"
     },
     {
@@ -4474,7 +4894,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "contexts_homeheroslidescontext_usehomeheroslides",
-      "community": 13,
+      "community": 68,
       "norm_label": "usehomeheroslides()"
     },
     {
@@ -4696,6 +5116,176 @@
       "id": "lib_createapptheme_createapptheme",
       "community": 75,
       "norm_label": "createapptheme()"
+    },
+    {
+      "label": "daycareApi.js",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_daycareapi",
+      "community": 65,
+      "norm_label": "daycareapi.js"
+    },
+    {
+      "label": "withTrailingSlash()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "lib_daycareapi_withtrailingslash",
+      "community": 65,
+      "norm_label": "withtrailingslash()"
+    },
+    {
+      "label": "daycareRequest()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "lib_daycareapi_daycarerequest",
+      "community": 65,
+      "norm_label": "daycarerequest()"
+    },
+    {
+      "label": "formatApiErrors()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "lib_daycareapi_formatapierrors",
+      "community": 65,
+      "norm_label": "formatapierrors()"
+    },
+    {
+      "label": "authLogin()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "lib_daycareapi_authlogin",
+      "community": 65,
+      "norm_label": "authlogin()"
+    },
+    {
+      "label": "authMe()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "lib_daycareapi_authme",
+      "community": 65,
+      "norm_label": "authme()"
+    },
+    {
+      "label": "registerPetParent()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "lib_daycareapi_registerpetparent",
+      "community": 65,
+      "norm_label": "registerpetparent()"
+    },
+    {
+      "label": "getMyProfile()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "lib_daycareapi_getmyprofile",
+      "community": 65,
+      "norm_label": "getmyprofile()"
+    },
+    {
+      "label": "updateMyProfile()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "lib_daycareapi_updatemyprofile",
+      "community": 65,
+      "norm_label": "updatemyprofile()"
+    },
+    {
+      "label": "listDogs()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "lib_daycareapi_listdogs",
+      "community": 65,
+      "norm_label": "listdogs()"
+    },
+    {
+      "label": "createDog()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "lib_daycareapi_createdog",
+      "community": 65,
+      "norm_label": "createdog()"
+    },
+    {
+      "label": "updateDog()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "lib_daycareapi_updatedog",
+      "community": 65,
+      "norm_label": "updatedog()"
+    },
+    {
+      "label": "deleteDog()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "lib_daycareapi_deletedog",
+      "community": 65,
+      "norm_label": "deletedog()"
+    },
+    {
+      "label": "listVaccines()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "lib_daycareapi_listvaccines",
+      "community": 65,
+      "norm_label": "listvaccines()"
+    },
+    {
+      "label": "createVaccine()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L117",
+      "_origin": "ast",
+      "id": "lib_daycareapi_createvaccine",
+      "community": 65,
+      "norm_label": "createvaccine()"
+    },
+    {
+      "label": "deleteVaccine()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "lib_daycareapi_deletevaccine",
+      "community": 65,
+      "norm_label": "deletevaccine()"
+    },
+    {
+      "label": "listServices()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "lib_daycareapi_listservices",
+      "community": 65,
+      "norm_label": "listservices()"
     },
     {
       "label": "next.config.js",
@@ -5990,6 +6580,66 @@
     {
       "label": "page.js",
       "file_type": "code",
+      "source_file": "frontend/src/app/(website)/account/api-test/page.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_test_page",
+      "community": 113,
+      "norm_label": "page.js"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/account/api-test/page.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "api_test_page_metadata",
+      "community": 113,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "AccountApiTestRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/account/api-test/page.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "api_test_page_accountapitestroute",
+      "community": 113,
+      "norm_label": "accountapitestroute()"
+    },
+    {
+      "label": "page.js",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/account/page.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "account_page",
+      "community": 112,
+      "norm_label": "page.js"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/account/page.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "account_page_metadata",
+      "community": 112,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "AccountRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/account/page.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "account_page_accountroute",
+      "community": 112,
+      "norm_label": "accountroute()"
+    },
+    {
+      "label": "page.js",
+      "file_type": "code",
       "source_file": "frontend/src/app/(website)/care-and-safety/page.js",
       "source_location": "L1",
       "_origin": "ast",
@@ -6054,7 +6704,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "gallery_page",
-      "community": 68,
+      "community": 102,
       "norm_label": "page.js"
     },
     {
@@ -6064,7 +6714,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "gallery_page_metadata",
-      "community": 68,
+      "community": 102,
       "norm_label": "metadata"
     },
     {
@@ -6074,7 +6724,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "gallery_page_image_extensions",
-      "community": 68,
+      "community": 102,
       "norm_label": "image_extensions"
     },
     {
@@ -6084,7 +6734,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "gallery_page_listgalleryimages",
-      "community": 68,
+      "community": 102,
       "norm_label": "listgalleryimages()"
     },
     {
@@ -6094,7 +6744,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "gallery_page_galleryroute",
-      "community": 68,
+      "community": 102,
       "norm_label": "galleryroute()"
     },
     {
@@ -6104,7 +6754,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "how_a_stay_works_page",
-      "community": 4,
+      "community": 68,
       "norm_label": "page.js"
     },
     {
@@ -6114,7 +6764,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "how_a_stay_works_page_metadata",
-      "community": 4,
+      "community": 68,
       "norm_label": "metadata"
     },
     {
@@ -6160,11 +6810,41 @@
     {
       "label": "page.js",
       "file_type": "code",
+      "source_file": "frontend/src/app/(website)/login/page.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "login_page",
+      "community": 114,
+      "norm_label": "page.js"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/login/page.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "login_page_metadata",
+      "community": 114,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "LoginRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/login/page.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "login_page_loginroute",
+      "community": 114,
+      "norm_label": "loginroute()"
+    },
+    {
+      "label": "page.js",
+      "file_type": "code",
       "source_file": "frontend/src/app/(website)/page.js",
       "source_location": "L1",
       "_origin": "ast",
       "id": "website_page",
-      "community": 4,
+      "community": 110,
       "norm_label": "page.js"
     },
     {
@@ -6174,7 +6854,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "website_page_metadata",
-      "community": 4,
+      "community": 110,
       "norm_label": "metadata"
     },
     {
@@ -6184,8 +6864,38 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "website_page_homepage",
-      "community": 4,
+      "community": 110,
       "norm_label": "homepage()"
+    },
+    {
+      "label": "page.js",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/register/page.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "register_page",
+      "community": 115,
+      "norm_label": "page.js"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/register/page.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "register_page_metadata",
+      "community": 115,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "RegisterRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(website)/register/page.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "register_page_registerroute",
+      "community": 115,
+      "norm_label": "registerroute()"
     },
     {
       "label": "page.js",
@@ -6224,7 +6934,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_emotioncacheprovider",
-      "community": 4,
+      "community": 70,
       "norm_label": "emotioncacheprovider.js"
     },
     {
@@ -6234,7 +6944,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "app_emotioncacheprovider_emotioncacheprovider",
-      "community": 4,
+      "community": 70,
       "norm_label": "emotioncacheprovider()"
     },
     {
@@ -6244,7 +6954,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_layout",
-      "community": 4,
+      "community": 70,
       "norm_label": "layout.js"
     },
     {
@@ -6254,7 +6964,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "app_layout_og_image_path",
-      "community": 4,
+      "community": 70,
       "norm_label": "og_image_path"
     },
     {
@@ -6264,7 +6974,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "app_layout_marketingmetadatahost",
-      "community": 4,
+      "community": 109,
       "norm_label": "marketingmetadatahost()"
     },
     {
@@ -6274,7 +6984,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "app_layout_ogimageurl",
-      "community": 4,
+      "community": 109,
       "norm_label": "ogimageurl()"
     },
     {
@@ -6284,7 +6994,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "app_layout_metadatabasefromhost",
-      "community": 4,
+      "community": 109,
       "norm_label": "metadatabasefromhost()"
     },
     {
@@ -6294,7 +7004,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "app_layout_shareimageurl",
-      "community": 4,
+      "community": 70,
       "norm_label": "shareimageurl"
     },
     {
@@ -6304,7 +7014,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "app_layout_metadata",
-      "community": 4,
+      "community": 109,
       "norm_label": "metadata"
     },
     {
@@ -6314,7 +7024,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "app_layout_viewport",
-      "community": 4,
+      "community": 70,
       "norm_label": "viewport"
     },
     {
@@ -6324,7 +7034,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
-      "community": 4,
+      "community": 70,
       "norm_label": "rootlayout()"
     },
     {
@@ -6354,7 +7064,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_providers",
-      "community": 4,
+      "community": 70,
       "norm_label": "providers.js"
     },
     {
@@ -6364,7 +7074,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "app_providers_providers",
-      "community": 4,
+      "community": 70,
       "norm_label": "providers()"
     },
     {
@@ -6374,7 +7084,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_sitemap",
-      "community": 4,
+      "community": 111,
       "norm_label": "sitemap.js"
     },
     {
@@ -6384,7 +7094,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_sitemap_host",
-      "community": 4,
+      "community": 111,
       "norm_label": "host"
     },
     {
@@ -6394,7 +7104,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "app_sitemap_tositemapentry",
-      "community": 4,
+      "community": 111,
       "norm_label": "tositemapentry()"
     },
     {
@@ -6404,7 +7114,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "app_sitemap_sitemap",
-      "community": 4,
+      "community": 111,
       "norm_label": "sitemap()"
     },
     {
@@ -6484,7 +7194,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "utils_publicpath",
-      "community": 4,
+      "community": 116,
       "norm_label": "publicpath.js"
     },
     {
@@ -6494,7 +7204,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "utils_publicpath_publicpath",
-      "community": 4,
+      "community": 116,
       "norm_label": "publicpath()"
     },
     {
@@ -6504,7 +7214,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "utils_publicpath_test",
-      "community": 4,
+      "community": 116,
       "norm_label": "publicpath.test.js"
     },
     {
@@ -6641,7 +7351,7 @@
       "label": "NON_INDEXABLE_PATHS",
       "file_type": "code",
       "source_file": "frontend/utils/seo.js",
-      "source_location": "L4",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "utils_seo_non_indexable_paths",
       "community": 5,
@@ -6651,7 +7361,7 @@
       "label": "isIndexablePublicPath()",
       "file_type": "code",
       "source_file": "frontend/utils/seo.js",
-      "source_location": "L15",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "utils_seo_isindexablepublicpath",
       "community": 5,
@@ -6661,7 +7371,7 @@
       "label": "ROBOTS_INDEX",
       "file_type": "code",
       "source_file": "frontend/utils/seo.js",
-      "source_location": "L29",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "utils_seo_robots_index",
       "community": 5,
@@ -6671,7 +7381,7 @@
       "label": "ROBOTS_NOINDEX",
       "file_type": "code",
       "source_file": "frontend/utils/seo.js",
-      "source_location": "L32",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "utils_seo_robots_noindex",
       "community": 5,
@@ -6681,7 +7391,7 @@
       "label": "robotsMetadataForPath()",
       "file_type": "code",
       "source_file": "frontend/utils/seo.js",
-      "source_location": "L34",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "utils_seo_robotsmetadataforpath",
       "community": 5,
@@ -6691,7 +7401,7 @@
       "label": "robotsMetaContent()",
       "file_type": "code",
       "source_file": "frontend/utils/seo.js",
-      "source_location": "L38",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "utils_seo_robotsmetacontent",
       "community": 5,
@@ -6814,7 +7524,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "utils_website_seo_public_site_origin",
-      "community": 4,
+      "community": 109,
       "norm_label": "public_site_origin"
     },
     {
@@ -7464,7 +8174,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "component_parity_qa_skill",
-      "community": 4,
+      "community": 103,
       "norm_label": "skill.md"
     },
     {
@@ -7474,7 +8184,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "component_parity_qa_skill_component_parity_qa",
-      "community": 4,
+      "community": 103,
       "norm_label": "component parity qa"
     },
     {
@@ -7484,7 +8194,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "component_parity_qa_skill_when_to_use",
-      "community": 4,
+      "community": 103,
       "norm_label": "when to use"
     },
     {
@@ -7494,7 +8204,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "component_parity_qa_skill_instructions",
-      "community": 4,
+      "community": 103,
       "norm_label": "instructions"
     },
     {
@@ -7504,7 +8214,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "component_parity_qa_skill_output_format",
-      "community": 4,
+      "community": 103,
       "norm_label": "output format"
     },
     {
@@ -7514,7 +8224,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "component_parity_qa_skill_utility_script",
-      "community": 4,
+      "community": 103,
       "norm_label": "utility script"
     },
     {
@@ -9758,6 +10468,416 @@
       "norm_label": "license"
     },
     {
+      "label": "care-bear-daycare-api.md",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api",
+      "community": 40,
+      "norm_label": "care-bear-daycare-api.md"
+    },
+    {
+      "label": "Care Bear Daycare API",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "community": 40,
+      "norm_label": "care bear daycare api"
+    },
+    {
+      "label": "Auth",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_auth",
+      "community": 40,
+      "norm_label": "auth"
+    },
+    {
+      "label": "Who can call what",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_who_can_call_what",
+      "community": 40,
+      "norm_label": "who can call what"
+    },
+    {
+      "label": "Lists",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_lists",
+      "community": 40,
+      "norm_label": "lists"
+    },
+    {
+      "label": "Register and profile",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_register_and_profile",
+      "community": 40,
+      "norm_label": "register and profile"
+    },
+    {
+      "label": "POST `/api/daycare/register/` \u2014 public \u2014 201",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_post_api_daycare_register_public_201",
+      "community": 40,
+      "norm_label": "post `/api/daycare/register/` \u2014 public \u2014 201"
+    },
+    {
+      "label": "GET, PATCH `/api/daycare/me/` \u2014 pet parent",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_patch_api_daycare_me_pet_parent",
+      "community": 40,
+      "norm_label": "get, patch `/api/daycare/me/` \u2014 pet parent"
+    },
+    {
+      "label": "GET, POST `/api/daycare/pet-parents/` \u2014 staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_post_api_daycare_pet_parents_staff",
+      "community": 40,
+      "norm_label": "get, post `/api/daycare/pet-parents/` \u2014 staff"
+    },
+    {
+      "label": "GET `/api/daycare/pet-parents/<id>/` \u2014 staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_pet_parents_id_staff",
+      "community": 40,
+      "norm_label": "get `/api/daycare/pet-parents/<id>/` \u2014 staff"
+    },
+    {
+      "label": "Services",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_services",
+      "community": 40,
+      "norm_label": "services"
+    },
+    {
+      "label": "GET `/api/daycare/services/` \u2014 any authenticated user",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_services_any_authenticated_user",
+      "community": 40,
+      "norm_label": "get `/api/daycare/services/` \u2014 any authenticated user"
+    },
+    {
+      "label": "POST `/api/daycare/services/` \u2014 staff \u2014 201",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_post_api_daycare_services_staff_201",
+      "community": 40,
+      "norm_label": "post `/api/daycare/services/` \u2014 staff \u2014 201"
+    },
+    {
+      "label": "GET, PATCH, DELETE `/api/daycare/services/<id>/` \u2014 GET any authenticated user; writes staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_services_id_get_any_authenticated_user_writes_staff",
+      "community": 40,
+      "norm_label": "get, patch, delete `/api/daycare/services/<id>/` \u2014 get any authenticated user; writes staff"
+    },
+    {
+      "label": "Dogs",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L156",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_dogs",
+      "community": 40,
+      "norm_label": "dogs"
+    },
+    {
+      "label": "GET, POST `/api/daycare/dogs/` \u2014 owner or staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_post_api_daycare_dogs_owner_or_staff",
+      "community": 40,
+      "norm_label": "get, post `/api/daycare/dogs/` \u2014 owner or staff"
+    },
+    {
+      "label": "GET, PATCH, DELETE `/api/daycare/dogs/<id>/` \u2014 owner or staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_dogs_id_owner_or_staff",
+      "community": 40,
+      "norm_label": "get, patch, delete `/api/daycare/dogs/<id>/` \u2014 owner or staff"
+    },
+    {
+      "label": "Vaccines",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L187",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_vaccines",
+      "community": 40,
+      "norm_label": "vaccines"
+    },
+    {
+      "label": "GET, POST `/api/daycare/dogs/<dog_id>/vaccines/` \u2014 owner or staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L191",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_post_api_daycare_dogs_dog_id_vaccines_owner_or_staff",
+      "community": 40,
+      "norm_label": "get, post `/api/daycare/dogs/<dog_id>/vaccines/` \u2014 owner or staff"
+    },
+    {
+      "label": "GET, PATCH, DELETE `/api/daycare/vaccines/<id>/` \u2014 owner or staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_vaccines_id_owner_or_staff",
+      "community": 40,
+      "norm_label": "get, patch, delete `/api/daycare/vaccines/<id>/` \u2014 owner or staff"
+    },
+    {
+      "label": "Bookings",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L214",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_bookings",
+      "community": 40,
+      "norm_label": "bookings"
+    },
+    {
+      "label": "GET `/api/daycare/bookings/` \u2014 owner or staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L220",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_bookings_owner_or_staff",
+      "community": 40,
+      "norm_label": "get `/api/daycare/bookings/` \u2014 owner or staff"
+    },
+    {
+      "label": "POST `/api/daycare/bookings/` \u2014 201",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L230",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_post_api_daycare_bookings_201",
+      "community": 40,
+      "norm_label": "post `/api/daycare/bookings/` \u2014 201"
+    },
+    {
+      "label": "GET, PATCH `/api/daycare/bookings/<id>/`",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_patch_api_daycare_bookings_id",
+      "community": 40,
+      "norm_label": "get, patch `/api/daycare/bookings/<id>/`"
+    },
+    {
+      "label": "Dates and charge",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L276",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_dates_and_charge",
+      "community": 40,
+      "norm_label": "dates and charge"
+    },
+    {
+      "label": "Capacity and double-booking",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L286",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_capacity_and_double_booking",
+      "community": 40,
+      "norm_label": "capacity and double-booking"
+    },
+    {
+      "label": "Care updates",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_care_updates",
+      "community": 40,
+      "norm_label": "care updates"
+    },
+    {
+      "label": "GET `/api/daycare/bookings/<booking_id>/care-updates/` \u2014 owner or staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L302",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_bookings_booking_id_care_updates_owner_or_staff",
+      "community": 40,
+      "norm_label": "get `/api/daycare/bookings/<booking_id>/care-updates/` \u2014 owner or staff"
+    },
+    {
+      "label": "POST \u2014 staff only \u2014 201",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L304",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_post_staff_only_201",
+      "community": 40,
+      "norm_label": "post \u2014 staff only \u2014 201"
+    },
+    {
+      "label": "Messages",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L336",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_messages",
+      "community": 40,
+      "norm_label": "messages"
+    },
+    {
+      "label": "GET `/api/daycare/conversation/` \u2014 pet parent",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L340",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_conversation_pet_parent",
+      "community": 40,
+      "norm_label": "get `/api/daycare/conversation/` \u2014 pet parent"
+    },
+    {
+      "label": "POST `/api/daycare/messages/` \u2014 pet parent \u2014 201",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L364",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_post_api_daycare_messages_pet_parent_201",
+      "community": 40,
+      "norm_label": "post `/api/daycare/messages/` \u2014 pet parent \u2014 201"
+    },
+    {
+      "label": "GET `/api/daycare/conversations/` \u2014 staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L372",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_conversations_staff",
+      "community": 40,
+      "norm_label": "get `/api/daycare/conversations/` \u2014 staff"
+    },
+    {
+      "label": "GET `/api/daycare/conversations/<pet_parent_id>/` \u2014 staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L386",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_conversations_pet_parent_id_staff",
+      "community": 40,
+      "norm_label": "get `/api/daycare/conversations/<pet_parent_id>/` \u2014 staff"
+    },
+    {
+      "label": "POST `/api/daycare/conversations/<pet_parent_id>/messages/` \u2014 staff \u2014 201",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L390",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_post_api_daycare_conversations_pet_parent_id_messages_staff_201",
+      "community": 40,
+      "norm_label": "post `/api/daycare/conversations/<pet_parent_id>/messages/` \u2014 staff \u2014 201"
+    },
+    {
+      "label": "Reviews",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L396",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_reviews",
+      "community": 40,
+      "norm_label": "reviews"
+    },
+    {
+      "label": "POST `/api/daycare/bookings/<booking_id>/review/` \u2014 owning pet parent \u2014 201",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L400",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_post_api_daycare_bookings_booking_id_review_owning_pet_parent_201",
+      "community": 40,
+      "norm_label": "post `/api/daycare/bookings/<booking_id>/review/` \u2014 owning pet parent \u2014 201"
+    },
+    {
+      "label": "GET `/api/daycare/reviews/` \u2014 public, paginated",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L420",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_reviews_public_paginated",
+      "community": 40,
+      "norm_label": "get `/api/daycare/reviews/` \u2014 public, paginated"
+    },
+    {
+      "label": "DELETE `/api/daycare/reviews/<id>/` \u2014 staff \u2014 204",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L436",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_delete_api_daycare_reviews_id_staff_204",
+      "community": 40,
+      "norm_label": "delete `/api/daycare/reviews/<id>/` \u2014 staff \u2014 204"
+    },
+    {
+      "label": "Browser calls from carebeardaycare.ca",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L438",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_browser_calls_from_carebeardaycare_ca",
+      "community": 40,
+      "norm_label": "browser calls from carebeardaycare.ca"
+    },
+    {
+      "label": "Not in this API",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L444",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_not_in_this_api",
+      "community": 40,
+      "norm_label": "not in this api"
+    },
+    {
       "label": "carrie-care-rules-questions.md",
       "file_type": "document",
       "source_file": "docs/carrie-care-rules-questions.md",
@@ -10056,7 +11176,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 102,
       "norm_label": "template",
       "id": "scripts_create_ts_component_scaffold_template"
     },
@@ -10218,7 +11338,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 0,
       "norm_label": "nav_glass_backdrop_color",
       "id": "design_studio_design_studio_glass_nav_glass_backdrop_color"
     },
@@ -10231,7 +11351,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 68,
       "norm_label": "handleslidechange",
       "id": "home_landing_homeherobackground_handleslidechange"
     },
@@ -10244,7 +11364,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 68,
       "norm_label": "home_hero_fade_ms",
       "id": "home_landing_home_landing_data_home_hero_fade_ms"
     },
@@ -10258,7 +11378,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI theme font family so drawer portals inherit Nunito outside the shell className.",
-      "community": 103,
+      "community": 0,
       "norm_label": "home_landing_font_family",
       "id": "home_landing_home_landing_font_home_landing_font_family"
     },
@@ -10466,7 +11586,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 109,
       "norm_label": "care bear daycare",
       "id": "utils_website_seo_care_bear_daycare"
     },
@@ -10533,7 +11653,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Describes a pages-router Next.js 15 + React 18 + MUI 5 specialist for frontend/, including contexts wired from pages/_app.js.",
-      "community": 4,
+      "community": 70,
       "norm_label": "frontend-dev agent",
       "id": "agents_frontend_dev_frontend_dev"
     },
@@ -10546,7 +11666,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 110,
       "norm_label": "thin pages",
       "id": "agents_frontend_dev_thin_pages"
     },
@@ -10835,7 +11955,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 103,
       "norm_label": "parity categories",
       "id": "component_parity_qa_skill_parity_categories"
     },
@@ -19433,6 +20553,17 @@
       "target": "home_landing_usemarketingnavitems_usehomenavitems"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/home-landing/HomeHeroNav.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "home_landing_homeheronav_homeheronav",
+      "target": "pet_parent_useauthnavitem_useauthnavitem"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -20596,6 +21727,17 @@
       "target": "home_landing_usemarketingnavitems_usemarketinginteriornavitems"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/home-landing/MarketingInteriorNav.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "home_landing_marketinginteriornav_marketinginteriornav",
+      "target": "pet_parent_useauthnavitem_useauthnavitem"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/home-landing/MarketingNavDesktopItem.js",
@@ -21464,6 +22606,758 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pet_parent_accountdogssection",
+      "target": "pet_parent_accountdogssection_accountdogssection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_accountdogssection",
+      "target": "pet_parent_dogcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_accountdogssection",
+      "target": "pet_parent_dogcard_dogcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pet_parent_accountdogssection",
+      "target": "pet_parent_dogform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pet_parent_accountdogssection",
+      "target": "pet_parent_dogform_dogform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "pet_parent_accountdogssection",
+      "target": "pet_parent_pet_parent_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "pet_parent_accountdogssection",
+      "target": "pet_parent_pet_parent_styles_section_heading_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_accountdogssection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/pet-parent/AccountDogsSection.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pet_parent_accountdogssection_accountdogssection",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_accountdogssection_accountdogssection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_accountprofilepage_accountprofilepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_accountyousection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_accountyousection_accountyousection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_pet_parent_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_pet_parent_styles_secondary_button_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pet_parent_accountprofilepage_accountprofilepage",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection",
+      "target": "pet_parent_accountyousection_accountyousection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection",
+      "target": "pet_parent_accountyousection_editable_fields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection",
+      "target": "pet_parent_accountyousection_field_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection",
+      "target": "pet_parent_accountyousection_profiletoform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection",
+      "target": "pet_parent_pet_parent_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection",
+      "target": "pet_parent_pet_parent_styles_form_stack_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection",
+      "target": "pet_parent_pet_parent_styles_primary_button_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection",
+      "target": "pet_parent_pet_parent_styles_section_heading_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/pet-parent/AccountYouSection.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "pet_parent_accountyousection_accountyousection",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "pet_parent_apitestpage",
+      "target": "pet_parent_apitestpage_apitestpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pet_parent_apitestpage",
+      "target": "pet_parent_apitestpage_calls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "pet_parent_apitestpage",
+      "target": "pet_parent_apitestpage_resultblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pet_parent_apitestpage",
+      "target": "pet_parent_pet_parent_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pet_parent_apitestpage",
+      "target": "pet_parent_pet_parent_styles_primary_button_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/pet-parent/ApiTestPage.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "pet_parent_apitestpage_apitestpage",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AuthNavLinks.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_authnavlinks",
+      "target": "pet_parent_authnavlinks_authnavlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AuthNavLinks.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pet_parent_authnavlinks",
+      "target": "pet_parent_useauthnavitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AuthNavLinks.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pet_parent_authnavlinks",
+      "target": "pet_parent_useauthnavitem_useauthnavitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/pet-parent/AuthNavLinks.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pet_parent_authnavlinks_authnavlinks",
+      "target": "pet_parent_useauthnavitem_useauthnavitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pet_parent_dogcard",
+      "target": "pet_parent_dogcard_dogcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "pet_parent_dogcard",
+      "target": "pet_parent_dogform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "pet_parent_dogcard",
+      "target": "pet_parent_dogform_dogform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pet_parent_dogcard",
+      "target": "pet_parent_dogvaccines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pet_parent_dogcard",
+      "target": "pet_parent_dogvaccines_dogvaccines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pet_parent_dogcard",
+      "target": "pet_parent_pet_parent_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogCard.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pet_parent_dogcard",
+      "target": "pet_parent_pet_parent_styles_card_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "pet_parent_dogform",
+      "target": "pet_parent_dogform_dogform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "pet_parent_dogform",
+      "target": "pet_parent_dogform_multiline_fields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "pet_parent_dogform",
+      "target": "pet_parent_dogform_sex_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "pet_parent_dogform",
+      "target": "pet_parent_dogform_toformstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pet_parent_dogform",
+      "target": "pet_parent_dogform_top_text_fields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_dogform",
+      "target": "pet_parent_pet_parent_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogForm.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pet_parent_dogform",
+      "target": "pet_parent_pet_parent_styles_primary_button_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "pet_parent_dogvaccines",
+      "target": "pet_parent_dogvaccines_dogvaccines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pet_parent_dogvaccines",
+      "target": "pet_parent_dogvaccines_empty_form",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pet_parent_dogvaccines",
+      "target": "pet_parent_dogvaccines_kind_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/DogVaccines.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "pet_parent_dogvaccines",
+      "target": "pet_parent_dogvaccines_vaccinelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/LoginPage.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "pet_parent_loginpage",
+      "target": "pet_parent_loginpage_loginpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/LoginPage.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pet_parent_loginpage",
+      "target": "pet_parent_pet_parent_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/LoginPage.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pet_parent_loginpage",
+      "target": "pet_parent_pet_parent_styles_form_stack_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/LoginPage.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pet_parent_loginpage",
+      "target": "pet_parent_pet_parent_styles_primary_button_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/pet-parent/LoginPage.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "pet_parent_loginpage_loginpage",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pet_parent_registerpage",
+      "target": "pet_parent_pet_parent_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pet_parent_registerpage",
+      "target": "pet_parent_pet_parent_styles_form_stack_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "pet_parent_registerpage",
+      "target": "pet_parent_pet_parent_styles_primary_button_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "pet_parent_registerpage",
+      "target": "pet_parent_registerpage_empty_form",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "pet_parent_registerpage",
+      "target": "pet_parent_registerpage_registerpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/pet-parent/RegisterPage.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "pet_parent_registerpage_registerpage",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "pet_parent_pet_parent_styles",
+      "target": "pet_parent_pet_parent_styles_card_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "pet_parent_pet_parent_styles",
+      "target": "pet_parent_pet_parent_styles_form_stack_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "pet_parent_pet_parent_styles",
+      "target": "pet_parent_pet_parent_styles_primary_button_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "pet_parent_pet_parent_styles",
+      "target": "pet_parent_pet_parent_styles_secondary_button_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/pet-parent-styles.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "pet_parent_pet_parent_styles",
+      "target": "pet_parent_pet_parent_styles_section_heading_sx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/useAuthNavItem.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "pet_parent_useauthnavitem",
+      "target": "pet_parent_useauthnavitem_useauthnavitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/pet-parent/useAuthNavItem.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pet_parent_useauthnavitem_useauthnavitem",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/components/website/CreditedImage.js",
       "source_location": "L32",
       "weight": 1.0,
@@ -21640,6 +23534,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/consts/routes.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "consts_routes",
+      "target": "consts_routes_isaccountroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/consts/routes.js",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -21715,6 +23619,16 @@
       "confidence_score": 1.0,
       "source": "consts_routes",
       "target": "consts_routes_productmanualslugpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/consts/routes.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "consts_routes",
+      "target": "consts_routes_safeaccountnextpath",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21915,16 +23829,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/contexts/AuthContext.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "contexts_authcontext",
-      "target": "contexts_authcontext_empty_auth"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/contexts/AuthContext.js",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -21950,16 +23854,6 @@
       "weight": 1.0,
       "source": "contexts_authcontext_useauth",
       "target": "contexts_authcontext_authcontext"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/contexts/AuthContext.js",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "contexts_authcontext_authprovider",
-      "target": "contexts_authcontext_empty_auth"
     },
     {
       "relation": "calls",
@@ -22260,6 +24154,320 @@
       "weight": 1.0,
       "source": "lib_createapptheme_createapptheme",
       "target": "consts_website_theme_care_bear_palette"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_authlogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_authme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_createdog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_createvaccine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_deletedog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_deletevaccine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_formatapierrors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_getmyprofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_listdogs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_listservices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_listvaccines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_registerpetparent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_updatedog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_updatemyprofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_withtrailingslash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "lib_daycareapi_daycarerequest",
+      "target": "lib_daycareapi_withtrailingslash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "lib_daycareapi_authlogin",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "lib_daycareapi_authme",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "lib_daycareapi_createdog",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "lib_daycareapi_createvaccine",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "lib_daycareapi_deletedog",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "lib_daycareapi_deletevaccine",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "lib_daycareapi_getmyprofile",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "lib_daycareapi_listdogs",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "lib_daycareapi_listservices",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "lib_daycareapi_listvaccines",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "lib_daycareapi_registerpetparent",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "lib_daycareapi_updatedog",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "lib_daycareapi_updatemyprofile",
+      "target": "lib_daycareapi_daycarerequest",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -23604,6 +25812,46 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/account/api-test/page.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "api_test_page",
+      "target": "api_test_page_accountapitestroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/account/api-test/page.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "api_test_page",
+      "target": "api_test_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/account/page.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "account_page",
+      "target": "account_page_accountroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/account/page.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "account_page",
+      "target": "account_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/(website)/care-and-safety/page.js",
       "source_location": "L6",
       "weight": 1.0,
@@ -23785,6 +26033,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/login/page.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "login_page",
+      "target": "login_page_loginroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/login/page.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "login_page",
+      "target": "login_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/(website)/page.js",
       "source_location": "L6",
       "weight": 1.0,
@@ -23842,6 +26110,26 @@
       "weight": 1.0,
       "source": "website_page_homepage",
       "target": "utils_website_seo_homepagejsonld"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/register/page.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "register_page",
+      "target": "register_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(website)/register/page.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "register_page",
+      "target": "register_page_registerroute",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -28672,6 +30960,406 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_auth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_bookings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L438",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_browser_calls_from_carebeardaycare_ca",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_care_updates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_dogs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_lists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_messages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L444",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_not_in_this_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_register_and_profile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L396",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_reviews",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_services",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_vaccines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_who_can_call_what",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_register_and_profile",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_pet_parents_id_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_register_and_profile",
+      "target": "docs_care_bear_daycare_api_get_patch_api_daycare_me_pet_parent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_register_and_profile",
+      "target": "docs_care_bear_daycare_api_get_post_api_daycare_pet_parents_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_register_and_profile",
+      "target": "docs_care_bear_daycare_api_post_api_daycare_register_public_201",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_services",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_services_any_authenticated_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_services",
+      "target": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_services_id_get_any_authenticated_user_writes_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_services",
+      "target": "docs_care_bear_daycare_api_post_api_daycare_services_staff_201",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_dogs",
+      "target": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_dogs_id_owner_or_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_dogs",
+      "target": "docs_care_bear_daycare_api_get_post_api_daycare_dogs_owner_or_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_vaccines",
+      "target": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_vaccines_id_owner_or_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_vaccines",
+      "target": "docs_care_bear_daycare_api_get_post_api_daycare_dogs_dog_id_vaccines_owner_or_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L286",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_bookings",
+      "target": "docs_care_bear_daycare_api_capacity_and_double_booking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L276",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_bookings",
+      "target": "docs_care_bear_daycare_api_dates_and_charge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_bookings",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_bookings_owner_or_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_bookings",
+      "target": "docs_care_bear_daycare_api_get_patch_api_daycare_bookings_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_bookings",
+      "target": "docs_care_bear_daycare_api_post_api_daycare_bookings_201",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_updates",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_bookings_booking_id_care_updates_owner_or_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L304",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_care_updates",
+      "target": "docs_care_bear_daycare_api_post_staff_only_201",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L340",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_messages",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_conversation_pet_parent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L386",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_messages",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_conversations_pet_parent_id_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L372",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_messages",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_conversations_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L390",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_messages",
+      "target": "docs_care_bear_daycare_api_post_api_daycare_conversations_pet_parent_id_messages_staff_201",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L364",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_messages",
+      "target": "docs_care_bear_daycare_api_post_api_daycare_messages_pet_parent_201",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L436",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_reviews",
+      "target": "docs_care_bear_daycare_api_delete_api_daycare_reviews_id_staff_204",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L420",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_reviews",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_reviews_public_paginated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L400",
+      "weight": 1.0,
+      "source": "docs_care_bear_daycare_api_reviews",
+      "target": "docs_care_bear_daycare_api_post_api_daycare_bookings_booking_id_review_owning_pet_parent_201",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/carrie-care-rules-questions.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -33413,5 +36101,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "a41299783fc62913ecdcf6ed789132d67b7a3e54"
+  "built_at_commit": "b13efb6bc70103b4c3dca31e22d16229d3bc1702"
 }

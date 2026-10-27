@@ -6,7 +6,16 @@ export const DESIGN_STUDIO_PATH = '/design-studio';
 export const TRADE_PARTNER_PATH = '/trade-partner';
 export const EVENT_FORM_PATH = '/event/form';
 export const LOGIN_PATH = '/login';
+export const REGISTER_PATH = '/register';
+export const ACCOUNT_PATH = '/account';
+export const ACCOUNT_API_TEST_PATH = '/account/api-test';
 export const FORGOT_PASSWORD_PATH = '/forgot-password';
+
+/** Safe post-login redirect: only paths under ACCOUNT_PATH, else the account root. */
+export function safeAccountNextPath(next) {
+  if (typeof next !== 'string' || !next.startsWith(ACCOUNT_PATH)) return ACCOUNT_PATH;
+  return next;
+}
 
 export const THE_BRAND_PATH = '/the-brand';
 export const OUR_PROCESS_PATH = '/our-process';

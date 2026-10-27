@@ -5,6 +5,9 @@ services:
       dockerfile: Dockerfile.local
     environment:
       - WATCHPACK_POLLING=true
+      # Server-side origin for the /daycare-api/:path* rewrite (next.config.js).
+      # Optional — defaults to the production IHCS API when unset.
+      - DAYCARE_API_ORIGIN=${DAYCARE_API_ORIGIN:-https://inhousecloudsolutions.com}
     volumes:
       - ./frontend:/code
       - /code/node_modules
