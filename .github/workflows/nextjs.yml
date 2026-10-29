@@ -49,7 +49,11 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: frontend/yarn.lock
       - name: Enable Corepack
-        run: corepack enable
+        run: |
+          if ! command -v corepack >/dev/null; then
+            npm install -g corepack@0.36.0
+          fi
+          corepack enable
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

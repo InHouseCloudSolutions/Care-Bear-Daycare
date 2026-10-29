@@ -3,7 +3,10 @@
 FROM node:lts-alpine AS base
 # Yarn 4 via Corepack + committed release (.yarnrc.yml yarnPath)
 ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
-RUN corepack enable
+# Node 26 (node:lts since 2026-10-28) no longer ships Corepack.
+RUN npm install -g corepack@0.36.0 \
+  && corepack enable \
+  && npm cache clean --force
 
 # Install dependencies only when needed
 FROM base AS deps
