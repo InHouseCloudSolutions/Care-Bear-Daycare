@@ -4,8 +4,9 @@ import { useEffect, useState } from 'react';
 import { Alert, Box, Button, Typography } from '@mui/material';
 import GlassFormField from '@/components/design-studio/GlassFormField';
 import { useAuth } from '@/contexts/AuthContext';
-import { formatApiErrors, updateMyProfile } from '@/lib/daycareApi';
+import { deleteMyPhoto, formatApiErrors, updateMyProfile, uploadMyPhoto } from '@/lib/daycareApi';
 import { FORM_STACK_SX, PRIMARY_BUTTON_SX, SECTION_HEADING_SX } from './pet-parent-styles';
+import ProfilePhoto from './ProfilePhoto';
 
 const EDITABLE_FIELDS = [
   'first_name',
@@ -35,9 +36,16 @@ function profileToForm(petParent) {
   return form;
 }
 
+function photoErrorMessage(res, fallback) {
+  const { summary, fields } = formatApiErrors(res.data);
+  return fields.file || summary || fallback;
+}
+
 export default function AccountYouSection() {
-  const { petParent, token, refreshAuth } = useAuth();
+  const { petParent, token, refreshAuth, user, loading } = useAuth();
+  const serverPhotoUrl = petParent?.photo_url ?? null;
   const [form, setForm] = useState(() => profileToForm(petParent));
+  const [photoUrl, setPhotoUrl] = useState(serverPhotoUrl);
   const [fieldErrors, setFieldErrors] = useState({});
   const [summaryError, setSummaryError] = useState(null);
   const [saved, setSaved] = useState(false);
@@ -46,6 +54,10 @@ export default function AccountYouSection() {
   useEffect(() => {
     setForm(profileToForm(petParent));
   }, [petParent]);
+
+  useEffect(() => {
+    setPhotoUrl(serverPhotoUrl);
+  }, [serverPhotoUrl]);
 
   const handleChange = field => event => {
     setForm(prev => ({ ...prev, [field]: event.target.value }));
@@ -64,7 +76,12 @@ export default function AccountYouSection() {
 
     if (!res.ok) {
       const { summary, fields } = formatApiErrors(res.data);
-      setSummaryError(summary);
+      setSummaryError(
+        summary ||
+          (res.status === 404
+            ? 'This account has no pet-parent profile.'
+            : 'Could not save your profile.'),
+      );
       setFieldErrors(fields);
       return;
     }
@@ -73,11 +90,56 @@ export default function AccountYouSection() {
     setSaved(true);
   };
 
+  const handlePhotoUpload = async file => {
+    const res = await uploadMyPhoto(token, file);
+    if (!res.ok) {
+      return photoErrorMessage(res, 'Could not upload that photo.');
+    }
+    setPhotoUrl(res.data?.photo_url ?? null);
+    return null;
+  };
+
+  const handlePhotoRemove = async () => {
+    const res = await deleteMyPhoto(token);
+    if (!res.ok) {
+      return photoErrorMessage(res, 'Could not remove that photo.');
+    }
+    setPhotoUrl(null);
+    return null;
+  };
+
+  const parentName = [petParent?.first_name, petParent?.last_name].filter(Boolean).join(' ');
+
+  if (!loading && user && !petParent) {
+    return (
+      <Box component="section">
+        <Typography component="h2" sx={SECTION_HEADING_SX}>
+          You
+        </Typography>
+        <Alert severity="info" sx={{ mt: 3, maxWidth: 420 }}>
+          Signed in as {user.username}. This account has no pet-parent profile, so these details are
+          not saved here.
+        </Alert>
+      </Box>
+    );
+  }
+
   return (
     <Box component="section">
       <Typography component="h2" sx={SECTION_HEADING_SX}>
         You
       </Typography>
+      {petParent ? (
+        <Box sx={{ mt: 3 }}>
+          <ProfilePhoto
+            photoUrl={photoUrl}
+            token={token}
+            name={parentName || 'You'}
+            onUpload={handlePhotoUpload}
+            onRemove={handlePhotoRemove}
+          />
+        </Box>
+      ) : null}
       <GlassFormField
         label="Email"
         value={petParent?.email ?? ''}

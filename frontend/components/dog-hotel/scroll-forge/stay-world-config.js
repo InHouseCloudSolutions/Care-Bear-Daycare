@@ -1,4 +1,4 @@
-import { CONTACT_PATH, ROVER_BOOKING_URL } from '@/consts/routes';
+import { BOOK_STAY_PATH, CONTACT_PATH, ROVER_BOOKING_URL } from '@/consts/routes';
 import publicPath from '@/utils/publicPath';
 
 const CARD_HEIGHT = 7.05;
@@ -104,8 +104,9 @@ export const STAY_WORLD = {
       linger: 0.5,
       camera: ARRIVAL,
       cta: {
-        primary: { label: 'Book a stay', href: ROVER_BOOKING_URL, external: true },
+        primary: { label: 'Book a stay', href: BOOK_STAY_PATH },
         secondary: { label: 'Plan a visit', href: CONTACT_PATH },
+        tertiary: { label: 'See us on Rover', href: ROVER_BOOKING_URL, external: true },
       },
       scene: {
         island: false,

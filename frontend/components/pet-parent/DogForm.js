@@ -32,6 +32,7 @@ function toFormState(dog) {
     weight_lb: dog?.weight_lb ?? '',
     birth_date: dog?.birth_date ?? '',
     spayed_neutered: Boolean(dog?.spayed_neutered),
+    good_with_dogs: Boolean(dog?.good_with_dogs),
     vet_name: dog?.vet_name ?? '',
     vet_phone: dog?.vet_phone ?? '',
     medications: dog?.medications ?? '',
@@ -145,6 +146,12 @@ export default function DogForm({ initialDog, onSubmit, onCancel, submitLabel })
         }
         label="Spayed / neutered"
       />
+      <FormControlLabel
+        control={
+          <Checkbox checked={form.good_with_dogs} onChange={handleCheckbox('good_with_dogs')} />
+        }
+        label="Good with other dogs"
+      />
       {MULTILINE_FIELDS.map(field => (
         <GlassFormField
           key={field.name}
@@ -180,6 +187,7 @@ DogForm.propTypes = {
     weight_lb: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     birth_date: PropTypes.string,
     spayed_neutered: PropTypes.bool,
+    good_with_dogs: PropTypes.bool,
     vet_name: PropTypes.string,
     vet_phone: PropTypes.string,
     medications: PropTypes.string,

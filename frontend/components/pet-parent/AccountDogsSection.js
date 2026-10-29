@@ -9,7 +9,7 @@ import DogCard from './DogCard';
 import DogForm from './DogForm';
 
 export default function AccountDogsSection() {
-  const { token } = useAuth();
+  const { token, petParent } = useAuth();
   const [dogs, setDogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
@@ -54,7 +54,7 @@ export default function AccountDogsSection() {
         <Typography component="h2" sx={SECTION_HEADING_SX}>
           Dogs
         </Typography>
-        {!adding ? (
+        {petParent && !adding ? (
           <Button
             onClick={() => setAdding(true)}
             variant="outlined"
@@ -83,7 +83,7 @@ export default function AccountDogsSection() {
 
       {!loading && dogs.length === 0 && !adding ? (
         <Typography sx={{ mt: 3, color: 'text.secondary' }}>
-          No dogs yet. Add your first dog above.
+          {petParent ? 'No dogs yet. Add your first dog above.' : 'No dogs yet.'}
         </Typography>
       ) : null}
 

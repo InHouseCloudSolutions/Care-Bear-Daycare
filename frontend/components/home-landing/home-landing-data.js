@@ -5,6 +5,7 @@ import {
   MARKETING_INTERIOR_NAV_ITEMS_BASE as NAV_INTERIOR,
 } from '@/consts/marketing-nav';
 import {
+  BOOK_STAY_PATH,
   CONTACT_PATH,
   isExternalHref,
   LOGIN_PATH,
@@ -40,8 +41,9 @@ export function withStaffNavItems(items, isAuthenticated) {
 export const HOME_BRAND = {
   name: 'Care Bear Daycare',
   tagline: 'Overnight care and daycare in Toronto and the GTA, with a safe backyard made for play.',
-  primaryCta: { label: 'Book a stay', href: ROVER_BOOKING_URL },
+  primaryCta: { label: 'Book a stay', href: BOOK_STAY_PATH },
   secondaryCta: { label: 'Plan a visit', href: CONTACT_PATH },
+  roverCta: { label: 'See us on Rover', href: ROVER_BOOKING_URL, external: true },
 };
 
 export const HOME_FOOTER = {

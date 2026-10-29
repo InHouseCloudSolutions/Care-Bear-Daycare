@@ -43,6 +43,14 @@ export const PRIMARY_BUTTON_SX = {
   },
 };
 
+export const PHOTO_BUTTON_SX = {
+  textTransform: 'none',
+  fontWeight: 600,
+  color: WEBSITE_INK,
+  px: 1,
+  minWidth: 0,
+};
+
 export const SECONDARY_BUTTON_SX = {
   textTransform: 'none',
   letterSpacing: '0.02em',

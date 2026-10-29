@@ -17,7 +17,7 @@ export default function LoginPage() {
   const { login } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
@@ -27,12 +27,12 @@ export default function LoginPage() {
     setSubmitting(true);
     setError(null);
 
-    const res = await login(email.trim(), password);
+    const res = await login(username.trim(), password);
     setSubmitting(false);
 
     if (!res.ok) {
       const { summary, fields } = formatApiErrors(res.data);
-      setError(summary || fields.password || fields.username || 'Incorrect email or password.');
+      setError(summary || fields.password || fields.username || 'Incorrect username or password.');
       return;
     }
 
@@ -51,14 +51,13 @@ export default function LoginPage() {
       ) : null}
       <Box component="form" onSubmit={handleSubmit} sx={FORM_STACK_SX}>
         <GlassFormField
-          label="Email"
-          type="email"
-          name="email"
-          autoComplete="email"
+          label="Username"
+          name="username"
+          autoComplete="username"
           required
           fullWidth
-          value={email}
-          onChange={event => setEmail(event.target.value)}
+          value={username}
+          onChange={event => setUsername(event.target.value)}
         />
         <GlassFormField
           label="Password"

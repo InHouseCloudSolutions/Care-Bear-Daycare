@@ -132,10 +132,11 @@ export function mountScrollForge(container, config) {
       html += `<ul class="sf-tags">${s.tags.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`;
     }
     if (s.cta) {
-      const p = s.cta.primary, sec = s.cta.secondary;
+      const p = s.cta.primary, sec = s.cta.secondary, third = s.cta.tertiary;
       html += '<div class="sf-cta">';
       if (p) html += linkHtml('sf-btn sf-btn--primary', p);
       if (sec) html += linkHtml('sf-btn', sec);
+      if (third) html += linkHtml('sf-btn', third);
       html += '</div>';
     }
     c.innerHTML = html;

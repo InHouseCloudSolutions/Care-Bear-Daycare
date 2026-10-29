@@ -56,8 +56,8 @@ export const AuthProvider = ({ children }) => {
   }, [loadProfiles]);
 
   const login = useCallback(
-    async (email, password) => {
-      const res = await authLogin(email, password);
+    async (username, password) => {
+      const res = await authLogin(username, password);
       if (!res.ok || !res.data?.token) {
         return res;
       }

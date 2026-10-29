@@ -194,3 +194,82 @@ export function averageStarRating(reviews) {
   const total = reviews.reduce((sum, review) => sum + review.stars, 0);
   return Math.round((total / reviews.length) * 10) / 10;
 }
+
+const REVIEW_SOURCES = new Set(['rover', 'google', 'internal']);
+
+/** null and "" are empty. Any other non-string is empty too. */
+function nullableSiteText(value) {
+  if (typeof value !== 'string' || value === '') return null;
+  return value;
+}
+
+function mapReviewSource(source) {
+  return REVIEW_SOURCES.has(source) ? source : 'internal';
+}
+
+function mapReviewStars(stars) {
+  const value = typeof stars === 'number' ? stars : Number(stars);
+  return Number.isFinite(value) ? value : 0;
+}
+
+function mapReviewPhotos(photos) {
+  if (!Array.isArray(photos)) return [];
+  return photos.flatMap(photo => {
+    if (!photo || typeof photo !== 'object') return [];
+    const src = nullableSiteText(photo.src);
+    if (!src) return [];
+    return [{ src, alt: nullableSiteText(photo.alt) }];
+  });
+}
+
+/**
+ * One public site-reviews row, or null when id or quote is missing.
+ * @param {unknown} row
+ * @returns {Review|null}
+ */
+export function mapSiteReview(row) {
+  if (!row || typeof row !== 'object') return null;
+  const id = typeof row.id === 'string' ? row.id : '';
+  const quote = typeof row.quote === 'string' ? row.quote : '';
+  if (!id || !quote) return null;
+
+  const photos = mapReviewPhotos(row.photos);
+  return {
+    id,
+    source: mapReviewSource(row.source),
+    stayedOn: typeof row.stayed_on === 'string' ? row.stayed_on : '',
+    dogName: typeof row.dog_name === 'string' ? row.dog_name : '',
+    ownerFirstName: typeof row.owner_first_name === 'string' ? row.owner_first_name : '',
+    stars: mapReviewStars(row.stars),
+    quote,
+    photoSrc: nullableSiteText(row.photo_src),
+    photoAlt: nullableSiteText(row.photo_alt),
+    ...(photos.length > 0 ? { photos } : {}),
+  };
+}
+
+/**
+ * @param {unknown} rows
+ * @returns {Review[]}
+ */
+export function mapSiteReviews(rows) {
+  if (!Array.isArray(rows)) return [];
+  return rows.flatMap(row => {
+    const review = mapSiteReview(row);
+    return review ? [review] : [];
+  });
+}
+
+/**
+ * Use the API list only when the response is OK and at least one row maps.
+ * A failed request, non-OK status, timeout, or empty body keeps `fallback`.
+ * @param {Review[]} fallback
+ * @param {{ ok?: boolean, data?: unknown } | null | undefined} response
+ * @returns {Review[]}
+ */
+export function reviewsFromSiteResponse(fallback, response) {
+  if (!response || response.ok !== true) return fallback;
+  const mapped = mapSiteReviews(response.data);
+  if (mapped.length === 0) return fallback;
+  return mapped;
+}

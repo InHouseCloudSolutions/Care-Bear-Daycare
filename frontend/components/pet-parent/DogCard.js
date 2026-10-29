@@ -1,20 +1,37 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { WEBSITE_INK } from '@/consts/website-theme';
-import { deleteDog, updateDog } from '@/lib/daycareApi';
+import {
+  deleteDog,
+  deleteDogPhoto,
+  formatApiErrors,
+  updateDog,
+  uploadDogPhoto,
+} from '@/lib/daycareApi';
 import { CARD_SX } from './pet-parent-styles';
 import DogForm from './DogForm';
 import DogVaccines from './DogVaccines';
+import ProfilePhoto from './ProfilePhoto';
 
-/** One dog: view/edit summary, delete, and its nested vaccine list. */
+function photoErrorMessage(res, fallback) {
+  const { summary, fields } = formatApiErrors(res.data);
+  return fields.file || summary || fallback;
+}
+
+/** One dog: view/edit summary, photo, delete, and its nested vaccine list. */
 export default function DogCard({ dog, token, onChanged }) {
   const [editing, setEditing] = useState(false);
   const [confirmingDelete, setConfirmingDelete] = useState(false);
   const [deleting, setDeleting] = useState(false);
+  const [photoUrl, setPhotoUrl] = useState(dog.photo_url ?? null);
+
+  useEffect(() => {
+    setPhotoUrl(dog.photo_url ?? null);
+  }, [dog.photo_url]);
 
   const handleUpdate = async payload => {
     const res = await updateDog(token, dog.id, payload);
@@ -24,6 +41,28 @@ export default function DogCard({ dog, token, onChanged }) {
     }
     return res;
   };
+
+  const handlePhotoUpload = async file => {
+    const res = await uploadDogPhoto(token, dog.id, file);
+    if (!res.ok) {
+      return photoErrorMessage(res, 'Could not upload that photo.');
+    }
+    setPhotoUrl(res.data?.photo_url ?? null);
+    onChanged();
+    return null;
+  };
+
+  const handlePhotoRemove = async () => {
+    const res = await deleteDogPhoto(token, dog.id);
+    if (!res.ok) {
+      return photoErrorMessage(res, 'Could not remove that photo.');
+    }
+    setPhotoUrl(null);
+    onChanged();
+    return null;
+  };
+
+  const details = [dog.breed, dog.sex].filter(Boolean).join(' · ') || 'No details yet';
 
   const handleDelete = async () => {
     setDeleting(true);
@@ -38,37 +77,25 @@ export default function DogCard({ dog, token, onChanged }) {
 
   return (
     <Box sx={CARD_SX}>
-      {editing ? (
-        <DogForm
-          initialDog={dog}
-          onSubmit={handleUpdate}
-          onCancel={() => setEditing(false)}
-          submitLabel="Save dog"
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: 2,
+        }}
+      >
+        <ProfilePhoto
+          photoUrl={photoUrl}
+          token={token}
+          name={dog.name}
+          title={editing ? undefined : dog.name}
+          subtitle={editing ? undefined : details}
+          onUpload={handlePhotoUpload}
+          onRemove={handlePhotoRemove}
         />
-      ) : (
-        <Box
-          sx={{
-            display: 'flex',
-            alignItems: 'baseline',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: 1,
-          }}
-        >
-          <Box>
-            <Typography
-              component="h3"
-              sx={{ fontSize: '1.125rem', fontWeight: 600, color: WEBSITE_INK }}
-            >
-              {dog.name}
-            </Typography>
-            <Typography
-              component="p"
-              sx={{ mt: 0.5, color: alpha(WEBSITE_INK, 0.7), fontSize: 14 }}
-            >
-              {[dog.breed, dog.sex].filter(Boolean).join(' · ') || 'No details yet'}
-            </Typography>
-          </Box>
+        {!editing ? (
           <Box sx={{ display: 'flex', gap: 1 }}>
             <Button size="small" onClick={() => setEditing(true)} sx={{ textTransform: 'none' }}>
               Edit
@@ -105,8 +132,18 @@ export default function DogCard({ dog, token, onChanged }) {
               </Button>
             )}
           </Box>
+        ) : null}
+      </Box>
+      {editing ? (
+        <Box sx={{ mt: 2 }}>
+          <DogForm
+            initialDog={dog}
+            onSubmit={handleUpdate}
+            onCancel={() => setEditing(false)}
+            submitLabel="Save dog"
+          />
         </Box>
-      )}
+      ) : null}
       <Box sx={{ mt: 3, pt: 3, borderTop: `1px solid ${alpha(WEBSITE_INK, 0.1)}` }}>
         <DogVaccines dogId={dog.id} token={token} />
       </Box>
@@ -120,6 +157,7 @@ DogCard.propTypes = {
     name: PropTypes.string.isRequired,
     breed: PropTypes.string,
     sex: PropTypes.string,
+    photo_url: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([null])]),
   }).isRequired,
   token: PropTypes.string,
   onChanged: PropTypes.func.isRequired,

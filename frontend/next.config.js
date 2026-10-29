@@ -61,10 +61,13 @@ const config = {
   ...(!isGitHubPages && {
     async rewrites() {
       const daycareApiOrigin = process.env.DAYCARE_API_ORIGIN || 'https://inhousecloudsolutions.com';
+      // Django requires a trailing slash. Next's own slash redirect strips it before
+      // this rewrite, and a slash-less upstream 301 uses a relative Location
+      // (`/api/.../`) that the browser then follows on this local origin.
       return [
         {
           source: '/daycare-api/:path*',
-          destination: `${daycareApiOrigin}/api/:path*`,
+          destination: `${daycareApiOrigin}/api/:path*/`,
         },
       ];
     },

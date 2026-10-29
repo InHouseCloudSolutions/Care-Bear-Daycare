@@ -1,10 +1,10 @@
 'use client';
 
-import { Box, Link, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
-import { ROVER_BOOKING_URL } from '@/consts/routes';
 import { WEBSITE_INK } from '@/consts/website-theme';
 import DogHotelInteriorPage from './DogHotelInteriorPage';
+import BookStayActions from './BookStayActions';
 
 const bodySx = {
   maxWidth: 640,
@@ -45,17 +45,9 @@ const CARE_STANDARDS = [
     body: (
       <>
         The meet-and-greet is at Carrie’s home, inside or in the backyard, so you can see the space
-        and whether she and your dog are a good fit. Bookings are still through{' '}
-        <Link
-          href={ROVER_BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          color="inherit"
-          underline="always"
-        >
-          Rover
-        </Link>
-        . Routines and the day plan are set with you and your dog in a discovery session.
+        and whether she and your dog are a good fit. You can request a stay on this site. Rover is
+        there if you want to read the profile. Routines and the day plan are set with you and your
+        dog in a discovery session.
       </>
     ),
   },
@@ -202,6 +194,7 @@ export default function CareAndSafetyPage() {
           no breed or size limits within reason.
         </Typography>
       </Box>
+      <BookStayActions />
     </DogHotelInteriorPage>
   );
 }

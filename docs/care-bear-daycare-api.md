@@ -43,7 +43,7 @@ Use `isStaff` to choose the staff UI versus the pet-parent UI. A pet parent acco
 | Role | How you know | Can do |
 |------|----------------|--------|
 | Public | no token | register, list reviews |
-| Pet parent | token, `isStaff: false`, has a profile | own profile, own dogs, own vaccines, own bookings, read own care updates, own conversation, one review per completed booking |
+| Pet parent | token, `isStaff: false`, has a profile | own profile, own dogs, own vaccines, own bookings, check availability, read own care updates, own conversation, one review per completed booking |
 | Staff | token, `isStaff: true` | everything, including other pet parents |
 
 A pet parent who asks for another parent's dog, booking, or vaccine gets **404**. Missing auth on a protected route is **401**. A pet parent hitting a staff-only route is **403**.
@@ -53,6 +53,8 @@ Validation errors are **400** with either a field map (`{ "ends_on": ["..."] }`)
 ## Lists
 
 These list routes return a **JSON array** (not paginated): pet parents, services, dogs, vaccines, bookings, care updates, conversations.
+
+`GET /api/daycare/availability/` returns `{ "days": [...] }`, not a bare array.
 
 `GET /api/daycare/reviews/` is paginated:
 
@@ -124,7 +126,7 @@ Seeded rows (rate starts at `0.00`, `max_dogs_per_day` is `null` until staff set
 
 `rate_unit`: `day`, `night`, `visit`.
 
-`max_dogs_per_day`: integer, or `null` for no cap.
+`max_dogs_per_day`: integer, or `null` for no cap. Walk and drop-in use this cap. Daycare and boarding do not; they share the pool under Bookings.
 
 ### GET `/api/daycare/services/` — any authenticated user
 
@@ -176,9 +178,12 @@ Pet parent POST omits `pet_parent_id` (the dog is attached to them). Staff POST 
   "medications": "Apoquel with breakfast",
   "feeding": "One cup twice a day",
   "temperament": "Fine with dogs, shy with strangers",
+  "good_with_dogs": false,
   "notes": "Needs a crate at night"
 }
 ```
+
+`good_with_dogs` defaults to `false`, including dogs that already exist. Owners and staff can read and write it. `false` means the dog is not social with other dogs. If any dog on a booking is not social, that booking is exclusive on every date it occupies. One non-social dog overrides social siblings.
 
 Response adds `id`, `pet_parent_id`, `created_at`, `updated_at`. `weight_lb` and `birth_date` may be `null`. Text fields default to `""`.
 
@@ -245,13 +250,15 @@ Pet parent:
 
 `status`, `charge`, and `pet_parent_id` sent by a pet parent are ignored. The booking is stored as `requested`. An inactive service is **400**.
 
-Staff must also send `pet_parent_id` and may send `status` and `charge`. If `charge` is omitted, it is computed.
+Staff must also send `pet_parent_id` and may send `status`, `charge`, and `override_rules`. If `charge` is omitted, it is computed. A pet parent who sends `override_rules` is ignored.
+
+If this pet parent already has a `requested`, `confirmed`, or `checked_in` booking for the same service and the same `starts_on` and `ends_on`, the dogs are added to that booking instead of creating another row. The response is that booking. See capacity.
 
 ### GET, PATCH `/api/daycare/bookings/<id>/`
 
 Pet parent PATCH may only cancel. Body must be `{ "status": "cancelled" }`. Allowed only from `requested` or `confirmed`. Any other status value is **400** and nothing changes. Other fields in that request are ignored.
 
-Staff PATCH may change `service_id`, `dogs`, `status`, dates, times, `parent_note`, and `charge`.
+Staff PATCH may change `service_id`, `dogs`, `status`, dates, times, `parent_note`, and `charge`. Staff may also send `override_rules: true`. That flag is not stored and is not returned.
 
 Booking object (`dogs` is a list of dog ids):
 
@@ -285,15 +292,90 @@ Booking object (`dogs` is a list of dog ids):
 
 ### Capacity and double-booking
 
-Only `confirmed` and `checked_in` hold a spot. `requested` does not.
+Daycare and boarding share one pool. Walks and drop-ins do not: they keep `max_dogs_per_day` on their own service and do not take a family slot.
 
-- Daycare occupies every date from `starts_on` through `ends_on`.
-- Boarding occupies each night from `starts_on` up to but not including `ends_on`.
-- Walk and drop-in occupy `starts_on`.
+Only `confirmed` and `checked_in` hold a date. `requested` does not. A pet-parent POST is stored as `requested` and does not run these rules, so the day stays open for other families. Rules run when a booking becomes or already is occupying: staff create or confirm, and when dogs are added to an occupying booking.
 
-If `max_dogs_per_day` is set, confirming (or staff creating already `confirmed` / `checked_in`) fails with **400** when any of those dates would exceed the cap. The count is dogs, not bookings.
+The API does not reject past dates or dates far in the future.
 
-A dog also cannot be on two `confirmed` or `checked_in` bookings whose occupied dates overlap, even across services. The second confirm is **400**.
+#### Shared pool (daycare and boarding)
+
+On each date the booking occupies:
+
+- At most two pet parents. A third family is **400**.
+- On a shared date, each family brings at most 2 dogs (4 dogs in total).
+- 3 or more dogs from one pet parent take the date exclusively. That is allowed when nobody else is on it, and it blocks every other family.
+- The same pet parent is one family. Dogs are summed across that parent's daycare and boarding bookings on the date. Two bookings from one household are not two families.
+
+If any dog on a booking has `good_with_dogs: false`, that booking is exclusive for every date it occupies.
+
+Occupied dates:
+
+- Daycare occupies `starts_on` through `ends_on`, inclusive.
+- Social boarding (every dog `good_with_dogs`) occupies `starts_on` through the day before `ends_on`. Checkout stays free.
+- If any dog on a boarding booking is not social, that booking also occupies `ends_on`, so the next dog cannot check in while they leave.
+
+A full or exclusive date is **400** `{ "detail": "That date is booked (YYYY-MM-DD)." }`. The message does not name other families, dogs, or social flags.
+
+#### Walk and drop-in
+
+If `max_dogs_per_day` is set, an occupying walk or drop-in is **400** when `starts_on` would exceed that service's own cap. `null` means no cap. These bookings do not count toward the daycare and boarding pool. They occupy `starts_on`.
+
+#### Closures
+
+Staff block a date by adding a Closure in Django admin. The field is `on` (a unique date). There is no closure API. A closure rejects every service, including staff. `override_rules` does not skip it. **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`.
+
+#### Same dog
+
+A dog cannot be on two `confirmed` or `checked_in` bookings whose occupied dates overlap, even across services. The second confirm is **400**. `override_rules` does not skip this. Occupied dates include a non-social boarding checkout day.
+
+#### Staff override
+
+Staff may send `override_rules: true` on booking POST or PATCH. That skips the family, social, and `max_dogs_per_day` rules. It does not skip closures or the same-dog overlap check. Pet parents may send the field; it is ignored. The flag is not stored and is not returned.
+
+#### Adding dogs to the same stay
+
+POST with the same pet parent, service, `starts_on`, and `ends_on` as an existing `requested`, `confirmed`, or `checked_in` booking adds the dogs onto that booking (the union) instead of creating a second row. The response is that booking (**201**). Status stays as it was. `parent_note`, `starts_at`, and `ends_at` update when they are sent.
+
+If the booking is occupying, the rules run again for the combined dogs unless staff send `override_rules`. When they pass, the new dogs count immediately and the status is unchanged. When they fail, nothing changes and the response is **400**.
+
+A different date range creates a new booking. The household still counts as one family for capacity.
+
+If staff send `charge`, the merged booking uses that charge. Otherwise charge is recomputed from the combined dog count.
+
+### GET `/api/daycare/availability/` — pet parent or staff
+
+Query (all required):
+
+| Param | Meaning |
+|-------|---------|
+| `service_id` | service id |
+| `dogs` | comma-separated dog ids |
+| `from` | ISO date, inclusive |
+| `to` | ISO date, inclusive |
+
+Dogs must belong to the caller. Staff may ask about any household, and every id in `dogs` must belong to that same pet parent. A window longer than 370 days is cut to the first 370 days starting at `from`.
+
+```json
+{
+  "days": [
+    { "date": "2026-11-02", "state": "open", "reason": null }
+  ]
+}
+```
+
+`state` is `open`, `joinable`, `unavailable`, or `closed`.
+
+`reason` is `null`, `booked`, or `closed`.
+
+Each date is a one-day probe for the selected dogs and service. Daycare uses `starts_on` = `ends_on` = that date. Boarding uses `starts_on` = that date and `ends_on` = the next day. A non-social checkout extension is part of those occupied dates.
+
+- `closed` — a Closure is on that date. `reason` is `closed`.
+- `open` — the probe would be accepted, and no other family is on the dates it occupies. `reason` is `null`.
+- `joinable` — the probe would be accepted, and exactly one other social family (1 or 2 dogs, all `good_with_dogs`) is already on the shared pool for those dates. The selected dogs must themselves be 1 or 2 dogs, all `good_with_dogs`. `reason` is `null`.
+- `unavailable` — the probe is rejected because of other dogs. `reason` is `booked`.
+
+The payload does not include other owners, dog names, or social flags. If a non-social boarding probe is rejected because the checkout date is closed, the start date is `unavailable` with `reason` `closed`. The checkout date itself is `closed`.
 
 ## Care updates
 
@@ -434,6 +516,36 @@ Create response:
 `dog_names` are the first word of each dog's name. Newest first.
 
 ### DELETE `/api/daycare/reviews/<id>/` — staff — 204
+
+## Site reviews
+
+Public marketing reviews for the Care Bear Daycare website. This list is separate from the booking reviews above. Staff edit these rows in Django admin. There is no create, update, or delete route.
+
+`photo_src`, `photo_alt`, and each `photos` entry are site paths such as `/imgs/reviews/marco.bmp`, not uploaded files. The website falls back to its bundled list if this call fails.
+
+### GET `/api/daycare/site-reviews/` — public, not paginated
+
+`AllowAny`. The response is a JSON array (not a paginated object), newest `stayed_on` first. `id` is the string external id, not the integer primary key. Empty `photo_src` and `photo_alt` are `null`.
+
+```json
+{
+  "id": "marco-sia-2026-10-23",
+  "source": "rover",
+  "stayed_on": "2026-10-23",
+  "dog_name": "Marco & Sia",
+  "owner_first_name": "L",
+  "stars": 5,
+  "quote": "We’re so grateful to Carrie…",
+  "photo_src": "/imgs/reviews/marco.bmp",
+  "photo_alt": "Marco",
+  "photos": [
+    { "src": "/imgs/reviews/marco.bmp", "alt": "Marco" },
+    { "src": "/imgs/reviews/sia.bmp", "alt": "Sia" }
+  ]
+}
+```
+
+`source` is `rover`, `google`, or `internal`. When a review has several dogs, `photos` lists each one. When it has a single photo path and no `photos` array was stored, `photos` is one item built from that path.
 
 ## Browser calls from carebeardaycare.ca
 

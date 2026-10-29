@@ -78,6 +78,8 @@ module.exports = {
     '^(.*)\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/__mocks__/fileMock.js',
     '^@@(.*)$': '<rootDir>/$1',
+    // jsconfig maps @/* to ./* (and src/* when that file exists). These tests import @/consts.
+    '^@/(.*)$': '<rootDir>/$1',
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -166,8 +168,11 @@ module.exports = {
   // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
   // timers: "real",
 
-  // A map from regular expressions to paths to transformers
-  // transform: undefined,
+  // babel-jest leaves import statements untouched when the app has no Babel config.
+  // Next compiles these files with SWC; use that transformer so Jest can load them.
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx|mjs)$': [require.resolve('next/dist/build/swc/jest-transformer'), {}],
+  },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [

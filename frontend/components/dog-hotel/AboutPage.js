@@ -3,10 +3,12 @@
 import { useEffect, useState } from 'react';
 import { Box, Link, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
-import { ROVER_BOOKING_URL } from '@/consts/routes';
+import NextLink from 'next/link';
+import { BOOK_STAY_PATH, ROVER_BOOKING_URL } from '@/consts/routes';
 import { WEBSITE_INK, WEBSITE_PAGE_BACKGROUND } from '@/consts/website-theme';
 import publicPath from '@/utils/publicPath';
 import DogHotelInteriorPage from './DogHotelInteriorPage';
+import BookStayActions from './BookStayActions';
 
 const CARRIE_PHOTO_SRC = publicPath('/imgs/CarrieB.png');
 const DOGS_PHOTO_SRC = publicPath('/imgs/home/slide-005.jpg');
@@ -142,7 +144,11 @@ export default function AboutPage() {
               </Typography>
             ))}
             <Typography component="li" sx={{ fontSize: { xs: '1rem', md: '1.0625rem' } }}>
-              Daycare and overnight bookings through{' '}
+              Owners can request a stay on{' '}
+              <Link component={NextLink} href={BOOK_STAY_PATH} color="inherit" underline="always">
+                this site
+              </Link>
+              . Rover is there if you want to{' '}
               <Link
                 href={ROVER_BOOKING_URL}
                 target="_blank"
@@ -150,8 +156,9 @@ export default function AboutPage() {
                 color="inherit"
                 underline="always"
               >
-                Rover
+                read the profile
               </Link>
+              .
             </Typography>
           </Box>
         </Box>
@@ -190,7 +197,11 @@ export default function AboutPage() {
         confidence while you’re apart.
       </Typography>
       <Typography component="p" sx={{ ...bodySx, mt: 2 }}>
-        Daycare and overnight stays are booked through{' '}
+        You can request a daycare or overnight stay on{' '}
+        <Link component={NextLink} href={BOOK_STAY_PATH} color="inherit" underline="always">
+          this site
+        </Link>
+        . Rover is there if you want to{' '}
         <Link
           href={ROVER_BOOKING_URL}
           target="_blank"
@@ -198,10 +209,11 @@ export default function AboutPage() {
           color="inherit"
           underline="always"
         >
-          Rover
+          read the profile
         </Link>
         .
       </Typography>
+      <BookStayActions />
     </DogHotelInteriorPage>
   );
 }

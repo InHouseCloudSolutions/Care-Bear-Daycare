@@ -138,6 +138,8 @@ export default function HomeLandingPage() {
               <Stack
                 direction={{ xs: 'column', md: 'row' }}
                 spacing={1.5}
+                useFlexGap
+                flexWrap="wrap"
                 alignItems={{ xs: 'stretch', md: 'center' }}
                 justifyContent="center"
                 sx={{ mt: 3, width: '100%', pointerEvents: 'auto' }}
@@ -146,6 +148,9 @@ export default function HomeLandingPage() {
                 <HeroCta href={HOME_BRAND.secondaryCta.href}>
                   {HOME_BRAND.secondaryCta.label}
                 </HeroCta>
+                {HOME_BRAND.roverCta ? (
+                  <HeroCta href={HOME_BRAND.roverCta.href}>{HOME_BRAND.roverCta.label}</HeroCta>
+                ) : null}
               </Stack>
             </Box>
           </Box>

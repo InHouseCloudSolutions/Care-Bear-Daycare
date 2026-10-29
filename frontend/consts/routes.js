@@ -8,6 +8,8 @@ export const EVENT_FORM_PATH = '/event/form';
 export const LOGIN_PATH = '/login';
 export const REGISTER_PATH = '/register';
 export const ACCOUNT_PATH = '/account';
+/** Signed-in pet parent stay request. Unauthenticated visits use the account auth gate. */
+export const BOOK_STAY_PATH = '/account/book';
 export const ACCOUNT_API_TEST_PATH = '/account/api-test';
 export const FORGOT_PASSWORD_PATH = '/forgot-password';
 
@@ -48,7 +50,7 @@ export const HOW_A_STAY_WORKS_PATH = '/how-a-stay-works';
 export const CARE_AND_SAFETY_PATH = '/care-and-safety';
 export const REVIEWS_PATH = '/reviews';
 export const GALLERY_PATH = '/gallery';
-/** Carrie's Rover profile. Every Rover link on the site uses this URL. */
+/** Carrie's Rover profile. A reference profile, not the booking system. */
 export const ROVER_BOOKING_URL = 'https://www.rover.com/sit/carrib24913';
 export const BOUTIQUE_DEVELOPERS_PATH = '/boutique-development-home-builders';
 

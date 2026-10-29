@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Box, Button, Link as MuiLink, Tooltip, Typography } from '@mui/material';
@@ -12,12 +13,14 @@ import {
   WEBSITE_INK_HOVER,
   WEBSITE_PAGE_BACKGROUND,
 } from '@/consts/website-theme';
+import { listSiteReviews } from '@/lib/daycareApi';
 import publicPath from '@/utils/publicPath';
 import DogHotelInteriorPage from './DogHotelInteriorPage';
 import {
   REVIEWS,
   averageStarRating,
   countReviews,
+  reviewsFromSiteResponse,
   reviewVerificationLabel,
   sortReviewsNewestFirst,
 } from './reviews-data';
@@ -233,9 +236,26 @@ function BookStayButton() {
 }
 
 export default function ReviewsPage() {
-  const count = countReviews(REVIEWS);
-  const average = averageStarRating(REVIEWS);
-  const reviews = sortReviewsNewestFirst(REVIEWS);
+  const [reviews, setReviews] = useState(REVIEWS);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let active = true;
+
+    listSiteReviews({ signal: controller.signal }).then(response => {
+      if (!active) return;
+      setReviews(reviewsFromSiteResponse(REVIEWS, response));
+    });
+
+    return () => {
+      active = false;
+      controller.abort();
+    };
+  }, []);
+
+  const count = countReviews(reviews);
+  const average = averageStarRating(reviews);
+  const sortedReviews = sortReviewsNewestFirst(reviews);
 
   return (
     <DogHotelInteriorPage
@@ -260,12 +280,12 @@ export default function ReviewsPage() {
           underline="always"
           sx={{ display: 'inline-block', mt: 1.5, fontSize: { xs: '1rem', md: '1.0625rem' } }}
         >
-          Rover profile
+          See us on Rover
         </MuiLink>
       </Box>
-      {reviews.length > 0 ? (
+      {sortedReviews.length > 0 ? (
         <Box component="ul" sx={{ listStyle: 'none', p: 0, m: 0, mt: 4 }}>
-          {reviews.map(review => (
+          {sortedReviews.map(review => (
             <ReviewCard key={review.id} review={review} />
           ))}
         </Box>
