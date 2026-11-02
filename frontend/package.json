@@ -10,6 +10,8 @@
     "prettier": "prettier",
     "test": "jest",
     "test-coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:journey": "playwright test e2e/pet-parent-journey.spec.js",
     "lint": "eslint . --ext .js,.jsx --no-error-on-unmatched-pattern --max-warnings 0",
     "fix": "eslint . --ext .js,.jsx --no-error-on-unmatched-pattern --fix"
   },
@@ -53,6 +55,7 @@
   },
   "devDependencies": {
     "@mui/x-data-grid-generator": "^8.28.1",
+    "@playwright/test": "^1.64.1",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "^6.1.5",

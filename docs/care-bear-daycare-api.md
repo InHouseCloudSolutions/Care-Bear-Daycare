@@ -36,7 +36,7 @@ This is DRF token auth, not `Bearer`.
 }
 ```
 
-Use `isStaff` to choose the staff UI versus the pet-parent UI. A pet parent account is never staff.
+Use `isStaff` to choose the staff UI versus the pet-parent UI. A pet parent account is never staff. On the daycare site, staff manage holidays, bookings, and households at `/staff`. A signed-in pet parent who opens `/staff` is sent to `/account`. Pet parents book at `/account/book`.
 
 ## Who can call what
 
@@ -52,7 +52,7 @@ Validation errors are **400** with either a field map (`{ "ends_on": ["..."] }`)
 
 ## Lists
 
-These list routes return a **JSON array** (not paginated): pet parents, services, dogs, vaccines, bookings, care updates, conversations.
+These list routes return a **JSON array** (not paginated): pet parents, services, dogs, vaccines, bookings, closures, care updates, conversations.
 
 `GET /api/daycare/availability/` returns `{ "days": [...] }`, not a bare array.
 
@@ -216,6 +216,24 @@ Response:
 
 ### GET, PATCH, DELETE `/api/daycare/vaccines/<id>/` — owner or staff
 
+## Closures
+
+Named closed ranges (holidays). Staff manage them on the daycare site at `/staff`. A date inside any range is closed for every service, including staff bookings. `override_rules` does not skip a closure. Confirming or creating an occupying booking on a closed date is **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`.
+
+### GET, POST `/api/daycare/closures/` — staff
+
+Lists are a JSON array. POST is **201**.
+
+```json
+{ "id": 1, "name": "Christmas", "starts_on": "2026-12-24", "ends_on": "2026-12-26" }
+```
+
+`name` is required. `ends_on` must be on or after `starts_on`. **400** is a field map or `{ "detail": "..." }`.
+
+### GET, PATCH, DELETE `/api/daycare/closures/<id>/` — staff
+
+DELETE is **204** with an empty body.
+
 ## Bookings
 
 One service, one pet parent, one or more of that parent's dogs, over a date window.
@@ -323,7 +341,7 @@ If `max_dogs_per_day` is set, an occupying walk or drop-in is **400** when `star
 
 #### Closures
 
-Staff block a date by adding a Closure in Django admin. The field is `on` (a unique date). There is no closure API. A closure rejects every service, including staff. `override_rules` does not skip it. **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`.
+A date inside a named closure range is closed for every service, including staff. See Closures above. `override_rules` does not skip it. **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`.
 
 #### Same dog
 
@@ -370,7 +388,7 @@ Dogs must belong to the caller. Staff may ask about any household, and every id 
 
 Each date is a one-day probe for the selected dogs and service. Daycare uses `starts_on` = `ends_on` = that date. Boarding uses `starts_on` = that date and `ends_on` = the next day. A non-social checkout extension is part of those occupied dates.
 
-- `closed` — a Closure is on that date. `reason` is `closed`.
+- `closed` — a closure range includes that date. `reason` is `closed`.
 - `open` — the probe would be accepted, and no other family is on the dates it occupies. `reason` is `null`.
 - `joinable` — the probe would be accepted, and exactly one other social family (1 or 2 dogs, all `good_with_dogs`) is already on the shared pool for those dates. The selected dogs must themselves be 1 or 2 dogs, all `good_with_dogs`. `reason` is `null`.
 - `unavailable` — the probe is rejected because of other dogs. `reason` is `booked`.
@@ -555,4 +573,4 @@ Local dev allows every origin.
 
 ## Not in this API
 
-Photos, card payments, invoices, vaccine-expiry blocking, and a second login endpoint. Django admin for staff data entry is `{BASE}/api/admin/` and is separate from this JSON API.
+Photos, card payments, invoices, vaccine-expiry blocking, and a second login endpoint. Holidays, bookings, and households are managed at `/staff` on the daycare site through the JSON routes above. Django admin remains at `{BASE}/api/admin/` for other staff data and is separate from this JSON API.

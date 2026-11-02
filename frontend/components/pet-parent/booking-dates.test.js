@@ -3,10 +3,15 @@ import {
   BOARDING_SAME_DAY_MESSAGE,
   CLOSED_RANGE_MESSAGE,
   VISIT_RANGE_MESSAGE,
+  availabilityFailureMessage,
+  bookingDogs,
   dayStatePhrase,
+  dogsForHousehold,
+  showHouseholdPicker,
   eachIsoDate,
   isPastIsoDate,
   monthsBetween,
+  petParentIds,
   rangeBlockMessage,
 } from './booking-dates';
 
@@ -14,6 +19,37 @@ const open = { state: 'open', reason: null };
 const joinable = { state: 'joinable', reason: null };
 const booked = { state: 'unavailable', reason: 'booked' };
 const closed = { state: 'closed', reason: 'closed' };
+
+describe('household availability', () => {
+  const dogs = [
+    { id: 1, pet_parent_id: 1, name: 'Bear' },
+    { id: 2, pet_parent_id: 4, name: 'Kiki' },
+    { id: 3, pet_parent_id: 4, name: 'Noodle' },
+  ];
+
+  it('keeps one household so a staff list can ask for availability', () => {
+    expect(petParentIds(dogs)).toEqual([1, 4]);
+    expect(dogsForHousehold(dogs, 4).map(dog => dog.name)).toEqual(['Kiki', 'Noodle']);
+    expect(dogsForHousehold(dogs, null)).toBe(dogs);
+  });
+
+  it('hides other households from a pet parent and shows the picker only to staff', () => {
+    expect(showHouseholdPicker(false, dogs)).toBe(false);
+    expect(showHouseholdPicker(true, dogs)).toBe(true);
+    expect(bookingDogs(dogs, { isStaff: false, petParentId: 4 }).map(dog => dog.name)).toEqual([
+      'Kiki',
+      'Noodle',
+    ]);
+    expect(bookingDogs(dogs, { isStaff: true }).map(dog => dog.id)).toEqual([1, 2, 3]);
+  });
+
+  it('surfaces the household rejection from the API', () => {
+    expect(availabilityFailureMessage({ dogs: 'Dogs must belong to one pet parent.' })).toBe(
+      'Dogs must belong to one pet parent.',
+    );
+    expect(availabilityFailureMessage(null)).toBe('Could not load availability for this month.');
+  });
+});
 
 describe('rangeBlockMessage', () => {
   const days = {

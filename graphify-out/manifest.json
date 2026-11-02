@@ -15,9 +15,9 @@
     "semantic_hash": "4ef78313758f56c9d005469b1c0e30fa"
   },
   "frontend/.eslintrc.js": {
-    "mtime": 1778166040.7069576,
-    "ast_hash": "8d0ac1423753c75f1b4cd6aedb13a53d",
-    "semantic_hash": "8d0ac1423753c75f1b4cd6aedb13a53d"
+    "mtime": 1793363829.9878037,
+    "ast_hash": "efe2c02071e28a66a8b5544a210e5da2",
+    "semantic_hash": ""
   },
   "frontend/components/AppBootGate.js": {
     "mtime": 1787574023.7592466,
@@ -115,8 +115,8 @@
     "semantic_hash": ""
   },
   "frontend/components/home-landing/HomeLandingPage.js": {
-    "mtime": 1793214105.0818882,
-    "ast_hash": "6b2b40b1122bf5dc065558e7309a7bb1",
+    "mtime": 1793363830.0011218,
+    "ast_hash": "1127d6f1acdc3a2da30345b9b9a9318a",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/HomeLandingShell.js": {
@@ -210,7 +210,7 @@
     "semantic_hash": ""
   },
   "frontend/consts/marketing-nav.test.js": {
-    "mtime": 1793215952.548488,
+    "mtime": 1793363830.0011218,
     "ast_hash": "75a2d0521504c2822a5398df9d26a954",
     "semantic_hash": ""
   },
@@ -255,8 +255,8 @@
     "semantic_hash": "cad92d934ee5544e0bc0b2a833e113db"
   },
   "frontend/jest.config.js": {
-    "mtime": 1793215952.2079,
-    "ast_hash": "d6c89581652c9f5595ae1d70c1833111",
+    "mtime": 1793363830.0011218,
+    "ast_hash": "e5afb89ec282089bfc2375dff791e908",
     "semantic_hash": ""
   },
   "frontend/jest.setup.js": {
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "frontend/package.json": {
-    "mtime": 1793215747.7666743,
-    "ast_hash": "65ac880131afbe14fcfa949db0c8b181",
+    "mtime": 1793363829.9785748,
+    "ast_hash": "0ab753e455d52c65b87d233de69b3a68",
     "semantic_hash": ""
   },
   "frontend/public/manifest.json": {
@@ -555,14 +555,14 @@
     "semantic_hash": "b6aa2d92f026e15bd5bab233e0957ab7"
   },
   ".github/workflows/nextjs.yml": {
-    "mtime": 1792503235.1938028,
-    "ast_hash": "fb67315b9a77fd3dbdeb2c20d424fcfb",
+    "mtime": 1793302701.8812528,
+    "ast_hash": "05464a15950fce2f3bf69e334a477973",
     "semantic_hash": ""
   },
   ".github/workflows/test-frontend.yml": {
-    "mtime": 1778166040.391901,
-    "ast_hash": "d7dc481c6d5df27b43769c9c4a473226",
-    "semantic_hash": "d7dc481c6d5df27b43769c9c4a473226"
+    "mtime": 1793302702.6869006,
+    "ast_hash": "d12b0c848c2c318bdf9d7121fbd925a0",
+    "semantic_hash": ""
   },
   ".pre-commit-config.yaml": {
     "mtime": 1792411734.4398491,
@@ -955,8 +955,8 @@
     "semantic_hash": ""
   },
   "frontend/lib/daycareApi.js": {
-    "mtime": 1793214107.0128026,
-    "ast_hash": "ce265da54388cf0167f70544f67bdc06",
+    "mtime": 1793373382.5136235,
+    "ast_hash": "9e68c3d366df18c9acbf36dd58b54743",
     "semantic_hash": ""
   },
   "frontend/src/app/(website)/account/api-test/page.js": {
@@ -980,8 +980,8 @@
     "semantic_hash": ""
   },
   "docs/care-bear-daycare-api.md": {
-    "mtime": 1793214402.953033,
-    "ast_hash": "ec8efac4ff405899938c12c9f5e93c3e",
+    "mtime": 1793373437.478874,
+    "ast_hash": "bfab6729f5b8dd4798b9cd9a34ee7549",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/ProfilePhoto.js": {
@@ -995,23 +995,208 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/BookStayPage.js": {
-    "mtime": 1793215637.3219826,
-    "ast_hash": "80da933c0cd62910bd0f010fa58ed96a",
+    "mtime": 1793370913.1134133,
+    "ast_hash": "cc96da8808c9c70a34d25e52609311fc",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/booking-dates.js": {
-    "mtime": 1793215638.7483356,
-    "ast_hash": "489798d7e9f5fdc6de46bf8ec17dc96e",
+    "mtime": 1793370898.8943653,
+    "ast_hash": "699cf5b5f94e92517ce4ef7658099d79",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/booking-dates.test.js": {
-    "mtime": 1793215952.4909127,
-    "ast_hash": "860f1866128bea3a0f441666229f150d",
+    "mtime": 1793370899.357378,
+    "ast_hash": "9430b25c652b9d24fc1991f276b9eb1d",
     "semantic_hash": ""
   },
   "frontend/src/app/(website)/account/book/page.js": {
     "mtime": 1793214223.55565,
     "ast_hash": "41f7f0b91243e603c2bdc10002726985",
+    "semantic_hash": ""
+  },
+  "frontend/e2e/auth-gates.spec.js": {
+    "mtime": 1793363829.9872613,
+    "ast_hash": "1db5ea529de6e65004c55a8cb04a6ffe",
+    "semantic_hash": ""
+  },
+  "frontend/e2e/marketing.spec.js": {
+    "mtime": 1793363829.9791074,
+    "ast_hash": "5f23e68db864684ed568b3b176f8872b",
+    "semantic_hash": ""
+  },
+  "frontend/e2e/pet-parent-journey.spec.js": {
+    "mtime": 1793374091.2607627,
+    "ast_hash": "f6eed61ae217fdeaca8ffbe32985e638",
+    "semantic_hash": ""
+  },
+  "frontend/e2e/stay-dates.js": {
+    "mtime": 1793363829.9872613,
+    "ast_hash": "066a7aff88c68065797a327a7dacce66",
+    "semantic_hash": ""
+  },
+  "frontend/playwright.config.js": {
+    "mtime": 1793363829.9785748,
+    "ast_hash": "f7a11c55718fbda23fc6d6b150b2a75f",
+    "semantic_hash": ""
+  },
+  "frontend/e2e/README.md": {
+    "mtime": 1793363829.9872613,
+    "ast_hash": "aaf3058936578d08100d8291dd3432da",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/index.html": {
+    "mtime": 1793365094.3350947,
+    "ast_hash": "4162d52daff604dcd08dfda000414e3f",
+    "semantic_hash": ""
+  },
+  "frontend/components/home-landing/HomePageJingle.js": {
+    "mtime": 1793363829.9855244,
+    "ast_hash": "a4750aebefec87b5b9eb394a558c4d65",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/.last-run.json": {
+    "mtime": 1793365094.336881,
+    "ast_hash": "8c466164fbc4c8d5267175e9733576cd",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/data/0d7477dc31af2056a6180e45404ea685c08f5e5e.md": {
+    "mtime": 1793365094.3082995,
+    "ast_hash": "a2029d78d34f6bbdf65be3d36c2db4b8",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/data/19cec76bed56cf8675bf288199b78d34052e1ae6.md": {
+    "mtime": 1793365094.2977934,
+    "ast_hash": "7611917082feaea88fd015b709487156",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/data/35bcb5b039963f5d2118e4583ea2bcac801ef7e7.md": {
+    "mtime": 1793365094.312245,
+    "ast_hash": "842a548a80b3ce579fb71bb931d78f38",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/data/7b30a13315526394c28f41ac4f43b3d8c815f311.md": {
+    "mtime": 1793365094.3033602,
+    "ast_hash": "454bdcb11b1d5f4efe223af74c33d868",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/auth-gates-signed-out-gate-7a2d5--entry-and-no-public-screen-chromium/error-context.md": {
+    "mtime": 1793365085.270124,
+    "ast_hash": "7611917082feaea88fd015b709487156",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/marketing-marketing-pages--495da-care-and-its-public-actions-chromium/error-context.md": {
+    "mtime": 1793365080.5251107,
+    "ast_hash": "454bdcb11b1d5f4efe223af74c33d868",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/marketing-marketing-pages--8ed6c-y-instead-of-a-missing-page-chromium/error-context.md": {
+    "mtime": 1793365090.1706784,
+    "ast_hash": "a2029d78d34f6bbdf65be3d36c2db4b8",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/pet-parent-journey-pet-par-28d2a--request-then-sign-in-again-chromium/error-context.md": {
+    "mtime": 1793365094.178562,
+    "ast_hash": "842a548a80b3ce579fb71bb931d78f38",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/data/797ab9c6644453794225fd303e58e2d71a2a0659.png": {
+    "mtime": 1793365094.2966654,
+    "ast_hash": "0004ed8501a17ad508f55a39f765e719",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/data/b90735ebb06090049995e7bebf7bb5efa287f578.png": {
+    "mtime": 1793365094.3016157,
+    "ast_hash": "64fdf7b4dc547b69c19e9420ea5b74d2",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/data/e5fde1f21bbf0b5e15e7e9c21e515d52fa0e2885.png": {
+    "mtime": 1793365094.306576,
+    "ast_hash": "7c7d8af667153e4870e648e4bffe7b0a",
+    "semantic_hash": ""
+  },
+  "frontend/playwright-report/data/e7655cefcbe8daae40f321d2942a95fd8c440955.png": {
+    "mtime": 1793365094.3111713,
+    "ast_hash": "cc2508d0ffa2f6f4c9099a3751c56642",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/auth-gates-signed-out-gate-7a2d5--entry-and-no-public-screen-chromium/test-failed-1.png": {
+    "mtime": 1793365085.2332008,
+    "ast_hash": "0004ed8501a17ad508f55a39f765e719",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/marketing-marketing-pages--495da-care-and-its-public-actions-chromium/test-failed-1.png": {
+    "mtime": 1793365080.4394872,
+    "ast_hash": "64fdf7b4dc547b69c19e9420ea5b74d2",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/marketing-marketing-pages--8ed6c-y-instead-of-a-missing-page-chromium/test-failed-1.png": {
+    "mtime": 1793365090.1476076,
+    "ast_hash": "7c7d8af667153e4870e648e4bffe7b0a",
+    "semantic_hash": ""
+  },
+  "frontend/test-results/pet-parent-journey-pet-par-28d2a--request-then-sign-in-again-chromium/test-failed-1.png": {
+    "mtime": 1793365094.1554914,
+    "ast_hash": "cc2508d0ffa2f6f4c9099a3751c56642",
+    "semantic_hash": ""
+  },
+  "frontend/public/music/cbd-jingle.mp3": {
+    "mtime": 1793362428.1459982,
+    "ast_hash": "2fa9d506d76453ea9c7b76bd96db85ea",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/BookingPanel.js": {
+    "mtime": 1793374091.2607627,
+    "ast_hash": "ef3debbf33b538d0df3ce78c012ea14c",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/BookingPanel.test.js": {
+    "mtime": 1793373943.7568555,
+    "ast_hash": "73e77eff901dbe650dc535c44f89e869",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/HolidayForm.js": {
+    "mtime": 1793373390.2493446,
+    "ast_hash": "07fb5b3abf793b526acd972b5ed7f37a",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/HolidayForm.test.js": {
+    "mtime": 1793373938.0096636,
+    "ast_hash": "575b472d366f3fb2a6271d2bd134a19e",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/HolidayPanel.js": {
+    "mtime": 1793374091.2607627,
+    "ast_hash": "4c2520e0a523cbfb71b39c374f99817b",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/HouseholdPanel.js": {
+    "mtime": 1793373412.454048,
+    "ast_hash": "f21eff976afe54c52d88481941ebf2e0",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/StaffDeskPage.js": {
+    "mtime": 1793373414.6634023,
+    "ast_hash": "cbbc65958e3a8c870a6c9dc8fb1f7761",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/staff-desk.js": {
+    "mtime": 1793373386.6530132,
+    "ast_hash": "9716c38ad8617fb19a7354efc84b27b0",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/staff-desk.test.js": {
+    "mtime": 1793373418.1956205,
+    "ast_hash": "f5141894b42e87fee0c07a3af3eadcf6",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/staff/layout.js": {
+    "mtime": 1793373415.1918552,
+    "ast_hash": "440e3a0e9b9aed12bd5ca53aaa20ffe9",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/staff/page.js": {
+    "mtime": 1793373415.6411924,
+    "ast_hash": "3e46a02b6a10eda008586b069eff3e28",
     "semantic_hash": ""
   }
 }

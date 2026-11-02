@@ -1,16 +1,16 @@
-# Graph Report - doghotel  (2026-10-28)
+# Graph Report - doghotel  (2026-10-30)
 
 ## Corpus Check
-- 156 files · ~1,176,386 words
+- 183 files · ~1,264,497 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1442 nodes · 2059 edges · 129 communities (112 shown, 17 thin omitted)
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 176 edges (avg confidence: 0.84)
+- 1564 nodes · 2230 edges · 141 communities (119 shown, 22 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 180 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1903556d`
+- Built from commit: `857c2c11`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -108,6 +108,7 @@
 - [[_COMMUNITY_Community 94|Community 94]]
 - [[_COMMUNITY_Community 96|Community 96]]
 - [[_COMMUNITY_Community 101|Community 101]]
+- [[_COMMUNITY_Community 102|Community 102]]
 - [[_COMMUNITY_Community 103|Community 103]]
 - [[_COMMUNITY_Community 104|Community 104]]
 - [[_COMMUNITY_Community 105|Community 105]]
@@ -136,18 +137,28 @@
 - [[_COMMUNITY_Community 128|Community 128]]
 - [[_COMMUNITY_Community 129|Community 129]]
 - [[_COMMUNITY_Community 130|Community 130]]
+- [[_COMMUNITY_Community 131|Community 131]]
+- [[_COMMUNITY_Community 132|Community 132]]
+- [[_COMMUNITY_Community 134|Community 134]]
+- [[_COMMUNITY_Community 135|Community 135]]
+- [[_COMMUNITY_Community 136|Community 136]]
+- [[_COMMUNITY_Community 137|Community 137]]
+- [[_COMMUNITY_Community 138|Community 138]]
+- [[_COMMUNITY_Community 139|Community 139]]
+- [[_COMMUNITY_Community 140|Community 140]]
+- [[_COMMUNITY_Community 141|Community 141]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `resolutions` - 37 edges
-2. `daycareRequest()` - 21 edges
+2. `daycareRequest()` - 28 edges
 3. `PRD to Issues` - 20 edges
-4. `scripts` - 15 edges
-5. `Test-Driven Development` - 15 edges
-6. `Care Bear Daycare API` - 15 edges
-7. `mesh()` - 13 edges
-8. `DogHotelInteriorPage()` - 13 edges
-9. `mesh()` - 13 edges
-10. `useAuth()` - 13 edges
+4. `useAuth()` - 17 edges
+5. `scripts` - 17 edges
+6. `Care Bear Daycare API` - 16 edges
+7. `Test-Driven Development` - 15 edges
+8. `mesh()` - 13 edges
+9. `DogHotelInteriorPage()` - 13 edges
+10. `mesh()` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Thin pages` --rationale_for--> `HomePage()`  [INFERRED]
@@ -224,11 +235,11 @@
 - **Pictorial Mark of Dog, Bear Cub, and Heart** — logos_logo_square_golden_dog, logos_logo_square_bear_cub, logos_logo_square_coral_heart [EXTRACTED 1.00]
 - **Dog Embracing Bear Cub as Care** — logos_logo_square_golden_dog, logos_logo_square_bear_cub, logos_logo_square_affectionate_care [INFERRED 0.85]
 
-## Communities (129 total, 17 thin omitted)
+## Communities (141 total, 22 thin omitted)
 
 ### Community 0 - "Marketing Nav Tree"
 Cohesion: 0.20
-Nodes (18): HOME_NAV_BAR_PX, HOME_NAV_BAR_PY, HOME_NAV_DESKTOP_DISPLAY, HOME_NAV_ITEMS_BASE, HOME_NAV_MOBILE_DISPLAY, MARKETING_INTERIOR_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR, HERO_MENU_ICON_SX (+10 more)
+Nodes (16): HOME_NAV_BAR_PX, HOME_NAV_BAR_PY, HOME_NAV_DESKTOP_DISPLAY, HOME_NAV_MOBILE_DISPLAY, MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR, HERO_MENU_ICON_SX, HomeHeroNav(), AUTH_NAV_LABELS (+8 more)
 
 ### Community 1 - "About and Hero Slides"
 Cohesion: 0.06
@@ -236,19 +247,19 @@ Nodes (38): AuthGateClient(), AuthGateClientApp(), AuthGateClientPages(), AuthCo
 
 ### Community 2 - "Glass Form Surfaces"
 Cohesion: 0.07
-Nodes (36): FORM_PAGE_MOBILE_MAIN_SCROLL_SX, FORM_PAGE_MOBILE_NATURAL_HEIGHT_SX, GLASS_FIELD_SURFACE_SX, GLASS_FIELD_WRAPPER_SX, GLASS_FORM_FOOTER_SX, GLASS_FORM_PAIR_STACK_SPACING, GLASS_FORM_PANEL_HORIZONTAL_PAD, GLASS_FORM_PANEL_PADDING_SCROLL_PANEL_SX (+28 more)
+Nodes (39): FORM_PAGE_DESKTOP_BP, FORM_PAGE_MOBILE_MAIN_SCROLL_SX, FORM_PAGE_MOBILE_NATURAL_HEIGHT_SX, GLASS_FIELD_SURFACE_SX, GLASS_FIELD_WRAPPER_SX, GLASS_FORM_FOOTER_SX, GLASS_FORM_PAIR_STACK_SPACING, GLASS_FORM_PANEL_HORIZONTAL_PAD (+31 more)
 
 ### Community 3 - "Public Route Pages"
 Cohesion: 0.09
 Nodes (42): box(), boxGeo(), building(), buildProp(), buildSceneGroup(), bush(), canopy(), cloud() (+34 more)
 
 ### Community 4 - "App Layout and SEO"
-Cohesion: 0.05
-Nodes (45): frontend-dev agent, EmotionCacheProvider(), marketingMetadataHost(), metadata, metadataBaseFromHost(), OG_IMAGE_PATH, ogImageUrl(), RootLayout() (+37 more)
+Cohesion: 0.27
+Nodes (8): frontend-dev agent, EmotionCacheProvider(), OG_IMAGE_PATH, RootLayout(), shareImageUrl, viewport, Providers(), themeMode localStorage
 
 ### Community 5 - "Theme and Robots Meta"
-Cohesion: 0.35
-Nodes (9): RobotsMeta(), isIndexablePublicPath(), NON_INDEXABLE_PATHS, ROBOTS_INDEX, ROBOTS_NOINDEX, robotsMetaContent(), robotsMetadataForPath(), isIndexablePublicPath tests (+1 more)
+Cohesion: 0.17
+Nodes (12): 1. Re-ground in the repo, 2. Layer the sketch, 3. Hunt for deep modules (required), 4. Draw the dependency graph, 5. Present and confirm, Anti-patterns, Extraction heuristics, Goals (+4 more)
 
 ### Community 6 - "Yarn Resolutions"
 Cohesion: 0.05
@@ -268,23 +279,23 @@ Nodes (15): AppBootGate(), AppLoadingScreen(), BAR_SX, BREATHE_SX, EditorialSpla
 
 ### Community 10 - "Lint Dev Dependencies"
 Cohesion: 0.08
-Nodes (25): devDependencies, css-mediaquery, eslint, eslint-config-airbnb, eslint-config-next, eslint-config-prettier, eslint-plugin-import, eslint-plugin-jest (+17 more)
+Nodes (26): devDependencies, css-mediaquery, eslint, eslint-config-airbnb, eslint-config-next, eslint-config-prettier, eslint-plugin-import, eslint-plugin-jest (+18 more)
 
 ### Community 11 - "PRD Interview Guide"
-Cohesion: 0.20
-Nodes (10): Additional resources, File naming, Graphify first (mandatory), Phase 2 — Repo discovery, Phase 5 — Write PRD, Phase 6 — Confirm, Session checklist, What to produce (+2 more)
+Cohesion: 0.14
+Nodes (14): Additional resources, Capture, File naming, Graphify first (mandatory), Opening prompt, Phase 1 — Deep intake, Phase 2 — Repo discovery, Phase 5 — Write PRD (+6 more)
 
 ### Community 12 - "Settings and Storage"
-Cohesion: 0.19
-Nodes (16): Settings persist only after hydration, SettingsContext, SettingsProvider(), useSettings(), canUseStorage(), clearSettings(), readSettingsRaw(), readStorageItem() (+8 more)
+Cohesion: 0.31
+Nodes (11): canUseStorage(), clearSettings(), readSettingsRaw(), readStorageItem(), removeStorageItem(), ck:userSettings, writeSettingsRaw(), writeStorageItem() (+3 more)
 
 ### Community 13 - "Gallery Image Helpers"
 Cohesion: 0.18
 Nodes (15): NIICO portfolio collections, PORTFOLIO_COLLECTION_HOVER_SLIDE_COUNTS, portfolio-scraper agent, homeHeroSlideShape, galleryImageFromApi(), galleryImagesFromApi(), galleryMediaSrc(), normalizeGalleryImageList() (+7 more)
 
 ### Community 14 - "Brand Marketing Tokens"
-Cohesion: 0.25
-Nodes (10): LUXURY_GRADIENT_SX, Marketing Color Tokens, Rejected Millwork Palette, Marketing Interior Scrollbar, Staff Dark Teal Charcoal, NIICO Millwork Pages Identity, Pages Public Env File, IHCS Email Signatures Digital Signage (+2 more)
+Cohesion: 0.19
+Nodes (13): Marketing Layout Grid, LUXURY_GRADIENT_SX, Marketing Color Tokens, Cream Interior Nav, Rejected Millwork Palette, Marketing Interior Scrollbar, Staff Dark Teal Charcoal, Public pages (+5 more)
 
 ### Community 15 - "Small Dog Close-up"
 Cohesion: 0.17
@@ -307,8 +318,8 @@ Cohesion: 0.30
 Nodes (14): Forward Bounding Approach Pose, Dark Collar with Round Metal Tag, Wet Copper-Red Dog, Dog Hotel Welcome Appeal, Homepage Slide Photograph, Calm Blue Ocean, Open-Mouth Panting Expression, Multicolored Pebble Shore (+6 more)
 
 ### Community 20 - "Package Scripts"
-Cohesion: 0.15
-Nodes (13): Cypress configuration, scripts, build, dev, fix, lint, prettier, pretty-lint (+5 more)
+Cohesion: 0.13
+Nodes (15): Cypress configuration, scripts, build, dev, fix, lint, prettier, pretty-lint (+7 more)
 
 ### Community 21 - "Primary Brand Mark"
 Cohesion: 0.32
@@ -363,8 +374,8 @@ Cohesion: 0.10
 Nodes (41): box(), boxGeo(), building(), buildProp(), buildSceneGroup(), bush(), canopy(), cloud() (+33 more)
 
 ### Community 34 - "Docker Compose Dev"
-Cohesion: 0.19
-Nodes (12): Compose Caddy Reverse Proxy, Compose Frontend Service, Local Docker Compose Dev, Stack, Anti-patterns, Extraction heuristics, Goals, IHCS conventions (+4 more)
+Cohesion: 0.14
+Nodes (16): BookingPanel(), DATE_FIELD_PROPS, booking, DATE_FIELD_PROPS, HolidayForm(), HolidayPanel(), HouseholdPanel(), asRecordList() (+8 more)
 
 ### Community 35 - "Ads Logo Lockup"
 Cohesion: 0.39
@@ -427,12 +438,12 @@ Cohesion: 0.09
 Nodes (22): Discovery Brief, Discovery Brief Template, Discovery Phase, Plan Template, Question Categories, Related Skills, Subagent Recon Brief, When to Use (+14 more)
 
 ### Community 61 - "Community 61"
-Cohesion: 0.12
-Nodes (20): HomeHeroSlidesContext, HomeHeroSlidesProvider(), useHomeHeroSlides(), FORM_PAGE_DESKTOP_BP, MarketingFormPanel(), HOME_HERO_FADE_MS, HOME_HERO_SLIDES, LUXURY_GRADIENT_SX (+12 more)
+Cohesion: 0.13
+Nodes (17): HomeHeroSlidesContext, HomeHeroSlidesProvider(), useHomeHeroSlides(), HOME_HERO_FADE_MS, HOME_HERO_SLIDES, LUXURY_GRADIENT_SX, handleSlideChange, HomeHeroBackground() (+9 more)
 
 ### Community 62 - "Community 62"
-Cohesion: 0.17
-Nodes (12): Deferred Decision, Module Table M-001, Decision Log, Phase 1 Deep Intake, Phase 2 Repo Discovery, Phase 3 Design-Tree Interview, Phase 4 Module Sketch, Working Notes (+4 more)
+Cohesion: 0.26
+Nodes (9): flattenNavItemsForDrawer(), HOME_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_ITEMS_BASE, MARKETING_NAV_TREE, ROVER_BOOKING_URL, HOME_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_ITEMS_BASE, useHomeNavItems() (+1 more)
 
 ### Community 63 - "Community 63"
 Cohesion: 0.14
@@ -443,28 +454,28 @@ Cohesion: 0.15
 Nodes (13): 1.1 Marketing tokens, 1.2 Staff dark (teal charcoal), 1.3 Semantic colors that are not the brand, 1. Color, 2. Typography, 3.1 Hero buttons, 3.2 Nav, 3.3 Forms (+5 more)
 
 ### Community 65 - "Community 65"
-Cohesion: 0.15
-Nodes (24): authLogin(), authMe(), createBooking(), createDog(), createVaccine(), daycareRequest(), daycareUpload(), deleteDog() (+16 more)
+Cohesion: 0.12
+Nodes (31): authLogin(), authMe(), createBooking(), createClosure(), createDog(), createVaccine(), daycareRequest(), daycareUpload() (+23 more)
 
 ### Community 66 - "Community 66"
-Cohesion: 0.20
-Nodes (9): FORGOT_PASSWORD_PATH, isStaffRoute(), LOGIN_PATH, STAFF_PREFIX, ThemeContext, RouteThemeShell(), Public crawler rules, metadata (+1 more)
+Cohesion: 0.40
+Nodes (5): Settings persist only after hydration, SettingsContext, SettingsProvider(), useSettings(), saveSettings()
 
 ### Community 67 - "Community 67"
 Cohesion: 0.14
 Nodes (13): Composition rules, Gotchas (hard-won), Palette, References, scroll-forge, Step 0 — Bootstrap, Step 1 — Interview the user, Step 2 — Lay out the world (+5 more)
 
 ### Community 68 - "Community 68"
-Cohesion: 0.18
-Nodes (21): dayStateCaption(), dayStatePhrase(), eachIsoDate(), formatIsoDate(), isPastIsoDate(), isVisitKind(), monthBounds(), monthsBetween() (+13 more)
+Cohesion: 0.16
+Nodes (26): availabilityFailureMessage(), bookingDogs(), dayStateCaption(), dayStatePhrase(), dogsForHousehold(), eachIsoDate(), formatIsoDate(), isPastIsoDate() (+18 more)
 
 ### Community 69 - "Community 69"
-Cohesion: 0.18
-Nodes (16): HOME_BRAND, HOME_FOOTER, HOME_FOOTER_SOCIAL_LINKS, HOME_LANDING_FONT_FAMILY, homeMontserrat, footerLinkSx, footerTextSx, HomeLandingFooter() (+8 more)
+Cohesion: 0.15
+Nodes (18): HOME_BRAND, HOME_FOOTER, HOME_FOOTER_SOCIAL_LINKS, HOME_LANDING_FONT_FAMILY, homeMontserrat, footerLinkSx, footerTextSx, HomeLandingFooter() (+10 more)
 
 ### Community 70 - "Community 70"
-Cohesion: 0.24
-Nodes (8): GalleryRoute(), IMAGE_EXTENSIONS, listGalleryImages(), metadata, Path, main(), _resolve_under_root(), TEMPLATE
+Cohesion: 0.27
+Nodes (10): { selectStayDates }, { test, expect }, clickLaterDay(), completeRange(), { expect }, firstOpenDay(), openDayLocator(), requestReady() (+2 more)
 
 ### Community 71 - "Community 71"
 Cohesion: 0.18
@@ -483,24 +494,20 @@ Cohesion: 0.20
 Nodes (10): pre-commit Hooks, pre-commit Prettier, Deploy Next.js Site to Pages, Detect Package Manager, GitHub Pages Base Path, GitHub Pages Next.js Starter Workflow, frontend/out Pages Artifact, Test Frontend Workflow (+2 more)
 
 ### Community 75 - "Community 75"
-Cohesion: 0.15
-Nodes (11): Care Bear Daycare logo palette, createAppTheme(), customColors, background_color, description, display, icons, name (+3 more)
+Cohesion: 0.08
+Nodes (29): RobotsMeta(), FORGOT_PASSWORD_PATH, isStaffRoute(), LOGIN_PATH, STAFF_PREFIX, Care Bear Daycare logo palette, ThemeContext, RouteThemeShell() (+21 more)
 
 ### Community 76 - "Community 76"
 Cohesion: 0.22
 Nodes (8): After download, Image source priority, Output layout, Parallel coordination, Run (preferred), Scrape Portfolio Images (niico.com → local), Sub-collection route → filename, When to use
 
 ### Community 77 - "Community 77"
-Cohesion: 0.22
-Nodes (9): Branch 1 — Problem and success (root), Branch 2 — Users and permissions, Branch 3 — Product surface and scope, Branch 4 — Data and integrations, Branch 5 — UX and flows, Branch 6 — Non-functional requirements, Branch 7 — Rollout and phasing, Branch 8 — Acceptance and verification (+1 more)
-
-### Community 78 - "Community 78"
-Cohesion: 0.38
-Nodes (5): DogHotelInteriorPage(), footerTextSx, headingSx, ledeSx, GalleryPage()
+Cohesion: 0.14
+Nodes (14): Batching, Branch 1 — Problem and success (root), Branch 2 — Users and permissions, Branch 3 — Product surface and scope, Branch 4 — Data and integrations, Branch 5 — UX and flows, Branch 6 — Non-functional requirements, Branch 7 — Rollout and phasing (+6 more)
 
 ### Community 80 - "Community 80"
-Cohesion: 0.22
-Nodes (7): isHomeRoute(), isMarketingInteriorRoute(), isMarketingRoute(), staffLoginHref(), staffPath(), staffPathSuffix(), withStaffNavItems()
+Cohesion: 0.14
+Nodes (10): NotFound(), isHomeRoute(), isMarketingInteriorRoute(), isMarketingRoute(), staffLoginHref(), staffPath(), staffPathSuffix(), Custom404() (+2 more)
 
 ### Community 81 - "Community 81"
 Cohesion: 0.29
@@ -519,24 +526,20 @@ Cohesion: 0.33
 Nodes (5): Do not, Read first, Return to coordinator, Scope per run, You own
 
 ### Community 86 - "Community 86"
-Cohesion: 0.22
-Nodes (9): Marketing Layout Grid, Cream Interior Nav, Care Bear Daycare, Layout, License, Local development, Public pages, Rover Booking URL (+1 more)
-
-### Community 87 - "Community 87"
-Cohesion: 0.40
-Nodes (3): NotFound(), Custom404(), handleBack
+Cohesion: 0.24
+Nodes (10): Compose Caddy Reverse Proxy, Compose Frontend Service, Care Bear Daycare, Layout, License, Local development, Local Docker Compose Dev, Rover Booking URL (+2 more)
 
 ### Community 88 - "Community 88"
 Cohesion: 0.40
 Nodes (4): CONTEXT.md Format, Rules, Single vs multi-context repos, Structure
 
 ### Community 89 - "Community 89"
-Cohesion: 1.00
-Nodes (3): Deep Module, Route to Orchestrator to Deep Module, Shallow Orchestrator
+Cohesion: 0.40
+Nodes (4): Commands, Dog Hotel browser suite, Safety, What each file covers
 
 ### Community 90 - "Community 90"
-Cohesion: 0.32
-Nodes (8): Branch 1 Problem and Success, Branch 2 Users and Permissions, Branch 3 Product Surface and Scope, Branch 4 Data and Integrations, Branch 5 UX and Flows, Branch 6 Non-Functional Requirements, Branch 7 Rollout and Phasing, Branch 8 Acceptance and Verification
+Cohesion: 0.28
+Nodes (9): Branch 1 Problem and Success, Branch 2 Users and Permissions, Branch 3 Product Surface and Scope, Branch 4 Data and Integrations, Branch 5 UX and Flows, Branch 6 Non-Functional Requirements, Branch 7 Rollout and Phasing, Branch 8 Acceptance and Verification (+1 more)
 
 ### Community 91 - "Community 91"
 Cohesion: 0.29
@@ -555,8 +558,8 @@ Cohesion: 0.50
 Nodes (3): Bad Tests, Good and Bad Tests, Good Tests
 
 ### Community 103 - "Community 103"
-Cohesion: 0.29
-Nodes (7): Adding dogs to the same stay, Capacity and double-booking, Closures, Same dog, Shared pool (daycare and boarding), Staff override, Walk and drop-in
+Cohesion: 0.20
+Nodes (10): Adding dogs to the same stay, Capacity and double-booking, Closures, Closures, GET, PATCH, DELETE `/api/daycare/closures/<id>/` — staff, GET, POST `/api/daycare/closures/` — staff, Same dog, Shared pool (daycare and boarding) (+2 more)
 
 ### Community 104 - "Community 104"
 Cohesion: 0.20
@@ -571,20 +574,20 @@ Cohesion: 0.17
 Nodes (16): NAV_GLASS_BACKDROP_COLOR, HOME_LUXURY_DRAWER_PAPER_SX, LUXURY_DRAWER_NAV_GROUP_TYPOGRAPHY_SX, LUXURY_DRAWER_NAV_ITEM_ENTER_SX, LUXURY_DRAWER_NAV_ITEM_RESET_SX, LUXURY_DRAWER_NAV_PRIMARY_TYPOGRAPHY_SX, LUXURY_DRAWER_NAV_SECTION_TYPOGRAPHY_SX, LUXURY_DRAWER_NAV_SUBLINK_TYPOGRAPHY_SX (+8 more)
 
 ### Community 107 - "Community 107"
-Cohesion: 0.09
-Nodes (20): AboutRoute(), metadata, AboutPage(), bodySx, CARE_POINTS, CARRIE_PHOTO_SRC, CarriePhoto(), DOGS_PHOTO_SRC (+12 more)
+Cohesion: 0.06
+Nodes (37): AboutPage(), bodySx, CARE_POINTS, CARRIE_PHOTO_SRC, CarriePhoto(), DOGS_PHOTO_SRC, sectionHeadingSx, BookStayActions() (+29 more)
 
 ### Community 108 - "Community 108"
 Cohesion: 0.40
 Nodes (5): GET `/api/daycare/pet-parents/<id>/` — staff, GET, PATCH `/api/daycare/me/` — pet parent, GET, POST `/api/daycare/pet-parents/` — staff, POST `/api/daycare/register/` — public — 201, Register and profile
 
 ### Community 109 - "Community 109"
-Cohesion: 0.24
-Nodes (11): isExternalHref(), BookStayButton(), HOME_NAV_LINK_TYPOGRAPHY_SX, isMarketingNavLinkActive(), marketingNavLinkHoverUnderlineSx(), normalizeMarketingNavPath(), externalLinkProps(), navItemShape (+3 more)
+Cohesion: 0.23
+Nodes (12): isExternalHref(), BookStayButton(), HOME_NAV_LINK_TYPOGRAPHY_SX, isMarketingNavLinkActive(), marketingNavLinkHoverUnderlineSx(), normalizeMarketingNavPath(), externalLinkProps(), MarketingNavDesktopItem() (+4 more)
 
 ### Community 110 - "Community 110"
-Cohesion: 0.24
-Nodes (8): flattenNavItemsForDrawer(), HOME_NAV_ITEMS_BASE, MARKETING_INTERIOR_NAV_ITEMS_BASE, MARKETING_NAV_TREE, ROVER_BOOKING_URL, AUTH_NAV_LABELS, buildMobileDrawerItems(), splitAuthNavItems()
+Cohesion: 0.18
+Nodes (10): Deferred Decision, Module Table M-001, Decision Log, issues/prd-<slug>.md, Phase 5 Write PRD, Phase 6 Confirm, Writing rules, PRD Template (+2 more)
 
 ### Community 111 - "Community 111"
 Cohesion: 0.50
@@ -595,24 +598,16 @@ Cohesion: 0.29
 Nodes (7): Confirm with user, Extraction mindset, Graphify (mandatory), Phase 4 exit criteria, Phase 4 — Module sketch, Purpose, What to produce
 
 ### Community 117 - "Community 117"
-Cohesion: 0.33
-Nodes (6): 1. Re-ground in the repo, 2. Layer the sketch, 3. Hunt for deep modules (required), 4. Draw the dependency graph, 5. Present and confirm, Process
+Cohesion: 0.18
+Nodes (13): metadata, publicPath(), buildShareMetadata(), configuredPublicHost(), homePageJsonLd(), LodgingBusiness JSON-LD, OG_IMAGE_PATH, pageMetadata() (+5 more)
 
 ### Community 118 - "Community 118"
 Cohesion: 0.33
 Nodes (6): Dependency examples, Design tree (walk order), Phase 3 — Design-tree interview, Phase 3 exit criteria, Rules, When a branch is done
 
-### Community 119 - "Community 119"
-Cohesion: 0.40
-Nodes (5): Batching, Decision log template, Interview tactics, Relentless but respectful, Stuck loops
-
-### Community 121 - "Community 121"
-Cohesion: 0.50
-Nodes (4): Capture, Opening prompt, Phase 1 — Deep intake, While waiting
-
 ### Community 122 - "Community 122"
-Cohesion: 0.50
-Nodes (4): issues/prd-<slug>.md, Phase 5 Write PRD, Phase 6 Confirm, Writing rules
+Cohesion: 0.21
+Nodes (10): Deep Module, Route to Orchestrator to Deep Module, Backend Frontend Cross-Cutting Layers, Shallow Orchestrator, Phase 1 Deep Intake, Phase 2 Repo Discovery, Phase 3 Design-Tree Interview, Phase 4 Module Sketch (+2 more)
 
 ### Community 123 - "Community 123"
 Cohesion: 0.33
@@ -642,6 +637,46 @@ Nodes (3): Care updates, GET `/api/daycare/bookings/<booking_id>/care-updates/` 
 Cohesion: 0.67
 Nodes (3): GET, PATCH, DELETE `/api/daycare/vaccines/<id>/` — owner or staff, GET, POST `/api/daycare/dogs/<dog_id>/vaccines/` — owner or staff, Vaccines
 
+### Community 131 - "Community 131"
+Cohesion: 0.19
+Nodes (11): marketingMetadataHost(), metadata, metadataBaseFromHost(), ogImageUrl(), HOST, sitemap(), toSitemapEntry(), Care Bear Daycare (+3 more)
+
+### Community 132 - "Community 132"
+Cohesion: 0.22
+Nodes (7): Component Parity QA, Instructions, Output format, Parity categories, Utility script, When to use, main()
+
+### Community 134 - "Community 134"
+Cohesion: 0.33
+Nodes (5): Error details, Instructions, Page snapshot, Test info, Test source
+
+### Community 135 - "Community 135"
+Cohesion: 0.33
+Nodes (5): Error details, Instructions, Page snapshot, Test info, Test source
+
+### Community 136 - "Community 136"
+Cohesion: 0.40
+Nodes (4): Error details, Instructions, Test info, Test source
+
+### Community 137 - "Community 137"
+Cohesion: 0.40
+Nodes (4): Error details, Instructions, Test info, Test source
+
+### Community 138 - "Community 138"
+Cohesion: 0.40
+Nodes (4): Error details, Instructions, Test info, Test source
+
+### Community 139 - "Community 139"
+Cohesion: 0.40
+Nodes (4): Error details, Instructions, Test info, Test source
+
+### Community 140 - "Community 140"
+Cohesion: 0.40
+Nodes (4): Error details, Instructions, Test info, Test source
+
+### Community 141 - "Community 141"
+Cohesion: 0.40
+Nodes (4): Error details, Instructions, Test info, Test source
+
 ## Ambiguous Edges - Review These
 - `manifest.json` → `Care Bear Daycare logo palette`  [AMBIGUOUS]
   frontend/public/manifest.json · relation: conceptually_related_to
@@ -663,9 +698,9 @@ Nodes (3): GET, PATCH, DELETE `/api/daycare/vaccines/<id>/` — owner or staff, 
   frontend/public/imgs/home/slide-007.jpg · relation: semantically_similar_to
 
 ## Knowledge Gaps
-- **583 isolated node(s):** `DEFAULT_PALETTE`, `PROPS`, `DIR`, `MIME`, `errors` (+578 more)
+- **637 isolated node(s):** `DEFAULT_PALETTE`, `PROPS`, `DIR`, `MIME`, `errors` (+632 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_

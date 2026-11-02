@@ -170,6 +170,9 @@ export const deleteMyPhoto = token =>
 
 export const listDogs = token => daycareRequest({ method: 'GET', path: '/daycare/dogs', token });
 
+export const listPetParents = token =>
+  daycareRequest({ method: 'GET', path: '/daycare/pet-parents', token });
+
 export const createDog = (token, body) =>
   daycareRequest({ method: 'POST', path: '/daycare/dogs', token, body });
 
@@ -224,9 +227,49 @@ export function getAvailability(token, { serviceId, dogIds, from, to }) {
   });
 }
 
-/** Pet-parent stay request. 200 and 201 are both success. */
+/** Pet-parent stay request. 200 and 201 are both success. Staff POST includes `pet_parent_id`. */
 export const createBooking = (token, body) =>
   daycareRequest({ method: 'POST', path: '/daycare/bookings', token, body });
+
+/**
+ * Staff see every stay. Optional `status` and `petParentId` (`pet_parent` query).
+ * @param {string} token
+ * @param {{ status?: string, petParentId?: number|string }} [filters]
+ */
+export function listBookings(token, { status, petParentId } = {}) {
+  const params = new URLSearchParams();
+  if (status) params.set('status', status);
+  if (petParentId != null && petParentId !== '') {
+    params.set('pet_parent', String(petParentId));
+  }
+  const query = params.toString();
+  if (!query) {
+    return daycareRequest({ method: 'GET', path: '/daycare/bookings', token });
+  }
+  return daycareRequest({
+    method: 'GET',
+    path: `/daycare/bookings/?${query}`,
+    token,
+    trailingSlash: false,
+  });
+}
+
+export const updateBooking = (token, bookingId, body) =>
+  daycareRequest({ method: 'PATCH', path: `/daycare/bookings/${bookingId}`, token, body });
+
+// --- Closures (named holidays) ---
+
+export const listClosures = token =>
+  daycareRequest({ method: 'GET', path: '/daycare/closures', token });
+
+export const createClosure = (token, body) =>
+  daycareRequest({ method: 'POST', path: '/daycare/closures', token, body });
+
+export const updateClosure = (token, closureId, body) =>
+  daycareRequest({ method: 'PATCH', path: `/daycare/closures/${closureId}`, token, body });
+
+export const deleteClosure = (token, closureId) =>
+  daycareRequest({ method: 'DELETE', path: `/daycare/closures/${closureId}`, token });
 
 // --- Public site reviews ---
 

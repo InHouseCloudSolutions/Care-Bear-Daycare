@@ -9,6 +9,7 @@ import HomeLandingShell from './HomeLandingShell';
 import HomeHeroBackground from './HomeHeroBackground';
 import HomeHeroNav from './HomeHeroNav';
 import HomeLandingFooter from './HomeLandingFooter';
+import HomePageJingle from './HomePageJingle';
 import { HOME_BRAND } from './home-landing-data';
 
 const HERO_LOGO_SRC = publicPath('/imgs/logos/logo.png');
@@ -68,6 +69,7 @@ const heroTextLegibility = {
 export default function HomeLandingPage() {
   return (
     <HomeLandingShell>
+      <HomePageJingle />
       <Box
         component="main"
         sx={{

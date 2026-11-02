@@ -74,6 +74,45 @@ export function monthsBetween(start, end) {
   return months;
 }
 
+/** Pet parent ids in first-seen order. Availability can only be asked for one household. */
+export function petParentIds(dogs) {
+  const ids = [];
+  dogs.forEach(dog => {
+    if (dog.pet_parent_id == null || ids.includes(dog.pet_parent_id)) return;
+    ids.push(dog.pet_parent_id);
+  });
+  return ids;
+}
+
+/** Dogs for one household. A null id keeps the list unchanged. */
+export function dogsForHousehold(dogs, petParentId) {
+  if (petParentId == null) return dogs;
+  return dogs.filter(dog => dog.pet_parent_id === petParentId);
+}
+
+/** Household a pet parent books for. Staff keep the full list and choose later. */
+export function bookingDogs(dogs, { isStaff, petParentId } = {}) {
+  if (isStaff) return dogs;
+  const ownId = petParentId ?? petParentIds(dogs)[0] ?? null;
+  return dogsForHousehold(dogs, ownId);
+}
+
+/** Staff with more than one household pick one. Pet parents never see that list. */
+export function showHouseholdPicker(isStaff, dogs) {
+  return Boolean(isStaff) && petParentIds(dogs).length > 1;
+}
+
+/** Message for a failed availability response. */
+export function availabilityFailureMessage(data) {
+  const fallback = 'Could not load availability for this month.';
+  if (!data || typeof data !== 'object') return fallback;
+  const dogsMessage = data.dogs;
+  if (typeof dogsMessage === 'string' && dogsMessage) return dogsMessage;
+  if (Array.isArray(dogsMessage) && dogsMessage.length) return String(dogsMessage[0]);
+  if (typeof data.detail === 'string' && data.detail) return data.detail;
+  return fallback;
+}
+
 /**
  * Why a start/end pair cannot be kept. `null` means the inclusive range is bookable.
  * Missing days count as booked so an incomplete calendar cannot confirm a stay.

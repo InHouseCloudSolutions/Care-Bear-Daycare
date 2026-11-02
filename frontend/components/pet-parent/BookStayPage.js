@@ -23,11 +23,15 @@ import {
   formatApiErrors,
   getAvailability,
   listDogs,
+  listPetParents,
   listServices,
 } from '@/lib/daycareApi';
 import {
+  availabilityFailureMessage,
   dayStateCaption,
   dayStatePhrase,
+  bookingDogs,
+  dogsForHousehold,
   eachIsoDate,
   formatIsoDate,
   isPastIsoDate,
@@ -35,12 +39,19 @@ import {
   monthBounds,
   monthsBetween,
   parseIsoDate,
+  petParentIds,
   rangeBlockMessage,
+  showHouseholdPicker,
 } from './booking-dates';
 import { PRIMARY_BUTTON_SX, SECTION_HEADING_SX } from './pet-parent-styles';
 
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const BOOKABLE_KINDS = new Set(['daycare', 'boarding', 'walk', 'drop_in']);
+
+function householdLabel(parent) {
+  const name = [parent.first_name, parent.last_name].filter(Boolean).join(' ');
+  return name || parent.email || `Household ${parent.id}`;
+}
 
 function calendarHelp(kind) {
   const states =
@@ -185,9 +196,12 @@ MonthGrid.propTypes = {
 };
 
 export default function BookStayPage() {
-  const { token } = useAuth();
+  const { token, user, petParent } = useAuth();
+  const isStaff = Boolean(user?.isStaff);
   const availabilityGen = useRef(0);
   const [dogs, setDogs] = useState([]);
+  const [householdId, setHouseholdId] = useState('');
+  const [households, setHouseholds] = useState([]);
   const [services, setServices] = useState([]);
   const [selectedIds, setSelectedIds] = useState([]);
   const [serviceId, setServiceId] = useState('');
@@ -208,6 +222,9 @@ export default function BookStayPage() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  const householdNumber = householdId === '' ? null : Number(householdId);
+  const visibleDogs = isStaff ? dogsForHousehold(dogs, householdNumber) : dogs;
+  const showHouseholds = showHouseholdPicker(isStaff, dogs);
   const selectedService =
     services.find(service => String(service.id) === String(serviceId)) || null;
   const selectionKey = `${serviceId}|${selectedIds.map(String).sort().join(',')}`;
@@ -226,8 +243,31 @@ export default function BookStayPage() {
           return;
         }
         const dogList = Array.isArray(dogsRes.data) ? dogsRes.data : [];
-        setDogs(dogList);
-        setSelectedIds(dogList.map(dog => dog.id));
+        const parentIds = petParentIds(dogList);
+        const staffView = Boolean(user?.isStaff);
+        const scopedDogs = bookingDogs(dogList, {
+          isStaff: staffView,
+          petParentId: petParent?.id,
+        });
+        const ownId =
+          petParentIds(scopedDogs)[0] ?? (staffView ? parentIds[0] : petParent?.id) ?? null;
+        setDogs(scopedDogs);
+        setHouseholdId(ownId == null ? '' : String(ownId));
+        setHouseholds(staffView ? parentIds.map(id => ({ id, label: `Household ${id}` })) : []);
+        setSelectedIds(
+          scopedDogs
+            .filter(dog => ownId == null || dog.pet_parent_id === ownId)
+            .map(dog => dog.id),
+        );
+        if (staffView && parentIds.length > 1) {
+          listPetParents(token).then(parentsRes => {
+            if (!active || !parentsRes.ok || !Array.isArray(parentsRes.data)) return;
+            const named = parentsRes.data
+              .filter(parent => parentIds.includes(parent.id))
+              .map(parent => ({ id: parent.id, label: householdLabel(parent) }));
+            if (named.length) setHouseholds(named);
+          });
+        }
         if (!servicesRes.ok) {
           setLoadError('Could not load services.');
           return;
@@ -245,7 +285,7 @@ export default function BookStayPage() {
     return () => {
       active = false;
     };
-  }, [token]);
+  }, [token, user?.isStaff, petParent?.id]);
 
   useEffect(() => {
     availabilityGen.current += 1;
@@ -264,7 +304,7 @@ export default function BookStayPage() {
       if (!active || gen !== availabilityGen.current) return;
       setMonthLoading(false);
       if (!res.ok || !Array.isArray(res.data?.days)) {
-        setMonthError('Could not load availability for this month.');
+        setMonthError(availabilityFailureMessage(res.data));
         return;
       }
       setAvailability(current => ({
@@ -342,6 +382,12 @@ export default function BookStayPage() {
     setRange({ start, end });
   };
 
+  const handleHousehold = event => {
+    const nextId = Number(event.target.value);
+    setHouseholdId(String(nextId));
+    setSelectedIds(dogs.filter(dog => dog.pet_parent_id === nextId).map(dog => dog.id));
+  };
+
   const handleDogToggle = dogId => event => {
     setSelectedIds(current =>
       event.target.checked ? [...current, dogId] : current.filter(id => id !== dogId),
@@ -354,13 +400,17 @@ export default function BookStayPage() {
     setSubmitting(true);
     setSummaryError(null);
     setFieldErrors({});
-    const res = await createBooking(token, {
+    const body = {
       service_id: Number(serviceId),
       dogs: selectedIds,
       starts_on: range.start,
       ends_on: range.end,
       parent_note: note,
-    });
+    };
+    if (user?.isStaff && householdNumber != null) {
+      body.pet_parent_id = householdNumber;
+    }
+    const res = await createBooking(token, body);
     setSubmitting(false);
     if (res.ok) {
       setSubmitted(true);
@@ -439,6 +489,23 @@ export default function BookStayPage() {
             </Alert>
           ))}
 
+          {showHouseholds ? (
+            <GlassFormField
+              select
+              label="Household"
+              required
+              fullWidth
+              value={householdId}
+              onChange={handleHousehold}
+            >
+              {households.map(household => (
+                <MenuItem key={household.id} value={String(household.id)}>
+                  {household.label}
+                </MenuItem>
+              ))}
+            </GlassFormField>
+          ) : null}
+
           <Box>
             <Typography component="h2" sx={SECTION_HEADING_SX}>
               Dogs
@@ -446,7 +513,7 @@ export default function BookStayPage() {
             <Typography sx={{ mt: 1, color: alpha(WEBSITE_INK, 0.72) }}>
               Every dog is selected. Uncheck anyone who is staying home.
             </Typography>
-            {dogs.map(dog => (
+            {visibleDogs.map(dog => (
               <FormControlLabel
                 key={dog.id}
                 sx={{ display: 'flex', alignItems: 'flex-start', mt: 1, ml: 0 }}

@@ -99,6 +99,20 @@ module.exports = {
     'import/extensions': ['off'],
   },
 
+  overrides: [
+    {
+      files: ['e2e/**/*.js', 'playwright.config.js'],
+      env: { node: true, jest: false },
+      rules: {
+        'jest/expect-expect': 'off',
+        'jest/no-conditional-expect': 'off',
+        'jest/no-disabled-tests': 'off',
+        'jest/no-standalone-expect': 'off',
+        'jest/valid-expect': 'off',
+      },
+    },
+  ],
+
   settings: {
     'import/resolver': {
       node: {
