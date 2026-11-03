@@ -1,4 +1,4 @@
-import { act, fireEvent, render, screen, within } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { useRouter } from 'next/navigation';
 import { ACCOUNT_PATH } from '@/consts/routes';
@@ -107,15 +107,26 @@ describe('StaffImagesPage', () => {
   it('says the public pages keep their built-in photos until the first save', async () => {
     renderPage();
     expect(
+      screen.queryByText(
+        'The public gallery still uses the built-in photos until the first image is saved.',
+      ),
+    ).not.toBeInTheDocument();
+    expect(
       await screen.findByText(
         'The public home page still uses the built-in photos until the first image is saved.',
       ),
     ).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('tab', { name: 'Gallery' }));
     expect(
-      screen.getByText(
+      await screen.findByText(
         'The public gallery still uses the built-in photos until the first image is saved.',
       ),
     ).toBeInTheDocument();
+    expect(
+      screen.queryByText(
+        'The public home page still uses the built-in photos until the first image is saved.',
+      ),
+    ).not.toBeInTheDocument();
   });
 
   it('shows the API error text when a placement fails to load', async () => {
@@ -126,6 +137,8 @@ describe('StaffImagesPage', () => {
       return { ok: true, status: 200, data: [] };
     });
     renderPage();
+    expect(screen.queryByText('Gallery unavailable.')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('tab', { name: 'Gallery' }));
     expect(await screen.findByText('Gallery unavailable.')).toBeInTheDocument();
   });
 
@@ -156,17 +169,18 @@ describe('StaffImagesPage', () => {
       data: { file: ['Upload a JPEG, PNG, WEBP, or GIF under 5 MB.'] },
     });
     renderPage();
+    fireEvent.click(screen.getByRole('tab', { name: 'Gallery' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'New image' }));
     const fileInput = await screen.findByLabelText('Choose image for Gallery');
-    const gallery = screen.getByRole('region', { name: 'Gallery' });
     const file = new File(['hi'], 'dog.jpg', { type: 'image/jpeg' });
     fireEvent.change(fileInput, {
       target: { files: [file] },
     });
-    fireEvent.change(within(gallery).getByLabelText('Alt text'), {
+    fireEvent.change(screen.getByLabelText('Alt text'), {
       target: { value: 'Bear' },
     });
     await act(async () => {
-      fireEvent.click(within(gallery).getByRole('button', { name: 'Add image' }));
+      fireEvent.click(screen.getByRole('button', { name: 'Add image' }));
     });
     expect(createSiteImage).toHaveBeenCalledWith('staff-token', {
       file,

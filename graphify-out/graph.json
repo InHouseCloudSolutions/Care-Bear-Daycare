@@ -1434,7 +1434,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_generate_parity_qa_checklist",
-      "community": 132,
+      "community": 117,
       "norm_label": "generate_parity_qa_checklist.py"
     },
     {
@@ -1444,7 +1444,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "scripts_generate_parity_qa_checklist_main",
-      "community": 132,
+      "community": 117,
       "norm_label": "main()"
     },
     {
@@ -2184,7 +2184,7 @@
       "source_location": "L382",
       "_origin": "ast",
       "id": "design_studio_design_studio_glass_herotextlegibility",
-      "community": 69,
+      "community": 2,
       "norm_label": "herotextlegibility"
     },
     {
@@ -2604,7 +2604,7 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bookstaybutton",
-      "community": 109,
+      "community": 28,
       "norm_label": "bookstaybutton()"
     },
     {
@@ -3414,7 +3414,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "home_landing_homeherositeslides_homeherositeslides",
-      "community": 69,
+      "community": 61,
       "norm_label": "homeherositeslides()"
     },
     {
@@ -3524,7 +3524,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_herotextlegibility",
-      "community": 69,
+      "community": 2,
       "norm_label": "herotextlegibility"
     },
     {
@@ -3974,7 +3974,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_withstaffnavitems",
-      "community": 80,
+      "community": 133,
       "norm_label": "withstaffnavitems()"
     },
     {
@@ -4224,7 +4224,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer",
-      "community": 0,
+      "community": 62,
       "norm_label": "marketing-nav-drawer.js"
     },
     {
@@ -4234,7 +4234,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_auth_nav_labels",
-      "community": 0,
+      "community": 62,
       "norm_label": "auth_nav_labels"
     },
     {
@@ -4244,7 +4244,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_splitauthnavitems",
-      "community": 0,
+      "community": 62,
       "norm_label": "splitauthnavitems()"
     },
     {
@@ -4254,7 +4254,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_buildmobiledraweritems",
-      "community": 0,
+      "community": 62,
       "norm_label": "buildmobiledraweritems()"
     },
     {
@@ -4264,7 +4264,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavdraweritems",
-      "community": 0,
+      "community": 62,
       "norm_label": "usemarketingnavdraweritems.js"
     },
     {
@@ -4284,7 +4284,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems",
-      "community": 62,
+      "community": 0,
       "norm_label": "usemarketingnavitems.js"
     },
     {
@@ -4294,7 +4294,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems_usehomenavitems",
-      "community": 62,
+      "community": 0,
       "norm_label": "usehomenavitems()"
     },
     {
@@ -4304,7 +4304,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems_usemarketinginteriornavitems",
-      "community": 62,
+      "community": 0,
       "norm_label": "usemarketinginteriornavitems()"
     },
     {
@@ -5368,50 +5368,270 @@
       "norm_label": "siteimagesection.js"
     },
     {
-      "label": "PREVIEW_SX",
+      "label": "rowShape",
       "file_type": "code",
       "source_file": "frontend/components/staff/SiteImageSection.js",
-      "source_location": "L20",
+      "source_location": "L44",
       "_origin": "ast",
-      "id": "staff_siteimagesection_preview_sx",
+      "id": "staff_siteimagesection_rowshape",
       "community": 34,
-      "norm_label": "preview_sx"
+      "norm_label": "rowshape"
+    },
+    {
+      "label": "dialogPaperSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_dialogpapersx",
+      "community": 34,
+      "norm_label": "dialogpapersx"
+    },
+    {
+      "label": "thumbSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_thumbsx",
+      "community": 34,
+      "norm_label": "thumbsx"
+    },
+    {
+      "label": "indexBadgeSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_indexbadgesx",
+      "community": 34,
+      "norm_label": "indexbadgesx"
+    },
+    {
+      "label": "previewMediaSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_previewmediasx",
+      "community": 34,
+      "norm_label": "previewmediasx"
+    },
+    {
+      "label": "orderButtonSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_orderbuttonsx",
+      "community": 34,
+      "norm_label": "orderbuttonsx"
+    },
+    {
+      "label": "selectButtonSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_selectbuttonsx",
+      "community": 34,
+      "norm_label": "selectbuttonsx"
+    },
+    {
+      "label": "neutralPillSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_neutralpillsx",
+      "community": 34,
+      "norm_label": "neutralpillsx()"
+    },
+    {
+      "label": "accentOutlinedSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_accentoutlinedsx",
+      "community": 34,
+      "norm_label": "accentoutlinedsx()"
+    },
+    {
+      "label": "accentFilledSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_accentfilledsx",
+      "community": 34,
+      "norm_label": "accentfilledsx"
+    },
+    {
+      "label": "removePillSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_removepillsx",
+      "community": 34,
+      "norm_label": "removepillsx"
+    },
+    {
+      "label": "surfaceCardSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_surfacecardsx",
+      "community": 34,
+      "norm_label": "surfacecardsx()"
+    },
+    {
+      "label": "rowFrameSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_rowframesx",
+      "community": 34,
+      "norm_label": "rowframesx()"
+    },
+    {
+      "label": "trimmedAlt()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L227",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_trimmedalt",
+      "community": 34,
+      "norm_label": "trimmedalt()"
     },
     {
       "label": "imageLabel()",
       "file_type": "code",
       "source_file": "frontend/components/staff/SiteImageSection.js",
-      "source_location": "L29",
+      "source_location": "L231",
       "_origin": "ast",
       "id": "staff_siteimagesection_imagelabel",
       "community": 34,
       "norm_label": "imagelabel()"
     },
     {
+      "label": "displayTitle()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L235",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_displaytitle",
+      "community": 34,
+      "norm_label": "displaytitle()"
+    },
+    {
+      "label": "formatSeconds()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L239",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_formatseconds",
+      "community": 34,
+      "norm_label": "formatseconds()"
+    },
+    {
+      "label": "placementHint()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L245",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_placementhint",
+      "community": 34,
+      "norm_label": "placementhint()"
+    },
+    {
+      "label": "photoCountLabel()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_photocountlabel",
+      "community": 34,
+      "norm_label": "photocountlabel()"
+    },
+    {
+      "label": "sameId()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L265",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_sameid",
+      "community": 34,
+      "norm_label": "sameid()"
+    },
+    {
+      "label": "resolveSelection()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L269",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_resolveselection",
+      "community": 34,
+      "norm_label": "resolveselection()"
+    },
+    {
+      "label": "createdImageId()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L289",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_createdimageid",
+      "community": 34,
+      "norm_label": "createdimageid()"
+    },
+    {
       "label": "SiteImageRow()",
       "file_type": "code",
       "source_file": "frontend/components/staff/SiteImageSection.js",
-      "source_location": "L34",
+      "source_location": "L297",
       "_origin": "ast",
       "id": "staff_siteimagesection_siteimagerow",
       "community": 34,
       "norm_label": "siteimagerow()"
     },
     {
-      "label": "SiteImageAddForm()",
+      "label": "SiteImagePreview()",
       "file_type": "code",
       "source_file": "frontend/components/staff/SiteImageSection.js",
-      "source_location": "L121",
+      "source_location": "L353",
       "_origin": "ast",
-      "id": "staff_siteimagesection_siteimageaddform",
+      "id": "staff_siteimagesection_siteimagepreview",
       "community": 34,
-      "norm_label": "siteimageaddform()"
+      "norm_label": "siteimagepreview()"
+    },
+    {
+      "label": "SiteImageAddDialog()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L451",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_siteimageadddialog",
+      "community": 34,
+      "norm_label": "siteimageadddialog()"
+    },
+    {
+      "label": "EditAltDialog()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L542",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_editaltdialog",
+      "community": 34,
+      "norm_label": "editaltdialog()"
     },
     {
       "label": "SiteImageSection()",
       "file_type": "code",
       "source_file": "frontend/components/staff/SiteImageSection.js",
-      "source_location": "L184",
+      "source_location": "L608",
       "_origin": "ast",
       "id": "staff_siteimagesection_siteimagesection",
       "community": 34,
@@ -5448,10 +5668,40 @@
       "norm_label": "staffimagespage.js"
     },
     {
+      "label": "PLACEMENTS",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_placements",
+      "community": 34,
+      "norm_label": "placements"
+    },
+    {
+      "label": "headerPillSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_headerpillsx",
+      "community": 34,
+      "norm_label": "headerpillsx"
+    },
+    {
+      "label": "selectedTabSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_selectedtabsx",
+      "community": 34,
+      "norm_label": "selectedtabsx"
+    },
+    {
       "label": "StaffImagesPage()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffImagesPage.js",
-      "source_location": "L18",
+      "source_location": "L74",
       "_origin": "ast",
       "id": "staff_staffimagespage_staffimagespage",
       "community": 34,
@@ -5764,7 +6014,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "consts_routes_staffpathsuffix",
-      "community": 80,
+      "community": 133,
       "norm_label": "staffpathsuffix()"
     },
     {
@@ -5774,7 +6024,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "consts_routes_staffpath",
-      "community": 80,
+      "community": 133,
       "norm_label": "staffpath()"
     },
     {
@@ -5784,7 +6034,7 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "consts_routes_staffloginhref",
-      "community": 80,
+      "community": 133,
       "norm_label": "staffloginhref()"
     },
     {
@@ -5814,7 +6064,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "consts_routes_ismarketingroute",
-      "community": 91,
+      "community": 80,
       "norm_label": "ismarketingroute()"
     },
     {
@@ -5834,7 +6084,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "consts_routes_ismarketingformroute",
-      "community": 91,
+      "community": 80,
       "norm_label": "ismarketingformroute()"
     },
     {
@@ -8054,7 +8304,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "about_page",
-      "community": 91,
+      "community": 107,
       "norm_label": "page.js"
     },
     {
@@ -8064,7 +8314,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "about_page_metadata",
-      "community": 91,
+      "community": 107,
       "norm_label": "metadata"
     },
     {
@@ -8074,7 +8324,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "about_page_aboutroute",
-      "community": 91,
+      "community": 107,
       "norm_label": "aboutroute()"
     },
     {
@@ -8204,7 +8454,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contact_page",
-      "community": 91,
+      "community": 80,
       "norm_label": "page.js"
     },
     {
@@ -8214,7 +8464,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "contact_page_metadata",
-      "community": 91,
+      "community": 80,
       "norm_label": "metadata"
     },
     {
@@ -8224,7 +8474,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "contact_page_contactroute",
-      "community": 91,
+      "community": 80,
       "norm_label": "contactroute()"
     },
     {
@@ -8374,7 +8624,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "website_page",
-      "community": 144,
+      "community": 117,
       "norm_label": "page.js"
     },
     {
@@ -8384,7 +8634,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "website_page_metadata",
-      "community": 144,
+      "community": 117,
       "norm_label": "metadata"
     },
     {
@@ -8394,7 +8644,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "website_page_homepage",
-      "community": 144,
+      "community": 117,
       "norm_label": "homepage()"
     },
     {
@@ -8464,7 +8714,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_emotioncacheprovider",
-      "community": 4,
+      "community": 117,
       "norm_label": "emotioncacheprovider.js"
     },
     {
@@ -8474,7 +8724,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "app_emotioncacheprovider_emotioncacheprovider",
-      "community": 4,
+      "community": 117,
       "norm_label": "emotioncacheprovider()"
     },
     {
@@ -8484,7 +8734,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_layout",
-      "community": 4,
+      "community": 117,
       "norm_label": "layout.js"
     },
     {
@@ -8494,7 +8744,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "app_layout_og_image_path",
-      "community": 4,
+      "community": 117,
       "norm_label": "og_image_path"
     },
     {
@@ -8504,7 +8754,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "app_layout_marketingmetadatahost",
-      "community": 131,
+      "community": 117,
       "norm_label": "marketingmetadatahost()"
     },
     {
@@ -8514,7 +8764,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "app_layout_ogimageurl",
-      "community": 131,
+      "community": 117,
       "norm_label": "ogimageurl()"
     },
     {
@@ -8524,7 +8774,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "app_layout_metadatabasefromhost",
-      "community": 131,
+      "community": 117,
       "norm_label": "metadatabasefromhost()"
     },
     {
@@ -8534,7 +8784,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "app_layout_shareimageurl",
-      "community": 4,
+      "community": 117,
       "norm_label": "shareimageurl"
     },
     {
@@ -8544,7 +8794,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "app_layout_metadata",
-      "community": 131,
+      "community": 117,
       "norm_label": "metadata"
     },
     {
@@ -8554,7 +8804,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "app_layout_viewport",
-      "community": 4,
+      "community": 117,
       "norm_label": "viewport"
     },
     {
@@ -8564,7 +8814,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
-      "community": 4,
+      "community": 117,
       "norm_label": "rootlayout()"
     },
     {
@@ -8594,7 +8844,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_providers",
-      "community": 4,
+      "community": 117,
       "norm_label": "providers.js"
     },
     {
@@ -8604,7 +8854,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "app_providers_providers",
-      "community": 4,
+      "community": 117,
       "norm_label": "providers()"
     },
     {
@@ -8614,7 +8864,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_sitemap",
-      "community": 131,
+      "community": 117,
       "norm_label": "sitemap.js"
     },
     {
@@ -8624,7 +8874,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_sitemap_host",
-      "community": 131,
+      "community": 117,
       "norm_label": "host"
     },
     {
@@ -8634,7 +8884,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "app_sitemap_tositemapentry",
-      "community": 131,
+      "community": 117,
       "norm_label": "tositemapentry()"
     },
     {
@@ -8644,7 +8894,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "app_sitemap_sitemap",
-      "community": 131,
+      "community": 117,
       "norm_label": "sitemap()"
     },
     {
@@ -8824,7 +9074,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "utils_required_fields",
-      "community": 143,
+      "community": 23,
       "norm_label": "required-fields.js"
     },
     {
@@ -8834,7 +9084,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "utils_required_fields_isrequiredfieldfilled",
-      "community": 143,
+      "community": 23,
       "norm_label": "isrequiredfieldfilled()"
     },
     {
@@ -8844,7 +9094,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "utils_required_fields_arerequiredfieldsfilled",
-      "community": 143,
+      "community": 23,
       "norm_label": "arerequiredfieldsfilled()"
     },
     {
@@ -8854,7 +9104,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "utils_required_fields_isvalidemail",
-      "community": 143,
+      "community": 23,
       "norm_label": "isvalidemail()"
     },
     {
@@ -8864,7 +9114,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "utils_required_fields_cansubmitrequiredform",
-      "community": 143,
+      "community": 23,
       "norm_label": "cansubmitrequiredform()"
     },
     {
@@ -9184,7 +9434,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "utils_website_seo_website_seo",
-      "community": 131,
+      "community": 117,
       "norm_label": "website_seo"
     },
     {
@@ -9214,7 +9464,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "utils_website_seo_public_site_origin",
-      "community": 131,
+      "community": 117,
       "norm_label": "public_site_origin"
     },
     {
@@ -9864,7 +10114,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "component_parity_qa_skill",
-      "community": 132,
+      "community": 117,
       "norm_label": "skill.md"
     },
     {
@@ -9874,7 +10124,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "component_parity_qa_skill_component_parity_qa",
-      "community": 132,
+      "community": 117,
       "norm_label": "component parity qa"
     },
     {
@@ -9884,7 +10134,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "component_parity_qa_skill_when_to_use",
-      "community": 132,
+      "community": 117,
       "norm_label": "when to use"
     },
     {
@@ -9894,7 +10144,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "component_parity_qa_skill_instructions",
-      "community": 132,
+      "community": 117,
       "norm_label": "instructions"
     },
     {
@@ -9904,7 +10154,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "component_parity_qa_skill_output_format",
-      "community": 132,
+      "community": 117,
       "norm_label": "output format"
     },
     {
@@ -9914,7 +10164,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "component_parity_qa_skill_utility_script",
-      "community": 132,
+      "community": 117,
       "norm_label": "utility script"
     },
     {
@@ -11374,7 +11624,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_1_deep_intake",
-      "community": 11,
+      "community": 125,
       "norm_label": "phase 1 \u2014 deep intake"
     },
     {
@@ -11384,7 +11634,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "write_a_prd_skill_opening_prompt",
-      "community": 11,
+      "community": 125,
       "norm_label": "opening prompt"
     },
     {
@@ -11394,7 +11644,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "write_a_prd_skill_while_waiting",
-      "community": 11,
+      "community": 125,
       "norm_label": "while waiting"
     },
     {
@@ -11404,7 +11654,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "write_a_prd_skill_capture",
-      "community": 11,
+      "community": 125,
       "norm_label": "capture"
     },
     {
@@ -11454,7 +11704,7 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_design_tree_interview",
-      "community": 118,
+      "community": 116,
       "norm_label": "phase 3 \u2014 design-tree interview"
     },
     {
@@ -11464,7 +11714,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "write_a_prd_skill_rules",
-      "community": 118,
+      "community": 116,
       "norm_label": "rules"
     },
     {
@@ -11474,7 +11724,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "write_a_prd_skill_design_tree_walk_order",
-      "community": 118,
+      "community": 116,
       "norm_label": "design tree (walk order)"
     },
     {
@@ -11484,7 +11734,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_skill_dependency_examples",
-      "community": 118,
+      "community": 116,
       "norm_label": "dependency examples"
     },
     {
@@ -11494,7 +11744,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_a_branch_is_done",
-      "community": 118,
+      "community": 116,
       "norm_label": "when a branch is done"
     },
     {
@@ -11504,7 +11754,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_exit_criteria",
-      "community": 118,
+      "community": 116,
       "norm_label": "phase 3 exit criteria"
     },
     {
@@ -11514,7 +11764,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_module_sketch",
-      "community": 116,
+      "community": 4,
       "norm_label": "phase 4 \u2014 module sketch"
     },
     {
@@ -11524,7 +11774,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "write_a_prd_skill_purpose",
-      "community": 116,
+      "community": 4,
       "norm_label": "purpose"
     },
     {
@@ -11534,7 +11784,7 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_mandatory",
-      "community": 116,
+      "community": 4,
       "norm_label": "graphify (mandatory)"
     },
     {
@@ -11544,7 +11794,7 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce_178",
-      "community": 116,
+      "community": 4,
       "norm_label": "what to produce"
     },
     {
@@ -11554,7 +11804,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "write_a_prd_skill_extraction_mindset",
-      "community": 116,
+      "community": 4,
       "norm_label": "extraction mindset"
     },
     {
@@ -11564,7 +11814,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "write_a_prd_skill_confirm_with_user",
-      "community": 116,
+      "community": 4,
       "norm_label": "confirm with user"
     },
     {
@@ -11574,7 +11824,7 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_exit_criteria",
-      "community": 116,
+      "community": 4,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -11614,7 +11864,7 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "write_a_prd_skill_writing_rules",
-      "community": 110,
+      "community": 131,
       "norm_label": "writing rules"
     },
     {
@@ -11744,7 +11994,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_interview_tactics",
-      "community": 77,
+      "community": 118,
       "norm_label": "interview tactics"
     },
     {
@@ -11754,7 +12004,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_relentless_but_respectful",
-      "community": 77,
+      "community": 118,
       "norm_label": "relentless but respectful"
     },
     {
@@ -11764,7 +12014,7 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_batching",
-      "community": 77,
+      "community": 118,
       "norm_label": "batching"
     },
     {
@@ -11774,7 +12024,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_stuck_loops",
-      "community": 77,
+      "community": 118,
       "norm_label": "stuck loops"
     },
     {
@@ -11784,7 +12034,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_decision_log_template",
-      "community": 77,
+      "community": 118,
       "norm_label": "decision log template"
     },
     {
@@ -11824,7 +12074,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_process",
-      "community": 125,
+      "community": 110,
       "norm_label": "process"
     },
     {
@@ -11834,7 +12084,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_1_re_ground_in_the_repo",
-      "community": 125,
+      "community": 110,
       "norm_label": "1. re-ground in the repo"
     },
     {
@@ -11844,7 +12094,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_2_layer_the_sketch",
-      "community": 125,
+      "community": 110,
       "norm_label": "2. layer the sketch"
     },
     {
@@ -11854,7 +12104,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_3_hunt_for_deep_modules_required",
-      "community": 125,
+      "community": 110,
       "norm_label": "3. hunt for deep modules (required)"
     },
     {
@@ -11864,7 +12114,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_4_draw_the_dependency_graph",
-      "community": 125,
+      "community": 110,
       "norm_label": "4. draw the dependency graph"
     },
     {
@@ -11874,7 +12124,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_5_present_and_confirm",
-      "community": 125,
+      "community": 110,
       "norm_label": "5. present and confirm"
     },
     {
@@ -11904,7 +12154,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_ihcs_conventions",
-      "community": 86,
+      "community": 5,
       "norm_label": "ihcs conventions"
     },
     {
@@ -11934,7 +12184,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template",
-      "community": 110,
+      "community": 122,
       "norm_label": "template.md"
     },
     {
@@ -11944,7 +12194,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template_prd_template",
-      "community": 110,
+      "community": 122,
       "norm_label": "prd template"
     },
     {
@@ -12124,7 +12374,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "readme_stack",
-      "community": 86,
+      "community": 5,
       "norm_label": "stack"
     },
     {
@@ -13434,7 +13684,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_items_base",
-      "community": 62,
+      "community": 0,
       "norm_label": "home_nav_items_base"
     },
     {
@@ -13444,7 +13694,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketing_interior_nav_items_base",
-      "community": 62,
+      "community": 0,
       "norm_label": "marketing_interior_nav_items_base"
     },
     {
@@ -13916,7 +14166,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 131,
+      "community": 117,
       "norm_label": "care bear daycare",
       "id": "utils_website_seo_care_bear_daycare"
     },
@@ -13983,7 +14233,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Describes a pages-router Next.js 15 + React 18 + MUI 5 specialist for frontend/, including contexts wired from pages/_app.js.",
-      "community": 4,
+      "community": 117,
       "norm_label": "frontend-dev agent",
       "id": "agents_frontend_dev_frontend_dev"
     },
@@ -13996,7 +14246,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 144,
+      "community": 117,
       "norm_label": "thin pages",
       "id": "agents_frontend_dev_thin_pages"
     },
@@ -14285,7 +14535,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 132,
+      "community": 117,
       "norm_label": "parity categories",
       "id": "component_parity_qa_skill_parity_categories"
     },
@@ -14719,7 +14969,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Table of ID, decision, rationale, and depends-on, maintained in working notes and copied into the PRD.",
-      "community": 110,
+      "community": 122,
       "norm_label": "decision log",
       "id": "write_a_prd_skill_decision_log"
     },
@@ -14747,7 +14997,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Fill the template from working notes, discovery, decision log, and module sketch. Include current state, decision log, implementation modules, and verified assertions.",
-      "community": 110,
+      "community": 131,
       "norm_label": "phase 5 write prd",
       "id": "write_a_prd_skill_phase5_write_prd"
     },
@@ -14761,7 +15011,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Default path is issues/prd-<short-slug>.md. Revisions use -v2. Never overwrite without approval. Dated names only when the user asks.",
-      "community": 110,
+      "community": 131,
       "norm_label": "issues/prd-<slug>.md",
       "id": "write_a_prd_skill_issues_prd_path"
     },
@@ -14775,7 +15025,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Report path, one-paragraph scope, deferred question count, and optional handoff to /project-manager.",
-      "community": 110,
+      "community": 131,
       "norm_label": "phase 6 confirm",
       "id": "write_a_prd_skill_phase6_confirm"
     },
@@ -14817,7 +15067,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Example roles listed as public visitor, ES admin, DS manager, kiosk player, and API consumer. These names come from the older multi-product suite, not from the Care Bear Daycare brand reference.",
-      "community": 90,
+      "community": 86,
       "norm_label": "es admin ds manager kiosk roles",
       "id": "write_a_prd_interview_guide_legacy_roles"
     },
@@ -14873,7 +15123,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 2\u20134. Primary flow, edge cases, and design reference (Tailwind, Figma, or existing MUI). i18n probe is scoped to the IHCS website.",
-      "community": 145,
+      "community": 90,
       "norm_label": "branch 5 ux and flows",
       "id": "write_a_prd_interview_guide_branch5_ux"
     },
@@ -14887,7 +15137,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 3\u20135. Performance, accessibility, security, and reliability, or an explicit statement of no special requirements.",
-      "community": 145,
+      "community": 90,
       "norm_label": "branch 6 non-functional requirements",
       "id": "write_a_prd_interview_guide_branch6_nfr"
     },
@@ -14901,7 +15151,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on Branches 3\u20135. MVP versus later phases, feature flags, beta users, client sign-off, and launch assets.",
-      "community": 145,
+      "community": 90,
       "norm_label": "branch 7 rollout and phasing",
       "id": "write_a_prd_interview_guide_branch7_rollout"
     },
@@ -14915,7 +15165,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Depends on all prior branches. Manual scenarios per role, API method/path/status expectations, and regression areas that prove Branch 1 success.",
-      "community": 145,
+      "community": 90,
       "norm_label": "branch 8 acceptance and verification",
       "id": "write_a_prd_interview_guide_branch8_acceptance"
     },
@@ -14929,7 +15179,7 @@
       "author": null,
       "contributor": null,
       "rationale": "If the user is unsure, offer two or three options, record a deferral with an owner and whether it blocks MVP, and do not invent a decision.",
-      "community": 110,
+      "community": 122,
       "norm_label": "deferred decision",
       "id": "write_a_prd_interview_guide_deferred_decision"
     },
@@ -14943,7 +15193,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Pure input-to-output logic with injected plain data, no UI/framework/ORM/globals/request/hooks, and a stable signature so it can be unit-tested in isolation.",
-      "community": 122,
+      "community": 132,
       "norm_label": "deep module",
       "id": "write_a_prd_module_sketch_deep_module"
     },
@@ -14957,7 +15207,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Viewsets, route pages, and hooks stay thin and delegate rules downward. Tested with integration or UI tests only.",
-      "community": 122,
+      "community": 132,
       "norm_label": "shallow orchestrator",
       "id": "write_a_prd_module_sketch_shallow_module"
     },
@@ -14971,7 +15221,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Dependency shape: Route or ViewSet calls an orchestrator hook or service, which calls deep modules, with API client or serializer beside the orchestrator.",
-      "community": 122,
+      "community": 132,
       "norm_label": "route to orchestrator to deep module",
       "id": "write_a_prd_module_sketch_dependency_chain"
     },
@@ -14985,7 +15235,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sketch splits into backend models/serializers/services/viewsets, frontend pages/components/hooks/API clients, and cross-cutting middleware, auth, env, Docker, and migrations.",
-      "community": 90,
+      "community": 5,
       "norm_label": "backend frontend cross-cutting layers",
       "id": "write_a_prd_module_sketch_layers"
     },
@@ -14999,7 +15249,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Columns: ID, module path, layer, Create/Modify/Extend, responsibility, deep flag, test approach, dependencies. Example pairs a schedule service with a thin viewset and a frontend domain preview.",
-      "community": 5,
+      "community": 122,
       "norm_label": "module table m-001",
       "id": "write_a_prd_module_sketch_module_table"
     },
@@ -15027,7 +15277,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Must-have R-001, should-have R-101, and could-have R-201, each with rationale and a decision reference.",
-      "community": 110,
+      "community": 122,
       "norm_label": "p0 p1 p2 requirements",
       "id": "write_a_prd_template_priority"
     },
@@ -15041,7 +15291,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Maps requirement IDs to module IDs. The skill requires every P0 to map to at least one module.",
-      "community": 5,
+      "community": 122,
       "norm_label": "requirement to module traceability",
       "id": "write_a_prd_template_traceability"
     },
@@ -15419,7 +15669,7 @@
       "author": null,
       "contributor": null,
       "rationale": "docker compose up --build --remove-orphans serves http://127.0.0.1:3010. The frontend container runs yarn dev on port 3000; Caddy publishes 3010. Outside Docker: cd frontend && yarn install && yarn dev.",
-      "community": 90,
+      "community": 5,
       "norm_label": "local docker compose dev",
       "id": "readme_local_docker"
     },
@@ -15433,7 +15683,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Builds frontend/Dockerfile.local, sets WATCHPACK_POLLING=true, and bind-mounts ./frontend to /code while keeping anonymous volumes for /code/node_modules and /code/.next.",
-      "community": 90,
+      "community": 5,
       "norm_label": "compose frontend service",
       "id": "docker_compose_frontend"
     },
@@ -15447,7 +15697,7 @@
       "author": null,
       "contributor": null,
       "rationale": "reverse-proxy uses caddy:latest, depends_on frontend, publishes 3010:3010, and mounts ./Caddyfile at /etc/caddy/Caddyfile.",
-      "community": 90,
+      "community": 5,
       "norm_label": "compose caddy reverse proxy",
       "id": "docker_compose_caddy"
     },
@@ -20933,9 +21183,9 @@
       "source_file": "frontend/components/dog-hotel/GallerySiteImages.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_hotel_gallerysiteimages",
-      "target": "dog_hotel_gallerysiteimages_gallerysiteimages",
-      "confidence_score": 1.0
+      "target": "dog_hotel_gallerysiteimages_gallerysiteimages"
     },
     {
       "relation": "contains",
@@ -22789,9 +23039,9 @@
       "source_file": "frontend/components/home-landing/HomeHeroSiteSlides.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_homeherositeslides",
-      "target": "home_landing_homeherobackground",
-      "confidence_score": 1.0
+      "target": "home_landing_homeherobackground"
     },
     {
       "relation": "imports_from",
@@ -22863,9 +23113,9 @@
       "source_file": "frontend/components/home-landing/HomeHeroSiteSlides.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_homeherositeslides",
-      "target": "home_landing_homeherobackground_homeherobackground",
-      "confidence_score": 1.0
+      "target": "home_landing_homeherobackground_homeherobackground"
     },
     {
       "relation": "imports",
@@ -23215,9 +23465,9 @@
       "source_file": "frontend/components/home-landing/HomeHeroSiteSlides.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_homeherositeslides",
-      "target": "home_landing_homeherositeslides_homeherositeslides",
-      "confidence_score": 1.0
+      "target": "home_landing_homeherositeslides_homeherositeslides"
     },
     {
       "relation": "imports_from",
@@ -23226,9 +23476,9 @@
       "source_file": "frontend/components/home-landing/HomeLandingPage.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_homelandingpage",
-      "target": "home_landing_homeherositeslides",
-      "confidence_score": 1.0
+      "target": "home_landing_homeherositeslides"
     },
     {
       "relation": "imports_from",
@@ -23237,9 +23487,9 @@
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_marketinginteriorlayout",
-      "target": "home_landing_homeherositeslides",
-      "confidence_score": 1.0
+      "target": "home_landing_homeherositeslides"
     },
     {
       "relation": "imports",
@@ -23248,9 +23498,9 @@
       "source_file": "frontend/components/home-landing/HomeLandingPage.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_homelandingpage",
-      "target": "home_landing_homeherositeslides_homeherositeslides",
-      "confidence_score": 1.0
+      "target": "home_landing_homeherositeslides_homeherositeslides"
     },
     {
       "relation": "imports",
@@ -23259,9 +23509,9 @@
       "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_marketinginteriorlayout",
-      "target": "home_landing_homeherositeslides_homeherositeslides",
-      "confidence_score": 1.0
+      "target": "home_landing_homeherositeslides_homeherositeslides"
     },
     {
       "relation": "imports_from",
@@ -24686,9 +24936,9 @@
       "source_file": "frontend/components/home-landing/home-landing-data.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_home_landing_data",
-      "target": "home_landing_home_hero_timing",
-      "confidence_score": 1.0
+      "target": "home_landing_home_hero_timing"
     },
     {
       "relation": "contains",
@@ -27630,9 +27880,9 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_site_images",
-      "confidence_score": 1.0
+      "target": "staff_site_images"
     },
     {
       "relation": "imports",
@@ -27641,9 +27891,9 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_site_images_siteimageerrortext",
-      "confidence_score": 1.0
+      "target": "staff_site_images_siteimageerrortext"
     },
     {
       "relation": "imports",
@@ -27652,9 +27902,79 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_site_images_sortorderswappatches",
-      "confidence_score": 1.0
+      "target": "staff_site_images_sortorderswappatches"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L146",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_accentfilledsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_accentoutlinedsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L274",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_createdimageid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_dialogpapersx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L220",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_displaytitle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L525",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_editaltdialog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L224",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_formatseconds"
     },
     {
       "relation": "contains",
@@ -27662,29 +27982,149 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_siteimagesection_imagelabel",
+      "target": "staff_siteimagesection_imagelabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_indexbadgesx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_neutralpillsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_orderbuttonsx",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/SiteImageSection.js",
-      "source_location": "L20",
+      "source_location": "L245",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_siteimagesection_preview_sx",
-      "confidence_score": 1.0
+      "target": "staff_siteimagesection_photocountlabel"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/SiteImageSection.js",
-      "source_location": "L121",
+      "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_siteimagesection_siteimageaddform",
-      "confidence_score": 1.0
+      "target": "staff_siteimagesection_placementhint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_previewmediasx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_removepillsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L254",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_resolveselection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L190",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_rowframesx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_rowshape"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L250",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_sameid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_selectbuttonsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L434",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_siteimageadddialog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L338",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_siteimagepreview"
     },
     {
       "relation": "contains",
@@ -27692,9 +28132,9 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_siteimagesection_siteimagerow",
-      "confidence_score": 1.0
+      "target": "staff_siteimagesection_siteimagerow"
     },
     {
       "relation": "contains",
@@ -27702,9 +28142,39 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_siteimagesection_siteimagesection",
-      "confidence_score": 1.0
+      "target": "staff_siteimagesection_siteimagesection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_surfacecardsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_thumbsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L212",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_trimmedalt"
     },
     {
       "relation": "imports_from",
@@ -27713,9 +28183,9 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk"
     },
     {
       "relation": "imports",
@@ -27724,9 +28194,9 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection",
-      "target": "staff_staff_desk_asrecordlist",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_asrecordlist"
     },
     {
       "relation": "imports_from",
@@ -27735,9 +28205,64 @@
       "source_file": "frontend/components/staff/StaffImagesPage.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage",
-      "target": "staff_siteimagesection",
-      "confidence_score": 1.0
+      "target": "staff_siteimagesection"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L288",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_siteimagerow",
+      "target": "staff_siteimagesection_rowframesx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L221",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_displaytitle",
+      "target": "staff_siteimagesection_trimmedalt"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L217",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_imagelabel",
+      "target": "staff_siteimagesection_trimmedalt"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L341",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_siteimagepreview",
+      "target": "staff_siteimagesection_trimmedalt"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L342",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_siteimagepreview",
+      "target": "staff_siteimagesection_imagelabel"
     },
     {
       "relation": "calls",
@@ -27746,9 +28271,64 @@
       "source_file": "frontend/components/staff/SiteImageSection.js",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_siteimagesection_siteimagerow",
-      "target": "staff_siteimagesection_imagelabel",
-      "confidence_score": 1.0
+      "target": "staff_siteimagesection_imagelabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L340",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_siteimagepreview",
+      "target": "staff_siteimagesection_displaytitle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L285",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_siteimagerow",
+      "target": "staff_siteimagesection_displaytitle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_placementhint",
+      "target": "staff_siteimagesection_formatseconds"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L783",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_siteimagesection",
+      "target": "staff_siteimagesection_placementhint"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L770",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_siteimagesection",
+      "target": "staff_siteimagesection_photocountlabel"
     },
     {
       "relation": "calls",
@@ -27759,6 +28339,17 @@
       "source_location": "L36",
       "weight": 1.0,
       "source": "staff_siteimagesection_siteimagerow",
+      "target": "lib_daycareapi_daycareimagesrc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L339",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagepreview",
       "target": "lib_daycareapi_daycareimagesrc"
     },
     {
@@ -27779,9 +28370,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage",
-      "target": "staff_siteimagesection_siteimagesection",
-      "confidence_score": 1.0
+      "target": "staff_siteimagesection_siteimagesection"
     },
     {
       "relation": "imports_from",
@@ -27855,9 +28446,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk"
     },
     {
       "relation": "imports",
@@ -27866,9 +28457,39 @@
       "source_file": "frontend/components/staff/StaffImagesPage.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage",
-      "target": "staff_staff_desk_staffdeskredirectpath",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffdeskredirectpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staffimagespage_headerpillsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staffimagespage_placements"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staffimagespage_selectedtabsx"
     },
     {
       "relation": "contains",
@@ -27876,9 +28497,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage",
-      "target": "staff_staffimagespage_staffimagespage",
-      "confidence_score": 1.0
+      "target": "staff_staffimagespage_staffimagespage"
     },
     {
       "relation": "imports_from",
@@ -27887,9 +28508,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.test.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage_test",
-      "target": "staff_staffimagespage",
-      "confidence_score": 1.0
+      "target": "staff_staffimagespage"
     },
     {
       "relation": "calls",
@@ -27931,9 +28552,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.test.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage_test",
-      "target": "staff_staffimagespage_staffimagespage",
-      "confidence_score": 1.0
+      "target": "staff_staffimagespage_staffimagespage"
     },
     {
       "relation": "imports_from",
@@ -27942,9 +28563,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.test.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage_test",
-      "target": "staff_site_images",
-      "confidence_score": 1.0
+      "target": "staff_site_images"
     },
     {
       "relation": "imports",
@@ -27953,9 +28574,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.test.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage_test",
-      "target": "staff_site_images_siteimageerrortext",
-      "confidence_score": 1.0
+      "target": "staff_site_images_siteimageerrortext"
     },
     {
       "relation": "imports",
@@ -27964,9 +28585,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.test.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage_test",
-      "target": "staff_site_images_sortorderswappatches",
-      "confidence_score": 1.0
+      "target": "staff_site_images_sortorderswappatches"
     },
     {
       "relation": "contains",
@@ -27974,9 +28595,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.test.js",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage_test",
-      "target": "staff_staffimagespage_test_homeslides",
-      "confidence_score": 1.0
+      "target": "staff_staffimagespage_test_homeslides"
     },
     {
       "relation": "contains",
@@ -27984,9 +28605,9 @@
       "source_file": "frontend/components/staff/StaffImagesPage.test.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffimagespage_test",
-      "target": "staff_staffimagespage_test_renderpage",
-      "confidence_score": 1.0
+      "target": "staff_staffimagespage_test_renderpage"
     },
     {
       "relation": "contains",
@@ -27994,9 +28615,9 @@
       "source_file": "frontend/components/staff/site-images.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_site_images",
-      "target": "staff_site_images_siteimageerrortext",
-      "confidence_score": 1.0
+      "target": "staff_site_images_siteimageerrortext"
     },
     {
       "relation": "contains",
@@ -28004,9 +28625,9 @@
       "source_file": "frontend/components/staff/site-images.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_site_images",
-      "target": "staff_site_images_sortorderswappatches",
-      "confidence_score": 1.0
+      "target": "staff_site_images_sortorderswappatches"
     },
     {
       "relation": "calls",
@@ -29261,9 +29882,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L301",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_createsiteimage",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_createsiteimage"
     },
     {
       "relation": "contains",
@@ -29351,9 +29972,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L314",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_deletesiteimage",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_deletesiteimage"
     },
     {
       "relation": "contains",
@@ -29451,9 +30072,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L287",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_listsiteimages",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_listsiteimages"
     },
     {
       "relation": "contains",
@@ -29541,9 +30162,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L311",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_updatesiteimage",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_updatesiteimage"
     },
     {
       "relation": "contains",
@@ -29582,9 +30203,9 @@
       "source_file": "frontend/lib/daycareApi.test.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_test",
-      "target": "lib_daycareapi",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi"
     },
     {
       "relation": "calls",
@@ -29747,9 +30368,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L315",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_deletesiteimage",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -29846,9 +30467,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L288",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_listsiteimages",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -29934,9 +30555,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L312",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_updatesiteimage",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -29945,9 +30566,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L302",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_createsiteimage",
-      "target": "lib_daycareapi_daycareupload",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycareupload"
     },
     {
       "relation": "calls",
@@ -29978,9 +30599,9 @@
       "source_file": "frontend/lib/daycareApi.test.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_test",
-      "target": "lib_daycareapi_listsiteimages",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_listsiteimages"
     },
     {
       "relation": "imports",
@@ -29989,9 +30610,9 @@
       "source_file": "frontend/lib/daycareApi.test.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_test",
-      "target": "lib_daycareapi_createsiteimage",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_createsiteimage"
     },
     {
       "relation": "imports",
@@ -30000,9 +30621,9 @@
       "source_file": "frontend/lib/daycareApi.test.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_test",
-      "target": "lib_daycareapi_updatesiteimage",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_updatesiteimage"
     },
     {
       "relation": "imports",
@@ -30011,9 +30632,9 @@
       "source_file": "frontend/lib/daycareApi.test.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_test",
-      "target": "lib_daycareapi_deletesiteimage",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_deletesiteimage"
     },
     {
       "relation": "contains",
@@ -32129,9 +32750,9 @@
       "source_file": "frontend/src/app/staff/images/page.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "images_page",
-      "target": "images_page_staffimagesroute",
-      "confidence_score": 1.0
+      "target": "images_page_staffimagesroute"
     },
     {
       "relation": "contains",
@@ -33022,9 +33643,9 @@
       "source_file": "frontend/utils/siteImages.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages",
-      "target": "utils_siteimages_comparesiteimageorder",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_comparesiteimageorder"
     },
     {
       "relation": "contains",
@@ -33032,9 +33653,9 @@
       "source_file": "frontend/utils/siteImages.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages",
-      "target": "utils_siteimages_galleryimagesfromsiteimages",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_galleryimagesfromsiteimages"
     },
     {
       "relation": "contains",
@@ -33042,9 +33663,9 @@
       "source_file": "frontend/utils/siteImages.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages",
-      "target": "utils_siteimages_heroslidesfromsiteimages",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_heroslidesfromsiteimages"
     },
     {
       "relation": "contains",
@@ -33052,9 +33673,9 @@
       "source_file": "frontend/utils/siteImages.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages",
-      "target": "utils_siteimages_usablesiteimages",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_usablesiteimages"
     },
     {
       "relation": "imports_from",
@@ -33063,9 +33684,9 @@
       "source_file": "frontend/utils/siteImages.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages_test",
-      "target": "utils_siteimages",
-      "confidence_score": 1.0
+      "target": "utils_siteimages"
     },
     {
       "relation": "calls",
@@ -33074,9 +33695,9 @@
       "source_file": "frontend/utils/siteImages.js",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages_galleryimagesfromsiteimages",
-      "target": "utils_siteimages_usablesiteimages",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_usablesiteimages"
     },
     {
       "relation": "calls",
@@ -33085,9 +33706,9 @@
       "source_file": "frontend/utils/siteImages.js",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages_heroslidesfromsiteimages",
-      "target": "utils_siteimages_usablesiteimages",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_usablesiteimages"
     },
     {
       "relation": "imports",
@@ -33096,9 +33717,9 @@
       "source_file": "frontend/utils/siteImages.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages_test",
-      "target": "utils_siteimages_heroslidesfromsiteimages",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_heroslidesfromsiteimages"
     },
     {
       "relation": "imports",
@@ -33107,9 +33728,9 @@
       "source_file": "frontend/utils/siteImages.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages_test",
-      "target": "utils_siteimages_galleryimagesfromsiteimages",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_galleryimagesfromsiteimages"
     },
     {
       "relation": "contains",
@@ -33117,9 +33738,9 @@
       "source_file": "frontend/utils/siteImages.test.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages_test",
-      "target": "utils_siteimages_test_dog",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_test_dog"
     },
     {
       "relation": "contains",
@@ -33127,9 +33748,9 @@
       "source_file": "frontend/utils/siteImages.test.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_siteimages_test",
-      "target": "utils_siteimages_test_yard",
-      "confidence_score": 1.0
+      "target": "utils_siteimages_test_yard"
     },
     {
       "relation": "contains",
@@ -36885,9 +37506,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L568",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
-      "target": "docs_care_bear_daycare_api_site_images",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_site_images"
     },
     {
       "relation": "contains",
@@ -37295,9 +37916,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L596",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_site_images",
-      "target": "docs_care_bear_daycare_api_delete_api_daycare_site_images_id_staff_204",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_delete_api_daycare_site_images_id_staff_204"
     },
     {
       "relation": "contains",
@@ -37305,9 +37926,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L584",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_site_images",
-      "target": "docs_care_bear_daycare_api_get_api_daycare_site_images_placement_home_slide_public",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_get_api_daycare_site_images_placement_home_slide_public"
     },
     {
       "relation": "contains",
@@ -37315,9 +37936,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L592",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_site_images",
-      "target": "docs_care_bear_daycare_api_patch_api_daycare_site_images_id_staff",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_patch_api_daycare_site_images_id_staff"
     },
     {
       "relation": "contains",
@@ -37325,9 +37946,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L588",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_site_images",
-      "target": "docs_care_bear_daycare_api_post_api_daycare_site_images_staff_201",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_post_api_daycare_site_images_staff_201"
     },
     {
       "relation": "contains",
@@ -42453,5 +43074,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "0767258138430e2bcfe1e3f003be5ed4d71afde9"
+  "built_at_commit": "56f0cb3a5ecb42d38503b4a33b5fa3ab5767fafd"
 }

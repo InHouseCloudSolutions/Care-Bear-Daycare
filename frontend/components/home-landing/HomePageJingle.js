@@ -17,6 +17,7 @@ export default function HomePageJingle() {
 
     let cleaned = false;
     let started = false;
+    let onGesture = () => {};
 
     const removeGestureListeners = () => {
       window.removeEventListener('pointerdown', onGesture);
@@ -37,9 +38,9 @@ export default function HomePageJingle() {
         });
     };
 
-    function onGesture() {
+    onGesture = () => {
       playOnce();
-    }
+    };
 
     const onPageLoad = () => {
       playOnce();

@@ -255,9 +255,7 @@ export default function BookStayPage() {
         setHouseholdId(ownId == null ? '' : String(ownId));
         setHouseholds(staffView ? parentIds.map(id => ({ id, label: `Household ${id}` })) : []);
         setSelectedIds(
-          scopedDogs
-            .filter(dog => ownId == null || dog.pet_parent_id === ownId)
-            .map(dog => dog.id),
+          scopedDogs.filter(dog => ownId == null || dog.pet_parent_id === ownId).map(dog => dog.id),
         );
         if (staffView && parentIds.length > 1) {
           listPetParents(token).then(parentsRes => {

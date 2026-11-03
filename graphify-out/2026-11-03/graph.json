@@ -1674,7 +1674,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "custom404_index",
-      "community": 80,
+      "community": 133,
       "norm_label": "index.js"
     },
     {
@@ -1684,7 +1684,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "custom404_index_custom404",
-      "community": 80,
+      "community": 133,
       "norm_label": "custom404()"
     },
     {
@@ -1694,7 +1694,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_devconsolesuppressor",
-      "community": 111,
+      "community": 20,
       "norm_label": "devconsolesuppressor.js"
     },
     {
@@ -1704,7 +1704,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "components_devconsolesuppressor_suppressed",
-      "community": 111,
+      "community": 20,
       "norm_label": "suppressed"
     },
     {
@@ -1714,7 +1714,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "components_devconsolesuppressor_devconsolesuppressor",
-      "community": 111,
+      "community": 20,
       "norm_label": "devconsolesuppressor()"
     },
     {
@@ -1744,7 +1744,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_robotsmeta",
-      "community": 75,
+      "community": 29,
       "norm_label": "robotsmeta.js"
     },
     {
@@ -1754,7 +1754,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_robotsmeta_robotsmeta",
-      "community": 75,
+      "community": 29,
       "norm_label": "robotsmeta()"
     },
     {
@@ -2184,7 +2184,7 @@
       "source_location": "L382",
       "_origin": "ast",
       "id": "design_studio_design_studio_glass_herotextlegibility",
-      "community": 2,
+      "community": 69,
       "norm_label": "herotextlegibility"
     },
     {
@@ -2476,6 +2476,26 @@
       "id": "dog_hotel_gallerypage_gallerypage",
       "community": 107,
       "norm_label": "gallerypage()"
+    },
+    {
+      "label": "GallerySiteImages.js",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/GallerySiteImages.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dog_hotel_gallerysiteimages",
+      "community": 146,
+      "norm_label": "gallerysiteimages.js"
+    },
+    {
+      "label": "GallerySiteImages()",
+      "file_type": "code",
+      "source_file": "frontend/components/dog-hotel/GallerySiteImages.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "dog_hotel_gallerysiteimages_gallerysiteimages",
+      "community": 146,
+      "norm_label": "gallerysiteimages()"
     },
     {
       "label": "HowAStayWorksPage.js",
@@ -3204,7 +3224,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "scroll_forge_stay_world_config_card",
-      "community": 107,
+      "community": 117,
       "norm_label": "card()"
     },
     {
@@ -3378,6 +3398,26 @@
       "norm_label": "homeheronav()"
     },
     {
+      "label": "HomeHeroSiteSlides.js",
+      "file_type": "code",
+      "source_file": "frontend/components/home-landing/HomeHeroSiteSlides.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "home_landing_homeherositeslides",
+      "community": 61,
+      "norm_label": "homeherositeslides.js"
+    },
+    {
+      "label": "HomeHeroSiteSlides()",
+      "file_type": "code",
+      "source_file": "frontend/components/home-landing/HomeHeroSiteSlides.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "home_landing_homeherositeslides_homeherositeslides",
+      "community": 69,
+      "norm_label": "homeherositeslides()"
+    },
+    {
       "label": "HomeLandingFooter.js",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/HomeLandingFooter.js",
@@ -3484,7 +3524,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_herotextlegibility",
-      "community": 2,
+      "community": 69,
       "norm_label": "herotextlegibility"
     },
     {
@@ -3504,7 +3544,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_homelandingshell",
-      "community": 69,
+      "community": 111,
       "norm_label": "homelandingshell.js"
     },
     {
@@ -3514,7 +3554,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_createlandingtheme",
-      "community": 69,
+      "community": 111,
       "norm_label": "createlandingtheme()"
     },
     {
@@ -3524,7 +3564,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "home_landing_homelandingshell_homelandingshell",
-      "community": 69,
+      "community": 111,
       "norm_label": "homelandingshell()"
     },
     {
@@ -3804,7 +3844,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_marketingnavdesktopitem",
-      "community": 109,
+      "community": 0,
       "norm_label": "marketingnavdesktopitem()"
     },
     {
@@ -3908,6 +3948,16 @@
       "norm_label": "marketingwordmark()"
     },
     {
+      "label": "home-hero-timing.js",
+      "file_type": "code",
+      "source_file": "frontend/components/home-landing/home-hero-timing.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "home_landing_home_hero_timing",
+      "community": 106,
+      "norm_label": "home-hero-timing.js"
+    },
+    {
       "label": "home-landing-data.js",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
@@ -3921,7 +3971,7 @@
       "label": "withStaffNavItems()",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L30",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_withstaffnavitems",
       "community": 80,
@@ -3931,7 +3981,7 @@
       "label": "HOME_BRAND",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L41",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_brand",
       "community": 69,
@@ -3941,7 +3991,7 @@
       "label": "HOME_FOOTER",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L49",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_footer",
       "community": 69,
@@ -3951,7 +4001,7 @@
       "label": "HOME_FOOTER_SOCIAL_LINKS",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L60",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_footer_social_links",
       "community": 69,
@@ -3961,7 +4011,7 @@
       "label": "HOME_NAV_BAR_PX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L68",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_bar_px",
       "community": 0,
@@ -3971,7 +4021,7 @@
       "label": "HOME_NAV_BAR_PY",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L69",
+      "source_location": "L72",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_bar_py",
       "community": 0,
@@ -3981,7 +4031,7 @@
       "label": "MEGA_MENU_IMAGE_HEIGHT_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L70",
+      "source_location": "L73",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_mega_menu_image_height_sx",
       "community": 106,
@@ -3991,7 +4041,7 @@
       "label": "MEGA_MENU_CONTAINER_PY_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L71",
+      "source_location": "L74",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_mega_menu_container_py_sx",
       "community": 106,
@@ -4001,7 +4051,7 @@
       "label": "HOME_NAV_DESKTOP_DISPLAY",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L74",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_desktop_display",
       "community": 0,
@@ -4011,7 +4061,7 @@
       "label": "HOME_NAV_MOBILE_DISPLAY",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L75",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_mobile_display",
       "community": 0,
@@ -4021,7 +4071,7 @@
       "label": "HOME_NAV_LINK_TYPOGRAPHY_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L76",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_link_typography_sx",
       "community": 109,
@@ -4031,7 +4081,7 @@
       "label": "normalizeMarketingNavPath()",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L83",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_normalizemarketingnavpath",
       "community": 109,
@@ -4041,7 +4091,7 @@
       "label": "isMarketingNavLinkActive()",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L89",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_ismarketingnavlinkactive",
       "community": 109,
@@ -4051,7 +4101,7 @@
       "label": "marketingNavLinkHoverUnderlineSx()",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L111",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketingnavlinkhoverunderlinesx",
       "community": 109,
@@ -4061,7 +4111,7 @@
       "label": "LUXURY_GRADIENT_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L140",
+      "source_location": "L143",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_gradient_sx",
       "community": 61,
@@ -4071,7 +4121,7 @@
       "label": "LUXURY_DRAWER_NAV_ITEM_ENTER_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L151",
+      "source_location": "L154",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_item_enter_sx",
       "community": 106,
@@ -4081,7 +4131,7 @@
       "label": "LUXURY_DRAWER_NAV_ITEM_RESET_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L157",
+      "source_location": "L160",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_item_reset_sx",
       "community": 106,
@@ -4091,7 +4141,7 @@
       "label": "LUXURY_DRAWER_NAV_PRIMARY_TYPOGRAPHY_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L161",
+      "source_location": "L164",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_primary_typography_sx",
       "community": 106,
@@ -4101,7 +4151,7 @@
       "label": "LUXURY_DRAWER_NAV_SECTION_TYPOGRAPHY_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L166",
+      "source_location": "L169",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_section_typography_sx",
       "community": 106,
@@ -4111,7 +4161,7 @@
       "label": "LUXURY_DRAWER_NAV_GROUP_TYPOGRAPHY_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L172",
+      "source_location": "L175",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_group_typography_sx",
       "community": 106,
@@ -4121,7 +4171,7 @@
       "label": "LUXURY_DRAWER_NAV_SUBLINK_TYPOGRAPHY_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L177",
+      "source_location": "L180",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_luxury_drawer_nav_sublink_typography_sx",
       "community": 106,
@@ -4131,7 +4181,7 @@
       "label": "HOME_LUXURY_DRAWER_PAPER_SX",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L184",
+      "source_location": "L187",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_luxury_drawer_paper_sx",
       "community": 106,
@@ -4141,7 +4191,7 @@
       "label": "HOME_HERO_SLIDES",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L208",
+      "source_location": "L206",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_hero_slides",
       "community": 61,
@@ -4154,7 +4204,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_home_landing_font",
-      "community": 69,
+      "community": 111,
       "norm_label": "home-landing-font.js"
     },
     {
@@ -4164,7 +4214,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_home_landing_font_homemontserrat",
-      "community": 69,
+      "community": 111,
       "norm_label": "homemontserrat"
     },
     {
@@ -4264,7 +4314,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "layouts_routethemeshell",
-      "community": 75,
+      "community": 66,
       "norm_label": "routethemeshell.js"
     },
     {
@@ -4274,7 +4324,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "layouts_routethemeshell_routethemeshell",
-      "community": 75,
+      "community": 66,
       "norm_label": "routethemeshell()"
     },
     {
@@ -5308,6 +5358,276 @@
       "norm_label": "householdpanel()"
     },
     {
+      "label": "SiteImageSection.js",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "staff_siteimagesection",
+      "community": 34,
+      "norm_label": "siteimagesection.js"
+    },
+    {
+      "label": "rowShape",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_rowshape",
+      "community": 34,
+      "norm_label": "rowshape"
+    },
+    {
+      "label": "dialogPaperSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_dialogpapersx",
+      "community": 34,
+      "norm_label": "dialogpapersx"
+    },
+    {
+      "label": "thumbSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_thumbsx",
+      "community": 34,
+      "norm_label": "thumbsx"
+    },
+    {
+      "label": "indexBadgeSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_indexbadgesx",
+      "community": 34,
+      "norm_label": "indexbadgesx"
+    },
+    {
+      "label": "previewMediaSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_previewmediasx",
+      "community": 34,
+      "norm_label": "previewmediasx"
+    },
+    {
+      "label": "selectButtonSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_selectbuttonsx",
+      "community": 34,
+      "norm_label": "selectbuttonsx"
+    },
+    {
+      "label": "neutralPillSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_neutralpillsx",
+      "community": 34,
+      "norm_label": "neutralpillsx()"
+    },
+    {
+      "label": "accentOutlinedSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_accentoutlinedsx",
+      "community": 34,
+      "norm_label": "accentoutlinedsx()"
+    },
+    {
+      "label": "accentFilledSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L146",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_accentfilledsx",
+      "community": 34,
+      "norm_label": "accentfilledsx"
+    },
+    {
+      "label": "removePillSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L163",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_removepillsx",
+      "community": 34,
+      "norm_label": "removepillsx"
+    },
+    {
+      "label": "surfaceCardSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_surfacecardsx",
+      "community": 34,
+      "norm_label": "surfacecardsx()"
+    },
+    {
+      "label": "rowFrameSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_rowframesx",
+      "community": 34,
+      "norm_label": "rowframesx()"
+    },
+    {
+      "label": "trimmedAlt()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_trimmedalt",
+      "community": 34,
+      "norm_label": "trimmedalt()"
+    },
+    {
+      "label": "imageLabel()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L216",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_imagelabel",
+      "community": 34,
+      "norm_label": "imagelabel()"
+    },
+    {
+      "label": "displayTitle()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L220",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_displaytitle",
+      "community": 34,
+      "norm_label": "displaytitle()"
+    },
+    {
+      "label": "formatSeconds()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L224",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_formatseconds",
+      "community": 34,
+      "norm_label": "formatseconds()"
+    },
+    {
+      "label": "placementHint()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L230",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_placementhint",
+      "community": 34,
+      "norm_label": "placementhint()"
+    },
+    {
+      "label": "photoCountLabel()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L245",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_photocountlabel",
+      "community": 34,
+      "norm_label": "photocountlabel()"
+    },
+    {
+      "label": "sameId()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_sameid",
+      "community": 34,
+      "norm_label": "sameid()"
+    },
+    {
+      "label": "resolveSelection()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L254",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_resolveselection",
+      "community": 34,
+      "norm_label": "resolveselection()"
+    },
+    {
+      "label": "createdImageId()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_createdimageid",
+      "community": 34,
+      "norm_label": "createdimageid()"
+    },
+    {
+      "label": "SiteImageRow()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L282",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_siteimagerow",
+      "community": 34,
+      "norm_label": "siteimagerow()"
+    },
+    {
+      "label": "SiteImagePreview()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L338",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_siteimagepreview",
+      "community": 34,
+      "norm_label": "siteimagepreview()"
+    },
+    {
+      "label": "SiteImageAddDialog()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L434",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_siteimageadddialog",
+      "community": 34,
+      "norm_label": "siteimageadddialog()"
+    },
+    {
+      "label": "EditAltDialog()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L525",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_editaltdialog",
+      "community": 34,
+      "norm_label": "editaltdialog()"
+    },
+    {
+      "label": "SiteImageSection()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L591",
+      "_origin": "ast",
+      "id": "staff_siteimagesection_siteimagesection",
+      "community": 34,
+      "norm_label": "siteimagesection()"
+    },
+    {
       "label": "StaffDeskPage.js",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
@@ -5321,11 +5641,121 @@
       "label": "StaffDeskPage()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L13",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "staff_staffdeskpage_staffdeskpage",
       "community": 34,
       "norm_label": "staffdeskpage()"
+    },
+    {
+      "label": "StaffImagesPage.js",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "staff_staffimagespage",
+      "community": 34,
+      "norm_label": "staffimagespage.js"
+    },
+    {
+      "label": "PLACEMENTS",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_placements",
+      "community": 34,
+      "norm_label": "placements"
+    },
+    {
+      "label": "headerPillSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_headerpillsx",
+      "community": 34,
+      "norm_label": "headerpillsx"
+    },
+    {
+      "label": "selectedTabSx",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_selectedtabsx",
+      "community": 34,
+      "norm_label": "selectedtabsx"
+    },
+    {
+      "label": "StaffImagesPage()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_staffimagespage",
+      "community": 34,
+      "norm_label": "staffimagespage()"
+    },
+    {
+      "label": "StaffImagesPage.test.js",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_test",
+      "community": 34,
+      "norm_label": "staffimagespage.test.js"
+    },
+    {
+      "label": "homeSlides",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_test_homeslides",
+      "community": 34,
+      "norm_label": "homeslides"
+    },
+    {
+      "label": "renderPage()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "staff_staffimagespage_test_renderpage",
+      "community": 34,
+      "norm_label": "renderpage()"
+    },
+    {
+      "label": "site-images.js",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/site-images.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "staff_site_images",
+      "community": 34,
+      "norm_label": "site-images.js"
+    },
+    {
+      "label": "siteImageErrorText()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/site-images.js",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "staff_site_images_siteimageerrortext",
+      "community": 34,
+      "norm_label": "siteimageerrortext()"
+    },
+    {
+      "label": "sortOrderSwapPatches()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/site-images.js",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "staff_site_images_sortorderswappatches",
+      "community": 34,
+      "norm_label": "sortorderswappatches()"
     },
     {
       "label": "staff-desk.js",
@@ -5614,7 +6044,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "consts_routes_isstaffroute",
-      "community": 75,
+      "community": 66,
       "norm_label": "isstaffroute()"
     },
     {
@@ -5624,7 +6054,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "consts_routes_ismarketingroute",
-      "community": 80,
+      "community": 91,
       "norm_label": "ismarketingroute()"
     },
     {
@@ -5754,7 +6184,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contexts_settingscontext",
-      "community": 66,
+      "community": 12,
       "norm_label": "settingscontext.js"
     },
     {
@@ -5764,7 +6194,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "contexts_settingscontext_settingscontext",
-      "community": 66,
+      "community": 12,
       "norm_label": "settingscontext"
     },
     {
@@ -5774,7 +6204,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "contexts_settingscontext_usesettings",
-      "community": 66,
+      "community": 12,
       "norm_label": "usesettings()"
     },
     {
@@ -5784,7 +6214,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "contexts_settingscontext_settingsprovider",
-      "community": 66,
+      "community": 12,
       "norm_label": "settingsprovider()"
     },
     {
@@ -5844,7 +6274,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contexts_themecontext",
-      "community": 75,
+      "community": 66,
       "norm_label": "themecontext.js"
     },
     {
@@ -5854,7 +6284,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "contexts_themecontext_themecontext",
-      "community": 75,
+      "community": 66,
       "norm_label": "themecontext"
     },
     {
@@ -6054,7 +6484,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_jest_setup",
-      "community": 29,
+      "community": 20,
       "norm_label": "jest.setup.js"
     },
     {
@@ -6064,7 +6494,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "frontend_jest_setup_creatematchmedia",
-      "community": 29,
+      "community": 20,
       "norm_label": "creatematchmedia()"
     },
     {
@@ -6191,7 +6621,7 @@
       "label": "daycareUpload()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L84",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "lib_daycareapi_daycareupload",
       "community": 65,
@@ -6201,17 +6631,17 @@
       "label": "daycareImageSrc()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L114",
+      "source_location": "L120",
       "_origin": "ast",
       "id": "lib_daycareapi_daycareimagesrc",
-      "community": 65,
+      "community": 34,
       "norm_label": "daycareimagesrc()"
     },
     {
       "label": "formatApiErrors()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L125",
+      "source_location": "L131",
       "_origin": "ast",
       "id": "lib_daycareapi_formatapierrors",
       "community": 1,
@@ -6221,7 +6651,7 @@
       "label": "authLogin()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L148",
+      "source_location": "L154",
       "_origin": "ast",
       "id": "lib_daycareapi_authlogin",
       "community": 65,
@@ -6231,7 +6661,7 @@
       "label": "authMe()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L151",
+      "source_location": "L157",
       "_origin": "ast",
       "id": "lib_daycareapi_authme",
       "community": 65,
@@ -6241,7 +6671,7 @@
       "label": "registerPetParent()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L155",
+      "source_location": "L161",
       "_origin": "ast",
       "id": "lib_daycareapi_registerpetparent",
       "community": 65,
@@ -6251,7 +6681,7 @@
       "label": "getMyProfile()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L158",
+      "source_location": "L164",
       "_origin": "ast",
       "id": "lib_daycareapi_getmyprofile",
       "community": 65,
@@ -6261,7 +6691,7 @@
       "label": "updateMyProfile()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L160",
+      "source_location": "L166",
       "_origin": "ast",
       "id": "lib_daycareapi_updatemyprofile",
       "community": 65,
@@ -6271,7 +6701,7 @@
       "label": "uploadMyPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L163",
+      "source_location": "L169",
       "_origin": "ast",
       "id": "lib_daycareapi_uploadmyphoto",
       "community": 65,
@@ -6281,7 +6711,7 @@
       "label": "deleteMyPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L166",
+      "source_location": "L172",
       "_origin": "ast",
       "id": "lib_daycareapi_deletemyphoto",
       "community": 65,
@@ -6291,7 +6721,7 @@
       "label": "listDogs()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L171",
+      "source_location": "L177",
       "_origin": "ast",
       "id": "lib_daycareapi_listdogs",
       "community": 65,
@@ -6301,7 +6731,7 @@
       "label": "listPetParents()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L173",
+      "source_location": "L179",
       "_origin": "ast",
       "id": "lib_daycareapi_listpetparents",
       "community": 65,
@@ -6311,7 +6741,7 @@
       "label": "createDog()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L176",
+      "source_location": "L182",
       "_origin": "ast",
       "id": "lib_daycareapi_createdog",
       "community": 65,
@@ -6321,7 +6751,7 @@
       "label": "updateDog()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L179",
+      "source_location": "L185",
       "_origin": "ast",
       "id": "lib_daycareapi_updatedog",
       "community": 65,
@@ -6331,7 +6761,7 @@
       "label": "deleteDog()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L182",
+      "source_location": "L188",
       "_origin": "ast",
       "id": "lib_daycareapi_deletedog",
       "community": 65,
@@ -6341,7 +6771,7 @@
       "label": "uploadDogPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L185",
+      "source_location": "L191",
       "_origin": "ast",
       "id": "lib_daycareapi_uploaddogphoto",
       "community": 65,
@@ -6351,7 +6781,7 @@
       "label": "deleteDogPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L188",
+      "source_location": "L194",
       "_origin": "ast",
       "id": "lib_daycareapi_deletedogphoto",
       "community": 65,
@@ -6361,7 +6791,7 @@
       "label": "listVaccines()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L193",
+      "source_location": "L199",
       "_origin": "ast",
       "id": "lib_daycareapi_listvaccines",
       "community": 65,
@@ -6371,7 +6801,7 @@
       "label": "createVaccine()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L196",
+      "source_location": "L202",
       "_origin": "ast",
       "id": "lib_daycareapi_createvaccine",
       "community": 65,
@@ -6381,7 +6811,7 @@
       "label": "deleteVaccine()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L199",
+      "source_location": "L205",
       "_origin": "ast",
       "id": "lib_daycareapi_deletevaccine",
       "community": 65,
@@ -6391,7 +6821,7 @@
       "label": "listServices()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L204",
+      "source_location": "L210",
       "_origin": "ast",
       "id": "lib_daycareapi_listservices",
       "community": 65,
@@ -6401,7 +6831,7 @@
       "label": "getAvailability()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L214",
+      "source_location": "L220",
       "_origin": "ast",
       "id": "lib_daycareapi_getavailability",
       "community": 65,
@@ -6411,7 +6841,7 @@
       "label": "createBooking()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L231",
+      "source_location": "L237",
       "_origin": "ast",
       "id": "lib_daycareapi_createbooking",
       "community": 65,
@@ -6421,7 +6851,7 @@
       "label": "listBookings()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L239",
+      "source_location": "L245",
       "_origin": "ast",
       "id": "lib_daycareapi_listbookings",
       "community": 65,
@@ -6431,7 +6861,7 @@
       "label": "updateBooking()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L257",
+      "source_location": "L263",
       "_origin": "ast",
       "id": "lib_daycareapi_updatebooking",
       "community": 65,
@@ -6441,7 +6871,7 @@
       "label": "listClosures()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L262",
+      "source_location": "L268",
       "_origin": "ast",
       "id": "lib_daycareapi_listclosures",
       "community": 65,
@@ -6451,7 +6881,7 @@
       "label": "createClosure()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L265",
+      "source_location": "L271",
       "_origin": "ast",
       "id": "lib_daycareapi_createclosure",
       "community": 65,
@@ -6461,7 +6891,7 @@
       "label": "updateClosure()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L268",
+      "source_location": "L274",
       "_origin": "ast",
       "id": "lib_daycareapi_updateclosure",
       "community": 65,
@@ -6471,21 +6901,71 @@
       "label": "deleteClosure()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L271",
+      "source_location": "L277",
       "_origin": "ast",
       "id": "lib_daycareapi_deleteclosure",
       "community": 65,
       "norm_label": "deleteclosure()"
     },
     {
+      "label": "listSiteImages()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L287",
+      "_origin": "ast",
+      "id": "lib_daycareapi_listsiteimages",
+      "community": 65,
+      "norm_label": "listsiteimages()"
+    },
+    {
+      "label": "createSiteImage()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L301",
+      "_origin": "ast",
+      "id": "lib_daycareapi_createsiteimage",
+      "community": 65,
+      "norm_label": "createsiteimage()"
+    },
+    {
+      "label": "updateSiteImage()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L311",
+      "_origin": "ast",
+      "id": "lib_daycareapi_updatesiteimage",
+      "community": 65,
+      "norm_label": "updatesiteimage()"
+    },
+    {
+      "label": "deleteSiteImage()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L314",
+      "_origin": "ast",
+      "id": "lib_daycareapi_deletesiteimage",
+      "community": 65,
+      "norm_label": "deletesiteimage()"
+    },
+    {
       "label": "listSiteReviews()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L285",
+      "source_location": "L328",
       "_origin": "ast",
       "id": "lib_daycareapi_listsitereviews",
       "community": 65,
       "norm_label": "listsitereviews()"
+    },
+    {
+      "label": "daycareApi.test.js",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_daycareapi_test",
+      "community": 65,
+      "norm_label": "daycareapi.test.js"
     },
     {
       "label": "next.config.js",
@@ -6494,7 +6974,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_next_config",
-      "community": 29,
+      "community": 20,
       "norm_label": "next.config.js"
     },
     {
@@ -6504,7 +6984,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_next_config_withplugins",
-      "community": 29,
+      "community": 20,
       "norm_label": "withplugins"
     },
     {
@@ -6514,7 +6994,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "frontend_next_config_withimages",
-      "community": 29,
+      "community": 20,
       "norm_label": "withimages"
     },
     {
@@ -6524,7 +7004,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "frontend_next_config_config",
-      "community": 29,
+      "community": 20,
       "norm_label": "config"
     },
     {
@@ -7814,7 +8294,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "about_page",
-      "community": 78,
+      "community": 91,
       "norm_label": "page.js"
     },
     {
@@ -7824,7 +8304,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "about_page_metadata",
-      "community": 78,
+      "community": 91,
       "norm_label": "metadata"
     },
     {
@@ -7834,7 +8314,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "about_page_aboutroute",
-      "community": 78,
+      "community": 91,
       "norm_label": "aboutroute()"
     },
     {
@@ -8044,7 +8524,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "how_a_stay_works_page",
-      "community": 117,
+      "community": 107,
       "norm_label": "page.js"
     },
     {
@@ -8054,7 +8534,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "how_a_stay_works_page_metadata",
-      "community": 117,
+      "community": 107,
       "norm_label": "metadata"
     },
     {
@@ -8074,7 +8554,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "website_layout",
-      "community": 75,
+      "community": 66,
       "norm_label": "layout.js"
     },
     {
@@ -8084,7 +8564,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "website_layout_metadata",
-      "community": 75,
+      "community": 66,
       "norm_label": "metadata"
     },
     {
@@ -8094,7 +8574,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "website_layout_websitelayout",
-      "community": 75,
+      "community": 66,
       "norm_label": "websitelayout()"
     },
     {
@@ -8134,7 +8614,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "website_page",
-      "community": 131,
+      "community": 144,
       "norm_label": "page.js"
     },
     {
@@ -8144,7 +8624,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "website_page_metadata",
-      "community": 131,
+      "community": 144,
       "norm_label": "metadata"
     },
     {
@@ -8154,7 +8634,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "website_page_homepage",
-      "community": 131,
+      "community": 144,
       "norm_label": "homepage()"
     },
     {
@@ -8334,7 +8814,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_not_found",
-      "community": 80,
+      "community": 133,
       "norm_label": "not-found.js"
     },
     {
@@ -8344,7 +8824,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "app_not_found_notfound",
-      "community": 80,
+      "community": 133,
       "norm_label": "notfound()"
     },
     {
@@ -8406,6 +8886,26 @@
       "id": "app_sitemap_sitemap",
       "community": 131,
       "norm_label": "sitemap()"
+    },
+    {
+      "label": "page.js",
+      "file_type": "code",
+      "source_file": "frontend/src/app/staff/images/page.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "images_page",
+      "community": 147,
+      "norm_label": "page.js"
+    },
+    {
+      "label": "StaffImagesRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/staff/images/page.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "images_page_staffimagesroute",
+      "community": 147,
+      "norm_label": "staffimagesroute()"
     },
     {
       "label": "layout.js",
@@ -8564,7 +9064,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "utils_required_fields",
-      "community": 23,
+      "community": 143,
       "norm_label": "required-fields.js"
     },
     {
@@ -8574,7 +9074,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "utils_required_fields_isrequiredfieldfilled",
-      "community": 23,
+      "community": 143,
       "norm_label": "isrequiredfieldfilled()"
     },
     {
@@ -8584,7 +9084,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "utils_required_fields_arerequiredfieldsfilled",
-      "community": 23,
+      "community": 143,
       "norm_label": "arerequiredfieldsfilled()"
     },
     {
@@ -8594,7 +9094,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "utils_required_fields_isvalidemail",
-      "community": 23,
+      "community": 143,
       "norm_label": "isvalidemail()"
     },
     {
@@ -8604,7 +9104,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "utils_required_fields_cansubmitrequiredform",
-      "community": 23,
+      "community": 143,
       "norm_label": "cansubmitrequiredform()"
     },
     {
@@ -8694,7 +9194,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "utils_seo",
-      "community": 75,
+      "community": 29,
       "norm_label": "seo.js"
     },
     {
@@ -8704,7 +9204,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "utils_seo_non_indexable_paths",
-      "community": 75,
+      "community": 29,
       "norm_label": "non_indexable_paths"
     },
     {
@@ -8714,7 +9214,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "utils_seo_isindexablepublicpath",
-      "community": 75,
+      "community": 29,
       "norm_label": "isindexablepublicpath()"
     },
     {
@@ -8724,7 +9224,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "utils_seo_robots_index",
-      "community": 75,
+      "community": 29,
       "norm_label": "robots_index"
     },
     {
@@ -8734,7 +9234,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "utils_seo_robots_noindex",
-      "community": 75,
+      "community": 29,
       "norm_label": "robots_noindex"
     },
     {
@@ -8744,7 +9244,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "utils_seo_robotsmetadataforpath",
-      "community": 75,
+      "community": 29,
       "norm_label": "robotsmetadataforpath()"
     },
     {
@@ -8754,7 +9254,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "utils_seo_robotsmetacontent",
-      "community": 75,
+      "community": 29,
       "norm_label": "robotsmetacontent()"
     },
     {
@@ -8764,7 +9264,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "utils_seo_test",
-      "community": 75,
+      "community": 29,
       "norm_label": "seo.test.js"
     },
     {
@@ -8814,8 +9314,88 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "utils_settings_savesettings",
-      "community": 66,
+      "community": 12,
       "norm_label": "savesettings()"
+    },
+    {
+      "label": "siteImages.js",
+      "file_type": "code",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "utils_siteimages",
+      "community": 78,
+      "norm_label": "siteimages.js"
+    },
+    {
+      "label": "compareSiteImageOrder()",
+      "file_type": "code",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "utils_siteimages_comparesiteimageorder",
+      "community": 78,
+      "norm_label": "comparesiteimageorder()"
+    },
+    {
+      "label": "usableSiteImages()",
+      "file_type": "code",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "utils_siteimages_usablesiteimages",
+      "community": 78,
+      "norm_label": "usablesiteimages()"
+    },
+    {
+      "label": "heroSlidesFromSiteImages()",
+      "file_type": "code",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "utils_siteimages_heroslidesfromsiteimages",
+      "community": 78,
+      "norm_label": "heroslidesfromsiteimages()"
+    },
+    {
+      "label": "galleryImagesFromSiteImages()",
+      "file_type": "code",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "utils_siteimages_galleryimagesfromsiteimages",
+      "community": 78,
+      "norm_label": "galleryimagesfromsiteimages()"
+    },
+    {
+      "label": "siteImages.test.js",
+      "file_type": "code",
+      "source_file": "frontend/utils/siteImages.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "utils_siteimages_test",
+      "community": 78,
+      "norm_label": "siteimages.test.js"
+    },
+    {
+      "label": "dog",
+      "file_type": "code",
+      "source_file": "frontend/utils/siteImages.test.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "utils_siteimages_test_dog",
+      "community": 78,
+      "norm_label": "dog"
+    },
+    {
+      "label": "yard",
+      "file_type": "code",
+      "source_file": "frontend/utils/siteImages.test.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "utils_siteimages_test_yard",
+      "community": 78,
+      "norm_label": "yard"
     },
     {
       "label": "website-seo.js",
@@ -8844,7 +9424,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "utils_website_seo_website_seo",
-      "community": 117,
+      "community": 131,
       "norm_label": "website_seo"
     },
     {
@@ -11114,7 +11694,7 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_design_tree_interview",
-      "community": 118,
+      "community": 11,
       "norm_label": "phase 3 \u2014 design-tree interview"
     },
     {
@@ -11124,7 +11704,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "write_a_prd_skill_rules",
-      "community": 118,
+      "community": 11,
       "norm_label": "rules"
     },
     {
@@ -11134,7 +11714,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "write_a_prd_skill_design_tree_walk_order",
-      "community": 118,
+      "community": 11,
       "norm_label": "design tree (walk order)"
     },
     {
@@ -11144,7 +11724,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_skill_dependency_examples",
-      "community": 118,
+      "community": 11,
       "norm_label": "dependency examples"
     },
     {
@@ -11154,7 +11734,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_a_branch_is_done",
-      "community": 118,
+      "community": 11,
       "norm_label": "when a branch is done"
     },
     {
@@ -11164,7 +11744,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_exit_criteria",
-      "community": 118,
+      "community": 11,
       "norm_label": "phase 3 exit criteria"
     },
     {
@@ -11174,7 +11754,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_module_sketch",
-      "community": 116,
+      "community": 11,
       "norm_label": "phase 4 \u2014 module sketch"
     },
     {
@@ -11184,7 +11764,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "write_a_prd_skill_purpose",
-      "community": 116,
+      "community": 11,
       "norm_label": "purpose"
     },
     {
@@ -11194,7 +11774,7 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_mandatory",
-      "community": 116,
+      "community": 11,
       "norm_label": "graphify (mandatory)"
     },
     {
@@ -11204,7 +11784,7 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce_178",
-      "community": 116,
+      "community": 11,
       "norm_label": "what to produce"
     },
     {
@@ -11214,7 +11794,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "write_a_prd_skill_extraction_mindset",
-      "community": 116,
+      "community": 11,
       "norm_label": "extraction mindset"
     },
     {
@@ -11224,7 +11804,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "write_a_prd_skill_confirm_with_user",
-      "community": 116,
+      "community": 11,
       "norm_label": "confirm with user"
     },
     {
@@ -11234,7 +11814,7 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_exit_criteria",
-      "community": 116,
+      "community": 11,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -11274,7 +11854,7 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "write_a_prd_skill_writing_rules",
-      "community": 110,
+      "community": 122,
       "norm_label": "writing rules"
     },
     {
@@ -11594,7 +12174,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template",
-      "community": 110,
+      "community": 122,
       "norm_label": "template.md"
     },
     {
@@ -11604,7 +12184,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template_prd_template",
-      "community": 110,
+      "community": 122,
       "norm_label": "prd template"
     },
     {
@@ -11774,7 +12354,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "readme_public_pages",
-      "community": 14,
+      "community": 86,
       "norm_label": "public pages"
     },
     {
@@ -11964,7 +12544,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_dogs",
-      "community": 125,
+      "community": 40,
       "norm_label": "dogs"
     },
     {
@@ -11974,7 +12554,7 @@
       "source_location": "L164",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_post_api_daycare_dogs_owner_or_staff",
-      "community": 125,
+      "community": 40,
       "norm_label": "get, post `/api/daycare/dogs/` \u2014 owner or staff"
     },
     {
@@ -11984,7 +12564,7 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_dogs_id_owner_or_staff",
-      "community": 125,
+      "community": 40,
       "norm_label": "get, patch, delete `/api/daycare/dogs/<id>/` \u2014 owner or staff"
     },
     {
@@ -12328,10 +12908,60 @@
       "norm_label": "get `/api/daycare/site-reviews/` \u2014 public, not paginated"
     },
     {
-      "label": "Browser calls from carebeardaycare.ca",
+      "label": "Site images",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L568",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_site_images",
+      "community": 142,
+      "norm_label": "site images"
+    },
+    {
+      "label": "GET `/api/daycare/site-images/?placement=home_slide` \u2014 public",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L584",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_get_api_daycare_site_images_placement_home_slide_public",
+      "community": 142,
+      "norm_label": "get `/api/daycare/site-images/?placement=home_slide` \u2014 public"
+    },
+    {
+      "label": "POST `/api/daycare/site-images/` \u2014 staff \u2014 201",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L588",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_post_api_daycare_site_images_staff_201",
+      "community": 142,
+      "norm_label": "post `/api/daycare/site-images/` \u2014 staff \u2014 201"
+    },
+    {
+      "label": "PATCH `/api/daycare/site-images/<id>/` \u2014 staff",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L592",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_patch_api_daycare_site_images_id_staff",
+      "community": 142,
+      "norm_label": "patch `/api/daycare/site-images/<id>/` \u2014 staff"
+    },
+    {
+      "label": "DELETE `/api/daycare/site-images/<id>/` \u2014 staff \u2014 204",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L596",
+      "_origin": "ast",
+      "id": "docs_care_bear_daycare_api_delete_api_daycare_site_images_id_staff_204",
+      "community": 142,
+      "norm_label": "delete `/api/daycare/site-images/<id>/` \u2014 staff \u2014 204"
+    },
+    {
+      "label": "Browser calls from carebeardaycare.ca",
+      "file_type": "document",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L600",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_browser_calls_from_carebeardaycare_ca",
       "community": 40,
@@ -12341,7 +12971,7 @@
       "label": "Not in this API",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L574",
+      "source_location": "L606",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_not_in_this_api",
       "community": 40,
@@ -13041,7 +13671,7 @@
       "label": "HOME_NAV_ITEMS_BASE",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L62",
+      "source_location": "L65",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_items_base",
       "community": 62,
@@ -13051,7 +13681,7 @@
       "label": "MARKETING_INTERIOR_NAV_ITEMS_BASE",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L65",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketing_interior_nav_items_base",
       "community": 62,
@@ -13061,7 +13691,7 @@
       "label": "MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR",
       "file_type": "code",
       "source_file": "frontend/components/home-landing/home-landing-data.js",
-      "source_location": "L137",
+      "source_location": "L140",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketing_interior_nav_link_hover_underline_color",
       "community": 0,
@@ -13144,7 +13774,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Extends Airbnb, Jest, Prettier, and Next. no-console is an error; prop-types ignores stores; Next Link is exempt from anchor-is-valid; import resolver searches ., components, and hooks.",
-      "community": 111,
+      "community": 20,
       "norm_label": "eslint configuration",
       "id": "frontend_eslintrc_config"
     },
@@ -13170,7 +13800,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 20,
       "norm_label": "jest configuration",
       "id": "frontend_jest_config_config"
     },
@@ -13183,7 +13813,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 20,
       "norm_label": "jest beforeeach environment mocks",
       "id": "frontend_jest_setup_beforeeach"
     },
@@ -13224,7 +13854,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Node 23.2 breaks the frontend webpack build, so the Docker image stays on node:23.1 instead of node:latest until 23.3 is rechecked.",
-      "community": 29,
+      "community": 20,
       "norm_label": "node 23.1 pin",
       "id": "frontend_readme_node231pin"
     },
@@ -13251,7 +13881,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 80,
+      "community": 133,
       "norm_label": "handleback",
       "id": "custom404_index_handleback"
     },
@@ -13318,7 +13948,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI theme font family so drawer portals inherit Nunito outside the shell className.",
-      "community": 69,
+      "community": 111,
       "norm_label": "home_landing_font_family",
       "id": "home_landing_home_landing_font_home_landing_font_family"
     },
@@ -13331,7 +13961,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 66,
       "norm_label": "staff_prefix",
       "id": "consts_routes_staff_prefix"
     },
@@ -13344,7 +13974,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 66,
       "norm_label": "login_path",
       "id": "consts_routes_login_path"
     },
@@ -13357,7 +13987,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 66,
       "norm_label": "forgot_password_path",
       "id": "consts_routes_forgot_password_path"
     },
@@ -13396,7 +14026,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 66,
+      "community": 12,
       "norm_label": "settings persist only after hydration",
       "id": "contexts_settingscontext_hydration_guard"
     },
@@ -13409,7 +14039,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 66,
       "norm_label": "public crawler rules",
       "id": "public_robots"
     },
@@ -13422,7 +14052,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 12,
       "norm_label": "thememode localstorage",
       "id": "app_providers_thememode"
     },
@@ -13500,7 +14130,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 29,
       "norm_label": "isindexablepublicpath tests",
       "id": "utils_seo_test_isindexablepublicpath"
     },
@@ -13513,7 +14143,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 29,
       "norm_label": "robots helper tests",
       "id": "utils_seo_test_robots_helpers"
     },
@@ -13606,7 +14236,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 144,
       "norm_label": "thin pages",
       "id": "agents_frontend_dev_thin_pages"
     },
@@ -14329,7 +14959,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Table of ID, decision, rationale, and depends-on, maintained in working notes and copied into the PRD.",
-      "community": 110,
+      "community": 122,
       "norm_label": "decision log",
       "id": "write_a_prd_skill_decision_log"
     },
@@ -14357,7 +14987,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Fill the template from working notes, discovery, decision log, and module sketch. Include current state, decision log, implementation modules, and verified assertions.",
-      "community": 110,
+      "community": 122,
       "norm_label": "phase 5 write prd",
       "id": "write_a_prd_skill_phase5_write_prd"
     },
@@ -14371,7 +15001,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Default path is issues/prd-<short-slug>.md. Revisions use -v2. Never overwrite without approval. Dated names only when the user asks.",
-      "community": 110,
+      "community": 122,
       "norm_label": "issues/prd-<slug>.md",
       "id": "write_a_prd_skill_issues_prd_path"
     },
@@ -14385,7 +15015,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Report path, one-paragraph scope, deferred question count, and optional handoff to /project-manager.",
-      "community": 110,
+      "community": 122,
       "norm_label": "phase 6 confirm",
       "id": "write_a_prd_skill_phase6_confirm"
     },
@@ -14539,7 +15169,7 @@
       "author": null,
       "contributor": null,
       "rationale": "If the user is unsure, offer two or three options, record a deferral with an owner and whether it blocks MVP, and do not invent a decision.",
-      "community": 110,
+      "community": 122,
       "norm_label": "deferred decision",
       "id": "write_a_prd_interview_guide_deferred_decision"
     },
@@ -14609,7 +15239,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Columns: ID, module path, layer, Create/Modify/Extend, responsibility, deep flag, test approach, dependencies. Example pairs a schedule service with a thin viewset and a frontend domain preview.",
-      "community": 110,
+      "community": 122,
       "norm_label": "module table m-001",
       "id": "write_a_prd_module_sketch_module_table"
     },
@@ -14637,7 +15267,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Must-have R-001, should-have R-101, and could-have R-201, each with rationale and a decision reference.",
-      "community": 110,
+      "community": 122,
       "norm_label": "p0 p1 p2 requirements",
       "id": "write_a_prd_template_priority"
     },
@@ -14651,7 +15281,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Maps requirement IDs to module IDs. The skill requires every P0 to map to at least one module.",
-      "community": 110,
+      "community": 122,
       "norm_label": "requirement to module traceability",
       "id": "write_a_prd_template_traceability"
     },
@@ -14931,7 +15561,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Interior nav on cream with ink links. Hover underline grows left to right in 0.35s. Desktop nav starts at xl. Logos are full-color PNGs: /imgs/logos/logo.png and logo_hori.png.",
-      "community": 14,
+      "community": 86,
       "norm_label": "cream interior nav",
       "id": "brand_reference_nav"
     },
@@ -14973,7 +15603,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI 8px grid. Breakpoints xs 0, sm 600, md 900, lg 1200, xl 1536. Desktop nav at xl. Forms go two-column at lg. Interior content max width about 880px.",
-      "community": 14,
+      "community": 86,
       "norm_label": "marketing layout grid",
       "id": "brand_reference_layout"
     },
@@ -20540,6 +21170,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dog-hotel/GallerySiteImages.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dog_hotel_gallerysiteimages",
+      "target": "dog_hotel_gallerysiteimages_gallerysiteimages"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/components/dog-hotel/HowAStayWorksPage.js",
       "source_location": "L40",
       "weight": 1.0,
@@ -22386,6 +23026,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/components/home-landing/HomeHeroSiteSlides.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_landing_homeherositeslides",
+      "target": "home_landing_homeherobackground"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/components/home-landing/HomeLandingPage.js",
       "source_location": "L8",
       "weight": 1.0,
@@ -22444,6 +23095,17 @@
       "weight": 1.0,
       "source": "home_landing_homeherobackground_homeherobackground",
       "target": "home_landing_homeherobackground_handleslidechange"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/home-landing/HomeHeroSiteSlides.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_landing_homeherositeslides",
+      "target": "home_landing_homeherobackground_homeherobackground"
     },
     {
       "relation": "imports",
@@ -22786,6 +23448,60 @@
       "weight": 1.0,
       "source": "home_landing_homelandingpage_homelandingpage",
       "target": "home_landing_homeheronav_homeheronav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/home-landing/HomeHeroSiteSlides.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_landing_homeherositeslides",
+      "target": "home_landing_homeherositeslides_homeherositeslides"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/home-landing/HomeLandingPage.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_landing_homelandingpage",
+      "target": "home_landing_homeherositeslides"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_landing_marketinginteriorlayout",
+      "target": "home_landing_homeherositeslides"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/home-landing/HomeLandingPage.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_landing_homelandingpage",
+      "target": "home_landing_homeherositeslides_homeherositeslides"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/home-landing/MarketingInteriorLayout.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_landing_marketinginteriorlayout",
+      "target": "home_landing_homeherositeslides_homeherositeslides"
     },
     {
       "relation": "imports_from",
@@ -24202,6 +24918,17 @@
       "confidence_score": 1.0,
       "source": "home_landing_marketingwordmark",
       "target": "home_landing_marketingwordmark_marketingwordmark"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/home-landing/home-landing-data.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_landing_home_landing_data",
+      "target": "home_landing_home_hero_timing"
     },
     {
       "relation": "contains",
@@ -26723,9 +27450,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_bookingpanel_bookingpanel",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel_bookingpanel"
     },
     {
       "relation": "contains",
@@ -26733,9 +27460,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_bookingpanel_date_field_props",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel_date_field_props"
     },
     {
       "relation": "contains",
@@ -26743,9 +27470,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_bookingpanel_lookupname",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel_lookupname"
     },
     {
       "relation": "imports_from",
@@ -26754,9 +27481,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk"
     },
     {
       "relation": "imports",
@@ -26765,9 +27492,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_staff_desk_asrecordlist",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_asrecordlist"
     },
     {
       "relation": "imports",
@@ -26776,9 +27503,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_staff_desk_bookingstatuspatch",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_bookingstatuspatch"
     },
     {
       "relation": "imports",
@@ -26787,9 +27514,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_staff_desk_householdlabel",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_householdlabel"
     },
     {
       "relation": "imports",
@@ -26798,9 +27525,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_staff_desk_staffbookingbody",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffbookingbody"
     },
     {
       "relation": "imports",
@@ -26809,9 +27536,9 @@
       "source_file": "frontend/components/staff/BookingPanel.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel",
-      "target": "staff_staff_desk_staffbookingformerror",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffbookingformerror"
     },
     {
       "relation": "imports_from",
@@ -26820,9 +27547,9 @@
       "source_file": "frontend/components/staff/BookingPanel.test.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel_test",
-      "target": "staff_bookingpanel",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel"
     },
     {
       "relation": "imports_from",
@@ -26831,9 +27558,9 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_bookingpanel",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel"
     },
     {
       "relation": "calls",
@@ -26853,9 +27580,9 @@
       "source_file": "frontend/components/staff/BookingPanel.test.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel_test",
-      "target": "staff_bookingpanel_bookingpanel",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel_bookingpanel"
     },
     {
       "relation": "imports",
@@ -26864,9 +27591,9 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_bookingpanel_bookingpanel",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel_bookingpanel"
     },
     {
       "relation": "contains",
@@ -26874,9 +27601,9 @@
       "source_file": "frontend/components/staff/BookingPanel.test.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel_test",
-      "target": "staff_bookingpanel_test_booking",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel_test_booking"
     },
     {
       "relation": "contains",
@@ -26884,9 +27611,9 @@
       "source_file": "frontend/components/staff/BookingPanel.test.js",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_bookingpanel_test",
-      "target": "staff_bookingpanel_test_renderpanel",
-      "confidence_score": 1.0
+      "target": "staff_bookingpanel_test_renderpanel"
     },
     {
       "relation": "contains",
@@ -26894,9 +27621,9 @@
       "source_file": "frontend/components/staff/HolidayForm.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidayform",
-      "target": "staff_holidayform_date_field_props",
-      "confidence_score": 1.0
+      "target": "staff_holidayform_date_field_props"
     },
     {
       "relation": "contains",
@@ -26904,9 +27631,9 @@
       "source_file": "frontend/components/staff/HolidayForm.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidayform",
-      "target": "staff_holidayform_holidayform",
-      "confidence_score": 1.0
+      "target": "staff_holidayform_holidayform"
     },
     {
       "relation": "imports_from",
@@ -26915,9 +27642,9 @@
       "source_file": "frontend/components/staff/HolidayForm.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidayform",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk"
     },
     {
       "relation": "imports",
@@ -26926,9 +27653,9 @@
       "source_file": "frontend/components/staff/HolidayForm.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidayform",
-      "target": "staff_staff_desk_holidayformerror",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_holidayformerror"
     },
     {
       "relation": "imports",
@@ -26937,9 +27664,9 @@
       "source_file": "frontend/components/staff/HolidayForm.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidayform",
-      "target": "staff_staff_desk_holidaypayload",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_holidaypayload"
     },
     {
       "relation": "imports_from",
@@ -26948,9 +27675,9 @@
       "source_file": "frontend/components/staff/HolidayForm.test.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidayform_test",
-      "target": "staff_holidayform",
-      "confidence_score": 1.0
+      "target": "staff_holidayform"
     },
     {
       "relation": "imports_from",
@@ -26959,9 +27686,9 @@
       "source_file": "frontend/components/staff/HolidayPanel.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidaypanel",
-      "target": "staff_holidayform",
-      "confidence_score": 1.0
+      "target": "staff_holidayform"
     },
     {
       "relation": "imports",
@@ -26970,9 +27697,9 @@
       "source_file": "frontend/components/staff/HolidayForm.test.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidayform_test",
-      "target": "staff_holidayform_holidayform",
-      "confidence_score": 1.0
+      "target": "staff_holidayform_holidayform"
     },
     {
       "relation": "imports",
@@ -26981,9 +27708,9 @@
       "source_file": "frontend/components/staff/HolidayPanel.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidaypanel",
-      "target": "staff_holidayform_holidayform",
-      "confidence_score": 1.0
+      "target": "staff_holidayform_holidayform"
     },
     {
       "relation": "contains",
@@ -26991,9 +27718,9 @@
       "source_file": "frontend/components/staff/HolidayForm.test.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidayform_test",
-      "target": "staff_holidayform_test_renderform",
-      "confidence_score": 1.0
+      "target": "staff_holidayform_test_renderform"
     },
     {
       "relation": "contains",
@@ -27001,9 +27728,9 @@
       "source_file": "frontend/components/staff/HolidayPanel.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidaypanel",
-      "target": "staff_holidaypanel_holidaypanel",
-      "confidence_score": 1.0
+      "target": "staff_holidaypanel_holidaypanel"
     },
     {
       "relation": "imports_from",
@@ -27012,9 +27739,9 @@
       "source_file": "frontend/components/staff/HolidayPanel.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidaypanel",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk"
     },
     {
       "relation": "imports",
@@ -27023,9 +27750,9 @@
       "source_file": "frontend/components/staff/HolidayPanel.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_holidaypanel",
-      "target": "staff_staff_desk_asrecordlist",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_asrecordlist"
     },
     {
       "relation": "imports_from",
@@ -27034,9 +27761,9 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_holidaypanel",
-      "confidence_score": 1.0
+      "target": "staff_holidaypanel"
     },
     {
       "relation": "calls",
@@ -27056,9 +27783,9 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_holidaypanel_holidaypanel",
-      "confidence_score": 1.0
+      "target": "staff_holidaypanel_holidaypanel"
     },
     {
       "relation": "contains",
@@ -27066,9 +27793,9 @@
       "source_file": "frontend/components/staff/HouseholdPanel.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_householdpanel",
-      "target": "staff_householdpanel_householdpanel",
-      "confidence_score": 1.0
+      "target": "staff_householdpanel_householdpanel"
     },
     {
       "relation": "imports_from",
@@ -27077,9 +27804,9 @@
       "source_file": "frontend/components/staff/HouseholdPanel.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_householdpanel",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk"
     },
     {
       "relation": "imports",
@@ -27088,9 +27815,9 @@
       "source_file": "frontend/components/staff/HouseholdPanel.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_householdpanel",
-      "target": "staff_staff_desk_asrecordlist",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_asrecordlist"
     },
     {
       "relation": "imports",
@@ -27099,9 +27826,9 @@
       "source_file": "frontend/components/staff/HouseholdPanel.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_householdpanel",
-      "target": "staff_staff_desk_householdlabel",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_householdlabel"
     },
     {
       "relation": "imports_from",
@@ -27110,9 +27837,9 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_householdpanel",
-      "confidence_score": 1.0
+      "target": "staff_householdpanel"
     },
     {
       "relation": "calls",
@@ -27132,9 +27859,500 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_householdpanel_householdpanel",
+      "target": "staff_householdpanel_householdpanel"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_site_images"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_site_images_siteimageerrortext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_site_images_sortorderswappatches"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_accentfilledsx",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_accentoutlinedsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L274",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_createdimageid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_dialogpapersx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_displaytitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L525",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_editaltdialog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L224",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_formatseconds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_imagelabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_indexbadgesx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_neutralpillsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_photocountlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_placementhint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_previewmediasx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_removepillsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_resolveselection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_rowframesx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_rowshape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_sameid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_selectbuttonsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L434",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_siteimageadddialog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L338",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_siteimagepreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_siteimagerow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L184",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_siteimagesection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_surfacecardsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_thumbsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_siteimagesection_trimmedalt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_staff_desk"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection",
+      "target": "staff_staff_desk_asrecordlist"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_siteimagesection"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L288",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagerow",
+      "target": "staff_siteimagesection_rowframesx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_displaytitle",
+      "target": "staff_siteimagesection_trimmedalt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_imagelabel",
+      "target": "staff_siteimagesection_trimmedalt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L341",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagepreview",
+      "target": "staff_siteimagesection_trimmedalt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L342",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagepreview",
+      "target": "staff_siteimagesection_imagelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_siteimagesection_siteimagerow",
+      "target": "staff_siteimagesection_imagelabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L340",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagepreview",
+      "target": "staff_siteimagesection_displaytitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L285",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagerow",
+      "target": "staff_siteimagesection_displaytitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_placementhint",
+      "target": "staff_siteimagesection_formatseconds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L783",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagesection",
+      "target": "staff_siteimagesection_placementhint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L770",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagesection",
+      "target": "staff_siteimagesection_photocountlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagerow",
+      "target": "lib_daycareapi_daycareimagesrc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L339",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagepreview",
+      "target": "lib_daycareapi_daycareimagesrc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/staff/SiteImageSection.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "staff_siteimagesection_siteimagesection",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_siteimagesection_siteimagesection"
     },
     {
       "relation": "imports_from",
@@ -27143,9 +28361,9 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk"
     },
     {
       "relation": "imports",
@@ -27154,9 +28372,9 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_staff_desk_staffdeskredirectpath",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffdeskredirectpath"
     },
     {
       "relation": "contains",
@@ -27164,9 +28382,20 @@
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staffdeskpage",
-      "target": "staff_staffdeskpage_staffdeskpage",
-      "confidence_score": 1.0
+      "target": "staff_staffdeskpage_staffdeskpage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/staff/StaffDeskPage.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "staff_staffdeskpage_staffdeskpage",
+      "target": "consts_routes_staffpath"
     },
     {
       "relation": "calls",
@@ -27191,14 +28420,215 @@
       "target": "staff_staff_desk_staffdeskredirectpath"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staff_desk"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staff_desk_staffdeskredirectpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staffimagespage_headerpillsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staffimagespage_placements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staffimagespage_selectedtabsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage",
+      "target": "staff_staffimagespage_staffimagespage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage_test",
+      "target": "staff_staffimagespage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "staff_staffimagespage_staffimagespage",
+      "target": "consts_routes_staffpath"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "staff_staffimagespage_staffimagespage",
+      "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/staff/StaffImagesPage.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "staff_staffimagespage_staffimagespage",
+      "target": "staff_staff_desk_staffdeskredirectpath"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage_test",
+      "target": "staff_staffimagespage_staffimagespage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage_test",
+      "target": "staff_site_images"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage_test",
+      "target": "staff_site_images_siteimageerrortext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage_test",
+      "target": "staff_site_images_sortorderswappatches"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage_test",
+      "target": "staff_staffimagespage_test_homeslides"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffImagesPage.test.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staffimagespage_test",
+      "target": "staff_staffimagespage_test_renderpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/site-images.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_site_images",
+      "target": "staff_site_images_siteimageerrortext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/site-images.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_site_images",
+      "target": "staff_site_images_sortorderswappatches"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/staff/site-images.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "staff_site_images_siteimageerrortext",
+      "target": "lib_daycareapi_formatapierrors"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk",
-      "target": "staff_staff_desk_asrecordlist",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_asrecordlist"
     },
     {
       "relation": "contains",
@@ -27206,9 +28636,9 @@
       "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk",
-      "target": "staff_staff_desk_bookingstatuspatch",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_bookingstatuspatch"
     },
     {
       "relation": "contains",
@@ -27216,9 +28646,9 @@
       "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk",
-      "target": "staff_staff_desk_holidayformerror",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_holidayformerror"
     },
     {
       "relation": "contains",
@@ -27226,9 +28656,9 @@
       "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk",
-      "target": "staff_staff_desk_holidaypayload",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_holidaypayload"
     },
     {
       "relation": "contains",
@@ -27236,9 +28666,9 @@
       "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk",
-      "target": "staff_staff_desk_householdlabel",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_householdlabel"
     },
     {
       "relation": "contains",
@@ -27246,9 +28676,9 @@
       "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk",
-      "target": "staff_staff_desk_staffbookingbody",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffbookingbody"
     },
     {
       "relation": "contains",
@@ -27256,9 +28686,9 @@
       "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk",
-      "target": "staff_staff_desk_staffbookingformerror",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffbookingformerror"
     },
     {
       "relation": "contains",
@@ -27266,9 +28696,9 @@
       "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk",
-      "target": "staff_staff_desk_staffdeskredirectpath",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffdeskredirectpath"
     },
     {
       "relation": "imports_from",
@@ -27277,9 +28707,9 @@
       "source_file": "frontend/components/staff/staff-desk.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk_test",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk"
     },
     {
       "relation": "imports",
@@ -27288,9 +28718,9 @@
       "source_file": "frontend/components/staff/staff-desk.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk_test",
-      "target": "staff_staff_desk_staffdeskredirectpath",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffdeskredirectpath"
     },
     {
       "relation": "imports",
@@ -27299,9 +28729,9 @@
       "source_file": "frontend/components/staff/staff-desk.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk_test",
-      "target": "staff_staff_desk_holidayformerror",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_holidayformerror"
     },
     {
       "relation": "imports",
@@ -27310,9 +28740,9 @@
       "source_file": "frontend/components/staff/staff-desk.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk_test",
-      "target": "staff_staff_desk_holidaypayload",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_holidaypayload"
     },
     {
       "relation": "imports",
@@ -27321,9 +28751,9 @@
       "source_file": "frontend/components/staff/staff-desk.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk_test",
-      "target": "staff_staff_desk_bookingstatuspatch",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_bookingstatuspatch"
     },
     {
       "relation": "imports",
@@ -27332,9 +28762,9 @@
       "source_file": "frontend/components/staff/staff-desk.test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staff_desk_test",
-      "target": "staff_staff_desk_staffbookingbody",
-      "confidence_score": 1.0
+      "target": "staff_staff_desk_staffbookingbody"
     },
     {
       "relation": "contains",
@@ -28412,9 +29842,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L265",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_createclosure",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_createclosure"
     },
     {
       "relation": "contains",
@@ -28425,6 +29855,16 @@
       "confidence_score": 1.0,
       "source": "lib_daycareapi",
       "target": "lib_daycareapi_createdog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L301",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_createsiteimage"
     },
     {
       "relation": "contains",
@@ -28472,9 +29912,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L271",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_deleteclosure",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_deleteclosure"
     },
     {
       "relation": "contains",
@@ -28505,6 +29945,16 @@
       "confidence_score": 1.0,
       "source": "lib_daycareapi",
       "target": "lib_daycareapi_deletemyphoto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L314",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_deletesiteimage"
     },
     {
       "relation": "contains",
@@ -28552,9 +30002,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_listbookings",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_listbookings"
     },
     {
       "relation": "contains",
@@ -28562,9 +30012,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L262",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_listclosures",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_listclosures"
     },
     {
       "relation": "contains",
@@ -28595,6 +30045,16 @@
       "confidence_score": 1.0,
       "source": "lib_daycareapi",
       "target": "lib_daycareapi_listservices"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L287",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_listsiteimages"
     },
     {
       "relation": "contains",
@@ -28642,9 +30102,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_updatebooking",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_updatebooking"
     },
     {
       "relation": "contains",
@@ -28652,9 +30112,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L268",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_updateclosure",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_updateclosure"
     },
     {
       "relation": "contains",
@@ -28675,6 +30135,16 @@
       "confidence_score": 1.0,
       "source": "lib_daycareapi",
       "target": "lib_daycareapi_updatemyprofile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_updatesiteimage"
     },
     {
       "relation": "contains",
@@ -28705,6 +30175,17 @@
       "confidence_score": 1.0,
       "source": "lib_daycareapi",
       "target": "lib_daycareapi_withtrailingslash"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
+      "target": "lib_daycareapi"
     },
     {
       "relation": "calls",
@@ -28790,9 +30271,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L266",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_createclosure",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -28823,9 +30304,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L272",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_deleteclosure",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -28858,6 +30339,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_daycareapi_deletemyphoto",
+      "target": "lib_daycareapi_daycarerequest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L315",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_deletesiteimage",
       "target": "lib_daycareapi_daycarerequest"
     },
     {
@@ -28900,9 +30392,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L247",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_listbookings",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -28911,9 +30403,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L263",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_listclosures",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -28946,6 +30438,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_daycareapi_listservices",
+      "target": "lib_daycareapi_daycarerequest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L288",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_listsiteimages",
       "target": "lib_daycareapi_daycarerequest"
     },
     {
@@ -28988,9 +30491,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L258",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_updatebooking",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -28999,9 +30502,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L269",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_updateclosure",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -29030,6 +30533,28 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L312",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_updatesiteimage",
+      "target": "lib_daycareapi_daycarerequest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L302",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_createsiteimage",
+      "target": "lib_daycareapi_daycareupload"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L166",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -29046,6 +30571,50 @@
       "confidence_score": 1.0,
       "source": "lib_daycareapi_uploadmyphoto",
       "target": "lib_daycareapi_daycareupload"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
+      "target": "lib_daycareapi_listsiteimages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
+      "target": "lib_daycareapi_createsiteimage"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
+      "target": "lib_daycareapi_updatesiteimage"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
+      "target": "lib_daycareapi_deletesiteimage"
     },
     {
       "relation": "contains",
@@ -31158,12 +32727,22 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/staff/images/page.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "images_page",
+      "target": "images_page_staffimagesroute"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/staff/layout.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_layout",
-      "target": "staff_layout_metadata",
-      "confidence_score": 1.0
+      "target": "staff_layout_metadata"
     },
     {
       "relation": "contains",
@@ -31171,9 +32750,9 @@
       "source_file": "frontend/src/app/staff/layout.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_layout",
-      "target": "staff_layout_stafflayout",
-      "confidence_score": 1.0
+      "target": "staff_layout_stafflayout"
     },
     {
       "relation": "contains",
@@ -31181,9 +32760,9 @@
       "source_file": "frontend/src/app/staff/page.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_page",
-      "target": "staff_page_staffroute",
-      "confidence_score": 1.0
+      "target": "staff_page_staffroute"
     },
     {
       "relation": "contains",
@@ -32037,6 +33616,121 @@
       "confidence_score": 1.0,
       "source": "utils_settings_loadsettings",
       "target": "utils_settings_migrate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages",
+      "target": "utils_siteimages_comparesiteimageorder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages",
+      "target": "utils_siteimages_galleryimagesfromsiteimages"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages",
+      "target": "utils_siteimages_heroslidesfromsiteimages"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages",
+      "target": "utils_siteimages_usablesiteimages"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages_test",
+      "target": "utils_siteimages"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages_galleryimagesfromsiteimages",
+      "target": "utils_siteimages_usablesiteimages"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages_heroslidesfromsiteimages",
+      "target": "utils_siteimages_usablesiteimages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages_test",
+      "target": "utils_siteimages_heroslidesfromsiteimages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages_test",
+      "target": "utils_siteimages_galleryimagesfromsiteimages"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.test.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages_test",
+      "target": "utils_siteimages_test_dog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/utils/siteImages.test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_siteimages_test",
+      "target": "utils_siteimages_test_yard"
     },
     {
       "relation": "contains",
@@ -35712,9 +37406,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L219",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
-      "target": "docs_care_bear_daycare_api_closures",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_closures"
     },
     {
       "relation": "contains",
@@ -35785,6 +37479,16 @@
       "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
       "target": "docs_care_bear_daycare_api_services"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L568",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_care_bear_daycare_api_care_bear_daycare_api",
+      "target": "docs_care_bear_daycare_api_site_images"
     },
     {
       "relation": "contains",
@@ -35942,9 +37646,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L233",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_closures",
-      "target": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_closures_id_staff",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_closures_id_staff"
     },
     {
       "relation": "contains",
@@ -35952,9 +37656,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L223",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_closures",
-      "target": "docs_care_bear_daycare_api_get_post_api_daycare_closures_staff",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_get_post_api_daycare_closures_staff"
     },
     {
       "relation": "contains",
@@ -36032,9 +37736,9 @@
       "source_file": "docs/care-bear-daycare-api.md",
       "source_location": "L342",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_capacity_and_double_booking",
-      "target": "docs_care_bear_daycare_api_closures_342",
-      "confidence_score": 1.0
+      "target": "docs_care_bear_daycare_api_closures_342"
     },
     {
       "relation": "contains",
@@ -36185,6 +37889,46 @@
       "confidence_score": 1.0,
       "source": "docs_care_bear_daycare_api_site_reviews",
       "target": "docs_care_bear_daycare_api_get_api_daycare_site_reviews_public_not_paginated"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L596",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_care_bear_daycare_api_site_images",
+      "target": "docs_care_bear_daycare_api_delete_api_daycare_site_images_id_staff_204"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L584",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_care_bear_daycare_api_site_images",
+      "target": "docs_care_bear_daycare_api_get_api_daycare_site_images_placement_home_slide_public"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L592",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_care_bear_daycare_api_site_images",
+      "target": "docs_care_bear_daycare_api_patch_api_daycare_site_images_id_staff"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/care-bear-daycare-api.md",
+      "source_location": "L588",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_care_bear_daycare_api_site_images",
+      "target": "docs_care_bear_daycare_api_post_api_daycare_site_images_staff_201"
     },
     {
       "relation": "contains",
@@ -41310,5 +43054,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "857c2c1197f6b85fa64fc2e10e5beb82ebf6dd47"
+  "built_at_commit": "56f0cb3a5ecb42d38503b4a33b5fa3ab5767fafd"
 }
