@@ -2,8 +2,10 @@
 
 import { useEffect } from 'react';
 import { Box, Button, Divider, Typography } from '@mui/material';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
+import { staffPath } from '@/consts/routes';
 import { SECONDARY_BUTTON_SX } from '@/components/pet-parent/pet-parent-styles';
 import { staffDeskRedirectPath } from './staff-desk';
 import HolidayPanel from './HolidayPanel';
@@ -51,9 +53,19 @@ export default function StaffDeskPage() {
             <Typography sx={{ mt: 0.5, color: 'text.secondary' }}>{greeting}</Typography>
           ) : null}
         </Box>
-        <Button variant="outlined" onClick={logout} sx={SECONDARY_BUTTON_SX}>
-          Log out
-        </Button>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+          <Button
+            component={Link}
+            href={staffPath('images')}
+            variant="outlined"
+            sx={SECONDARY_BUTTON_SX}
+          >
+            Site images
+          </Button>
+          <Button variant="outlined" onClick={logout} sx={SECONDARY_BUTTON_SX}>
+            Log out
+          </Button>
+        </Box>
       </Box>
 
       <HolidayPanel />

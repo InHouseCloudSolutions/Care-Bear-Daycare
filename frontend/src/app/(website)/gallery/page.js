@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import GalleryPage from '@/components/dog-hotel/GalleryPage';
+import GallerySiteImages from '@/components/dog-hotel/GallerySiteImages';
 import publicPath from '@/utils/publicPath';
 import { pageMetadata } from '@/utils/website-seo';
 
@@ -23,5 +23,5 @@ function listGalleryImages() {
 }
 
 export default function GalleryRoute() {
-  return <GalleryPage images={listGalleryImages()} />;
+  return <GallerySiteImages images={listGalleryImages()} />;
 }

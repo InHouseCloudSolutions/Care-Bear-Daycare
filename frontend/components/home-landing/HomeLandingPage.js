@@ -6,7 +6,7 @@ import { Box, Button, Stack, Typography } from '@mui/material';
 import { isExternalHref } from '@/consts/routes';
 import publicPath from '@/utils/publicPath';
 import HomeLandingShell from './HomeLandingShell';
-import HomeHeroBackground from './HomeHeroBackground';
+import HomeHeroSiteSlides from './HomeHeroSiteSlides';
 import HomeHeroNav from './HomeHeroNav';
 import HomeLandingFooter from './HomeLandingFooter';
 import HomePageJingle from './HomePageJingle';
@@ -80,7 +80,7 @@ export default function HomeLandingPage() {
           color: 'common.white',
         }}
       >
-        <HomeHeroBackground />
+        <HomeHeroSiteSlides />
 
         <Box
           sx={{

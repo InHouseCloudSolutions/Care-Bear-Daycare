@@ -8,7 +8,7 @@ import {
   SHORT_VIEWPORT_MEDIA,
 } from '@/components/design-studio/design-studio-glass';
 import HomeLandingShell from './HomeLandingShell';
-import HomeHeroBackground from './HomeHeroBackground';
+import HomeHeroSiteSlides from './HomeHeroSiteSlides';
 import MarketingInteriorNav from './MarketingInteriorNav';
 import { LUXURY_GRADIENT_SX } from './home-landing-data';
 
@@ -176,7 +176,7 @@ export default function MarketingInteriorLayout({
             {heroGradient ? (
               <Box sx={{ position: 'absolute', inset: 0, ...LUXURY_GRADIENT_SX }} />
             ) : (
-              <HomeHeroBackground />
+              <HomeHeroSiteSlides />
             )}
           </Box>
         ) : null}

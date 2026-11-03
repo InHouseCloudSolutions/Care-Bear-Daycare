@@ -78,10 +78,11 @@ export async function daycareRequest({
 
 /**
  * Multipart upload. Do not set Content-Type — the browser must add the boundary.
- * @param {{ path: string, file: File, token?: string|null }} opts
+ * Optional `fields` are extra text parts (site images send `alt` and `placement`).
+ * @param {{ path: string, file: File, token?: string|null, fields?: Record<string, string> }} opts
  * @returns {Promise<{ ok: boolean, status: number, data: unknown }>}
  */
-export async function daycareUpload({ path, file, token } = {}) {
+export async function daycareUpload({ path, file, token, fields } = {}) {
   const url = `${BASE_PATH}${withTrailingSlash(path)}`;
   const headers = {};
   if (token) {
@@ -89,6 +90,11 @@ export async function daycareUpload({ path, file, token } = {}) {
   }
   const body = new FormData();
   body.append('file', file);
+  if (fields) {
+    Object.entries(fields).forEach(([key, value]) => {
+      if (value != null) body.append(key, String(value));
+    });
+  }
 
   let response;
   try {
@@ -270,6 +276,43 @@ export const updateClosure = (token, closureId, body) =>
 
 export const deleteClosure = (token, closureId) =>
   daycareRequest({ method: 'DELETE', path: `/daycare/closures/${closureId}`, token });
+
+// --- Site images (home slides and gallery) ---
+
+/**
+ * Public photos for one placement (`home_slide` or `gallery`). No token.
+ * The slash stays before the query string; trailingSlash is off so it is not appended after the query.
+ * @param {'home_slide'|'gallery'} placement
+ */
+export function listSiteImages(placement) {
+  return daycareRequest({
+    method: 'GET',
+    path: `/daycare/site-images/?placement=${encodeURIComponent(placement)}`,
+    trailingSlash: false,
+  });
+}
+
+/**
+ * Staff upload. Multipart fields are `file`, `alt`, and `placement`.
+ * The server assigns `sort_order` (one past the max for that placement).
+ * @param {string} token
+ * @param {{ file: File, alt?: string, placement: 'home_slide'|'gallery' }} fields
+ */
+export function createSiteImage(token, { file, alt, placement }) {
+  return daycareUpload({
+    path: '/daycare/site-images',
+    file,
+    token,
+    fields: { alt: alt ?? '', placement },
+  });
+}
+
+/** Staff edit. `placement` is read-only; send `{ alt, sort_order }` only. */
+export const updateSiteImage = (token, imageId, body) =>
+  daycareRequest({ method: 'PATCH', path: `/daycare/site-images/${imageId}`, token, body });
+
+export const deleteSiteImage = (token, imageId) =>
+  daycareRequest({ method: 'DELETE', path: `/daycare/site-images/${imageId}`, token });
 
 // --- Public site reviews ---
 

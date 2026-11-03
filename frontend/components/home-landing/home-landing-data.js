@@ -20,7 +20,10 @@ import {
   WEBSITE_INK_HOVER,
 } from '@/consts/website-theme';
 import publicPath from '@/utils/publicPath';
+import { HOME_HERO_FADE_MS, HOME_HERO_SLIDE_MS } from './home-hero-timing';
 import { HOME_LANDING_FONT_FAMILY } from './home-landing-font';
+
+export { HOME_HERO_FADE_MS, HOME_HERO_SLIDE_MS };
 
 export const LOGIN_NAV_LABEL = 'Login';
 export const STAFF_NAV_LABEL = 'Staff';
@@ -198,11 +201,6 @@ export const HOME_LUXURY_DRAWER_PAPER_SX = {
     color: 'rgba(255,255,255,0.7)',
   },
 };
-
-export const HOME_HERO_SLIDE_MS = 3000;
-
-/** Crossfade length — must match `speed` on `HomeHeroBackground` Swiper. */
-export const HOME_HERO_FADE_MS = 1400;
 
 /** Local hero backgrounds — `frontend/public/imgs/home/` */
 export const HOME_HERO_SLIDES = [

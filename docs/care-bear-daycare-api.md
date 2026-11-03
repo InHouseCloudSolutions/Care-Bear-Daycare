@@ -4,7 +4,7 @@ Reference for the carebeardaycare.ca app. The API lives on the IHCS backend, not
 
 All daycare paths below are relative to `{BASE}/api/daycare/`. Auth paths are under `{BASE}/api/auth/`.
 
-JSON only. Send `Content-Type: application/json`. Trailing slashes are required. Field names are **snake_case**. Dates are `YYYY-MM-DD`. Times are `HH:MM:SS`. Money is a decimal string with two places (for example `"35.00"`). There are no card payments and no photo uploads.
+JSON for every route except the site-image upload. Send `Content-Type: application/json` on JSON routes. Trailing slashes are required. Field names are **snake_case**. Dates are `YYYY-MM-DD`. Times are `HH:MM:SS`. Money is a decimal string with two places (for example `"35.00"`). There are no card payments.
 
 ## Auth
 
@@ -42,7 +42,7 @@ Use `isStaff` to choose the staff UI versus the pet-parent UI. A pet parent acco
 
 | Role | How you know | Can do |
 |------|----------------|--------|
-| Public | no token | register, list reviews |
+| Public | no token | register, list reviews, list site images |
 | Pet parent | token, `isStaff: false`, has a profile | own profile, own dogs, own vaccines, own bookings, check availability, read own care updates, own conversation, one review per completed booking |
 | Staff | token, `isStaff: true` | everything, including other pet parents |
 
@@ -565,6 +565,38 @@ Public marketing reviews for the Care Bear Daycare website. This list is separat
 
 `source` is `rover`, `google`, or `internal`. When a review has several dogs, `photos` lists each one. When it has a single photo path and no `photos` array was stored, `photos` is one item built from that path.
 
+## Site images
+
+Public photos for the home hero (`home_slide`) and the gallery (`gallery`). Staff add, reorder, and edit alt text at `/staff/images`. Until a placement has at least one image, the website keeps the photos it ships with. A failed request does the same.
+
+```json
+{
+  "id": 1,
+  "placement": "home_slide",
+  "alt": "Dog",
+  "sort_order": 0,
+  "image_url": "/api/daycare/images/12/"
+}
+```
+
+`image_url` is a public file URL. `sort_order` starts at 0 and is assigned on create (one past the current max for that placement).
+
+### GET `/api/daycare/site-images/?placement=home_slide` — public
+
+Also `placement=gallery`. No token. The response is a JSON array (not a paginated object). An invalid placement is **400** `{ "placement": ["Use home_slide or gallery."] }`.
+
+### POST `/api/daycare/site-images/` — staff — 201
+
+Multipart, not JSON. Fields are `file`, `alt`, and `placement`. The API checks the file type and a 5 MB limit and returns the reason as a validation error.
+
+### PATCH `/api/daycare/site-images/<id>/` — staff
+
+JSON `{ "alt": "Dog", "sort_order": 1 }`. `placement` is read-only and ignored if sent.
+
+### DELETE `/api/daycare/site-images/<id>/` — staff — 204
+
+Anonymous writes are **401**. Pet-parent writes are **403**.
+
 ## Browser calls from carebeardaycare.ca
 
 Production CORS allows `https://carebeardaycare.ca` and `https://www.carebeardaycare.ca`. Call the API host from the browser with the `Authorization` header. Do not send cookies for these routes.
@@ -573,4 +605,4 @@ Local dev allows every origin.
 
 ## Not in this API
 
-Photos, card payments, invoices, vaccine-expiry blocking, and a second login endpoint. Holidays, bookings, and households are managed at `/staff` on the daycare site through the JSON routes above. Django admin remains at `{BASE}/api/admin/` for other staff data and is separate from this JSON API.
+Card payments, invoices, vaccine-expiry blocking, and a second login endpoint. Holidays, bookings, households, and site images are managed at `/staff` on the daycare site through the routes above. Django admin remains at `{BASE}/api/admin/` for other staff data and is separate from this JSON API.
