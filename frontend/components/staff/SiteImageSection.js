@@ -2,239 +2,53 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
+import {
+  DndContext,
+  KeyboardSensor,
+  PointerSensor,
+  closestCenter,
+  useSensor,
+  useSensors,
+} from '@dnd-kit/core';
+import {
+  SortableContext,
+  rectSortingStrategy,
+  sortableKeyboardCoordinates,
+} from '@dnd-kit/sortable';
 import AddIcon from '@mui/icons-material/Add';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import {
-  Alert,
-  Box,
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  IconButton,
-  Typography,
-} from '@mui/material';
+import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
+import { Alert, Box, Button, Chip, Snackbar, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
-import GlassFormField from '@/components/design-studio/GlassFormField';
 import { HOME_HERO_FADE_MS, HOME_HERO_SLIDE_MS } from '@/components/home-landing/home-hero-timing';
-import {
-  WEBSITE_ACCENT,
-  WEBSITE_HEART,
-  WEBSITE_INK,
-  WEBSITE_PAGE_BACKGROUND_DARK,
-} from '@/consts/website-theme';
+import { WEBSITE_ACCENT } from '@/consts/website-theme';
 import { useAuth } from '@/contexts/AuthContext';
 import {
   createSiteImage,
-  daycareImageSrc,
   deleteSiteImage,
   listSiteImages,
+  replaceSiteImage,
   updateSiteImage,
 } from '@/lib/daycareApi';
 import { compareSiteImageOrder } from '@/utils/siteImages';
 import { asRecordList } from './staff-desk';
-import { siteImageErrorText, sortOrderSwapPatches } from './site-images';
-
-const ACCEPT = 'image/jpeg,image/png,image/webp,image/gif';
-
-const rowShape = PropTypes.shape({
-  id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-  alt: PropTypes.string,
-  image_url: PropTypes.string,
-  sort_order: PropTypes.number,
-});
-
-const dialogPaperSx = {
-  borderRadius: '16px',
-  bgcolor: 'background.paper',
-  backgroundImage: 'none',
-};
-
-const thumbSx = {
-  width: 56,
-  height: 40,
-  borderRadius: '8px',
-  objectFit: 'cover',
-  flexShrink: 0,
-  bgcolor: 'action.hover',
-};
-
-const indexBadgeSx = {
-  width: 28,
-  height: 28,
-  borderRadius: '8px',
-  display: 'grid',
-  placeItems: 'center',
-  flexShrink: 0,
-  border: '1px solid',
-  borderColor: 'divider',
-  fontSize: 13,
-  fontWeight: 700,
-  lineHeight: 1,
-};
-
-const previewMediaSx = {
-  width: '100%',
-  aspectRatio: '16 / 10',
-  borderRadius: '12px',
-  bgcolor: 'action.hover',
-};
-
-const orderButtonSx = {
-  color: WEBSITE_ACCENT,
-  border: '1px solid',
-  borderColor: theme =>
-    theme.palette.mode === 'dark' ? alpha('#ffffff', 0.14) : alpha(WEBSITE_INK, 0.14),
-  borderRadius: '8px',
-  p: 0.35,
-  '&.Mui-disabled': {
-    color: 'text.disabled',
-    borderColor: 'transparent',
-  },
-};
-
-const selectButtonSx = {
-  flex: 1,
-  minWidth: 0,
-  display: 'flex',
-  alignItems: 'center',
-  gap: 1.25,
-  py: 0.85,
-  pl: 1,
-  pr: 0.5,
-  border: 0,
-  margin: 0,
-  background: 'transparent',
-  color: 'inherit',
-  font: 'inherit',
-  textAlign: 'left',
-  cursor: 'pointer',
-  borderRadius: '10px',
-  '&:focus-visible': {
-    outline: `2px solid ${WEBSITE_ACCENT}`,
-    outlineOffset: 2,
-  },
-};
-
-function neutralPillSx(theme) {
-  const dark = theme.palette.mode === 'dark';
-  return {
-    borderRadius: 999,
-    textTransform: 'none',
-    fontWeight: 600,
-    px: 1.75,
-    py: 0.7,
-    minHeight: 36,
-    color: 'text.primary',
-    borderColor: dark ? alpha('#ffffff', 0.28) : alpha(WEBSITE_INK, 0.28),
-    '&:hover': {
-      borderColor: WEBSITE_ACCENT,
-      bgcolor: alpha(WEBSITE_ACCENT, 0.08),
-    },
-  };
-}
-
-function accentOutlinedSx(theme) {
-  const dark = theme.palette.mode === 'dark';
-  return {
-    borderRadius: 999,
-    textTransform: 'none',
-    fontWeight: 600,
-    px: 1.75,
-    py: 0.7,
-    minHeight: 36,
-    flexShrink: 0,
-    whiteSpace: 'nowrap',
-    borderColor: WEBSITE_ACCENT,
-    color: dark ? WEBSITE_ACCENT : WEBSITE_INK,
-    '&:hover': {
-      borderColor: WEBSITE_ACCENT,
-      bgcolor: alpha(WEBSITE_ACCENT, 0.12),
-    },
-  };
-}
-
-const accentFilledSx = {
-  borderRadius: 999,
-  textTransform: 'none',
-  fontWeight: 700,
-  px: 2,
-  py: 0.7,
-  minHeight: 36,
-  boxShadow: 'none',
-  bgcolor: WEBSITE_ACCENT,
-  color: WEBSITE_INK,
-  '&:hover': {
-    bgcolor: WEBSITE_ACCENT,
-    boxShadow: 'none',
-    filter: 'brightness(1.05)',
-  },
-};
-
-const removePillSx = {
-  borderRadius: 999,
-  textTransform: 'none',
-  fontWeight: 600,
-  px: 1.75,
-  py: 0.7,
-  minHeight: 36,
-  borderColor: WEBSITE_HEART,
-  color: WEBSITE_HEART,
-  '&:hover': {
-    borderColor: WEBSITE_HEART,
-    bgcolor: alpha(WEBSITE_HEART, 0.1),
-  },
-};
-
-function surfaceCardSx(theme) {
-  const dark = theme.palette.mode === 'dark';
-  return {
-    borderRadius: '16px',
-    border: '1px solid',
-    borderColor: dark ? alpha('#ffffff', 0.08) : WEBSITE_PAGE_BACKGROUND_DARK,
-    bgcolor: theme.palette.background.muted || theme.palette.background.paper,
-    p: { xs: 1.5, sm: 2 },
-    minWidth: 0,
-  };
-}
-
-function rowFrameSx(selected) {
-  return theme => {
-    const dark = theme.palette.mode === 'dark';
-    const idleBorder = dark ? alpha('#ffffff', 0.1) : alpha(WEBSITE_INK, 0.12);
-    return {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 0.25,
-      borderRadius: '12px',
-      border: '1px solid',
-      borderColor: selected ? WEBSITE_ACCENT : idleBorder,
-      boxShadow: selected ? `inset 0 0 0 1px ${WEBSITE_ACCENT}` : 'none',
-      bgcolor: selected ? alpha(WEBSITE_ACCENT, dark ? 0.16 : 0.1) : 'transparent',
-      pr: 0.5,
-      transition: 'border-color 140ms ease, background-color 140ms ease',
-      '&:hover': {
-        borderColor: WEBSITE_ACCENT,
-      },
-    };
-  };
-}
-
-function trimmedAlt(row) {
-  return typeof row.alt === 'string' ? row.alt.trim() : '';
-}
-
-function imageLabel(row, index) {
-  return trimmedAlt(row) || `image ${index + 1}`;
-}
-
-function displayTitle(row, index) {
-  return trimmedAlt(row) || `Photo ${index + 1}`;
-}
+import { moveRow, reorderPatches, siteImageErrorText, sortOrderSwapPatches } from './site-images';
+import { accentFilledSx, hairline, neutralPillSx } from './site-image-styles';
+import {
+  DropzoneCopy,
+  PhotoDropzone,
+  SiteImageCard,
+  SiteImageGridSkeleton,
+  trimmedAlt,
+} from './SiteImageParts';
+import {
+  EditAltDialog,
+  PhotoViewerDialog,
+  RemoveImageDialog,
+  SiteImageAddDialog,
+  SiteImageReplaceDialog,
+} from './SiteImageDialogs';
 
 function formatSeconds(ms) {
   const rounded = Math.round(ms / 100) / 10;
@@ -247,9 +61,9 @@ function placementHint(placement) {
   const fadeSeconds = formatSeconds(HOME_HERO_FADE_MS);
   switch (placement) {
     case 'home_slide':
-      return `Wide images work best. Slides hold for about ${slideSeconds} seconds, then crossfade over ${fadeSeconds} seconds.`;
+      return `The rotating banner at the top of the home page. Wide images work best. Slides hold for about ${slideSeconds} seconds, then crossfade over ${fadeSeconds} seconds.`;
     case 'gallery':
-      return 'Set the order photos appear in the public gallery grid.';
+      return 'The photo grid on the public Gallery page, shown in this order.';
     default: {
       const unexpected = placement;
       throw new Error(`Unexpected site image placement: ${unexpected}`);
@@ -266,26 +80,6 @@ function sameId(left, right) {
   return left === right || String(left) === String(right);
 }
 
-function resolveSelection(sorted, currentId, pending) {
-  if (sorted.length === 0) return null;
-
-  if (pending && pending.kind === 'id') {
-    const match = sorted.find(row => sameId(row.id, pending.id));
-    if (match) return match.id;
-  }
-
-  if (pending && (pending.kind === 'last' || pending.fallback === 'last')) {
-    return sorted[sorted.length - 1].id;
-  }
-
-  if (currentId != null) {
-    const current = sorted.find(row => sameId(row.id, currentId));
-    if (current) return current.id;
-  }
-
-  return sorted[0].id;
-}
-
 function createdImageId(data) {
   if (!data || typeof data !== 'object') return null;
   const { id } = data;
@@ -294,315 +88,37 @@ function createdImageId(data) {
   return null;
 }
 
-function SiteImageRow({ row, index, count, selected, disabled, onSelect, onMove }) {
-  const src = daycareImageSrc(row.image_url);
-  const label = imageLabel(row, index);
-  const title = displayTitle(row, index);
-
+function LiveStatus({ live, children }) {
+  const Icon = live ? CheckCircleRoundedIcon : InfoOutlinedIcon;
   return (
-    <Box sx={rowFrameSx(selected)}>
-      <Box
-        component="button"
-        type="button"
-        onClick={() => onSelect(row.id)}
-        aria-pressed={selected}
-        sx={selectButtonSx}
-      >
-        <Box aria-hidden sx={indexBadgeSx}>
-          {index + 1}
-        </Box>
-        {src ? <Box component="img" src={src} alt="" sx={thumbSx} /> : <Box sx={thumbSx} />}
-        <Typography noWrap sx={{ fontWeight: 700, fontSize: 14, minWidth: 0 }}>
-          {title}
-        </Typography>
-      </Box>
-      <IconButton
-        type="button"
-        size="small"
-        aria-label={`Move up ${label}`}
-        disabled={disabled || index === 0}
-        onClick={() => onMove(index, -1)}
-        sx={orderButtonSx}
-      >
-        <KeyboardArrowUpIcon fontSize="small" />
-      </IconButton>
-      <IconButton
-        type="button"
-        size="small"
-        aria-label={`Move down ${label}`}
-        disabled={disabled || index === count - 1}
-        onClick={() => onMove(index, 1)}
-        sx={orderButtonSx}
-      >
-        <KeyboardArrowDownIcon fontSize="small" />
-      </IconButton>
+    <Box
+      sx={theme => ({
+        mt: 2.5,
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: 1.25,
+        px: 2,
+        py: 1.5,
+        borderRadius: '14px',
+        border: '1px solid',
+        borderColor: live ? hairline(theme, 0.1) : alpha(WEBSITE_ACCENT, 0.45),
+        bgcolor: live
+          ? theme.palette.background.muted || 'action.hover'
+          : alpha(WEBSITE_ACCENT, theme.palette.mode === 'dark' ? 0.12 : 0.14),
+      })}
+    >
+      <Icon
+        aria-hidden
+        sx={{ fontSize: 20, mt: '1px', color: live ? 'success.main' : WEBSITE_ACCENT }}
+      />
+      <Box sx={{ fontSize: 14, lineHeight: 1.5 }}>{children}</Box>
     </Box>
   );
 }
 
-SiteImageRow.propTypes = {
-  row: rowShape.isRequired,
-  index: PropTypes.number.isRequired,
-  count: PropTypes.number.isRequired,
-  selected: PropTypes.bool,
-  disabled: PropTypes.bool,
-  onSelect: PropTypes.func.isRequired,
-  onMove: PropTypes.func.isRequired,
-};
-
-function SiteImagePreview({ row, index, count, disabled, onEdit, onRemove }) {
-  const src = daycareImageSrc(row.image_url);
-  const title = displayTitle(row, index);
-  const alt = trimmedAlt(row);
-  const label = imageLabel(row, index);
-
-  return (
-    <Box sx={surfaceCardSx}>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'baseline',
-          gap: 1,
-          mb: 1.5,
-        }}
-      >
-        <Typography component="h3" sx={{ fontWeight: 700, fontSize: 15 }}>
-          Image preview
-        </Typography>
-        <Typography sx={{ color: 'text.secondary', fontSize: 13, whiteSpace: 'nowrap' }}>
-          {`${index + 1} of ${count}`}
-        </Typography>
-      </Box>
-      {src ? (
-        <Box
-          component="img"
-          src={src}
-          alt=""
-          sx={{ ...previewMediaSx, objectFit: 'cover', display: 'block' }}
-        />
-      ) : (
-        <Box
-          sx={{
-            ...previewMediaSx,
-            display: 'grid',
-            placeItems: 'center',
-          }}
-        >
-          <Typography variant="body2" sx={{ color: 'text.secondary', px: 2, textAlign: 'center' }}>
-            Preview unavailable
-          </Typography>
-        </Box>
-      )}
-      <Typography sx={{ mt: 1.5, fontWeight: 700, fontSize: 16, wordBreak: 'break-word' }}>
-        {title}
-      </Typography>
-      <Typography sx={{ mt: 1.25, color: 'text.secondary', fontSize: 12, fontWeight: 700 }}>
-        Alt text
-      </Typography>
-      <Typography
-        sx={{
-          mt: 0.5,
-          fontSize: 14,
-          lineHeight: 1.45,
-          whiteSpace: 'pre-wrap',
-          wordBreak: 'break-word',
-          color: alt ? 'text.primary' : 'text.secondary',
-        }}
-      >
-        {alt || 'No alt text yet.'}
-      </Typography>
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 2 }}>
-        <Button
-          type="button"
-          variant="outlined"
-          disabled={disabled}
-          startIcon={<EditOutlinedIcon sx={{ fontSize: 18 }} />}
-          onClick={onEdit}
-          sx={neutralPillSx}
-        >
-          Edit alt text
-        </Button>
-        <Button
-          type="button"
-          variant="outlined"
-          disabled={disabled}
-          startIcon={<DeleteOutlineIcon sx={{ fontSize: 18 }} />}
-          aria-label={`Remove ${label}`}
-          onClick={() => onRemove(row)}
-          sx={removePillSx}
-        >
-          Remove
-        </Button>
-      </Box>
-    </Box>
-  );
-}
-
-SiteImagePreview.propTypes = {
-  row: rowShape.isRequired,
-  index: PropTypes.number.isRequired,
-  count: PropTypes.number.isRequired,
-  disabled: PropTypes.bool,
-  onEdit: PropTypes.func.isRequired,
-  onRemove: PropTypes.func.isRequired,
-};
-
-function SiteImageAddDialog({ title, open, disabled, onClose, onAdd }) {
-  const [file, setFile] = useState(null);
-  const [alt, setAlt] = useState('');
-  const [localError, setLocalError] = useState(null);
-  const fileInput = useRef(null);
-
-  useEffect(() => {
-    if (open) return;
-    setFile(null);
-    setAlt('');
-    setLocalError(null);
-    if (fileInput.current) fileInput.current.value = '';
-  }, [open]);
-
-  const handleSubmit = async event => {
-    event.preventDefault();
-    if (!file) {
-      setLocalError({ message: 'Choose an image.', severity: 'warning' });
-      return;
-    }
-    setLocalError(null);
-    const message = await onAdd({ file, alt });
-    if (message) {
-      setLocalError({ message, severity: 'error' });
-      return;
-    }
-    onClose();
-  };
-
-  return (
-    <Dialog
-      open={open}
-      onClose={disabled ? undefined : onClose}
-      fullWidth
-      maxWidth="xs"
-      PaperProps={{ sx: dialogPaperSx }}
-    >
-      <DialogTitle sx={{ fontWeight: 700, pb: 1 }}>New image</DialogTitle>
-      <Box component="form" onSubmit={handleSubmit}>
-        <DialogContent sx={{ display: 'flex', flexDirection: 'column', gap: 2, pt: 1 }}>
-          {localError ? <Alert severity={localError.severity}>{localError.message}</Alert> : null}
-          <Button component="label" variant="outlined" disabled={disabled} sx={neutralPillSx}>
-            {file ? file.name : 'Choose image'}
-            <input
-              ref={fileInput}
-              type="file"
-              accept={ACCEPT}
-              hidden
-              aria-label={`Choose image for ${title}`}
-              disabled={disabled}
-              onChange={event => {
-                setFile(event.target.files?.[0] || null);
-                setLocalError(null);
-              }}
-            />
-          </Button>
-          <GlassFormField
-            label="Alt text"
-            value={alt}
-            onChange={event => setAlt(event.target.value)}
-            disabled={disabled}
-            fullWidth
-          />
-        </DialogContent>
-        <DialogActions sx={{ px: 3, pb: 2.5, gap: 1 }}>
-          <Button
-            type="button"
-            variant="outlined"
-            onClick={onClose}
-            disabled={disabled}
-            sx={neutralPillSx}
-          >
-            Cancel
-          </Button>
-          <Button type="submit" variant="contained" disabled={disabled} sx={accentFilledSx}>
-            Add image
-          </Button>
-        </DialogActions>
-      </Box>
-    </Dialog>
-  );
-}
-
-SiteImageAddDialog.propTypes = {
-  title: PropTypes.string.isRequired,
-  open: PropTypes.bool.isRequired,
-  disabled: PropTypes.bool,
-  onClose: PropTypes.func.isRequired,
-  onAdd: PropTypes.func.isRequired,
-};
-
-function EditAltDialog({ open, initialAlt, disabled, error, onClose, onSave }) {
-  const [alt, setAlt] = useState(initialAlt);
-
-  useEffect(() => {
-    if (open) setAlt(initialAlt);
-  }, [open, initialAlt]);
-
-  return (
-    <Dialog
-      open={open}
-      onClose={disabled ? undefined : onClose}
-      fullWidth
-      maxWidth="xs"
-      PaperProps={{ sx: dialogPaperSx }}
-    >
-      <DialogTitle sx={{ fontWeight: 700, pb: 1 }}>Edit alt text</DialogTitle>
-      <Box
-        component="form"
-        onSubmit={event => {
-          event.preventDefault();
-          onSave(alt);
-        }}
-      >
-        <DialogContent sx={{ pt: 1 }}>
-          {error ? (
-            <Alert severity="error" sx={{ mb: 2 }}>
-              {error}
-            </Alert>
-          ) : null}
-          <GlassFormField
-            label="Alt text"
-            value={alt}
-            onChange={event => setAlt(event.target.value)}
-            disabled={disabled}
-            fullWidth
-            autoFocus
-          />
-        </DialogContent>
-        <DialogActions sx={{ px: 3, pb: 2.5, gap: 1 }}>
-          <Button
-            type="button"
-            variant="outlined"
-            onClick={onClose}
-            disabled={disabled}
-            sx={neutralPillSx}
-          >
-            Cancel
-          </Button>
-          <Button type="submit" variant="contained" disabled={disabled} sx={accentFilledSx}>
-            Save alt text
-          </Button>
-        </DialogActions>
-      </Box>
-    </Dialog>
-  );
-}
-
-EditAltDialog.propTypes = {
-  open: PropTypes.bool.isRequired,
-  initialAlt: PropTypes.string.isRequired,
-  disabled: PropTypes.bool,
-  error: PropTypes.string,
-  onClose: PropTypes.func.isRequired,
-  onSave: PropTypes.func.isRequired,
+LiveStatus.propTypes = {
+  live: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 export default function SiteImageSection({
@@ -615,15 +131,28 @@ export default function SiteImageSection({
 }) {
   const { token } = useAuth();
   const [rows, setRows] = useState([]);
-  const [selectedId, setSelectedId] = useState(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
   const [actionError, setActionError] = useState(null);
   const [pending, setPending] = useState(false);
   const [addOpen, setAddOpen] = useState(false);
+  const [addFile, setAddFile] = useState(null);
   const [editRow, setEditRow] = useState(null);
   const [editError, setEditError] = useState(null);
-  const pendingSelectRef = useRef(null);
+  const [replaceRow, setReplaceRow] = useState(null);
+  const [removeRow, setRemoveRow] = useState(null);
+  const [viewer, setViewer] = useState(null);
+  const [notice, setNotice] = useState(null);
+  const [highlightId, setHighlightId] = useState(null);
+  const highlightTimer = useRef(null);
+
+  const isSlide = placement === 'home_slide';
+  const where = isSlide ? 'home page' : 'gallery';
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 6 } }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
+  );
 
   const load = useCallback(
     async ({ quiet = false } = {}) => {
@@ -632,20 +161,13 @@ export default function SiteImageSection({
       if (!quiet) setLoading(false);
       const next = asRecordList(res.data);
       if (!res.ok || !next) {
-        pendingSelectRef.current = null;
         setLoadError(siteImageErrorText(res.data, 'Could not load images.'));
-        if (!quiet) {
-          setRows([]);
-          setSelectedId(null);
-        }
+        if (!quiet) setRows([]);
         return null;
       }
       setLoadError(null);
       const sorted = [...next].sort(compareSiteImageOrder);
-      const queuedSelection = pendingSelectRef.current;
-      pendingSelectRef.current = null;
       setRows(sorted);
-      setSelectedId(current => resolveSelection(sorted, current, queuedSelection));
       return sorted;
     },
     [placement],
@@ -655,49 +177,66 @@ export default function SiteImageSection({
     if (token) load();
   }, [token, load]);
 
-  const handleSelect = id => {
-    setSelectedId(id);
+  useEffect(() => () => clearTimeout(highlightTimer.current), []);
+
+  const flash = id => {
+    clearTimeout(highlightTimer.current);
+    setHighlightId(id);
+    highlightTimer.current = setTimeout(() => setHighlightId(null), 2400);
   };
 
-  const handleMove = async (index, direction) => {
-    const target = index + direction;
-    if (target < 0 || target >= rows.length) return;
-    const [first, second] = sortOrderSwapPatches(rows[index], rows[target]);
+  const sendPatches = async patches => {
+    for (const patch of patches) {
+      // Sequential on purpose: each row's sort_order must land before the next.
+      // eslint-disable-next-line no-await-in-loop
+      const res = await updateSiteImage(token, patch.id, patch.body);
+      if (!res.ok) return res;
+    }
+    return null;
+  };
+
+  const reorder = async (from, to) => {
+    if (from === to || to < 0 || to >= rows.length) return;
+    const patches =
+      Math.abs(from - to) === 1
+        ? sortOrderSwapPatches(rows[from], rows[to])
+        : reorderPatches(rows, from, to);
+    const moved = rows[from];
     setActionError(null);
     setPending(true);
-    const firstRes = await updateSiteImage(token, first.id, first.body);
-    if (!firstRes.ok) {
-      setPending(false);
-      setActionError(siteImageErrorText(firstRes.data, 'Could not reorder those images.'));
-      return;
-    }
-    const secondRes = await updateSiteImage(token, second.id, second.body);
-    if (!secondRes.ok) {
-      setActionError(siteImageErrorText(secondRes.data, 'Could not reorder those images.'));
-      await load({ quiet: true });
-      setPending(false);
-      return;
+    setRows(current => moveRow(current, from, to));
+    const failed = await sendPatches(patches);
+    if (failed) {
+      setActionError(siteImageErrorText(failed.data, 'Could not reorder those images.'));
+    } else {
+      setNotice('Order saved');
+      flash(moved.id);
     }
     await load({ quiet: true });
     setPending(false);
   };
 
+  const handleDragEnd = ({ active, over }) => {
+    if (!over || sameId(active.id, over.id)) return;
+    const from = rows.findIndex(row => sameId(row.id, active.id));
+    const to = rows.findIndex(row => sameId(row.id, over.id));
+    if (from >= 0 && to >= 0) reorder(from, to);
+  };
+
   const handleRemove = async row => {
-    const index = rows.findIndex(item => sameId(item.id, row.id));
-    const neighbor = index >= 0 ? rows[index + 1] || rows[index - 1] || null : null;
     setActionError(null);
     setPending(true);
     const res = await deleteSiteImage(token, row.id);
     if (!res.ok) {
       setPending(false);
+      setRemoveRow(null);
       setActionError(siteImageErrorText(res.data, 'Could not remove that image.'));
       return;
     }
-    if (sameId(selectedId, row.id) && neighbor) {
-      pendingSelectRef.current = { kind: 'id', id: neighbor.id };
-    }
+    setRemoveRow(null);
     await load({ quiet: true });
     setPending(false);
+    setNotice('Photo removed');
   };
 
   const handleAltSave = async alt => {
@@ -713,9 +252,12 @@ export default function SiteImageSection({
       setEditError(siteImageErrorText(res.data, 'Could not save that alt text.'));
       return;
     }
+    const savedId = editRow.id;
     setEditRow(null);
     await load({ quiet: true });
     setPending(false);
+    setNotice('Alt text saved');
+    flash(savedId);
   };
 
   const handleAdd = async ({ file, alt }) => {
@@ -727,16 +269,43 @@ export default function SiteImageSection({
       return siteImageErrorText(res.data, 'Could not add that image.');
     }
     const createdId = createdImageId(res.data);
-    pendingSelectRef.current =
-      createdId != null ? { kind: 'id', id: createdId, fallback: 'last' } : { kind: 'last' };
-    await load({ quiet: true });
+    const sorted = await load({ quiet: true });
     setPending(false);
+    setNotice(`Photo added to the ${where}`);
+    const fallback = sorted && sorted.length ? sorted[sorted.length - 1].id : null;
+    flash(createdId ?? fallback);
     return null;
   };
 
-  const selectedIndex = rows.findIndex(row => sameId(row.id, selectedId));
-  const selectedRow = selectedIndex >= 0 ? rows[selectedIndex] : null;
-  const showRows = !loading && rows.length > 0 && selectedRow;
+  const handleReplace = async file => {
+    if (!replaceRow) return 'Could not replace that image.';
+    const savedId = replaceRow.id;
+    setActionError(null);
+    setPending(true);
+    const res = await replaceSiteImage(token, savedId, file);
+    if (!res.ok) {
+      setPending(false);
+      return siteImageErrorText(res.data, 'Could not replace that image.');
+    }
+    await load({ quiet: true });
+    setPending(false);
+    setNotice('Photo replaced');
+    flash(savedId);
+    return null;
+  };
+
+  const openAdd = (file = null) => {
+    setEditRow(null);
+    setEditError(null);
+    setReplaceRow(null);
+    setAddFile(file);
+    setAddOpen(true);
+  };
+
+  const missingAltCount = rows.filter(row => !trimmedAlt(row)).length;
+  const hasRows = !loading && rows.length > 0;
+  const isEmpty = !loading && !loadError && rows.length === 0;
+  const removeIndex = removeRow ? rows.findIndex(row => sameId(row.id, removeRow.id)) : -1;
 
   return (
     <Box
@@ -745,6 +314,7 @@ export default function SiteImageSection({
       id={panelId}
       aria-labelledby={tabId}
       aria-busy={loading || undefined}
+      sx={{ pt: 3 }}
     >
       <Box
         sx={{
@@ -755,159 +325,202 @@ export default function SiteImageSection({
           gap: 2,
         }}
       >
-        <Box sx={{ minWidth: 0 }}>
+        <Box sx={{ minWidth: 0, flex: '1 1 360px' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 1.25 }}>
             <Typography
               id={headingId}
               component="h2"
-              sx={{ fontWeight: 700, fontSize: { xs: '1.35rem', sm: '1.6rem' }, lineHeight: 1.2 }}
+              sx={{
+                fontWeight: 600,
+                fontSize: { xs: '1.25rem', sm: '1.5rem' },
+                letterSpacing: '0.02em',
+              }}
             >
               {title}
             </Typography>
             {!loading ? (
-              <Box
-                component="span"
+              <Chip
+                size="small"
+                label={photoCountLabel(rows.length)}
                 sx={theme => ({
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  borderRadius: 999,
-                  px: 1.15,
-                  py: 0.35,
-                  fontSize: 12,
                   fontWeight: 700,
-                  letterSpacing: '0.01em',
-                  whiteSpace: 'nowrap',
+                  fontSize: 12,
                   color: 'text.secondary',
-                  bgcolor:
-                    theme.palette.mode === 'dark'
-                      ? alpha('#ffffff', 0.06)
-                      : alpha(WEBSITE_INK, 0.06),
+                  bgcolor: hairline(theme, 0.07),
                 })}
-              >
-                {photoCountLabel(rows.length)}
-              </Box>
+              />
             ) : null}
           </Box>
           <Typography
             sx={{
-              mt: 1,
+              mt: 0.75,
               color: 'text.secondary',
               fontSize: 14,
-              lineHeight: 1.5,
-              maxWidth: 640,
+              lineHeight: 1.55,
+              maxWidth: 620,
             }}
           >
             {placementHint(placement)}
           </Typography>
         </Box>
-        <Button
-          type="button"
-          variant="outlined"
-          disabled={pending}
-          aria-haspopup="dialog"
-          startIcon={<AddIcon sx={{ fontSize: 18 }} />}
-          onClick={() => {
-            setEditRow(null);
-            setEditError(null);
-            setAddOpen(true);
-          }}
-          sx={accentOutlinedSx}
-        >
-          New image
-        </Button>
+        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
+          {isSlide && rows.length > 0 ? (
+            <Button
+              type="button"
+              variant="outlined"
+              startIcon={<PlayArrowRoundedIcon />}
+              onClick={() => setViewer({ index: 0, autoplay: true })}
+              sx={neutralPillSx}
+            >
+              Preview slideshow
+            </Button>
+          ) : null}
+          <Button
+            type="button"
+            variant="contained"
+            disabled={pending}
+            aria-haspopup="dialog"
+            startIcon={<AddIcon />}
+            onClick={() => openAdd()}
+            sx={accentFilledSx}
+          >
+            New image
+          </Button>
+        </Box>
       </Box>
 
       {loadError ? (
-        <Alert severity="error" sx={{ mt: 2 }}>
+        <Alert severity="error" sx={{ mt: 2.5 }}>
           {loadError}
         </Alert>
       ) : null}
       {actionError ? (
-        <Alert severity="error" sx={{ mt: 2 }}>
+        <Alert severity="error" sx={{ mt: 2.5 }} onClose={() => setActionError(null)}>
           {actionError}
         </Alert>
       ) : null}
 
-      {loading ? (
-        <Typography sx={{ mt: 2, color: 'text.secondary' }}>Loading images…</Typography>
+      {isEmpty ? (
+        <LiveStatus live={false}>
+          <Typography sx={{ fontSize: 14, lineHeight: 1.5 }}>{emptyMessage}</Typography>
+        </LiveStatus>
+      ) : null}
+      {hasRows ? (
+        <LiveStatus live>
+          <Typography component="span" sx={{ fontSize: 14, fontWeight: 600 }}>
+            {`Visitors see these ${photoCountLabel(rows.length)} on the ${where}, in this order.`}
+          </Typography>{' '}
+          <Typography component="span" sx={{ fontSize: 14, color: 'text.secondary' }}>
+            Drag a photo to change the order. Changes save right away.
+          </Typography>
+          {missingAltCount > 0 ? (
+            <Typography sx={{ fontSize: 13.5, mt: 0.5, color: 'text.secondary' }}>
+              {missingAltCount === 1
+                ? '1 photo still needs alt text.'
+                : `${missingAltCount} photos still need alt text.`}
+            </Typography>
+          ) : null}
+        </LiveStatus>
       ) : null}
 
-      {!loading && !loadError && rows.length === 0 ? (
-        <Typography
-          sx={{ mt: 2.5, color: 'text.secondary', fontSize: 15, lineHeight: 1.5, maxWidth: 640 }}
+      {isEmpty ? (
+        <PhotoDropzone
+          inputLabel={`Add a photo to ${title}`}
+          disabled={pending}
+          onFile={file => openAdd(file)}
+          sx={{ mt: 2.5, py: { xs: 6, md: 9 }, px: 2 }}
         >
-          {emptyMessage}
-        </Typography>
+          <DropzoneCopy />
+          <Typography sx={{ color: 'text.secondary', fontSize: 13, maxWidth: 420, mt: 0.5 }}>
+            {`Your first photo replaces the built-in ${where} photos.`}
+          </Typography>
+        </PhotoDropzone>
       ) : null}
 
-      {showRows ? (
-        <Box
-          sx={{
-            mt: 2.5,
-            display: 'grid',
-            gridTemplateColumns: { xs: '1fr', md: 'minmax(0, 1fr) minmax(0, 1.05fr)' },
-            gap: 2,
-            alignItems: 'start',
-          }}
-        >
-          <Box sx={surfaceCardSx}>
+      {loading || hasRows ? (
+        <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+          <SortableContext items={rows.map(row => row.id)} strategy={rectSortingStrategy}>
             <Box
+              component={loading ? 'ul' : 'ol'}
+              aria-label={loading ? undefined : `${title} in visitor order`}
               sx={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'baseline',
-                gap: 1,
-                flexWrap: 'wrap',
-                mb: 1.5,
+                mt: 2.5,
+                mb: 0,
+                p: 0,
+                display: 'grid',
+                gridTemplateColumns: {
+                  xs: '1fr',
+                  sm: 'repeat(2, minmax(0, 1fr))',
+                  lg: 'repeat(3, minmax(0, 1fr))',
+                },
+                gap: 2,
               }}
             >
-              <Typography component="h3" sx={{ fontWeight: 700, fontSize: 15 }}>
-                Visitor order
-              </Typography>
-              <Typography sx={{ color: 'text.secondary', fontSize: 13 }}>
-                First photo appears first
-              </Typography>
+              {loading ? (
+                <SiteImageGridSkeleton placement={placement} />
+              ) : (
+                rows.map((row, index) => (
+                  <SiteImageCard
+                    key={row.id}
+                    row={row}
+                    index={index}
+                    placement={placement}
+                    disabled={pending}
+                    highlighted={highlightId != null && sameId(highlightId, row.id)}
+                    onView={at => setViewer({ index: at, autoplay: false })}
+                    onEdit={target => {
+                      setAddOpen(false);
+                      setReplaceRow(null);
+                      setEditError(null);
+                      setEditRow(target);
+                    }}
+                    onReplace={target => {
+                      setAddOpen(false);
+                      setEditRow(null);
+                      setEditError(null);
+                      setReplaceRow(target);
+                    }}
+                    onRemove={setRemoveRow}
+                  />
+                ))
+              )}
+              {hasRows ? (
+                <Box component="li" sx={{ listStyle: 'none', display: 'flex' }}>
+                  <PhotoDropzone
+                    inputLabel={`Add a photo to ${title}`}
+                    disabled={pending}
+                    onFile={file => openAdd(file)}
+                    sx={{ flex: 1, minHeight: 200, px: 2, py: 3 }}
+                  >
+                    <DropzoneCopy compact />
+                  </PhotoDropzone>
+                </Box>
+              ) : null}
             </Box>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              {rows.map((row, index) => (
-                <SiteImageRow
-                  key={row.id}
-                  row={row}
-                  index={index}
-                  count={rows.length}
-                  selected={sameId(row.id, selectedId)}
-                  disabled={pending}
-                  onSelect={handleSelect}
-                  onMove={handleMove}
-                />
-              ))}
-            </Box>
-          </Box>
-          <SiteImagePreview
-            row={selectedRow}
-            index={selectedIndex}
-            count={rows.length}
-            disabled={pending}
-            onEdit={() => {
-              setAddOpen(false);
-              setEditError(null);
-              setEditRow(selectedRow);
-            }}
-            onRemove={handleRemove}
-          />
-        </Box>
+          </SortableContext>
+        </DndContext>
       ) : null}
 
       <SiteImageAddDialog
         title={title}
+        placement={placement}
         open={addOpen}
+        initialFile={addFile}
         disabled={pending}
         onClose={() => setAddOpen(false)}
         onAdd={handleAdd}
       />
+      <SiteImageReplaceDialog
+        title={title}
+        placement={placement}
+        row={replaceRow}
+        disabled={pending}
+        onClose={() => setReplaceRow(null)}
+        onReplace={handleReplace}
+      />
       <EditAltDialog
-        open={Boolean(editRow)}
-        initialAlt={typeof editRow?.alt === 'string' ? editRow.alt : ''}
+        row={editRow}
+        placement={placement}
         disabled={pending}
         error={editError}
         onClose={() => {
@@ -916,6 +529,39 @@ export default function SiteImageSection({
         }}
         onSave={handleAltSave}
       />
+      <RemoveImageDialog
+        row={removeRow}
+        index={Math.max(removeIndex, 0)}
+        placement={placement}
+        isLast={rows.length === 1}
+        disabled={pending}
+        onClose={() => setRemoveRow(null)}
+        onConfirm={handleRemove}
+      />
+      <PhotoViewerDialog
+        rows={rows}
+        placement={placement}
+        startIndex={viewer ? viewer.index : null}
+        autoplay={Boolean(viewer?.autoplay)}
+        onClose={() => setViewer(null)}
+      />
+      <Snackbar
+        open={Boolean(notice)}
+        autoHideDuration={2600}
+        onClose={(_, reason) => {
+          if (reason !== 'clickaway') setNotice(null);
+        }}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      >
+        <Alert
+          severity="success"
+          variant="filled"
+          onClose={() => setNotice(null)}
+          sx={{ borderRadius: 999, fontWeight: 600, alignItems: 'center' }}
+        >
+          {notice}
+        </Alert>
+      </Snackbar>
     </Box>
   );
 }

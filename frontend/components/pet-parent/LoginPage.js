@@ -8,7 +8,7 @@ import { alpha } from '@mui/material/styles';
 import GlassFormField from '@/components/design-studio/GlassFormField';
 import DogHotelInteriorPage from '@/components/dog-hotel/DogHotelInteriorPage';
 import { useAuth } from '@/contexts/AuthContext';
-import { REGISTER_PATH, safeAccountNextPath } from '@/consts/routes';
+import { REGISTER_PATH, postLoginPath } from '@/consts/routes';
 import { WEBSITE_INK } from '@/consts/website-theme';
 import { formatApiErrors } from '@/lib/daycareApi';
 import { FORM_STACK_SX, PRIMARY_BUTTON_SX } from './pet-parent-styles';
@@ -36,7 +36,7 @@ export default function LoginPage() {
       return;
     }
 
-    router.push(safeAccountNextPath(searchParams.get('next')));
+    router.push(postLoginPath(res.user, searchParams.get('next')));
   };
 
   return (

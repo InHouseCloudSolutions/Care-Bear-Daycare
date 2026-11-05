@@ -3,7 +3,7 @@
 import { useContext, useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Box } from '@mui/material';
+import { Box, GlobalStyles } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { createAppTheme } from '@/lib/createAppTheme';
 import { ThemeContext } from '@/contexts/ThemeContext';
@@ -35,10 +35,12 @@ export default function RouteThemeShell({ children, variant = 'website' }) {
   useEffect(() => {
     const root = document.documentElement;
     root.style.colorScheme = muiMode;
+    if (isStaff) root.dataset.staffMode = muiMode;
     return () => {
       root.style.colorScheme = '';
+      delete root.dataset.staffMode;
     };
-  }, [muiMode]);
+  }, [muiMode, isStaff]);
 
   const theme = useMemo(
     () => createAppTheme(muiMode, { staffTypography: isStaff }),
@@ -48,6 +50,19 @@ export default function RouteThemeShell({ children, variant = 'website' }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      {isStaff ? (
+        // The server renders the staff baseline in dark mode before the saved mode is known,
+        // and that <style> tag stays in the page. This rule only matches the mode the client
+        // set on <html>, and outranks the plain `body` rule, so body colours follow the toggle.
+        <GlobalStyles
+          styles={{
+            [`html[data-staff-mode="${muiMode}"] body`]: {
+              backgroundColor: theme.palette.background.default,
+              color: theme.palette.text.primary,
+            },
+          }}
+        />
+      ) : null}
       <RobotsMeta />
       <Box
         className={isStaff ? homeMontserrat.className : undefined}

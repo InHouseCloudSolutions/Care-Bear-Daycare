@@ -13,10 +13,27 @@ export const BOOK_STAY_PATH = '/account/book';
 export const ACCOUNT_API_TEST_PATH = '/account/api-test';
 export const FORGOT_PASSWORD_PATH = '/forgot-password';
 
+/** True when path is exactly prefix or a nested path under prefix/ (rejects /prefix-evil). */
+function isPathUnder(path, prefix) {
+  return path === prefix || path.startsWith(`${prefix}/`);
+}
+
 /** Safe post-login redirect: only paths under ACCOUNT_PATH, else the account root. */
 export function safeAccountNextPath(next) {
-  if (typeof next !== 'string' || !next.startsWith(ACCOUNT_PATH)) return ACCOUNT_PATH;
-  return next;
+  if (typeof next === 'string' && isPathUnder(next, ACCOUNT_PATH)) return next;
+  return ACCOUNT_PATH;
+}
+
+/**
+ * Post-login destination by role.
+ * Staff → /staff (or a safe staff next). Everyone else → /account (or a safe account next).
+ */
+export function postLoginPath(user, next) {
+  if (user?.isStaff === true) {
+    if (typeof next === 'string' && isPathUnder(next, STAFF_PREFIX)) return next;
+    return STAFF_PREFIX;
+  }
+  return safeAccountNextPath(next);
 }
 
 export const THE_BRAND_PATH = '/the-brand';

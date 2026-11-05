@@ -1,0 +1,45 @@
+﻿
+>   ● StaffDeskPage › shows charge, extras, and total on a stay, and adds or removes a catalog item
+  
+      Unable to find role="button" and name "Remove Poop bags"
+  
+      Ignored nodes: comments, script, style
+      [36m<body[39m
+        [33mstyle[39m=[32m"padding-right: 1024px; overflow: hidden;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33maria-hidden[39m=[32m"true"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"MuiBox-root css-1c7po0q"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-d1e1p9"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-1lqt9yq"[39m
+              [36m>[39m
+                [36m<nav[39m
+                  [33maria-label[39m=[32m"Breadcrumb"[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root 
+  css-dxjd43-MuiTypography-root-MuiBreadcrumbs-root"[39m
+                [36m>[39m
+                  [36m<ol[39m
+                    [33mclass[39m=[32m"MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"[39m
+                  [36m>[39m
+                    [36m<li[39m
+                      [33mclass[39m=[32m"MuiBreadcrumbs-li"[39m
+                    [36m>[39m
+                      [36m<p[39m
+                        [33maria-current[39m=[32m"page"[39m
+                        [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 
+css-7q8b3w-MuiTypography-root"[39m
+                      [36m>[39m
+                        [0mStaff desk[0m
+                      [36m</p>[39m
+                    [36m</li>[39m
+                  [36m</ol>[39m
+                [36m</nav>[39m
+                [36m<div[39m
+
+

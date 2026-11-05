@@ -46,7 +46,7 @@ export const PRIMARY_BUTTON_SX = {
 export const PHOTO_BUTTON_SX = {
   textTransform: 'none',
   fontWeight: 600,
-  color: WEBSITE_INK,
+  color: 'text.primary',
   px: 1,
   minWidth: 0,
 };

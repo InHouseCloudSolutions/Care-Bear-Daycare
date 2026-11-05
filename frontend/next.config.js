@@ -53,6 +53,12 @@ const config = {
           ],
         },
       }),
+  // Rewrites proxy the upload body. The default 10MB clone limit truncates a
+  // larger photo and the upstream resets the connection (ERR_CONNECTION_RESET).
+  // The API still rejects anything over 5MB with a field error.
+  experimental: {
+    middlewareClientMaxBodySize: '32mb',
+  },
   transpilePackages: ['@mui/material', '@mui/system', '@mui/styles', '@mui/icons-material'],
   eslint: {
     ignoreDuringBuilds: true,

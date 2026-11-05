@@ -1,4 +1,11 @@
-import { createSiteImage, deleteSiteImage, listSiteImages, updateSiteImage } from './daycareApi';
+import {
+  createSiteImage,
+  deleteSiteImage,
+  listServices,
+  listSiteImages,
+  replaceSiteImage,
+  updateSiteImage,
+} from './daycareApi';
 
 describe('site image client', () => {
   beforeEach(() => {
@@ -23,7 +30,7 @@ describe('site image client', () => {
     const file = new File(['x'], 'dog.jpg', { type: 'image/jpeg' });
     await createSiteImage('tok', { file, alt: 'Dog', placement: 'gallery' });
     const [url, options] = fetch.mock.calls[0];
-    expect(url).toBe('/daycare-api/daycare/site-images/');
+    expect(url).toBe('/daycare-api/daycare/site-images');
     expect(options.method).toBe('POST');
     expect(options.headers.Authorization).toBe('Token tok');
     expect(options.headers['Content-Type']).toBeUndefined();
@@ -31,6 +38,28 @@ describe('site image client', () => {
     expect(options.body.get('alt')).toBe('Dog');
     expect(options.body.get('placement')).toBe('gallery');
     expect(options.body.get('file').name).toBe('dog.jpg');
+  });
+
+  it('posts only the file when replacing a photo', async () => {
+    const file = new File(['x'], 'dog.jpg', { type: 'image/jpeg' });
+    await replaceSiteImage('tok', 4, file);
+    const [url, options] = fetch.mock.calls[0];
+    expect(url).toBe('/daycare-api/daycare/site-images/4/photo');
+    expect(options.method).toBe('POST');
+    expect(options.headers.Authorization).toBe('Token tok');
+    expect(options.headers['Content-Type']).toBeUndefined();
+    expect(options.body).toBeInstanceOf(FormData);
+    expect(options.body.get('file').name).toBe('dog.jpg');
+    expect(options.body.get('alt')).toBeNull();
+    expect(options.body.get('placement')).toBeNull();
+  });
+
+  it('asks for every service when staff include hidden ones', async () => {
+    await listServices('tok');
+    await listServices('tok', { all: true });
+    expect(fetch.mock.calls[0][0]).toBe('/daycare-api/daycare/services/');
+    expect(fetch.mock.calls[0][1].headers.Authorization).toBe('Token tok');
+    expect(fetch.mock.calls[1][0]).toBe('/daycare-api/daycare/services/?all=1');
   });
 
   it('patches alt and sort order, and deletes by id', async () => {

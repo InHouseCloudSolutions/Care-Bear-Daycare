@@ -4,7 +4,7 @@ Reference for the carebeardaycare.ca app. The API lives on the IHCS backend, not
 
 All daycare paths below are relative to `{BASE}/api/daycare/`. Auth paths are under `{BASE}/api/auth/`.
 
-JSON for every route except the site-image upload. Send `Content-Type: application/json` on JSON routes. Trailing slashes are required. Field names are **snake_case**. Dates are `YYYY-MM-DD`. Times are `HH:MM:SS`. Money is a decimal string with two places (for example `"35.00"`). There are no card payments.
+JSON for every route except photo and site-image uploads. Send `Content-Type: application/json` on JSON routes. Trailing slashes are required. Field names are **snake_case**. Dates are `YYYY-MM-DD`. Times are `HH:MM:SS`. Money is a decimal string with two places (for example `"35.00"`). There are no card payments.
 
 ## Auth
 
@@ -52,7 +52,7 @@ Validation errors are **400** with either a field map (`{ "ends_on": ["..."] }`)
 
 ## Lists
 
-These list routes return a **JSON array** (not paginated): pet parents, services, dogs, vaccines, bookings, closures, care updates, conversations.
+These list routes return a **JSON array** (not paginated): pet parents, services, dogs, vaccines, bookings, closures, care updates, conversations, extras (catalog and per-booking).
 
 `GET /api/daycare/availability/` returns `{ "days": [...] }`, not a bare array.
 
@@ -107,9 +107,17 @@ Returns the same `pet_parent` object. PATCH may send `first_name`, `last_name`, 
 
 ### GET, POST `/api/daycare/pet-parents/` — staff
 
-POST body matches register (`email`, `password`, `first_name`, `last_name`, `phone`). Response is the `pet_parent` object only (no token). **201**.
+POST creates a household (a pet-parent account). Body: `email` (required), `password` (optional), `first_name`, `last_name`, `phone`, `address`, `city`, `emergency_name`, `emergency_phone`. Response is the `pet_parent` object only (no token). **201**. A duplicate email is **400** `{ "email": "..." }`; a weak password is **400** `{ "password": "..." }`.
 
-### GET `/api/daycare/pet-parents/<id>/` — staff
+Without a `password` the account has no usable password, so that parent cannot sign in until one is set. Public `/register/` still requires a password.
+
+### GET, PATCH `/api/daycare/pet-parents/<id>/` — staff
+
+PATCH may send `first_name`, `last_name`, `phone`, `address`, `city`, `emergency_name`, `emergency_phone`. `email` is read-only and ignored. PUT is **405**.
+
+### POST, DELETE `/api/daycare/pet-parents/<id>/photo/` — staff
+
+Multipart field `file`: JPEG, PNG, WebP, or GIF, up to 40 MB. The API scales the longest edge to 1600 px and stores WebP, the same as a gallery site image. Animated GIFs stay as uploaded. **201** returns the pet parent, including `photo_url`. The image is private; only that parent and staff can read it. DELETE is **204**. A pet parent sets their own photo with `POST /api/daycare/me/photo/` and gets **403** on this route.
 
 ## Services
 
@@ -127,6 +135,8 @@ Seeded rows (rate starts at `0.00`, `max_dogs_per_day` is `null` until staff set
 `rate_unit`: `day`, `night`, `visit`.
 
 `max_dogs_per_day`: integer, or `null` for no cap. Walk and drop-in use this cap. Daycare and boarding do not; they share the pool under Bookings.
+
+`check_in_from` / `check_in_until` / `check_out_from` / `check_out_until`: optional `HH:MM:SS` windows, or `null`. They are informational except for `check_out_until`, which drives the late-checkout fee (see Bookings). All times are facility-local (`America/Toronto`).
 
 ### GET `/api/daycare/services/` — any authenticated user
 
@@ -149,7 +159,11 @@ Service object:
   "rate": "35.00",
   "rate_unit": "day",
   "max_dogs_per_day": 10,
-  "active": true
+  "active": true,
+  "check_in_from": "07:00:00",
+  "check_in_until": "09:30:00",
+  "check_out_from": "16:00:00",
+  "check_out_until": "18:00:00"
 }
 ```
 
@@ -189,6 +203,10 @@ Response adds `id`, `pet_parent_id`, `created_at`, `updated_at`. `weight_lb` and
 
 ### GET, PATCH, DELETE `/api/daycare/dogs/<id>/` — owner or staff
 
+### POST, DELETE `/api/daycare/dogs/<id>/photo/` — owner or staff
+
+Same file rules as a parent photo. **201** returns the dog, including `photo_url`. The image is public. DELETE is **204**. Another parent's dog is **404**.
+
 ## Vaccines
 
 `kind`: `rabies`, `dhpp`, `bordetella`, `other`. For `other`, send `label`.
@@ -218,17 +236,29 @@ Response:
 
 ## Closures
 
-Named closed ranges (holidays). Staff manage them on the daycare site at `/staff`. A date inside any range is closed for every service, including staff bookings. `override_rules` does not skip a closure. Confirming or creating an occupying booking on a closed date is **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`.
+Named holiday ranges. Staff manage them on the daycare site at `/staff`. Each has a `kind`:
+
+| `kind` | Effect |
+|--------|--------|
+| `closed` (default) | Blocks every service, including staff. `surcharge_percent` is always `null`. Confirming or creating an occupying booking on a closed date is **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`. `override_rules` does not skip it. |
+| `surcharge` | Facility stays open. `surcharge_percent` (0–100) is required. Bookings whose occupied dates overlap get a whole-booking markup (highest overlapping %). Availability is not `closed`. |
 
 ### GET, POST `/api/daycare/closures/` — staff
 
 Lists are a JSON array. POST is **201**.
 
 ```json
-{ "id": 1, "name": "Christmas", "starts_on": "2026-12-24", "ends_on": "2026-12-26" }
+{
+  "id": 1,
+  "name": "Christmas",
+  "starts_on": "2026-12-24",
+  "ends_on": "2026-12-26",
+  "kind": "closed",
+  "surcharge_percent": null
+}
 ```
 
-`name` is required. `ends_on` must be on or after `starts_on`. **400** is a field map or `{ "detail": "..." }`.
+`name` is required. `ends_on` must be on or after `starts_on`. Surcharge without a percent is **400**. Closed clears `surcharge_percent`. **400** is a field map or `{ "detail": "..." }`.
 
 ### GET, PATCH, DELETE `/api/daycare/closures/<id>/` — staff
 
@@ -260,13 +290,17 @@ Pet parent:
   "dogs": [3, 4],
   "starts_on": "2026-11-02",
   "ends_on": "2026-11-04",
-  "starts_at": null,
-  "ends_at": null,
+  "est_checkin_start": null,
+  "est_checkin_end": null,
+  "est_checkout_start": null,
+  "est_checkout_end": null,
   "parent_note": "Pick up after 5"
 }
 ```
 
 `status`, `charge`, and `pet_parent_id` sent by a pet parent are ignored. The booking is stored as `requested`. An inactive service is **400**.
+
+The estimated check-in window (`est_checkin_start`–`est_checkin_end`) and estimated check-out window (`est_checkout_start`–`est_checkout_end`) are optional times. Either side of a window may be blank. When both sides are set, end must be at or after start on the same day, or the request is **400**.
 
 Staff must also send `pet_parent_id` and may send `status`, `charge`, and `override_rules`. If `charge` is omitted, it is computed. A pet parent who sends `override_rules` is ignored.
 
@@ -276,7 +310,7 @@ If this pet parent already has a `requested`, `confirmed`, or `checked_in` booki
 
 Pet parent PATCH may only cancel. Body must be `{ "status": "cancelled" }`. Allowed only from `requested` or `confirmed`. Any other status value is **400** and nothing changes. Other fields in that request are ignored.
 
-Staff PATCH may change `service_id`, `dogs`, `status`, dates, times, `parent_note`, and `charge`. Staff may also send `override_rules: true`. That flag is not stored and is not returned.
+Staff PATCH may change `service_id`, `dogs`, `status`, dates, times, `parent_note`, `charge`, `checked_in_at`, and `checked_out_at`. Staff may also send `override_rules: true`. That flag is not stored and is not returned. `checked_in_at` and `checked_out_at` sent by a pet parent are ignored.
 
 Booking object (`dogs` is a list of dog ids):
 
@@ -289,14 +323,36 @@ Booking object (`dogs` is a list of dog ids):
   "status": "requested",
   "starts_on": "2026-11-02",
   "ends_on": "2026-11-04",
-  "starts_at": null,
-  "ends_at": null,
+  "est_checkin_start": null,
+  "est_checkin_end": null,
+  "est_checkout_start": null,
+  "est_checkout_end": null,
   "parent_note": "",
   "charge": "105.00",
+  "checked_in_at": null,
+  "checked_out_at": null,
+  "extras": [],
+  "total": "105.00",
   "created_at": "2026-10-27T14:00:00Z",
   "updated_at": "2026-10-27T14:00:00Z"
 }
 ```
+
+`checked_in_at` and `checked_out_at` are `null` until staff set them, or until the status transitions (see below). `extras` lists this booking's billed add-ons, each a `BookingExtra` (see Extras below). `total` is `charge` plus the sum of every `extras[].amount`, both read-only and computed on every read.
+
+#### Check-in, checkout, and the late-checkout fee
+
+When staff PATCH `status` to `checked_in` and `checked_in_at` is still empty, the API stamps `checked_in_at` with the current time. When staff PATCH `status` to `completed` and `checked_out_at` is still empty, the API stamps `checked_out_at` the same way. Staff may also set either timestamp explicitly in the same PATCH or a later one.
+
+Whenever `checked_out_at` changes (explicitly, or by the `completed` auto-stamp), the API recalculates the late-checkout line:
+
+- Only `daycare` and `boarding` services can be late; `walk` and `drop_in` never are.
+- The service needs a `check_out_until` time. Without one, there is no late fee.
+- "Due" is `ends_on` + `check_out_until` in `America/Toronto`. Any time after that is late; 1 minute late bills a full hour (`ceil(minutes_late / 60)`).
+- There must be exactly one **active** `Extra` with `kind: "late_checkout"` in the catalog (see Extras). Without one, no fee is charged even if the stay was late.
+- The fee is `hours_late × that Extra's unit_price`, capped at `service.rate × number of dogs on the booking` (one day/night's rate per dog).
+- The booking's late line is fully replaced each time: the old line (if any) is deleted and a new one is created from the current catalog entry's `name` and `unit_price`. Editing the catalog price afterward does **not** change lines already on a booking — only the next recalculation does.
+- Correcting `checked_out_at` back to on-time removes the line.
 
 ### Dates and charge
 
@@ -304,9 +360,9 @@ Booking object (`dogs` is a list of dog ids):
 |------|--------|--------|
 | `daycare` | `ends_on` on or after `starts_on` | inclusive day count |
 | `boarding` | `ends_on` after `starts_on` (checkout morning). Same day is **400** | number of nights (`ends_on - starts_on`) |
-| `walk`, `drop_in` | `ends_on` must equal `starts_on`. `starts_at` / `ends_at` optional | 1 |
+| `walk`, `drop_in` | `ends_on` must equal `starts_on`. `est_checkin_start`, `est_checkin_end`, `est_checkout_start`, and `est_checkout_end` optional | 1 |
 
-`charge = rate × units × number of dogs`, unless staff send `charge`.
+Base charge is `rate × units × number of dogs`. If any occupied date overlaps a `kind=surcharge` closure, the whole booking is multiplied by `(1 + max_percent / 100)`, using the highest overlapping surcharge percent, then quantized to cents. Staff who send `charge` skip auto markup.
 
 ### Capacity and double-booking
 
@@ -341,7 +397,7 @@ If `max_dogs_per_day` is set, an occupying walk or drop-in is **400** when `star
 
 #### Closures
 
-A date inside a named closure range is closed for every service, including staff. See Closures above. `override_rules` does not skip it. **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`.
+`kind=closed` ranges block every service, including staff. See Closures above. `override_rules` does not skip them. **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`. `kind=surcharge` does not block; it only affects charge (see Dates and charge).
 
 #### Same dog
 
@@ -353,7 +409,7 @@ Staff may send `override_rules: true` on booking POST or PATCH. That skips the f
 
 #### Adding dogs to the same stay
 
-POST with the same pet parent, service, `starts_on`, and `ends_on` as an existing `requested`, `confirmed`, or `checked_in` booking adds the dogs onto that booking (the union) instead of creating a second row. The response is that booking (**201**). Status stays as it was. `parent_note`, `starts_at`, and `ends_at` update when they are sent.
+POST with the same pet parent, service, `starts_on`, and `ends_on` as an existing `requested`, `confirmed`, or `checked_in` booking adds the dogs onto that booking (the union) instead of creating a second row. The response is that booking (**201**). Status stays as it was. `parent_note`, `est_checkin_start`, `est_checkin_end`, `est_checkout_start`, and `est_checkout_end` update when they are sent.
 
 If the booking is occupying, the rules run again for the combined dogs unless staff send `override_rules`. When they pass, the new dogs count immediately and the status is unchanged. When they fail, nothing changes and the response is **400**.
 
@@ -388,7 +444,7 @@ Dogs must belong to the caller. Staff may ask about any household, and every id 
 
 Each date is a one-day probe for the selected dogs and service. Daycare uses `starts_on` = `ends_on` = that date. Boarding uses `starts_on` = that date and `ends_on` = the next day. A non-social checkout extension is part of those occupied dates.
 
-- `closed` — a closure range includes that date. `reason` is `closed`.
+- `closed` — a `kind=closed` closure range includes that date. `reason` is `closed`. Surcharge holidays do not produce `closed`.
 - `open` — the probe would be accepted, and no other family is on the dates it occupies. `reason` is `null`.
 - `joinable` — the probe would be accepted, and exactly one other social family (1 or 2 dogs, all `good_with_dogs`) is already on the shared pool for those dates. The selected dogs must themselves be 1 or 2 dogs, all `good_with_dogs`. `reason` is `null`.
 - `unavailable` — the probe is rejected because of other dogs. `reason` is `booked`.
@@ -432,6 +488,61 @@ All booleans default to `false`. `body` may be `""`.
 ```
 
 `author` is the staff user's id. A pet parent POST is **403**.
+
+## Extras
+
+A catalog of billable add-ons (`Extra`), and the line items staff attach to a booking (`BookingExtra`, returned nested as `extras` on the booking — see Bookings).
+
+`kind`: `item` (a regular catalog add-on, e.g. "Bath", "Nail trim") or `late_checkout` (the system-generated late fee — see Bookings). At most one **active** `Extra` may have `kind: "late_checkout"`.
+
+### GET, POST `/api/daycare/extras/` — staff, not paginated
+
+```json
+{ "name": "Bath", "unit_price": "25.00", "active": true, "kind": "item" }
+```
+
+Response adds `id`:
+
+```json
+{ "id": 1, "name": "Bath", "unit_price": "25.00", "active": true, "kind": "item" }
+```
+
+Creating or activating a second `kind: "late_checkout"` row while another is active is **400** `{ "active": "Another active late checkout fee already exists. Deactivate it first." }`.
+
+### GET, PATCH, DELETE `/api/daycare/extras/<id>/` — staff
+
+Editing `unit_price` only affects future `BookingExtra` lines; existing lines keep the price they were created with.
+
+### GET, POST `/api/daycare/bookings/<booking_id>/extras/` — owner or staff (POST staff only)
+
+GET returns a JSON array of that booking's `BookingExtra` lines (same access as care updates: the owning pet parent or staff).
+
+POST body:
+
+```json
+{ "extra_id": 1, "quantity": 1 }
+```
+
+`quantity` defaults to `1`. The line snapshots the catalog's `name` and `unit_price` at creation time. Posting an `extra_id` whose `kind` is `late_checkout` is **400** — that line is system-only and cannot be added here. Response (**201**) is the `BookingExtra`:
+
+```json
+{
+  "id": 5,
+  "extra_id": 1,
+  "description": "Bath",
+  "quantity": 1,
+  "unit_price": "25.00",
+  "amount": "25.00",
+  "kind": "item",
+  "created_at": "2026-11-02T18:00:00Z"
+}
+```
+
+`extra_id` is `null` if the catalog `Extra` is later deleted; `description`, `unit_price`, and `amount` are unaffected (they are a snapshot).
+
+### DELETE `/api/daycare/bookings/<booking_id>/extras/<id>/` — staff — 204
+
+Only `kind: "item"` lines can be deleted this way. Deleting a `kind: "late_checkout"` line is **400** `{ "detail": "The late checkout fee is managed automatically." }` — correct the booking's `checked_out_at` instead.
 
 ## Messages
 
@@ -587,7 +698,7 @@ Also `placement=gallery`. No token. The response is a JSON array (not a paginate
 
 ### POST `/api/daycare/site-images/` — staff — 201
 
-Multipart, not JSON. Fields are `file`, `alt`, and `placement`. The API checks the file type and a 5 MB limit and returns the reason as a validation error.
+Multipart, not JSON. Fields are `file`, `alt`, and `placement`. The staff page shrinks large photos in the browser before upload. The API accepts up to 40 MB, then scales the image (2400 px longest edge for slides, 1600 px for gallery) and stores it as WebP. A file it can't read comes back as a validation error.
 
 ### PATCH `/api/daycare/site-images/<id>/` — staff
 
@@ -605,4 +716,4 @@ Local dev allows every origin.
 
 ## Not in this API
 
-Card payments, invoices, vaccine-expiry blocking, and a second login endpoint. Holidays, bookings, households, and site images are managed at `/staff` on the daycare site through the routes above. Django admin remains at `{BASE}/api/admin/` for other staff data and is separate from this JSON API.
+Card payments, a printable invoice document, vaccine-expiry blocking, and a second login endpoint. The late-checkout fee and catalog extras compute a `total` on the booking; they do not create a payable invoice. Holidays, bookings, households, and site images are managed at `/staff` on the daycare site through the routes above. Django admin remains at `{BASE}/api/admin/` for other staff data and is separate from this JSON API.

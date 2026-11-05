@@ -1,0 +1,213 @@
+﻿node.exe : FAIL components/staff/StaffDeskPage.test.js
+At C:\Program Files\nodejs\yarn.ps1:16 char:5
++     & "$basedir/node$exe"  "$basedir/node_modules/corepack/dist/yarn. ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (FAIL components...eskPage.test.js:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  StaffDeskPage
+    × manages the extras catalog: lists, toggles, and creates (397 ms)
+    ○ skipped loads hidden services so staff can turn them back on
+    ○ skipped shows the shared staff header and the waiting request
+    ○ skipped groups a checked-in stay under in care and checks it out
+    ○ skipped offers home page slides and gallery beside the other desk tabs
+    ○ skipped confirms a requested stay and reloads
+    ○ skipped edits, deletes, and books from the household actions menu
+    ○ skipped uploads a household photo and a dog photo
+    ○ skipped deletes a dog from the household
+    ○ skipped creates a household from the Households tab
+    ○ skipped keeps a household dialog open and shows the server error
+    ○ skipped adds a holiday and checks the dates first
+    ○ skipped adds an open surcharge holiday
+    ○ skipped shows charge, extras, and total on a stay, and adds or removes a catalog item
+    ○ skipped corrects check-in and checkout times on a stay
+    ○ skipped sends a pet parent to their account
+
+  ● StaffDeskPage › manages the extras catalog: lists, toggles, and creates
+
+    TestingLibraryElementError: Found multiple elements with the text: Late checkout fee
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, script, style
+    [36m<p[39m
+      [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 css-1qqynwt-MuiTypography-root"[39m
+    [36m>[39m
+      [0mLate checkout fee[0m
+    [36m</p>[39m
+
+    Ignored nodes: comments, script, style
+    [36m<span[39m
+      [33mclass[39m=[32m"MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"[39m
+    [36m>[39m
+      [0mLate checkout fee[0m
+    [36m</span>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or 
+`findAllByText`)).
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"MuiBox-root css-1c7po0q"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"MuiBox-root css-d1e1p9"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-1lqt9yq"[39m
+            [36m>[39m
+              [36m<nav[39m
+                [33maria-label[39m=[32m"Breadcrumb"[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root 
+css-dxjd43-MuiTypography-root-MuiBreadcrumbs-root"[39m
+              [36m>[39m
+                [36m<ol[39m
+                  [33mclass[39m=[32m"MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"[39m
+                [36m>[39m
+                  [36m<li[39m
+                    [33mclass[39m=[32m"MuiBreadcrumbs-li"[39m
+                  [36m>[39m
+                    [36m<p[39m
+                      [33maria-current[39m=[32m"page"[39m
+                      [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 css-7q8b3w-MuiTypography-root"[39m
+                    [36m>[39m
+                      [0mStaff desk[0m
+                    [36m</p>[39m
+                  [36m</li>[39m
+                [36m</ol>[39m
+              [36m</nav>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-1qocved"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary 
+MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text 
+MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary 
+css-13qizk8-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mhref[39m=[32m"/staff/calendar"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium 
+css-1d6wzja-MuiButton-startIcon"[39m
+                  [36m>[39m
+                    [36m<svg[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-hwaqf3-MuiSvgIcon-root"[39m
+                      [33mdata-testid[39m=[32m"CalendarMonthOutlinedIcon"[39m
+                      [33mfocusable[39m=[32m"false"[39m
+                      [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [36m>[39m
+                      [36m<path[39m
+                        [33md[39m=[32m"M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 
+2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V10h14zm0-12H5V6h14zM9 14H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm-8 4H7v-2h2zm4 
+0h-2v-2h2zm4 0h-2v-2h2z"[39m
+                      [36m/>[39m
+                    [36m</svg>[39m
+                  [36m</span>[39m
+                  [0mCalendar[0m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"[39m
+                  [36m/>[39m
+                [36m</a>[39m
+                [36m<button[39m
+                  [33maria-label[39m=[32m"Switch to dark mode"[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium 
+css-1ujbc24-MuiButtonBase-root-MuiIconButton-root"[39m
+                  [33mdata-mui-internal-clone-element[39m=[32m"true"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-16me2ba-MuiSvgIcon-root"[39m
+                    [33mdata-testid[39m=[32m"DarkModeOutlinedIcon"[39m
+                    [33mfocusable[39m=[32m"false"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M9.37 5.51c-.18.64-.27 1.31-.27 1.99 0 4.08 3.32 7.4 7.4 7.4.68 0 1.35-.09 
+1.99-.27C17.45 17.19 14.93 19 12 19c-3.86 0-7-3.14-7-7 0-2.93 1.81-5.45 4.37-6.49M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 
+9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 
+2.26-4.4-.44-.06-.9-.1-1.36-.1"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"[39m
+                  [36m/>[39m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary 
+MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text 
+MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary 
+css-13qizk8-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium 
+css-1d6wzja-MuiButton-startIcon"[39m
+                  [36m>[39m
+                    [36m<svg[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-hwaqf3-MuiSvgIcon-root"[39m
+                      [33mdata-testid[39m=[32m"LogoutRoundedIcon"[39m
+                      [33mfocusable[39m=[32m"false"[39m
+                      [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [36m>[39m
+                      [36m<path[39m
+                        [33md[39m=[32m"M5 5h6c.55 0 1-.45 1-1s-.45-1-1-1H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h6c.55 0 
+1-.45 1-1s-.45-1-1-1H5z"[39m
+                      [36m/>[39m
+                      [36m<path[39m
+                        [33md[39m=[32m"m20.65 11.65-2.79-2.79c-.32-.32-.86-.1-.86.35V11h-7c-.55 0-1 .45-1 1s.45 1 1 
+1h7v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.19.2-.51.01-.7"[39m
+                      [36m/>[39m
+                    [36m</svg>[39m
+                  [36m</span>[39m
+                  [0mLog out[0m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"[39m
+                  [36m/>[39m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<h1[39m
+              [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 css-pgpbyj-MuiTypography-root"[39m
+            [36m>[39m
+              [0mStaff desk[0m
+            [36m</h1>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 css-rq6e34-MuiTypography-root"[39m
+            [36m>[39m
+              [0mHello, Chris. Here’s what’s happening at Care Bear.[0m
+            [36m</p>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-11li9ce"[39m
+            [36m>[39m
+              [36m<button[39m
+         ...
+
+      452 |     fireEvent.click(screen.getByRole('tab', { name: /Extras/ }));
+      453 |     expect(await screen.findByText('Bath')).toBeInTheDocument();
+    > 454 |     expect(screen.getByText('Late checkout fee')).toBeInTheDocument();
+          |                   ^
+      455 |
+      456 |     await act(async () => {
+      457 |       fireEvent.click(screen.getByRole('checkbox', { name: 'Bath active' }));
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+      at node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+      at Object.getByText (components/staff/StaffDeskPage.test.js:454:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 15 skipped, 16 total
+Snapshots:   0 total
+Time:        5.096 s, estimated 34 s
+Ran all test suites matching /components\\staff\\StaffDeskPage.test.js/i with tests matching "manages the extras 
+catalog".

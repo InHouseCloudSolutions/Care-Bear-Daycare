@@ -1,0 +1,30 @@
+﻿node.exe : PASS components/staff/StaffDeskPage.test.js (6.684 s)
+At C:\Program Files\nodejs\yarn.ps1:16 char:5
++     & "$basedir/node$exe"  "$basedir/node_modules/corepack/dist/yarn. ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (PASS components...st.js (6.684 s):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  StaffDeskPage
+    √ shows charge, extras, and total on a stay, and adds or removes a catalog item (3320 ms)
+    ○ skipped loads hidden services so staff can turn them back on
+    ○ skipped shows the shared staff header and the waiting request
+    ○ skipped groups a checked-in stay under in care and checks it out
+    ○ skipped offers home page slides and gallery beside the other desk tabs
+    ○ skipped confirms a requested stay and reloads
+    ○ skipped edits, deletes, and books from the household actions menu
+    ○ skipped uploads a household photo and a dog photo
+    ○ skipped deletes a dog from the household
+    ○ skipped creates a household from the Households tab
+    ○ skipped keeps a household dialog open and shows the server error
+    ○ skipped adds a holiday and checks the dates first
+    ○ skipped adds an open surcharge holiday
+    ○ skipped manages the extras catalog: lists, toggles, and creates
+    ○ skipped corrects check-in and checkout times on a stay
+    ○ skipped sends a pet parent to their account
+
+Test Suites: 1 passed, 1 total
+Tests:       15 skipped, 1 passed, 16 total
+Snapshots:   0 total
+Time:        8.001 s
+Ran all test suites matching /components\\staff\\StaffDeskPage.test.js/i with tests matching "shows charge, extras".

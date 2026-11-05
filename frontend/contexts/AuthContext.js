@@ -35,12 +35,13 @@ export const AuthProvider = ({ children }) => {
 
       if (meRes.status === 401 || parentRes.status === 401) {
         clearAuth();
-        return false;
+        return { ok: false, user: null };
       }
 
-      setUser(meRes.ok ? meRes.data : null);
+      const nextUser = meRes.ok ? meRes.data : null;
+      setUser(nextUser);
       setPetParent(parentRes.ok ? parentRes.data : null);
-      return true;
+      return { ok: true, user: nextUser };
     },
     [clearAuth],
   );
@@ -64,8 +65,8 @@ export const AuthProvider = ({ children }) => {
       const nextToken = res.data.token;
       writeStorageItem(TOKEN_KEY, nextToken);
       setToken(nextToken);
-      await loadProfiles(nextToken);
-      return res;
+      const { user: meUser } = await loadProfiles(nextToken);
+      return { ...res, user: meUser };
     },
     [loadProfiles],
   );

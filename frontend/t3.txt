@@ -1,0 +1,289 @@
+﻿  console.error
+    Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+        at StaffDeskPage (C:\projects\In House Cloud Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+        at DefaultPropsProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+        at RtlProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      45 |       next[key] = rows || [];
+      46 |     });
+    > 47 |     setData(next);
+         |     ^
+      48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+      49 |     setLoading(false);
+      50 |   }, [token]);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setData (components/staff/useStaffDeskData.js:47:5)
+
+  console.error
+    Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+        at StaffDeskPage (C:\projects\In House Cloud Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+        at DefaultPropsProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+        at RtlProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      46 |     });
+      47 |     setData(next);
+    > 48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+         |     ^
+      49 |     setLoading(false);
+      50 |   }, [token]);
+      51 |
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setLoadError (components/staff/useStaffDeskData.js:48:5)
+
+  console.error
+    Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+        at StaffDeskPage (C:\projects\In House Cloud Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+        at DefaultPropsProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+        at RtlProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+        at ThemeProvider (C:\projects\In House Cloud Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      47 |     setData(next);
+      48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+    > 49 |     setLoading(false);
+         |     ^
+      50 |   }, [token]);
+      51 |
+      52 |   useEffect(() => {
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setLoading (components/staff/useStaffDeskData.js:49:5)
+
+node.exe : FAIL components/staff/StaffDeskPage.test.js (24.808 s)
+At C:\Program Files\nodejs\yarn.ps1:16 char:5
++     & "$basedir/node$exe"  "$basedir/node_modules/corepack/dist/yarn. ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (FAIL components...t.js (24.808 s):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  StaffDeskPage
+    √ loads hidden services so staff can turn them back on (446 ms)
+    √ shows the shared staff header and the waiting request (846 ms)
+    √ groups a checked-in stay under in care and checks it out (599 ms)
+    √ offers home page slides and gallery beside the other desk tabs (446 ms)
+    √ confirms a requested stay and reloads (793 ms)
+    √ edits, deletes, and books from the household actions menu (1975 ms)
+    √ uploads a household photo and a dog photo (3287 ms)
+    √ deletes a dog from the household (2192 ms)
+    √ creates a household from the Households tab (1124 ms)
+    √ keeps a household dialog open and shows the server error (960 ms)
+    √ adds a holiday and checks the dates first (1117 ms)
+    √ adds an open surcharge holiday (1260 ms)
+    √ manages the extras catalog: lists, toggles, and creates (1316 ms)
+    × shows charge, extras, and total on a stay, and adds or removes a catalog item (3487 ms)
+    √ corrects check-in and checkout times on a stay (1716 ms)
+    √ sends a pet parent to their account (2 ms)
+
+  ● StaffDeskPage › shows charge, extras, and total on a stay, and adds or removes a catalog item
+
+    Unable to find role="button" and name "Remove Poop bags"
+
+    Ignored nodes: comments, script, style
+    [36m<body[39m
+      [33mstyle[39m=[32m"padding-right: 1024px; overflow: hidden;"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33maria-hidden[39m=[32m"true"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"MuiBox-root css-1c7po0q"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"MuiBox-root css-d1e1p9"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-1lqt9yq"[39m
+            [36m>[39m
+              [36m<nav[39m
+                [33maria-label[39m=[32m"Breadcrumb"[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root 
+css-dxjd43-MuiTypography-root-MuiBreadcrumbs-root"[39m
+              [36m>[39m
+                [36m<ol[39m
+                  [33mclass[39m=[32m"MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"[39m
+                [36m>[39m
+                  [36m<li[39m
+                    [33mclass[39m=[32m"MuiBreadcrumbs-li"[39m
+                  [36m>[39m
+                    [36m<p[39m
+                      [33maria-current[39m=[32m"page"[39m
+                      [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 css-7q8b3w-MuiTypography-root"[39m
+                    [36m>[39m
+                      [0mStaff desk[0m
+                    [36m</p>[39m
+                  [36m</li>[39m
+                [36m</ol>[39m
+              [36m</nav>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-1qocved"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary 
+MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text 
+MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary 
+css-13qizk8-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mhref[39m=[32m"/staff/calendar"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium 
+css-1d6wzja-MuiButton-startIcon"[39m
+                  [36m>[39m
+                    [36m<svg[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-hwaqf3-MuiSvgIcon-root"[39m
+                      [33mdata-testid[39m=[32m"CalendarMonthOutlinedIcon"[39m
+                      [33mfocusable[39m=[32m"false"[39m
+                      [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [36m>[39m
+                      [36m<path[39m
+                        [33md[39m=[32m"M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 
+2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V10h14zm0-12H5V6h14zM9 14H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm-8 4H7v-2h2zm4 
+0h-2v-2h2zm4 0h-2v-2h2z"[39m
+                      [36m/>[39m
+                    [36m</svg>[39m
+                  [36m</span>[39m
+                  [0mCalendar[0m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"[39m
+                  [36m/>[39m
+                [36m</a>[39m
+                [36m<button[39m
+                  [33maria-label[39m=[32m"Switch to dark mode"[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium 
+css-1ujbc24-MuiButtonBase-root-MuiIconButton-root"[39m
+                  [33mdata-mui-internal-clone-element[39m=[32m"true"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-16me2ba-MuiSvgIcon-root"[39m
+                    [33mdata-testid[39m=[32m"DarkModeOutlinedIcon"[39m
+                    [33mfocusable[39m=[32m"false"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M9.37 5.51c-.18.64-.27 1.31-.27 1.99 0 4.08 3.32 7.4 7.4 7.4.68 0 1.35-.09 
+1.99-.27C17.45 17.19 14.93 19 12 19c-3.86 0-7-3.14-7-7 0-2.93 1.81-5.45 4.37-6.49M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 
+9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 
+2.26-4.4-.44-.06-.9-.1-1.36-.1"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"[39m
+                  [36m/>[39m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary 
+MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text 
+MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary 
+css-13qizk8-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium 
+css-1d6wzja-MuiButton-startIcon"[39m
+                  [36m>[39m
+                    [36m<svg[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-hwaqf3-MuiSvgIcon-root"[39m
+                      [33mdata-testid[39m=[32m"LogoutRoundedIcon"[39m
+                      [33mfocusable[39m=[32m"false"[39m
+                      [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [36m>[39m
+                      [36m<path[39m
+                        [33md[39m=[32m"M5 5h6c.55 0 1-.45 1-1s-.45-1-1-1H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h6c.55 0 
+1-.45 1-1s-.45-1-1-1H5z"[39m
+                      [36m/>[39m
+                      [36m<path[39m
+                        [33md[39m=[32m"m20.65 11.65-2.79-2.79c-.32-.32-.86-.1-.86.35V11h-7c-.55 0-1 .45-1 1s.45 1 1 
+1h7v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.19.2-.51.01-.7"[39m
+                      [36m/>[39m
+                    [36m</svg>[39m
+                  [36m</span>[39m
+                  [0mLog out[0m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"[39m
+                  [36m/>[39m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<h1[39m
+              [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 css-pgpbyj-MuiTypography-root"[39m
+            [36m>[39m
+              [0mStaff desk[0m
+            [36m</h1>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 css-rq6e34-MuiTypography-root"[39m
+            [36m>[39m
+              [0mHello, Chris. Here’s what’s happening at Care Bear.[0m
+            [36m</p>[39m
+    ...
+
+      524 |     expect(addBookingExtra).toHaveBeenCalledWith('staff-token', 12, { extra_id: 5, quantity: 1 });
+      525 |
+    > 526 |     fireEvent.click(await screen.findByRole('button', { name: 'Remove Poop bags' }));
+          |                                  ^
+      527 |     const removeDialog = await screen.findByRole('dialog', { name: 'Remove Poop bags?' });
+      528 |     await act(async () => {
+      529 |       fireEvent.click(within(removeDialog).getByRole('button', { name: 'Remove' }));
+
+      at waitForWrapper (node_modules/@testing-library/dom/dist/wait-for.js:163:27)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+      at Object.findByRole (components/staff/StaffDeskPage.test.js:526:34)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 15 passed, 16 total
+Snapshots:   0 total
+Time:        26.145 s
+Ran all test suites matching /components\\staff\\StaffDeskPage.test.js/i.

@@ -1,5 +1,6 @@
-import StaffImagesPage from '@/components/staff/StaffImagesPage';
+import { redirect } from 'next/navigation';
+import { staffPath } from '@/consts/routes';
 
 export default function StaffImagesRoute() {
-  return <StaffImagesPage />;
+  redirect(`${staffPath()}?tab=home_slide`);
 }

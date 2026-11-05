@@ -1,0 +1,383 @@
+﻿node.exe : PASS components/staff/staff-desk.test.js
+At C:\Program Files\nodejs\yarn.ps1:16 char:5
++     & "$basedir/node$exe"  "$basedir/node_modules/corepack/dist/yarn. ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (PASS components/staff/staff-desk.test.js:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+PASS components/staff/StaffCalendarPage.test.js
+  ● Console
+
+    console.error
+      Warning: An update to StaffCalendarPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffCalendarPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffCalendarPage.js:261:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      45 |       next[key] = rows || [];
+      46 |     });
+    > 47 |     setData(next);
+         |     ^
+      48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+      49 |     setLoading(false);
+      50 |   }, [token]);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setData (components/staff/useStaffDeskData.js:47:5)
+
+    console.error
+      Warning: An update to StaffCalendarPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffCalendarPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffCalendarPage.js:261:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      46 |     });
+      47 |     setData(next);
+    > 48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+         |     ^
+      49 |     setLoading(false);
+      50 |   }, [token]);
+      51 |
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setLoadError (components/staff/useStaffDeskData.js:48:5)
+
+    console.error
+      Warning: An update to StaffCalendarPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffCalendarPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffCalendarPage.js:261:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      47 |     setData(next);
+      48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+    > 49 |     setLoading(false);
+         |     ^
+      50 |   }, [token]);
+      51 |
+      52 |   useEffect(() => {
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setLoading (components/staff/useStaffDeskData.js:49:5)
+
+PASS components/staff/StaffImagesPage.test.js (16.94 s)
+  ● Console
+
+    console.error
+      Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffDeskPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      45 |       next[key] = rows || [];
+      46 |     });
+    > 47 |     setData(next);
+         |     ^
+      48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+      49 |     setLoading(false);
+      50 |   }, [token]);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setData (components/staff/useStaffDeskData.js:47:5)
+
+    console.error
+      Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffDeskPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      46 |     });
+      47 |     setData(next);
+    > 48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+         |     ^
+      49 |     setLoading(false);
+      50 |   }, [token]);
+      51 |
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setLoadError (components/staff/useStaffDeskData.js:48:5)
+
+    console.error
+      Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffDeskPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      47 |     setData(next);
+      48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+    > 49 |     setLoading(false);
+         |     ^
+      50 |   }, [token]);
+      51 |
+      52 |   useEffect(() => {
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setLoading (components/staff/useStaffDeskData.js:49:5)
+
+PASS components/staff/StaffDeskPage.test.js (26.533 s)
+  ● Console
+
+    console.error
+      Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffDeskPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      45 |       next[key] = rows || [];
+      46 |     });
+    > 47 |     setData(next);
+         |     ^
+      48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+      49 |     setLoading(false);
+      50 |   }, [token]);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setData (components/staff/useStaffDeskData.js:47:5)
+
+    console.error
+      Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffDeskPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      46 |     });
+      47 |     setData(next);
+    > 48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+         |     ^
+      49 |     setLoading(false);
+      50 |   }, [token]);
+      51 |
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setLoadError (components/staff/useStaffDeskData.js:48:5)
+
+    console.error
+      Warning: An update to StaffDeskPage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at 
+https://reactjs.org/link/wrap-tests-with-act
+          at StaffDeskPage (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\components\staff\StaffDeskPage.js:152:32)
+          at DefaultPropsProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\DefaultPropsProvider\DefaultPropsProvider.js:18:3)
+          at RtlProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\RtlProvider\index.js:19:7)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\private-theming\node\ThemeProvider\ThemeProvider.js:39:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\system\ThemeProvider\ThemeProvider.js:53:5)
+          at ThemeProvider (C:\projects\In House Cloud 
+Solutions\doghotel\frontend\node_modules\@mui\material\node\styles\ThemeProvider.js:21:14)
+
+      47 |     setData(next);
+      48 |     setLoadError(failed.length ? `Could not load ${failed.join(', ')}.` : null);
+    > 49 |     setLoading(false);
+         |     ^
+      50 |   }, [token]);
+      51 |
+      52 |   useEffect(() => {
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27628:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25547:5)
+      at dispatchSetState (node_modules/react-dom/cjs/react-dom.development.js:16708:7)
+      at setLoading (components/staff/useStaffDeskData.js:49:5)
+
+
+Test Suites: 4 passed, 4 total
+Tests:       63 passed, 63 total
+Snapshots:   0 total
+Time:        28.698 s
+Ran all test suites matching /components\\staff\\staff-desk.test.js|components\\staff\\StaffDeskPage.test.js|components
+\\staff\\StaffCalendarPage.test.js|components\\staff\\StaffImagesPage.test.js/i.

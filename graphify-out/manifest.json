@@ -190,8 +190,8 @@
     "semantic_hash": "cadcf329d4f4b3d9fe81a0c5372df108"
   },
   "frontend/components/layouts/RouteThemeShell.js": {
-    "mtime": 1793195411.973457,
-    "ast_hash": "968cab0be4513c2d15b5173648de58eb",
+    "mtime": 1793811879.50042,
+    "ast_hash": "9a7e2c1c43dab7ef89424e784a9f48b9",
     "semantic_hash": ""
   },
   "frontend/components/loading-screen-fonts.js": {
@@ -215,8 +215,8 @@
     "semantic_hash": ""
   },
   "frontend/consts/routes.js": {
-    "mtime": 1793214101.1404214,
-    "ast_hash": "c7b9c4cb1f214f7d7a87fd07bbf3ff08",
+    "mtime": 1793840016.049326,
+    "ast_hash": "e165c166fc7748684e26c3aa762e2414",
     "semantic_hash": ""
   },
   "frontend/consts/website-theme.js": {
@@ -225,8 +225,8 @@
     "semantic_hash": "a4eb8f4cd27293888517a83002e3c48b"
   },
   "frontend/contexts/AuthContext.js": {
-    "mtime": 1793195412.0674703,
-    "ast_hash": "81ad1d8dc7bff53d5de6228c296c9aef",
+    "mtime": 1793840006.6237724,
+    "ast_hash": "9bd806f28fa3344785c968e529027248",
     "semantic_hash": ""
   },
   "frontend/contexts/HomeHeroSlidesContext.js": {
@@ -275,8 +275,8 @@
     "semantic_hash": "121f80f8e590ed0c1f1255290ce1f39f"
   },
   "frontend/next.config.js": {
-    "mtime": 1793195411.973457,
-    "ast_hash": "ae0d17b2e90ce331d65e1f9f3f55ffe0",
+    "mtime": 1793739698.0453765,
+    "ast_hash": "ef2e34e2ae1f0ff34821fea40c16a366",
     "semantic_hash": ""
   },
   "frontend/package.json": {
@@ -935,8 +935,8 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/LoginPage.js": {
-    "mtime": 1793199831.4572508,
-    "ast_hash": "5cd70c66ffd8f433b147201d164b9553",
+    "mtime": 1793840009.196623,
+    "ast_hash": "ac8060190268613ed73a67a45ae3007c",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/RegisterPage.js": {
@@ -945,8 +945,8 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/pet-parent-styles.js": {
-    "mtime": 1793199562.7398348,
-    "ast_hash": "ad5d37f24852aee9f954f8d93e712dec",
+    "mtime": 1793824341.5207925,
+    "ast_hash": "23b5f73f05bb97262dac7bc6cd982f74",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/useAuthNavItem.js": {
@@ -955,8 +955,8 @@
     "semantic_hash": ""
   },
   "frontend/lib/daycareApi.js": {
-    "mtime": 1793731037.0706186,
-    "ast_hash": "b4551640c9021a633bdc14b578ab9173",
+    "mtime": 1793847199.6705933,
+    "ast_hash": "8e4ff35ec7229bf69de008f94b41b9d1",
     "semantic_hash": ""
   },
   "frontend/src/app/(website)/account/api-test/page.js": {
@@ -980,13 +980,13 @@
     "semantic_hash": ""
   },
   "docs/care-bear-daycare-api.md": {
-    "mtime": 1793731146.0511575,
-    "ast_hash": "424389bdd6a2fd6b51a8dc34a03aac2f",
+    "mtime": 1793885910.7414744,
+    "ast_hash": "39374a088402358e16f98e87000dc478",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/ProfilePhoto.js": {
-    "mtime": 1793199613.4371438,
-    "ast_hash": "6416a33277d396bc5e765b0d4bc59e55",
+    "mtime": 1793825754.6639004,
+    "ast_hash": "9d84a0c688813c463a40cbbc84af4ee3",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/BookStayActions.js": {
@@ -1144,49 +1144,19 @@
     "ast_hash": "2fa9d506d76453ea9c7b76bd96db85ea",
     "semantic_hash": ""
   },
-  "frontend/components/staff/BookingPanel.js": {
-    "mtime": 1793374091.2607627,
-    "ast_hash": "ef3debbf33b538d0df3ce78c012ea14c",
-    "semantic_hash": ""
-  },
-  "frontend/components/staff/BookingPanel.test.js": {
-    "mtime": 1793373943.7568555,
-    "ast_hash": "73e77eff901dbe650dc535c44f89e869",
-    "semantic_hash": ""
-  },
-  "frontend/components/staff/HolidayForm.js": {
-    "mtime": 1793373390.2493446,
-    "ast_hash": "07fb5b3abf793b526acd972b5ed7f37a",
-    "semantic_hash": ""
-  },
-  "frontend/components/staff/HolidayForm.test.js": {
-    "mtime": 1793373938.0096636,
-    "ast_hash": "575b472d366f3fb2a6271d2bd134a19e",
-    "semantic_hash": ""
-  },
-  "frontend/components/staff/HolidayPanel.js": {
-    "mtime": 1793374091.2607627,
-    "ast_hash": "4c2520e0a523cbfb71b39c374f99817b",
-    "semantic_hash": ""
-  },
-  "frontend/components/staff/HouseholdPanel.js": {
-    "mtime": 1793373412.454048,
-    "ast_hash": "f21eff976afe54c52d88481941ebf2e0",
-    "semantic_hash": ""
-  },
   "frontend/components/staff/StaffDeskPage.js": {
-    "mtime": 1793731077.7171297,
-    "ast_hash": "c006ceeb0c6a7b90001360bc90644f7d",
+    "mtime": 1793846749.3281684,
+    "ast_hash": "9ae7c03c6494cb16e0ae5b8f570862bd",
     "semantic_hash": ""
   },
   "frontend/components/staff/staff-desk.js": {
-    "mtime": 1793373386.6530132,
-    "ast_hash": "9716c38ad8617fb19a7354efc84b27b0",
+    "mtime": 1793847382.8237092,
+    "ast_hash": "7b4b9ff147c9b50a6bd81f320eb6b511",
     "semantic_hash": ""
   },
   "frontend/components/staff/staff-desk.test.js": {
-    "mtime": 1793373418.1956205,
-    "ast_hash": "f5141894b42e87fee0c07a3af3eadcf6",
+    "mtime": 1793851289.0988858,
+    "ast_hash": "acc22bd42bb1a950e0ea0bd0ab33c84d",
     "semantic_hash": ""
   },
   "frontend/src/app/staff/layout.js": {
@@ -1215,33 +1185,28 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/SiteImageSection.js": {
-    "mtime": 1793736183.493242,
-    "ast_hash": "8499277f85b31c95c399325a7d4e9123",
-    "semantic_hash": ""
-  },
-  "frontend/components/staff/StaffImagesPage.js": {
-    "mtime": 1793736177.2627292,
-    "ast_hash": "c5837a8269c0cfd5d587ebc46ae303d9",
+    "mtime": 1793838488.3737826,
+    "ast_hash": "2946a636aff2f74391f0ae97bc45efd3",
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffImagesPage.test.js": {
-    "mtime": 1793735893.6346066,
-    "ast_hash": "5d9562ca054133ca02632f0269e80bfb",
+    "mtime": 1793838733.6646836,
+    "ast_hash": "0fe4baef71659ebcc0dfc4f284faeedf",
     "semantic_hash": ""
   },
   "frontend/components/staff/site-images.js": {
-    "mtime": 1793731043.2810955,
-    "ast_hash": "7dbb795743faa9396cbf639cdf0a6ff9",
+    "mtime": 1793803046.4522073,
+    "ast_hash": "d6b8ea2dcfde88d02a0378043d4ad630",
     "semantic_hash": ""
   },
   "frontend/lib/daycareApi.test.js": {
-    "mtime": 1793731112.0846164,
-    "ast_hash": "839e1a196b81463f4fb2231cd01e75a5",
+    "mtime": 1793834478.132416,
+    "ast_hash": "683d316b12c4130b92c47d0e1830057f",
     "semantic_hash": ""
   },
   "frontend/src/app/staff/images/page.js": {
-    "mtime": 1793731070.3437424,
-    "ast_hash": "b8fe392ee804c109a5139cc78ca87eac",
+    "mtime": 1793828289.1611986,
+    "ast_hash": "37cc214120aef28fa2c526190bb53641",
     "semantic_hash": ""
   },
   "frontend/utils/siteImages.js": {
@@ -1254,9 +1219,219 @@
     "ast_hash": "8de9fe0ba95e1b6f111d79ab430996c0",
     "semantic_hash": ""
   },
-  "staff-images-body.html": {
-    "mtime": 1793733160.9254122,
-    "ast_hash": "258504d681ecc1f30dce0079909dbeb4",
+  "frontend/components/staff/DeskBookingsTab.js": {
+    "mtime": 1793887059.6066165,
+    "ast_hash": "d7f45d12a859f473eb749dd12d0c9b82",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/DeskDialogs.js": {
+    "mtime": 1793846698.066398,
+    "ast_hash": "c47d0476558de457959c8982ab48776f",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/DeskDogVaccines.js": {
+    "mtime": 1793824744.4206946,
+    "ast_hash": "c4a04e243fb557d6ff1e4ef4db970b41",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/DeskHolidaysTab.js": {
+    "mtime": 1793817554.6249826,
+    "ast_hash": "f177947003530ef283b08eea705b7138",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/DeskHouseholdsTab.js": {
+    "mtime": 1793824861.8757954,
+    "ast_hash": "2802b508c3f2cc16d820df889f94d4ff",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/DeskParts.js": {
+    "mtime": 1793820400.466904,
+    "ast_hash": "c227bb1e4fd748cab81441308101a6ed",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/DeskServicesTab.js": {
+    "mtime": 1793847199.6705933,
+    "ast_hash": "099eebdf15400f5b85c96430733ac73b",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/SiteImageDialogs.js": {
+    "mtime": 1793834660.437768,
+    "ast_hash": "a5812015bcd7cbb91a2b7e3ee051514d",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/SiteImageParts.js": {
+    "mtime": 1793838925.564116,
+    "ast_hash": "5c8991369aebc9b099f41be75c3b0008",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/StaffDeskPage.test.js": {
+    "mtime": 1793887062.8962433,
+    "ast_hash": "e558c87d462e476476c618598d00ef22",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/StaffPageShell.js": {
+    "mtime": 1793810350.4967191,
+    "ast_hash": "624089321c2b242874e3645efb162b65",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/prepare-site-image.js": {
+    "mtime": 1793825172.0824564,
+    "ast_hash": "d8ab42118d57f97153f18dacb901808b",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/site-image-styles.js": {
+    "mtime": 1793838910.6032991,
+    "ast_hash": "f838b08fd9e2251ba9249b001de0d8a4",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/useStaffDeskData.js": {
+    "mtime": 1793846659.3372583,
+    "ast_hash": "142f9dd033f6f0a66bb54df3d83b6376",
+    "semantic_hash": ""
+  },
+  "docs/redesign/site-images/before/SiteImageSection.js.txt": {
+    "mtime": 1793800610.0183344,
+    "ast_hash": "a5ae9ff057ae28f91749d2ad7e80e24f",
+    "semantic_hash": ""
+  },
+  "docs/redesign/site-images/before/StaffImagesPage.js.txt": {
+    "mtime": 1793800609.978021,
+    "ast_hash": "c5837a8269c0cfd5d587ebc46ae303d9",
+    "semantic_hash": ""
+  },
+  "docs/redesign/staff-desk/before/BookingPanel.js.txt": {
+    "mtime": 1793810328.0321147,
+    "ast_hash": "ef3debbf33b538d0df3ce78c012ea14c",
+    "semantic_hash": ""
+  },
+  "docs/redesign/staff-desk/before/BookingPanel.test.js.txt": {
+    "mtime": 1793811646.0893507,
+    "ast_hash": "73e77eff901dbe650dc535c44f89e869",
+    "semantic_hash": ""
+  },
+  "docs/redesign/staff-desk/before/HolidayForm.js.txt": {
+    "mtime": 1793810328.1490488,
+    "ast_hash": "07fb5b3abf793b526acd972b5ed7f37a",
+    "semantic_hash": ""
+  },
+  "docs/redesign/staff-desk/before/HolidayForm.test.js.txt": {
+    "mtime": 1793811646.0613673,
+    "ast_hash": "575b472d366f3fb2a6271d2bd134a19e",
+    "semantic_hash": ""
+  },
+  "docs/redesign/staff-desk/before/HolidayPanel.js.txt": {
+    "mtime": 1793810328.0680716,
+    "ast_hash": "4c2520e0a523cbfb71b39c374f99817b",
+    "semantic_hash": ""
+  },
+  "docs/redesign/staff-desk/before/HouseholdPanel.js.txt": {
+    "mtime": 1793810328.108359,
+    "ast_hash": "f21eff976afe54c52d88481941ebf2e0",
+    "semantic_hash": ""
+  },
+  "docs/redesign/staff-desk/before/RouteThemeShell.js.txt": {
+    "mtime": 1793811856.7488127,
+    "ast_hash": "968cab0be4513c2d15b5173648de58eb",
+    "semantic_hash": ""
+  },
+  "docs/redesign/staff-desk/before/StaffDeskPage.js.txt": {
+    "mtime": 1793810327.9922435,
+    "ast_hash": "c006ceeb0c6a7b90001360bc90644f7d",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/PhotoFrameDialog.js": {
+    "mtime": 1793826643.741692,
+    "ast_hash": "bebaa91fbb0fdc4ab14c06d42289a295",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/frame-photo.js": {
+    "mtime": 1793825722.64767,
+    "ast_hash": "014b9359afa3e121192ce691adae9708",
+    "semantic_hash": ""
+  },
+  "frontend/components/pet-parent/frame-photo.test.js": {
+    "mtime": 1793825737.8676288,
+    "ast_hash": "1137a0fbc72767f35de0dcf340c5eac5",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/StaffCalendarPage.js": {
+    "mtime": 1793828355.834178,
+    "ast_hash": "6f4bc35e6767635be46828612a178149",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/StaffCalendarPage.test.js": {
+    "mtime": 1793828567.9242344,
+    "ast_hash": "b96b2c9f8d58fe3f20a7d14f1ac74c0d",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/staff-calendar.js": {
+    "mtime": 1793828299.9598365,
+    "ast_hash": "f6297acfa32bd4dc6207d57469509cdb",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/staff/calendar/page.js": {
+    "mtime": 1793828326.2372828,
+    "ast_hash": "a6097982a963764bcf0301f88f256161",
+    "semantic_hash": ""
+  },
+  "frontend/consts/routes.test.js": {
+    "mtime": 1793840011.1557515,
+    "ast_hash": "7ae5349bf90951ca4fb9e0f42f3a8072",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/DeskExtrasTab.js": {
+    "mtime": 1793846737.106859,
+    "ast_hash": "75672c6eeba076e7749437b68369e5d2",
+    "semantic_hash": ""
+  },
+  "frontend/charge_test_out.txt": {
+    "mtime": 1793850099.2087698,
+    "ast_hash": "4508f7139156b3f20da332d5cd826335",
+    "semantic_hash": ""
+  },
+  "frontend/extras_test_out.txt": {
+    "mtime": 1793849645.5786784,
+    "ast_hash": "e1fa2833ff67fe97e66154ca6d9964bf",
+    "semantic_hash": ""
+  },
+  "frontend/full_err.txt": {
+    "mtime": 1793850520.9729545,
+    "ast_hash": "e8129ab2d71357ba0231e1abcf5029ca",
+    "semantic_hash": ""
+  },
+  "frontend/t1.txt": {
+    "mtime": 1793850339.2925668,
+    "ast_hash": "28fe89daa1ba3d238774432b60e00fe4",
+    "semantic_hash": ""
+  },
+  "frontend/t2.txt": {
+    "mtime": 1793850393.9759715,
+    "ast_hash": "fe2928d9de3176f20321242e96880061",
+    "semantic_hash": ""
+  },
+  "frontend/t3.txt": {
+    "mtime": 1793850450.9675589,
+    "ast_hash": "a5aaa6a2d0a6107cf05aed3d082a2969",
+    "semantic_hash": ""
+  },
+  "frontend/t4.txt": {
+    "mtime": 1793851117.898589,
+    "ast_hash": "c2c3a43aaca83dbf5d1bdad6ab67ffd4",
+    "semantic_hash": ""
+  },
+  "frontend/t5.txt": {
+    "mtime": 1793851208.6582427,
+    "ast_hash": "f5d537c5901f35f5d2eed3bbeacf1d48",
+    "semantic_hash": ""
+  },
+  "frontend/t6.txt": {
+    "mtime": 1793851555.9530804,
+    "ast_hash": "42d81fb0c737a85f8b41cda9bb7dacbd",
+    "semantic_hash": ""
+  },
+  "frontend/final.txt": {
+    "mtime": 1793851934.9707758,
+    "ast_hash": "35a9742871ac623d4aeb576e199e3fea",
     "semantic_hash": ""
   }
 }

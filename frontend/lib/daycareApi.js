@@ -79,11 +79,15 @@ export async function daycareRequest({
 /**
  * Multipart upload. Do not set Content-Type — the browser must add the boundary.
  * Optional `fields` are extra text parts (site images send `alt` and `placement`).
+ * No trailing slash on this URL. Next 308s `/daycare-api/.../` to the slash-less
+ * path before the body finishes, and Chrome reports that as ERR_CONNECTION_RESET.
+ * The rewrite in next.config.js adds the slash Django requires on the upstream.
  * @param {{ path: string, file: File, token?: string|null, fields?: Record<string, string> }} opts
  * @returns {Promise<{ ok: boolean, status: number, data: unknown }>}
  */
 export async function daycareUpload({ path, file, token, fields } = {}) {
-  const url = `${BASE_PATH}${withTrailingSlash(path)}`;
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  const url = `${BASE_PATH}${normalized.replace(/\/+$/, '')}`;
   const headers = {};
   if (token) {
     headers.Authorization = `Token ${token}`;
@@ -179,6 +183,29 @@ export const listDogs = token => daycareRequest({ method: 'GET', path: '/daycare
 export const listPetParents = token =>
   daycareRequest({ method: 'GET', path: '/daycare/pet-parents', token });
 
+/** Staff-created household. `password` is optional; without one the parent cannot sign in yet. */
+export const createPetParent = (token, body) =>
+  daycareRequest({ method: 'POST', path: '/daycare/pet-parents', token, body });
+
+/** Staff edit of a household's contact details. Email is read-only. */
+export const updatePetParent = (token, petParentId, body) =>
+  daycareRequest({ method: 'PATCH', path: `/daycare/pet-parents/${petParentId}`, token, body });
+
+/** Staff delete. Removes the login, dogs, and stays. **204**. */
+export const deletePetParent = (token, petParentId) =>
+  daycareRequest({ method: 'DELETE', path: `/daycare/pet-parents/${petParentId}`, token });
+
+/** Staff photo for a household. The image stays private to that parent and staff. */
+export const uploadPetParentPhoto = (token, petParentId, file) =>
+  daycareUpload({ path: `/daycare/pet-parents/${petParentId}/photo`, file, token });
+
+export const deletePetParentPhoto = (token, petParentId) =>
+  daycareRequest({
+    method: 'DELETE',
+    path: `/daycare/pet-parents/${petParentId}/photo`,
+    token,
+  });
+
 export const createDog = (token, body) =>
   daycareRequest({ method: 'POST', path: '/daycare/dogs', token, body });
 
@@ -207,8 +234,33 @@ export const deleteVaccine = (token, vaccineId) =>
 
 // --- Services ---
 
-export const listServices = token =>
-  daycareRequest({ method: 'GET', path: '/daycare/services', token });
+/**
+ * Bookable services. Staff pass `{ all: true }` so hidden services stay on the desk
+ * and can be turned back on (`?all=1`). Pet parents omit it and only see active ones.
+ * @param {string} token
+ * @param {{ all?: boolean }} [opts]
+ */
+export function listServices(token, { all = false } = {}) {
+  if (!all) {
+    return daycareRequest({ method: 'GET', path: '/daycare/services', token });
+  }
+  return daycareRequest({
+    method: 'GET',
+    path: '/daycare/services/?all=1',
+    token,
+    trailingSlash: false,
+  });
+}
+
+export const createService = (token, body) =>
+  daycareRequest({ method: 'POST', path: '/daycare/services', token, body });
+
+export const updateService = (token, serviceId, body) =>
+  daycareRequest({ method: 'PATCH', path: `/daycare/services/${serviceId}`, token, body });
+
+/** 400 `{ detail }` when bookings use the service. */
+export const deleteService = (token, serviceId) =>
+  daycareRequest({ method: 'DELETE', path: `/daycare/services/${serviceId}`, token });
 
 /**
  * Open, joinable, unavailable, and closed days for one service and dog set.
@@ -263,6 +315,38 @@ export function listBookings(token, { status, petParentId } = {}) {
 export const updateBooking = (token, bookingId, body) =>
   daycareRequest({ method: 'PATCH', path: `/daycare/bookings/${bookingId}`, token, body });
 
+// --- Extras catalog ---
+
+export const listExtras = token =>
+  daycareRequest({ method: 'GET', path: '/daycare/extras', token });
+
+export const createExtra = (token, body) =>
+  daycareRequest({ method: 'POST', path: '/daycare/extras', token, body });
+
+export const updateExtra = (token, extraId, body) =>
+  daycareRequest({ method: 'PATCH', path: `/daycare/extras/${extraId}`, token, body });
+
+/** Catalog delete. Lines already on a booking keep their snapshot. */
+export const deleteExtra = (token, extraId) =>
+  daycareRequest({ method: 'DELETE', path: `/daycare/extras/${extraId}`, token });
+
+// --- Booking extra lines ---
+
+export const listBookingExtras = (token, bookingId) =>
+  daycareRequest({ method: 'GET', path: `/daycare/bookings/${bookingId}/extras`, token });
+
+/** Staff only. `{ extra_id, quantity }`; `kind: "late_checkout"` extras are rejected (system-only). */
+export const addBookingExtra = (token, bookingId, body) =>
+  daycareRequest({ method: 'POST', path: `/daycare/bookings/${bookingId}/extras`, token, body });
+
+/** Staff only, item lines only. Removing a late-checkout line is rejected — correct `checked_out_at` instead. */
+export const deleteBookingExtra = (token, bookingId, lineId) =>
+  daycareRequest({
+    method: 'DELETE',
+    path: `/daycare/bookings/${bookingId}/extras/${lineId}`,
+    token,
+  });
+
 // --- Closures (named holidays) ---
 
 export const listClosures = token =>
@@ -304,6 +388,20 @@ export function createSiteImage(token, { file, alt, placement }) {
     file,
     token,
     fields: { alt: alt ?? '', placement },
+  });
+}
+
+/**
+ * Staff photo swap. Multipart field is `file` only — alt text and sort order stay put.
+ * @param {string} token
+ * @param {number|string} imageId
+ * @param {File} file
+ */
+export function replaceSiteImage(token, imageId, file) {
+  return daycareUpload({
+    path: `/daycare/site-images/${imageId}/photo`,
+    file,
+    token,
   });
 }
 
