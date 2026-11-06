@@ -26,7 +26,13 @@ export const MARKETING_INTERIOR_CONTENT_SX = {
   boxSizing: 'border-box',
   px: { xs: 2, sm: 3, md: 6 },
   pt: { xs: 7, md: 10 },
-  pb: { xs: 7, md: 10 },
+  pb: { xs: 14, md: 14, lg: 10 },
+};
+
+/** Pulls the site footer out to the edges of the padded content box. */
+export const MARKETING_INTERIOR_FOOTER_BLEED_SX = {
+  mx: { xs: -2, sm: -3, md: -6 },
+  mb: { xs: -14, md: -14, lg: -10 },
 };
 
 /** Centered two-column grid for hero form pages (inside content padding). */
@@ -69,7 +75,12 @@ export const MARKETING_FORM_FLEX_SECTION_SX = {
   flexDirection: 'column',
   boxSizing: 'border-box',
   paddingTop: { xs: '32px', sm: '48px', md: '64px', lg: '128px' },
-  paddingBottom: { xs: '32px', sm: '48px', md: '64px', lg: '128px' },
+  paddingBottom: {
+    xs: 'calc(32px + 76px + env(safe-area-inset-bottom, 0px))',
+    sm: 'calc(48px + 76px + env(safe-area-inset-bottom, 0px))',
+    md: 'calc(64px + 76px + env(safe-area-inset-bottom, 0px))',
+    lg: '128px',
+  },
   ...FORM_PAGE_MOBILE_NATURAL_HEIGHT_SX,
 };
 

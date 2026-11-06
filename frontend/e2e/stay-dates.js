@@ -37,7 +37,7 @@ async function clickLaterDay(page, firstLabel) {
 }
 
 async function requestReady(page) {
-  const request = page.getByRole('button', { name: 'Request this stay' });
+  const request = page.getByRole('button', { name: 'Send stay request' });
   try {
     await expect(request).toBeEnabled({ timeout: 2500 });
     return true;

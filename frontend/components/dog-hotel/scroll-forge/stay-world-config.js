@@ -66,7 +66,7 @@ export const STAY_WORLD = {
       accent: SLIDE_ACCENT,
       eyebrow: '01  ·  The visit',
       title: 'Meet',
-      body: 'The meet-and-greet is at Carrie’s home in Toronto, inside or in the backyard. You can see the space and whether it is the right fit. The care plan is made then, with you and your dog. Bookings are arranged through Rover.',
+      body: 'The meet-and-greet is at Carrie’s home in Toronto, inside or in the backyard. You can see the space and whether it is the right fit. The care plan is made then, with you and your dog.',
       tags: ["At Carrie's home", 'Care plan together'],
       scroll: 1.8,
       linger: 0.42,

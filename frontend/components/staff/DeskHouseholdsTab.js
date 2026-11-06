@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useId, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import {
   Avatar,
@@ -20,42 +20,33 @@ import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import PetsRoundedIcon from '@mui/icons-material/PetsRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import ProfilePhoto, { useDaycarePhoto } from '@/components/pet-parent/ProfilePhoto';
+import { useDaycarePhoto } from '@/components/pet-parent/ProfilePhoto';
+import ClientProfileView from '@/components/pet-parent/ClientProfileView';
 import { WEBSITE_ACCENT, WEBSITE_INK } from '@/consts/website-theme';
 import {
   createBooking,
   createDog,
   createPetParent,
   deleteDog,
-  deleteDogPhoto,
   deletePetParent,
   deletePetParentPhoto,
   formatApiErrors,
   updateDog,
   updatePetParent,
-  uploadDogPhoto,
   uploadPetParentPhoto,
 } from '@/lib/daycareApi';
 import {
   ConfirmDialog,
   DeskSectionHeader,
   EmptyState,
-  GroupLabel,
   NewButton,
-  RecordCard,
-  RowButton,
   SkeletonRows,
   StatusChip,
-  ToneChip,
-  flowSx,
   stackSx,
 } from './DeskParts';
 import { DogDialog, HouseholdDialog, StayDialog } from './DeskDialogs';
-import DeskDogVaccines from './DeskDogVaccines';
 import {
-  dogSummary,
   formatDateRange,
   householdInitials,
   householdLabel,
@@ -122,28 +113,6 @@ ActionMenu.propTypes = {
   ).isRequired,
 };
 
-function Detail({ label, children }) {
-  return (
-    <Box sx={{ minWidth: 0 }}>
-      <GroupLabel>{label}</GroupLabel>
-      <Typography sx={{ mt: 0.5, fontSize: 15, overflowWrap: 'anywhere' }}>
-        {children || (
-          <Box component="span" sx={{ color: 'text.secondary' }}>
-            Not set
-          </Box>
-        )}
-      </Typography>
-    </Box>
-  );
-}
-
-Detail.propTypes = { label: PropTypes.string.isRequired, children: PropTypes.node };
-
-function photoErrorMessage(res, fallback) {
-  const { summary, fields } = formatApiErrors(res.data);
-  return fields.file || summary || fallback;
-}
-
 function HouseholdAvatar({ parent, token, size = 40 }) {
   const src = useDaycarePhoto(parent?.photo_url, token);
   return (
@@ -170,103 +139,6 @@ HouseholdAvatar.propTypes = {
   size: PropTypes.number,
 };
 
-function DogCard({ dog, token, notify, onEdit, onDelete, onChanged }) {
-  const photoRef = useRef(null);
-  const [photoUrl, setPhotoUrl] = useState(dog.photo_url ?? null);
-  const [addingVaccine, setAddingVaccine] = useState(false);
-
-  useEffect(() => {
-    setPhotoUrl(dog.photo_url ?? null);
-  }, [dog.photo_url]);
-
-  const handlePhotoUpload = async file => {
-    const res = await uploadDogPhoto(token, dog.id, file);
-    if (!res.ok) return photoErrorMessage(res, 'Could not upload that photo.');
-    setPhotoUrl(res.data?.photo_url ?? null);
-    await onChanged();
-    notify(`${dog.name} photo saved.`);
-    return null;
-  };
-
-  const handlePhotoRemove = async () => {
-    const res = await deleteDogPhoto(token, dog.id);
-    if (!res.ok) return photoErrorMessage(res, 'Could not remove that photo.');
-    setPhotoUrl(null);
-    await onChanged();
-    notify(`${dog.name} photo removed.`);
-    return null;
-  };
-
-  return (
-    <RecordCard sx={{ p: { xs: 2, md: 2.25 } }}>
-      <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1.5 }}>
-        <Box sx={{ minWidth: 0, flex: 1 }}>
-          <ProfilePhoto
-            ref={photoRef}
-            photoUrl={photoUrl}
-            token={token}
-            name={dog.name}
-            title={dog.name}
-            subtitle={dogSummary(dog)}
-            showControls={false}
-            onUpload={handlePhotoUpload}
-            onRemove={handlePhotoRemove}
-          />
-          <Box sx={{ mt: 1, display: 'flex', gap: 0.75, flexWrap: 'wrap' }}>
-            <ToneChip
-              label={dog.good_with_dogs ? 'Good with dogs' : 'Not good with dogs'}
-              tone={dog.good_with_dogs ? 'positive' : 'danger'}
-            />
-            {dog.spayed_neutered ? <ToneChip label="Fixed" tone="muted" /> : null}
-            {dog.medications ? <ToneChip label="On medication" tone="accent" /> : null}
-          </Box>
-        </Box>
-        <ActionMenu
-          label={`Actions for ${dog.name}`}
-          items={[
-            { id: 'edit', label: 'Edit', onClick: onEdit },
-            {
-              id: 'photo',
-              label: photoUrl ? 'Replace photo' : 'Add photo',
-              onClick: () => photoRef.current?.openFilePicker(),
-            },
-            ...(photoUrl
-              ? [
-                  {
-                    id: 'remove-photo',
-                    label: 'Remove photo',
-                    danger: true,
-                    onClick: () => photoRef.current?.remove(),
-                  },
-                ]
-              : []),
-            { id: 'vaccine', label: 'Add vaccine', onClick: () => setAddingVaccine(true) },
-            { id: 'delete', label: 'Delete', danger: true, onClick: () => onDelete(dog) },
-          ]}
-        />
-      </Box>
-      <Box sx={{ pt: 1.5 }}>
-        <DeskDogVaccines
-          dog={dog}
-          token={token}
-          notify={notify}
-          adding={addingVaccine}
-          onAddingChange={setAddingVaccine}
-        />
-      </Box>
-    </RecordCard>
-  );
-}
-
-DogCard.propTypes = {
-  dog: PropTypes.object.isRequired,
-  token: PropTypes.string,
-  notify: PropTypes.func.isRequired,
-  onEdit: PropTypes.func.isRequired,
-  onDelete: PropTypes.func.isRequired,
-  onChanged: PropTypes.func.isRequired,
-};
-
 export default function DeskHouseholdsTab({ data, notify }) {
   const { parents, dogs, bookings, services, token, reload, loading } = data;
   const theme = useTheme();
@@ -279,7 +151,6 @@ export default function DeskHouseholdsTab({ data, notify }) {
   const [removeName, setRemoveName] = useState('');
   const [removeBusy, setRemoveBusy] = useState(false);
   const [removeError, setRemoveError] = useState(null);
-  const householdPhotoRef = useRef(null);
 
   const filtered = useMemo(
     () =>
@@ -457,7 +328,7 @@ export default function DeskHouseholdsTab({ data, notify }) {
           ) : null}
 
           {showDetail ? (
-            <Box sx={{ flex: '1 1 0', minWidth: 0, ...stackSx(2.5) }}>
+            <Box sx={{ flex: '1 1 0', minWidth: 0, ...stackSx(2) }}>
               {!wide ? (
                 <Button
                   onClick={() => setSelectedId(null)}
@@ -473,196 +344,129 @@ export default function DeskHouseholdsTab({ data, notify }) {
                 </Button>
               ) : null}
 
-              <RecordCard aria-label={`Household ${householdLabel(selected)}`}>
-                <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2, flexWrap: 'wrap' }}>
-                  <Box sx={{ minWidth: 0, flex: '1 1 240px' }}>
-                    <ProfilePhoto
-                      ref={householdPhotoRef}
-                      photoUrl={selected.photo_url ?? null}
-                      token={token}
-                      name={householdLabel(selected)}
-                      title={householdLabel(selected)}
-                      subtitle={selected.email}
-                      showControls={false}
-                      onUpload={async file => {
-                        const res = await uploadPetParentPhoto(token, selected.id, file);
-                        if (!res.ok) {
-                          return photoErrorMessage(res, 'Could not upload that photo.');
-                        }
-                        await reload();
-                        notify(`${householdLabel(selected)} photo saved.`);
-                        return null;
-                      }}
-                      onRemove={async () => {
-                        const res = await deletePetParentPhoto(token, selected.id);
-                        if (!res.ok) {
-                          return photoErrorMessage(res, 'Could not remove that photo.');
-                        }
-                        await reload();
-                        notify(`${householdLabel(selected)} photo removed.`);
-                        return null;
-                      }}
-                    />
-                  </Box>
-                  <ActionMenu
-                    label={`Actions for ${householdLabel(selected)}`}
-                    items={[
-                      {
-                        id: 'edit',
-                        label: 'Edit',
-                        onClick: () => setDialog({ kind: 'household', record: selected }),
+              <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                <ActionMenu
+                  label={`Actions for ${householdLabel(selected)}`}
+                  items={[
+                    {
+                      id: 'book',
+                      label: 'Book a stay',
+                      onClick: () => setDialog({ kind: 'stay' }),
+                    },
+                    {
+                      id: 'delete',
+                      label: 'Delete',
+                      danger: true,
+                      onClick: () => {
+                        setRemoveError(null);
+                        setRemoveKind('household');
+                        setRemoveName(householdLabel(selected));
+                        setRemoving(selected);
                       },
-                      {
-                        id: 'photo',
-                        label: selected.photo_url ? 'Replace photo' : 'Add photo',
-                        onClick: () => householdPhotoRef.current?.openFilePicker(),
-                      },
-                      ...(selected.photo_url
-                        ? [
-                            {
-                              id: 'remove-photo',
-                              label: 'Remove photo',
-                              danger: true,
-                              onClick: () => householdPhotoRef.current?.remove(),
-                            },
-                          ]
-                        : []),
-                      {
-                        id: 'book',
-                        label: 'Book a stay',
-                        onClick: () => setDialog({ kind: 'stay' }),
-                      },
-                      {
-                        id: 'delete',
-                        label: 'Delete',
-                        danger: true,
-                        onClick: () => {
-                          setRemoveError(null);
-                          setRemoveKind('household');
-                          setRemoveName(householdLabel(selected));
-                          setRemoving(selected);
-                        },
-                      },
-                    ]}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    mt: 2.5,
-                    pt: 2.5,
-                    borderTop: '1px solid',
-                    borderColor: hairline(theme, 0.1),
-                    ...flowSx('180px', 2),
-                  }}
-                >
-                  <Detail label="Phone">{selected.phone}</Detail>
-                  <Detail label="Address">
-                    {[selected.address, selected.city].filter(Boolean).join(', ')}
-                  </Detail>
-                  <Detail label="Emergency contact">
-                    {[selected.emergency_name, selected.emergency_phone]
-                      .filter(Boolean)
-                      .join(' · ')}
-                  </Detail>
-                </Box>
-              </RecordCard>
-
-              <Box>
-                <Box
-                  sx={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: 2,
-                  }}
-                >
-                  <Typography component="h3" sx={{ fontWeight: 600, fontSize: 17 }}>
-                    Dogs
-                  </Typography>
-                  <RowButton
-                    startIcon={<AddRoundedIcon sx={{ fontSize: 18 }} />}
-                    onClick={() => setDialog({ kind: 'dog' })}
-                  >
-                    Add a dog
-                  </RowButton>
-                </Box>
-                {selectedDogs.length === 0 ? (
-                  <EmptyState
-                    icon={<PetsRoundedIcon />}
-                    title="No dogs yet"
-                    body="Add this family’s dogs so you can book stays for them."
-                  />
-                ) : (
-                  <Box
-                    sx={{
-                      mt: 1.5,
-                      ...flowSx('300px', 1.5),
-                      alignItems: 'flex-start',
-                    }}
-                  >
-                    {selectedDogs.map(dog => (
-                      <DogCard
-                        key={dog.id}
-                        dog={dog}
-                        token={token}
-                        notify={notify}
-                        onChanged={reload}
-                        onEdit={() => setDialog({ kind: 'dog', record: dog })}
-                        onDelete={record => {
-                          setRemoveError(null);
-                          setRemoveKind('dog');
-                          setRemoveName(record.name);
-                          setRemoving(record);
-                        }}
-                      />
-                    ))}
-                  </Box>
-                )}
+                    },
+                  ]}
+                />
               </Box>
 
-              <Box>
-                <Typography component="h3" sx={{ fontWeight: 600, fontSize: 17 }}>
-                  Stays
-                </Typography>
-                {selectedStays.length === 0 ? (
-                  <Typography sx={{ mt: 1, color: 'text.secondary', fontSize: 14 }}>
-                    No stays yet.
-                  </Typography>
-                ) : (
-                  <Box component="ul" sx={{ listStyle: 'none', p: 0, m: 0, mt: 1, ...stackSx(0) }}>
-                    {selectedStays.map(stay => (
+              <ClientProfileView
+                key={selected.id}
+                embedded
+                petParent={selected}
+                token={token}
+                onSaveProfile={form => updatePetParent(token, selected.id, form)}
+                onProfileSaved={async () => {
+                  await reload();
+                  notify(`${householdLabel(selected)} saved.`);
+                }}
+                onUploadPhoto={async file => {
+                  const res = await uploadPetParentPhoto(token, selected.id, file);
+                  if (res.ok) {
+                    notify(`${householdLabel(selected)} photo saved.`);
+                    await reload();
+                  }
+                  return res;
+                }}
+                onRemovePhoto={async () => {
+                  const res = await deletePetParentPhoto(token, selected.id);
+                  if (res.ok || res.status === 204) {
+                    notify(`${householdLabel(selected)} photo removed.`);
+                    await reload();
+                  }
+                  return res;
+                }}
+                dogs={selectedDogs}
+                dogsLoading={false}
+                onCreateDog={payload =>
+                  createDog(token, { ...payload, pet_parent_id: selected.id })
+                }
+                onDogsChanged={reload}
+                onDogCreated={dog => notify(`${dog?.name || 'Dog'} added.`)}
+                onRequestRemoveDog={record => {
+                  setRemoveError(null);
+                  setRemoveKind('dog');
+                  setRemoveName(record.name);
+                  setRemoving(record);
+                }}
+                onNotify={notify}
+                below={
+                  <Box>
+                    <Typography
+                      component="h2"
+                      sx={{ fontWeight: 650, fontSize: 20, color: WEBSITE_INK }}
+                    >
+                      Recent stays
+                    </Typography>
+                    {selectedStays.length === 0 ? (
+                      <Typography sx={{ mt: 1, color: alpha(WEBSITE_INK, 0.6), fontSize: 14 }}>
+                        No stays yet.
+                      </Typography>
+                    ) : (
                       <Box
-                        component="li"
-                        key={stay.id}
-                        sx={{
-                          py: 1.25,
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 1.5,
-                          flexWrap: 'wrap',
-                          borderBottom: '1px solid',
-                          borderColor: hairline(theme, 0.08),
-                        }}
+                        component="ul"
+                        sx={{ listStyle: 'none', p: 0, m: 0, mt: 1, ...stackSx(0) }}
                       >
-                        <Typography sx={{ fontWeight: 600, fontSize: 14, flex: '0 0 170px' }}>
-                          {formatDateRange(stay.starts_on, stay.ends_on)}
-                        </Typography>
-                        <Typography
-                          sx={{
-                            color: 'text.secondary',
-                            fontSize: 14,
-                            flex: '1 1 120px',
-                            minWidth: 0,
-                          }}
-                        >
-                          {serviceName(stay.service_id)}
-                        </Typography>
-                        <StatusChip status={stay.status} />
+                        {selectedStays.map(stay => (
+                          <Box
+                            component="li"
+                            key={stay.id}
+                            sx={{
+                              py: 1.25,
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 1.5,
+                              flexWrap: 'wrap',
+                              borderBottom: '1px solid',
+                              borderColor: hairline(theme, 0.08),
+                            }}
+                          >
+                            <Typography
+                              sx={{
+                                fontWeight: 600,
+                                fontSize: 14,
+                                flex: '0 0 170px',
+                                color: WEBSITE_INK,
+                              }}
+                            >
+                              {formatDateRange(stay.starts_on, stay.ends_on)}
+                            </Typography>
+                            <Typography
+                              sx={{
+                                color: alpha(WEBSITE_INK, 0.65),
+                                fontSize: 14,
+                                flex: '1 1 120px',
+                                minWidth: 0,
+                              }}
+                            >
+                              {serviceName(stay.service_id)}
+                            </Typography>
+                            <StatusChip status={stay.status} />
+                          </Box>
+                        ))}
                       </Box>
-                    ))}
+                    )}
                   </Box>
-                )}
-              </Box>
+                }
+              />
             </Box>
           ) : null}
         </Box>

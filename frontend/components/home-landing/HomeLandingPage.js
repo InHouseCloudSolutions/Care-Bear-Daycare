@@ -159,6 +159,7 @@ export default function HomeLandingPage() {
 
           <Box
             sx={{
+              display: { xs: 'none', lg: 'block' },
               position: 'absolute',
               bottom: 0,
               left: 0,
@@ -166,7 +167,7 @@ export default function HomeLandingPage() {
               zIndex: 2,
             }}
           >
-            <HomeLandingFooter />
+            <HomeLandingFooter variant="hero" />
           </Box>
         </Box>
       </Box>

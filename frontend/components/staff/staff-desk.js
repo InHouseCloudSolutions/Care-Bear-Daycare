@@ -416,6 +416,117 @@ function toTimePayload(value) {
   return trimmed.length === 5 ? `${trimmed}:00` : trimmed;
 }
 
+/** Walks and drop-ins occupy a single calendar day. */
+export function isSameDayStay(kind) {
+  return kind === 'walk' || kind === 'drop_in';
+}
+
+/** Kind of the selected service, or null when it is not in the list. */
+export function serviceKindOf(services, serviceId) {
+  if (serviceId == null || serviceId === '') return null;
+  const match = (services || []).find(service => String(service.id) === String(serviceId));
+  return match?.kind ?? null;
+}
+
+/**
+ * Active services, plus the stay's current service when it has been turned off
+ * so the select still shows what this stay is booked on.
+ */
+export function stayEditServiceOptions(services, currentServiceId) {
+  const current =
+    currentServiceId == null || currentServiceId === '' ? null : String(currentServiceId);
+  return (services || []).filter(
+    service => service.active !== false || (current != null && String(service.id) === current),
+  );
+}
+
+/** Form state for Edit stay, seeded from the booking. Charge stays filled so a save keeps it. */
+export function stayEditFormState(booking) {
+  return {
+    serviceId: booking?.service_id != null ? String(booking.service_id) : '',
+    dogIds: Array.isArray(booking?.dogs) ? [...booking.dogs] : [],
+    startsOn: booking?.starts_on ?? '',
+    endsOn: booking?.ends_on ?? '',
+    estCheckinStart: toTimeInput(booking?.est_checkin_start),
+    estCheckinEnd: toTimeInput(booking?.est_checkin_end),
+    estCheckoutStart: toTimeInput(booking?.est_checkout_start),
+    estCheckoutEnd: toTimeInput(booking?.est_checkout_end),
+    parentNote: booking?.parent_note ?? '',
+    charge: booking?.charge == null || booking.charge === '' ? '' : String(booking.charge),
+  };
+}
+
+/** Keep checkout equal to check-in for walk and drop-in. Other kinds are unchanged. */
+export function withStayCheckout(form, kind) {
+  if (!form || !isSameDayStay(kind) || form.endsOn === form.startsOn) return form;
+  return { ...form, endsOn: form.startsOn || '' };
+}
+
+function stayWindowError(start, end, label) {
+  const from = toTimeInput(start);
+  const until = toTimeInput(end);
+  if (from && until && until < from) {
+    return `${label} end must be at or after the start.`;
+  }
+  return null;
+}
+
+/**
+ * Client checks before PATCH. `kind` is the selected service's kind.
+ * @param {object} form
+ * @param {string|null} kind
+ */
+export function stayEditFormError(form, kind) {
+  if (form?.serviceId == null || form.serviceId === '') return 'Choose a service.';
+  if (!Array.isArray(form?.dogIds) || form.dogIds.length === 0) return 'Choose at least one dog.';
+  if (!form.startsOn || !form.endsOn) return 'Check-in and checkout dates are required.';
+  if (isSameDayStay(kind)) {
+    if (form.endsOn !== form.startsOn) return 'Checkout must be the same day as check-in.';
+  } else if (kind === 'boarding') {
+    if (form.endsOn <= form.startsOn) return 'Boarding checkout must be after check-in.';
+  } else if (form.endsOn < form.startsOn) {
+    return 'Checkout must be on or after check-in.';
+  }
+  const checkInWindow = stayWindowError(
+    form.estCheckinStart,
+    form.estCheckinEnd,
+    'Expected check-in',
+  );
+  if (checkInWindow) return checkInWindow;
+  const checkOutWindow = stayWindowError(
+    form.estCheckoutStart,
+    form.estCheckoutEnd,
+    'Expected checkout',
+  );
+  if (checkOutWindow) return checkOutWindow;
+  const charge = String(form.charge ?? '').trim();
+  if (charge !== '' && (!Number.isFinite(Number(charge)) || Number(charge) < 0)) {
+    return 'Charge must be zero or more, or leave it blank to recalculate.';
+  }
+  return null;
+}
+
+/**
+ * Staff PATCH body. A blank charge is omitted so the server recalculates.
+ * A typed amount, including 0, is sent and skips that recalculation.
+ */
+export function stayEditPayload(form) {
+  const payload = {
+    service_id: Number(form.serviceId),
+    dogs: (form.dogIds || []).map(id => Number(id)),
+    starts_on: form.startsOn,
+    ends_on: form.endsOn,
+    est_checkin_start: toTimePayload(form.estCheckinStart),
+    est_checkin_end: toTimePayload(form.estCheckinEnd),
+    est_checkout_start: toTimePayload(form.estCheckoutStart),
+    est_checkout_end: toTimePayload(form.estCheckoutEnd),
+    parent_note: String(form.parentNote ?? '').trim(),
+  };
+  const charge = String(form.charge ?? '').trim();
+  if (charge !== '') payload.charge = Number(charge).toFixed(2);
+  return payload;
+}
+
 function parseTimeOfDay(value) {
   const match = /^(\d{2}):(\d{2})/.exec(String(value || ''));
   if (!match) return null;

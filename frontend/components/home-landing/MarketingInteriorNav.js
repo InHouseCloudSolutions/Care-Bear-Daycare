@@ -1,15 +1,14 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Box, IconButton, Stack } from '@mui/material';
+import { Box, IconButton } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import { WEBSITE_INK } from '@/consts/website-theme';
-import AuthNavLinks from '@/components/pet-parent/AuthNavLinks';
-import useAuthNavItem from '@/components/pet-parent/useAuthNavItem';
 import { useMarketingInteriorNavItems } from './useMarketingNavItems';
 import MarketingNavDrawerPanel from './MarketingNavDrawerPanel';
 import useMarketingNavDrawerItems from './useMarketingNavDrawerItems';
 import MarketingNavDesktopItem from './MarketingNavDesktopItem';
+import MarketingNavActions from './MarketingNavActions';
 import MarketingWordmark from './MarketingWordmark';
 import {
   HOME_NAV_BAR_PX,
@@ -29,9 +28,7 @@ const navItemShape = PropTypes.shape({
 export default function MarketingInteriorNav({ logoHref = '/', items: itemsProp, sx }) {
   const defaultItems = useMarketingInteriorNavItems();
   const items = itemsProp ?? defaultItems;
-  const baseDrawerItems = useMarketingNavDrawerItems(items);
-  const authItem = useAuthNavItem();
-  const drawerItems = useMemo(() => [...baseDrawerItems, authItem], [baseDrawerItems, authItem]);
+  const drawerItems = useMarketingNavDrawerItems(items);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const openDrawer = () => setDrawerOpen(true);
   const closeDrawer = () => setDrawerOpen(false);
@@ -59,37 +56,44 @@ export default function MarketingInteriorNav({ logoHref = '/', items: itemsProp,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
+          gap: 2,
           boxSizing: 'border-box',
           width: '100%',
           px: HOME_NAV_BAR_PX,
           py: HOME_NAV_BAR_PY,
         }}
       >
-        <MarketingWordmark href={logoHref} />
-
-        <Box
-          sx={{
-            display: HOME_NAV_DESKTOP_DISPLAY,
-            alignItems: 'center',
-            gap: HOME_NAV_STACK_SPACING,
-          }}
-        >
-          <Stack direction="row" spacing={HOME_NAV_STACK_SPACING} sx={{ alignItems: 'stretch' }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: { lg: 3, xl: 5 }, minWidth: 0 }}>
+          <MarketingWordmark href={logoHref} />
+          <Box
+            sx={{
+              display: HOME_NAV_DESKTOP_DISPLAY,
+              alignItems: 'center',
+              gap: HOME_NAV_STACK_SPACING,
+              minWidth: 0,
+            }}
+          >
             {items.map(item => (
               <MarketingNavDesktopItem
                 key={item.label}
                 item={item}
                 underlineColor={MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR}
-                color={alpha(WEBSITE_INK, 0.72)}
+                color={WEBSITE_INK}
                 activeColor={WEBSITE_INK}
               />
             ))}
-            <AuthNavLinks
-              underlineColor={MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR}
-              color={alpha(WEBSITE_INK, 0.72)}
-              activeColor={WEBSITE_INK}
-            />
-          </Stack>
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            display: HOME_NAV_DESKTOP_DISPLAY,
+            alignItems: 'center',
+            gap: 2.25,
+            flexShrink: 0,
+          }}
+        >
+          <MarketingNavActions tone="bar" />
         </Box>
 
         <IconButton

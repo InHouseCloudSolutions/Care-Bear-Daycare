@@ -2,10 +2,10 @@ const { test, expect } = require('@playwright/test');
 
 const INTERIOR_PAGES = [
   { path: '/about', heading: 'About' },
-  { path: '/care-and-safety', heading: 'Care and safety' },
-  { path: '/reviews', heading: 'Reviews' },
+  { path: '/care-and-safety', heading: 'Thoughtful care. Every step of their stay.' },
+  { path: '/reviews', heading: 'Happy dogs. Reassured owners.' },
   { path: '/gallery', heading: 'Gallery' },
-  { path: '/contact', heading: 'Contact' },
+  { path: '/contact', heading: "Let's talk about your dog." },
 ];
 
 test.describe('marketing pages', () => {
@@ -54,10 +54,9 @@ test.describe('marketing pages', () => {
       await page.goto('/contact');
     });
     await test.step('Show the contact mailbox', async () => {
-      await expect(page.getByRole('link', { name: 'contact@carebeardaycare.ca' })).toHaveAttribute(
-        'href',
-        /mailto:contact@carebeardaycare\.ca/,
-      );
+      await expect(
+        page.getByRole('link', { name: 'contact@carebeardaycare.ca' }).first(),
+      ).toHaveAttribute('href', /mailto:contact@carebeardaycare\.ca/);
     });
   });
 

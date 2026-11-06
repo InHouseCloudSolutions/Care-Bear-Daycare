@@ -59,8 +59,40 @@ export const SECONDARY_BUTTON_SX = {
   borderColor: alpha(WEBSITE_INK, 0.35),
   color: WEBSITE_INK,
   px: 2.5,
+  bgcolor: 'transparent',
   '&:hover': {
     borderColor: WEBSITE_INK,
     bgcolor: alpha(WEBSITE_INK, 0.05),
   },
+};
+
+/** Outlined cream fields. Applied on a parent so staff theme tokens do not recolor them. */
+export const CREAM_FIELDS_SX = {
+  '& .MuiInputLabel-root': { color: alpha(WEBSITE_INK, 0.72) },
+  '& .MuiInputLabel-root.Mui-focused': { color: WEBSITE_INK },
+  '& .MuiOutlinedInput-root': {
+    bgcolor: WEBSITE_PAPER,
+    color: WEBSITE_INK,
+    borderRadius: '12px',
+  },
+  '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
+    borderColor: alpha(WEBSITE_INK, 0.18),
+  },
+  '& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
+    borderColor: alpha(WEBSITE_INK, 0.35),
+  },
+  '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+    borderColor: WEBSITE_INK,
+  },
+  '& .MuiOutlinedInput-root.Mui-disabled': {
+    bgcolor: '#F3E6D4',
+  },
+  '& .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline': {
+    borderColor: alpha(WEBSITE_INK, 0.12),
+  },
+  '& .MuiInputBase-input.Mui-disabled': {
+    WebkitTextFillColor: alpha(WEBSITE_INK, 0.55),
+  },
+  '& .MuiFormHelperText-root.Mui-error': { color: 'error.main' },
+  '& .MuiFormControlLabel-label': { color: WEBSITE_INK },
 };

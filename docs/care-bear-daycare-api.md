@@ -42,7 +42,7 @@ Use `isStaff` to choose the staff UI versus the pet-parent UI. A pet parent acco
 
 | Role | How you know | Can do |
 |------|----------------|--------|
-| Public | no token | register, list reviews, list site images |
+| Public | no token | register, submit contact inquiry, list reviews, list site images |
 | Pet parent | token, `isStaff: false`, has a profile | own profile, own dogs, own vaccines, own bookings, check availability, read own care updates, own conversation, one review per completed booking |
 | Staff | token, `isStaff: true` | everything, including other pet parents |
 
@@ -65,6 +65,32 @@ These list routes return a **JSON array** (not paginated): pet parents, services
 Page size is 50. Use `?page=2`.
 
 ## Register and profile
+
+## Contact inquiry (marketing form)
+
+Public **POST** `/api/daycare/contact-inquiries/`. **No token.** Body fields are **snake_case**.
+
+Request:
+
+```json
+{
+  "name": "Ada Parent",
+  "email": "ada@example.com",
+  "dog_name": "Pip",
+  "topic": "daycare",
+  "message": "Is daycare a fit for a shy dog?"
+}
+```
+
+- `name` — required, max 120 characters (whitespace stripped; cannot be blank).
+- `email` — required, valid email (stored lowercased).
+- `dog_name` — optional; max 80 characters; omit or send blank/whitespace-only for “not given”.
+- `topic` — required; one of `daycare`, `overnight`, `fit`, `other` (labels for humans: Daycare, Overnight care, Finding the right fit, Something else).
+- `message` — required, max 4000 characters (whitespace stripped; cannot be blank).
+
+**201** `{ "id": 1 }` — the row is saved first; staff receive email when SMTP succeeds.
+
+**400** — DRF field errors, for example `{ "email": ["Enter a valid email address."] }` or `{ "topic": ["..."] }` for an invalid choice.
 
 ### POST `/api/daycare/register/` — public — 201
 

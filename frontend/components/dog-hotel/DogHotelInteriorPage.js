@@ -1,11 +1,12 @@
 'use client';
 
-import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Box, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
-import MarketingInteriorLayout from '@/components/home-landing/MarketingInteriorLayout';
-import { HOME_BRAND, HOME_FOOTER } from '@/components/home-landing/home-landing-data';
+import HomeLandingFooter from '@/components/home-landing/HomeLandingFooter';
+import MarketingInteriorLayout, {
+  MARKETING_INTERIOR_FOOTER_BLEED_SX,
+} from '@/components/home-landing/MarketingInteriorLayout';
 import { WEBSITE_INK } from '@/consts/website-theme';
 
 const headingSx = {
@@ -24,78 +25,35 @@ const ledeSx = {
   color: alpha(WEBSITE_INK, 0.78),
 };
 
-const footerTextSx = {
-  color: alpha(WEBSITE_INK, 0.55),
-  letterSpacing: '0.04em',
-  fontSize: 12,
-};
-
-export default function DogHotelInteriorPage({ title, lede, children }) {
-  const year = new Date().getFullYear();
-  const { placeLine, webCredit } = HOME_FOOTER;
-
+export default function DogHotelInteriorPage({
+  title,
+  lede,
+  children,
+  suppressHeading = false,
+  hideFooter = false,
+  frameMaxWidth = 880,
+  contentSx,
+}) {
   return (
-    <MarketingInteriorLayout>
-      <Box sx={{ maxWidth: 880, mx: 'auto', width: '100%' }}>
-        <Typography component="h1" sx={headingSx}>
-          {title}
-        </Typography>
-        {lede ? (
+    <MarketingInteriorLayout contentSx={contentSx}>
+      <Box sx={{ maxWidth: frameMaxWidth, mx: 'auto', width: '100%' }}>
+        {suppressHeading ? null : (
+          <Typography component="h1" sx={headingSx}>
+            {title}
+          </Typography>
+        )}
+        {!suppressHeading && lede ? (
           <Typography component="p" sx={ledeSx}>
             {lede}
           </Typography>
         ) : null}
         {children}
-        <Box
-          component="footer"
-          sx={{
-            mt: { xs: 8, md: 10 },
-            pt: { xs: 5, md: 6 },
-            pb: { xs: 6, md: 8 },
-            borderTop: `1px solid ${alpha(WEBSITE_INK, 0.12)}`,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            gap: 0.75,
-          }}
-        >
-          <Typography component="p" sx={footerTextSx}>
-            {placeLine}
-          </Typography>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
-              gap: { xs: 0.75, sm: 1.5 },
-              alignItems: { xs: 'flex-start', sm: 'center' },
-            }}
-          >
-            <Typography component="p" sx={footerTextSx}>
-              © {year} {HOME_BRAND.name}
-            </Typography>
-            <Typography
-              component="span"
-              aria-hidden
-              sx={{ ...footerTextSx, display: { xs: 'none', sm: 'inline' }, opacity: 0.5 }}
-            >
-              ·
-            </Typography>
-            <Box
-              component={Link}
-              href={webCredit.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{
-                ...footerTextSx,
-                textDecoration: 'none',
-                '&:hover': { color: WEBSITE_INK, textDecoration: 'underline' },
-              }}
-            >
-              {webCredit.label}
-            </Box>
-          </Box>
-        </Box>
       </Box>
+      {hideFooter ? null : (
+        <Box sx={MARKETING_INTERIOR_FOOTER_BLEED_SX}>
+          <HomeLandingFooter />
+        </Box>
+      )}
     </MarketingInteriorLayout>
   );
 }
@@ -104,4 +62,8 @@ DogHotelInteriorPage.propTypes = {
   title: PropTypes.string.isRequired,
   lede: PropTypes.string,
   children: PropTypes.node,
+  suppressHeading: PropTypes.bool,
+  hideFooter: PropTypes.bool,
+  frameMaxWidth: PropTypes.number,
+  contentSx: PropTypes.object,
 };

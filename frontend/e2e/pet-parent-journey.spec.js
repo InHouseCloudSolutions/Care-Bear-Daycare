@@ -79,14 +79,13 @@ test.describe('pet parent journey', () => {
     await test.step('Choose the dog, a service, dates, and a note', async () => {
       await expect(page.getByRole('checkbox', { name: new RegExp(dogName) })).toBeChecked();
       await expect(page.getByText('No services are open for requests right now.')).toHaveCount(0);
-      await page.getByRole('combobox', { name: 'Service' }).click();
-      await page.locator('[role="option"]:not([aria-disabled="true"])').first().click();
+      await page.getByRole('radiogroup', { name: 'Service' }).getByRole('radio').first().click();
       await selectStayDates(page);
       await page.getByRole('textbox', { name: 'Note for staff' }).fill('E2E stay request');
     });
 
     await test.step('Send the stay request', async () => {
-      await page.getByRole('button', { name: 'Request this stay' }).click();
+      await page.getByRole('button', { name: 'Send stay request' }).click();
     });
 
     await test.step('Show that staff still have to confirm the stay', async () => {

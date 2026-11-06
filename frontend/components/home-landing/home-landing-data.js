@@ -1,5 +1,4 @@
 import { alpha } from '@mui/material/styles';
-import { NAV_DRAWER_GLASS_SX } from '@/components/design-studio/design-studio-glass';
 import {
   HOME_NAV_ITEMS_BASE as NAV_HOME,
   MARKETING_INTERIOR_NAV_ITEMS_BASE as NAV_INTERIOR,
@@ -18,6 +17,7 @@ import {
   WEBSITE_ACCENT,
   WEBSITE_INK,
   WEBSITE_INK_HOVER,
+  WEBSITE_PAGE_BACKGROUND,
 } from '@/consts/website-theme';
 import publicPath from '@/utils/publicPath';
 import { HOME_HERO_FADE_MS, HOME_HERO_SLIDE_MS } from './home-hero-timing';
@@ -52,12 +52,18 @@ export const HOME_BRAND = {
 export const HOME_FOOTER = {
   establishedYear: 2015,
   companyName: 'Care Bear Daycare',
+  serviceLine: 'Home-based daycare & overnight care',
   placeLine: 'Toronto · Greater Toronto Area',
+  contactEmail: 'contact@carebeardaycare.ca',
   webCredit: {
-    label: 'Powered By In House Cloud Solutions',
+    label: 'Powered by In House Cloud Solutions',
     href: 'https://inhousecloudsolutions.com',
   },
 };
+
+/** Orange used by the marketing page CTAs (About, Care & safety). */
+export const MARKETING_CTA_ORANGE = '#E07A2F';
+export const MARKETING_CTA_ORANGE_HOVER = '#C96A22';
 
 /** Public social profiles are unpublished until real accounts exist. */
 export const HOME_FOOTER_SOCIAL_LINKS = [];
@@ -68,17 +74,17 @@ export const HOME_NAV_ITEMS_BASE = NAV_HOME;
 export const MARKETING_INTERIOR_NAV_ITEMS_BASE = NAV_INTERIOR;
 
 /** Desktop nav layout — keep in sync across HomeHeroNav and marketing interior pages. */
-export const HOME_NAV_BAR_PX = { xs: 2, md: 6 };
-export const HOME_NAV_BAR_PY = { xs: 1.5, md: 2 };
+export const HOME_NAV_BAR_PX = { xs: 2, md: 3, xl: 5 };
+export const HOME_NAV_BAR_PY = { xs: 1.5, md: 1.75 };
 export const MEGA_MENU_IMAGE_HEIGHT_SX = { xs: 168, md: 210 };
 export const MEGA_MENU_CONTAINER_PY_SX = { xs: 2, md: 2.5 };
 export const MEGA_MENU_CARD_TITLE_PY = 1.25;
-export const HOME_NAV_STACK_SPACING = 4;
-export const HOME_NAV_DESKTOP_DISPLAY = { xs: 'none', xl: 'flex' };
-export const HOME_NAV_MOBILE_DISPLAY = { xs: 'inline-flex', xl: 'none' };
+export const HOME_NAV_STACK_SPACING = 2.5;
+export const HOME_NAV_DESKTOP_DISPLAY = { xs: 'none', lg: 'flex' };
+export const HOME_NAV_MOBILE_DISPLAY = { xs: 'inline-flex', lg: 'none' };
 export const HOME_NAV_LINK_TYPOGRAPHY_SX = {
   textDecoration: 'none',
-  letterSpacing: '0.04em',
+  letterSpacing: '0.01em',
   fontSize: 15,
   fontWeight: 600,
 };
@@ -110,34 +116,33 @@ export function isMarketingNavLinkActive(pathname, href) {
   return path === hrefPath || path.startsWith(`${hrefPath}/`);
 }
 
-/** Desktop nav link underline — grows left-to-right on hover, flush with navbar bottom. */
+/** Short centered underline under the label. Active stays visible; hover previews it. */
 export const marketingNavLinkHoverUnderlineSx = (underlineColor, isActive = false) => ({
   position: 'relative',
   display: 'inline-flex',
   alignItems: 'center',
-  alignSelf: 'stretch',
+  alignSelf: 'center',
+  py: 0.75,
   '&::after': {
     content: '""',
     position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: theme => ({
-      xs: theme.spacing(-HOME_NAV_BAR_PY.xs),
-      md: theme.spacing(-HOME_NAV_BAR_PY.md),
-    }),
-    height: '1px',
+    left: '50%',
+    bottom: 2,
+    width: 22,
+    height: 2,
+    borderRadius: 1,
     backgroundColor: underlineColor,
-    transform: isActive ? 'scaleX(1)' : 'scaleX(0)',
-    transformOrigin: 'left center',
-    transition: 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
+    transform: isActive ? 'translateX(-50%) scaleX(1)' : 'translateX(-50%) scaleX(0)',
+    transformOrigin: 'center',
+    transition: 'transform 0.25s ease',
   },
   '&:hover::after': {
-    transform: 'scaleX(1)',
+    transform: 'translateX(-50%) scaleX(1)',
   },
 });
 
 export const HOME_NAV_LINK_HOVER_UNDERLINE_COLOR = '#fff';
-export const MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR = WEBSITE_INK;
+export const MARKETING_INTERIOR_NAV_LINK_HOVER_UNDERLINE_COLOR = MARKETING_CTA_ORANGE;
 
 /** Deep teal gradient with a soft caramel glow — drawer, app splash, etc. */
 export const LUXURY_GRADIENT_SX = {
@@ -183,23 +188,15 @@ export const LUXURY_DRAWER_NAV_SUBLINK_TYPOGRAPHY_SX = {
   letterSpacing: '0.05em',
 };
 
-/** Mobile nav drawer — frosted glass (matches gallery mega menu). */
+/** Mobile nav drawer — cream panel, most of the viewport on a phone. */
 export const HOME_LUXURY_DRAWER_PAPER_SX = {
-  width: '100%',
-  maxWidth: 280,
-  ...NAV_DRAWER_GLASS_SX,
-  color: 'common.white',
+  width: 'min(420px, 88vw)',
+  bgcolor: WEBSITE_PAGE_BACKGROUND,
+  color: WEBSITE_INK,
   fontFamily: HOME_LANDING_FONT_FAMILY,
-  '& .MuiListItemButton-root': {
-    color: 'rgba(255,255,255,0.88)',
-    '&:hover': { bgcolor: 'rgba(255,255,255,0.06)' },
-  },
-  '& .MuiListItemText-primary': {
-    color: 'inherit',
-  },
-  '& .MuiSvgIcon-root': {
-    color: 'rgba(255,255,255,0.7)',
-  },
+  backgroundImage: 'none',
+  display: 'flex',
+  flexDirection: 'column',
 };
 
 /** Local hero backgrounds — `frontend/public/imgs/home/` */

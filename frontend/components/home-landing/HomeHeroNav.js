@@ -1,12 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Box, IconButton, Slide, Stack } from '@mui/material';
+import { Box, IconButton, Slide } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import AuthNavLinks from '@/components/pet-parent/AuthNavLinks';
-import useAuthNavItem from '@/components/pet-parent/useAuthNavItem';
 import { useHomeNavItems } from './useMarketingNavItems';
 import MarketingNavDrawerPanel from './MarketingNavDrawerPanel';
 import MarketingNavDesktopItem from './MarketingNavDesktopItem';
+import MarketingNavActions from './MarketingNavActions';
 import MarketingWordmark from './MarketingWordmark';
 import useMarketingNavDrawerItems from './useMarketingNavDrawerItems';
 import {
@@ -23,9 +22,7 @@ const HERO_MENU_ICON_SX = { color: 'rgba(255,255,255,0.88)' };
 export default function HomeHeroNav({ logoHref = '#top' }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const navItems = useHomeNavItems();
-  const baseDrawerItems = useMarketingNavDrawerItems(navItems);
-  const authItem = useAuthNavItem();
-  const drawerItems = useMemo(() => [...baseDrawerItems, authItem], [baseDrawerItems, authItem]);
+  const drawerItems = useMarketingNavDrawerItems(navItems);
 
   const openDrawer = () => setDrawerOpen(true);
   const closeDrawer = () => setDrawerOpen(false);
@@ -47,20 +44,20 @@ export default function HomeHeroNav({ logoHref = '#top' }) {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
+            gap: 2,
             px: HOME_NAV_BAR_PX,
             py: HOME_NAV_BAR_PY,
           }}
         >
-          <MarketingWordmark href={logoHref} />
-
-          <Box
-            sx={{
-              display: HOME_NAV_DESKTOP_DISPLAY,
-              alignItems: 'center',
-              gap: HOME_NAV_STACK_SPACING,
-            }}
-          >
-            <Stack direction="row" spacing={HOME_NAV_STACK_SPACING} sx={{ alignItems: 'stretch' }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: { lg: 3, xl: 5 }, minWidth: 0 }}>
+            <MarketingWordmark href={logoHref} />
+            <Box
+              sx={{
+                display: HOME_NAV_DESKTOP_DISPLAY,
+                alignItems: 'center',
+                gap: HOME_NAV_STACK_SPACING,
+              }}
+            >
               {navItems.map(item => (
                 <MarketingNavDesktopItem
                   key={item.label}
@@ -70,12 +67,18 @@ export default function HomeHeroNav({ logoHref = '#top' }) {
                   activeColor="#fff"
                 />
               ))}
-              <AuthNavLinks
-                underlineColor={HOME_NAV_LINK_HOVER_UNDERLINE_COLOR}
-                color="rgba(255,255,255,0.88)"
-                activeColor="#fff"
-              />
-            </Stack>
+            </Box>
+          </Box>
+
+          <Box
+            sx={{
+              display: HOME_NAV_DESKTOP_DISPLAY,
+              alignItems: 'center',
+              gap: 2.25,
+              flexShrink: 0,
+            }}
+          >
+            <MarketingNavActions tone="overlay" />
           </Box>
 
           <IconButton

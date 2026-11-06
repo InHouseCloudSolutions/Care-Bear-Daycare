@@ -34,19 +34,39 @@ import {
   householdFormState,
   householdLabel,
   householdPayload,
+  isSameDayStay,
   moneyLabel,
   serviceFormError,
   serviceFormState,
+  serviceKindOf,
   servicePayload,
   slugify,
   staffBookingBody,
   staffBookingFormError,
+  stayEditFormError,
+  stayEditFormState,
+  stayEditPayload,
+  stayEditServiceOptions,
   timestampFormError,
   timestampFormState,
   timestampPayload,
+  withStayCheckout,
 } from './staff-desk';
 
 const DATE_PROPS = { type: 'date', InputLabelProps: { shrink: true } };
+const TIME_PROPS = { type: 'time', InputLabelProps: { shrink: true } };
+
+const STAY_API_FIELDS = {
+  serviceId: 'service_id',
+  startsOn: 'starts_on',
+  endsOn: 'ends_on',
+  estCheckinStart: 'est_checkin_start',
+  estCheckinEnd: 'est_checkin_end',
+  estCheckoutStart: 'est_checkout_start',
+  estCheckoutEnd: 'est_checkout_end',
+  parentNote: 'parent_note',
+  charge: 'charge',
+};
 
 /**
  * Form state, field errors and submit handling shared by every desk dialog.
@@ -760,6 +780,183 @@ export function ExtraDialog({ open, extra, onClose, onSave, onSaved }) {
 ExtraDialog.propTypes = {
   open: PropTypes.bool.isRequired,
   extra: PropTypes.object,
+  onClose: PropTypes.func.isRequired,
+  onSave: PropTypes.func.isRequired,
+  onSaved: PropTypes.func.isRequired,
+};
+
+// --- Edit an existing stay ---
+
+export function EditStayDialog({
+  open,
+  booking,
+  householdName,
+  dogs,
+  services,
+  onClose,
+  onSave,
+  onSaved,
+}) {
+  const { form, setForm, error, busy, submit, fieldProps, fieldErrors } = useDialogForm(open, () =>
+    withStayCheckout(stayEditFormState(booking), serviceKindOf(services, booking?.service_id)),
+  );
+
+  const serviceOptions = useMemo(
+    () => stayEditServiceOptions(services, booking?.service_id),
+    [services, booking],
+  );
+  const householdDogs = useMemo(
+    () => (dogs || []).filter(dog => dog.pet_parent_id === booking?.pet_parent_id),
+    [dogs, booking],
+  );
+  const kind = serviceKindOf(services, form.serviceId);
+  const sameDay = isSameDayStay(kind);
+  const span = daySpan(form.startsOn, form.endsOn);
+  let checkoutHint = '';
+  if (sameDay) {
+    checkoutHint = 'Same day as check-in.';
+  } else if (span > 0) {
+    checkoutHint = `${span} day${span === 1 ? '' : 's'}`;
+  }
+
+  const bind = (field, label, extra = {}) => {
+    const apiError = fieldErrors[STAY_API_FIELDS[field]];
+    return fieldProps(field, label, {
+      ...extra,
+      error: Boolean(apiError),
+      helperText: apiError || extra.helperText,
+    });
+  };
+
+  const toggleDog = id =>
+    setForm(prev => ({
+      ...prev,
+      dogIds: prev.dogIds.includes(id)
+        ? prev.dogIds.filter(dogId => dogId !== id)
+        : [...prev.dogIds, id],
+    }));
+
+  return (
+    <FormDialog
+      open={open}
+      title="Edit stay"
+      description={householdName ? `Household: ${householdName}` : null}
+      onClose={onClose}
+      submitLabel="Save stay"
+      busy={busy}
+      error={error}
+      onSubmit={() =>
+        submit(
+          stayEditFormError(form, kind),
+          () => onSave(stayEditPayload(form)),
+          saved => onSaved(saved),
+          'Could not save this stay.',
+        )
+      }
+    >
+      <Box sx={stackSx(2)}>
+        <TextField
+          select
+          {...bind('serviceId', 'Service', {
+            required: true,
+            onChange: event => {
+              const serviceId = event.target.value;
+              const nextKind = serviceKindOf(services, serviceId);
+              setForm(prev => withStayCheckout({ ...prev, serviceId }, nextKind));
+            },
+          })}
+        >
+          {serviceOptions.length === 0 ? (
+            <MenuItem value="" disabled>
+              No services yet
+            </MenuItem>
+          ) : null}
+          {serviceOptions.map(service => (
+            <MenuItem key={service.id} value={String(service.id)}>
+              {service.active === false ? `${service.name} (inactive)` : service.name}
+            </MenuItem>
+          ))}
+        </TextField>
+
+        <Box>
+          <GroupLabel>Dogs</GroupLabel>
+          {householdDogs.length === 0 ? (
+            <Typography sx={{ mt: 1, color: 'text.secondary', fontSize: 14 }}>
+              This household has no dogs yet.
+            </Typography>
+          ) : (
+            <FormGroup row sx={{ mt: 0.5 }}>
+              {householdDogs.map(dog => (
+                <FormControlLabel
+                  key={dog.id}
+                  control={
+                    <Checkbox
+                      checked={form.dogIds.includes(dog.id)}
+                      onChange={() => toggleDog(dog.id)}
+                    />
+                  }
+                  label={dog.name}
+                />
+              ))}
+            </FormGroup>
+          )}
+          {fieldErrors.dogs ? <FormHelperText error>{fieldErrors.dogs}</FormHelperText> : null}
+        </Box>
+
+        <Box sx={fieldGridSx}>
+          <TextField
+            {...bind('startsOn', 'Check-in date', {
+              ...DATE_PROPS,
+              required: true,
+              onChange: event => {
+                const startsOn = event.target.value;
+                setForm(prev => withStayCheckout({ ...prev, startsOn }, kind));
+              },
+            })}
+          />
+          <TextField
+            {...bind('endsOn', 'Checkout date', {
+              ...DATE_PROPS,
+              required: true,
+              disabled: sameDay,
+              inputProps: { min: sameDay ? undefined : form.startsOn || undefined },
+              helperText: checkoutHint,
+            })}
+          />
+        </Box>
+
+        <Box>
+          <GroupLabel>Expected windows</GroupLabel>
+          <Typography sx={{ mt: 0.5, mb: 1.5, color: 'text.secondary', fontSize: 13 }}>
+            Optional. Either side can be left blank.
+          </Typography>
+          <Box sx={fieldGridSx}>
+            <TextField {...bind('estCheckinStart', 'Expected check-in start', TIME_PROPS)} />
+            <TextField {...bind('estCheckinEnd', 'Expected check-in end', TIME_PROPS)} />
+            <TextField {...bind('estCheckoutStart', 'Expected checkout start', TIME_PROPS)} />
+            <TextField {...bind('estCheckoutEnd', 'Expected checkout end', TIME_PROPS)} />
+          </Box>
+        </Box>
+
+        <TextField {...bind('parentNote', 'Parent note', { multiline: true, minRows: 2 })} />
+        <TextField
+          {...bind('charge', 'Charge', {
+            inputProps: { inputMode: 'decimal' },
+            InputProps: { startAdornment: <InputAdornment position="start">$</InputAdornment> },
+            helperText: 'Blank recalculates. A typed amount is kept.',
+          })}
+        />
+      </Box>
+    </FormDialog>
+  );
+}
+
+EditStayDialog.propTypes = {
+  open: PropTypes.bool.isRequired,
+  booking: PropTypes.object,
+  householdName: PropTypes.string,
+  dogs: PropTypes.array,
+  services: PropTypes.array,
   onClose: PropTypes.func.isRequired,
   onSave: PropTypes.func.isRequired,
   onSaved: PropTypes.func.isRequired,

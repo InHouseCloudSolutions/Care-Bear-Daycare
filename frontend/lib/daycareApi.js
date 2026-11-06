@@ -444,3 +444,9 @@ export async function listSiteReviews({ signal } = {}) {
     if (signal) signal.removeEventListener('abort', abortFromCaller);
   }
 }
+
+// --- Public contact (marketing) ---
+
+/** Marketing contact form. No token. Expect **201** `{ id }`. */
+export const submitContactInquiry = body =>
+  daycareRequest({ method: 'POST', path: '/daycare/contact-inquiries', body });

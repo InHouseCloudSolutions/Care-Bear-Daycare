@@ -170,7 +170,7 @@ export default function DogForm({ initialDog, onSubmit, onCancel, submitLabel })
           {submitting ? 'Saving…' : submitLabel}
         </Button>
         {onCancel ? (
-          <Button onClick={onCancel} sx={{ textTransform: 'none' }}>
+          <Button type="button" onClick={onCancel} sx={{ textTransform: 'none' }}>
             Cancel
           </Button>
         ) : null}

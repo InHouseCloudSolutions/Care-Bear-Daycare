@@ -257,10 +257,11 @@ describe('StaffDeskPage', () => {
     renderDesk();
     fireEvent.click(screen.getByRole('tab', { name: /Households/ }));
     fireEvent.click(await screen.findByRole('button', { name: 'Open Ada Lovelace' }));
+    expect(await screen.findByRole('heading', { name: 'Parent details' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Your dogs' })).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: 'Staff portal' })).not.toBeInTheDocument();
     fireEvent.click(await screen.findByRole('button', { name: 'Actions for Ada Lovelace' }));
-    expect(screen.getByRole('menuitem', { name: 'Edit' })).toBeInTheDocument();
     expect(screen.getByRole('menuitem', { name: 'Book a stay' })).toBeInTheDocument();
-    expect(screen.getByRole('menuitem', { name: 'Add photo' })).toBeInTheDocument();
     fireEvent.click(screen.getByRole('menuitem', { name: 'Delete' }));
     const dialog = await screen.findByRole('dialog', { name: 'Delete Ada Lovelace?' });
     await act(async () => {
@@ -282,8 +283,7 @@ describe('StaffDeskPage', () => {
     fireEvent.click(screen.getByRole('tab', { name: /Households/ }));
     fireEvent.click(await screen.findByRole('button', { name: 'Open Ada Lovelace' }));
 
-    fireEvent.click(await screen.findByRole('button', { name: 'Actions for Ada Lovelace' }));
-    fireEvent.click(screen.getByRole('menuitem', { name: 'Add photo' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Change photo for Ada Lovelace' }));
     const parentPhoto = new File(['ada'], 'ada.png', { type: 'image/png' });
     const parentInput = screen.getByLabelText('Photo file for Ada Lovelace', { hidden: true });
     fireEvent.change(parentInput, { target: { files: [parentPhoto] } });
@@ -296,9 +296,10 @@ describe('StaffDeskPage', () => {
       expect(screen.queryByRole('dialog', { name: 'Frame photo' })).not.toBeInTheDocument(),
     );
 
+    expect(screen.getByRole('button', { name: '+ Add vaccine' })).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Actions for Bear' }));
-    expect(screen.getByRole('menuitem', { name: 'Add vaccine' })).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('menuitem', { name: 'Add photo' }));
+    expect(screen.getByRole('menuitem', { name: 'Edit profile' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('menuitem', { name: 'Change photo' }));
     const dogPhoto = new File(['bear'], 'bear.png', { type: 'image/png' });
     const dogInput = screen.getByLabelText('Photo file for Bear', { hidden: true });
     fireEvent.change(dogInput, { target: { files: [dogPhoto] } });
@@ -307,7 +308,7 @@ describe('StaffDeskPage', () => {
       expect(uploadDogPhoto).toHaveBeenCalledWith('staff-token', 3, expect.any(File)),
     );
     expect(await screen.findByText('Bear photo saved.')).toBeInTheDocument();
-  });
+  }, 15000);
 
   it('deletes a dog from the household', async () => {
     deleteDog.mockResolvedValue({ ok: true, status: 204, data: null });
@@ -315,7 +316,7 @@ describe('StaffDeskPage', () => {
     fireEvent.click(screen.getByRole('tab', { name: /Households/ }));
     fireEvent.click(await screen.findByRole('button', { name: 'Open Ada Lovelace' }));
     fireEvent.click(await screen.findByRole('button', { name: 'Actions for Bear' }));
-    fireEvent.click(screen.getByRole('menuitem', { name: 'Delete' }));
+    fireEvent.click(screen.getByRole('menuitem', { name: 'Remove' }));
     const dialog = await screen.findByRole('dialog', { name: 'Delete Bear?' });
     await act(async () => {
       fireEvent.click(within(dialog).getByRole('button', { name: 'Delete dog' }));
@@ -539,6 +540,56 @@ describe('StaffDeskPage', () => {
       fireEvent.click(within(removeDialog).getByRole('button', { name: 'Remove' }));
     });
     expect(deleteBookingExtra).toHaveBeenCalledWith('staff-token', 12, 1);
+  });
+
+  it('edits a stay and patches dates without status or household', async () => {
+    const stay = {
+      id: 14,
+      pet_parent_id: 1,
+      service_id: 1,
+      dogs: [3],
+      status: 'cancelled',
+      starts_on: '2026-11-02',
+      ends_on: '2026-11-04',
+      charge: '105.00',
+      parent_note: 'Gate code',
+      est_checkin_start: null,
+      est_checkin_end: null,
+      est_checkout_start: null,
+      est_checkout_end: null,
+    };
+    listBookings.mockResolvedValue({ ok: true, data: [stay] });
+    updateBooking.mockResolvedValue({ ok: true, data: { ...stay, ends_on: '2026-11-05' } });
+    renderDesk();
+
+    fireEvent.click(await screen.findByRole('button', { name: 'Past 1' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Edit stay for Ada Lovelace' }));
+    const dialog = await screen.findByRole('dialog', { name: 'Edit stay' });
+    expect(within(dialog).getByText('Household: Ada Lovelace')).toBeInTheDocument();
+    expect(within(dialog).queryByLabelText('Household')).not.toBeInTheDocument();
+    fireEvent.change(within(dialog).getByLabelText(/Checkout date/), {
+      target: { value: '2026-11-05' },
+    });
+    await act(async () => {
+      fireEvent.click(within(dialog).getByRole('button', { name: 'Save stay' }));
+    });
+    expect(updateBooking).toHaveBeenCalledWith('staff-token', 14, {
+      service_id: 1,
+      dogs: [3],
+      starts_on: '2026-11-02',
+      ends_on: '2026-11-05',
+      est_checkin_start: null,
+      est_checkin_end: null,
+      est_checkout_start: null,
+      est_checkout_end: null,
+      parent_note: 'Gate code',
+      charge: '105.00',
+    });
+    await waitFor(() =>
+      expect(screen.queryByRole('dialog', { name: 'Edit stay' })).not.toBeInTheDocument(),
+    );
+    expect(listBookings).toHaveBeenCalledTimes(2);
+    expect(await screen.findByText('Stay updated.')).toBeInTheDocument();
   });
 
   it('corrects check-in and checkout times on a stay', async () => {

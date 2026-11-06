@@ -29,7 +29,7 @@ import {
   StatusChip,
   stackSx,
 } from './DeskParts';
-import { AddBookingExtraDialog, StayDialog, TimestampDialog } from './DeskDialogs';
+import { AddBookingExtraDialog, EditStayDialog, StayDialog, TimestampDialog } from './DeskDialogs';
 import {
   BOOKING_FILTERS,
   bookingActions,
@@ -118,6 +118,8 @@ function StayCard({
   dogNames,
   service,
   serviceRecord,
+  dogs,
+  services,
   pending,
   onAction,
   token,
@@ -130,6 +132,7 @@ function StayCard({
   const checkIn = formatStayDate(booking.starts_on);
   const checkOut = formatStayDate(booking.ends_on);
   const [timestampOpen, setTimestampOpen] = useState(false);
+  const [editOpen, setEditOpen] = useState(false);
   const [addExtraOpen, setAddExtraOpen] = useState(false);
   const [removingLine, setRemovingLine] = useState(null);
   const [lineBusy, setLineBusy] = useState(false);
@@ -191,29 +194,42 @@ function StayCard({
             {dogNames.length ? dogNames.join(', ') : 'No dogs'}
           </Typography>
         </Box>
-        {actions.length ? (
-          <Box sx={{ flex: '0 0 auto', display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-            {actions.map(action =>
-              action.primary ? (
-                <StayPrimaryButton
-                  key={action.status}
-                  disabled={pending}
-                  onClick={() => onAction(booking, action)}
-                >
-                  {action.label}
-                </StayPrimaryButton>
-              ) : (
-                <RowButton
-                  key={action.status}
-                  disabled={pending}
-                  onClick={() => onAction(booking, action)}
-                >
-                  {action.label}
-                </RowButton>
-              ),
-            )}
-          </Box>
-        ) : null}
+        <Box
+          sx={{
+            flex: '0 0 auto',
+            display: 'flex',
+            gap: 1,
+            flexWrap: 'wrap',
+            justifyContent: 'flex-end',
+          }}
+        >
+          {actions.map(action =>
+            action.primary ? (
+              <StayPrimaryButton
+                key={action.status}
+                disabled={pending}
+                onClick={() => onAction(booking, action)}
+              >
+                {action.label}
+              </StayPrimaryButton>
+            ) : (
+              <RowButton
+                key={action.status}
+                disabled={pending}
+                onClick={() => onAction(booking, action)}
+              >
+                {action.label}
+              </RowButton>
+            ),
+          )}
+          <RowButton
+            disabled={pending}
+            aria-label={`Edit stay for ${household}`}
+            onClick={() => setEditOpen(true)}
+          >
+            Edit
+          </RowButton>
+        </Box>
       </Box>
 
       <Box
@@ -356,6 +372,22 @@ function StayCard({
         </Box>
       ) : null}
 
+      {editOpen ? (
+        <EditStayDialog
+          open
+          booking={booking}
+          householdName={household}
+          dogs={dogs}
+          services={services}
+          onClose={() => setEditOpen(false)}
+          onSave={body => updateBooking(token, booking.id, body)}
+          onSaved={async () => {
+            setEditOpen(false);
+            await reload();
+            notify('Stay updated.');
+          }}
+        />
+      ) : null}
       <TimestampDialog
         open={timestampOpen}
         booking={booking}
@@ -398,6 +430,8 @@ StayCard.propTypes = {
   dogNames: PropTypes.arrayOf(PropTypes.string).isRequired,
   service: PropTypes.string.isRequired,
   serviceRecord: PropTypes.object,
+  dogs: PropTypes.array,
+  services: PropTypes.array,
   pending: PropTypes.bool,
   onAction: PropTypes.func.isRequired,
   token: PropTypes.string,
@@ -458,6 +492,8 @@ export default function DeskBookingsTab({ data, notify }) {
         dogNames={names}
         service={serviceName(booking.service_id) || `Service ${booking.service_id}`}
         serviceRecord={serviceById.get(booking.service_id)}
+        dogs={dogs}
+        services={services}
         pending={pendingId === booking.id}
         onAction={setStatus}
         token={token}

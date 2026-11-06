@@ -2,13 +2,15 @@
 
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Avatar, Box, Button, Typography } from '@mui/material';
+import { Avatar, Box, Button, IconButton, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
+import PhotoCameraOutlinedIcon from '@mui/icons-material/PhotoCameraOutlined';
 import {
   SITE_IMAGE_UPLOAD_LIMIT_BYTES,
   UPLOADED_PHOTO_MAX_EDGE,
   prepareSiteImage,
 } from '@/components/staff/prepare-site-image';
+import { WEBSITE_INK, WEBSITE_PAGE_BACKGROUND_DARK, WEBSITE_PAPER } from '@/consts/website-theme';
 import { daycareImageSrc } from '@/lib/daycareApi';
 import PhotoFrameDialog from './PhotoFrameDialog';
 import { PHOTO_BUTTON_SX } from './pet-parent-styles';
@@ -111,7 +113,17 @@ export function useDaycarePhoto(photoUrl, token) {
 
 /** Thumbnail plus upload, replace, and remove for a pet parent or a dog. */
 const ProfilePhoto = forwardRef(function ProfilePhoto(
-  { photoUrl, token, name, title, subtitle, onUpload, onRemove, showControls = true },
+  {
+    photoUrl,
+    token,
+    name,
+    title,
+    subtitle,
+    onUpload,
+    onRemove,
+    showControls = true,
+    variant = 'inline',
+  },
   ref,
 ) {
   const src = useDaycarePhoto(photoUrl, token);
@@ -162,6 +174,137 @@ const ProfilePhoto = forwardRef(function ProfilePhoto(
     },
   }));
 
+  const fileInput = (
+    <input
+      ref={inputRef}
+      type="file"
+      accept="image/jpeg,image/png,image/webp,image/gif"
+      hidden
+      aria-label={`Photo file for ${name || 'profile'}`}
+      onChange={handleFile}
+      disabled={Boolean(busy)}
+    />
+  );
+
+  const frameDialog = (
+    <PhotoFrameDialog
+      file={frameFile}
+      onCancel={() => setFrameFile(null)}
+      onSave={handleFrameSave}
+    />
+  );
+
+  const errorText = error ? (
+    <Typography component="p" role="alert" sx={{ mt: 0.5, color: 'error.main', fontSize: 13 }}>
+      {error}
+    </Typography>
+  ) : null;
+
+  if (variant === 'account' || variant === 'dog') {
+    const isDog = variant === 'dog';
+    const size = isDog ? 76 : 112;
+    return (
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: isDog ? 'flex-start' : 'center',
+          width: isDog ? size : 128,
+          flexShrink: 0,
+        }}
+      >
+        <Box sx={{ position: 'relative', width: size, height: size }}>
+          <Avatar
+            src={src || undefined}
+            variant={isDog ? 'rounded' : 'circular'}
+            alt={name ? `${name} photo` : 'Profile photo'}
+            sx={{
+              width: size,
+              height: size,
+              borderRadius: isDog ? '14px' : '50%',
+              bgcolor: WEBSITE_PAGE_BACKGROUND_DARK,
+              color: WEBSITE_INK,
+              fontWeight: 650,
+              fontSize: isDog ? 20 : 32,
+            }}
+          >
+            {initialsFor(name)}
+          </Avatar>
+          <IconButton
+            type="button"
+            aria-label={namedAction('Photo camera', name)}
+            disabled={Boolean(busy)}
+            onClick={() => inputRef.current?.click()}
+            sx={{
+              position: 'absolute',
+              right: isDog ? -6 : -2,
+              bottom: isDog ? -6 : -2,
+              width: 30,
+              height: 30,
+              bgcolor: WEBSITE_PAPER,
+              color: WEBSITE_INK,
+              border: `1px solid ${alpha(WEBSITE_INK, 0.16)}`,
+              '&:hover': { bgcolor: WEBSITE_PAPER },
+            }}
+          >
+            <PhotoCameraOutlinedIcon sx={{ fontSize: 16 }} />
+          </IconButton>
+        </Box>
+        {fileInput}
+        {variant === 'account' ? (
+          <>
+            <Button
+              type="button"
+              disabled={Boolean(busy)}
+              aria-label={namedAction(busy === 'upload' ? 'Uploading photo' : 'Change photo', name)}
+              onClick={() => inputRef.current?.click()}
+              sx={{
+                mt: 1.25,
+                px: 0.5,
+                minWidth: 0,
+                textTransform: 'none',
+                textDecoration: 'underline',
+                color: WEBSITE_INK,
+                fontWeight: 650,
+                fontSize: 14,
+              }}
+            >
+              {busy === 'upload' ? 'Uploading…' : 'Change photo'}
+            </Button>
+            {hasPhoto ? (
+              <Button
+                type="button"
+                color="error"
+                onClick={handleRemove}
+                disabled={Boolean(busy)}
+                aria-label={namedAction(
+                  busy === 'remove' ? 'Removing photo' : 'Remove photo',
+                  name,
+                )}
+                sx={{
+                  px: 0.5,
+                  minWidth: 0,
+                  textTransform: 'none',
+                  color: 'error.main',
+                  fontSize: 13,
+                }}
+              >
+                {busy === 'remove' ? 'Removing…' : 'Remove photo'}
+              </Button>
+            ) : null}
+          </>
+        ) : null}
+        {isDog && busy ? (
+          <Typography component="p" sx={{ mt: 0.5, color: 'text.secondary', fontSize: 13 }}>
+            {busy === 'upload' ? 'Uploading…' : 'Removing…'}
+          </Typography>
+        ) : null}
+        {errorText}
+        {frameDialog}
+      </Box>
+    );
+  }
+
   return (
     <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
       <Avatar
@@ -195,18 +338,11 @@ const ProfilePhoto = forwardRef(function ProfilePhoto(
             {subtitle}
           </Typography>
         ) : null}
-        <input
-          ref={inputRef}
-          type="file"
-          accept="image/jpeg,image/png,image/webp,image/gif"
-          hidden
-          aria-label={`Photo file for ${name || 'profile'}`}
-          onChange={handleFile}
-          disabled={Boolean(busy)}
-        />
+        {fileInput}
         {showControls ? (
           <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: title || subtitle ? 1 : 0.5 }}>
             <Button
+              type="button"
               size="small"
               disabled={Boolean(busy)}
               aria-label={namedAction(
@@ -220,6 +356,7 @@ const ProfilePhoto = forwardRef(function ProfilePhoto(
             </Button>
             {hasPhoto ? (
               <Button
+                type="button"
                 size="small"
                 color="error"
                 onClick={handleRemove}
@@ -240,21 +377,9 @@ const ProfilePhoto = forwardRef(function ProfilePhoto(
             {busy === 'upload' ? 'Uploading…' : 'Removing…'}
           </Typography>
         ) : null}
-        {error ? (
-          <Typography
-            component="p"
-            role="alert"
-            sx={{ mt: 0.5, color: 'error.main', fontSize: 13 }}
-          >
-            {error}
-          </Typography>
-        ) : null}
+        {errorText}
       </Box>
-      <PhotoFrameDialog
-        file={frameFile}
-        onCancel={() => setFrameFile(null)}
-        onSave={handleFrameSave}
-      />
+      {frameDialog}
     </Box>
   );
 });
@@ -268,6 +393,7 @@ ProfilePhoto.propTypes = {
   onUpload: PropTypes.func.isRequired,
   onRemove: PropTypes.func.isRequired,
   showControls: PropTypes.bool,
+  variant: PropTypes.oneOf(['inline', 'account', 'dog']),
 };
 
 export default ProfilePhoto;

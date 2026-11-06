@@ -11,6 +11,7 @@ import {
   WEBSITE_PAPER,
 } from '@/consts/website-theme';
 import { HOME_LANDING_FONT_FAMILY, homeMontserrat } from './home-landing-font';
+import MarketingMobileTabBar from './MarketingMobileTabBar';
 
 function createLandingTheme(shellMode) {
   const isDark = shellMode === 'dark';
@@ -61,6 +62,7 @@ export default function HomeLandingShell({ children, shellMode = 'dark' }) {
         }}
       >
         {children}
+        <MarketingMobileTabBar />
       </Box>
     </ThemeProvider>
   );

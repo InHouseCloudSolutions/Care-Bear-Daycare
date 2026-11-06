@@ -9,17 +9,21 @@ import {
   ROVER_BOOKING_URL,
 } from '@/consts/routes';
 
-/** Shared marketing nav tree (desktop bar + mobile drawer). */
+/** Page links in the desktop bar, mobile drawer, and footer. */
 export const MARKETING_NAV_TREE = [
   { label: 'About', href: ABOUT_PATH },
   { label: 'How a stay works', href: HOW_A_STAY_WORKS_PATH },
-  { label: 'Care and safety', href: CARE_AND_SAFETY_PATH },
+  { label: 'Care & safety', href: CARE_AND_SAFETY_PATH },
   { label: 'Reviews', href: REVIEWS_PATH },
   { label: 'Gallery', href: GALLERY_PATH },
-  { label: 'Book a stay', href: BOOK_STAY_PATH },
-  { label: 'See us on Rover', href: ROVER_BOOKING_URL },
   { label: 'Contact', href: CONTACT_PATH },
 ];
+
+/** Pulled out of the link row into the booking button. */
+export const MARKETING_BOOK_NAV_ITEM = { label: 'Book a stay', href: BOOK_STAY_PATH };
+
+/** Pulled out of the link row into the Rover text link. */
+export const MARKETING_ROVER_NAV_ITEM = { label: 'See us on Rover', href: ROVER_BOOKING_URL };
 
 /** Home hero — same tree without a leading Home link (wordmark links home). */
 export const HOME_NAV_ITEMS_BASE = MARKETING_NAV_TREE;

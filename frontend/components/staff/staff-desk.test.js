@@ -19,6 +19,7 @@ import {
   householdFormError,
   householdMatches,
   householdPayload,
+  isSameDayStay,
   moneyLabel,
   serviceFormError,
   serviceFormState,
@@ -27,11 +28,16 @@ import {
   sortBookings,
   staffBookingBody,
   staffDeskRedirectPath,
+  stayEditFormError,
+  stayEditFormState,
+  stayEditPayload,
+  stayEditServiceOptions,
   timestampFormError,
   timestampInputValue,
   timestampPayload,
   timestampPayloadValue,
   vaccineState,
+  withStayCheckout,
 } from './staff-desk';
 
 describe('staffDeskRedirectPath', () => {
@@ -344,6 +350,135 @@ describe('booking extra lines', () => {
     expect(bookingExtraLineLabel({ description: 'Bath', quantity: 1, amount: '25.00' })).toBe(
       'Bath — $25.00',
     );
+  });
+});
+
+describe('edit stay form', () => {
+  const booking = {
+    id: 13,
+    pet_parent_id: 9,
+    service_id: 2,
+    dogs: [3, 4],
+    status: 'cancelled',
+    starts_on: '2026-11-02',
+    ends_on: '2026-11-04',
+    est_checkin_start: '07:30:00',
+    est_checkin_end: null,
+    est_checkout_start: '16:00:00',
+    est_checkout_end: '18:00',
+    parent_note: 'Gate code',
+    charge: '105.00',
+    checked_in_at: '2026-11-02T12:00:00Z',
+    checked_out_at: null,
+  };
+
+  const seeded = () => stayEditFormState(booking);
+
+  it('seeds the form from the booking without status or household', () => {
+    expect(seeded()).toEqual({
+      serviceId: '2',
+      dogIds: [3, 4],
+      startsOn: '2026-11-02',
+      endsOn: '2026-11-04',
+      estCheckinStart: '07:30',
+      estCheckinEnd: '',
+      estCheckoutStart: '16:00',
+      estCheckoutEnd: '18:00',
+      parentNote: 'Gate code',
+      charge: '105.00',
+    });
+    expect(seeded()).not.toHaveProperty('status');
+    expect(seeded()).not.toHaveProperty('petParentId');
+    expect(stayEditFormState({})).toMatchObject({
+      serviceId: '',
+      dogIds: [],
+      charge: '',
+      parentNote: '',
+    });
+  });
+
+  it('keeps an inactive current service in the list and drops other inactive ones', () => {
+    const services = [
+      { id: 1, name: 'Daycare', active: true },
+      { id: 2, name: 'Old walk', active: false },
+      { id: 3, name: 'Retired', active: false },
+    ];
+    expect(stayEditServiceOptions(services, 2).map(service => service.id)).toEqual([1, 2]);
+  });
+
+  it('locks checkout to check-in for walk and drop-in', () => {
+    const form = { startsOn: '2026-11-02', endsOn: '2026-11-04' };
+    expect(withStayCheckout(form, 'walk')).toEqual({
+      startsOn: '2026-11-02',
+      endsOn: '2026-11-02',
+    });
+    expect(withStayCheckout(form, 'drop_in').endsOn).toBe('2026-11-02');
+    expect(withStayCheckout(form, 'daycare')).toBe(form);
+    expect(withStayCheckout(form, 'boarding')).toBe(form);
+    expect(isSameDayStay('walk')).toBe(true);
+    expect(isSameDayStay('daycare')).toBe(false);
+  });
+
+  it('validates dates by service kind, windows, and at least one dog', () => {
+    const form = seeded();
+    expect(stayEditFormError({ ...form, dogIds: [] }, 'daycare')).toBe('Choose at least one dog.');
+    expect(stayEditFormError({ ...form, serviceId: '' }, 'daycare')).toBe('Choose a service.');
+    expect(stayEditFormError({ ...form, endsOn: '2026-11-01' }, 'daycare')).toBe(
+      'Checkout must be on or after check-in.',
+    );
+    expect(stayEditFormError({ ...form, endsOn: '2026-11-02' }, 'daycare')).toBeNull();
+    expect(stayEditFormError({ ...form, endsOn: form.startsOn }, 'boarding')).toBe(
+      'Boarding checkout must be after check-in.',
+    );
+    expect(stayEditFormError(form, 'boarding')).toBeNull();
+    expect(stayEditFormError(form, 'walk')).toBe('Checkout must be the same day as check-in.');
+    expect(stayEditFormError({ ...form, endsOn: form.startsOn }, 'drop_in')).toBeNull();
+    expect(
+      stayEditFormError({ ...form, estCheckinStart: '10:00', estCheckinEnd: '09:00' }, 'daycare'),
+    ).toBe('Expected check-in end must be at or after the start.');
+    expect(
+      stayEditFormError({ ...form, estCheckoutStart: '15:00', estCheckoutEnd: '14:00' }, 'daycare'),
+    ).toBe('Expected checkout end must be at or after the start.');
+    expect(
+      stayEditFormError({ ...form, estCheckinStart: '10:00', estCheckinEnd: '' }, 'daycare'),
+    ).toBeNull();
+    expect(
+      stayEditFormError({ ...form, estCheckinStart: '09:00', estCheckinEnd: '09:00' }, 'daycare'),
+    ).toBeNull();
+    expect(stayEditFormError({ ...form, charge: '-1' }, 'daycare')).toMatch(/zero or more/);
+    expect(stayEditFormError({ ...form, startsOn: '', endsOn: '' }, 'daycare')).toBe(
+      'Check-in and checkout dates are required.',
+    );
+  });
+
+  it('omits a blank charge, sends 0 and 35.00, and nulls blank windows', () => {
+    const form = {
+      ...seeded(),
+      estCheckinEnd: '',
+      estCheckoutStart: '',
+      charge: '',
+    };
+    const blankCharge = stayEditPayload(form);
+    expect(blankCharge).toEqual({
+      service_id: 2,
+      dogs: [3, 4],
+      starts_on: '2026-11-02',
+      ends_on: '2026-11-04',
+      est_checkin_start: '07:30:00',
+      est_checkin_end: null,
+      est_checkout_start: null,
+      est_checkout_end: '18:00:00',
+      parent_note: 'Gate code',
+    });
+    expect(blankCharge).not.toHaveProperty('charge');
+    expect(blankCharge).not.toHaveProperty('status');
+    expect(blankCharge).not.toHaveProperty('pet_parent_id');
+    expect(blankCharge).not.toHaveProperty('checked_in_at');
+    expect(blankCharge).not.toHaveProperty('checked_out_at');
+    expect(blankCharge).not.toHaveProperty('total');
+    expect(stayEditPayload({ ...form, charge: '0' }).charge).toBe('0.00');
+    expect(stayEditPayload({ ...form, charge: '0.00' }).charge).toBe('0.00');
+    expect(stayEditPayload({ ...form, charge: '35.00' }).charge).toBe('35.00');
   });
 });
 
