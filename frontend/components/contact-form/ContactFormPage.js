@@ -370,7 +370,9 @@ export default function ContactFormPage() {
               overflow: 'hidden',
             }}
           >
-            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1.5, p: { xs: 2.25, md: 2.5 } }}>
+            <Box
+              sx={{ display: 'flex', alignItems: 'flex-start', gap: 1.5, p: { xs: 2.25, md: 2.5 } }}
+            >
               <InlineIcon src={ICON.envelope} size={22} />
               <Box sx={{ flex: 1, minWidth: 0 }}>
                 <Typography
@@ -436,7 +438,10 @@ export default function ContactFormPage() {
             >
               <InlineIcon src={ICON.locationPin} size={22} />
               <Box>
-                <Typography component="p" sx={{ m: 0, fontWeight: 700, fontSize: '1.02rem', color: '#fff' }}>
+                <Typography
+                  component="p"
+                  sx={{ m: 0, fontWeight: 700, fontSize: '1.02rem', color: '#fff' }}
+                >
                   {placeLine}
                 </Typography>
                 <Typography
@@ -485,7 +490,13 @@ export default function ContactFormPage() {
               component="form"
               noValidate
               onSubmit={handleSubmit}
-              sx={{ mt: 3, flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
+              sx={{
+                mt: 3,
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+              }}
             >
               {apiSummary ? (
                 <Alert severity="error" sx={{ mb: 2, borderRadius: '12px' }}>

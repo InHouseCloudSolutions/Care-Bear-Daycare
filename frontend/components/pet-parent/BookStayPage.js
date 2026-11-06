@@ -1263,7 +1263,9 @@ export default function BookStayPage() {
                       </IconButton>
                     </Box>
                     {monthLoading ? (
-                      <Typography sx={{ mb: 1, textAlign: 'center' }}>Loading availability…</Typography>
+                      <Typography sx={{ mb: 1, textAlign: 'center' }}>
+                        Loading availability…
+                      </Typography>
                     ) : null}
                     {monthError ? (
                       <Alert severity="error" sx={{ mb: 1.5 }}>

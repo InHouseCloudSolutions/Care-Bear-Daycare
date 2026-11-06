@@ -155,8 +155,8 @@
     "semantic_hash": "d2c3dfa76c4bcb1fdd4c2b7440252823"
   },
   "frontend/components/home-landing/MarketingNavDrawerPanel.js": {
-    "mtime": 1793982024.7806704,
-    "ast_hash": "9e4d5b59bb5f8e8d65b6b22c89136740",
+    "mtime": 1793992156.426403,
+    "ast_hash": "39a964c5a9f76522716780ca0db2ca3b",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingWordmark.js": {
@@ -940,8 +940,8 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/useAuthNavItem.js": {
-    "mtime": 1793981891.442883,
-    "ast_hash": "886cc5bfe27bdb8ae46f0e5643dd1cda",
+    "mtime": 1793992147.4582386,
+    "ast_hash": "84404880d64b28be8b6a9dd32a5edf07",
     "semantic_hash": ""
   },
   "frontend/lib/daycareApi.js": {
@@ -1780,13 +1780,13 @@
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingAccountControl.js": {
-    "mtime": 1793981901.121376,
-    "ast_hash": "2198b3ae4e870a1b610a79603993449d",
+    "mtime": 1793992152.0936885,
+    "ast_hash": "c95d2ba06f2c19b081e80cecdfd13132",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingMobileTabBar.js": {
-    "mtime": 1793983796.1881297,
-    "ast_hash": "9c8e0fa3bf115afe17a569ee2282e1c9",
+    "mtime": 1793992154.6067655,
+    "ast_hash": "9760ef56dd51cb9b2896f260770a249c",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingNavActions.js": {
@@ -1947,6 +1947,16 @@
   "frontend/public/imgs/common/user-account.svg": {
     "mtime": 1793982735.7298553,
     "ast_hash": "07f1503efd1f2311c52ede0e604e8488",
+    "semantic_hash": ""
+  },
+  "frontend/components/home-landing/MarketingAccountControl.test.js": {
+    "mtime": 1793992203.1985106,
+    "ast_hash": "0c64c42a8579cb8ef446db4715663ef6",
+    "semantic_hash": ""
+  },
+  "frontend/components/home-landing/MarketingMobileTabBar.test.js": {
+    "mtime": 1793992173.7157328,
+    "ast_hash": "8b1d299d2949d07eb328b6fd5cb3fb58",
     "semantic_hash": ""
   }
 }

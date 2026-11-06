@@ -27,8 +27,11 @@ describe('MarketingAccountControl', () => {
     authState();
     render(<MarketingAccountControl />);
     fireEvent.click(screen.getByRole('button', { name: 'Account menu for Alex Morgan' }));
-    expect(screen.getByRole('link', { name: 'Your account' })).toHaveAttribute('href', '/account');
-    expect(screen.queryByRole('link', { name: 'Staff portal' })).not.toBeInTheDocument();
+    expect(screen.getByRole('menuitem', { name: 'Your account' })).toHaveAttribute(
+      'href',
+      '/account',
+    );
+    expect(screen.queryByRole('menuitem', { name: 'Staff portal' })).not.toBeInTheDocument();
   });
 
   it('opens the account avatar and links the menu item to the staff portal', () => {
@@ -37,9 +40,12 @@ describe('MarketingAccountControl', () => {
       petParent: null,
     });
     render(<MarketingAccountControl />);
-    expect(screen.queryByRole('link', { name: 'Staff portal' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('menuitem', { name: 'Staff portal' })).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Account menu for chris' }));
-    expect(screen.getByRole('link', { name: 'Staff portal' })).toHaveAttribute('href', '/staff');
-    expect(screen.queryByRole('link', { name: 'Your account' })).not.toBeInTheDocument();
+    expect(screen.getByRole('menuitem', { name: 'Staff portal' })).toHaveAttribute(
+      'href',
+      '/staff',
+    );
+    expect(screen.queryByRole('menuitem', { name: 'Your account' })).not.toBeInTheDocument();
   });
 });

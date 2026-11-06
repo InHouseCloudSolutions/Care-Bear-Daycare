@@ -249,7 +249,9 @@ export default function ClientProfileView({
           Signed in as {signedInName || 'this account'}. This account has no pet-parent profile, so
           these details are not saved here.
         </Alert>
-      ) : showHousehold ? (
+      ) : null}
+
+      {showHousehold && !missingProfile ? (
         <Box component="form" onSubmit={handleSubmit} sx={{ ...CREAM_FIELDS_SX }}>
           <Box component="section" aria-label="Parent details" sx={CARD_SHELL_SX}>
             <Typography component="h2" sx={SECTION_HEADING_SX}>
@@ -366,97 +368,97 @@ export default function ClientProfileView({
       ) : null}
 
       {showHousehold ? (
-      <Box component="section" sx={{ mt: { xs: 4, md: 5 } }}>
-        <Box
-          sx={{
-            display: 'flex',
-            alignItems: 'flex-start',
-            justifyContent: 'space-between',
-            gap: 2,
-            flexWrap: 'wrap',
-          }}
-        >
-          <Box>
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <Typography component="h2" sx={SECTION_HEADING_SX}>
-                Your dogs
-              </Typography>
-              <Box
-                component="span"
-                sx={{
-                  minWidth: 26,
-                  px: 1,
-                  py: 0.15,
-                  borderRadius: 999,
-                  textAlign: 'center',
-                  fontSize: 13,
-                  fontWeight: 700,
-                  color: WEBSITE_INK,
-                  bgcolor: WEBSITE_PAGE_BACKGROUND_MUTED,
-                }}
-              >
-                {dogs.length}
+        <Box component="section" sx={{ mt: { xs: 4, md: 5 } }}>
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'flex-start',
+              justifyContent: 'space-between',
+              gap: 2,
+              flexWrap: 'wrap',
+            }}
+          >
+            <Box>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                <Typography component="h2" sx={SECTION_HEADING_SX}>
+                  Your dogs
+                </Typography>
+                <Box
+                  component="span"
+                  sx={{
+                    minWidth: 26,
+                    px: 1,
+                    py: 0.15,
+                    borderRadius: 999,
+                    textAlign: 'center',
+                    fontSize: 13,
+                    fontWeight: 700,
+                    color: WEBSITE_INK,
+                    bgcolor: WEBSITE_PAGE_BACKGROUND_MUTED,
+                  }}
+                >
+                  {dogs.length}
+                </Box>
               </Box>
+              <Typography sx={{ mt: 0.5, fontSize: 14.5, color: alpha(WEBSITE_INK, 0.6) }}>
+                Profiles and vaccine details for each dog.
+              </Typography>
             </Box>
-            <Typography sx={{ mt: 0.5, fontSize: 14.5, color: alpha(WEBSITE_INK, 0.6) }}>
-              Profiles and vaccine details for each dog.
-            </Typography>
+            {onCreateDog && !adding ? (
+              <Button
+                type="button"
+                variant="outlined"
+                onClick={() => setAdding(true)}
+                sx={SECONDARY_BUTTON_SX}
+              >
+                + Add dog
+              </Button>
+            ) : null}
           </Box>
-          {onCreateDog && !adding ? (
-            <Button
-              type="button"
-              variant="outlined"
-              onClick={() => setAdding(true)}
-              sx={SECONDARY_BUTTON_SX}
-            >
-              + Add dog
-            </Button>
+
+          {dogsError ? (
+            <Alert severity="error" sx={{ mt: 2 }}>
+              {dogsError}
+            </Alert>
           ) : null}
-        </Box>
 
-        {dogsError ? (
-          <Alert severity="error" sx={{ mt: 2 }}>
-            {dogsError}
-          </Alert>
-        ) : null}
+          {adding ? (
+            <Box sx={{ mt: 2.5, maxWidth: 560, ...CREAM_FIELDS_SX }}>
+              <DogForm
+                onSubmit={handleCreateDog}
+                onCancel={() => setAdding(false)}
+                submitLabel="Add dog"
+              />
+            </Box>
+          ) : null}
 
-        {adding ? (
-          <Box sx={{ mt: 2.5, maxWidth: 560, ...CREAM_FIELDS_SX }}>
-            <DogForm
-              onSubmit={handleCreateDog}
-              onCancel={() => setAdding(false)}
-              submitLabel="Add dog"
-            />
+          {!dogsLoading && dogs.length === 0 && !adding ? (
+            <Typography sx={{ mt: 2.5, color: alpha(WEBSITE_INK, 0.6) }}>
+              {onCreateDog ? 'No dogs yet. Add your first dog above.' : 'No dogs yet.'}
+            </Typography>
+          ) : null}
+
+          <Box
+            sx={{
+              mt: 2.5,
+              display: 'grid',
+              gridTemplateColumns: { xs: '1fr', md: '1fr 1fr 1fr' },
+              gap: 2,
+              alignItems: 'stretch',
+            }}
+          >
+            {dogs.map(dog => (
+              <DogCard
+                key={dog.id}
+                dog={dog}
+                token={token}
+                onChanged={onDogsChanged}
+                onRequestRemove={onRequestRemoveDog}
+                onNotify={onNotify}
+              />
+            ))}
           </Box>
-        ) : null}
-
-        {!dogsLoading && dogs.length === 0 && !adding ? (
-          <Typography sx={{ mt: 2.5, color: alpha(WEBSITE_INK, 0.6) }}>
-            {onCreateDog ? 'No dogs yet. Add your first dog above.' : 'No dogs yet.'}
-          </Typography>
-        ) : null}
-
-        <Box
-          sx={{
-            mt: 2.5,
-            display: 'grid',
-            gridTemplateColumns: { xs: '1fr', md: '1fr 1fr 1fr' },
-            gap: 2,
-            alignItems: 'stretch',
-          }}
-        >
-          {dogs.map(dog => (
-            <DogCard
-              key={dog.id}
-              dog={dog}
-              token={token}
-              onChanged={onDogsChanged}
-              onRequestRemove={onRequestRemoveDog}
-              onNotify={onNotify}
-            />
-          ))}
         </Box>
-      </Box>
       ) : null}
 
       {showHousehold && showHelp ? (

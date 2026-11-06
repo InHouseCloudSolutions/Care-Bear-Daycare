@@ -55,8 +55,8 @@
     "semantic_hash": "6f52179910373b1b5f9bfa3ff456a259"
   },
   "frontend/components/contact-form/ContactFormPage.js": {
-    "mtime": 1793979490.320394,
-    "ast_hash": "7ef5215135846ad410bca70e82e58a00",
+    "mtime": 1793992806.1886976,
+    "ast_hash": "32c3fe187cfcdbe6e97fe2326c8d49ab",
     "semantic_hash": ""
   },
   "frontend/components/design-studio/GlassFormField.js": {
@@ -895,8 +895,8 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/AccountProfilePage.js": {
-    "mtime": 1793991824.1778421,
-    "ast_hash": "44ab7c4755b652e571c16017c1a7fb71",
+    "mtime": 1793992806.189224,
+    "ast_hash": "6607725f77c04997adb4373fef8de28f",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/ApiTestPage.js": {
@@ -985,8 +985,8 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/BookStayPage.js": {
-    "mtime": 1793973004.4541538,
-    "ast_hash": "690063efe405f93f6df488083647a562",
+    "mtime": 1793992806.189224,
+    "ast_hash": "940b00141632fd33dec3ffbd6cef84e6",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/booking-dates.js": {
@@ -1005,8 +1005,8 @@
     "semantic_hash": ""
   },
   "frontend/e2e/auth-gates.spec.js": {
-    "mtime": 1793921512.5250843,
-    "ast_hash": "1db5ea529de6e65004c55a8cb04a6ffe",
+    "mtime": 1793992806.189757,
+    "ast_hash": "178505a76e3657e05cb9c988aeccb06d",
     "semantic_hash": ""
   },
   "frontend/e2e/marketing.spec.js": {
@@ -1025,8 +1025,8 @@
     "semantic_hash": ""
   },
   "frontend/playwright.config.js": {
-    "mtime": 1793921512.492393,
-    "ast_hash": "f7a11c55718fbda23fc6d6b150b2a75f",
+    "mtime": 1793992806.1903112,
+    "ast_hash": "fc0ecf700e0b26c0716bbc4b9ef3257c",
     "semantic_hash": ""
   },
   "frontend/e2e/README.md": {
@@ -1040,8 +1040,8 @@
     "semantic_hash": ""
   },
   "frontend/components/home-landing/HomePageJingle.js": {
-    "mtime": 1793921512.4985495,
-    "ast_hash": "2039a18f283df8912073b019fa87409b",
+    "mtime": 1793992806.189224,
+    "ast_hash": "ff902142925456dd2c3d934c3e8f78ba",
     "semantic_hash": ""
   },
   "frontend/test-results/.last-run.json": {
@@ -1150,63 +1150,63 @@
     "semantic_hash": ""
   },
   "frontend/src/app/staff/layout.js": {
-    "mtime": 1793921512.5672114,
-    "ast_hash": "06e2942f3e1855a369148fd4b6029bde",
+    "mtime": 1793992806.1903112,
+    "ast_hash": "440e3a0e9b9aed12bd5ca53aaa20ffe9",
     "semantic_hash": ""
   },
   "frontend/src/app/staff/page.js": {
-    "mtime": 1793921512.5779567,
-    "ast_hash": "2e4175acb2e9732cda2d700ac7db04e5",
+    "mtime": 1793992806.1903112,
+    "ast_hash": "3e46a02b6a10eda008586b069eff3e28",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/GallerySiteImages.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "0bf169773a4475a2b74d0737b0b3f883",
+    "mtime": 1793992806.1886976,
+    "ast_hash": "04e37aaebf3df3a875e4cf3a41ceffff",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/HomeHeroSiteSlides.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "f92aa7c756284d0e21f46df56511c4f7",
+    "mtime": 1793992806.189224,
+    "ast_hash": "308d7eab881c0fb08ddd386532ff130d",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/home-hero-timing.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "8c97cd219887a4c8a2b396240717e4f1",
+    "mtime": 1793992806.1886976,
+    "ast_hash": "4666f5764ff58d61da37156da78efd64",
     "semantic_hash": ""
   },
   "frontend/components/staff/SiteImageSection.js": {
-    "mtime": 1793921514.122679,
-    "ast_hash": "9d1c3747871b2463e1b02b70ef52be05",
+    "mtime": 1793992806.189757,
+    "ast_hash": "2946a636aff2f74391f0ae97bc45efd3",
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffImagesPage.test.js": {
-    "mtime": 1793921513.9745011,
-    "ast_hash": "e9fea513baa369e53de8ac1e8b6fd007",
+    "mtime": 1793992806.1903112,
+    "ast_hash": "0fe4baef71659ebcc0dfc4f284faeedf",
     "semantic_hash": ""
   },
   "frontend/components/staff/site-images.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "c30d51d58a69ed4fc9fcb7b5a5e16f80",
+    "mtime": 1793992806.189757,
+    "ast_hash": "d6b8ea2dcfde88d02a0378043d4ad630",
     "semantic_hash": ""
   },
   "frontend/lib/daycareApi.test.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "d2a4c36fe573d65b6324c12dbe778855",
+    "mtime": 1793992806.1903112,
+    "ast_hash": "683d316b12c4130b92c47d0e1830057f",
     "semantic_hash": ""
   },
   "frontend/src/app/staff/images/page.js": {
-    "mtime": 1793921513.9745011,
-    "ast_hash": "d12a279692bf1482cda93931f8914e9a",
+    "mtime": 1793992806.1903112,
+    "ast_hash": "37cc214120aef28fa2c526190bb53641",
     "semantic_hash": ""
   },
   "frontend/utils/siteImages.js": {
-    "mtime": 1793921513.9745011,
-    "ast_hash": "57f0f757c97bcd5fb02c96d2e9f2e05d",
+    "mtime": 1793992806.1903112,
+    "ast_hash": "6c21a8b9903b273d6a86b06eda6c50e4",
     "semantic_hash": ""
   },
   "frontend/utils/siteImages.test.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "0ef03ff2b4133294f9001470fb8120d0",
+    "mtime": 1793992806.1908567,
+    "ast_hash": "8de9fe0ba95e1b6f111d79ab430996c0",
     "semantic_hash": ""
   },
   "frontend/components/staff/DeskBookingsTab.js": {
@@ -1250,13 +1250,13 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffDeskPage.test.js": {
-    "mtime": 1793935200.6242905,
-    "ast_hash": "603389f88b083a5cd1cb1003000a09f8",
+    "mtime": 1793992661.6594791,
+    "ast_hash": "613692d39aab51f4f37c5b6f6e5705d2",
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffPageShell.js": {
-    "mtime": 1793810350.4967191,
-    "ast_hash": "624089321c2b242874e3645efb162b65",
+    "mtime": 1793992669.4630063,
+    "ast_hash": "29128569cbb0f8ac954c585d60c8c283",
     "semantic_hash": ""
   },
   "frontend/components/staff/prepare-site-image.js": {
@@ -1340,33 +1340,33 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffCalendarPage.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "e4f01b4490372ec0d8f17ca67840e601",
+    "mtime": 1793992806.189757,
+    "ast_hash": "6f4bc35e6767635be46828612a178149",
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffCalendarPage.test.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "58c5318639966460503ce8da9a7073fd",
+    "mtime": 1793992806.189757,
+    "ast_hash": "b96b2c9f8d58fe3f20a7d14f1ac74c0d",
     "semantic_hash": ""
   },
   "frontend/components/staff/staff-calendar.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "28710558ddfefdf52637e445afb20561",
+    "mtime": 1793992806.189757,
+    "ast_hash": "f6297acfa32bd4dc6207d57469509cdb",
     "semantic_hash": ""
   },
   "frontend/src/app/staff/calendar/page.js": {
-    "mtime": 1793921513.9745011,
-    "ast_hash": "313f03ab98b4dcef8ccd209610f4d2e7",
+    "mtime": 1793992806.1903112,
+    "ast_hash": "a6097982a963764bcf0301f88f256161",
     "semantic_hash": ""
   },
   "frontend/consts/routes.test.js": {
-    "mtime": 1793921513.9745011,
-    "ast_hash": "e488faef9a31cfeadfad2c696c396b87",
+    "mtime": 1793992806.189757,
+    "ast_hash": "7ae5349bf90951ca4fb9e0f42f3a8072",
     "semantic_hash": ""
   },
   "frontend/components/staff/DeskExtrasTab.js": {
-    "mtime": 1793921514.0670466,
-    "ast_hash": "71aa03aa74cc041370ece80d737e616b",
+    "mtime": 1793992806.189224,
+    "ast_hash": "75672c6eeba076e7749437b68369e5d2",
     "semantic_hash": ""
   },
   "frontend/charge_test_out.txt": {
@@ -1615,8 +1615,8 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/ClientProfileView.js": {
-    "mtime": 1793991835.970828,
-    "ast_hash": "447703901b0df53999ac5500de08e485",
+    "mtime": 1793993124.1999195,
+    "ast_hash": "5ec0902f83d06fa112d6786b38fe06fb",
     "semantic_hash": ""
   },
   "docs/reference/booking-page-current.png": {
@@ -1780,8 +1780,8 @@
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingAccountControl.js": {
-    "mtime": 1793992152.0936885,
-    "ast_hash": "c95d2ba06f2c19b081e80cecdfd13132",
+    "mtime": 1793992712.284036,
+    "ast_hash": "c10e806d7f0ec55745f26922cbcb77f7",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingMobileTabBar.js": {
@@ -1950,8 +1950,8 @@
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingAccountControl.test.js": {
-    "mtime": 1793992203.1985106,
-    "ast_hash": "0c64c42a8579cb8ef446db4715663ef6",
+    "mtime": 1793992806.189224,
+    "ast_hash": "bc8c592a0a94e3188f24321872fb83b9",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingMobileTabBar.test.js": {

@@ -73,7 +73,12 @@ export default function AccountProfilePage() {
                 Staff portal
               </Button>
             ) : (
-              <Button component={Link} href={BOOK_STAY_PATH} variant="contained" sx={BOOK_BUTTON_SX}>
+              <Button
+                component={Link}
+                href={BOOK_STAY_PATH}
+                variant="contained"
+                sx={BOOK_BUTTON_SX}
+              >
                 Book a stay →
               </Button>
             )}
