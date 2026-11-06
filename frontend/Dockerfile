@@ -19,9 +19,11 @@ RUN apk add --no-cache libc6-compat
 RUN mkdir /code
 WORKDIR /code
 
-# Install dependencies (Berry: packageManager + yarnPath require .yarn/releases)
+# Install dependencies (Berry: packageManager + yarnPath require .yarn/releases).
+# The next patch must be present before Yarn resolves the lockfile.
 COPY package.json yarn.lock .yarnrc.yml ./
 COPY .yarn/releases ./.yarn/releases
+COPY .yarn/patches ./.yarn/patches
 RUN yarn install --immutable
 
 # Rebuild the source code only when needed
