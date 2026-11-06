@@ -8,13 +8,14 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NextLink from 'next/link';
+import MarketingWordmark from '@/components/home-landing/MarketingWordmark';
 import { useAuth } from '@/contexts/AuthContext';
 import { ThemeContext } from '@/contexts/ThemeContext';
 import { utilityButtonSx } from './site-image-styles';
 
 /**
  * Frame shared by every staff page: one scroll area, a centred column,
- * breadcrumb + theme toggle + Log out, then the page title.
+ * logo + breadcrumb + theme toggle + Log out, then the page title.
  * The inner column is the only flex child of the scroll area, so it never shrinks
  * and the page always scrolls when it is taller than the window.
  */
@@ -46,35 +47,48 @@ export default function StaffPageShell({ crumbs, title, subtitle, actions, child
             flexWrap: 'wrap',
           }}
         >
-          <Breadcrumbs
-            aria-label="Breadcrumb"
-            separator={<NavigateNextIcon sx={{ fontSize: 16 }} />}
-            sx={{ fontSize: 13, fontWeight: 600, letterSpacing: '0.04em' }}
-          >
-            {crumbs.map((crumb, index) =>
-              crumb.href && index < crumbs.length - 1 ? (
-                <Link
-                  key={crumb.label}
-                  component={NextLink}
-                  href={crumb.href}
-                  underline="hover"
-                  color="text.secondary"
-                  sx={{ fontSize: 'inherit', fontWeight: 'inherit' }}
-                >
-                  {crumb.label}
-                </Link>
-              ) : (
-                <Typography
-                  key={crumb.label}
-                  color="text.primary"
-                  aria-current="page"
-                  sx={{ fontSize: 'inherit', fontWeight: 'inherit' }}
-                >
-                  {crumb.label}
-                </Typography>
-              ),
-            )}
-          </Breadcrumbs>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, minWidth: 0 }}>
+            <Box
+              sx={{
+                display: 'flex',
+                flexShrink: 0,
+                lineHeight: 0,
+                // Navy wordmark disappears on the dark staff canvas; flip lightness and keep hue.
+                filter: isLight ? 'none' : 'invert(1) hue-rotate(180deg)',
+              }}
+            >
+              <MarketingWordmark href="/" />
+            </Box>
+            <Breadcrumbs
+              aria-label="Breadcrumb"
+              separator={<NavigateNextIcon sx={{ fontSize: 16 }} />}
+              sx={{ fontSize: 13, fontWeight: 600, letterSpacing: '0.04em' }}
+            >
+              {crumbs.map((crumb, index) =>
+                crumb.href && index < crumbs.length - 1 ? (
+                  <Link
+                    key={crumb.label}
+                    component={NextLink}
+                    href={crumb.href}
+                    underline="hover"
+                    color="text.secondary"
+                    sx={{ fontSize: 'inherit', fontWeight: 'inherit' }}
+                  >
+                    {crumb.label}
+                  </Link>
+                ) : (
+                  <Typography
+                    key={crumb.label}
+                    color="text.primary"
+                    aria-current="page"
+                    sx={{ fontSize: 'inherit', fontWeight: 'inherit' }}
+                  >
+                    {crumb.label}
+                  </Typography>
+                ),
+              )}
+            </Breadcrumbs>
+          </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, flexWrap: 'wrap' }}>
             {actions}
             <Tooltip title={themeLabel}>

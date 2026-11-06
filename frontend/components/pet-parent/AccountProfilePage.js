@@ -34,13 +34,15 @@ const BOOK_BUTTON_SX = {
 
 export default function AccountProfilePage() {
   const { user, petParent, token, loading, logout, refreshAuth } = useAuth();
+  const isStaff = user?.isStaff === true;
   const [dogs, setDogs] = useState([]);
-  const [dogsLoading, setDogsLoading] = useState(Boolean(token));
+  const [dogsLoading, setDogsLoading] = useState(Boolean(token) && !isStaff);
   const [dogsError, setDogsError] = useState(null);
-  const missing = !loading && Boolean(user) && !petParent;
+  const missing = !loading && Boolean(user) && !petParent && !isStaff;
 
   const loadDogs = useCallback(async () => {
-    if (!token) {
+    if (!token || isStaff) {
+      setDogs([]);
       setDogsLoading(false);
       return;
     }
@@ -54,7 +56,7 @@ export default function AccountProfilePage() {
     setDogsError(null);
     const rows = Array.isArray(res.data) ? res.data : [];
     setDogs(dogsForParent(rows, petParent?.id));
-  }, [token, petParent?.id]);
+  }, [token, petParent?.id, isStaff]);
 
   useEffect(() => {
     loadDogs();
@@ -66,19 +68,15 @@ export default function AccountProfilePage() {
         showPageHeader
         actions={
           <>
-            <Button component={Link} href={BOOK_STAY_PATH} variant="contained" sx={BOOK_BUTTON_SX}>
-              Book a stay →
-            </Button>
-            {user?.isStaff === true ? (
-              <Button
-                component={Link}
-                href={STAFF_PREFIX}
-                variant="outlined"
-                sx={SECONDARY_BUTTON_SX}
-              >
+            {isStaff ? (
+              <Button component={Link} href={STAFF_PREFIX} variant="contained" sx={BOOK_BUTTON_SX}>
                 Staff portal
               </Button>
-            ) : null}
+            ) : (
+              <Button component={Link} href={BOOK_STAY_PATH} variant="contained" sx={BOOK_BUTTON_SX}>
+                Book a stay →
+              </Button>
+            )}
             <Button type="button" variant="outlined" onClick={logout} sx={SECONDARY_BUTTON_SX}>
               Log out
             </Button>
@@ -95,8 +93,9 @@ export default function AccountProfilePage() {
         dogs={dogs}
         dogsLoading={dogsLoading}
         dogsError={dogsError}
-        onCreateDog={petParent ? payload => createDog(token, payload) : undefined}
+        onCreateDog={petParent && !isStaff ? payload => createDog(token, payload) : undefined}
         onDogsChanged={loadDogs}
+        showHousehold={!isStaff}
       />
     </DogHotelInteriorPage>
   );

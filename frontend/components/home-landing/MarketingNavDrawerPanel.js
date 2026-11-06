@@ -26,6 +26,7 @@ import {
   HOW_A_STAY_WORKS_PATH,
   LOGIN_PATH,
   REVIEWS_PATH,
+  STAFF_PREFIX,
   isExternalHref,
 } from '@/consts/routes';
 import { WEBSITE_INK } from '@/consts/website-theme';
@@ -70,6 +71,9 @@ export default function MarketingNavDrawerPanel({ open, onOpen, onClose, items }
   const account = useMarketingAccount();
   const { primaryCta, roverCta } = HOME_BRAND;
   const links = pageLinks(items);
+  const navLinks = account.isStaff
+    ? [...links, { label: 'Staff portal', href: STAFF_PREFIX }]
+    : links;
 
   return (
     <LuxuryNavDrawer open={open} onOpen={onOpen} onClose={onClose}>
@@ -91,7 +95,7 @@ export default function MarketingNavDrawerPanel({ open, onOpen, onClose, items }
         </Box>
 
         <Box sx={{ flex: '1 1 auto', overflowY: 'auto', minHeight: 0 }}>
-          {links.map(item => {
+          {navLinks.map(item => {
             const Icon = ICONS[item.href];
             const active = isMarketingNavLinkActive(pathname, item.href);
             return (

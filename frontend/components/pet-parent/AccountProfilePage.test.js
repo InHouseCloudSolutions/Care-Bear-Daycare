@@ -97,5 +97,11 @@ describe('AccountProfilePage', () => {
       '/staff',
     );
     expect(screen.getByRole('heading', { name: 'Your account' })).toBeInTheDocument();
+    expect(screen.getByText('Open the staff portal to manage the daycare.')).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Your dogs' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Parent details' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: /Book a stay/ })).not.toBeInTheDocument();
+    expect(screen.queryByText(/no pet-parent profile/)).not.toBeInTheDocument();
+    expect(listDogs).not.toHaveBeenCalled();
   });
 });

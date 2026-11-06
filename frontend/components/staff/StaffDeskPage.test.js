@@ -176,6 +176,7 @@ describe('StaffDeskPage', () => {
   it('shows the shared staff header and the waiting request', async () => {
     renderDesk();
     expect(screen.getByRole('heading', { level: 1, name: 'Staff desk' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Care Bear Daycare' })).toHaveAttribute('href', '/');
     expect(screen.getByRole('link', { name: /Calendar/ })).toHaveAttribute(
       'href',
       expect.stringContaining('calendar'),

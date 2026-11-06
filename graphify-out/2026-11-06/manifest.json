@@ -90,8 +90,8 @@
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/GalleryPage.js": {
-    "mtime": 1793937331.478215,
-    "ast_hash": "fd6cfdfcf55e5c7ce56bb9319c0a10c5",
+    "mtime": 1793986406.3050652,
+    "ast_hash": "86016fcde903afc1a2c152346657e0d1",
     "semantic_hash": ""
   },
   "frontend/components/dog-hotel/HowAStayWorksPage.js": {
@@ -895,8 +895,8 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/AccountProfilePage.js": {
-    "mtime": 1793934853.9875777,
-    "ast_hash": "17dbfe42cc29de9e7f7750b7523ea295",
+    "mtime": 1793991824.1778421,
+    "ast_hash": "44ab7c4755b652e571c16017c1a7fb71",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/ApiTestPage.js": {
@@ -1610,13 +1610,13 @@
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/AccountProfilePage.test.js": {
-    "mtime": 1793934853.9875777,
-    "ast_hash": "098e7232460c8d4b356d0f8269ea4c1f",
+    "mtime": 1793991825.3582907,
+    "ast_hash": "62816ff19430f9175ff0e5ca520cba8f",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/ClientProfileView.js": {
-    "mtime": 1793934853.9875777,
-    "ast_hash": "a4fe3bbece89176c884c34eb0871431f",
+    "mtime": 1793991835.970828,
+    "ast_hash": "447703901b0df53999ac5500de08e485",
     "semantic_hash": ""
   },
   "docs/reference/booking-page-current.png": {

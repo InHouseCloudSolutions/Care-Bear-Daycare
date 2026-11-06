@@ -1,7 +1,7 @@
 # Graph Report - doghotel  (2026-11-06)
 
 ## Corpus Check
-- 213 files · ~1,325,485 words
+- 213 files · ~1,325,396 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -427,7 +427,7 @@ Nodes (6): Affectionate Care, Cream Bear Cub, Coral Heart, Deep Teal Outline, Go
 
 ### Community 40 - "Contact Form Type"
 Cohesion: 0.17
-Nodes (11): Auth, Browser calls from carebeardaycare.ca, Care Bear Daycare API, GET `/api/daycare/site-reviews/` — public, not paginated, GET, PATCH, DELETE `/api/daycare/vaccines/<id>/` — owner or staff, GET, POST `/api/daycare/dogs/<dog_id>/vaccines/` — owner or staff, Lists, Not in this API (+3 more)
+Nodes (11): Auth, Browser calls from carebeardaycare.ca, Care Bear Daycare API, Care updates, GET `/api/daycare/bookings/<booking_id>/care-updates/` — owner or staff, GET `/api/daycare/site-reviews/` — public, not paginated, Lists, Not in this API (+3 more)
 
 ### Community 41 - "Site Documents Context"
 Cohesion: 0.50
@@ -627,7 +627,7 @@ Nodes (17): Deletion test, Architecture Decision Record, CONTEXT-MAP.md, CONTEXT
 
 ### Community 116 - "Community 116"
 Cohesion: 0.67
-Nodes (3): Care updates, GET `/api/daycare/bookings/<booking_id>/care-updates/` — owner or staff, POST — staff only — 201
+Nodes (3): GET, PATCH, DELETE `/api/daycare/vaccines/<id>/` — owner or staff, GET, POST `/api/daycare/dogs/<dog_id>/vaccines/` — owner or staff, Vaccines
 
 ### Community 117 - "Community 117"
 Cohesion: 0.20

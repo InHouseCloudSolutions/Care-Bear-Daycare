@@ -97,6 +97,7 @@ export default function ClientProfileView({
   onNotify,
   below = null,
   showHelp = true,
+  showHousehold = true,
 }) {
   const [form, setForm] = useState(() => profileToForm(petParent));
   const [photoUrl, setPhotoUrl] = useState(petParent?.photo_url ?? null);
@@ -227,7 +228,9 @@ export default function ClientProfileView({
                 component="p"
                 sx={{ mt: 1, fontSize: { xs: 15, md: 16 }, color: alpha(WEBSITE_INK, 0.62) }}
               >
-                Manage your details, dogs, and vaccine records.
+                {showHousehold
+                  ? 'Manage your details, dogs, and vaccine records.'
+                  : 'Open the staff portal to manage the daycare.'}
               </Typography>
             </Box>
           ) : (
@@ -241,12 +244,12 @@ export default function ClientProfileView({
         </Box>
       ) : null}
 
-      {missingProfile ? (
+      {showHousehold && missingProfile ? (
         <Alert severity="info" sx={{ mb: 3, maxWidth: 560 }}>
           Signed in as {signedInName || 'this account'}. This account has no pet-parent profile, so
           these details are not saved here.
         </Alert>
-      ) : (
+      ) : showHousehold ? (
         <Box component="form" onSubmit={handleSubmit} sx={{ ...CREAM_FIELDS_SX }}>
           <Box component="section" aria-label="Parent details" sx={CARD_SHELL_SX}>
             <Typography component="h2" sx={SECTION_HEADING_SX}>
@@ -360,8 +363,9 @@ export default function ClientProfileView({
             </Box>
           </Box>
         </Box>
-      )}
+      ) : null}
 
+      {showHousehold ? (
       <Box component="section" sx={{ mt: { xs: 4, md: 5 } }}>
         <Box
           sx={{
@@ -453,8 +457,9 @@ export default function ClientProfileView({
           ))}
         </Box>
       </Box>
+      ) : null}
 
-      {showHelp ? (
+      {showHousehold && showHelp ? (
         <Box
           sx={{
             mt: { xs: 4, md: 5 },
@@ -525,4 +530,5 @@ ClientProfileView.propTypes = {
   onNotify: PropTypes.func,
   below: PropTypes.node,
   showHelp: PropTypes.bool,
+  showHousehold: PropTypes.bool,
 };

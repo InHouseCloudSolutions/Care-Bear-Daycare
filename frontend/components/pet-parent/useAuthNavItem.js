@@ -1,7 +1,7 @@
 'use client';
 
 import { useAuth } from '@/contexts/AuthContext';
-import { ACCOUNT_PATH, LOGIN_PATH } from '@/consts/routes';
+import { ACCOUNT_PATH, LOGIN_PATH, STAFF_PREFIX } from '@/consts/routes';
 
 function personName(record) {
   if (!record) return '';
@@ -32,6 +32,7 @@ export function initialsForName(name) {
  */
 export function useMarketingAccount() {
   const { isAuthenticated, user, petParent, logout, loading } = useAuth();
+  const isStaff = isAuthenticated && user?.isStaff === true;
   const name =
     personName(petParent) ||
     personName(user) ||
@@ -41,22 +42,26 @@ export function useMarketingAccount() {
 
   return {
     isAuthenticated,
+    isStaff,
     loading,
     name: isAuthenticated ? name : '',
     email: isAuthenticated ? email : '',
     initials: isAuthenticated ? initialsForName(name === 'Account' && email ? email : name) : '',
     accountHref: isAuthenticated ? ACCOUNT_PATH : LOGIN_PATH,
+    portalHref: STAFF_PREFIX,
     logout,
   };
 }
 
 /**
  * Marketing nav item for the pet-parent account area.
- * "Log in" when signed out, "Account" when signed in. Kept out of MARKETING_NAV_TREE
- * so it can swap on client auth state without touching the static nav tree or its tests.
+ * "Log in" when signed out, "Staff portal" for staff, "Account" for pet parents.
+ * Kept out of MARKETING_NAV_TREE so it can swap on client auth state without
+ * touching the static nav tree or its tests.
  */
 export default function useAuthNavItem() {
-  const { isAuthenticated, accountHref } = useMarketingAccount();
+  const { isAuthenticated, isStaff, accountHref, portalHref } = useMarketingAccount();
+  if (isStaff) return { label: 'Staff portal', href: portalHref };
   return isAuthenticated
     ? { label: 'Account', href: accountHref }
     : { label: 'Log in', href: accountHref };

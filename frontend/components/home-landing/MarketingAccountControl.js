@@ -5,7 +5,6 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Box, Divider, IconButton, Menu, MenuItem } from '@mui/material';
 import { alpha } from '@mui/material/styles';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import LogoutIcon from '@mui/icons-material/Logout';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import { useMarketingAccount } from '@/components/pet-parent/useAuthNavItem';
@@ -41,6 +40,18 @@ MarketingInitialsBadge.propTypes = {
   size: PropTypes.number,
 };
 
+function textLinkSx(ink) {
+  return {
+    color: ink,
+    textDecoration: 'none',
+    fontWeight: 700,
+    fontSize: 15,
+    letterSpacing: '0.01em',
+    whiteSpace: 'nowrap',
+    '&:hover': { textDecoration: 'underline' },
+  };
+}
+
 const menuItemSx = {
   py: 1.25,
   px: 2,
@@ -52,7 +63,8 @@ const menuItemSx = {
 };
 
 export default function MarketingAccountControl({ tone = 'bar' }) {
-  const { isAuthenticated, name, email, initials, accountHref, logout } = useMarketingAccount();
+  const { isAuthenticated, isStaff, name, email, initials, accountHref, portalHref, logout } =
+    useMarketingAccount();
   const [anchor, setAnchor] = useState(null);
   const open = Boolean(anchor);
   const close = () => setAnchor(null);
@@ -60,23 +72,14 @@ export default function MarketingAccountControl({ tone = 'bar' }) {
 
   if (!isAuthenticated) {
     return (
-      <Box
-        component={Link}
-        href={accountHref}
-        sx={{
-          color: ink,
-          textDecoration: 'none',
-          fontWeight: 700,
-          fontSize: 15,
-          letterSpacing: '0.01em',
-          whiteSpace: 'nowrap',
-          '&:hover': { textDecoration: 'underline' },
-        }}
-      >
+      <Box component={Link} href={accountHref} sx={textLinkSx(ink)}>
         Log in
       </Box>
     );
   }
+
+  const accountItemHref = isStaff ? portalHref : accountHref;
+  const accountItemLabel = isStaff ? 'Staff portal' : 'Your account';
 
   return (
     <>
@@ -132,12 +135,9 @@ export default function MarketingAccountControl({ tone = 'bar' }) {
           </Box>
         </Box>
         <Divider sx={{ borderColor: alpha(WEBSITE_INK, 0.1) }} />
-        <MenuItem component={Link} href={accountHref} onClick={close} sx={menuItemSx}>
+        <MenuItem component={Link} href={accountItemHref} onClick={close} sx={menuItemSx}>
           <PersonOutlineIcon fontSize="small" />
-          <Box component="span" sx={{ flex: 1 }}>
-            Your account
-          </Box>
-          <ChevronRightIcon fontSize="small" />
+          {accountItemLabel}
         </MenuItem>
         <MenuItem
           onClick={() => {

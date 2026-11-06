@@ -5,7 +5,13 @@ import { usePathname } from 'next/navigation';
 import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
 import { useMarketingAccount } from '@/components/pet-parent/useAuthNavItem';
-import { ACCOUNT_PATH, BOOK_STAY_PATH, GALLERY_PATH, LOGIN_PATH } from '@/consts/routes';
+import {
+  ACCOUNT_PATH,
+  BOOK_STAY_PATH,
+  GALLERY_PATH,
+  LOGIN_PATH,
+  STAFF_PREFIX,
+} from '@/consts/routes';
 import {
   WEBSITE_INK,
   WEBSITE_PAGE_BACKGROUND,
@@ -96,13 +102,21 @@ export default function MarketingMobileTabBar() {
       active: bookActive,
       icon: 'book-a-stay',
     },
-    {
-      key: 'account',
-      label: 'Account',
-      href: account.accountHref,
-      active: accountActive,
-      icon: 'account',
-    },
+    account.isStaff
+      ? {
+          key: 'staff',
+          label: 'Staff portal',
+          href: account.portalHref || STAFF_PREFIX,
+          active: isActivePath(path, STAFF_PREFIX),
+          icon: 'account',
+        }
+      : {
+          key: 'account',
+          label: 'Account',
+          href: account.accountHref,
+          active: accountActive,
+          icon: 'account',
+        },
   ];
 
   return (
