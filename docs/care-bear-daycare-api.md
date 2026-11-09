@@ -267,7 +267,7 @@ Named holiday ranges. Staff manage them on the daycare site at `/staff`. Each ha
 | `kind` | Effect |
 |--------|--------|
 | `closed` (default) | Blocks every service, including staff. `surcharge_percent` is always `null`. Confirming or creating an occupying booking on a closed date is **400** `{ "detail": "That date is closed (YYYY-MM-DD)." }`. `override_rules` does not skip it. |
-| `surcharge` | Facility stays open. `surcharge_percent` (0–100) is required. Bookings whose occupied dates overlap get a whole-booking markup (highest overlapping %). Availability is not `closed`. |
+| `surcharge` | Facility stays open. `surcharge_percent` (0–100) is required. Each billed date inside the range is marked up by that percent. Other dates on the same stay stay at the normal rate. When two surcharge ranges cover one date, the higher percent is used for that date. Availability is not `closed`. |
 
 ### GET, POST `/api/daycare/closures/` — staff
 
@@ -388,7 +388,7 @@ Whenever `checked_out_at` changes (explicitly, or by the `completed` auto-stamp)
 | `boarding` | `ends_on` after `starts_on` (checkout morning). Same day is **400** | number of nights (`ends_on - starts_on`) |
 | `walk`, `drop_in` | `ends_on` must equal `starts_on`. `est_checkin_start`, `est_checkin_end`, `est_checkout_start`, and `est_checkout_end` optional | 1 |
 
-Base charge is `rate × units × number of dogs`. If any occupied date overlaps a `kind=surcharge` closure, the whole booking is multiplied by `(1 + max_percent / 100)`, using the highest overlapping surcharge percent, then quantized to cents. Staff who send `charge` skip auto markup.
+`charge` is the per-day, per-night, or per-visit amount after the dog-count discount: `rate × dogs` for one dog, 15% off for two, 20% off for three or more. `total` is the sum of that amount on each billed date, plus extras. A billed date inside a `kind=surcharge` closure is multiplied by `(1 + percent / 100)` before the sum is quantized to cents. Dates outside the closure are not marked up. Boarding bills nights (`starts_on` through the day before `ends_on`); the checkout morning is not a billed date. Staff who send `charge` skip the peak markup and the total is that custom amount times the unit count.
 
 ### Capacity and double-booking
 

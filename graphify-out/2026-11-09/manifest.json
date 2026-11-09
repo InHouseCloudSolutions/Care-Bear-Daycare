@@ -1130,8 +1130,8 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffDeskPage.js": {
-    "mtime": 1794243887.4195547,
-    "ast_hash": "34af91f8c5f6fafaca065c5570f88782",
+    "mtime": 1794248796.5707715,
+    "ast_hash": "9ae7c03c6494cb16e0ae5b8f570862bd",
     "semantic_hash": ""
   },
   "frontend/components/staff/staff-desk.js": {
@@ -1185,8 +1185,8 @@
     "semantic_hash": ""
   },
   "frontend/lib/daycareApi.test.js": {
-    "mtime": 1794243859.7627945,
-    "ast_hash": "abe9b9c0a3211a9234b1caa3f170da8f",
+    "mtime": 1794247973.7843373,
+    "ast_hash": "ebe1a220458d3afe196410e94f11d1c2",
     "semantic_hash": ""
   },
   "frontend/src/app/staff/images/page.js": {
@@ -1205,8 +1205,8 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/DeskBookingsTab.js": {
-    "mtime": 1794228316.4369211,
-    "ast_hash": "df5a34a22e704f8099b3cab38a88f145",
+    "mtime": 1794248793.6270113,
+    "ast_hash": "0a2f334f854c85a1c68958a0239eeb52",
     "semantic_hash": ""
   },
   "frontend/components/staff/DeskDialogs.js": {
@@ -1245,8 +1245,8 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffDeskPage.test.js": {
-    "mtime": 1794243928.076024,
-    "ast_hash": "3aba20a93ebcc3088dd469dc34ab43a3",
+    "mtime": 1794248802.2748199,
+    "ast_hash": "ee62a88f675fdf65421379aec72f05b4",
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffPageShell.js": {
@@ -1954,14 +1954,14 @@
     "ast_hash": "8b1d299d2949d07eb328b6fd5cb3fb58",
     "semantic_hash": ""
   },
-  "frontend/components/staff/DeskPreviewsTab.js": {
-    "mtime": 1794243846.5092998,
-    "ast_hash": "ef6b5e5e3bfdd363b6f8442dfacc2354",
-    "semantic_hash": ""
-  },
   ".github/workflows/build-prod.yml": {
     "mtime": 1793998826.9033391,
     "ast_hash": "120b807081c41edbf6b438805459f631",
+    "semantic_hash": ""
+  },
+  "frontend/components/staff/StayDocumentsMenu.js": {
+    "mtime": 1794248849.115737,
+    "ast_hash": "34cfcd9fd0c489f2275f646f8cdebe3e",
     "semantic_hash": ""
   }
 }

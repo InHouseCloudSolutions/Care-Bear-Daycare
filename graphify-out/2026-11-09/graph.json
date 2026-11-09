@@ -1694,7 +1694,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_devconsolesuppressor",
-      "community": 20,
+      "community": 130,
       "norm_label": "devconsolesuppressor.js"
     },
     {
@@ -1704,7 +1704,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "components_devconsolesuppressor_suppressed",
-      "community": 20,
+      "community": 130,
       "norm_label": "suppressed"
     },
     {
@@ -1714,7 +1714,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "components_devconsolesuppressor_devconsolesuppressor",
-      "community": 20,
+      "community": 130,
       "norm_label": "devconsolesuppressor()"
     },
     {
@@ -6721,7 +6721,7 @@
       "label": "nameLookup()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L48",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "staff_deskbookingstab_namelookup",
       "community": 143,
@@ -6731,7 +6731,7 @@
       "label": "formatStayDate()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L53",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "staff_deskbookingstab_formatstaydate",
       "community": 143,
@@ -6741,7 +6741,7 @@
       "label": "StayFact()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L57",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "staff_deskbookingstab_stayfact",
       "community": 143,
@@ -6751,7 +6751,7 @@
       "label": "StayPrimaryButton()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L85",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "staff_deskbookingstab_stayprimarybutton",
       "community": 143,
@@ -6761,7 +6761,7 @@
       "label": "StayCard()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L115",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "staff_deskbookingstab_staycard",
       "community": 143,
@@ -6771,10 +6771,10 @@
       "label": "DeskBookingsTab()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L443",
+      "source_location": "L463",
       "_origin": "ast",
       "id": "staff_deskbookingstab_deskbookingstab",
-      "community": 4,
+      "community": 168,
       "norm_label": "deskbookingstab()"
     },
     {
@@ -7004,7 +7004,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "staff_deskhouseholdstab_actionmenu",
-      "community": 4,
+      "community": 168,
       "norm_label": "actionmenu()"
     },
     {
@@ -7064,7 +7064,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "staff_deskparts_tonesx",
-      "community": 4,
+      "community": 168,
       "norm_label": "tonesx()"
     },
     {
@@ -7196,76 +7196,6 @@
       "id": "staff_deskparts_grouplabel",
       "community": 166,
       "norm_label": "grouplabel()"
-    },
-    {
-      "label": "DeskPreviewsTab.js",
-      "file_type": "code",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "staff_deskpreviewstab",
-      "community": 168,
-      "norm_label": "deskpreviewstab.js"
-    },
-    {
-      "label": "PREVIEW_ACTIONS",
-      "file_type": "code",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "staff_deskpreviewstab_preview_actions",
-      "community": 168,
-      "norm_label": "preview_actions"
-    },
-    {
-      "label": "nameLookup()",
-      "file_type": "code",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "staff_deskpreviewstab_namelookup",
-      "community": 168,
-      "norm_label": "namelookup()"
-    },
-    {
-      "label": "previewFailureMessage()",
-      "file_type": "code",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "staff_deskpreviewstab_previewfailuremessage",
-      "community": 168,
-      "norm_label": "previewfailuremessage()"
-    },
-    {
-      "label": "openHtmlPreview()",
-      "file_type": "code",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "staff_deskpreviewstab_openhtmlpreview",
-      "community": 168,
-      "norm_label": "openhtmlpreview()"
-    },
-    {
-      "label": "BookingChoice()",
-      "file_type": "code",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "staff_deskpreviewstab_bookingchoice",
-      "community": 168,
-      "norm_label": "bookingchoice()"
-    },
-    {
-      "label": "DeskPreviewsTab()",
-      "file_type": "code",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L87",
-      "_origin": "ast",
-      "id": "staff_deskpreviewstab_deskpreviewstab",
-      "community": 168,
-      "norm_label": "deskpreviewstab()"
     },
     {
       "label": "DeskServicesTab.js",
@@ -7614,7 +7544,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "staff_siteimagesection_livestatus",
-      "community": 34,
+      "community": 168,
       "norm_label": "livestatus()"
     },
     {
@@ -7764,54 +7694,54 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "staff_staffdeskpage",
-      "community": 4,
+      "community": 168,
       "norm_label": "staffdeskpage.js"
     },
     {
       "label": "HomeSlidesPanel()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L39",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "staff_staffdeskpage_homeslidespanel",
-      "community": 4,
+      "community": 168,
       "norm_label": "homeslidespanel()"
     },
     {
       "label": "GalleryPanel()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L52",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "staff_staffdeskpage_gallerypanel",
-      "community": 4,
+      "community": 168,
       "norm_label": "gallerypanel()"
     },
     {
       "label": "TABS",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L65",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "staff_staffdeskpage_tabs",
-      "community": 4,
+      "community": 168,
       "norm_label": "tabs"
     },
     {
       "label": "tabFromUrl()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L81",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "staff_staffdeskpage_tabfromurl",
-      "community": 4,
+      "community": 168,
       "norm_label": "tabfromurl()"
     },
     {
       "label": "StatCard()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L87",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "staff_staffdeskpage_statcard",
       "community": 4,
@@ -7821,10 +7751,10 @@
       "label": "StaffDeskPage()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L151",
+      "source_location": "L148",
       "_origin": "ast",
       "id": "staff_staffdeskpage_staffdeskpage",
-      "community": 4,
+      "community": 168,
       "norm_label": "staffdeskpage()"
     },
     {
@@ -7934,7 +7864,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "staff_staffpageshell",
-      "community": 4,
+      "community": 168,
       "norm_label": "staffpageshell.js"
     },
     {
@@ -7944,8 +7874,78 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "staff_staffpageshell_staffpageshell",
-      "community": 4,
+      "community": 168,
       "norm_label": "staffpageshell()"
+    },
+    {
+      "label": "StayDocumentsMenu.js",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "staff_staydocumentsmenu",
+      "community": 168,
+      "norm_label": "staydocumentsmenu.js"
+    },
+    {
+      "label": "EMAILS",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "staff_staydocumentsmenu_emails",
+      "community": 168,
+      "norm_label": "emails"
+    },
+    {
+      "label": "previewFailureMessage()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "staff_staydocumentsmenu_previewfailuremessage",
+      "community": 168,
+      "norm_label": "previewfailuremessage()"
+    },
+    {
+      "label": "openHtmlPreview()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "staff_staydocumentsmenu_openhtmlpreview",
+      "community": 168,
+      "norm_label": "openhtmlpreview()"
+    },
+    {
+      "label": "menuPaperSx()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "staff_staydocumentsmenu_menupapersx",
+      "community": 168,
+      "norm_label": "menupapersx()"
+    },
+    {
+      "label": "submenuOrigin()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "staff_staydocumentsmenu_submenuorigin",
+      "community": 168,
+      "norm_label": "submenuorigin()"
+    },
+    {
+      "label": "StayDocumentsMenu()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "staff_staydocumentsmenu_staydocumentsmenu",
+      "community": 168,
+      "norm_label": "staydocumentsmenu()"
     },
     {
       "label": "prepare-site-image.js",
@@ -8014,7 +8014,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "staff_site_image_styles",
-      "community": 4,
+      "community": 34,
       "norm_label": "site-image-styles.js"
     },
     {
@@ -8024,7 +8024,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "staff_site_image_styles_hairline",
-      "community": 4,
+      "community": 168,
       "norm_label": "hairline()"
     },
     {
@@ -8034,7 +8034,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "staff_site_image_styles_pillbase",
-      "community": 4,
+      "community": 34,
       "norm_label": "pillbase"
     },
     {
@@ -8044,7 +8044,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "staff_site_image_styles_accentfilledsx",
-      "community": 4,
+      "community": 34,
       "norm_label": "accentfilledsx"
     },
     {
@@ -8054,7 +8054,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "staff_site_image_styles_neutralpillsx",
-      "community": 4,
+      "community": 34,
       "norm_label": "neutralpillsx()"
     },
     {
@@ -8064,7 +8064,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "staff_site_image_styles_removefilledsx",
-      "community": 4,
+      "community": 34,
       "norm_label": "removefilledsx"
     },
     {
@@ -8074,7 +8074,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "staff_site_image_styles_dialogpapersx",
-      "community": 4,
+      "community": 34,
       "norm_label": "dialogpapersx"
     },
     {
@@ -8094,7 +8094,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "staff_site_image_styles_cardiconsx",
-      "community": 4,
+      "community": 168,
       "norm_label": "cardiconsx()"
     },
     {
@@ -8114,7 +8114,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "staff_site_image_styles_utilitybuttonsx",
-      "community": 4,
+      "community": 168,
       "norm_label": "utilitybuttonsx()"
     },
     {
@@ -8124,7 +8124,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "staff_site_image_styles_stafftabssx",
-      "community": 4,
+      "community": 168,
       "norm_label": "stafftabssx()"
     },
     {
@@ -8134,7 +8134,7 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "staff_site_image_styles_stafftabsx",
-      "community": 4,
+      "community": 168,
       "norm_label": "stafftabsx"
     },
     {
@@ -8394,7 +8394,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "staff_staff_desk_staffdeskredirectpath",
-      "community": 4,
+      "community": 168,
       "norm_label": "staffdeskredirectpath()"
     },
     {
@@ -8474,7 +8474,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "staff_staff_desk_asrecordlist",
-      "community": 4,
+      "community": 168,
       "norm_label": "asrecordlist()"
     },
     {
@@ -8514,7 +8514,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "staff_staff_desk_bookingactions",
-      "community": 125,
+      "community": 143,
       "norm_label": "bookingactions()"
     },
     {
@@ -8624,7 +8624,7 @@
       "source_location": "L225",
       "_origin": "ast",
       "id": "staff_staff_desk_moneylabel",
-      "community": 125,
+      "community": 143,
       "norm_label": "moneylabel()"
     },
     {
@@ -8934,7 +8934,7 @@
       "source_location": "L546",
       "_origin": "ast",
       "id": "staff_staff_desk_formatwindow",
-      "community": 125,
+      "community": 143,
       "norm_label": "formatwindow()"
     },
     {
@@ -9054,7 +9054,7 @@
       "source_location": "L660",
       "_origin": "ast",
       "id": "staff_staff_desk_bookingextralinelabel",
-      "community": 125,
+      "community": 143,
       "norm_label": "bookingextralinelabel()"
     },
     {
@@ -9124,7 +9124,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "staff_usestaffdeskdata",
-      "community": 4,
+      "community": 168,
       "norm_label": "usestaffdeskdata.js"
     },
     {
@@ -9134,7 +9134,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "staff_usestaffdeskdata_sources",
-      "community": 4,
+      "community": 168,
       "norm_label": "sources"
     },
     {
@@ -9144,7 +9144,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "staff_usestaffdeskdata_empty",
-      "community": 4,
+      "community": 168,
       "norm_label": "empty"
     },
     {
@@ -9834,7 +9834,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_jest_setup",
-      "community": 20,
+      "community": 86,
       "norm_label": "jest.setup.js"
     },
     {
@@ -9844,7 +9844,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "frontend_jest_setup_creatematchmedia",
-      "community": 20,
+      "community": 86,
       "norm_label": "creatematchmedia()"
     },
     {
@@ -10504,7 +10504,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_next_config",
-      "community": 20,
+      "community": 86,
       "norm_label": "next.config.js"
     },
     {
@@ -10514,7 +10514,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_next_config_withplugins",
-      "community": 20,
+      "community": 86,
       "norm_label": "withplugins"
     },
     {
@@ -10524,7 +10524,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "frontend_next_config_withimages",
-      "community": 20,
+      "community": 86,
       "norm_label": "withimages"
     },
     {
@@ -10534,7 +10534,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "frontend_next_config_config",
-      "community": 20,
+      "community": 86,
       "norm_label": "config"
     },
     {
@@ -15204,7 +15204,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_2_repo_discovery",
-      "community": 173,
+      "community": 11,
       "norm_label": "phase 2 \u2014 repo discovery"
     },
     {
@@ -15214,7 +15214,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_first_mandatory",
-      "community": 173,
+      "community": 11,
       "norm_label": "graphify first (mandatory)"
     },
     {
@@ -15224,7 +15224,7 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce",
-      "community": 173,
+      "community": 11,
       "norm_label": "what to produce"
     },
     {
@@ -15234,7 +15234,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_to_use_subagents",
-      "community": 173,
+      "community": 11,
       "norm_label": "when to use subagents"
     },
     {
@@ -15244,7 +15244,7 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_design_tree_interview",
-      "community": 170,
+      "community": 11,
       "norm_label": "phase 3 \u2014 design-tree interview"
     },
     {
@@ -15254,7 +15254,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "write_a_prd_skill_rules",
-      "community": 170,
+      "community": 11,
       "norm_label": "rules"
     },
     {
@@ -15264,7 +15264,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "write_a_prd_skill_design_tree_walk_order",
-      "community": 170,
+      "community": 11,
       "norm_label": "design tree (walk order)"
     },
     {
@@ -15274,7 +15274,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_skill_dependency_examples",
-      "community": 170,
+      "community": 11,
       "norm_label": "dependency examples"
     },
     {
@@ -15284,7 +15284,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_a_branch_is_done",
-      "community": 170,
+      "community": 11,
       "norm_label": "when a branch is done"
     },
     {
@@ -15294,7 +15294,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_exit_criteria",
-      "community": 170,
+      "community": 11,
       "norm_label": "phase 3 exit criteria"
     },
     {
@@ -15304,7 +15304,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_module_sketch",
-      "community": 163,
+      "community": 11,
       "norm_label": "phase 4 \u2014 module sketch"
     },
     {
@@ -15314,7 +15314,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "write_a_prd_skill_purpose",
-      "community": 163,
+      "community": 11,
       "norm_label": "purpose"
     },
     {
@@ -15324,7 +15324,7 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_mandatory",
-      "community": 163,
+      "community": 11,
       "norm_label": "graphify (mandatory)"
     },
     {
@@ -15334,7 +15334,7 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce_178",
-      "community": 163,
+      "community": 11,
       "norm_label": "what to produce"
     },
     {
@@ -15344,7 +15344,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "write_a_prd_skill_extraction_mindset",
-      "community": 163,
+      "community": 11,
       "norm_label": "extraction mindset"
     },
     {
@@ -15354,7 +15354,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "write_a_prd_skill_confirm_with_user",
-      "community": 163,
+      "community": 11,
       "norm_label": "confirm with user"
     },
     {
@@ -15364,7 +15364,7 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_exit_criteria",
-      "community": 163,
+      "community": 11,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -15404,7 +15404,7 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "write_a_prd_skill_writing_rules",
-      "community": 130,
+      "community": 162,
       "norm_label": "writing rules"
     },
     {
@@ -15534,7 +15534,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_interview_tactics",
-      "community": 172,
+      "community": 77,
       "norm_label": "interview tactics"
     },
     {
@@ -15544,7 +15544,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_relentless_but_respectful",
-      "community": 172,
+      "community": 77,
       "norm_label": "relentless but respectful"
     },
     {
@@ -15554,7 +15554,7 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_batching",
-      "community": 172,
+      "community": 77,
       "norm_label": "batching"
     },
     {
@@ -15564,7 +15564,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_stuck_loops",
-      "community": 172,
+      "community": 77,
       "norm_label": "stuck loops"
     },
     {
@@ -15574,7 +15574,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_decision_log_template",
-      "community": 172,
+      "community": 77,
       "norm_label": "decision log template"
     },
     {
@@ -15594,7 +15594,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_module_sketch_guide",
-      "community": 29,
+      "community": 92,
       "norm_label": "module sketch guide"
     },
     {
@@ -15604,7 +15604,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_goals",
-      "community": 29,
+      "community": 92,
       "norm_label": "goals"
     },
     {
@@ -15674,7 +15674,7 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_module_table_template",
-      "community": 29,
+      "community": 92,
       "norm_label": "module table template"
     },
     {
@@ -15684,7 +15684,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_extraction_heuristics",
-      "community": 29,
+      "community": 92,
       "norm_label": "extraction heuristics"
     },
     {
@@ -15704,7 +15704,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_anti_patterns",
-      "community": 29,
+      "community": 92,
       "norm_label": "anti-patterns"
     },
     {
@@ -15714,7 +15714,7 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_phase_4_exit_criteria",
-      "community": 29,
+      "community": 92,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -15724,7 +15724,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template",
-      "community": 130,
+      "community": 162,
       "norm_label": "template.md"
     },
     {
@@ -15734,7 +15734,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_template_prd_template",
-      "community": 130,
+      "community": 162,
       "norm_label": "prd template"
     },
     {
@@ -15884,7 +15884,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme",
-      "community": 86,
+      "community": 14,
       "norm_label": "readme.md"
     },
     {
@@ -15894,7 +15894,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme_care_bear_daycare",
-      "community": 86,
+      "community": 14,
       "norm_label": "care bear daycare"
     },
     {
@@ -15904,7 +15904,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "readme_public_pages",
-      "community": 86,
+      "community": 14,
       "norm_label": "public pages"
     },
     {
@@ -15924,7 +15924,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "readme_local_development",
-      "community": 86,
+      "community": 14,
       "norm_label": "local development"
     },
     {
@@ -15934,7 +15934,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "readme_layout",
-      "community": 86,
+      "community": 14,
       "norm_label": "layout"
     },
     {
@@ -15944,7 +15944,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "readme_license",
-      "community": 86,
+      "community": 14,
       "norm_label": "license"
     },
     {
@@ -17414,7 +17414,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Extends Airbnb, Jest, Prettier, and Next. no-console is an error; prop-types ignores stores; Next Link is exempt from anchor-is-valid; import resolver searches ., components, and hooks.",
-      "community": 20,
+      "community": 130,
       "norm_label": "eslint configuration",
       "id": "frontend_eslintrc_config"
     },
@@ -17440,7 +17440,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 86,
       "norm_label": "jest configuration",
       "id": "frontend_jest_config_config"
     },
@@ -17453,7 +17453,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 86,
       "norm_label": "jest beforeeach environment mocks",
       "id": "frontend_jest_setup_beforeeach"
     },
@@ -17494,7 +17494,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Node 23.2 breaks the frontend webpack build, so the Docker image stays on node:23.1 instead of node:latest until 23.3 is rechecked.",
-      "community": 20,
+      "community": 86,
       "norm_label": "node 23.1 pin",
       "id": "frontend_readme_node231pin"
     },
@@ -18599,7 +18599,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Table of ID, decision, rationale, and depends-on, maintained in working notes and copied into the PRD.",
-      "community": 130,
+      "community": 162,
       "norm_label": "decision log",
       "id": "write_a_prd_skill_decision_log"
     },
@@ -18627,7 +18627,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Fill the template from working notes, discovery, decision log, and module sketch. Include current state, decision log, implementation modules, and verified assertions.",
-      "community": 130,
+      "community": 162,
       "norm_label": "phase 5 write prd",
       "id": "write_a_prd_skill_phase5_write_prd"
     },
@@ -18641,7 +18641,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Default path is issues/prd-<short-slug>.md. Revisions use -v2. Never overwrite without approval. Dated names only when the user asks.",
-      "community": 130,
+      "community": 162,
       "norm_label": "issues/prd-<slug>.md",
       "id": "write_a_prd_skill_issues_prd_path"
     },
@@ -18655,7 +18655,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Report path, one-paragraph scope, deferred question count, and optional handoff to /project-manager.",
-      "community": 130,
+      "community": 162,
       "norm_label": "phase 6 confirm",
       "id": "write_a_prd_skill_phase6_confirm"
     },
@@ -18809,7 +18809,7 @@
       "author": null,
       "contributor": null,
       "rationale": "If the user is unsure, offer two or three options, record a deferral with an owner and whether it blocks MVP, and do not invent a decision.",
-      "community": 130,
+      "community": 162,
       "norm_label": "deferred decision",
       "id": "write_a_prd_interview_guide_deferred_decision"
     },
@@ -18907,7 +18907,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Must-have R-001, should-have R-101, and could-have R-201, each with rationale and a decision reference.",
-      "community": 130,
+      "community": 162,
       "norm_label": "p0 p1 p2 requirements",
       "id": "write_a_prd_template_priority"
     },
@@ -19005,7 +19005,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Build writes frontend/.env with a placeholder MUI X license, NEXT_PUBLIC_HOST https://www.niico.com, NEXT_PUBLIC_COMPANY NIICO Millwork Group LTD., and NEXT_PUBLIC_ESTABLISHED 2020.",
-      "community": 14,
+      "community": 74,
       "norm_label": "pages public env file",
       "id": "workflows_nextjs_public_env"
     },
@@ -19201,7 +19201,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Interior nav on cream with ink links. Hover underline grows left to right in 0.35s. Desktop nav starts at xl. Logos are full-color PNGs: /imgs/logos/logo.png and logo_hori.png.",
-      "community": 86,
+      "community": 14,
       "norm_label": "cream interior nav",
       "id": "brand_reference_nav"
     },
@@ -19243,7 +19243,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI 8px grid. Breakpoints xs 0, sm 600, md 900, lg 1200, xl 1536. Desktop nav at xl. Forms go two-column at lg. Interior content max width about 880px.",
-      "community": 86,
+      "community": 14,
       "norm_label": "marketing layout grid",
       "id": "brand_reference_layout"
     },
@@ -19271,7 +19271,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Book a stay opens ROVER_BOOKING_URL in frontend/consts/routes.js. The URL is a placeholder until the real Rover profile is set. Stays are booked on Rover.",
-      "community": 86,
+      "community": 14,
       "norm_label": "rover booking url",
       "id": "readme_rover_booking"
     },
@@ -33812,6 +33812,28 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/DeskBookingsTab.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "staff_deskbookingstab",
+      "target": "staff_staydocumentsmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/DeskBookingsTab.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "staff_deskbookingstab",
+      "target": "staff_staydocumentsmenu_staydocumentsmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/StaffDeskPage.js",
       "source_location": "L18",
       "weight": 1.0,
@@ -35975,17 +35997,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskparts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/DeskServicesTab.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -36013,28 +36024,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "staff_deskparts_skeletonrows",
-      "target": "staff_deskparts_stacksx"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskparts_stacksx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L152",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab_deskpreviewstab",
       "target": "staff_deskparts_stacksx"
     },
     {
@@ -36140,17 +36129,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskparts_desksectionheader",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/DeskServicesTab.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -36173,17 +36151,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskparts_emptystate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/DeskServicesTab.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -36201,17 +36168,6 @@
       "confidence_score": 1.0,
       "source": "staff_staffcalendarpage",
       "target": "staff_deskparts_emptystate"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskparts_skeletonrows",
-      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -36250,17 +36206,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskparts_rowbutton",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/DeskServicesTab.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -36289,176 +36234,6 @@
       "confidence_score": 1.0,
       "source": "staff_deskservicestab",
       "target": "staff_deskparts_confirmdialog"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskpreviewstab_bookingchoice",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L87",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskpreviewstab_deskpreviewstab",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskpreviewstab_namelookup",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskpreviewstab_openhtmlpreview",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskpreviewstab_preview_actions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_deskpreviewstab_previewfailuremessage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_site_image_styles",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_site_image_styles_cardsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_staff_desk",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_staff_desk_formatdaterange",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_staff_desk_householdlabel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab",
-      "target": "staff_staff_desk_sortbookings",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L26",
-      "weight": 1.0,
-      "source": "staff_staffdeskpage",
-      "target": "staff_deskpreviewstab",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/StaffDeskPage.test.js",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "staff_staffdeskpage_test",
-      "target": "staff_deskpreviewstab",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/DeskPreviewsTab.js",
-      "source_location": "L62",
-      "weight": 1.0,
-      "source": "staff_deskpreviewstab_bookingchoice",
-      "target": "staff_site_image_styles_cardsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/staff/StaffDeskPage.js",
-      "source_location": "L26",
-      "weight": 1.0,
-      "source": "staff_staffdeskpage",
-      "target": "staff_deskpreviewstab_deskpreviewstab",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -38765,6 +38540,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StaffDeskPage.test.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "staff_staffdeskpage_test",
+      "target": "staff_staydocumentsmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/StaffImagesPage.test.js",
       "source_location": "L13",
       "weight": 1.0,
@@ -38898,6 +38684,121 @@
       "weight": 1.0,
       "source": "staff_staffpageshell_staffpageshell",
       "target": "contexts_authcontext_useauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_site_image_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_site_image_styles_cardiconsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_site_image_styles_hairline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_staydocumentsmenu_emails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_staydocumentsmenu_menupapersx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_staydocumentsmenu_openhtmlpreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_staydocumentsmenu_previewfailuremessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_staydocumentsmenu_staydocumentsmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu",
+      "target": "staff_staydocumentsmenu_submenuorigin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu_menupapersx",
+      "target": "staff_site_image_styles_hairline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayDocumentsMenu.js",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "staff_staydocumentsmenu_staydocumentsmenu",
+      "target": "staff_staydocumentsmenu_submenuorigin",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -42409,9 +42310,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L334",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi",
-      "target": "lib_daycareapi_fetchbookingpreview",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_fetchbookingpreview"
     },
     {
       "relation": "contains",
@@ -42996,9 +42897,9 @@
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L335",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_fetchbookingpreview",
-      "target": "lib_daycareapi_daycarerequest",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_daycarerequest"
     },
     {
       "relation": "calls",
@@ -43315,9 +43216,9 @@
       "source_file": "frontend/lib/daycareApi.test.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_daycareapi_test",
-      "target": "lib_daycareapi_fetchbookingpreview",
-      "confidence_score": 1.0
+      "target": "lib_daycareapi_fetchbookingpreview"
     },
     {
       "relation": "imports",

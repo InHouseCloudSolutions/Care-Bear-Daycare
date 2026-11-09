@@ -508,7 +508,7 @@ export function HolidayDialog({ open, holiday, onClose, onSave, onSaved }) {
       title={isNew ? 'New holiday' : 'Edit holiday'}
       description={
         isSurcharge
-          ? 'Days stay bookable. The surcharge applies to the whole stay when dates overlap.'
+          ? 'Days stay bookable. The surcharge applies only to dates inside this range.'
           : 'Every day in the range is closed for all services, including stays you book.'
       }
       onClose={onClose}
@@ -553,7 +553,7 @@ export function HolidayDialog({ open, holiday, onClose, onSave, onSaved }) {
               helperText:
                 fieldErrors.surchargePercent ||
                 fieldErrors.surcharge_percent ||
-                '0–100. Applied to the whole booking when dates overlap.',
+                '0–100. Applied only to these dates, not the rest of the stay.',
             })}
           />
         ) : null}

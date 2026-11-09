@@ -128,7 +128,7 @@ export default function DeskHolidaysTab({ data, notify }) {
       <DeskSectionHeader
         id="staff-holidays-heading"
         title="Holidays"
-        description="Close days entirely, or keep them open with a whole-stay surcharge."
+        description="Close days entirely, or keep them open and add a percent only on those dates."
         action={
           <NewButton startIcon={<AddRoundedIcon />} onClick={() => setDialog({})}>
             New holiday

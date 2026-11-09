@@ -160,8 +160,8 @@
     "semantic_hash": ""
   },
   "frontend/components/home-landing/MarketingWordmark.js": {
-    "mtime": 1792421349.0897093,
-    "ast_hash": "c353c054f320bc0d83784076a66ddafb",
+    "mtime": 1794249930.4345021,
+    "ast_hash": "41860d3640361f84df4df5173c21c386",
     "semantic_hash": ""
   },
   "frontend/components/home-landing/home-landing-data.js": {
@@ -940,8 +940,8 @@
     "semantic_hash": ""
   },
   "frontend/lib/daycareApi.js": {
-    "mtime": 1794243826.6796012,
-    "ast_hash": "4f1c309bcfdb8a20671ff8b5bafd72b8",
+    "mtime": 1794250236.6466727,
+    "ast_hash": "8ae40c3274df71d27eb515341164c9d4",
     "semantic_hash": ""
   },
   "frontend/src/app/(website)/account/api-test/page.js": {
@@ -965,8 +965,8 @@
     "semantic_hash": ""
   },
   "docs/care-bear-daycare-api.md": {
-    "mtime": 1794228316.435657,
-    "ast_hash": "b263fd93d8563ea8ddcb6b8bff370ba3",
+    "mtime": 1794254399.965267,
+    "ast_hash": "56daa7ea323082f0a7acd93398d5aec4",
     "semantic_hash": ""
   },
   "frontend/components/pet-parent/ProfilePhoto.js": {
@@ -1135,13 +1135,13 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/staff-desk.js": {
-    "mtime": 1794228316.3346307,
-    "ast_hash": "034dc4bba9b518dfeee516f1dd424c3c",
+    "mtime": 1794252660.9866004,
+    "ast_hash": "c17ad51163cae199830894b0d1fc5b85",
     "semantic_hash": ""
   },
   "frontend/components/staff/staff-desk.test.js": {
-    "mtime": 1794228316.4346573,
-    "ast_hash": "09e900c0a8c8220ba1936b3650c36aef",
+    "mtime": 1794252665.5654411,
+    "ast_hash": "bdb213a1064ccebacb8d6dc8118c7f2f",
     "semantic_hash": ""
   },
   "frontend/src/app/staff/layout.js": {
@@ -1185,8 +1185,8 @@
     "semantic_hash": ""
   },
   "frontend/lib/daycareApi.test.js": {
-    "mtime": 1794247973.7843373,
-    "ast_hash": "ebe1a220458d3afe196410e94f11d1c2",
+    "mtime": 1794250257.1942978,
+    "ast_hash": "711302e1700c18a16002b7e7a27682ea",
     "semantic_hash": ""
   },
   "frontend/src/app/staff/images/page.js": {
@@ -1205,18 +1205,18 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/DeskBookingsTab.js": {
-    "mtime": 1794248793.6270113,
-    "ast_hash": "0a2f334f854c85a1c68958a0239eeb52",
+    "mtime": 1794251620.1314094,
+    "ast_hash": "90c2edf8bf55eec31ac2c2c55ce8987f",
     "semantic_hash": ""
   },
   "frontend/components/staff/DeskDialogs.js": {
-    "mtime": 1794228316.435657,
-    "ast_hash": "0c7cb7235b3637205597a7ad947eea23",
+    "mtime": 1794254402.2785316,
+    "ast_hash": "9ff0fa3283a58cdfaf8d8cfa09c62f1b",
     "semantic_hash": ""
   },
   "frontend/components/staff/DeskHolidaysTab.js": {
-    "mtime": 1794228316.3346307,
-    "ast_hash": "f177947003530ef283b08eea705b7138",
+    "mtime": 1794254403.044952,
+    "ast_hash": "ffc67626860a01060854e5d625725d69",
     "semantic_hash": ""
   },
   "frontend/components/staff/DeskHouseholdsTab.js": {
@@ -1245,13 +1245,13 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffDeskPage.test.js": {
-    "mtime": 1794248802.2748199,
-    "ast_hash": "ee62a88f675fdf65421379aec72f05b4",
+    "mtime": 1794251733.4510674,
+    "ast_hash": "26e936c81bf72fa9472844fdf23290b2",
     "semantic_hash": ""
   },
   "frontend/components/staff/StaffPageShell.js": {
-    "mtime": 1793992669.4630063,
-    "ast_hash": "29128569cbb0f8ac954c585d60c8c283",
+    "mtime": 1794249932.6171489,
+    "ast_hash": "81ba08acc5d67aa15f206aa44ce42230",
     "semantic_hash": ""
   },
   "frontend/components/staff/prepare-site-image.js": {
@@ -1960,8 +1960,13 @@
     "semantic_hash": ""
   },
   "frontend/components/staff/StayDocumentsMenu.js": {
-    "mtime": 1794248849.115737,
-    "ast_hash": "34cfcd9fd0c489f2275f646f8cdebe3e",
+    "mtime": 1794250264.3059716,
+    "ast_hash": "6b4f0095c9a37f7feaf8b819fba792c7",
+    "semantic_hash": ""
+  },
+  "frontend/public/imgs/logos/logo_hori_alt.png": {
+    "mtime": 1794249868.470587,
+    "ast_hash": "973947936d0a782acbb4bfd4318ee725",
     "semantic_hash": ""
   }
 }
