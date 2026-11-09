@@ -40,6 +40,7 @@ async function parseResponse(response) {
  *   token?: string|null,
  *   signal?: AbortSignal,
  *   trailingSlash?: boolean,
+ *   asText?: boolean,
  * }} opts
  * @returns {Promise<{ ok: boolean, status: number, data: unknown }>}
  */
@@ -50,11 +51,13 @@ export async function daycareRequest({
   token,
   signal,
   trailingSlash = true,
+  asText = false,
 } = {}) {
   const normalized = path.startsWith('/') ? path : `/${path}`;
   const pathname = trailingSlash ? withTrailingSlash(normalized) : normalized.replace(/\/+$/, '');
   const url = `${BASE_PATH}${pathname}`;
-  const headers = { 'Content-Type': 'application/json' };
+  const headers = {};
+  if (!asText) headers['Content-Type'] = 'application/json';
   if (token) {
     headers.Authorization = `Token ${token}`;
   }
@@ -71,6 +74,11 @@ export async function daycareRequest({
   } catch {
     // Network failure, timeout, or abort — no HTTP response to read.
     return { ok: false, status: 0, data: null };
+  }
+
+  if (asText) {
+    const text = await response.text();
+    return { ok: response.ok, status: response.status, data: text };
   }
 
   return parseResponse(response);
@@ -314,6 +322,25 @@ export function listBookings(token, { status, petParentId } = {}) {
 
 export const updateBooking = (token, bookingId, body) =>
   daycareRequest({ method: 'PATCH', path: `/daycare/bookings/${bookingId}`, token, body });
+
+/**
+ * Staff-only HTML for one stay. The body is `text/html`, so it is returned as a
+ * string in `data` rather than parsed as JSON. The token stays on the Authorization header.
+ * `kind`: `request-client` | `request-staff` | `confirmed-client` | `invoice`.
+ * @param {string} token
+ * @param {number|string} bookingId
+ * @param {string} kind
+ */
+export const fetchBookingPreview = (token, bookingId, kind) =>
+  daycareRequest({
+    method: 'GET',
+    path: `/daycare/bookings/${bookingId}/previews/${kind}`,
+    token,
+    asText: true,
+    // Next 308s a trailing slash before the rewrite. The slash-less path is what
+    // the rewrite turns into the Django URL, and it keeps the staff token.
+    trailingSlash: false,
+  });
 
 // --- Extras catalog ---
 

@@ -1,6 +1,7 @@
 import {
   createSiteImage,
   deleteSiteImage,
+  fetchBookingPreview,
   listServices,
   listSiteImages,
   replaceSiteImage,
@@ -60,6 +61,26 @@ describe('site image client', () => {
     expect(fetch.mock.calls[0][0]).toBe('/daycare-api/daycare/services/');
     expect(fetch.mock.calls[0][1].headers.Authorization).toBe('Token tok');
     expect(fetch.mock.calls[1][0]).toBe('/daycare-api/daycare/services/?all=1');
+  });
+
+  it('loads a booking preview as HTML with the token only in the header', async () => {
+    global.fetch.mockResolvedValueOnce({
+      ok: true,
+      status: 200,
+      text: async () => '<html><body>Invoice</body></html>',
+    });
+    const res = await fetchBookingPreview('staff-token', 10, 'invoice');
+    const [url, options] = fetch.mock.calls[0];
+    expect(url).toBe('/daycare-api/daycare/bookings/10/previews/invoice');
+    expect(url).not.toContain('staff-token');
+    expect(options.method).toBe('GET');
+    expect(options.credentials).toBe('omit');
+    expect(options.headers.Authorization).toBe('Token staff-token');
+    expect(res).toEqual({
+      ok: true,
+      status: 200,
+      data: '<html><body>Invoice</body></html>',
+    });
   });
 
   it('patches alt and sort order, and deletes by id', async () => {

@@ -440,8 +440,9 @@ export function stayEditServiceOptions(services, currentServiceId) {
   );
 }
 
-/** Form state for Edit stay, seeded from the booking. Charge stays filled so a save keeps it. */
+/** Form state for Edit stay. A zero charge is the unset default, so the field stays blank. */
 export function stayEditFormState(booking) {
+  const charge = Number(booking?.charge);
   return {
     serviceId: booking?.service_id != null ? String(booking.service_id) : '',
     dogIds: Array.isArray(booking?.dogs) ? [...booking.dogs] : [],
@@ -452,7 +453,7 @@ export function stayEditFormState(booking) {
     estCheckoutStart: toTimeInput(booking?.est_checkout_start),
     estCheckoutEnd: toTimeInput(booking?.est_checkout_end),
     parentNote: booking?.parent_note ?? '',
-    charge: booking?.charge == null || booking.charge === '' ? '' : String(booking.charge),
+    charge: Number.isFinite(charge) && charge > 0 ? String(booking.charge) : '',
   };
 }
 
@@ -507,8 +508,9 @@ export function stayEditFormError(form, kind) {
 }
 
 /**
- * Staff PATCH body. A blank charge is omitted so the server recalculates.
- * A typed amount, including 0, is sent and skips that recalculation.
+ * Staff PATCH body. A blank or zero charge is omitted so the server calculates
+ * the per-unit amount from the service rate and dog count. A typed amount above
+ * zero is kept.
  */
 export function stayEditPayload(form) {
   const payload = {
@@ -523,7 +525,10 @@ export function stayEditPayload(form) {
     parent_note: String(form.parentNote ?? '').trim(),
   };
   const charge = String(form.charge ?? '').trim();
-  if (charge !== '') payload.charge = Number(charge).toFixed(2);
+  const amount = Number(charge);
+  if (charge !== '' && Number.isFinite(amount) && amount > 0) {
+    payload.charge = amount.toFixed(2);
+  }
   return payload;
 }
 

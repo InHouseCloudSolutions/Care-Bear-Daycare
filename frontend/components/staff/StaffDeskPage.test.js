@@ -11,17 +11,18 @@ import {
   deleteBookingExtra,
   deleteDog,
   deletePetParent,
-  listVaccines,
-  uploadDogPhoto,
-  uploadPetParentPhoto,
+  fetchBookingPreview,
   listBookings,
   listClosures,
   listDogs,
   listExtras,
   listPetParents,
   listServices,
+  listVaccines,
   updateBooking,
   updateExtra,
+  uploadDogPhoto,
+  uploadPetParentPhoto,
 } from '@/lib/daycareApi';
 import StaffDeskPage from './StaffDeskPage';
 
@@ -60,6 +61,7 @@ jest.mock('@/lib/daycareApi', () => {
   const actual = jest.requireActual('@/lib/daycareApi');
   return {
     ...actual,
+    fetchBookingPreview: jest.fn(),
     listBookings: jest.fn(),
     listServices: jest.fn(),
     listPetParents: jest.fn(),
@@ -128,6 +130,11 @@ describe('StaffDeskPage', () => {
       logout: jest.fn(),
     });
     listBookings.mockResolvedValue({ ok: true, data: [request] });
+    fetchBookingPreview.mockResolvedValue({
+      ok: true,
+      status: 200,
+      data: '<html><body>Invoice for Bear</body></html>',
+    });
     listServices.mockResolvedValue({
       ok: true,
       data: [
@@ -222,10 +229,11 @@ describe('StaffDeskPage', () => {
     expect(screen.getByText('Nov 19, 2026')).toBeInTheDocument();
     expect(screen.getByText('Expected 10:00 AM – 11:00 AM')).toBeInTheDocument();
     expect(screen.getByText('Three dogs boarded from Rover.')).toBeInTheDocument();
-    expect(screen.getByText('Charge $120.00')).toBeInTheDocument();
+    expect(screen.getByText('Per day $120.00')).toBeInTheDocument();
     expect(screen.queryByText(/Morning/)).not.toBeInTheDocument();
 
-    const checkOut = screen.getByRole('button', { name: 'Check out' });
+    fireEvent.click(screen.getByRole('button', { name: 'Stay options for Ada Lovelace' }));
+    const checkOut = screen.getByRole('menuitem', { name: 'Check out' });
     await act(async () => {
       fireEvent.click(checkOut);
     });
@@ -245,7 +253,8 @@ describe('StaffDeskPage', () => {
 
   it('confirms a requested stay and reloads', async () => {
     renderDesk();
-    const confirm = await screen.findByRole('button', { name: 'Confirm' });
+    fireEvent.click(await screen.findByRole('button', { name: 'Stay options for Ada Lovelace' }));
+    const confirm = screen.getByRole('menuitem', { name: 'Confirm' });
     await act(async () => {
       fireEvent.click(confirm);
     });
@@ -517,7 +526,7 @@ describe('StaffDeskPage', () => {
     deleteBookingExtra.mockResolvedValue({ ok: true, status: 204, data: null });
     renderDesk();
 
-    expect(await screen.findByText('Charge $105.00')).toBeInTheDocument();
+    expect(await screen.findByText('Per day $105.00')).toBeInTheDocument();
     expect(screen.getByText('Total $115.00')).toBeInTheDocument();
     expect(screen.getByText('Poop bags × 2 — $10.00')).toBeInTheDocument();
 
@@ -564,7 +573,8 @@ describe('StaffDeskPage', () => {
     renderDesk();
 
     fireEvent.click(await screen.findByRole('button', { name: 'Past 1' }));
-    fireEvent.click(await screen.findByRole('button', { name: 'Edit stay for Ada Lovelace' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Stay options for Ada Lovelace' }));
+    fireEvent.click(screen.getByRole('menuitem', { name: 'Edit stay for Ada Lovelace' }));
     const dialog = await screen.findByRole('dialog', { name: 'Edit stay' });
     expect(within(dialog).getByText('Household: Ada Lovelace')).toBeInTheDocument();
     expect(within(dialog).queryByLabelText('Household')).not.toBeInTheDocument();
@@ -628,6 +638,56 @@ describe('StaffDeskPage', () => {
       13,
       expect.objectContaining({ checked_in_at: expect.any(String) }),
     );
+  });
+
+  it('opens a booking preview in a new tab with the token kept off the URL', async () => {
+    const previewWindow = {
+      opener: window,
+      close: jest.fn(),
+      document: { open: jest.fn(), write: jest.fn(), close: jest.fn() },
+    };
+    const open = jest.spyOn(window, 'open').mockReturnValue(previewWindow);
+    renderDesk();
+    fireEvent.click(await screen.findByRole('button', { name: 'Stay options for Ada Lovelace' }));
+    fireEvent.click(screen.getByRole('menuitem', { name: 'Invoice' }));
+    fireEvent.click(screen.getByRole('menuitem', { name: 'Preview' }));
+    expect(open).toHaveBeenCalledWith('', '_blank');
+    await waitFor(() =>
+      expect(fetchBookingPreview).toHaveBeenCalledWith('staff-token', 10, 'invoice'),
+    );
+    expect(previewWindow.document.write).toHaveBeenCalledWith(
+      '<html><body>Invoice for Bear</body></html>',
+    );
+    expect(previewWindow.document.write.mock.calls[0][0]).not.toContain('staff-token');
+    expect(previewWindow.close).not.toHaveBeenCalled();
+    open.mockRestore();
+  });
+
+  it('shows a preview error and closes the blank tab when the booking is missing', async () => {
+    const previewWindow = {
+      opener: window,
+      close: jest.fn(),
+      document: { open: jest.fn(), write: jest.fn(), close: jest.fn() },
+    };
+    const open = jest.spyOn(window, 'open').mockReturnValue(previewWindow);
+    fetchBookingPreview.mockResolvedValue({ ok: false, status: 404, data: '' });
+    renderDesk();
+    fireEvent.click(await screen.findByRole('button', { name: 'Stay options for Ada Lovelace' }));
+    fireEvent.click(screen.getByRole('menuitem', { name: 'Emails' }));
+    fireEvent.click(screen.getByRole('menuitem', { name: 'Request received (client)' }));
+    expect(
+      await screen.findByText('That booking could not be found, or this preview is not available.'),
+    ).toBeInTheDocument();
+    expect(previewWindow.document.write).not.toHaveBeenCalled();
+    expect(previewWindow.close).toHaveBeenCalled();
+    open.mockRestore();
+  });
+
+  it('does not offer stay documents when there are no bookings', async () => {
+    listBookings.mockResolvedValue({ ok: true, data: [] });
+    renderDesk();
+    expect(await screen.findByText('No stays yet')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Stay options/ })).not.toBeInTheDocument();
   });
 
   it('sends a pet parent to their account', async () => {

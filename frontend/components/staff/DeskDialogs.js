@@ -941,9 +941,11 @@ export function EditStayDialog({
         <TextField {...bind('parentNote', 'Parent note', { multiline: true, minRows: 2 })} />
         <TextField
           {...bind('charge', 'Charge', {
+            required: false,
             inputProps: { inputMode: 'decimal' },
             InputProps: { startAdornment: <InputAdornment position="start">$</InputAdornment> },
-            helperText: 'Blank recalculates. A typed amount is kept.',
+            helperText:
+              'Optional. Leave blank to use the service rate for every dog: 2 dogs 15% off, 3 or more 20% off.',
           })}
         />
       </Box>

@@ -8,7 +8,7 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NextLink from 'next/link';
-import MarketingWordmark from '@/components/home-landing/MarketingWordmark';
+import MarketingWordmark, { LOGO_ALT_SRC } from '@/components/home-landing/MarketingWordmark';
 import { useAuth } from '@/contexts/AuthContext';
 import { ThemeContext } from '@/contexts/ThemeContext';
 import { utilityButtonSx } from './site-image-styles';
@@ -48,16 +48,8 @@ export default function StaffPageShell({ crumbs, title, subtitle, actions, child
           }}
         >
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, minWidth: 0 }}>
-            <Box
-              sx={{
-                display: 'flex',
-                flexShrink: 0,
-                lineHeight: 0,
-                // Navy wordmark disappears on the dark staff canvas; flip lightness and keep hue.
-                filter: isLight ? 'none' : 'invert(1) hue-rotate(180deg)',
-              }}
-            >
-              <MarketingWordmark href="/" />
+            <Box sx={{ display: 'flex', flexShrink: 0, lineHeight: 0 }}>
+              <MarketingWordmark href="/" src={isLight ? undefined : LOGO_ALT_SRC} />
             </Box>
             <Breadcrumbs
               aria-label="Breadcrumb"

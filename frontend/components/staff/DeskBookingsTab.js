@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Alert, Box, Button, Chip, Typography } from '@mui/material';
+import { Alert, Box, Chip, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
@@ -30,6 +30,7 @@ import {
   stackSx,
 } from './DeskParts';
 import { AddBookingExtraDialog, EditStayDialog, StayDialog, TimestampDialog } from './DeskDialogs';
+import StayDocumentsMenu from './StayDocumentsMenu';
 import {
   BOOKING_FILTERS,
   bookingActions,
@@ -52,6 +53,12 @@ function nameLookup(rows, label) {
 
 function formatStayDate(value) {
   return formatDateRange(value, value);
+}
+
+function perUnitLabel(service) {
+  if (service?.rate_unit === 'day') return 'Per day';
+  if (service?.rate_unit === 'visit') return 'Per visit';
+  return 'Per night';
 }
 
 function StayFact({ icon, label, value, hint }) {
@@ -82,36 +89,6 @@ StayFact.propTypes = {
   hint: PropTypes.string,
 };
 
-function StayPrimaryButton({ children, ...props }) {
-  return (
-    <Button
-      variant="outlined"
-      size="small"
-      sx={theme => ({
-        borderRadius: 999,
-        textTransform: 'none',
-        fontWeight: 600,
-        letterSpacing: '0.02em',
-        minHeight: 36,
-        px: 2,
-        py: 0.5,
-        whiteSpace: 'nowrap',
-        borderColor: WEBSITE_ACCENT,
-        color: theme.palette.mode === 'dark' ? WEBSITE_ACCENT : '#8A4F17',
-        '&:hover': {
-          borderColor: WEBSITE_ACCENT,
-          bgcolor: alpha(WEBSITE_ACCENT, 0.12),
-        },
-      })}
-      {...props}
-    >
-      {children}
-    </Button>
-  );
-}
-
-StayPrimaryButton.propTypes = { children: PropTypes.node.isRequired };
-
 function StayCard({
   booking,
   household,
@@ -137,6 +114,7 @@ function StayCard({
   const [removingLine, setRemovingLine] = useState(null);
   const [lineBusy, setLineBusy] = useState(false);
   const [lineError, setLineError] = useState(null);
+  const [previewError, setPreviewError] = useState(null);
 
   const inWindow =
     formatWindow(booking.est_checkin_start, booking.est_checkin_end) ||
@@ -194,42 +172,17 @@ function StayCard({
             {dogNames.length ? dogNames.join(', ') : 'No dogs'}
           </Typography>
         </Box>
-        <Box
-          sx={{
-            flex: '0 0 auto',
-            display: 'flex',
-            gap: 1,
-            flexWrap: 'wrap',
-            justifyContent: 'flex-end',
-          }}
-        >
-          {actions.map(action =>
-            action.primary ? (
-              <StayPrimaryButton
-                key={action.status}
-                disabled={pending}
-                onClick={() => onAction(booking, action)}
-              >
-                {action.label}
-              </StayPrimaryButton>
-            ) : (
-              <RowButton
-                key={action.status}
-                disabled={pending}
-                onClick={() => onAction(booking, action)}
-              >
-                {action.label}
-              </RowButton>
-            ),
-          )}
-          <RowButton
-            disabled={pending}
-            aria-label={`Edit stay for ${household}`}
-            onClick={() => setEditOpen(true)}
-          >
-            Edit
-          </RowButton>
-        </Box>
+        <StayDocumentsMenu
+          household={household}
+          bookingId={booking.id}
+          token={token}
+          disabled={pending}
+          actions={actions}
+          onAction={action => onAction(booking, action)}
+          onEdit={() => setEditOpen(true)}
+          onError={setPreviewError}
+          onNotify={notify}
+        />
       </Box>
 
       <Box
@@ -264,6 +217,12 @@ function StayCard({
         />
         <StayFact icon={<HomeOutlinedIcon />} label="Service" value={service} />
       </Box>
+
+      {previewError ? (
+        <Alert severity="error" sx={{ mt: 2 }} onClose={() => setPreviewError(null)}>
+          {previewError}
+        </Alert>
+      ) : null}
 
       {hasActualTimes ? (
         <Box
@@ -306,7 +265,7 @@ function StayCard({
           }}
         >
           <Typography sx={{ fontSize: 13.5, color: 'text.secondary' }}>
-            Charge {moneyLabel(booking.charge)}
+            {perUnitLabel(serviceRecord)} {moneyLabel(booking.charge)}
           </Typography>
           <Typography sx={{ fontWeight: 700, fontSize: 15 }}>
             Total {moneyLabel(booking.total)}

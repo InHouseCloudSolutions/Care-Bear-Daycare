@@ -451,7 +451,7 @@ describe('edit stay form', () => {
     );
   });
 
-  it('omits a blank charge, sends 0 and 35.00, and nulls blank windows', () => {
+  it('omits a blank or zero charge, sends 35.00, and nulls blank windows', () => {
     const form = {
       ...seeded(),
       estCheckinEnd: '',
@@ -476,8 +476,8 @@ describe('edit stay form', () => {
     expect(blankCharge).not.toHaveProperty('checked_in_at');
     expect(blankCharge).not.toHaveProperty('checked_out_at');
     expect(blankCharge).not.toHaveProperty('total');
-    expect(stayEditPayload({ ...form, charge: '0' }).charge).toBe('0.00');
-    expect(stayEditPayload({ ...form, charge: '0.00' }).charge).toBe('0.00');
+    expect(stayEditPayload({ ...form, charge: '0' })).not.toHaveProperty('charge');
+    expect(stayEditPayload({ ...form, charge: '0.00' })).not.toHaveProperty('charge');
     expect(stayEditPayload({ ...form, charge: '35.00' }).charge).toBe('35.00');
   });
 });

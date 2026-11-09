@@ -4,13 +4,14 @@ import { Box } from '@mui/material';
 import publicPath from '@/utils/publicPath';
 
 const LOGO_SRC = publicPath('/imgs/logos/logo_hori.png');
+export const LOGO_ALT_SRC = publicPath('/imgs/logos/logo_hori_alt.png');
 const LOGO_ALT = 'Care Bear Daycare';
 /** CSS height matches the nav menu button (40px) so the bar does not grow. */
 const LOGO_DISPLAY_HEIGHT = 40;
 /** Source is 2172×724 (3:1). */
 const LOGO_DISPLAY_WIDTH = 120;
 
-export default function MarketingWordmark({ href = '/' }) {
+export default function MarketingWordmark({ href = '/', src = LOGO_SRC }) {
   return (
     <Box
       component={Link}
@@ -25,7 +26,7 @@ export default function MarketingWordmark({ href = '/' }) {
     >
       <Box
         component="img"
-        src={LOGO_SRC}
+        src={src}
         alt={LOGO_ALT}
         width={LOGO_DISPLAY_WIDTH}
         height={LOGO_DISPLAY_HEIGHT}
@@ -43,4 +44,5 @@ export default function MarketingWordmark({ href = '/' }) {
 
 MarketingWordmark.propTypes = {
   href: PropTypes.string,
+  src: PropTypes.string,
 };
