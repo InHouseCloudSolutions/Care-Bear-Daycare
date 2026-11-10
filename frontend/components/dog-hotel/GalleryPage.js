@@ -1,10 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 import { Box, Button, Dialog, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
-import { ROVER_BOOKING_URL } from '@/consts/routes';
+import { BOOK_STAY_PATH } from '@/consts/routes';
 import { WEBSITE_INK, WEBSITE_PAGE_BACKGROUND } from '@/consts/website-theme';
 import publicPath from '@/utils/publicPath';
 import DogHotelInteriorPage from './DogHotelInteriorPage';
@@ -565,10 +566,8 @@ export default function GalleryPage({ images }) {
           Let’s talk about your dog and their next stay.
         </Typography>
         <Button
-          component="a"
-          href={ROVER_BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          component={NextLink}
+          href={BOOK_STAY_PATH}
           endIcon={
             <Box
               component="img"
@@ -591,7 +590,7 @@ export default function GalleryPage({ images }) {
             '&:hover': { bgcolor: ORANGE_HOVER, boxShadow: 'none' },
           }}
         >
-          Book through Rover
+          Book a stay
         </Button>
       </Box>
     </DogHotelInteriorPage>

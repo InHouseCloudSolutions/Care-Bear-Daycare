@@ -1,4 +1,8 @@
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { ACCOUNT_PATH } from '@/consts/routes';
+import { createCareUpdate, listCareUpdates } from '@/lib/daycareApi';
+import StayCarePanel from './StayCarePanel';
 import {
   bookingActions,
   bookingExtraFormError,
@@ -36,9 +40,44 @@ import {
   timestampInputValue,
   timestampPayload,
   timestampPayloadValue,
+  exclusiveStayLine,
+  todayIso,
   vaccineState,
   withStayCheckout,
 } from './staff-desk';
+
+jest.mock('@/lib/daycareApi', () => {
+  const actual = jest.requireActual('@/lib/daycareApi');
+  return {
+    ...actual,
+    listCareUpdates: jest.fn(),
+    createCareUpdate: jest.fn(),
+    listVaccines: jest.fn(),
+  };
+});
+
+function isoPlusDays(iso, days) {
+  const date = new Date(`${iso}T00:00:00`);
+  date.setDate(date.getDate() + days);
+  const pad = value => String(value).padStart(2, '0');
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+}
+
+function renderStayCare({ status = 'requested', updates = [], dogs, vaccinesByDogId, parent } = {}) {
+  listCareUpdates.mockResolvedValue({ ok: true, data: updates });
+  return render(
+    <ThemeProvider theme={createTheme()}>
+      <StayCarePanel
+        bookingId={10}
+        status={status}
+        dogs={dogs}
+        parent={parent}
+        token="staff-token"
+        vaccinesByDogId={vaccinesByDogId}
+      />
+    </ThemeProvider>,
+  );
+}
 
 describe('staffDeskRedirectPath', () => {
   it('sends a signed-in pet parent to their account', () => {
@@ -507,5 +546,145 @@ describe('check-in and checkout timestamps', () => {
       checked_in_at: null,
       checked_out_at: new Date('2026-11-02T13:00').toISOString(),
     });
+  });
+});
+
+describe('stay care brief', () => {
+  const soon = isoPlusDays(todayIso(), 10);
+  const bear = {
+    id: 3,
+    name: 'Bear',
+    good_with_dogs: false,
+    medications: '',
+    feeding: '   ',
+    vet_name: 'Main St Vet',
+    vet_phone: '',
+  };
+  const pip = {
+    id: 4,
+    name: 'Pip',
+    good_with_dogs: true,
+    medications: 'Apoquel',
+    feeding: 'One cup',
+    vet_name: 'Main St Vet',
+    vet_phone: '555-0199',
+  };
+  const parent = { emergency_name: '', emergency_phone: '555-0100' };
+  const vaccinesByDogId = {
+    3: [{ id: 1, kind: 'rabies', label: '', expires_on: soon }],
+    4: [],
+  };
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+    listCareUpdates.mockResolvedValue({ ok: true, data: [] });
+    createCareUpdate.mockResolvedValue({ ok: true, data: { id: 1 } });
+  });
+
+  it('names the not-social dog and does not label a social dog', () => {
+    renderStayCare({ dogs: [bear, pip], parent, vaccinesByDogId });
+    expect(screen.getByText('Exclusive stay — Bear is not social.')).toBeInTheDocument();
+    expect(screen.queryByText(/Pip is not social/)).not.toBeInTheDocument();
+    expect(
+      exclusiveStayLine([
+        { name: 'Bear', good_with_dogs: false },
+        { name: 'Shadow' },
+      ]),
+    ).toBe('Exclusive stay — Bear and Shadow are not social.');
+  });
+
+  it('says nothing recorded for blank medications', () => {
+    renderStayCare({ dogs: [bear], parent, vaccinesByDogId });
+    expect(screen.getByText('Medications: nothing recorded')).toBeInTheDocument();
+    expect(screen.getByText('Feeding: nothing recorded')).toBeInTheDocument();
+    expect(screen.getByText('Vet: Main St Vet · nothing recorded')).toBeInTheDocument();
+    expect(screen.getByText('Emergency contact: nothing recorded · 555-0100')).toBeInTheDocument();
+  });
+
+  it('says no vaccines recorded when a dog has no vaccine rows', () => {
+    renderStayCare({ dogs: [pip], parent, vaccinesByDogId });
+    expect(screen.getByText('Pip: no vaccines recorded')).toBeInTheDocument();
+  });
+
+  it('names a vaccine that expires soon', () => {
+    renderStayCare({ dogs: [bear], parent, vaccinesByDogId });
+    expect(screen.getByText('Bear — Rabies expires soon')).toBeInTheDocument();
+  });
+
+  it('does not call a missing Bordetella row required', () => {
+    renderStayCare({ dogs: [bear, pip], parent, vaccinesByDogId });
+    expect(screen.queryByText(/bordetella/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/required/i)).not.toBeInTheDocument();
+  });
+
+  it('hides the composer when the stay is requested', () => {
+    renderStayCare({ status: 'requested', dogs: [bear], parent, vaccinesByDogId });
+    expect(screen.queryByRole('button', { name: 'Save update' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('checkbox', { name: 'Potty' })).not.toBeInTheDocument();
+  });
+
+  it('does not create an update when every answer is no and the note is blank', () => {
+    renderStayCare({ status: 'confirmed', dogs: [bear], parent, vaccinesByDogId });
+    const save = screen.getByRole('button', { name: 'Save update' });
+    expect(save).toBeDisabled();
+    fireEvent.click(save);
+    expect(createCareUpdate).not.toHaveBeenCalled();
+  });
+
+  it('creates a note-only update and reloads the list', async () => {
+    renderStayCare({ status: 'checked_in', dogs: [bear], parent, vaccinesByDogId });
+    fireEvent.change(screen.getByLabelText('Note'), { target: { value: 'Ate dinner' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Save update' }));
+    await waitFor(() =>
+      expect(createCareUpdate).toHaveBeenCalledWith('staff-token', 10, {
+        potty: false,
+        food: false,
+        play: false,
+        meds_given: false,
+        body: 'Ate dinner',
+      }),
+    );
+    await waitFor(() => expect(listCareUpdates).toHaveBeenCalledTimes(2));
+  });
+
+  it('lists care updates newest first and skips a blank author name', async () => {
+    renderStayCare({
+      status: 'completed',
+      dogs: [bear],
+      parent,
+      vaccinesByDogId,
+      updates: [
+        {
+          id: 1,
+          author: 99,
+          author_name: 'Chris C.',
+          potty: false,
+          food: false,
+          play: false,
+          meds_given: true,
+          body: 'Older note',
+          created_at: '2026-11-01T12:00:00Z',
+        },
+        {
+          id: 2,
+          author: 99,
+          author_name: '',
+          potty: true,
+          food: true,
+          play: false,
+          meds_given: false,
+          body: 'Newer note',
+          created_at: '2026-11-02T18:00:00Z',
+        },
+      ],
+    });
+    const items = await screen.findAllByRole('listitem');
+    expect(items[0]).toHaveTextContent('Newer note');
+    expect(items[0]).toHaveTextContent('Potty yes');
+    expect(items[0]).not.toHaveTextContent('Chris C.');
+    expect(items[0]).not.toHaveTextContent('99');
+    expect(items[1]).toHaveTextContent('Older note');
+    expect(items[1]).toHaveTextContent('Chris C.');
+    expect(items[1]).toHaveTextContent('Meds yes');
   });
 });

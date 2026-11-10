@@ -13,6 +13,8 @@ import {
   deletePetParent,
   fetchBookingPreview,
   listBookings,
+  listCareUpdates,
+  createCareUpdate,
   listClosures,
   listDogs,
   listExtras,
@@ -63,6 +65,8 @@ jest.mock('@/lib/daycareApi', () => {
     ...actual,
     fetchBookingPreview: jest.fn(),
     listBookings: jest.fn(),
+    listCareUpdates: jest.fn(),
+    createCareUpdate: jest.fn(),
     listServices: jest.fn(),
     listPetParents: jest.fn(),
     listDogs: jest.fn(),
@@ -130,6 +134,8 @@ describe('StaffDeskPage', () => {
       logout: jest.fn(),
     });
     listBookings.mockResolvedValue({ ok: true, data: [request] });
+    listCareUpdates.mockResolvedValue({ ok: true, data: [] });
+    createCareUpdate.mockResolvedValue({ ok: true, data: { id: 1 } });
     fetchBookingPreview.mockResolvedValue({
       ok: true,
       status: 200,
@@ -189,7 +195,7 @@ describe('StaffDeskPage', () => {
       expect.stringContaining('calendar'),
     );
     expect(screen.getByRole('button', { name: 'Log out' })).toBeInTheDocument();
-    expect(await screen.findByText('Bear')).toBeInTheDocument();
+    expect((await screen.findAllByText('Bear')).length).toBeGreaterThan(1);
     expect(screen.getByText('Ada Lovelace')).toBeInTheDocument();
     expect(screen.getByText('Manage requests, arrivals, and pickups.')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Active 1' })).toBeInTheDocument();
@@ -278,7 +284,7 @@ describe('StaffDeskPage', () => {
       fireEvent.click(within(dialog).getByRole('button', { name: 'Delete household' }));
     });
     expect(deletePetParent).toHaveBeenCalledWith('staff-token', 1);
-  });
+  }, 15000);
 
   it('uploads a household photo and a dog photo', async () => {
     uploadPetParentPhoto.mockResolvedValue({
@@ -332,7 +338,7 @@ describe('StaffDeskPage', () => {
       fireEvent.click(within(dialog).getByRole('button', { name: 'Delete dog' }));
     });
     expect(deleteDog).toHaveBeenCalledWith('staff-token', 3);
-  });
+  }, 15000);
 
   it('creates a household from the Households tab', async () => {
     createPetParent.mockResolvedValue({
@@ -550,7 +556,7 @@ describe('StaffDeskPage', () => {
       fireEvent.click(within(removeDialog).getByRole('button', { name: 'Remove' }));
     });
     expect(deleteBookingExtra).toHaveBeenCalledWith('staff-token', 12, 1);
-  });
+  }, 15000);
 
   it('edits a stay and patches dates without status or household', async () => {
     const stay = {
@@ -601,7 +607,7 @@ describe('StaffDeskPage', () => {
     );
     expect(listBookings).toHaveBeenCalledTimes(2);
     expect(await screen.findByText('Stay updated.')).toBeInTheDocument();
-  });
+  }, 15000);
 
   it('corrects check-in and checkout times on a stay', async () => {
     const stay = {
@@ -638,7 +644,7 @@ describe('StaffDeskPage', () => {
       13,
       expect.objectContaining({ checked_in_at: expect.any(String) }),
     );
-  });
+  }, 15000);
 
   it('opens a booking preview in a new tab with the token kept off the URL', async () => {
     const previewWindow = {

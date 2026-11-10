@@ -713,3 +713,129 @@ export function vaccineState(expiresOn, today = todayIso()) {
   soon.setDate(soon.getDate() + 30);
   return expiresOn <= todayIso(soon) ? 'soon' : 'ok';
 }
+
+export const NOTHING_RECORDED = 'nothing recorded';
+
+const CARE_UPDATE_COMPOSER_STATUSES = new Set(['confirmed', 'checked_in', 'completed']);
+
+/** Dogs on a booking, in the booking's dog order. A missing dog is not social. */
+export function dogsOnBooking(booking, dogs) {
+  const byId = new Map((dogs || []).map(dog => [dog.id, dog]));
+  return (booking?.dogs || []).map(id => {
+    const dog = byId.get(id);
+    if (dog) return dog;
+    return { id, name: `Dog ${id}`, good_with_dogs: false };
+  });
+}
+
+export function recordedOrBlank(value) {
+  const text = String(value ?? '').trim();
+  return text || NOTHING_RECORDED;
+}
+
+function optionalText(value) {
+  const text = String(value ?? '').trim();
+  return text || null;
+}
+
+function dogDisplayName(dog) {
+  return dog?.name || `Dog ${dog?.id}`;
+}
+
+function joinNames(names) {
+  if (names.length <= 1) return names[0] || '';
+  if (names.length === 2) return `${names[0]} and ${names[1]}`;
+  return `${names.slice(0, -1).join(', ')}, and ${names[names.length - 1]}`;
+}
+
+/**
+ * One line when any dog is not social (`good_with_dogs` is not true; the default is false).
+ * Names only those dogs. Null when every dog is social.
+ */
+export function exclusiveStayLine(dogs) {
+  const unsocial = (dogs || []).filter(dog => dog?.good_with_dogs !== true);
+  if (!unsocial.length) return null;
+  const names = unsocial.map(dogDisplayName);
+  const verb = names.length === 1 ? 'is' : 'are';
+  return `Exclusive stay — ${joinNames(names)} ${verb} not social.`;
+}
+
+/**
+ * Warnings for vaccines that are expired, due within 30 days, or missing an expiry date.
+ * No rows → `no vaccines recorded`. `ok` rows are omitted. A missing kind is not mentioned.
+ * `vaccines == null` means the list has not loaded.
+ */
+export function vaccineWarningLines(dog, vaccines, today = todayIso()) {
+  const name = dogDisplayName(dog);
+  if (vaccines == null) return [];
+  if (vaccines.length === 0) return [`${name}: no vaccines recorded`];
+  const lines = [];
+  vaccines.forEach(vaccine => {
+    const state = vaccineState(vaccine?.expires_on, today);
+    const label = vaccineName(vaccine);
+    if (state === 'expired') lines.push(`${name} — ${label} expired`);
+    else if (state === 'soon') lines.push(`${name} — ${label} expires soon`);
+    else if (state === 'none') lines.push(`${name} — ${label} has no expiry date`);
+  });
+  return lines;
+}
+
+/** Day-of care text for one stay. Does not include breed, weight, sex, birthday, or address. */
+export function buildStayCareBrief({ dogs, parent, vaccinesByDogId, today = todayIso() } = {}) {
+  const rows = dogs || [];
+  return {
+    exclusiveLine: exclusiveStayLine(rows),
+    dogs: rows.map(dog => ({
+      id: dog.id,
+      name: dogDisplayName(dog),
+      medications: recordedOrBlank(dog.medications),
+      feeding: recordedOrBlank(dog.feeding),
+      vetName: recordedOrBlank(dog.vet_name),
+      vetPhone: recordedOrBlank(dog.vet_phone),
+      temperament: optionalText(dog.temperament),
+      notes: optionalText(dog.notes),
+      vaccineLines: vaccineWarningLines(dog, vaccinesByDogId?.[dog.id], today),
+    })),
+    emergencyName: recordedOrBlank(parent?.emergency_name),
+    emergencyPhone: recordedOrBlank(parent?.emergency_phone),
+  };
+}
+
+export function canComposeCareUpdate(status) {
+  return CARE_UPDATE_COMPOSER_STATUSES.has(status);
+}
+
+/** Save is blocked when every answer is no and the note is blank. A note alone is enough. */
+export function careUpdateSaveBlocked({ potty, food, play, medsGiven, body } = {}) {
+  const note = String(body ?? '').trim();
+  return !potty && !food && !play && !medsGiven && note === '';
+}
+
+export function sortCareUpdatesNewest(updates) {
+  return [...(updates || [])].sort((a, b) => {
+    const aTime = Date.parse(a?.created_at) || 0;
+    const bTime = Date.parse(b?.created_at) || 0;
+    if (aTime !== bTime) return bTime - aTime;
+    return (Number(b?.id) || 0) - (Number(a?.id) || 0);
+  });
+}
+
+export function yesNoLabel(value) {
+  return value ? 'yes' : 'no';
+}
+
+export function careUpdateAnswers(update) {
+  return [
+    `Potty ${yesNoLabel(update?.potty)}`,
+    `Food ${yesNoLabel(update?.food)}`,
+    `Play ${yesNoLabel(update?.play)}`,
+    `Meds ${yesNoLabel(update?.meds_given)}`,
+  ].join(' · ');
+}
+
+/** Author name and time. Blank `author_name` is omitted. The numeric author id is never shown. */
+export function careUpdateByline(update) {
+  const name = String(update?.author_name ?? '').trim();
+  const time = formatTimestamp(update?.created_at);
+  return [name, time].filter(Boolean).join(' · ');
+}

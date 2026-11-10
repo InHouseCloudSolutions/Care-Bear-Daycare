@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 import { Box, Button, Typography } from '@mui/material';
-import { BOOK_STAY_PATH, ROVER_BOOKING_URL } from '@/consts/routes';
+import { BOOK_STAY_PATH } from '@/consts/routes';
 import { WEBSITE_INK, WEBSITE_PAGE_BACKGROUND } from '@/consts/website-theme';
 import { listSiteReviews } from '@/lib/daycareApi';
 import publicPath from '@/utils/publicPath';
@@ -31,10 +31,8 @@ const STORY_REVIEW_IDS = ['AZ1V37XQ', 'NqO9DVpQ', 'gaD1dDMN'];
 
 const ICON = {
   arrowCream: publicPath('/imgs/reviews/arrow-external-cream.svg'),
-  arrowTeal: publicPath('/imgs/reviews/arrow-external-teal.svg'),
   chevronDown: publicPath('/imgs/reviews/chevron-down-teal.svg'),
   chevronUp: publicPath('/imgs/reviews/chevron-up-teal.svg'),
-  external: publicPath('/imgs/reviews/external-link-square.svg'),
   quoteCream: publicPath('/imgs/reviews/quote-open-cream.svg'),
   quoteOpen: publicPath('/imgs/reviews/quote-open-teal.svg'),
   quoteClose: publicPath('/imgs/reviews/quote-close-teal.svg'),
@@ -366,35 +364,6 @@ ReadFullReview.propTypes = {
   shown: PropTypes.bool.isRequired,
 };
 
-function RoverTextLink({ label }) {
-  return (
-    <Box
-      component="a"
-      href={ROVER_BOOKING_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      sx={{
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: 0.75,
-        color: TEAL,
-        fontWeight: 700,
-        fontSize: '1rem',
-        textDecoration: 'underline',
-        textUnderlineOffset: '3px',
-        '&:hover': { color: TEAL_HOVER },
-      }}
-    >
-      {label}
-      <ReviewIcon src={ICON.arrowTeal} size={16} />
-    </Box>
-  );
-}
-
-RoverTextLink.propTypes = {
-  label: PropTypes.string.isRequired,
-};
-
 function RatingSummary({ average, count }) {
   const reviewWord = count === 1 ? 'review' : 'reviews';
 
@@ -693,7 +662,6 @@ export default function ReviewsPage() {
             }}
           >
             <BookStayButton />
-            <RoverTextLink label="Visit Rover profile" />
           </Box>
         </Box>
         {average != null ? <RatingSummary average={average} count={count} /> : null}
@@ -777,35 +745,6 @@ export default function ReviewsPage() {
           ) : null}
         </Box>
       ) : null}
-
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: { xs: 'column', sm: 'row' },
-          alignItems: { xs: 'flex-start', sm: 'center' },
-          justifyContent: 'space-between',
-          gap: 2,
-          border: `1px solid ${CARD_BORDER}`,
-          borderRadius: '18px',
-          bgcolor: PAPER,
-          px: { xs: 2.25, md: 3 },
-          py: { xs: 2, md: 2.25 },
-          mt: { xs: 4, md: 5 },
-        }}
-      >
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.75 }}>
-          <ReviewIcon src={ICON.external} size={28} />
-          <Box>
-            <Typography component="p" sx={{ m: 0, color: TEAL, fontWeight: 700 }}>
-              Read more on Rover
-            </Typography>
-            <Typography component="p" sx={{ m: 0, mt: 0.35, color: BODY, fontSize: '0.95rem' }}>
-              Visit Carrie’s profile for review and booking details.
-            </Typography>
-          </Box>
-        </Box>
-        <RoverTextLink label="Visit Rover profile" />
-      </Box>
 
       <Box
         component="section"

@@ -1,12 +1,15 @@
 import {
+  createCareUpdate,
   createSiteImage,
   deleteSiteImage,
   fetchBookingPreview,
+  listCareUpdates,
   listServices,
   listSiteImages,
   replaceSiteImage,
   updateSiteImage,
 } from './daycareApi';
+import { writeDaycareApiMode } from './daycareApiTarget';
 
 describe('site image client', () => {
   beforeEach(() => {
@@ -81,6 +84,38 @@ describe('site image client', () => {
       status: 200,
       data: '<html><body>Invoice</body></html>',
     });
+  });
+
+  it('lists and creates care updates on the booking path', async () => {
+    await listCareUpdates('tok', 10);
+    await createCareUpdate('tok', 10, {
+      potty: false,
+      food: true,
+      play: false,
+      meds_given: false,
+      body: 'Ate dinner',
+    });
+    expect(fetch.mock.calls[0][0]).toBe('/daycare-api/daycare/bookings/10/care-updates/');
+    expect(fetch.mock.calls[0][1].method).toBe('GET');
+    expect(fetch.mock.calls[0][1].headers.Authorization).toBe('Token tok');
+    expect(fetch.mock.calls[1][0]).toBe('/daycare-api/daycare/bookings/10/care-updates/');
+    expect(fetch.mock.calls[1][1].method).toBe('POST');
+    expect(JSON.parse(fetch.mock.calls[1][1].body)).toEqual({
+      potty: false,
+      food: true,
+      play: false,
+      meds_given: false,
+      body: 'Ate dinner',
+    });
+  });
+
+  it('sends the local API header when the chip is set to Local', async () => {
+    process.env.NEXT_PUBLIC_DAYCARE_API_SWITCH = '1';
+    writeDaycareApiMode('local');
+    await listCareUpdates('tok', 10);
+    expect(fetch.mock.calls[0][1].headers['x-daycare-api-mode']).toBe('local');
+    writeDaycareApiMode('production');
+    delete process.env.NEXT_PUBLIC_DAYCARE_API_SWITCH;
   });
 
   it('patches alt and sort order, and deletes by id', async () => {

@@ -15,6 +15,7 @@ import {
   uploadMyPhoto,
 } from '@/lib/daycareApi';
 import ClientProfileView from './ClientProfileView';
+import YourStays from './YourStays';
 import { PRIMARY_BUTTON_SX, SECONDARY_BUTTON_SX } from './pet-parent-styles';
 
 function dogsForParent(dogs, petParentId) {
@@ -101,6 +102,7 @@ export default function AccountProfilePage() {
         onCreateDog={petParent && !isStaff ? payload => createDog(token, payload) : undefined}
         onDogsChanged={loadDogs}
         showHousehold={!isStaff}
+        below={!isStaff && petParent ? <YourStays token={token} dogs={dogs} /> : null}
       />
     </DogHotelInteriorPage>
   );

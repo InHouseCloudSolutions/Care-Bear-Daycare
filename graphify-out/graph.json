@@ -1454,7 +1454,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold",
-      "community": 110,
+      "community": 91,
       "norm_label": "create_ts_component_scaffold.py"
     },
     {
@@ -1464,7 +1464,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold_resolve_under_root",
-      "community": 110,
+      "community": 91,
       "norm_label": "_resolve_under_root()"
     },
     {
@@ -1474,7 +1474,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "path",
-      "community": 110,
+      "community": 91,
       "norm_label": "path"
     },
     {
@@ -1484,7 +1484,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "scripts_create_ts_component_scaffold_main",
-      "community": 110,
+      "community": 91,
       "norm_label": "main()"
     },
     {
@@ -1694,7 +1694,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_devconsolesuppressor",
-      "community": 130,
+      "community": 178,
       "norm_label": "devconsolesuppressor.js"
     },
     {
@@ -1704,7 +1704,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "components_devconsolesuppressor_suppressed",
-      "community": 130,
+      "community": 178,
       "norm_label": "suppressed"
     },
     {
@@ -1714,7 +1714,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "components_devconsolesuppressor_devconsolesuppressor",
-      "community": 130,
+      "community": 178,
       "norm_label": "devconsolesuppressor()"
     },
     {
@@ -1964,7 +1964,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "design_studio_glassformscrollpanel_marketingformpanel",
-      "community": 61,
+      "community": 2,
       "norm_label": "marketingformpanel()"
     },
     {
@@ -2304,8 +2304,28 @@
       "source_location": "L382",
       "_origin": "ast",
       "id": "design_studio_design_studio_glass_herotextlegibility",
-      "community": 2,
+      "community": 62,
       "norm_label": "herotextlegibility"
+    },
+    {
+      "label": "ApiTargetSwitch.js",
+      "file_type": "code",
+      "source_file": "frontend/components/dev/ApiTargetSwitch.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dev_apitargetswitch",
+      "community": 65,
+      "norm_label": "apitargetswitch.js"
+    },
+    {
+      "label": "ApiTargetSwitch()",
+      "file_type": "code",
+      "source_file": "frontend/components/dev/ApiTargetSwitch.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "dev_apitargetswitch_apitargetswitch",
+      "community": 65,
+      "norm_label": "apitargetswitch()"
     },
     {
       "label": "AboutPage.js",
@@ -2514,7 +2534,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_carriephoto",
-      "community": 91,
+      "community": 107,
       "norm_label": "carriephoto()"
     },
     {
@@ -2544,7 +2564,7 @@
       "source_location": "L261",
       "_origin": "ast",
       "id": "dog_hotel_aboutpage_aboutpage",
-      "community": 91,
+      "community": 107,
       "norm_label": "aboutpage()"
     },
     {
@@ -3034,7 +3054,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "dog_hotel_doghotelinteriorpage_doghotelinteriorpage",
-      "community": 62,
+      "community": 107,
       "norm_label": "doghotelinteriorpage()"
     },
     {
@@ -3051,7 +3071,7 @@
       "label": "ARROW_CREAM_SRC",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_arrow_cream_src",
       "community": 110,
@@ -3061,7 +3081,7 @@
       "label": "imageShape",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_imageshape",
       "community": 110,
@@ -3071,7 +3091,7 @@
       "label": "eyebrowSx",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_eyebrowsx",
       "community": 110,
@@ -3081,7 +3101,7 @@
       "label": "displaySx",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L32",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_displaysx",
       "community": 110,
@@ -3091,7 +3111,7 @@
       "label": "tilePlacement()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_tileplacement",
       "community": 110,
@@ -3101,7 +3121,7 @@
       "label": "photoCountLabel()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L79",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_photocountlabel",
       "community": 110,
@@ -3111,7 +3131,7 @@
       "label": "photoName()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L83",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_photoname",
       "community": 110,
@@ -3121,7 +3141,7 @@
       "label": "CameraIcon()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L88",
+      "source_location": "L89",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_cameraicon",
       "community": 110,
@@ -3131,7 +3151,7 @@
       "label": "ExpandIcon()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L107",
+      "source_location": "L108",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_expandicon",
       "community": 110,
@@ -3141,7 +3161,7 @@
       "label": "HeartIcon()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L131",
+      "source_location": "L132",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_hearticon",
       "community": 110,
@@ -3151,7 +3171,7 @@
       "label": "GalleryTile()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L150",
+      "source_location": "L151",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_gallerytile",
       "community": 110,
@@ -3161,7 +3181,7 @@
       "label": "LightboxControl()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L243",
+      "source_location": "L244",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_lightboxcontrol",
       "community": 110,
@@ -3171,7 +3191,7 @@
       "label": "PhotoLightbox()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L282",
+      "source_location": "L283",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_photolightbox",
       "community": 110,
@@ -3181,7 +3201,7 @@
       "label": "GalleryPage()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/GalleryPage.js",
-      "source_location": "L399",
+      "source_location": "L400",
       "_origin": "ast",
       "id": "dog_hotel_gallerypage_gallerypage",
       "community": 110,
@@ -3224,7 +3244,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "dog_hotel_howastayworkspage_howastayworkspage",
-      "community": 91,
+      "community": 107,
       "norm_label": "howastayworkspage()"
     },
     {
@@ -3261,7 +3281,7 @@
       "label": "CURATED_EXCERPTS",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L48",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_curated_excerpts",
       "community": 28,
@@ -3271,7 +3291,7 @@
       "label": "reviewShape",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L55",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewshape",
       "community": 28,
@@ -3281,7 +3301,7 @@
       "label": "eyebrowSx",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L73",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_eyebrowsx",
       "community": 28,
@@ -3291,7 +3311,7 @@
       "label": "displaySx",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L81",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_displaysx",
       "community": 28,
@@ -3301,7 +3321,7 @@
       "label": "reviewPhotos()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L88",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewphotos",
       "community": 28,
@@ -3311,7 +3331,7 @@
       "label": "sitePhotoSrc()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L93",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_sitephotosrc",
       "community": 28,
@@ -3321,7 +3341,7 @@
       "label": "normalizedQuote()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L100",
+      "source_location": "L98",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_normalizedquote",
       "community": 28,
@@ -3331,7 +3351,7 @@
       "label": "reviewExcerpt()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L104",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewexcerpt",
       "community": 28,
@@ -3341,7 +3361,7 @@
       "label": "arrangeReviews()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L115",
+      "source_location": "L113",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_arrangereviews",
       "community": 28,
@@ -3351,7 +3371,7 @@
       "label": "ReviewIcon()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L134",
+      "source_location": "L132",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewicon",
       "community": 28,
@@ -3361,7 +3381,7 @@
       "label": "StarRating()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L150",
+      "source_location": "L148",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_starrating",
       "community": 28,
@@ -3371,7 +3391,7 @@
       "label": "ReviewCover()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L183",
+      "source_location": "L181",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewcover",
       "community": 28,
@@ -3381,7 +3401,7 @@
       "label": "ExtraPhotos()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L217",
+      "source_location": "L215",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_extraphotos",
       "community": 28,
@@ -3391,7 +3411,7 @@
       "label": "QuoteText()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L252",
+      "source_location": "L250",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_quotetext",
       "community": 28,
@@ -3401,7 +3421,7 @@
       "label": "VerifiedBadge()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L304",
+      "source_location": "L302",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_verifiedbadge",
       "community": 28,
@@ -3411,27 +3431,17 @@
       "label": "ReadFullReview()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L335",
+      "source_location": "L333",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_readfullreview",
       "community": 28,
       "norm_label": "readfullreview()"
     },
     {
-      "label": "RoverTextLink()",
-      "file_type": "code",
-      "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L369",
-      "_origin": "ast",
-      "id": "dog_hotel_reviewspage_rovertextlink",
-      "community": 28,
-      "norm_label": "rovertextlink()"
-    },
-    {
       "label": "RatingSummary()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L398",
+      "source_location": "L367",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_ratingsummary",
       "community": 28,
@@ -3441,7 +3451,7 @@
       "label": "BookStayButton()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L462",
+      "source_location": "L431",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_bookstaybutton",
       "community": 28,
@@ -3451,7 +3461,7 @@
       "label": "ReviewCopy()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L486",
+      "source_location": "L455",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewcopy",
       "community": 28,
@@ -3461,7 +3471,7 @@
       "label": "FeaturedReview()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L510",
+      "source_location": "L479",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_featuredreview",
       "community": 28,
@@ -3471,7 +3481,7 @@
       "label": "StoryCard()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L566",
+      "source_location": "L535",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_storycard",
       "community": 28,
@@ -3481,7 +3491,7 @@
       "label": "ReviewsPage()",
       "file_type": "code",
       "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L615",
+      "source_location": "L584",
       "_origin": "ast",
       "id": "dog_hotel_reviewspage_reviewspage",
       "community": 28,
@@ -4094,7 +4104,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "scroll_forge_stay_world_config_card",
-      "community": 107,
+      "community": 165,
       "norm_label": "card()"
     },
     {
@@ -4264,7 +4274,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_homeheronav_homeheronav",
-      "community": 62,
+      "community": 169,
       "norm_label": "homeheronav()"
     },
     {
@@ -4404,7 +4414,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "home_landing_homelandingpage_herotextlegibility",
-      "community": 2,
+      "community": 62,
       "norm_label": "herotextlegibility"
     },
     {
@@ -4484,7 +4494,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawer",
-      "community": 5,
+      "community": 106,
       "norm_label": "luxurynavdrawer.js"
     },
     {
@@ -4494,7 +4504,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawer_luxurynavdrawer",
-      "community": 5,
+      "community": 106,
       "norm_label": "luxurynavdrawer()"
     },
     {
@@ -4514,7 +4524,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "home_landing_luxurynavdrawerlist_externallinkprops",
-      "community": 106,
+      "community": 5,
       "norm_label": "externallinkprops()"
     },
     {
@@ -4744,7 +4754,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "home_landing_marketinginteriorlayout_marketinginteriorlayout",
-      "community": 61,
+      "community": 2,
       "norm_label": "marketinginteriorlayout()"
     },
     {
@@ -4774,7 +4784,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "home_landing_marketinginteriornav_marketinginteriornav",
-      "community": 61,
+      "community": 169,
       "norm_label": "marketinginteriornav()"
     },
     {
@@ -4894,7 +4904,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem",
-      "community": 0,
+      "community": 5,
       "norm_label": "marketingnavdesktopitem.js"
     },
     {
@@ -4904,7 +4914,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_navitemshape",
-      "community": 0,
+      "community": 5,
       "norm_label": "navitemshape"
     },
     {
@@ -4914,7 +4924,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktopitem_marketingnavdesktopitem",
-      "community": 0,
+      "community": 5,
       "norm_label": "marketingnavdesktopitem()"
     },
     {
@@ -4924,7 +4934,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink",
-      "community": 106,
+      "community": 5,
       "norm_label": "marketingnavdesktoplink.js"
     },
     {
@@ -4934,7 +4944,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_externallinkprops",
-      "community": 106,
+      "community": 5,
       "norm_label": "externallinkprops()"
     },
     {
@@ -4944,7 +4954,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_navitemshape",
-      "community": 106,
+      "community": 5,
       "norm_label": "navitemshape"
     },
     {
@@ -4954,7 +4964,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "home_landing_marketingnavdesktoplink_marketingnavdesktoplink",
-      "community": 106,
+      "community": 5,
       "norm_label": "marketingnavdesktoplink()"
     },
     {
@@ -4964,7 +4974,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel",
-      "community": 5,
+      "community": 106,
       "norm_label": "marketingnavdrawerpanel.js"
     },
     {
@@ -4974,7 +4984,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel_icons",
-      "community": 5,
+      "community": 106,
       "norm_label": "icons"
     },
     {
@@ -4984,7 +4994,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel_navitemshape",
-      "community": 5,
+      "community": 106,
       "norm_label": "navitemshape"
     },
     {
@@ -4994,7 +5004,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel_pagelinks",
-      "community": 5,
+      "community": 106,
       "norm_label": "pagelinks()"
     },
     {
@@ -5004,7 +5014,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "home_landing_marketingnavdrawerpanel_marketingnavdrawerpanel",
-      "community": 5,
+      "community": 106,
       "norm_label": "marketingnavdrawerpanel()"
     },
     {
@@ -5044,7 +5054,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "home_landing_marketingwordmark_marketingwordmark",
-      "community": 0,
+      "community": 169,
       "norm_label": "marketingwordmark()"
     },
     {
@@ -5174,7 +5184,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_link_typography_sx",
-      "community": 106,
+      "community": 5,
       "norm_label": "home_nav_link_typography_sx"
     },
     {
@@ -5184,7 +5194,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_normalizemarketingnavpath",
-      "community": 106,
+      "community": 5,
       "norm_label": "normalizemarketingnavpath()"
     },
     {
@@ -5194,7 +5204,7 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_ismarketingnavlinkactive",
-      "community": 106,
+      "community": 5,
       "norm_label": "ismarketingnavlinkactive()"
     },
     {
@@ -5204,7 +5214,7 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketingnavlinkhoverunderlinesx",
-      "community": 106,
+      "community": 5,
       "norm_label": "marketingnavlinkhoverunderlinesx()"
     },
     {
@@ -5284,7 +5294,7 @@
       "source_location": "L192",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_luxury_drawer_paper_sx",
-      "community": 5,
+      "community": 106,
       "norm_label": "home_luxury_drawer_paper_sx"
     },
     {
@@ -5324,7 +5334,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer",
-      "community": 163,
+      "community": 0,
       "norm_label": "marketing-nav-drawer.js"
     },
     {
@@ -5334,7 +5344,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_auth_nav_labels",
-      "community": 163,
+      "community": 0,
       "norm_label": "auth_nav_labels"
     },
     {
@@ -5344,7 +5354,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_splitauthnavitems",
-      "community": 163,
+      "community": 0,
       "norm_label": "splitauthnavitems()"
     },
     {
@@ -5354,7 +5364,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "home_landing_marketing_nav_drawer_buildmobiledraweritems",
-      "community": 163,
+      "community": 0,
       "norm_label": "buildmobiledraweritems()"
     },
     {
@@ -5364,7 +5374,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavdraweritems",
-      "community": 163,
+      "community": 0,
       "norm_label": "usemarketingnavdraweritems.js"
     },
     {
@@ -5374,7 +5384,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavdraweritems_usemarketingnavdraweritems",
-      "community": 163,
+      "community": 0,
       "norm_label": "usemarketingnavdraweritems()"
     },
     {
@@ -5384,7 +5394,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems",
-      "community": 0,
+      "community": 155,
       "norm_label": "usemarketingnavitems.js"
     },
     {
@@ -5394,7 +5404,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems_usehomenavitems",
-      "community": 0,
+      "community": 155,
       "norm_label": "usehomenavitems()"
     },
     {
@@ -5404,7 +5414,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "home_landing_usemarketingnavitems_usemarketinginteriornavitems",
-      "community": 0,
+      "community": 155,
       "norm_label": "usemarketinginteriornavitems()"
     },
     {
@@ -5481,7 +5491,7 @@
       "label": "dogsForParent()",
       "file_type": "code",
       "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "pet_parent_accountprofilepage_dogsforparent",
       "community": 116,
@@ -5491,7 +5501,7 @@
       "label": "BOOK_BUTTON_SX",
       "file_type": "code",
       "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "pet_parent_accountprofilepage_book_button_sx",
       "community": 116,
@@ -5501,7 +5511,7 @@
       "label": "AccountProfilePage()",
       "file_type": "code",
       "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
-      "source_location": "L35",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "pet_parent_accountprofilepage_accountprofilepage",
       "community": 116,
@@ -5521,7 +5531,7 @@
       "label": "parent",
       "file_type": "code",
       "source_file": "frontend/components/pet-parent/AccountProfilePage.test.js",
-      "source_location": "L30",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "pet_parent_accountprofilepage_test_parent",
       "community": 116,
@@ -5531,7 +5541,7 @@
       "label": "renderAccount()",
       "file_type": "code",
       "source_file": "frontend/components/pet-parent/AccountProfilePage.test.js",
-      "source_location": "L40",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "pet_parent_accountprofilepage_test_renderaccount",
       "community": 116,
@@ -6264,7 +6274,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "pet_parent_profilephoto_usedaycarephoto",
-      "community": 157,
+      "community": 68,
       "norm_label": "usedaycarephoto()"
     },
     {
@@ -6306,6 +6316,26 @@
       "id": "pet_parent_registerpage_registerpage",
       "community": 153,
       "norm_label": "registerpage()"
+    },
+    {
+      "label": "YourStays.js",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/YourStays.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pet_parent_yourstays",
+      "community": 153,
+      "norm_label": "yourstays.js"
+    },
+    {
+      "label": "YourStays()",
+      "file_type": "code",
+      "source_file": "frontend/components/pet-parent/YourStays.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "pet_parent_yourstays_yourstays",
+      "community": 116,
+      "norm_label": "yourstays()"
     },
     {
       "label": "booking-dates.js",
@@ -6594,7 +6624,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pet_parent_pet_parent_styles",
-      "community": 160,
+      "community": 153,
       "norm_label": "pet-parent-styles.js"
     },
     {
@@ -6604,7 +6634,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "pet_parent_pet_parent_styles_section_heading_sx",
-      "community": 69,
+      "community": 153,
       "norm_label": "section_heading_sx"
     },
     {
@@ -6614,7 +6644,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "pet_parent_pet_parent_styles_card_sx",
-      "community": 160,
+      "community": 153,
       "norm_label": "card_sx"
     },
     {
@@ -6731,7 +6761,7 @@
       "label": "nameLookup()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L49",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "staff_deskbookingstab_namelookup",
       "community": 143,
@@ -6741,7 +6771,7 @@
       "label": "formatStayDate()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L54",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "staff_deskbookingstab_formatstaydate",
       "community": 143,
@@ -6751,7 +6781,7 @@
       "label": "perUnitLabel()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L58",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "staff_deskbookingstab_perunitlabel",
       "community": 143,
@@ -6761,7 +6791,7 @@
       "label": "StayFact()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L64",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "staff_deskbookingstab_stayfact",
       "community": 143,
@@ -6771,7 +6801,7 @@
       "label": "StayCard()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L92",
+      "source_location": "L94",
       "_origin": "ast",
       "id": "staff_deskbookingstab_staycard",
       "community": 143,
@@ -6781,7 +6811,7 @@
       "label": "DeskBookingsTab()",
       "file_type": "code",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
-      "source_location": "L402",
+      "source_location": "L414",
       "_origin": "ast",
       "id": "staff_deskbookingstab_deskbookingstab",
       "community": 168,
@@ -6984,7 +7014,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "staff_deskholidaystab_holidayrow",
-      "community": 143,
+      "community": 166,
       "norm_label": "holidayrow()"
     },
     {
@@ -7024,7 +7054,7 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "staff_deskhouseholdstab_householdavatar",
-      "community": 157,
+      "community": 68,
       "norm_label": "householdavatar()"
     },
     {
@@ -7781,7 +7811,7 @@
       "label": "confirmFrame()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.test.js",
-      "source_location": "L44",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "staff_staffdeskpage_test_confirmframe",
       "community": 168,
@@ -7791,7 +7821,7 @@
       "label": "ada",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.test.js",
-      "source_location": "L99",
+      "source_location": "L103",
       "_origin": "ast",
       "id": "staff_staffdeskpage_test_ada",
       "community": 168,
@@ -7801,7 +7831,7 @@
       "label": "request",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.test.js",
-      "source_location": "L100",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "staff_staffdeskpage_test_request",
       "community": 168,
@@ -7811,7 +7841,7 @@
       "label": "renderDesk()",
       "file_type": "code",
       "source_file": "frontend/components/staff/StaffDeskPage.test.js",
-      "source_location": "L110",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "staff_staffdeskpage_test_renderdesk",
       "community": 168,
@@ -7886,6 +7916,46 @@
       "id": "staff_staffpageshell_staffpageshell",
       "community": 168,
       "norm_label": "staffpageshell()"
+    },
+    {
+      "label": "StayCarePanel.js",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "staff_staycarepanel",
+      "community": 86,
+      "norm_label": "staycarepanel.js"
+    },
+    {
+      "label": "careUpdateRows()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "staff_staycarepanel_careupdaterows",
+      "community": 86,
+      "norm_label": "careupdaterows()"
+    },
+    {
+      "label": "CareUpdateTimeline()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "staff_staycarepanel_careupdatetimeline",
+      "community": 86,
+      "norm_label": "careupdatetimeline()"
+    },
+    {
+      "label": "StayCarePanel()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L171",
+      "_origin": "ast",
+      "id": "staff_staycarepanel_staycarepanel",
+      "community": 86,
+      "norm_label": "staycarepanel()"
     },
     {
       "label": "StayDocumentsMenu.js",
@@ -8094,7 +8164,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "staff_site_image_styles_cardsx",
-      "community": 4,
+      "community": 168,
       "norm_label": "cardsx()"
     },
     {
@@ -8114,7 +8184,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "staff_site_image_styles_visuallyhiddeninputsx",
-      "community": 34,
+      "community": 168,
       "norm_label": "visuallyhiddeninputsx"
     },
     {
@@ -8444,7 +8514,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "staff_staff_desk_holidaykindlabel",
-      "community": 125,
+      "community": 166,
       "norm_label": "holidaykindlabel()"
     },
     {
@@ -8494,7 +8564,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "staff_staff_desk_householdlabel",
-      "community": 4,
+      "community": 166,
       "norm_label": "householdlabel()"
     },
     {
@@ -8504,7 +8574,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "staff_staff_desk_booking_status",
-      "community": 166,
+      "community": 125,
       "norm_label": "booking_status"
     },
     {
@@ -8584,7 +8654,7 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "staff_staff_desk_dogsincareon",
-      "community": 125,
+      "community": 168,
       "norm_label": "dogsincareon()"
     },
     {
@@ -8754,7 +8824,7 @@
       "source_location": "L349",
       "_origin": "ast",
       "id": "staff_staff_desk_householdinitials",
-      "community": 157,
+      "community": 68,
       "norm_label": "householdinitials()"
     },
     {
@@ -8784,7 +8854,7 @@
       "source_location": "L376",
       "_origin": "ast",
       "id": "staff_staff_desk_servicekindlabel",
-      "community": 166,
+      "community": 125,
       "norm_label": "servicekindlabel()"
     },
     {
@@ -8794,7 +8864,7 @@
       "source_location": "L380",
       "_origin": "ast",
       "id": "staff_staff_desk_ratelabel",
-      "community": 166,
+      "community": 125,
       "norm_label": "ratelabel()"
     },
     {
@@ -8854,7 +8924,7 @@
       "source_location": "L425",
       "_origin": "ast",
       "id": "staff_staff_desk_servicekindof",
-      "community": 125,
+      "community": 143,
       "norm_label": "servicekindof()"
     },
     {
@@ -9118,6 +9188,156 @@
       "norm_label": "vaccinestate()"
     },
     {
+      "label": "CARE_UPDATE_COMPOSER_STATUSES",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L719",
+      "_origin": "ast",
+      "id": "staff_staff_desk_care_update_composer_statuses",
+      "community": 125,
+      "norm_label": "care_update_composer_statuses"
+    },
+    {
+      "label": "dogsOnBooking()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L722",
+      "_origin": "ast",
+      "id": "staff_staff_desk_dogsonbooking",
+      "community": 143,
+      "norm_label": "dogsonbooking()"
+    },
+    {
+      "label": "recordedOrBlank()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L731",
+      "_origin": "ast",
+      "id": "staff_staff_desk_recordedorblank",
+      "community": 86,
+      "norm_label": "recordedorblank()"
+    },
+    {
+      "label": "optionalText()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L736",
+      "_origin": "ast",
+      "id": "staff_staff_desk_optionaltext",
+      "community": 125,
+      "norm_label": "optionaltext()"
+    },
+    {
+      "label": "dogDisplayName()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L741",
+      "_origin": "ast",
+      "id": "staff_staff_desk_dogdisplayname",
+      "community": 125,
+      "norm_label": "dogdisplayname()"
+    },
+    {
+      "label": "joinNames()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L745",
+      "_origin": "ast",
+      "id": "staff_staff_desk_joinnames",
+      "community": 125,
+      "norm_label": "joinnames()"
+    },
+    {
+      "label": "exclusiveStayLine()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L755",
+      "_origin": "ast",
+      "id": "staff_staff_desk_exclusivestayline",
+      "community": 125,
+      "norm_label": "exclusivestayline()"
+    },
+    {
+      "label": "vaccineWarningLines()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L768",
+      "_origin": "ast",
+      "id": "staff_staff_desk_vaccinewarninglines",
+      "community": 125,
+      "norm_label": "vaccinewarninglines()"
+    },
+    {
+      "label": "buildStayCareBrief()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L784",
+      "_origin": "ast",
+      "id": "staff_staff_desk_buildstaycarebrief",
+      "community": 86,
+      "norm_label": "buildstaycarebrief()"
+    },
+    {
+      "label": "canComposeCareUpdate()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L804",
+      "_origin": "ast",
+      "id": "staff_staff_desk_cancomposecareupdate",
+      "community": 86,
+      "norm_label": "cancomposecareupdate()"
+    },
+    {
+      "label": "careUpdateSaveBlocked()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L809",
+      "_origin": "ast",
+      "id": "staff_staff_desk_careupdatesaveblocked",
+      "community": 86,
+      "norm_label": "careupdatesaveblocked()"
+    },
+    {
+      "label": "sortCareUpdatesNewest()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L814",
+      "_origin": "ast",
+      "id": "staff_staff_desk_sortcareupdatesnewest",
+      "community": 86,
+      "norm_label": "sortcareupdatesnewest()"
+    },
+    {
+      "label": "yesNoLabel()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L823",
+      "_origin": "ast",
+      "id": "staff_staff_desk_yesnolabel",
+      "community": 86,
+      "norm_label": "yesnolabel()"
+    },
+    {
+      "label": "careUpdateAnswers()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L827",
+      "_origin": "ast",
+      "id": "staff_staff_desk_careupdateanswers",
+      "community": 86,
+      "norm_label": "careupdateanswers()"
+    },
+    {
+      "label": "careUpdateByline()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L837",
+      "_origin": "ast",
+      "id": "staff_staff_desk_careupdatebyline",
+      "community": 86,
+      "norm_label": "careupdatebyline()"
+    },
+    {
       "label": "staff-desk.test.js",
       "file_type": "code",
       "source_file": "frontend/components/staff/staff-desk.test.js",
@@ -9126,6 +9346,26 @@
       "id": "staff_staff_desk_test",
       "community": 125,
       "norm_label": "staff-desk.test.js"
+    },
+    {
+      "label": "isoPlusDays()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.test.js",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "staff_staff_desk_test_isoplusdays",
+      "community": 125,
+      "norm_label": "isoplusdays()"
+    },
+    {
+      "label": "renderStayCare()",
+      "file_type": "code",
+      "source_file": "frontend/components/staff/staff-desk.test.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "staff_staff_desk_test_renderstaycare",
+      "community": 125,
+      "norm_label": "renderstaycare()"
     },
     {
       "label": "useStaffDeskData.js",
@@ -9244,7 +9484,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "consts_marketing_nav_flattennavitemsfordrawer",
-      "community": 155,
+      "community": 0,
       "norm_label": "flattennavitemsfordrawer()"
     },
     {
@@ -9274,7 +9514,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "consts_routes_isexternalhref",
-      "community": 106,
+      "community": 5,
       "norm_label": "isexternalhref()"
     },
     {
@@ -9544,7 +9784,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "contexts_settingscontext",
-      "community": 161,
+      "community": 12,
       "norm_label": "settingscontext.js"
     },
     {
@@ -9554,7 +9794,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "contexts_settingscontext_settingscontext",
-      "community": 161,
+      "community": 12,
       "norm_label": "settingscontext"
     },
     {
@@ -9564,7 +9804,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "contexts_settingscontext_usesettings",
-      "community": 161,
+      "community": 12,
       "norm_label": "usesettings()"
     },
     {
@@ -9574,7 +9814,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "contexts_settingscontext_settingsprovider",
-      "community": 161,
+      "community": 12,
       "norm_label": "settingsprovider()"
     },
     {
@@ -9844,7 +10084,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_jest_setup",
-      "community": 86,
+      "community": 163,
       "norm_label": "jest.setup.js"
     },
     {
@@ -9854,7 +10094,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "frontend_jest_setup_creatematchmedia",
-      "community": 86,
+      "community": 163,
       "norm_label": "creatematchmedia()"
     },
     {
@@ -9951,7 +10191,7 @@
       "label": "withTrailingSlash()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L13",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "lib_daycareapi_withtrailingslash",
       "community": 65,
@@ -9961,7 +10201,7 @@
       "label": "parseResponse()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L22",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "lib_daycareapi_parseresponse",
       "community": 65,
@@ -9971,7 +10211,7 @@
       "label": "daycareRequest()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L47",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "lib_daycareapi_daycarerequest",
       "community": 65,
@@ -9981,7 +10221,7 @@
       "label": "daycareUpload()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L96",
+      "source_location": "L101",
       "_origin": "ast",
       "id": "lib_daycareapi_daycareupload",
       "community": 65,
@@ -9991,7 +10231,7 @@
       "label": "daycareImageSrc()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L132",
+      "source_location": "L138",
       "_origin": "ast",
       "id": "lib_daycareapi_daycareimagesrc",
       "community": 34,
@@ -10001,7 +10241,7 @@
       "label": "formatApiErrors()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L143",
+      "source_location": "L149",
       "_origin": "ast",
       "id": "lib_daycareapi_formatapierrors",
       "community": 34,
@@ -10011,7 +10251,7 @@
       "label": "authLogin()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L166",
+      "source_location": "L172",
       "_origin": "ast",
       "id": "lib_daycareapi_authlogin",
       "community": 65,
@@ -10021,7 +10261,7 @@
       "label": "authMe()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L169",
+      "source_location": "L175",
       "_origin": "ast",
       "id": "lib_daycareapi_authme",
       "community": 65,
@@ -10031,7 +10271,7 @@
       "label": "registerPetParent()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L173",
+      "source_location": "L179",
       "_origin": "ast",
       "id": "lib_daycareapi_registerpetparent",
       "community": 65,
@@ -10041,7 +10281,7 @@
       "label": "getMyProfile()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L176",
+      "source_location": "L182",
       "_origin": "ast",
       "id": "lib_daycareapi_getmyprofile",
       "community": 65,
@@ -10051,7 +10291,7 @@
       "label": "updateMyProfile()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L178",
+      "source_location": "L184",
       "_origin": "ast",
       "id": "lib_daycareapi_updatemyprofile",
       "community": 65,
@@ -10061,7 +10301,7 @@
       "label": "uploadMyPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L181",
+      "source_location": "L187",
       "_origin": "ast",
       "id": "lib_daycareapi_uploadmyphoto",
       "community": 65,
@@ -10071,7 +10311,7 @@
       "label": "deleteMyPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L184",
+      "source_location": "L190",
       "_origin": "ast",
       "id": "lib_daycareapi_deletemyphoto",
       "community": 65,
@@ -10081,7 +10321,7 @@
       "label": "listDogs()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L189",
+      "source_location": "L195",
       "_origin": "ast",
       "id": "lib_daycareapi_listdogs",
       "community": 65,
@@ -10091,7 +10331,7 @@
       "label": "listPetParents()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L191",
+      "source_location": "L197",
       "_origin": "ast",
       "id": "lib_daycareapi_listpetparents",
       "community": 65,
@@ -10101,7 +10341,7 @@
       "label": "createPetParent()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L195",
+      "source_location": "L201",
       "_origin": "ast",
       "id": "lib_daycareapi_createpetparent",
       "community": 65,
@@ -10111,7 +10351,7 @@
       "label": "updatePetParent()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L199",
+      "source_location": "L205",
       "_origin": "ast",
       "id": "lib_daycareapi_updatepetparent",
       "community": 65,
@@ -10121,7 +10361,7 @@
       "label": "deletePetParent()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L203",
+      "source_location": "L209",
       "_origin": "ast",
       "id": "lib_daycareapi_deletepetparent",
       "community": 65,
@@ -10131,7 +10371,7 @@
       "label": "uploadPetParentPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L207",
+      "source_location": "L213",
       "_origin": "ast",
       "id": "lib_daycareapi_uploadpetparentphoto",
       "community": 65,
@@ -10141,7 +10381,7 @@
       "label": "deletePetParentPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L210",
+      "source_location": "L216",
       "_origin": "ast",
       "id": "lib_daycareapi_deletepetparentphoto",
       "community": 65,
@@ -10151,7 +10391,7 @@
       "label": "createDog()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L217",
+      "source_location": "L223",
       "_origin": "ast",
       "id": "lib_daycareapi_createdog",
       "community": 65,
@@ -10161,7 +10401,7 @@
       "label": "updateDog()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L220",
+      "source_location": "L226",
       "_origin": "ast",
       "id": "lib_daycareapi_updatedog",
       "community": 65,
@@ -10171,7 +10411,7 @@
       "label": "deleteDog()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L223",
+      "source_location": "L229",
       "_origin": "ast",
       "id": "lib_daycareapi_deletedog",
       "community": 65,
@@ -10181,7 +10421,7 @@
       "label": "uploadDogPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L226",
+      "source_location": "L232",
       "_origin": "ast",
       "id": "lib_daycareapi_uploaddogphoto",
       "community": 65,
@@ -10191,7 +10431,7 @@
       "label": "deleteDogPhoto()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L229",
+      "source_location": "L235",
       "_origin": "ast",
       "id": "lib_daycareapi_deletedogphoto",
       "community": 65,
@@ -10201,7 +10441,7 @@
       "label": "listVaccines()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L234",
+      "source_location": "L240",
       "_origin": "ast",
       "id": "lib_daycareapi_listvaccines",
       "community": 65,
@@ -10211,7 +10451,7 @@
       "label": "createVaccine()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L237",
+      "source_location": "L243",
       "_origin": "ast",
       "id": "lib_daycareapi_createvaccine",
       "community": 65,
@@ -10221,7 +10461,7 @@
       "label": "deleteVaccine()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L240",
+      "source_location": "L246",
       "_origin": "ast",
       "id": "lib_daycareapi_deletevaccine",
       "community": 65,
@@ -10231,7 +10471,7 @@
       "label": "listServices()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L251",
+      "source_location": "L257",
       "_origin": "ast",
       "id": "lib_daycareapi_listservices",
       "community": 65,
@@ -10241,7 +10481,7 @@
       "label": "createService()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L263",
+      "source_location": "L269",
       "_origin": "ast",
       "id": "lib_daycareapi_createservice",
       "community": 65,
@@ -10251,7 +10491,7 @@
       "label": "updateService()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L266",
+      "source_location": "L272",
       "_origin": "ast",
       "id": "lib_daycareapi_updateservice",
       "community": 65,
@@ -10261,7 +10501,7 @@
       "label": "deleteService()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L270",
+      "source_location": "L276",
       "_origin": "ast",
       "id": "lib_daycareapi_deleteservice",
       "community": 65,
@@ -10271,7 +10511,7 @@
       "label": "getAvailability()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L280",
+      "source_location": "L286",
       "_origin": "ast",
       "id": "lib_daycareapi_getavailability",
       "community": 65,
@@ -10281,7 +10521,7 @@
       "label": "createBooking()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L297",
+      "source_location": "L303",
       "_origin": "ast",
       "id": "lib_daycareapi_createbooking",
       "community": 65,
@@ -10291,7 +10531,7 @@
       "label": "listBookings()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L305",
+      "source_location": "L311",
       "_origin": "ast",
       "id": "lib_daycareapi_listbookings",
       "community": 65,
@@ -10301,7 +10541,7 @@
       "label": "updateBooking()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L323",
+      "source_location": "L329",
       "_origin": "ast",
       "id": "lib_daycareapi_updatebooking",
       "community": 65,
@@ -10311,7 +10551,7 @@
       "label": "fetchBookingPreview()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L334",
+      "source_location": "L340",
       "_origin": "ast",
       "id": "lib_daycareapi_fetchbookingpreview",
       "community": 65,
@@ -10321,7 +10561,7 @@
       "label": "listExtras()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L347",
+      "source_location": "L353",
       "_origin": "ast",
       "id": "lib_daycareapi_listextras",
       "community": 65,
@@ -10331,7 +10571,7 @@
       "label": "createExtra()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L350",
+      "source_location": "L356",
       "_origin": "ast",
       "id": "lib_daycareapi_createextra",
       "community": 65,
@@ -10341,7 +10581,7 @@
       "label": "updateExtra()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L353",
+      "source_location": "L359",
       "_origin": "ast",
       "id": "lib_daycareapi_updateextra",
       "community": 65,
@@ -10351,7 +10591,7 @@
       "label": "deleteExtra()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L357",
+      "source_location": "L363",
       "_origin": "ast",
       "id": "lib_daycareapi_deleteextra",
       "community": 65,
@@ -10361,7 +10601,7 @@
       "label": "listBookingExtras()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L362",
+      "source_location": "L368",
       "_origin": "ast",
       "id": "lib_daycareapi_listbookingextras",
       "community": 65,
@@ -10371,7 +10611,7 @@
       "label": "addBookingExtra()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L366",
+      "source_location": "L372",
       "_origin": "ast",
       "id": "lib_daycareapi_addbookingextra",
       "community": 65,
@@ -10381,17 +10621,37 @@
       "label": "deleteBookingExtra()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L370",
+      "source_location": "L376",
       "_origin": "ast",
       "id": "lib_daycareapi_deletebookingextra",
       "community": 65,
       "norm_label": "deletebookingextra()"
     },
     {
+      "label": "listCareUpdates()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L385",
+      "_origin": "ast",
+      "id": "lib_daycareapi_listcareupdates",
+      "community": 65,
+      "norm_label": "listcareupdates()"
+    },
+    {
+      "label": "createCareUpdate()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L393",
+      "_origin": "ast",
+      "id": "lib_daycareapi_createcareupdate",
+      "community": 65,
+      "norm_label": "createcareupdate()"
+    },
+    {
       "label": "listClosures()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L379",
+      "source_location": "L403",
       "_origin": "ast",
       "id": "lib_daycareapi_listclosures",
       "community": 65,
@@ -10401,7 +10661,7 @@
       "label": "createClosure()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L382",
+      "source_location": "L406",
       "_origin": "ast",
       "id": "lib_daycareapi_createclosure",
       "community": 65,
@@ -10411,7 +10671,7 @@
       "label": "updateClosure()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L385",
+      "source_location": "L409",
       "_origin": "ast",
       "id": "lib_daycareapi_updateclosure",
       "community": 65,
@@ -10421,7 +10681,7 @@
       "label": "deleteClosure()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L388",
+      "source_location": "L412",
       "_origin": "ast",
       "id": "lib_daycareapi_deleteclosure",
       "community": 65,
@@ -10431,7 +10691,7 @@
       "label": "listSiteImages()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L398",
+      "source_location": "L422",
       "_origin": "ast",
       "id": "lib_daycareapi_listsiteimages",
       "community": 65,
@@ -10441,7 +10701,7 @@
       "label": "createSiteImage()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L412",
+      "source_location": "L436",
       "_origin": "ast",
       "id": "lib_daycareapi_createsiteimage",
       "community": 65,
@@ -10451,7 +10711,7 @@
       "label": "replaceSiteImage()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L427",
+      "source_location": "L451",
       "_origin": "ast",
       "id": "lib_daycareapi_replacesiteimage",
       "community": 65,
@@ -10461,7 +10721,7 @@
       "label": "updateSiteImage()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L436",
+      "source_location": "L460",
       "_origin": "ast",
       "id": "lib_daycareapi_updatesiteimage",
       "community": 65,
@@ -10471,7 +10731,7 @@
       "label": "deleteSiteImage()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L439",
+      "source_location": "L463",
       "_origin": "ast",
       "id": "lib_daycareapi_deletesiteimage",
       "community": 65,
@@ -10481,7 +10741,7 @@
       "label": "listSiteReviews()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L453",
+      "source_location": "L477",
       "_origin": "ast",
       "id": "lib_daycareapi_listsitereviews",
       "community": 65,
@@ -10491,7 +10751,7 @@
       "label": "submitContactInquiry()",
       "file_type": "code",
       "source_file": "frontend/lib/daycareApi.js",
-      "source_location": "L478",
+      "source_location": "L502",
       "_origin": "ast",
       "id": "lib_daycareapi_submitcontactinquiry",
       "community": 65,
@@ -10508,13 +10768,83 @@
       "norm_label": "daycareapi.test.js"
     },
     {
+      "label": "daycareApiTarget.js",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_daycareapitarget",
+      "community": 65,
+      "norm_label": "daycareapitarget.js"
+    },
+    {
+      "label": "daycareApiSwitchEnabled()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "lib_daycareapitarget_daycareapiswitchenabled",
+      "community": 65,
+      "norm_label": "daycareapiswitchenabled()"
+    },
+    {
+      "label": "readDaycareApiMode()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "lib_daycareapitarget_readdaycareapimode",
+      "community": 65,
+      "norm_label": "readdaycareapimode()"
+    },
+    {
+      "label": "daycareApiModeHeaders()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "lib_daycareapitarget_daycareapimodeheaders",
+      "community": 65,
+      "norm_label": "daycareapimodeheaders()"
+    },
+    {
+      "label": "writeDaycareApiMode()",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "lib_daycareapitarget_writedaycareapimode",
+      "community": 65,
+      "norm_label": "writedaycareapimode()"
+    },
+    {
+      "label": "daycareApiTarget.test.js",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApiTarget.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_daycareapitarget_test",
+      "community": 65,
+      "norm_label": "daycareapitarget.test.js"
+    },
+    {
+      "label": "{ buildDaycareApiRewrites }",
+      "file_type": "code",
+      "source_file": "frontend/lib/daycareApiTarget.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_daycareapitarget_test_builddaycareapirewrites",
+      "community": 65,
+      "norm_label": "{ builddaycareapirewrites }"
+    },
+    {
       "label": "next.config.js",
       "file_type": "code",
       "source_file": "frontend/next.config.js",
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_next_config",
-      "community": 86,
+      "community": 163,
       "norm_label": "next.config.js"
     },
     {
@@ -10524,7 +10854,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_next_config_withplugins",
-      "community": 86,
+      "community": 163,
       "norm_label": "withplugins"
     },
     {
@@ -10534,7 +10864,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "frontend_next_config_withimages",
-      "community": 86,
+      "community": 163,
       "norm_label": "withimages"
     },
     {
@@ -10544,7 +10874,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "frontend_next_config_config",
-      "community": 86,
+      "community": 163,
       "norm_label": "config"
     },
     {
@@ -12014,7 +12344,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "gallery_page",
-      "community": 110,
+      "community": 91,
       "norm_label": "page.js"
     },
     {
@@ -12024,7 +12354,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "gallery_page_metadata",
-      "community": 110,
+      "community": 91,
       "norm_label": "metadata"
     },
     {
@@ -12034,7 +12364,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "gallery_page_image_extensions",
-      "community": 110,
+      "community": 91,
       "norm_label": "image_extensions"
     },
     {
@@ -12044,7 +12374,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "gallery_page_listgalleryimages",
-      "community": 110,
+      "community": 91,
       "norm_label": "listgalleryimages()"
     },
     {
@@ -12054,7 +12384,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "gallery_page_galleryroute",
-      "community": 110,
+      "community": 91,
       "norm_label": "galleryroute()"
     },
     {
@@ -12064,7 +12394,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "how_a_stay_works_page",
-      "community": 91,
+      "community": 159,
       "norm_label": "page.js"
     },
     {
@@ -12074,7 +12404,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "how_a_stay_works_page_metadata",
-      "community": 91,
+      "community": 159,
       "norm_label": "metadata"
     },
     {
@@ -12084,7 +12414,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "how_a_stay_works_page_howastayworksroute",
-      "community": 91,
+      "community": 159,
       "norm_label": "howastayworksroute()"
     },
     {
@@ -12154,7 +12484,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "website_page",
-      "community": 117,
+      "community": 177,
       "norm_label": "page.js"
     },
     {
@@ -12164,7 +12494,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "website_page_metadata",
-      "community": 117,
+      "community": 177,
       "norm_label": "metadata"
     },
     {
@@ -12174,7 +12504,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "website_page_homepage",
-      "community": 117,
+      "community": 177,
       "norm_label": "homepage()"
     },
     {
@@ -12271,7 +12601,7 @@
       "label": "OG_IMAGE_PATH",
       "file_type": "code",
       "source_file": "frontend/src/app/layout.js",
-      "source_location": "L13",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "app_layout_og_image_path",
       "community": 109,
@@ -12281,37 +12611,37 @@
       "label": "marketingMetadataHost()",
       "file_type": "code",
       "source_file": "frontend/src/app/layout.js",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "app_layout_marketingmetadatahost",
-      "community": 66,
+      "community": 174,
       "norm_label": "marketingmetadatahost()"
     },
     {
       "label": "ogImageUrl()",
       "file_type": "code",
       "source_file": "frontend/src/app/layout.js",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "app_layout_ogimageurl",
-      "community": 66,
+      "community": 174,
       "norm_label": "ogimageurl()"
     },
     {
       "label": "metadataBaseFromHost()",
       "file_type": "code",
       "source_file": "frontend/src/app/layout.js",
-      "source_location": "L29",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "app_layout_metadatabasefromhost",
-      "community": 66,
+      "community": 174,
       "norm_label": "metadatabasefromhost()"
     },
     {
       "label": "shareImageUrl",
       "file_type": "code",
       "source_file": "frontend/src/app/layout.js",
-      "source_location": "L35",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "app_layout_shareimageurl",
       "community": 109,
@@ -12321,17 +12651,17 @@
       "label": "metadata",
       "file_type": "code",
       "source_file": "frontend/src/app/layout.js",
-      "source_location": "L37",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "app_layout_metadata",
-      "community": 66,
+      "community": 174,
       "norm_label": "metadata"
     },
     {
       "label": "viewport",
       "file_type": "code",
       "source_file": "frontend/src/app/layout.js",
-      "source_location": "L78",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "app_layout_viewport",
       "community": 109,
@@ -12341,7 +12671,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "frontend/src/app/layout.js",
-      "source_location": "L86",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
       "community": 109,
@@ -12874,7 +13204,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "utils_settings_savesettings",
-      "community": 161,
+      "community": 12,
       "norm_label": "savesettings()"
     },
     {
@@ -13014,7 +13344,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "utils_website_seo_public_site_origin",
-      "community": 66,
+      "community": 174,
       "norm_label": "public_site_origin"
     },
     {
@@ -15174,7 +15504,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_1_deep_intake",
-      "community": 11,
+      "community": 179,
       "norm_label": "phase 1 \u2014 deep intake"
     },
     {
@@ -15184,7 +15514,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "write_a_prd_skill_opening_prompt",
-      "community": 11,
+      "community": 179,
       "norm_label": "opening prompt"
     },
     {
@@ -15194,7 +15524,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "write_a_prd_skill_while_waiting",
-      "community": 11,
+      "community": 179,
       "norm_label": "while waiting"
     },
     {
@@ -15204,7 +15534,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "write_a_prd_skill_capture",
-      "community": 11,
+      "community": 179,
       "norm_label": "capture"
     },
     {
@@ -15254,7 +15584,7 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_design_tree_interview",
-      "community": 11,
+      "community": 161,
       "norm_label": "phase 3 \u2014 design-tree interview"
     },
     {
@@ -15264,7 +15594,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "write_a_prd_skill_rules",
-      "community": 11,
+      "community": 161,
       "norm_label": "rules"
     },
     {
@@ -15274,7 +15604,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "write_a_prd_skill_design_tree_walk_order",
-      "community": 11,
+      "community": 161,
       "norm_label": "design tree (walk order)"
     },
     {
@@ -15284,7 +15614,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_skill_dependency_examples",
-      "community": 11,
+      "community": 161,
       "norm_label": "dependency examples"
     },
     {
@@ -15294,7 +15624,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "write_a_prd_skill_when_a_branch_is_done",
-      "community": 11,
+      "community": 161,
       "norm_label": "when a branch is done"
     },
     {
@@ -15304,7 +15634,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_3_exit_criteria",
-      "community": 11,
+      "community": 161,
       "norm_label": "phase 3 exit criteria"
     },
     {
@@ -15314,7 +15644,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_module_sketch",
-      "community": 11,
+      "community": 130,
       "norm_label": "phase 4 \u2014 module sketch"
     },
     {
@@ -15324,7 +15654,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "write_a_prd_skill_purpose",
-      "community": 11,
+      "community": 130,
       "norm_label": "purpose"
     },
     {
@@ -15334,7 +15664,7 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "write_a_prd_skill_graphify_mandatory",
-      "community": 11,
+      "community": 130,
       "norm_label": "graphify (mandatory)"
     },
     {
@@ -15344,7 +15674,7 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "write_a_prd_skill_what_to_produce_178",
-      "community": 11,
+      "community": 130,
       "norm_label": "what to produce"
     },
     {
@@ -15354,7 +15684,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "write_a_prd_skill_extraction_mindset",
-      "community": 11,
+      "community": 130,
       "norm_label": "extraction mindset"
     },
     {
@@ -15364,7 +15694,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "write_a_prd_skill_confirm_with_user",
-      "community": 11,
+      "community": 130,
       "norm_label": "confirm with user"
     },
     {
@@ -15374,7 +15704,7 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "write_a_prd_skill_phase_4_exit_criteria",
-      "community": 11,
+      "community": 130,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -15414,7 +15744,7 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "write_a_prd_skill_writing_rules",
-      "community": 162,
+      "community": 180,
       "norm_label": "writing rules"
     },
     {
@@ -15544,7 +15874,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_interview_tactics",
-      "community": 77,
+      "community": 176,
       "norm_label": "interview tactics"
     },
     {
@@ -15554,7 +15884,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_relentless_but_respectful",
-      "community": 77,
+      "community": 176,
       "norm_label": "relentless but respectful"
     },
     {
@@ -15564,7 +15894,7 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_batching",
-      "community": 77,
+      "community": 176,
       "norm_label": "batching"
     },
     {
@@ -15574,7 +15904,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_stuck_loops",
-      "community": 77,
+      "community": 176,
       "norm_label": "stuck loops"
     },
     {
@@ -15584,7 +15914,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "write_a_prd_interview_guide_decision_log_template",
-      "community": 77,
+      "community": 176,
       "norm_label": "decision log template"
     },
     {
@@ -15594,7 +15924,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch",
-      "community": 92,
+      "community": 29,
       "norm_label": "module-sketch.md"
     },
     {
@@ -15604,7 +15934,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_module_sketch_guide",
-      "community": 92,
+      "community": 29,
       "norm_label": "module sketch guide"
     },
     {
@@ -15614,7 +15944,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_goals",
-      "community": 92,
+      "community": 29,
       "norm_label": "goals"
     },
     {
@@ -15624,7 +15954,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_process",
-      "community": 29,
+      "community": 175,
       "norm_label": "process"
     },
     {
@@ -15634,7 +15964,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_1_re_ground_in_the_repo",
-      "community": 29,
+      "community": 175,
       "norm_label": "1. re-ground in the repo"
     },
     {
@@ -15644,7 +15974,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_2_layer_the_sketch",
-      "community": 29,
+      "community": 175,
       "norm_label": "2. layer the sketch"
     },
     {
@@ -15654,7 +15984,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_3_hunt_for_deep_modules_required",
-      "community": 29,
+      "community": 175,
       "norm_label": "3. hunt for deep modules (required)"
     },
     {
@@ -15664,7 +15994,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_4_draw_the_dependency_graph",
-      "community": 29,
+      "community": 175,
       "norm_label": "4. draw the dependency graph"
     },
     {
@@ -15674,7 +16004,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_5_present_and_confirm",
-      "community": 29,
+      "community": 175,
       "norm_label": "5. present and confirm"
     },
     {
@@ -15684,7 +16014,7 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_module_table_template",
-      "community": 92,
+      "community": 29,
       "norm_label": "module table template"
     },
     {
@@ -15694,7 +16024,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_extraction_heuristics",
-      "community": 92,
+      "community": 29,
       "norm_label": "extraction heuristics"
     },
     {
@@ -15704,7 +16034,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_ihcs_conventions",
-      "community": 92,
+      "community": 29,
       "norm_label": "ihcs conventions"
     },
     {
@@ -15714,7 +16044,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_anti_patterns",
-      "community": 92,
+      "community": 29,
       "norm_label": "anti-patterns"
     },
     {
@@ -15724,7 +16054,7 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "write_a_prd_module_sketch_phase_4_exit_criteria",
-      "community": 92,
+      "community": 29,
       "norm_label": "phase 4 exit criteria"
     },
     {
@@ -15888,13 +16218,43 @@
       "norm_label": "5. do / don't"
     },
     {
+      "label": "CONTEXT.md",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "context",
+      "community": 170,
+      "norm_label": "context.md"
+    },
+    {
+      "label": "Care Bear Daycare",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "context_care_bear_daycare",
+      "community": 170,
+      "norm_label": "care bear daycare"
+    },
+    {
+      "label": "Language",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "context_language",
+      "community": 170,
+      "norm_label": "language"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme",
-      "community": 14,
+      "community": 92,
       "norm_label": "readme.md"
     },
     {
@@ -15904,7 +16264,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme_care_bear_daycare",
-      "community": 14,
+      "community": 92,
       "norm_label": "care bear daycare"
     },
     {
@@ -15914,7 +16274,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "readme_public_pages",
-      "community": 14,
+      "community": 92,
       "norm_label": "public pages"
     },
     {
@@ -15924,7 +16284,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "readme_stack",
-      "community": 92,
+      "community": 29,
       "norm_label": "stack"
     },
     {
@@ -15934,7 +16294,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "readme_local_development",
-      "community": 14,
+      "community": 92,
       "norm_label": "local development"
     },
     {
@@ -15944,7 +16304,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "readme_layout",
-      "community": 14,
+      "community": 92,
       "norm_label": "layout"
     },
     {
@@ -15954,8 +16314,28 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "readme_license",
-      "community": 14,
+      "community": 92,
       "norm_label": "license"
+    },
+    {
+      "label": "0001-bookings-live-in-the-app.md",
+      "file_type": "document",
+      "source_file": "docs/adr/0001-bookings-live-in-the-app.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "adr_0001_bookings_live_in_the_app",
+      "community": 173,
+      "norm_label": "0001-bookings-live-in-the-app.md"
+    },
+    {
+      "label": "Bookings live in the app",
+      "file_type": "document",
+      "source_file": "docs/adr/0001-bookings-live-in-the-app.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "adr_0001_bookings_live_in_the_app_bookings_live_in_the_app",
+      "community": 173,
+      "norm_label": "bookings live in the app"
     },
     {
       "label": "care-bear-daycare-api.md",
@@ -16391,7 +16771,7 @@
       "label": "Extras",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L518",
+      "source_location": "L519",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_extras",
       "community": 1,
@@ -16401,7 +16781,7 @@
       "label": "GET, POST `/api/daycare/extras/` \u2014 staff, not paginated",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L524",
+      "source_location": "L525",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_post_api_daycare_extras_staff_not_paginated",
       "community": 1,
@@ -16411,7 +16791,7 @@
       "label": "GET, PATCH, DELETE `/api/daycare/extras/<id>/` \u2014 staff",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L538",
+      "source_location": "L539",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_patch_delete_api_daycare_extras_id_staff",
       "community": 1,
@@ -16421,7 +16801,7 @@
       "label": "GET, POST `/api/daycare/bookings/<booking_id>/extras/` \u2014 owner or staff (POST staff only)",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L542",
+      "source_location": "L543",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_post_api_daycare_bookings_booking_id_extras_owner_or_staff_post_staff_only",
       "community": 1,
@@ -16431,7 +16811,7 @@
       "label": "DELETE `/api/daycare/bookings/<booking_id>/extras/<id>/` \u2014 staff \u2014 204",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L569",
+      "source_location": "L570",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_delete_api_daycare_bookings_booking_id_extras_id_staff_204",
       "community": 1,
@@ -16441,7 +16821,7 @@
       "label": "Messages",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L573",
+      "source_location": "L574",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_messages",
       "community": 124,
@@ -16451,7 +16831,7 @@
       "label": "GET `/api/daycare/conversation/` \u2014 pet parent",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L577",
+      "source_location": "L578",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_api_daycare_conversation_pet_parent",
       "community": 124,
@@ -16461,7 +16841,7 @@
       "label": "POST `/api/daycare/messages/` \u2014 pet parent \u2014 201",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L601",
+      "source_location": "L602",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_post_api_daycare_messages_pet_parent_201",
       "community": 124,
@@ -16471,7 +16851,7 @@
       "label": "GET `/api/daycare/conversations/` \u2014 staff",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L609",
+      "source_location": "L610",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_api_daycare_conversations_staff",
       "community": 124,
@@ -16481,7 +16861,7 @@
       "label": "GET `/api/daycare/conversations/<pet_parent_id>/` \u2014 staff",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L623",
+      "source_location": "L624",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_api_daycare_conversations_pet_parent_id_staff",
       "community": 124,
@@ -16491,7 +16871,7 @@
       "label": "POST `/api/daycare/conversations/<pet_parent_id>/messages/` \u2014 staff \u2014 201",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L627",
+      "source_location": "L628",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_post_api_daycare_conversations_pet_parent_id_messages_staff_201",
       "community": 124,
@@ -16501,7 +16881,7 @@
       "label": "Reviews",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L633",
+      "source_location": "L634",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_reviews",
       "community": 126,
@@ -16511,7 +16891,7 @@
       "label": "POST `/api/daycare/bookings/<booking_id>/review/` \u2014 owning pet parent \u2014 201",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L637",
+      "source_location": "L638",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_post_api_daycare_bookings_booking_id_review_owning_pet_parent_201",
       "community": 126,
@@ -16521,7 +16901,7 @@
       "label": "GET `/api/daycare/reviews/` \u2014 public, paginated",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L657",
+      "source_location": "L658",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_api_daycare_reviews_public_paginated",
       "community": 126,
@@ -16531,7 +16911,7 @@
       "label": "DELETE `/api/daycare/reviews/<id>/` \u2014 staff \u2014 204",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L673",
+      "source_location": "L674",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_delete_api_daycare_reviews_id_staff_204",
       "community": 126,
@@ -16541,7 +16921,7 @@
       "label": "Site reviews",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L675",
+      "source_location": "L676",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_site_reviews",
       "community": 40,
@@ -16551,7 +16931,7 @@
       "label": "GET `/api/daycare/site-reviews/` \u2014 public, not paginated",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L681",
+      "source_location": "L682",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_api_daycare_site_reviews_public_not_paginated",
       "community": 40,
@@ -16561,7 +16941,7 @@
       "label": "Site images",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L705",
+      "source_location": "L706",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_site_images",
       "community": 142,
@@ -16571,7 +16951,7 @@
       "label": "GET `/api/daycare/site-images/?placement=home_slide` \u2014 public",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L721",
+      "source_location": "L722",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_get_api_daycare_site_images_placement_home_slide_public",
       "community": 142,
@@ -16581,7 +16961,7 @@
       "label": "POST `/api/daycare/site-images/` \u2014 staff \u2014 201",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L725",
+      "source_location": "L726",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_post_api_daycare_site_images_staff_201",
       "community": 142,
@@ -16591,7 +16971,7 @@
       "label": "PATCH `/api/daycare/site-images/<id>/` \u2014 staff",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L729",
+      "source_location": "L730",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_patch_api_daycare_site_images_id_staff",
       "community": 142,
@@ -16601,7 +16981,7 @@
       "label": "DELETE `/api/daycare/site-images/<id>/` \u2014 staff \u2014 204",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L733",
+      "source_location": "L734",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_delete_api_daycare_site_images_id_staff_204",
       "community": 142,
@@ -16611,7 +16991,7 @@
       "label": "Browser calls from carebeardaycare.ca",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L737",
+      "source_location": "L738",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_browser_calls_from_carebeardaycare_ca",
       "community": 40,
@@ -16621,7 +17001,7 @@
       "label": "Not in this API",
       "file_type": "document",
       "source_file": "docs/care-bear-daycare-api.md",
-      "source_location": "L743",
+      "source_location": "L744",
       "_origin": "ast",
       "id": "docs_care_bear_daycare_api_not_in_this_api",
       "community": 40,
@@ -17324,7 +17704,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_home_nav_items_base",
-      "community": 0,
+      "community": 155,
       "norm_label": "home_nav_items_base"
     },
     {
@@ -17334,7 +17714,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "home_landing_home_landing_data_marketing_interior_nav_items_base",
-      "community": 0,
+      "community": 155,
       "norm_label": "marketing_interior_nav_items_base"
     },
     {
@@ -17396,7 +17776,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 110,
+      "community": 91,
       "norm_label": "template",
       "id": "scripts_create_ts_component_scaffold_template"
     },
@@ -17424,7 +17804,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Extends Airbnb, Jest, Prettier, and Next. no-console is an error; prop-types ignores stores; Next Link is exempt from anchor-is-valid; import resolver searches ., components, and hooks.",
-      "community": 130,
+      "community": 178,
       "norm_label": "eslint configuration",
       "id": "frontend_eslintrc_config"
     },
@@ -17450,7 +17830,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 86,
+      "community": 163,
       "norm_label": "jest configuration",
       "id": "frontend_jest_config_config"
     },
@@ -17463,7 +17843,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 86,
+      "community": 163,
       "norm_label": "jest beforeeach environment mocks",
       "id": "frontend_jest_setup_beforeeach"
     },
@@ -17504,7 +17884,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Node 23.2 breaks the frontend webpack build, so the Docker image stays on node:23.1 instead of node:latest until 23.3 is rechecked.",
-      "community": 86,
+      "community": 163,
       "norm_label": "node 23.1 pin",
       "id": "frontend_readme_node231pin"
     },
@@ -17545,7 +17925,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Marketing form pages use stacked layout below the MUI lg breakpoint (1200px).",
-      "community": 61,
+      "community": 2,
       "norm_label": "form_page_desktop_bp",
       "id": "design_studio_design_studio_glass_form_page_desktop_bp"
     },
@@ -17558,7 +17938,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 106,
       "norm_label": "nav_glass_backdrop_color",
       "id": "design_studio_design_studio_glass_nav_glass_backdrop_color"
     },
@@ -17676,7 +18056,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 161,
+      "community": 12,
       "norm_label": "settings persist only after hydration",
       "id": "contexts_settingscontext_hydration_guard"
     },
@@ -17702,7 +18082,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 109,
       "norm_label": "thememode localstorage",
       "id": "app_providers_thememode"
     },
@@ -17806,7 +18186,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 117,
+      "community": 174,
       "norm_label": "care bear daycare",
       "id": "utils_website_seo_care_bear_daycare"
     },
@@ -17886,7 +18266,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 177,
       "norm_label": "thin pages",
       "id": "agents_frontend_dev_thin_pages"
     },
@@ -18637,7 +19017,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Fill the template from working notes, discovery, decision log, and module sketch. Include current state, decision log, implementation modules, and verified assertions.",
-      "community": 162,
+      "community": 180,
       "norm_label": "phase 5 write prd",
       "id": "write_a_prd_skill_phase5_write_prd"
     },
@@ -18651,7 +19031,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Default path is issues/prd-<short-slug>.md. Revisions use -v2. Never overwrite without approval. Dated names only when the user asks.",
-      "community": 162,
+      "community": 180,
       "norm_label": "issues/prd-<slug>.md",
       "id": "write_a_prd_skill_issues_prd_path"
     },
@@ -18665,7 +19045,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Report path, one-paragraph scope, deferred question count, and optional handoff to /project-manager.",
-      "community": 162,
+      "community": 180,
       "norm_label": "phase 6 confirm",
       "id": "write_a_prd_skill_phase6_confirm"
     },
@@ -18707,7 +19087,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Example roles listed as public visitor, ES admin, DS manager, kiosk player, and API consumer. These names come from the older multi-product suite, not from the Care Bear Daycare brand reference.",
-      "community": 90,
+      "community": 92,
       "norm_label": "es admin ds manager kiosk roles",
       "id": "write_a_prd_interview_guide_legacy_roles"
     },
@@ -18833,7 +19213,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Pure input-to-output logic with injected plain data, no UI/framework/ORM/globals/request/hooks, and a stable signature so it can be unit-tested in isolation.",
-      "community": 162,
+      "community": 172,
       "norm_label": "deep module",
       "id": "write_a_prd_module_sketch_deep_module"
     },
@@ -18847,7 +19227,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Viewsets, route pages, and hooks stay thin and delegate rules downward. Tested with integration or UI tests only.",
-      "community": 162,
+      "community": 172,
       "norm_label": "shallow orchestrator",
       "id": "write_a_prd_module_sketch_shallow_module"
     },
@@ -18861,7 +19241,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Dependency shape: Route or ViewSet calls an orchestrator hook or service, which calls deep modules, with API client or serializer beside the orchestrator.",
-      "community": 162,
+      "community": 172,
       "norm_label": "route to orchestrator to deep module",
       "id": "write_a_prd_module_sketch_dependency_chain"
     },
@@ -18875,7 +19255,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sketch splits into backend models/serializers/services/viewsets, frontend pages/components/hooks/API clients, and cross-cutting middleware, auth, env, Docker, and migrations.",
-      "community": 92,
+      "community": 29,
       "norm_label": "backend frontend cross-cutting layers",
       "id": "write_a_prd_module_sketch_layers"
     },
@@ -18889,7 +19269,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Columns: ID, module path, layer, Create/Modify/Extend, responsibility, deep flag, test approach, dependencies. Example pairs a schedule service with a thin viewset and a frontend domain preview.",
-      "community": 92,
+      "community": 162,
       "norm_label": "module table m-001",
       "id": "write_a_prd_module_sketch_module_table"
     },
@@ -18931,7 +19311,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Maps requirement IDs to module IDs. The skill requires every P0 to map to at least one module.",
-      "community": 92,
+      "community": 162,
       "norm_label": "requirement to module traceability",
       "id": "write_a_prd_template_traceability"
     },
@@ -19015,7 +19395,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Build writes frontend/.env with a placeholder MUI X license, NEXT_PUBLIC_HOST https://www.niico.com, NEXT_PUBLIC_COMPANY NIICO Millwork Group LTD., and NEXT_PUBLIC_ESTABLISHED 2020.",
-      "community": 74,
+      "community": 14,
       "norm_label": "pages public env file",
       "id": "workflows_nextjs_public_env"
     },
@@ -19211,7 +19591,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Interior nav on cream with ink links. Hover underline grows left to right in 0.35s. Desktop nav starts at xl. Logos are full-color PNGs: /imgs/logos/logo.png and logo_hori.png.",
-      "community": 14,
+      "community": 92,
       "norm_label": "cream interior nav",
       "id": "brand_reference_nav"
     },
@@ -19253,7 +19633,7 @@
       "author": null,
       "contributor": null,
       "rationale": "MUI 8px grid. Breakpoints xs 0, sm 600, md 900, lg 1200, xl 1536. Desktop nav at xl. Forms go two-column at lg. Interior content max width about 880px.",
-      "community": 14,
+      "community": 92,
       "norm_label": "marketing layout grid",
       "id": "brand_reference_layout"
     },
@@ -19281,7 +19661,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Book a stay opens ROVER_BOOKING_URL in frontend/consts/routes.js. The URL is a placeholder until the real Rover profile is set. Stays are booked on Rover.",
-      "community": 14,
+      "community": 92,
       "norm_label": "rover booking url",
       "id": "readme_rover_booking"
     },
@@ -19309,7 +19689,7 @@
       "author": null,
       "contributor": null,
       "rationale": "docker compose up --build --remove-orphans serves http://127.0.0.1:3010. The frontend container runs yarn dev on port 3000; Caddy publishes 3010. Outside Docker: cd frontend && yarn install && yarn dev.",
-      "community": 92,
+      "community": 29,
       "norm_label": "local docker compose dev",
       "id": "readme_local_docker"
     },
@@ -19323,7 +19703,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Builds frontend/Dockerfile.local, sets WATCHPACK_POLLING=true, and bind-mounts ./frontend to /code while keeping anonymous volumes for /code/node_modules and /code/.next.",
-      "community": 92,
+      "community": 29,
       "norm_label": "compose frontend service",
       "id": "docker_compose_frontend"
     },
@@ -19337,7 +19717,7 @@
       "author": null,
       "contributor": null,
       "rationale": "reverse-proxy uses caddy:latest, depends_on frontend, publishes 3010:3010, and mounts ./Caddyfile at /etc/caddy/Caddyfile.",
-      "community": 92,
+      "community": 29,
       "norm_label": "compose caddy reverse proxy",
       "id": "docker_compose_caddy"
     },
@@ -24429,6 +24809,27 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/components/dev/ApiTargetSwitch.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dev_apitargetswitch",
+      "target": "dev_apitargetswitch_apitargetswitch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/components/dev/ApiTargetSwitch.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "dev_apitargetswitch_apitargetswitch",
+      "target": "lib_daycareapitarget_daycareapiswitchenabled"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/components/dog-hotel/AboutPage.js",
       "source_location": "L94",
       "weight": 1.0,
@@ -25902,16 +26303,6 @@
       "confidence_score": 1.0,
       "source": "dog_hotel_reviewspage",
       "target": "dog_hotel_reviewspage_reviewspage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/dog-hotel/ReviewsPage.js",
-      "source_location": "L368",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dog_hotel_reviewspage",
-      "target": "dog_hotel_reviewspage_rovertextlink"
     },
     {
       "relation": "contains",
@@ -30136,9 +30527,9 @@
       "source_file": "frontend/components/home-landing/MarketingWordmark.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "home_landing_marketingwordmark",
-      "target": "home_landing_marketingwordmark_logo_alt_src",
-      "confidence_score": 1.0
+      "target": "home_landing_marketingwordmark_logo_alt_src"
     },
     {
       "relation": "contains",
@@ -30900,6 +31291,28 @@
       "confidence_score": 1.0,
       "source": "pet_parent_accountprofilepage",
       "target": "pet_parent_pet_parent_styles_secondary_button_sx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_yourstays"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/AccountProfilePage.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pet_parent_accountprofilepage",
+      "target": "pet_parent_yourstays_yourstays"
     },
     {
       "relation": "imports_from",
@@ -32748,6 +33161,49 @@
       "target": "contexts_authcontext_useauth"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/YourStays.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pet_parent_yourstays",
+      "target": "pet_parent_pet_parent_styles"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/YourStays.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pet_parent_yourstays",
+      "target": "pet_parent_pet_parent_styles_card_sx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/YourStays.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pet_parent_yourstays",
+      "target": "pet_parent_pet_parent_styles_section_heading_sx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/pet-parent/YourStays.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pet_parent_yourstays",
+      "target": "pet_parent_yourstays_yourstays"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/pet-parent/booking-dates.js",
@@ -33474,9 +33930,9 @@
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_deskbookingstab",
-      "target": "staff_deskbookingstab_perunitlabel",
-      "confidence_score": 1.0
+      "target": "staff_deskbookingstab_perunitlabel"
     },
     {
       "relation": "contains",
@@ -33767,6 +34223,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_deskbookingstab",
+      "target": "staff_staff_desk_dogsonbooking"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/DeskBookingsTab.js",
       "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -33837,6 +34304,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "staff_deskbookingstab",
+      "target": "staff_staycarepanel"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/DeskBookingsTab.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_deskbookingstab",
+      "target": "staff_staycarepanel_staycarepanel"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/DeskBookingsTab.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_deskbookingstab",
       "target": "staff_staydocumentsmenu"
     },
     {
@@ -33890,9 +34379,9 @@
       "source_file": "frontend/components/staff/DeskBookingsTab.js",
       "source_location": "L268",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_deskbookingstab_staycard",
-      "target": "staff_deskbookingstab_perunitlabel",
-      "confidence_score": 1.0
+      "target": "staff_deskbookingstab_perunitlabel"
     },
     {
       "relation": "calls",
@@ -33937,6 +34426,17 @@
       "confidence_score": 1.0,
       "source": "staff_deskbookingstab_staycard",
       "target": "staff_staff_desk_bookingextralinelabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/DeskBookingsTab.js",
+      "source_location": "L340",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_deskbookingstab_staycard",
+      "target": "staff_staff_desk_dogsonbooking"
     },
     {
       "relation": "calls",
@@ -36047,6 +36547,17 @@
       "target": "staff_deskparts"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_deskparts"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -36242,6 +36753,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "staff_deskservicestab",
+      "target": "staff_deskparts_rowbutton"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
       "target": "staff_deskparts_rowbutton"
     },
     {
@@ -38720,6 +39242,201 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.test.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_test",
+      "target": "staff_staycarepanel"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_site_image_styles"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_site_image_styles_hairline"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staff_desk"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staff_desk_buildstaycarebrief"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staff_desk_cancomposecareupdate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staff_desk_careupdateanswers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staff_desk_careupdatebyline"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staff_desk_careupdatesaveblocked"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staff_desk_sortcareupdatesnewest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staycarepanel_careupdaterows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staycarepanel_careupdatetimeline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staycarepanel",
+      "target": "staff_staycarepanel_staycarepanel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "staff_staycarepanel_careupdatetimeline",
+      "target": "staff_staff_desk_careupdatesaveblocked"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "staff_staycarepanel_careupdatetimeline",
+      "target": "staff_staff_desk_sortcareupdatesnewest"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.test.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_test",
+      "target": "staff_staycarepanel_staycarepanel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "staff_staycarepanel_staycarepanel",
+      "target": "staff_staff_desk_buildstaycarebrief"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/staff/StayCarePanel.js",
+      "source_location": "L244",
+      "weight": 1.0,
+      "source": "staff_staycarepanel_staycarepanel",
+      "target": "staff_staff_desk_cancomposecareupdate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/StayDocumentsMenu.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -38805,9 +39522,9 @@
       "source_file": "frontend/components/staff/StayDocumentsMenu.js",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "staff_staydocumentsmenu",
-      "target": "staff_staydocumentsmenu_writehtmlpreview",
-      "confidence_score": 1.0
+      "target": "staff_staydocumentsmenu_writehtmlpreview"
     },
     {
       "relation": "calls",
@@ -39610,6 +40327,66 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L784",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_buildstaycarebrief"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L804",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_cancomposecareupdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L719",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_care_update_composer_statuses"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L827",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_careupdateanswers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L837",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_careupdatebyline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L809",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_careupdatesaveblocked"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L216",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -39630,6 +40407,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L741",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_dogdisplayname"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L181",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -39640,11 +40427,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L722",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_dogsonbooking"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L395",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "staff_staff_desk",
       "target": "staff_staff_desk_dogsummary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L755",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_exclusivestayline"
     },
     {
       "relation": "contains",
@@ -39860,6 +40667,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L745",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_joinnames"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L225",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -39875,6 +40692,16 @@
       "confidence_score": 1.0,
       "source": "staff_staff_desk",
       "target": "staff_staff_desk_months"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L736",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_optionaltext"
     },
     {
       "relation": "contains",
@@ -39905,6 +40732,16 @@
       "confidence_score": 1.0,
       "source": "staff_staff_desk",
       "target": "staff_staff_desk_ratelabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L731",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_recordedorblank"
     },
     {
       "relation": "contains",
@@ -39995,6 +40832,16 @@
       "confidence_score": 1.0,
       "source": "staff_staff_desk",
       "target": "staff_staff_desk_sortbookings"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L814",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_sortcareupdatesnewest"
     },
     {
       "relation": "contains",
@@ -40210,11 +41057,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L768",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_vaccinewarninglines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
       "source_location": "L460",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "staff_staff_desk",
       "target": "staff_staff_desk_withstaycheckout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L823",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk",
+      "target": "staff_staff_desk_yesnolabel"
     },
     {
       "relation": "imports_from",
@@ -40338,6 +41205,17 @@
       "target": "staff_staff_desk_sortbookings"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.test.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_test",
+      "target": "staff_staff_desk_todayiso"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -40424,6 +41302,17 @@
       "confidence_score": 1.0,
       "source": "staff_staff_desk_test",
       "target": "staff_staff_desk_moneylabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L839",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_careupdatebyline",
+      "target": "staff_staff_desk_formattimestamp"
     },
     {
       "relation": "imports",
@@ -40853,6 +41742,92 @@
       "confidence_score": 1.0,
       "source": "staff_staff_desk_test",
       "target": "staff_staff_desk_vaccinestate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L799",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_buildstaycarebrief",
+      "target": "staff_staff_desk_recordedorblank"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L769",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_vaccinewarninglines",
+      "target": "staff_staff_desk_dogdisplayname"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L760",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_exclusivestayline",
+      "target": "staff_staff_desk_joinnames"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L787",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_buildstaycarebrief",
+      "target": "staff_staff_desk_exclusivestayline"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.test.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_test",
+      "target": "staff_staff_desk_exclusivestayline"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.js",
+      "source_location": "L829",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_careupdateanswers",
+      "target": "staff_staff_desk_yesnolabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.test.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_test",
+      "target": "staff_staff_desk_test_isoplusdays"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/staff/staff-desk.test.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "staff_staff_desk_test",
+      "target": "staff_staff_desk_test_renderstaycare"
     },
     {
       "relation": "contains",
@@ -42129,6 +43104,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L393",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_createcareupdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L265",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -42399,6 +43384,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L385",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapi_listcareupdates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L262",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -42639,6 +43634,28 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapitarget"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi",
+      "target": "lib_daycareapitarget_daycareapimodeheaders"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/lib/daycareApi.test.js",
       "source_location": "L1",
       "weight": 1.0,
@@ -42739,6 +43756,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L394",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_createcareupdate",
+      "target": "lib_daycareapi_daycarerequest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L266",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -42799,6 +43827,17 @@
       "confidence_score": 1.0,
       "source": "lib_daycareapi_createvaccine",
       "target": "lib_daycareapi_daycarerequest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "lib_daycareapi_daycarerequest",
+      "target": "lib_daycareapitarget_daycareapimodeheaders"
     },
     {
       "relation": "calls",
@@ -42974,6 +44013,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_daycareapi_listbookings",
+      "target": "lib_daycareapi_daycarerequest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L386",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_listcareupdates",
       "target": "lib_daycareapi_daycarerequest"
     },
     {
@@ -43189,6 +44239,17 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/lib/daycareApi.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "lib_daycareapi_daycareupload",
+      "target": "lib_daycareapitarget_daycareapimodeheaders"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/lib/daycareApi.js",
       "source_location": "L369",
       "weight": 1.0,
@@ -43260,6 +44321,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_daycareapi_test",
+      "target": "lib_daycareapi_listcareupdates"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
+      "target": "lib_daycareapi_createcareupdate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
       "target": "lib_daycareapi_listsiteimages"
     },
     {
@@ -43305,6 +44388,155 @@
       "confidence_score": 1.0,
       "source": "lib_daycareapi_test",
       "target": "lib_daycareapi_deletesiteimage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
+      "target": "lib_daycareapitarget"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApi.test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapi_test",
+      "target": "lib_daycareapitarget_writedaycareapimode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget",
+      "target": "lib_daycareapitarget_daycareapimodeheaders"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget",
+      "target": "lib_daycareapitarget_daycareapiswitchenabled"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget",
+      "target": "lib_daycareapitarget_readdaycareapimode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget",
+      "target": "lib_daycareapitarget_writedaycareapimode"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget_test",
+      "target": "lib_daycareapitarget"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget_readdaycareapimode",
+      "target": "lib_daycareapitarget_daycareapiswitchenabled"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_daycareapitarget_test",
+      "target": "lib_daycareapitarget_daycareapiswitchenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget_daycareapimodeheaders",
+      "target": "lib_daycareapitarget_readdaycareapimode"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget_test",
+      "target": "lib_daycareapitarget_readdaycareapimode"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget_test",
+      "target": "lib_daycareapitarget_daycareapimodeheaders"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget_test",
+      "target": "lib_daycareapitarget_writedaycareapimode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/lib/daycareApiTarget.test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_daycareapitarget_test",
+      "target": "lib_daycareapitarget_test_builddaycareapirewrites"
     },
     {
       "relation": "contains",
@@ -49893,6 +51125,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context",
+      "target": "context_care_bear_daycare"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_care_bear_daycare",
+      "target": "context_language"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -50049,6 +51301,16 @@
       "weight": 1.0,
       "source": "workflows_test_frontend_lint",
       "target": "readme_stack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/adr/0001-bookings-live-in-the-app.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "adr_0001_bookings_live_in_the_app",
+      "target": "adr_0001_bookings_live_in_the_app_bookings_live_in_the_app"
     },
     {
       "relation": "contains",
@@ -55894,5 +57156,5 @@
       "source_file": "frontend/public/imgs/logos/logo_square.png"
     }
   ],
-  "built_at_commit": "b66c80494fdebd12e52c1389923ec7b59ef4b705"
+  "built_at_commit": "20699d41b6793e0224f58ee62bc24121475a1387"
 }

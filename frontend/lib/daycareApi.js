@@ -2,11 +2,15 @@
  * Care Bear Daycare API client.
  *
  * Calls go through the same-origin `/daycare-api/:path*` rewrite (see next.config.js),
- * which proxies to the live IHCS API. The browser never talks to the IHCS host directly,
- * and no cookies are sent — auth is a DRF token header.
+ * which proxies to the IHCS API. With DAYCARE_API_SWITCH=1 the Local / Production
+ * chip chooses the origin. The browser never talks to that host directly.
+ * Auth is a DRF token header. The mode travels on `x-daycare-api-mode` because
+ * these fetches omit cookies; image loads use the `daycare-api-mode` cookie.
  *
  * Reference: docs/care-bear-daycare-api.md
  */
+
+import { daycareApiModeHeaders } from './daycareApiTarget';
 
 const BASE_PATH = '/daycare-api';
 
@@ -61,6 +65,7 @@ export async function daycareRequest({
   if (token) {
     headers.Authorization = `Token ${token}`;
   }
+  Object.assign(headers, daycareApiModeHeaders());
 
   let response;
   try {
@@ -100,6 +105,7 @@ export async function daycareUpload({ path, file, token, fields } = {}) {
   if (token) {
     headers.Authorization = `Token ${token}`;
   }
+  Object.assign(headers, daycareApiModeHeaders());
   const body = new FormData();
   body.append('file', file);
   if (fields) {
@@ -372,6 +378,24 @@ export const deleteBookingExtra = (token, bookingId, lineId) =>
     method: 'DELETE',
     path: `/daycare/bookings/${bookingId}/extras/${lineId}`,
     token,
+  });
+
+// --- Care updates (what happened during a stay) ---
+
+export const listCareUpdates = (token, bookingId) =>
+  daycareRequest({
+    method: 'GET',
+    path: `/daycare/bookings/${bookingId}/care-updates`,
+    token,
+  });
+
+/** Staff only. `{ potty, food, play, meds_given, body }`. */
+export const createCareUpdate = (token, bookingId, body) =>
+  daycareRequest({
+    method: 'POST',
+    path: `/daycare/bookings/${bookingId}/care-updates`,
+    token,
+    body,
   });
 
 // --- Closures (named holidays) ---

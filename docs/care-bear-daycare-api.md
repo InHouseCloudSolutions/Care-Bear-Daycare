@@ -504,6 +504,7 @@ All booleans default to `false`. `body` may be `""`.
   "id": 1,
   "booking": 10,
   "author": 2,
+  "author_name": "Chris C.",
   "potty": true,
   "food": true,
   "play": false,
@@ -513,7 +514,7 @@ All booleans default to `false`. `body` may be `""`.
 }
 ```
 
-`author` is the staff user's id. A pet parent POST is **403**.
+`author` is the staff user's id. `author_name` is read-only and is not accepted on POST. It is the given name, a space, and the first letter of the family name uppercased with a period (`Chris Cross` → `Chris C.`). Both names are stripped first; the initial is the first character of the stripped family name (`O'Brien` → `O.`). A blank family name returns the given name only (`Chris`); a blank given name returns the family name only (`Cross`); both blank returns `""`. A pet parent POST is **403**.
 
 ## Extras
 

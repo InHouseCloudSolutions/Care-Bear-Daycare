@@ -8,6 +8,13 @@ services:
       # Server-side origin for the /daycare-api/:path* rewrite (next.config.js).
       # Optional — defaults to the production IHCS API when unset.
       - DAYCARE_API_ORIGIN=${DAYCARE_API_ORIGIN:-https://inhousecloudsolutions.com}
+      # Local testing can flip the site between this production origin and the
+      # website stack on the host (http://localhost:3033) without a rebuild.
+      # Restart the frontend container after changing these. The in-page switch
+      # is the API chip; it does not require a restart.
+      - DAYCARE_API_SWITCH=${DAYCARE_API_SWITCH:-1}
+      - NEXT_PUBLIC_DAYCARE_API_SWITCH=${NEXT_PUBLIC_DAYCARE_API_SWITCH:-1}
+      - DAYCARE_API_ORIGIN_LOCAL=${DAYCARE_API_ORIGIN_LOCAL:-http://host.docker.internal:3033}
     volumes:
       - ./frontend:/code
       - /code/node_modules

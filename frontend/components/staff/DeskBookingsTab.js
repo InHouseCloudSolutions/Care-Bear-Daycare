@@ -30,6 +30,7 @@ import {
   stackSx,
 } from './DeskParts';
 import { AddBookingExtraDialog, EditStayDialog, StayDialog, TimestampDialog } from './DeskDialogs';
+import StayCarePanel from './StayCarePanel';
 import StayDocumentsMenu from './StayDocumentsMenu';
 import {
   BOOKING_FILTERS,
@@ -37,6 +38,7 @@ import {
   bookingExtraLineLabel,
   bookingMatchesFilter,
   bookingStatusPatch,
+  dogsOnBooking,
   formatDateRange,
   formatTimestamp,
   formatWindow,
@@ -96,6 +98,7 @@ function StayCard({
   service,
   serviceRecord,
   dogs,
+  parent,
   services,
   pending,
   onAction,
@@ -331,6 +334,14 @@ function StayCard({
         </Box>
       ) : null}
 
+      <StayCarePanel
+        bookingId={booking.id}
+        status={booking.status}
+        dogs={dogsOnBooking(booking, dogs)}
+        parent={parent}
+        token={token}
+      />
+
       {editOpen ? (
         <EditStayDialog
           open
@@ -390,6 +401,7 @@ StayCard.propTypes = {
   service: PropTypes.string.isRequired,
   serviceRecord: PropTypes.object,
   dogs: PropTypes.array,
+  parent: PropTypes.object,
   services: PropTypes.array,
   pending: PropTypes.bool,
   onAction: PropTypes.func.isRequired,
@@ -407,6 +419,7 @@ export default function DeskBookingsTab({ data, notify }) {
   const [creating, setCreating] = useState(false);
 
   const parentName = useMemo(() => nameLookup(parents, householdLabel), [parents]);
+  const parentById = useMemo(() => new Map(parents.map(row => [row.id, row])), [parents]);
   const serviceName = useMemo(() => nameLookup(services, s => s.name), [services]);
   const dogName = useMemo(() => nameLookup(dogs, d => d.name), [dogs]);
   const serviceById = useMemo(() => new Map(services.map(s => [s.id, s])), [services]);
@@ -452,6 +465,7 @@ export default function DeskBookingsTab({ data, notify }) {
         service={serviceName(booking.service_id) || `Service ${booking.service_id}`}
         serviceRecord={serviceById.get(booking.service_id)}
         dogs={dogs}
+        parent={parentById.get(booking.pet_parent_id) || null}
         services={services}
         pending={pendingId === booking.id}
         onAction={setStatus}

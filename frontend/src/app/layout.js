@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import publicPath from '@/utils/publicPath';
 import { WEBSITE_SEO } from '@/utils/website-seo';
+import ApiTargetSwitch from '@/components/dev/ApiTargetSwitch';
 import EmotionCacheProvider from './EmotionCacheProvider';
 import Providers from './providers';
 
@@ -103,7 +104,10 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <EmotionCacheProvider options={{ key: 'mui', prepend: true }}>
-          <Providers>{children}</Providers>
+          <Providers>
+            {children}
+            <ApiTargetSwitch />
+          </Providers>
         </EmotionCacheProvider>
       </body>
     </html>

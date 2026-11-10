@@ -16,7 +16,7 @@ The stay request is stored as requested. Staff confirmation, capacity, and messa
 
 ## Safety
 
-`docker-compose.yml` sets `DAYCARE_API_ORIGIN` to `https://inhousecloudsolutions.com` when that variable is unset. Registration would then create a real production account. The journey test refuses to run until you set `E2E_CONFIRM_LOCAL_API=1` after pointing the Dog Hotel container at a local API.
+`docker-compose.yml` sets `DAYCARE_API_ORIGIN` to `https://inhousecloudsolutions.com` when that variable is unset. The local site also shows an API chip (Local / Production) when `DAYCARE_API_SWITCH=1`. Local sends `/daycare-api` to `DAYCARE_API_ORIGIN_LOCAL` (the website stack at `http://host.docker.internal:3033` from the Dog Hotel container). Production is the default until you choose Local. Registration on Production creates a real account. The journey test refuses to run until you set `E2E_CONFIRM_LOCAL_API=1` after choosing Local.
 
 ## Commands
 
